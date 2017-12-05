@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+
+    
+
+    
+<!-- Baidu Tongji -->
+<script>var _hmt = _hmt || []</script>
+<script async src="//hm.baidu.com/hm.js?3c8be249330224d7c919b4f22750d872"></script>
+<!-- End Baidu Tongji -->
+
+
+
+
+    <meta charset="utf-8">
+    
+    
+    
+    <title>提升效率的必备VSCode插件 | 小昱博客 | 勤学如春起之苗，不见其增，日有所长；辍学如磨刀之石，不见其损，日有所亏</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="theme-color" content="#3F51B5">
+    
+    
+    <meta name="keywords" content="VSCode">
+    <meta name="description" content="常用优质插件的用法TODO+  创建一个TODO列表问题件  安装  ext install vscode-todo-plus  常用命令 1Todo: Open # 打开TODO文件 快捷键 1234Cmd/Ctrl+Enter # 将TODO标记为boxAlt+S # 将TODO标记为startedAlt+D # 将TODO标记为doneAlt+C # 将TODO标记为cancel 常用配置">
+<meta name="keywords" content="VSCode">
+<meta property="og:type" content="article">
+<meta property="og:title" content="提升效率的必备VSCode插件">
+<meta property="og:url" content="http://blog.xiaoyulive.top/2017/12/05/提升效率的必备VSCode插件/index.html">
+<meta property="og:site_name" content="小昱博客">
+<meta property="og:description" content="常用优质插件的用法TODO+  创建一个TODO列表问题件  安装  ext install vscode-todo-plus  常用命令 1Todo: Open # 打开TODO文件 快捷键 1234Cmd/Ctrl+Enter # 将TODO标记为boxAlt+S # 将TODO标记为startedAlt+D # 将TODO标记为doneAlt+C # 将TODO标记为cancel 常用配置">
+<meta property="og:updated_time" content="2017-12-05T01:35:46.271Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="提升效率的必备VSCode插件">
+<meta name="twitter:description" content="常用优质插件的用法TODO+  创建一个TODO列表问题件  安装  ext install vscode-todo-plus  常用命令 1Todo: Open # 打开TODO文件 快捷键 1234Cmd/Ctrl+Enter # 将TODO标记为boxAlt+S # 将TODO标记为startedAlt+D # 将TODO标记为doneAlt+C # 将TODO标记为cancel 常用配置">
+    
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="stylesheet" href="/css/style.css?v=1.6.17">
+    <script>window.lazyScripts=[]</script>
+
+    <!-- custom head -->
+    
+
+    <script src="/js/particles.min.js?v=1.6.17"></script>
+</head>
+
+<body>
+    <div id="loading" class="active"></div>
+
+    <aside id="menu" class="hide" >
+  <div class="inner flex-row-vertical">
+    <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+        <i class="icon icon-lg icon-close"></i>
+    </a>
+    <div class="brand-wrap" style="background-image:url(/img/brand.webp)">
+      <div class="brand">
+        <!-- 头像 -->
+        <a href="/" class="avatar waves-effect waves-circle waves-light">
+          <img src="/img/avatar.jpg">
+        </a>
+        <!-- 简介 -->
+        <hgroup class="introduce">
+          <h5 class="nickname">Quanzaiyu</h5>
+          <a href="mailto:quanzaiyu@outlook.com" title="quanzaiyu@outlook.com" class="mail">quanzaiyu@outlook.com</a>
+          <!-- 链接 -->
+          <div class="iconGroup">
+            
+              <div class="icon">
+                <a  href="https://github.com/quanzaiyu"
+                    target="_blank" 
+                    title="GitHub">
+                  <i class="icon icon-lg icon-github"></i>
+                </a>
+              </div>
+            
+              <div class="icon">
+                <a  href="http://www.weibo.com/quanzaiyu"
+                    target="_blank" 
+                    title="微博">
+                  <i class="icon icon-lg icon-weibo"></i>
+                </a>
+              </div>
+            
+              <div class="icon">
+                <a  href="http://www.jianshu.com/u/2e74d0659da1"
+                    target="_blank" 
+                    title="简书">
+                  <i class="icon icon-lg icon-book"></i>
+                </a>
+              </div>
+            
+          </div>
+        </hgroup>
+      </div>
+    </div>
+    <div class="scroll-wrap flex-col">
+      <ul class="nav">
+        
+            <li class="waves-block waves-effect">
+              <a href="/"  >
+                <i class="icon icon-lg icon-home"></i>
+                主页
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/archives"  >
+                <i class="icon icon-lg icon-archives"></i>
+                归档
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/tags"  >
+                <i class="icon icon-lg icon-tags"></i>
+                标签云
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/categories"  >
+                <i class="icon icon-lg icon-th-list"></i>
+                分类
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/custom"  >
+                <i class="icon icon-lg icon-link"></i>
+                关于我
+              </a>
+            </li>
+        
+      </ul>
+    </div>
+  </div>
+</aside>
+
+    <main id="main">
+        <header class="top-header" id="header">
+    <div class="flex-row">
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">提升效率的必备VSCode插件</div>
+        
+        <div class="search-wrap" id="search-wrap">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+                <i class="icon icon-lg icon-chevron-left"></i>
+            </a>
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="搜尋">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
+                <i class="icon icon-lg icon-search"></i>
+            </a>
+        </div>
+        
+        
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menuShare">
+            <i class="icon icon-lg icon-share-alt"></i>
+        </a>
+        
+    </div>
+</header>
+<header class="content-header post-header">
+
+    <div class="container fade-scale">
+        <h1 class="title">提升效率的必备VSCode插件</h1>
+        <h5 class="subtitle">
+            
+                <time datetime="2017-12-05T01:35:46.271Z" itemprop="datePublished" class="page-time">
+  2017-12-05
+</time>
+
+
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/开发工具/">开发工具</a></li></ul>
+
+            
+        </h5>
+    </div>
+
+    
+
+
+</header>
+
+
+<div class="container body-wrap">
+    <!-- <div id="canvas-container"></div> -->
+    
+    <aside class="post-widget">
+        <nav class="post-toc-wrap" id="post-toc">
+            <h4>TOC</h4>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#常用优质插件的用法"><span class="post-toc-number">1.</span> <span class="post-toc-text">常用优质插件的用法</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#TODO"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">TODO+</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Bookmarks"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">Bookmarks</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Markdown-All-in-One"><span class="post-toc-number">1.3.</span> <span class="post-toc-text">Markdown All in One</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#常用插件分类"><span class="post-toc-number">2.</span> <span class="post-toc-text">常用插件分类</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#代码高亮与语言支持"><span class="post-toc-number">2.1.</span> <span class="post-toc-text">代码高亮与语言支持</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Vetur"><span class="post-toc-number">2.1.1.</span> <span class="post-toc-text">Vetur</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#TODO-Highlight"><span class="post-toc-number">2.1.2.</span> <span class="post-toc-text">TODO Highlight</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#vue-ls"><span class="post-toc-number">2.1.3.</span> <span class="post-toc-text">vue-ls</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#代码验证"><span class="post-toc-number">2.2.</span> <span class="post-toc-text">代码验证</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#代码提示"><span class="post-toc-number">2.3.</span> <span class="post-toc-text">代码提示</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Vue-VSCode-Snippets"><span class="post-toc-number">2.3.1.</span> <span class="post-toc-text">Vue VSCode Snippets</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#智能感知"><span class="post-toc-number">2.4.</span> <span class="post-toc-text">智能感知</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#代码美化"><span class="post-toc-number">2.5.</span> <span class="post-toc-text">代码美化</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Pug-beautify"><span class="post-toc-number">2.5.1.</span> <span class="post-toc-text">Pug beautify</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#vscode-json"><span class="post-toc-number">2.5.2.</span> <span class="post-toc-text">vscode-json</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#JS-CSS-HTML-Formatter"><span class="post-toc-number">2.5.3.</span> <span class="post-toc-text">JS-CSS-HTML Formatter</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Beautify"><span class="post-toc-number">2.5.4.</span> <span class="post-toc-text">Beautify</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#模板预览"><span class="post-toc-number">2.6.</span> <span class="post-toc-text">模板预览</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#命令工具"><span class="post-toc-number">2.7.</span> <span class="post-toc-text">命令工具</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#界面主题"><span class="post-toc-number">2.8.</span> <span class="post-toc-text">界面主题</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#按键映射"><span class="post-toc-number">2.9.</span> <span class="post-toc-text">按键映射</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#其他"><span class="post-toc-number">2.10.</span> <span class="post-toc-text">其他</span></a></li></ol></li></ol>
+        </nav>
+    </aside>
+    
+<article id="post-提升效率的必备VSCode插件"
+  class="post-article article-type-post fade" itemprop="blogPost">
+
+    <div class="post-card">
+        <h1 class="post-card-title">提升效率的必备VSCode插件</h1>
+        <div class="post-meta">
+            <time class="post-time" title="2017-12-05 09:35:46" datetime="2017-12-05T01:35:46.271Z"  itemprop="datePublished">2017-12-05</time>
+
+            
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/开发工具/">开发工具</a></li></ul>
+
+
+
+            
+<span id="busuanzi_container_page_pv" title="文章总阅读量" style='display:none'>
+    <i class="icon icon-eye icon-pr"></i><span id="busuanzi_value_page_pv"></span>
+</span>
+
+
+        </div>
+        <div class="post-content" id="post-content" itemprop="postContent">
+            <h1 id="常用优质插件的用法"><a href="#常用优质插件的用法" class="headerlink" title="常用优质插件的用法"></a>常用优质插件的用法</h1><h2 id="TODO"><a href="#TODO" class="headerlink" title="TODO+"></a><a href="https://marketplace.visualstudio.com/items?itemName=fabiospampinato.vscode-todo-plus" target="_blank" rel="external">TODO+</a></h2><blockquote>
+<p> 创建一个<code>TODO</code>列表问题件</p>
+</blockquote>
+<p><strong>安装</strong>  <code>ext install vscode-todo-plus</code> </p>
+<p><strong>常用命令</strong></p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Todo: Open # 打开TODO文件</div></pre></td></tr></table></figure>
+<p><strong>快捷键</strong></p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">Cmd/Ctrl+Enter # 将TODO标记为box</div><div class="line">Alt+S # 将TODO标记为started</div><div class="line">Alt+D # 将TODO标记为done</div><div class="line">Alt+C # 将TODO标记为cancel</div></pre></td></tr></table></figure>
+<p><strong>常用配置</strong></p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">"todo.symbols.box": "☐"</div><div class="line">"todo.symbols.done": "✔"</div><div class="line">"todo.symbols.cancel": "✘"</div><div class="line">"todo.tags.names": ["critical", "high", "low", "today"]</div></pre></td></tr></table></figure>
+<p><strong>示例文件</strong></p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="attr">Todo:</span></div><div class="line"><span class="attr">  New:</span></div><div class="line">    <span class="string">☐</span> <span class="string">项目列表</span></div><div class="line">    <span class="string">☐</span> <span class="string">@critical</span> <span class="string">@high</span> <span class="string">@low</span> <span class="string">@today</span> <span class="string">高亮标签</span></div><div class="line">    <span class="string">☐</span> <span class="string">*加粗*</span> <span class="string">_倾斜_</span> <span class="string">~删除~</span> <span class="string">`代码`</span></div><div class="line"><span class="attr">  Done:</span></div><div class="line">   <span class="string">✔</span> <span class="string">完成</span> <span class="string">@done(17-11-17</span> <span class="number">22</span><span class="string">:07)</span></div><div class="line"><span class="attr">  Cancel:</span></div><div class="line">   <span class="string">✘</span> <span class="string">取消</span> <span class="string">@cancelled(17-11-17</span> <span class="number">22</span><span class="string">:08)</span></div></pre></td></tr></table></figure>
+<h2 id="Bookmarks"><a href="#Bookmarks" class="headerlink" title="Bookmarks"></a><a href="https://marketplace.visualstudio.com/items?itemName=alefragnani.Bookmarks" target="_blank" rel="external">Bookmarks</a></h2><p><strong>快捷键</strong></p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">ctrl + alt + K # Bookmarks: Toggle </div><div class="line">ctrl + alt + L # Jump to Next</div><div class="line">ctrl + alt + J # Jump to Previous</div></pre></td></tr></table></figure>
+<p><strong>常用命令</strong></p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">Bookmarks: Toggle # 标记/取消 书签标记</div><div class="line">Bookmarks: Jump to Next # 下一个书签</div><div class="line">Bookmarks: Jump to Previous # 上一个书签</div><div class="line">Bookmarks: List # 列出当前文件的所有书签</div><div class="line">Bookmarks: List from All Files # 列出所有文件的所有书签</div><div class="line">Bookmarks: Clear # 清除当前文件的所有书签</div><div class="line">Bookmarks: Clear from All Files # 清除所有文件的所有书签</div><div class="line">Bookmarks (Selection): Select Lines # 高亮书签行</div><div class="line">Bookmarks (Selection): Expand Selection to Next</div><div class="line">Bookmarks (Selection): Expand Selection to Previous</div><div class="line">Bookmarks (Selection): Shrink Selection</div></pre></td></tr></table></figure>
+<p><strong>常用配置</strong></p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">"bookmarks.gutterIconPath": "c:\\temp\\othericon.png"</div><div class="line">"bookmarks.saveBookmarksInProject": true</div><div class="line">"bookmarks.navigateThroughAllFiles": true</div><div class="line">"bookmarks.treeview.visible": true</div></pre></td></tr></table></figure>
+<h2 id="Markdown-All-in-One"><a href="#Markdown-All-in-One" class="headerlink" title="Markdown All in One"></a><a href="https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one" target="_blank" rel="external">Markdown All in One</a></h2><blockquote>
+<p>可以方便的编辑Markdown文件</p>
+</blockquote>
+<p><strong>快捷键</strong></p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">Alt + Shift + F # 代码格式化</div><div class="line">Ctrl + B # 粗体</div><div class="line">Ctrl + I # 斜体</div><div class="line">Ctrl + Shift + ] # 标题升级</div><div class="line">Ctrl + Shift + [ # 标题降级</div><div class="line">Alt + C # 选中/取消 任务列表</div></pre></td></tr></table></figure>
+<p><strong>常用配置</strong></p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">"markdown.extension.quickStyling": true</div><div class="line">"markdown.extension.toc.orderedList": true</div><div class="line">"markdown.extension.preview.autoShowPreviewToSide": true</div><div class="line">"markdown.extension.showExplorer": true</div></pre></td></tr></table></figure>
+<h1 id="常用插件分类"><a href="#常用插件分类" class="headerlink" title="常用插件分类"></a>常用插件分类</h1><h2 id="代码高亮与语言支持"><a href="#代码高亮与语言支持" class="headerlink" title="代码高亮与语言支持"></a>代码高亮与语言支持</h2><h3 id="Vetur"><a href="#Vetur" class="headerlink" title="Vetur"></a><a href="https://marketplace.visualstudio.com/items?itemName=octref.vetur" target="_blank" rel="external">Vetur</a></h3><blockquote>
+<p>提供对Vue的支持，资料:  <a href="https://vuejs.github.io/vetur/" target="_blank" rel="external">Vetur Doc - GitBook</a></p>
+</blockquote>
+<p><strong>Snippet</strong></p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">scaffold # 展开vue模板</div><div class="line">template # html、pug</div><div class="line">script # js、ts</div><div class="line">style # css、less、scss、sass、postcss、stylus</div></pre></td></tr></table></figure>
+<p><strong>常用配置</strong></p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">"eslint.autoFixOnSave": true,</div><div class="line">"eslint.validate": [</div><div class="line">  &#123;</div><div class="line">    <span class="attr">"language"</span>: <span class="string">"vue"</span>,</div><div class="line">    <span class="attr">"autoFix"</span>: <span class="literal">true</span></div><div class="line">  &#125;</div><div class="line">]</div></pre></td></tr></table></figure>
+<p><strong>智能感知</strong></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">npm i -S lodash</div><div class="line">npm i -D @types/lodash</div></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">import</span> * <span class="keyword">as</span> _ <span class="keyword">from</span> <span class="string">'lodash'</span></div><div class="line"><span class="comment">// 使用 _. 就可以得到 lodash 代码提示</span></div></pre></td></tr></table></figure>
+<h3 id="TODO-Highlight"><a href="#TODO-Highlight" class="headerlink" title="TODO Highlight"></a><a href="https://marketplace.visualstudio.com/items?itemName=wayou.vscode-todo-highlight" target="_blank" rel="external">TODO Highlight</a></h3><p><strong>高亮关键字</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">TODO: FIXME:</div></pre></td></tr></table></figure>
+<p><strong>常用命令</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">Toggle highlight</div><div class="line">List hilighted annotations</div></pre></td></tr></table></figure>
+<p><strong>常用配置</strong></p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">"todohighlight.isCaseSensitive": false</div><div class="line">"todohighlight.include": [</div><div class="line">  "**/*.js",</div><div class="line">  "**/*.jsx",</div><div class="line">  "**/*.ts",</div><div class="line">  "**/*.tsx",</div><div class="line">  "**/*.html",</div><div class="line">  "**/*.php",</div><div class="line">  "**/*.css",</div><div class="line">  "**/*.scss",</div><div class="line">  <span class="string">"**/*.vue"</span></div><div class="line">]</div></pre></td></tr></table></figure>
+<h3 id="vue-ls"><a href="#vue-ls" class="headerlink" title="vue-ls"></a><a href="https://marketplace.visualstudio.com/items?itemName=vaniship.vue-ls" target="_blank" rel="external">vue-ls</a></h3><blockquote>
+<p>这个扩展为 VSCode 增加了 vue 语言服务，解决 vue 单文件组件(.vue)文件的语法识别问题。</p>
+</blockquote>
+<p><strong>.vuelsrc文件配置</strong></p>
+<p>To support file path alias</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">const</span> path = <span class="built_in">require</span>(<span class="string">'path'</span>)</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">resolve</span> (<span class="params">dir</span>) </span>&#123;</div><div class="line">  <span class="keyword">return</span> path.join(__dirname, dir)</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="built_in">module</span>.exports = &#123;</div><div class="line">  resolve: &#123;</div><div class="line">    alias: &#123;</div><div class="line">      <span class="string">'@'</span>: resolve(<span class="string">'src'</span>)</div><div class="line">    &#125;</div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<ul>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=ms-python.python" target="_blank" rel="external">Python</a> </li>
+</ul>
+<h2 id="代码验证"><a href="#代码验证" class="headerlink" title="代码验证"></a>代码验证</h2><ul>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint" target="_blank" rel="external">ESLint</a> 提供ECMAScript代码验证</li>
+</ul>
+<ul>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=eg2.tslint" target="_blank" rel="external">TSLint</a> 提供TypeScript代码验证</li>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=hollowtree.vue-snippets" target="_blank" rel="external">stylelint</a> css/less/scss验证</li>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-puglint" target="_blank" rel="external">puglint</a> </li>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint" target="_blank" rel="external">markdownlint</a> </li>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=dbaeumer.jshint" target="_blank" rel="external">jshint</a> </li>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker" target="_blank" rel="external">Code Spell Checker</a> 拼写检查</li>
+</ul>
+<h2 id="代码提示"><a href="#代码提示" class="headerlink" title="代码提示"></a>代码提示</h2><h3 id="Vue-VSCode-Snippets"><a href="#Vue-VSCode-Snippets" class="headerlink" title="Vue VSCode Snippets"></a><a href="https://marketplace.visualstudio.com/items?itemName=sdras.vue-vscode-snippets" target="_blank" rel="external">Vue VSCode Snippets</a></h3><p><strong>Snippet</strong></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line">Vue</div><div class="line">  vbase</div><div class="line">Template</div><div class="line">  vfor | vmodel | vmodel-num | von | vel-props</div><div class="line">  vsrc | vstyle | vstyle-obj | vanim | vnuxtl</div><div class="line">  vclass | vclass-obj | vclass-obj-mult</div><div class="line">Script</div><div class="line">  vdata | vmethod | vcomputed | vwatcher | vprops</div><div class="line">  vimport | vimport-c | vimport-export | vimport-lib | vimport-gsap</div><div class="line">  vfilter | vc-direct | vmixin | vmixin-use</div><div class="line">  vanimhook-js | vcommit | vdispatch</div><div class="line">  vinc | vdec</div><div class="line">Vuex</div><div class="line">  vstore | vgetter | vmutation | vaction | vstore-import</div><div class="line">Nuxt</div><div class="line">  nfont | ncss</div></pre></td></tr></table></figure>
+<ul>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=vaniship.vue-ls-snippets" target="_blank" rel="external">Vue Snippets(vue-ls)</a> </li>
+</ul>
+<ul>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=hollowtree.vue-snippets" target="_blank" rel="external">Vue 2 Snippets</a> </li>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=ecmel.vscode-html-css" target="_blank" rel="external">HTML CSS Support</a> </li>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=tunnckocore.modern-javascript-snippets" target="_blank" rel="external">Modern (ES6+) Javascript Snippets</a> </li>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=ecmel.vscode-html-css" target="_blank" rel="external">HTML CSS Support</a> </li>
+</ul>
+<h2 id="智能感知"><a href="#智能感知" class="headerlink" title="智能感知"></a>智能感知</h2><ul>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense" target="_blank" rel="external">Path Intellisense</a> </li>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-less" target="_blank" rel="external">Less IntelliSense</a> </li>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=christian-kohler.npm-intellisense" target="_blank" rel="external">npm Intellisense</a> </li>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=felixfbecker.php-intellisense" target="_blank" rel="external">PHP IntelliSense</a> </li>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=Zignd.html-css-class-completion" target="_blank" rel="external">IntelliSense for CSS class names</a> </li>
+</ul>
+<h2 id="代码美化"><a href="#代码美化" class="headerlink" title="代码美化"></a>代码美化</h2><h3 id="Pug-beautify"><a href="#Pug-beautify" class="headerlink" title="Pug beautify"></a><a href="https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-puglint" target="_blank" rel="external">Pug beautify</a></h3><p><strong>常用命令</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Beautify pug/jade</div></pre></td></tr></table></figure>
+<h3 id="vscode-json"><a href="#vscode-json" class="headerlink" title="vscode-json"></a><a href="https://marketplace.visualstudio.com/items?itemName=andyyaldoo.vscode-json" target="_blank" rel="external">vscode-json</a></h3><p><strong>快捷键</strong></p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">cmd+alt+v # Validate</div><div class="line">cmd+alt+b # Beautify</div><div class="line">cmd+alt+u # Uglify</div><div class="line">cmd+alt+' # Escape</div><div class="line">cmd+alt+; # Unescape</div></pre></td></tr></table></figure>
+<p><strong>常用命令</strong></p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">vscode-json: Validate</div><div class="line">vscode-json: Beautify</div><div class="line">vscode-json: Uglify</div><div class="line">vscode-json: Escape</div><div class="line">vscode-json: Unescape</div></pre></td></tr></table></figure>
+<h3 id="JS-CSS-HTML-Formatter"><a href="#JS-CSS-HTML-Formatter" class="headerlink" title="JS-CSS-HTML Formatter"></a><a href="https://marketplace.visualstudio.com/items?itemName=lonefy.vscode-JS-CSS-HTML-formatter" target="_blank" rel="external">JS-CSS-HTML Formatter</a></h3><p><strong>常用命令</strong></p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">Formatter</div><div class="line">Formatter Config</div><div class="line">Formatter Create Local Config</div></pre></td></tr></table></figure>
+<p><strong>配置文件</strong></p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">  <span class="attr">"onSave"</span>: <span class="literal">false</span>,</div><div class="line">  <span class="attr">"javascript"</span>: &#123;</div><div class="line">    <span class="attr">"indent_size"</span>: <span class="number">2</span>,</div><div class="line">    <span class="attr">"end_with_newline"</span>: <span class="literal">true</span></div><div class="line">  &#125;,</div><div class="line">  <span class="attr">"css"</span>: &#123;</div><div class="line">    <span class="attr">"indent_size"</span>: <span class="number">2</span></div><div class="line">  &#125;,</div><div class="line">  <span class="attr">"html"</span>: &#123;</div><div class="line">    <span class="attr">"indent_size"</span>: <span class="number">2</span>,</div><div class="line">    <span class="attr">"indent_inner_html"</span>: <span class="literal">true</span></div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h3 id="Beautify"><a href="#Beautify" class="headerlink" title="Beautify"></a><a href="https://marketplace.visualstudio.com/items?itemName=HookyQR.beautify" target="_blank" rel="external">Beautify</a></h3><p><strong>keybindings.json 配置</strong></p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">  <span class="attr">"key"</span>: <span class="string">"ctrl+b"</span>,</div><div class="line">  <span class="attr">"command"</span>: <span class="string">"HookyQR.beautify"</span>,</div><div class="line">  <span class="attr">"when"</span>: <span class="string">"editorFocus"</span></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p><strong>.jsbeautifyrc 配置</strong></p>
+<p>在项目根目录下新建<code>.jsbeautifyrc</code>进行配置，使用快捷键<code>ctrl + B</code>即可代码格式化。</p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">  <span class="attr">"indent_size"</span>: <span class="number">2</span>,</div><div class="line">  <span class="attr">"indent_char"</span>: <span class="string">" "</span>,</div><div class="line">  <span class="attr">"css"</span>: &#123;</div><div class="line">    <span class="attr">"indent_size"</span>: <span class="number">2</span></div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>可用的配置映射:</p>
+<table>
+<thead>
+<tr>
+<th>.jsbeautifyrc setting</th>
+<th style="text-align:left">VS Code setting</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>eol</td>
+<td style="text-align:left">files.eol</td>
+</tr>
+<tr>
+<td>tab_size</td>
+<td style="text-align:left">editor.tabSize</td>
+</tr>
+<tr>
+<td>indent_with_tabs <em>(inverted)</em></td>
+<td style="text-align:left">editor.insertSpaces</td>
+</tr>
+<tr>
+<td>wrap_line_length</td>
+<td style="text-align:left">html.format.wrapLineLength</td>
+</tr>
+<tr>
+<td>unformatted</td>
+<td style="text-align:left">html.format.unformatted</td>
+</tr>
+<tr>
+<td>indent_inner_html</td>
+<td style="text-align:left">html.format.indentInnerHtml</td>
+</tr>
+<tr>
+<td>preserve_newlines</td>
+<td style="text-align:left">html.format.preserveNewLines</td>
+</tr>
+<tr>
+<td>max_preserve_newlines</td>
+<td style="text-align:left">html.format.maxPreserveNewLines</td>
+</tr>
+<tr>
+<td>indent_handlebars</td>
+<td style="text-align:left">html.format.indentHandlebars</td>
+</tr>
+<tr>
+<td>end_with_newline</td>
+<td style="text-align:left">html.format.endWithNewline (html)</td>
+</tr>
+<tr>
+<td>end_with_newline</td>
+<td style="text-align:left">file.insertFinalNewLine (css, js)</td>
+</tr>
+<tr>
+<td>extra_liners</td>
+<td style="text-align:left">html.format.extraLiners</td>
+</tr>
+<tr>
+<td>space_after_anon_function</td>
+<td style="text-align:left">javascript.format.insertSpaceAfterFunctionKeywordForAnonymousFunctions</td>
+</tr>
+<tr>
+<td>space_in_paren</td>
+<td style="text-align:left">javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyParenthesis</td>
+</tr>
+</tbody>
+</table>
+<h2 id="模板预览"><a href="#模板预览" class="headerlink" title="模板预览"></a>模板预览</h2><ul>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=ginie.pug2html" target="_blank" rel="external">Pug to HTML</a> </li>
+</ul>
+<p><strong>常用命令</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">pug2html</div></pre></td></tr></table></figure>
+<ul>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=ginie.pug2html" target="_blank" rel="external">Preview</a> </li>
+</ul>
+<blockquote>
+<p>A previewer of Markdown, ReStructured Text, HTML, Jade, Pug, Mermaid files, Image’s URI or CSS properties for Visual Studio Code.</p>
+</blockquote>
+<h2 id="命令工具"><a href="#命令工具" class="headerlink" title="命令工具"></a>命令工具</h2><ul>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=fknop.vscode-npm" target="_blank" rel="external">npm</a> </li>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=gamunu.vscode-yarn" target="_blank" rel="external">yarn</a> </li>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=codeyu.vscode-hexo" target="_blank" rel="external">vscode-Hexo</a> </li>
+</ul>
+<h2 id="界面主题"><a href="#界面主题" class="headerlink" title="界面主题"></a>界面主题</h2><ul>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme" target="_blank" rel="external">Material Icon Theme</a> </li>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=jamesmaj.easy-icons" target="_blank" rel="external">Easy icon theme</a> </li>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=robertohuertasm.vscode-icons" target="_blank" rel="external">vscode-icons</a> </li>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=ms-vscode.atom-keybindings" target="_blank" rel="external">VSCode Great Icons</a> </li>
+</ul>
+<h2 id="按键映射"><a href="#按键映射" class="headerlink" title="按键映射"></a>按键映射</h2><ul>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=ms-vscode.sublime-keybindings" target="_blank" rel="external">Sublime Text Keymap</a> </li>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=ms-vscode.atom-keybindings" target="_blank" rel="external">Atom Keymap</a> </li>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=vscodevim.vim" target="_blank" rel="external">Vim</a> </li>
+</ul>
+<h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><ul>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=felixfbecker.php-debug" target="_blank" rel="external">PHP Debug</a> </li>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=felixfbecker.php-pack" target="_blank" rel="external">PHP Extension Pack</a> </li>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome" target="_blank" rel="external">Debugger for Chrome</a> </li>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=patrys.vscode-code-outline" target="_blank" rel="external">Code Outline</a> </li>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=patricklee.vsnotes" target="_blank" rel="external">VSNotes</a> </li>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-close-tag" target="_blank" rel="external">Auto Close Tag</a> 标签自动闭合</li>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner" target="_blank" rel="external">Code Runner</a> 代码运行</li>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=alefragnani.project-manager" target="_blank" rel="external">Project Manager</a> </li>
+</ul>
+
+        </div>
+
+        <blockquote class="post-copyright">
+    <div class="content">
+        
+<span class="post-time">
+    最後更新時間：<time datetime="2017-12-05T01:35:46.271Z" itemprop="dateUpdated">2017-12-05 09:35:46</time>
+</span><br>
+
+
+        
+        这里可以写作者留言，标签和 hexo 中所有变量及辅助函数等均可调用，示例：<a href="/2017/12/05/提升效率的必备VSCode插件/" target="_blank" rel="external">http://blog.xiaoyulive.top/2017/12/05/提升效率的必备VSCode插件/</a>
+        
+    </div>
+    <footer>
+        <a href="http://blog.xiaoyulive.top">
+            <img src="/img/avatar.jpg" alt="Quanzaiyu">
+            Quanzaiyu
+        </a>
+    </footer>
+</blockquote>
+
+        
+<div class="page-reward">
+    <a id="rewardBtn" href="javascript:;" class="page-reward-btn waves-effect waves-circle waves-light">赏</a>
+</div>
+
+
+
+        <div class="post-footer">
+            
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/VSCode/">VSCode</a></li></ul>
+
+
+            
+<div class="page-share-wrap">
+    
+
+<div class="page-share" id="pageShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://blog.xiaoyulive.top/2017/12/05/提升效率的必备VSCode插件/&title=《提升效率的必备VSCode插件》 — 小昱博客&pic=http://blog.xiaoyulive.top/img/avatar.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://blog.xiaoyulive.top/2017/12/05/提升效率的必备VSCode插件/&title=《提升效率的必备VSCode插件》 — 小昱博客&source=" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://blog.xiaoyulive.top/2017/12/05/提升效率的必备VSCode插件/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《提升效率的必备VSCode插件》 — 小昱博客&url=http://blog.xiaoyulive.top/2017/12/05/提升效率的必备VSCode插件/&via=http://blog.xiaoyulive.top" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://blog.xiaoyulive.top/2017/12/05/提升效率的必备VSCode插件/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+
+    <a href="javascript:;" id="shareFab" class="page-share-fab waves-effect waves-circle">
+        <i class="icon icon-share-alt icon-lg"></i>
+    </a>
+</div>
+
+
+
+        </div>
+    </div>
+
+    
+<nav class="post-nav flex-row flex-justify-between">
+  
+    <div class="waves-block waves-effect prev">
+      <a href="/2017/12/05/高效使用VSCode进行开发/" id="post-prev" class="post-nav-link">
+        <div class="tips"><i class="icon icon-angle-left icon-lg icon-pr"></i> Prev</div>
+        <h4 class="title">高效使用VSCode进行开发</h4>
+      </a>
+    </div>
+  
+
+  
+    <div class="waves-block waves-effect next">
+      <a href="/2017/12/05/玩转交互式命令行/" id="post-next" class="post-nav-link">
+        <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
+        <h4 class="title">玩转交互式命令行</h4>
+      </a>
+    </div>
+  
+</nav>
+
+
+
+    
+
+
+<section class="comments" id="comments">
+    <div id="disqus_thread"></div>
+    <script>
+    var disqus_shortname = 'true';
+    lazyScripts.push('//' + disqus_shortname + '.disqus.com/embed.js')
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</section>
+
+
+
+
+<section class="comments" id="comments">
+    <!-- UY BEGIN -->
+    <div id="uyan_frame"></div>
+    <script src="http://v2.uyan.cc/code/uyan.js?uid=true"></script>
+    <!-- UY END -->
+</section>
+
+
+
+
+<section class="comments" id="comments">
+    <div id="gitment_thread"></div>
+    <link rel="stylesheet" href="//unpkg.com/gitment/style/default.css">
+    <script src="//unpkg.com/gitment/dist/gitment.browser.js"></script>
+    <script>
+        var gitment = new Gitment({
+            owner: 'quanzaiyu',
+            repo: 'quanzaiyu.github.io',
+            oauth: {
+                client_id: '3f4b90df85c3c29d643f',
+                client_secret: 'c951dd3dbd71e2edd597aa527a1a5d7e473d7375',
+            },
+        })
+        gitment.render('comments')
+    </script>
+</section>
+
+
+
+
+</article>
+
+<div id="reward" class="page-modal reward-lay">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <h3 class="reward-title">
+        <i class="icon icon-quote-left"></i>
+        谢谢大爷~
+        <i class="icon icon-quote-right"></i>
+    </h3>
+    <div class="reward-content">
+        
+        <div class="reward-code">
+            <img id="rewardCode" src="/img/wechat.jpg" alt="打赏二维码">
+        </div>
+        
+        <label class="reward-toggle">
+            <input id="rewardToggle" type="checkbox" class="reward-toggle-check"
+                data-wechat="/img/wechat.jpg" data-alipay="/img/alipay.jpg">
+            <div class="reward-toggle-ctrol">
+                <span class="reward-toggle-item wechat">微信</span>
+                <span class="reward-toggle-label"></span>
+                <span class="reward-toggle-item alipay">支付宝</span>
+            </div>
+        </label>
+        
+    </div>
+</div>
+
+
+
+</div>
+
+<!-- <script>
+    particlesJS.load('canvas-container', '/json/particles2.json', function () {
+        console.log('callback - particles.js config loaded');
+    })
+</script> -->
+        <footer class="footer">
+    <div class="top">
+        
+<p>
+    <span id="busuanzi_container_site_uv" style='display:none'>
+        站点总访客数：<span id="busuanzi_value_site_uv"></span>
+    </span>
+    <span id="busuanzi_container_site_pv" style='display:none'>
+        站点总访问量：<span id="busuanzi_value_site_pv"></span>
+    </span>
+</p>
+
+
+        <p>
+            
+            <!-- <span>本部落格係採用<a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.zh_TW">創用 CC 姓名標示 4.0 國際 授權條款授權</a></span> -->
+        </p>
+    </div>
+    <div class="bottom">
+        <p><span>Quanzaiyu &copy; 2015 - 2017</span>
+            <span>
+                
+                <a href="http://www.miitbeian.gov.cn/" target="_blank">滇ICP备16006294号</a><br>
+                
+                Power by <a href="http://hexo.io/" target="_blank">Hexo</a>
+            </span>
+        </p>
+    </div>
+</footer>
+
+    </main>
+    <div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+
+
+<div class="global-share" id="globalShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://blog.xiaoyulive.top/2017/12/05/提升效率的必备VSCode插件/&title=《提升效率的必备VSCode插件》 — 小昱博客&pic=http://blog.xiaoyulive.top/img/avatar.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://blog.xiaoyulive.top/2017/12/05/提升效率的必备VSCode插件/&title=《提升效率的必备VSCode插件》 — 小昱博客&source=" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://blog.xiaoyulive.top/2017/12/05/提升效率的必备VSCode插件/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《提升效率的必备VSCode插件》 — 小昱博客&url=http://blog.xiaoyulive.top/2017/12/05/提升效率的必备VSCode插件/&via=http://blog.xiaoyulive.top" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://blog.xiaoyulive.top/2017/12/05/提升效率的必备VSCode插件/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+<div class="page-modal wx-share" id="wxShare">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <img src="//api.qrserver.com/v1/create-qr-code/?data=http://blog.xiaoyulive.top/2017/12/05/提升效率的必备VSCode插件/" alt="微信分享二维码">
+</div>
+
+
+
+
+    <script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+<script>
+var BLOG = { ROOT: '/', SHARE: true, REWARD: true };
+
+
+</script>
+
+<script src="/js/main.min.js?v=1.6.17"></script>
+
+
+<div class="search-panel" id="search-panel">
+    <ul class="search-result" id="search-result"></ul>
+</div>
+<template id="search-tpl">
+<li class="item">
+    <a href="{path}" class="waves-block waves-effect">
+        <div class="title ellipsis" title="{title}">{title}</div>
+        <div class="flex-row flex-middle">
+            <div class="tags ellipsis">
+                {tags}
+            </div>
+            <time class="flex-col time">{date}</time>
+        </div>
+    </a>
+</li>
+</template>
+
+<script src="/js/search.min.js?v=1.6.17" async></script>
+
+
+
+
+
+
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+<script>
+(function() {
+    var OriginTitile = document.title, titleTime;
+    document.addEventListener('visibilitychange', function() {
+        if (document.hidden) {
+            document.title = 'ﾍ(;´Д｀ﾍ)快回来啊！';
+            clearTimeout(titleTime);
+        } else {
+            document.title = '(つェ⊂)欢迎回来!';
+            titleTime = setTimeout(function() {
+                document.title = OriginTitile;
+            },2000);
+        }
+    });
+})();
+</script>
+
+
+
+</body>
+</html>

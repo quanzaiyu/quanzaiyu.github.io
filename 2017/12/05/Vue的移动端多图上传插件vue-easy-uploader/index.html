@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+
+    
+
+    
+<!-- Baidu Tongji -->
+<script>var _hmt = _hmt || []</script>
+<script async src="//hm.baidu.com/hm.js?3c8be249330224d7c919b4f22750d872"></script>
+<!-- End Baidu Tongji -->
+
+
+
+
+    <meta charset="utf-8">
+    
+    
+    
+    <title>Vue的移动端多图上传插件vue-easy-uploader | 小昱博客 | 勤学如春起之苗，不见其增，日有所长；辍学如磨刀之石，不见其损，日有所亏</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="theme-color" content="#3F51B5">
+    
+    
+    <meta name="keywords" content="Vue">
+    <meta name="description" content="前言这段时间赶项目，需要用到多文件上传，用Vue进行前端项目开发。在网上找了不少插件，都不是十分满意，有的使用起来繁琐，有的不能适应本项目。就打算自己折腾一下，写一个Vue的上传插件，一劳永逸，以后可以直接使用。 目前vue-easy-uploader已上传到GitHub和NPM，使用起来方便简单，不需要繁琐的配置即可投入生产，不过需要后端配合，实现上传接口。 本项目GitHub地址: https">
+<meta name="keywords" content="Vue">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Vue的移动端多图上传插件vue-easy-uploader">
+<meta property="og:url" content="http://blog.xiaoyulive.top/2017/12/05/Vue的移动端多图上传插件vue-easy-uploader/index.html">
+<meta property="og:site_name" content="小昱博客">
+<meta property="og:description" content="前言这段时间赶项目，需要用到多文件上传，用Vue进行前端项目开发。在网上找了不少插件，都不是十分满意，有的使用起来繁琐，有的不能适应本项目。就打算自己折腾一下，写一个Vue的上传插件，一劳永逸，以后可以直接使用。 目前vue-easy-uploader已上传到GitHub和NPM，使用起来方便简单，不需要繁琐的配置即可投入生产，不过需要后端配合，实现上传接口。 本项目GitHub地址: https">
+<meta property="og:image" content="https://raw.githubusercontent.com/quanzaiyu/vue-easy-uploader/master/static/05.png">
+<meta property="og:image" content="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/0006.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/quanzaiyu/vue-easy-uploader/master/static/04.png">
+<meta property="og:updated_time" content="2017-12-05T01:35:46.270Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Vue的移动端多图上传插件vue-easy-uploader">
+<meta name="twitter:description" content="前言这段时间赶项目，需要用到多文件上传，用Vue进行前端项目开发。在网上找了不少插件，都不是十分满意，有的使用起来繁琐，有的不能适应本项目。就打算自己折腾一下，写一个Vue的上传插件，一劳永逸，以后可以直接使用。 目前vue-easy-uploader已上传到GitHub和NPM，使用起来方便简单，不需要繁琐的配置即可投入生产，不过需要后端配合，实现上传接口。 本项目GitHub地址: https">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/quanzaiyu/vue-easy-uploader/master/static/05.png">
+    
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="stylesheet" href="/css/style.css?v=1.6.17">
+    <script>window.lazyScripts=[]</script>
+
+    <!-- custom head -->
+    
+
+    <script src="/js/particles.min.js?v=1.6.17"></script>
+</head>
+
+<body>
+    <div id="loading" class="active"></div>
+
+    <aside id="menu" class="hide" >
+  <div class="inner flex-row-vertical">
+    <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+        <i class="icon icon-lg icon-close"></i>
+    </a>
+    <div class="brand-wrap" style="background-image:url(/img/brand.webp)">
+      <div class="brand">
+        <!-- 头像 -->
+        <a href="/" class="avatar waves-effect waves-circle waves-light">
+          <img src="/img/avatar.jpg">
+        </a>
+        <!-- 简介 -->
+        <hgroup class="introduce">
+          <h5 class="nickname">Quanzaiyu</h5>
+          <a href="mailto:quanzaiyu@outlook.com" title="quanzaiyu@outlook.com" class="mail">quanzaiyu@outlook.com</a>
+          <!-- 链接 -->
+          <div class="iconGroup">
+            
+              <div class="icon">
+                <a  href="https://github.com/quanzaiyu"
+                    target="_blank" 
+                    title="GitHub">
+                  <i class="icon icon-lg icon-github"></i>
+                </a>
+              </div>
+            
+              <div class="icon">
+                <a  href="http://www.weibo.com/quanzaiyu"
+                    target="_blank" 
+                    title="微博">
+                  <i class="icon icon-lg icon-weibo"></i>
+                </a>
+              </div>
+            
+              <div class="icon">
+                <a  href="http://www.jianshu.com/u/2e74d0659da1"
+                    target="_blank" 
+                    title="简书">
+                  <i class="icon icon-lg icon-book"></i>
+                </a>
+              </div>
+            
+          </div>
+        </hgroup>
+      </div>
+    </div>
+    <div class="scroll-wrap flex-col">
+      <ul class="nav">
+        
+            <li class="waves-block waves-effect">
+              <a href="/"  >
+                <i class="icon icon-lg icon-home"></i>
+                主页
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/archives"  >
+                <i class="icon icon-lg icon-archives"></i>
+                归档
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/tags"  >
+                <i class="icon icon-lg icon-tags"></i>
+                标签云
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/categories"  >
+                <i class="icon icon-lg icon-th-list"></i>
+                分类
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/custom"  >
+                <i class="icon icon-lg icon-link"></i>
+                关于我
+              </a>
+            </li>
+        
+      </ul>
+    </div>
+  </div>
+</aside>
+
+    <main id="main">
+        <header class="top-header" id="header">
+    <div class="flex-row">
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">Vue的移动端多图上传插件vue-easy-uploader</div>
+        
+        <div class="search-wrap" id="search-wrap">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+                <i class="icon icon-lg icon-chevron-left"></i>
+            </a>
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="搜尋">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
+                <i class="icon icon-lg icon-search"></i>
+            </a>
+        </div>
+        
+        
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menuShare">
+            <i class="icon icon-lg icon-share-alt"></i>
+        </a>
+        
+    </div>
+</header>
+<header class="content-header post-header">
+
+    <div class="container fade-scale">
+        <h1 class="title">Vue的移动端多图上传插件vue-easy-uploader</h1>
+        <h5 class="subtitle">
+            
+                <time datetime="2017-12-05T01:35:46.269Z" itemprop="datePublished" class="page-time">
+  2017-12-05
+</time>
+
+
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/Vue/">Vue</a></li></ul>
+
+            
+        </h5>
+    </div>
+
+    
+
+
+</header>
+
+
+<div class="container body-wrap">
+    <!-- <div id="canvas-container"></div> -->
+    
+    <aside class="post-widget">
+        <nav class="post-toc-wrap" id="post-toc">
+            <h4>TOC</h4>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#前言"><span class="post-toc-number">1.</span> <span class="post-toc-text">前言</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#插件介绍"><span class="post-toc-number">2.</span> <span class="post-toc-text">插件介绍</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#目录结构"><span class="post-toc-number">3.</span> <span class="post-toc-text">目录结构</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#文件解析"><span class="post-toc-number">4.</span> <span class="post-toc-text">文件解析</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#index-js"><span class="post-toc-number">4.1.</span> <span class="post-toc-text">index.js</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#store-js"><span class="post-toc-number">4.2.</span> <span class="post-toc-text">store.js</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#uploader-vue"><span class="post-toc-number">4.3.</span> <span class="post-toc-text">uploader.vue</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#使用"><span class="post-toc-number">5.</span> <span class="post-toc-text">使用</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#注意"><span class="post-toc-number">6.</span> <span class="post-toc-text">注意</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#改进"><span class="post-toc-number">7.</span> <span class="post-toc-text">改进</span></a></li></ol>
+        </nav>
+    </aside>
+    
+<article id="post-Vue的移动端多图上传插件vue-easy-uploader"
+  class="post-article article-type-post fade" itemprop="blogPost">
+
+    <div class="post-card">
+        <h1 class="post-card-title">Vue的移动端多图上传插件vue-easy-uploader</h1>
+        <div class="post-meta">
+            <time class="post-time" title="2017-12-05 09:35:46" datetime="2017-12-05T01:35:46.269Z"  itemprop="datePublished">2017-12-05</time>
+
+            
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/Vue/">Vue</a></li></ul>
+
+
+
+            
+<span id="busuanzi_container_page_pv" title="文章总阅读量" style='display:none'>
+    <i class="icon icon-eye icon-pr"></i><span id="busuanzi_value_page_pv"></span>
+</span>
+
+
+        </div>
+        <div class="post-content" id="post-content" itemprop="postContent">
+            <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>这段时间赶项目，需要用到多文件上传，用Vue进行前端项目开发。在网上找了不少插件，都不是十分满意，有的使用起来繁琐，有的不能适应本项目。就打算自己折腾一下，写一个Vue的上传插件，一劳永逸，以后可以直接使用。</p>
+<p>目前<code>vue-easy-uploader</code>已上传到<code>GitHub</code>和<code>NPM</code>，使用起来方便简单，不需要繁琐的配置即可投入生产，不过需要后端配合，实现上传接口。</p>
+<p>本项目GitHub地址: <a href="https://github.com/quanzaiyu/vue-easy-uploader" target="_blank" rel="external">https://github.com/quanzaiyu/vue-easy-uploader</a></p>
+<p>本项目NPM地址: <a href="https://www.npmjs.com/package/vue-easy-uploader" target="_blank" rel="external">https://www.npmjs.com/package/vue-easy-uploader</a></p>
+<p>详细的使用方法都在仓库Readme中，就不赘述，这里谈下本插件的设计开发思路。</p>
+<h1 id="插件介绍"><a href="#插件介绍" class="headerlink" title="插件介绍"></a>插件介绍</h1><p><code>vue-easy-uploader</code>是一个多图上传插件。主要特性包括:</p>
+<ul>
+<li>多文件上传</li>
+<li>上传图片预览</li>
+<li>上传状态监测</li>
+<li>删除指定图片</li>
+<li>清空图片</li>
+<li>重新上传</li>
+</ul>
+<p>后期版本迭代将不限于图片，往通用文件上传进行改进。</p>
+<p>先看看上传插件使用时候的效果图:</p>
+<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="https://raw.githubusercontent.com/quanzaiyu/vue-easy-uploader/master/static/05.png" alt="" title="">
+                </div>
+                <div class="image-caption"></div>
+            </figure>
+<h1 id="目录结构"><a href="#目录结构" class="headerlink" title="目录结构"></a>目录结构</h1><figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/0006.png" alt="" title="">
+                </div>
+                <div class="image-caption"></div>
+            </figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">index.js # 主入口文件</div><div class="line">store.js # 状态管理</div><div class="line">uploader.vue # 上传组件</div></pre></td></tr></table></figure>
+<h1 id="文件解析"><a href="#文件解析" class="headerlink" title="文件解析"></a>文件解析</h1><h2 id="index-js"><a href="#index-js" class="headerlink" title="index.js"></a>index.js</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">import</span> uploader <span class="keyword">from</span> <span class="string">'./uploader'</span></div><div class="line"><span class="keyword">import</span> store <span class="keyword">from</span> <span class="string">'./store'</span></div><div class="line"></div><div class="line"><span class="keyword">let</span> plugin = &#123;&#125;</div><div class="line"></div><div class="line">plugin.install = <span class="function"><span class="keyword">function</span> (<span class="params">_Vue, _store</span>) </span>&#123;</div><div class="line">  _Vue.component(<span class="string">'uploader'</span>, uploader)</div><div class="line">  _store.registerModule(<span class="string">'imgstore'</span>, store)</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="keyword">export</span> <span class="keyword">default</span> plugin</div></pre></td></tr></table></figure>
+<p>这是插件的主入口文件，注册了全局的上传组件和状态管理，使用时只需要在项目入口文件(一般是<code>main.js</code>)中加入以下代码即可引入此插件:</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">import</span> Vue <span class="keyword">from</span> <span class="string">'vue'</span></div><div class="line"><span class="keyword">import</span> Vuex <span class="keyword">from</span> <span class="string">'vuex'</span></div><div class="line"><span class="keyword">import</span> uploader <span class="keyword">from</span> <span class="string">'vue-easy-uploader'</span></div><div class="line"> </div><div class="line"><span class="keyword">let</span> store = <span class="keyword">new</span> Vuex.Store(&#123;&#125;)</div><div class="line">Vue.use(uploader, store)</div></pre></td></tr></table></figure>
+<h2 id="store-js"><a href="#store-js" class="headerlink" title="store.js"></a>store.js</h2><p>此文件为状态管理配置文件，主要包含三个<code>state</code>:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">img_upload_cache <span class="comment"># 上传文件缓存</span></div><div class="line">img_paths <span class="comment"># 上传状态，包括 ready selected uploading finished</span></div><div class="line">img_status <span class="comment"># 上传后的路径反馈数组(数据结构为Set集合)</span></div></pre></td></tr></table></figure>
+<p>针对每个<code>state</code>都有自己的<code>mutation</code>，用于改变<code>state</code>，规范上<code>mutation</code>都需要使用大写字母加下划线的形式，本人习惯使用小写字母，不过都不是原则上的问题。</p>
+<p>最重要的一个<code>state</code>是<code>img_status</code>，用于监视图片上传的状态。包括以下几个状态:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">ready <span class="comment"># 上传开始前的准备状态 </span></div><div class="line">selected <span class="comment"># 已选择上传文件 </span></div><div class="line">uploading <span class="comment"># 开始上传 </span></div><div class="line">finished <span class="comment"># 上传完毕</span></div></pre></td></tr></table></figure>
+<p>在组件中可以通过改变上传状态实现文件的上传，同时也可以监听上传状态的变化而执行回调。如:</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div></pre></td><td class="code"><pre><div class="line">methods: &#123;</div><div class="line">  upload () &#123;</div><div class="line">    <span class="keyword">this</span>.$store.commit(<span class="string">'set_img_status'</span>, <span class="string">'uploading'</span>)</div><div class="line">  &#125;,</div><div class="line">  submit () &#123;</div><div class="line">    <span class="comment">// some code</span></div><div class="line">  &#125;</div><div class="line">&#125;</div><div class="line">computed: &#123;</div><div class="line">  ...mapState(&#123;</div><div class="line">    imgStatus: <span class="function"><span class="params">state</span> =&gt;</span> state.imgstore.img_status</div><div class="line">  &#125;)</div><div class="line">&#125;,</div><div class="line">watch: &#123;</div><div class="line">  imgStatus () &#123;</div><div class="line">    <span class="keyword">if</span> (<span class="keyword">this</span>.imgStatus === <span class="string">'finished'</span>) &#123;</div><div class="line">      <span class="keyword">this</span>.submit()</div><div class="line">    &#125;</div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>上述代码中，使用<code>upload</code>方法更新了上传状态，让图片开始执行上传操作，使用<code>watch</code>进行上传状态的监视，当上传完成(<code>img_status</code>状态变为<code>finished</code>)，执行回调函数<code>submit</code>。</p>
+<p>源文件如下:</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// Created by quanzaiyu on 2017/10/25 0025.</span></div><div class="line"><span class="keyword">var</span> state = &#123;</div><div class="line">  img_upload_cache: [],</div><div class="line">  img_paths: [],</div><div class="line">  img_status: <span class="string">'ready'</span> <span class="comment">// 上传状态 ready selected uploading finished</span></div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="keyword">const</span> actions = &#123;&#125;</div><div class="line"></div><div class="line"><span class="keyword">const</span> getters = &#123;&#125;</div><div class="line"></div><div class="line"><span class="keyword">const</span> mutations = &#123;</div><div class="line">  set_img_upload_cache (state, arg) &#123;</div><div class="line">    state.img_upload_cache = arg</div><div class="line">  &#125;,</div><div class="line">  set_img_paths (state, arg) &#123;</div><div class="line">    state.img_paths = arg</div><div class="line">  &#125;,</div><div class="line">  set_img_status (state, arg) &#123;</div><div class="line">    state.img_status = arg</div><div class="line">  &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="keyword">export</span> <span class="keyword">default</span> &#123;</div><div class="line">  state,</div><div class="line">  mutations,</div><div class="line">  actions,</div><div class="line">  getters</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h2 id="uploader-vue"><a href="#uploader-vue" class="headerlink" title="uploader.vue"></a>uploader.vue</h2><p>先看源代码(为了节省空间，未贴出<code>style</code>部分的代码):</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div><div class="line">79</div><div class="line">80</div><div class="line">81</div><div class="line">82</div><div class="line">83</div><div class="line">84</div><div class="line">85</div><div class="line">86</div><div class="line">87</div><div class="line">88</div><div class="line">89</div><div class="line">90</div><div class="line">91</div><div class="line">92</div><div class="line">93</div><div class="line">94</div><div class="line">95</div><div class="line">96</div><div class="line">97</div><div class="line">98</div><div class="line">99</div><div class="line">100</div><div class="line">101</div><div class="line">102</div><div class="line">103</div><div class="line">104</div><div class="line">105</div><div class="line">106</div><div class="line">107</div><div class="line">108</div><div class="line">109</div><div class="line">110</div><div class="line">111</div><div class="line">112</div><div class="line">113</div><div class="line">114</div><div class="line">115</div><div class="line">116</div><div class="line">117</div><div class="line">118</div><div class="line">119</div><div class="line">120</div><div class="line">121</div><div class="line">122</div><div class="line">123</div><div class="line">124</div><div class="line">125</div><div class="line">126</div><div class="line">127</div><div class="line">128</div><div class="line">129</div><div class="line">130</div><div class="line">131</div><div class="line">132</div><div class="line">133</div><div class="line">134</div><div class="line">135</div><div class="line">136</div><div class="line">137</div><div class="line">138</div><div class="line">139</div><div class="line">140</div><div class="line">141</div></pre></td><td class="code"><pre><div class="line">&lt;template&gt;</div><div class="line">  &lt;div class=&quot;imgUploader&quot;&gt;</div><div class="line">    &lt;div class=&quot;file-list&quot;&gt;</div><div class="line">      &lt;section</div><div class="line">        v-for=&quot;(file, index) in imgStore&quot; :key=&quot;index&quot;</div><div class="line">        class=&quot;file-item draggable-item&quot;</div><div class="line">      &gt;</div><div class="line">        &lt;img :src=&quot;file.src&quot; alt=&quot;&quot; ondragstart=&quot;return false;&quot;&gt;</div><div class="line">        &lt;span class=&quot;file-remove&quot; @click=&quot;remove(index)&quot;&gt;+&lt;/span&gt;</div><div class="line">      &lt;/section&gt;</div><div class="line">      &lt;section class=&quot;file-item&quot; v-if=&quot;imgStatus !== &apos;finished&apos;&quot;&gt;</div><div class="line">        &lt;div class=&quot;add&quot;&gt;</div><div class="line">          &lt;span&gt;+&lt;/span&gt;</div><div class="line">          &lt;input type=&quot;file&quot; pictype=&apos;30010003&apos; multiple</div><div class="line">            data-role=&quot;none&quot; accept=&quot;image/*&quot;</div><div class="line">            @change=&quot;selectImgs&quot;</div><div class="line">            ref=&quot;file&quot;</div><div class="line">          &gt;</div><div class="line">        &lt;/div&gt;</div><div class="line">      &lt;/section&gt;</div><div class="line">    &lt;/div&gt;</div><div class="line">    &lt;div class=&quot;uploadBtn&quot;&gt;</div><div class="line">      &lt;section&gt;</div><div class="line">        &lt;span v-if=&quot;imgStore.length &gt; 0&quot; class=&quot;empty&quot;</div><div class="line">          @click=&quot;empty&quot;&gt;</div><div class="line">            &#123;&#123;imgStatus === &apos;finished&apos; ? &apos;重新上传&apos; : &apos;清空&apos;&#125;&#125;</div><div class="line">        &lt;/span&gt;</div><div class="line">      &lt;/section&gt;</div><div class="line">    &lt;/div&gt;</div><div class="line">  &lt;/div&gt;</div><div class="line">&lt;/template&gt;</div><div class="line"></div><div class="line">&lt;script&gt;</div><div class="line">import &#123; mapState &#125; from &apos;vuex&apos;</div><div class="line">export default &#123;</div><div class="line">  props: [&apos;url&apos;],</div><div class="line">  data () &#123;</div><div class="line">    return &#123;</div><div class="line">      files: [], // 文件缓存</div><div class="line">      index: 0 // 序列号</div><div class="line">    &#125;</div><div class="line">  &#125;,</div><div class="line">  computed: &#123;</div><div class="line">    ...mapState(&#123;</div><div class="line">      imgStore: state =&gt; state.imgstore.img_upload_cache,</div><div class="line">      imgPaths: state =&gt; state.imgstore.img_paths,</div><div class="line">      imgStatus: state =&gt; state.imgstore.img_status</div><div class="line">    &#125;)</div><div class="line">  &#125;,</div><div class="line">  methods: &#123;</div><div class="line">    // 选择图片</div><div class="line">    selectImgs () &#123; # ①</div><div class="line">      let fileList = this.$refs.file.files</div><div class="line">      for (let i = 0; i &lt; fileList.length; i++) &#123;</div><div class="line">        // 文件过滤</div><div class="line">        if (fileList[i].name.match(/.jpg|.gif|.png|.bmp/i)) &#123; </div><div class="line">          let item = &#123;</div><div class="line">            key: this.index++,</div><div class="line">            name: fileList[i].name,</div><div class="line">            size: fileList[i].size,</div><div class="line">            file: fileList[i]</div><div class="line">          &#125;</div><div class="line">          // 将图片文件转成BASE64格式</div><div class="line">          let reader = new FileReader()  # ②</div><div class="line">          reader.onload = (e) =&gt; &#123;</div><div class="line">            this.$set(item, &apos;src&apos;, e.target.result)</div><div class="line">          &#125;</div><div class="line">          reader.readAsDataURL(fileList[i])</div><div class="line">          this.files.push(item)</div><div class="line">          this.$store.commit(&apos;set_img_upload_cache&apos;, this.files) // 存储文件缓存</div><div class="line">          this.$store.commit(&apos;set_img_status&apos;, &apos;selected&apos;) // 更新文件上传状态</div><div class="line">        &#125;</div><div class="line">      &#125;</div><div class="line">    &#125;,</div><div class="line">    // 上传图片</div><div class="line">    submit () &#123;</div><div class="line">      let formData = new FormData()	# ③</div><div class="line">      this.imgStore.forEach((item, index) =&gt; &#123;</div><div class="line">        item.name = &apos;imgFiles[&apos; + index + &apos;]&apos; # ④</div><div class="line">        formData.append(item.name, item.file)</div><div class="line">      &#125;)</div><div class="line">      formData.forEach((v, k) =&gt; console.log(k, &apos; =&gt; &apos;, v))</div><div class="line">      // 新建请求</div><div class="line">      const xhr = new XMLHttpRequest()	# ⑤</div><div class="line">      xhr.open(&apos;POST&apos;, this.url, true)</div><div class="line">      xhr.send(formData)</div><div class="line">      xhr.onload = () =&gt; &#123;</div><div class="line">        if (xhr.status === 200 || xhr.status === 304) &#123;</div><div class="line">          let datas = JSON.parse(xhr.responseText)</div><div class="line">          console.log(&apos;response: &apos;, datas)</div><div class="line">          // 存储返回的地址</div><div class="line">          let imgUrlPaths = new Set()	# ⑥</div><div class="line">          datas.forEach(e =&gt; &#123; // error === 0为成功状态</div><div class="line">            e.error === 0 &amp;&amp; imgUrlPaths.add(e.url)</div><div class="line">          &#125;)</div><div class="line">          this.$store.commit(&apos;set_img_paths&apos;, imgUrlPaths) // 存储返回的地址</div><div class="line">          this.files = [] // 清空文件缓存</div><div class="line">          this.index = 0 // 初始化序列号</div><div class="line">          this.$store.commit(&apos;set_img_status&apos;, &apos;finished&apos;) // 更新文件上传状态</div><div class="line">        &#125; else &#123;</div><div class="line">          alert(`$&#123;xhr.status&#125; 请求错误!`)</div><div class="line">        &#125;</div><div class="line">      &#125;</div><div class="line">    &#125;,</div><div class="line">    // 移除图片</div><div class="line">    remove (index) &#123;</div><div class="line">      this.files.splice(index, 1)</div><div class="line">      this.$store.commit(&apos;set_img_upload_cache&apos;, this.files) // 更新存储文件缓存</div><div class="line">    &#125;,</div><div class="line">    // 清空图片</div><div class="line">    empty () &#123;</div><div class="line">      this.files.splice(0, this.files.length)</div><div class="line">      this.$store.commit(&apos;set_img_upload_cache&apos;, this.files) // 更新存储文件缓存</div><div class="line">      this.$store.commit(&apos;set_img_paths&apos;, [])</div><div class="line">    &#125;</div><div class="line">  &#125;,</div><div class="line">  beforeCreate () &#123;</div><div class="line">    this.$store.commit(&apos;set_img_status&apos;, &apos;ready&apos;) // 更新文件上传状态</div><div class="line">  &#125;,</div><div class="line">  destroyed () &#123;</div><div class="line">    this.$store.commit(&apos;set_img_upload_cache&apos;, [])</div><div class="line">    this.$store.commit(&apos;set_img_paths&apos;, [])</div><div class="line">  &#125;,</div><div class="line">  watch: &#123;</div><div class="line">    imgStatus () &#123;</div><div class="line">      if (this.imgStatus === &apos;uploading&apos;) &#123;</div><div class="line">        this.submit()	# ⑦</div><div class="line">      &#125;</div><div class="line">    &#125;,</div><div class="line">    imgStore () &#123;</div><div class="line">      if (this.imgStore.length &lt;= 0) &#123;</div><div class="line">        this.$store.commit(&apos;set_img_status&apos;, &apos;ready&apos;) // 更新文件上传状态</div><div class="line">      &#125;</div><div class="line">    &#125;</div><div class="line">  &#125;</div><div class="line">&#125;</div><div class="line">&lt;/script&gt;</div><div class="line"></div><div class="line">&lt;style lang=&quot;less&quot; scoped&gt;</div><div class="line">...</div><div class="line">&lt;/style&gt;</div></pre></td></tr></table></figure>
+<p>以上代码中有一些注释序号，是此插件设计的主要思路，其他代码都比较容易理解，分别说下</p>
+<ul>
+<li>① 选择文件后执行，<code>img_status</code>状态变为<code>selected</code>。</li>
+<li>② 将带上传的图片文件转化为Base64格式，用于缩略图显示。</li>
+<li>③ 创建一个表单对象，用于存储待上传的文件。</li>
+<li>④ 注意这里的<code>name</code>属性值，暂时写死，后面设计打算从组件中指定<code>name</code>属性，如果是多文件的话，<code>name</code>属性的数组序号从0开始递增。</li>
+<li>⑤ 未依赖任何Ajax请求插件，使用原生的<code>XMLHttpRequest</code>对象创建请求。</li>
+<li>⑥ 存储上传成功后服务器返回的上传路径。</li>
+<li>⑦ 检测上传状态，当在使用此插件时将<code>img_status</code>的状态设置为<code>uploading</code>时执行上传操作。 </li>
+</ul>
+<h1 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h1><p>参考本项目的<a href="https://github.com/quanzaiyu/vue-easy-uploader" target="_blank" rel="external">GItHub</a>和<a href="https://www.npmjs.com/package/vue-easy-uploader" target="_blank" rel="external">NPM</a>。</p>
+<h1 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h1><p>使用此插件时，需要与后端约定返回的数据格式，如下:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">[&#123;&quot;error&quot;:0,&quot;url&quot;:&quot;\/uploads\/api\/201711\/25\/fde412bd83d3ec5d6a49769bd0c143cd.jpg&quot;&#125;,&#123;&quot;error&quot;:0,&quot;url&quot;:&quot;\/uploads\/api\/201711\/25\/c6fd51f0388c63a0b6d350331c945fb1.jpg&quot;&#125;]</div></pre></td></tr></table></figure>
+<p>预览如下:</p>
+<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="https://raw.githubusercontent.com/quanzaiyu/vue-easy-uploader/master/static/04.png" alt="" title="">
+                </div>
+                <div class="image-caption"></div>
+            </figure>
+<p>返回的是一个上传后的路径数组，包括<code>error</code>和<code>url</code>字段，每个文件有自己的上传状态，当<code>error</code>为0的时候为上传成功，并返回上传后的路径<code>url</code></p>
+<h1 id="改进"><a href="#改进" class="headerlink" title="改进"></a>改进</h1><p>后续版本打算进行如下改进</p>
+<ol>
+<li>把表单的<code>name</code>属性名称通过组件传递。</li>
+<li>自定义上传成功后服务器响应的数据格式，比如自定义<code>error</code>的名称和其值所表示的状态。</li>
+<li>支持其他类型文件的上传，可以在组件中自行制定上传的文件类型，及其预览方式。</li>
+</ol>
+
+        </div>
+
+        <blockquote class="post-copyright">
+    <div class="content">
+        
+<span class="post-time">
+    最後更新時間：<time datetime="2017-12-05T01:35:46.270Z" itemprop="dateUpdated">2017-12-05 09:35:46</time>
+</span><br>
+
+
+        
+        这里可以写作者留言，标签和 hexo 中所有变量及辅助函数等均可调用，示例：<a href="/2017/12/05/Vue的移动端多图上传插件vue-easy-uploader/" target="_blank" rel="external">http://blog.xiaoyulive.top/2017/12/05/Vue的移动端多图上传插件vue-easy-uploader/</a>
+        
+    </div>
+    <footer>
+        <a href="http://blog.xiaoyulive.top">
+            <img src="/img/avatar.jpg" alt="Quanzaiyu">
+            Quanzaiyu
+        </a>
+    </footer>
+</blockquote>
+
+        
+<div class="page-reward">
+    <a id="rewardBtn" href="javascript:;" class="page-reward-btn waves-effect waves-circle waves-light">赏</a>
+</div>
+
+
+
+        <div class="post-footer">
+            
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Vue/">Vue</a></li></ul>
+
+
+            
+<div class="page-share-wrap">
+    
+
+<div class="page-share" id="pageShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://blog.xiaoyulive.top/2017/12/05/Vue的移动端多图上传插件vue-easy-uploader/&title=《Vue的移动端多图上传插件vue-easy-uploader》 — 小昱博客&pic=http://blog.xiaoyulive.top/img/avatar.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://blog.xiaoyulive.top/2017/12/05/Vue的移动端多图上传插件vue-easy-uploader/&title=《Vue的移动端多图上传插件vue-easy-uploader》 — 小昱博客&source=" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://blog.xiaoyulive.top/2017/12/05/Vue的移动端多图上传插件vue-easy-uploader/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《Vue的移动端多图上传插件vue-easy-uploader》 — 小昱博客&url=http://blog.xiaoyulive.top/2017/12/05/Vue的移动端多图上传插件vue-easy-uploader/&via=http://blog.xiaoyulive.top" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://blog.xiaoyulive.top/2017/12/05/Vue的移动端多图上传插件vue-easy-uploader/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+
+    <a href="javascript:;" id="shareFab" class="page-share-fab waves-effect waves-circle">
+        <i class="icon icon-share-alt icon-lg"></i>
+    </a>
+</div>
+
+
+
+        </div>
+    </div>
+
+    
+<nav class="post-nav flex-row flex-justify-between">
+  
+    <div class="waves-block waves-effect prev">
+      <a href="/2017/12/05/基于node的Express应用程序框架/" id="post-prev" class="post-nav-link">
+        <div class="tips"><i class="icon icon-angle-left icon-lg icon-pr"></i> Prev</div>
+        <h4 class="title">基于node的Express应用程序框架</h4>
+      </a>
+    </div>
+  
+
+  
+    <div class="waves-block waves-effect next">
+      <a href="/2017/12/05/Python学习笔记03 - 高级/" id="post-next" class="post-nav-link">
+        <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
+        <h4 class="title">Python学习笔记03 - 高级</h4>
+      </a>
+    </div>
+  
+</nav>
+
+
+
+    
+
+
+<section class="comments" id="comments">
+    <div id="disqus_thread"></div>
+    <script>
+    var disqus_shortname = 'true';
+    lazyScripts.push('//' + disqus_shortname + '.disqus.com/embed.js')
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</section>
+
+
+
+
+<section class="comments" id="comments">
+    <!-- UY BEGIN -->
+    <div id="uyan_frame"></div>
+    <script src="http://v2.uyan.cc/code/uyan.js?uid=true"></script>
+    <!-- UY END -->
+</section>
+
+
+
+
+<section class="comments" id="comments">
+    <div id="gitment_thread"></div>
+    <link rel="stylesheet" href="//unpkg.com/gitment/style/default.css">
+    <script src="//unpkg.com/gitment/dist/gitment.browser.js"></script>
+    <script>
+        var gitment = new Gitment({
+            owner: 'quanzaiyu',
+            repo: 'quanzaiyu.github.io',
+            oauth: {
+                client_id: '3f4b90df85c3c29d643f',
+                client_secret: 'c951dd3dbd71e2edd597aa527a1a5d7e473d7375',
+            },
+        })
+        gitment.render('comments')
+    </script>
+</section>
+
+
+
+
+</article>
+
+<div id="reward" class="page-modal reward-lay">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <h3 class="reward-title">
+        <i class="icon icon-quote-left"></i>
+        谢谢大爷~
+        <i class="icon icon-quote-right"></i>
+    </h3>
+    <div class="reward-content">
+        
+        <div class="reward-code">
+            <img id="rewardCode" src="/img/wechat.jpg" alt="打赏二维码">
+        </div>
+        
+        <label class="reward-toggle">
+            <input id="rewardToggle" type="checkbox" class="reward-toggle-check"
+                data-wechat="/img/wechat.jpg" data-alipay="/img/alipay.jpg">
+            <div class="reward-toggle-ctrol">
+                <span class="reward-toggle-item wechat">微信</span>
+                <span class="reward-toggle-label"></span>
+                <span class="reward-toggle-item alipay">支付宝</span>
+            </div>
+        </label>
+        
+    </div>
+</div>
+
+
+
+</div>
+
+<!-- <script>
+    particlesJS.load('canvas-container', '/json/particles2.json', function () {
+        console.log('callback - particles.js config loaded');
+    })
+</script> -->
+        <footer class="footer">
+    <div class="top">
+        
+<p>
+    <span id="busuanzi_container_site_uv" style='display:none'>
+        站点总访客数：<span id="busuanzi_value_site_uv"></span>
+    </span>
+    <span id="busuanzi_container_site_pv" style='display:none'>
+        站点总访问量：<span id="busuanzi_value_site_pv"></span>
+    </span>
+</p>
+
+
+        <p>
+            
+            <!-- <span>本部落格係採用<a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.zh_TW">創用 CC 姓名標示 4.0 國際 授權條款授權</a></span> -->
+        </p>
+    </div>
+    <div class="bottom">
+        <p><span>Quanzaiyu &copy; 2015 - 2017</span>
+            <span>
+                
+                <a href="http://www.miitbeian.gov.cn/" target="_blank">滇ICP备16006294号</a><br>
+                
+                Power by <a href="http://hexo.io/" target="_blank">Hexo</a>
+            </span>
+        </p>
+    </div>
+</footer>
+
+    </main>
+    <div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+
+
+<div class="global-share" id="globalShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://blog.xiaoyulive.top/2017/12/05/Vue的移动端多图上传插件vue-easy-uploader/&title=《Vue的移动端多图上传插件vue-easy-uploader》 — 小昱博客&pic=http://blog.xiaoyulive.top/img/avatar.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://blog.xiaoyulive.top/2017/12/05/Vue的移动端多图上传插件vue-easy-uploader/&title=《Vue的移动端多图上传插件vue-easy-uploader》 — 小昱博客&source=" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://blog.xiaoyulive.top/2017/12/05/Vue的移动端多图上传插件vue-easy-uploader/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《Vue的移动端多图上传插件vue-easy-uploader》 — 小昱博客&url=http://blog.xiaoyulive.top/2017/12/05/Vue的移动端多图上传插件vue-easy-uploader/&via=http://blog.xiaoyulive.top" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://blog.xiaoyulive.top/2017/12/05/Vue的移动端多图上传插件vue-easy-uploader/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+<div class="page-modal wx-share" id="wxShare">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <img src="//api.qrserver.com/v1/create-qr-code/?data=http://blog.xiaoyulive.top/2017/12/05/Vue的移动端多图上传插件vue-easy-uploader/" alt="微信分享二维码">
+</div>
+
+
+
+
+    <script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+<script>
+var BLOG = { ROOT: '/', SHARE: true, REWARD: true };
+
+
+</script>
+
+<script src="/js/main.min.js?v=1.6.17"></script>
+
+
+<div class="search-panel" id="search-panel">
+    <ul class="search-result" id="search-result"></ul>
+</div>
+<template id="search-tpl">
+<li class="item">
+    <a href="{path}" class="waves-block waves-effect">
+        <div class="title ellipsis" title="{title}">{title}</div>
+        <div class="flex-row flex-middle">
+            <div class="tags ellipsis">
+                {tags}
+            </div>
+            <time class="flex-col time">{date}</time>
+        </div>
+    </a>
+</li>
+</template>
+
+<script src="/js/search.min.js?v=1.6.17" async></script>
+
+
+
+
+
+
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+<script>
+(function() {
+    var OriginTitile = document.title, titleTime;
+    document.addEventListener('visibilitychange', function() {
+        if (document.hidden) {
+            document.title = 'ﾍ(;´Д｀ﾍ)快回来啊！';
+            clearTimeout(titleTime);
+        } else {
+            document.title = '(つェ⊂)欢迎回来!';
+            titleTime = setTimeout(function() {
+                document.title = OriginTitile;
+            },2000);
+        }
+    });
+})();
+</script>
+
+
+
+</body>
+</html>
