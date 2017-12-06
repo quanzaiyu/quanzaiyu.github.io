@@ -18,7 +18,7 @@
     
     
     
-    <title>Python学习笔记04 - 模块导入和导出、标准库 | 小昱博客 | 勤学如春起之苗，不见其增，日有所长；辍学如磨刀之石，不见其损，日有所亏</title>
+    <title>Python学习笔记04 - 模块、标准库 | 小昱博客 | 勤学如春起之苗，不见其增，日有所长；辍学如磨刀之石，不见其损，日有所亏</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
     <meta name="theme-color" content="#3F51B5">
@@ -28,13 +28,13 @@
     <meta name="description" content="import 与 from…import在 python 用 import 或者 from…import 来导入相应的模块。  将整个模块(somemodule)导入，格式为：import somemodule 从某个模块中导入某个函数,格式为：from somemodule import somefunction 从某个模块中导入多个函数,格式为：from somemodule import f">
 <meta name="keywords" content="Python">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Python学习笔记04 - 模块导入和导出、标准库">
-<meta property="og:url" content="http://blog.xiaoyulive.top/2017/12/05/Python学习笔记04 - 模块导入和导出、标准库/index.html">
+<meta property="og:title" content="Python学习笔记04 - 模块、标准库">
+<meta property="og:url" content="http://blog.xiaoyulive.top/2017/12/06/Python学习笔记04 - 模块、标准库/index.html">
 <meta property="og:site_name" content="小昱博客">
 <meta property="og:description" content="import 与 from…import在 python 用 import 或者 from…import 来导入相应的模块。  将整个模块(somemodule)导入，格式为：import somemodule 从某个模块中导入某个函数,格式为：from somemodule import somefunction 从某个模块中导入多个函数,格式为：from somemodule import f">
-<meta property="og:updated_time" content="2017-12-05T10:14:02.671Z">
+<meta property="og:updated_time" content="2017-12-06T05:52:12.976Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Python学习笔记04 - 模块导入和导出、标准库">
+<meta name="twitter:title" content="Python学习笔记04 - 模块、标准库">
 <meta name="twitter:description" content="import 与 from…import在 python 用 import 或者 from…import 来导入相应的模块。  将整个模块(somemodule)导入，格式为：import somemodule 从某个模块中导入某个函数,格式为：from somemodule import somefunction 从某个模块中导入多个函数,格式为：from somemodule import f">
     
     <link rel="shortcut icon" href="/favicon.ico">
@@ -145,13 +145,13 @@
         <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
           <i class="icon icon-lg icon-navicon"></i>
         </a>
-        <div class="flex-col header-title ellipsis">Python学习笔记04 - 模块导入和导出、标准库</div>
+        <div class="flex-col header-title ellipsis">Python学习笔记04 - 模块、标准库</div>
         
         <div class="search-wrap" id="search-wrap">
             <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
                 <i class="icon icon-lg icon-chevron-left"></i>
             </a>
-            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="输入感兴趣的关键字">
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="Search">
             <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
                 <i class="icon icon-lg icon-search"></i>
             </a>
@@ -167,11 +167,11 @@
 <header class="content-header post-header">
 
     <div class="container fade-scale">
-        <h1 class="title">Python学习笔记04 - 模块导入和导出、标准库</h1>
+        <h1 class="title">Python学习笔记04 - 模块、标准库</h1>
         <h5 class="subtitle">
             
-                <time datetime="2017-12-05T06:57:12.890Z" itemprop="datePublished" class="page-time">
-  2017-12-05
+                <time datetime="2017-12-06T01:42:27.113Z" itemprop="datePublished" class="page-time">
+  2017-12-06
 </time>
 
 
@@ -193,17 +193,17 @@
     <aside class="post-widget">
         <nav class="post-toc-wrap" id="post-toc">
             <h4>TOC</h4>
-            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#import-与-from…import"><span class="post-toc-number">1.</span> <span class="post-toc-text">import 与 from…import</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#python-标准库"><span class="post-toc-number">2.</span> <span class="post-toc-text">python 标准库</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#sys"><span class="post-toc-number">2.1.</span> <span class="post-toc-text">sys</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#os"><span class="post-toc-number">2.2.</span> <span class="post-toc-text">os</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#os-path"><span class="post-toc-number">2.2.1.</span> <span class="post-toc-text">os.path</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#glob"><span class="post-toc-number">2.3.</span> <span class="post-toc-text">glob</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#math"><span class="post-toc-number">2.4.</span> <span class="post-toc-text">math</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#random"><span class="post-toc-number">2.5.</span> <span class="post-toc-text">random</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#platform"><span class="post-toc-number">2.6.</span> <span class="post-toc-text">platform</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#pickle和cPickle"><span class="post-toc-number">2.7.</span> <span class="post-toc-text">pickle和cPickle</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#dump"><span class="post-toc-number">2.7.1.</span> <span class="post-toc-text">dump()</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#load"><span class="post-toc-number">2.7.2.</span> <span class="post-toc-text">load()</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#dumps"><span class="post-toc-number">2.7.3.</span> <span class="post-toc-text">dumps()</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#subprocess"><span class="post-toc-number">2.8.</span> <span class="post-toc-text">subprocess</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Queue"><span class="post-toc-number">2.9.</span> <span class="post-toc-text">Queue</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#StringIO"><span class="post-toc-number">2.10.</span> <span class="post-toc-text">StringIO</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#logging"><span class="post-toc-number">2.11.</span> <span class="post-toc-text">logging</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#ConfigParser"><span class="post-toc-number">2.12.</span> <span class="post-toc-text">ConfigParser</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#urllib与urllib2"><span class="post-toc-number">2.13.</span> <span class="post-toc-text">urllib与urllib2</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#json"><span class="post-toc-number">2.14.</span> <span class="post-toc-text">json</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#time"><span class="post-toc-number">2.15.</span> <span class="post-toc-text">time</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#datetime"><span class="post-toc-number">2.16.</span> <span class="post-toc-text">datetime</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#datetime-date"><span class="post-toc-number">2.16.1.</span> <span class="post-toc-text">datetime.date()</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#datetime-datetime"><span class="post-toc-number">2.16.2.</span> <span class="post-toc-text">datetime.datetime()</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#datetime-time"><span class="post-toc-number">2.16.3.</span> <span class="post-toc-text">datetime.time()</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#datetime-timedelta"><span class="post-toc-number">2.16.4.</span> <span class="post-toc-text">datetime.timedelta()</span></a></li></ol></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#参考资料"><span class="post-toc-number">3.</span> <span class="post-toc-text">参考资料</span></a></li></ol>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#import-与-from…import"><span class="post-toc-number">1.</span> <span class="post-toc-text">import 与 from…import</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#使用模块"><span class="post-toc-number">2.</span> <span class="post-toc-text">使用模块</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#自定义模块"><span class="post-toc-number">3.</span> <span class="post-toc-text">自定义模块</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#作用域"><span class="post-toc-number">3.1.</span> <span class="post-toc-text">作用域</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#导出"><span class="post-toc-number">3.2.</span> <span class="post-toc-text">导出</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#安装第三方模块"><span class="post-toc-number">4.</span> <span class="post-toc-text">安装第三方模块</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Anaconda"><span class="post-toc-number">4.1.</span> <span class="post-toc-text">Anaconda</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#python-内建模块"><span class="post-toc-number">5.</span> <span class="post-toc-text">python 内建模块</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#sys"><span class="post-toc-number">5.1.</span> <span class="post-toc-text">sys</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#os"><span class="post-toc-number">5.2.</span> <span class="post-toc-text">os</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#os-path"><span class="post-toc-number">5.2.1.</span> <span class="post-toc-text">os.path</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#应用"><span class="post-toc-number">5.2.2.</span> <span class="post-toc-text">应用</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#glob"><span class="post-toc-number">5.3.</span> <span class="post-toc-text">glob</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#math"><span class="post-toc-number">5.4.</span> <span class="post-toc-text">math</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#random"><span class="post-toc-number">5.5.</span> <span class="post-toc-text">random</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#platform"><span class="post-toc-number">5.6.</span> <span class="post-toc-text">platform</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#subprocess"><span class="post-toc-number">5.7.</span> <span class="post-toc-text">subprocess</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Queue"><span class="post-toc-number">5.8.</span> <span class="post-toc-text">Queue</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#logging"><span class="post-toc-number">5.9.</span> <span class="post-toc-text">logging</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#ConfigParser"><span class="post-toc-number">5.10.</span> <span class="post-toc-text">ConfigParser</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#urllib与urllib2"><span class="post-toc-number">5.11.</span> <span class="post-toc-text">urllib与urllib2</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#time"><span class="post-toc-number">5.12.</span> <span class="post-toc-text">time</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#datetime"><span class="post-toc-number">5.13.</span> <span class="post-toc-text">datetime</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#datetime-date"><span class="post-toc-number">5.13.1.</span> <span class="post-toc-text">datetime.date()</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#datetime-datetime"><span class="post-toc-number">5.13.2.</span> <span class="post-toc-text">datetime.datetime()</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#datetime-time"><span class="post-toc-number">5.13.3.</span> <span class="post-toc-text">datetime.time()</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#datetime-timedelta"><span class="post-toc-number">5.13.4.</span> <span class="post-toc-text">datetime.timedelta()</span></a></li></ol></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#参考资料"><span class="post-toc-number">6.</span> <span class="post-toc-text">参考资料</span></a></li></ol>
         </nav>
     </aside>
     
-<article id="post-Python学习笔记04 - 模块导入和导出、标准库"
+<article id="post-Python学习笔记04 - 模块、标准库"
   class="post-article article-type-post fade" itemprop="blogPost">
 
     <div class="post-card">
-        <h1 class="post-card-title">Python学习笔记04 - 模块导入和导出、标准库</h1>
+        <h1 class="post-card-title">Python学习笔记04 - 模块、标准库</h1>
         <div class="post-meta">
-            <time class="post-time" title="2017-12-05 14:57:12" datetime="2017-12-05T06:57:12.890Z"  itemprop="datePublished">2017-12-05</time>
+            <time class="post-time" title="2017-12-06 09:42:27" datetime="2017-12-06T01:42:27.113Z"  itemprop="datePublished">2017-12-06</time>
 
             
 	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/Python/">Python</a></li></ul>
@@ -225,7 +225,32 @@
 <li>从某个模块中导入多个函数,格式为：<code>from somemodule import firstfunc, secondfunc, thirdfunc</code></li>
 <li>将某个模块中的全部函数导入，格式为：<code>from somemodule import *</code></li>
 </ul>
-<h1 id="python-标准库"><a href="#python-标准库" class="headerlink" title="python 标准库"></a>python 标准库</h1><h2 id="sys"><a href="#sys" class="headerlink" title="sys"></a>sys</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">import</span> sys</div></pre></td></tr></table></figure>
+<h1 id="使用模块"><a href="#使用模块" class="headerlink" title="使用模块"></a>使用模块</h1><p>使用内建的<code>sys</code>模块为例</p>
+<p><strong>hello.py</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div></pre></td><td class="code"><pre><div class="line"><span class="comment">#!/usr/bin/env python3</span></div><div class="line"><span class="comment"># -*- coding: utf-8 -*-</span></div><div class="line"></div><div class="line"><span class="string">' a test module '</span></div><div class="line"></div><div class="line">__author__ = <span class="string">'Quanzaiyu'</span></div><div class="line"></div><div class="line"><span class="keyword">import</span> sys</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">test</span><span class="params">()</span>:</span></div><div class="line">    args = sys.argv</div><div class="line">    <span class="keyword">if</span> len(args)==<span class="number">1</span>:</div><div class="line">        print(<span class="string">'Hello, world!'</span>)</div><div class="line">    <span class="keyword">elif</span> len(args)==<span class="number">2</span>:</div><div class="line">        print(<span class="string">'Hello, %s!'</span> % args[<span class="number">1</span>])</div><div class="line">    <span class="keyword">else</span>:</div><div class="line">        print(<span class="string">'Too many arguments!'</span>)</div><div class="line"></div><div class="line"><span class="keyword">if</span> __name__==<span class="string">'__main__'</span>:</div><div class="line">    test()</div></pre></td></tr></table></figure>
+<p>运行</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">$ python3 hello.py</div><div class="line">Hello, world!</div><div class="line">$ python hello.py Xiaoyu</div><div class="line">Hello, Xiaoyu!</div></pre></td></tr></table></figure>
+<p>运行<code>python3 hello.py</code>获得的<code>sys.argv</code>就是<code>[&#39;hello.py&#39;]</code>。</p>
+<p>运行<code>python3 hello.py Michael</code>获得的<code>sys.argv</code>就是<code>[&#39;hello.py&#39;, &#39;Michael]</code>。</p>
+<p>因此可以看到两种运行结果。</p>
+<h1 id="自定义模块"><a href="#自定义模块" class="headerlink" title="自定义模块"></a>自定义模块</h1><h2 id="作用域"><a href="#作用域" class="headerlink" title="作用域"></a>作用域</h2><p>在一个模块中，我们可能会定义很多函数和变量，但有的函数和变量我们希望给别人使用，有的函数和变量我们希望仅仅在模块内部使用。在Python中，是通过<code>_</code>前缀来实现的。</p>
+<p>正常的函数和变量名是公开的（public），可以被直接引用，比如：<code>abc</code>，<code>x123</code>，<code>PI</code>等；</p>
+<p>类似<code>__xxx__</code>这样的变量是特殊变量，可以被直接引用，但是有特殊用途，比如上面的<code>__author__</code>，<code>__name__</code>就是特殊变量，<code>hello</code>模块定义的文档注释也可以用特殊变量<code>__doc__</code>访问，我们自己的变量一般不要用这种变量名；</p>
+<p>类似<code>_xxx</code>和<code>__xxx</code>这样的函数或变量就是非公开的（private），不应该被直接引用，比如<code>_abc</code>，<code>__abc</code>等。</p>
+<p><strong>export.py</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">_private_1</span><span class="params">(name)</span>:</span></div><div class="line">    <span class="keyword">return</span> <span class="string">'Hello, %s'</span> % name</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">_private_2</span><span class="params">(name)</span>:</span></div><div class="line">    <span class="keyword">return</span> <span class="string">'Hi, %s'</span> % name</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">greeting</span><span class="params">(name)</span>:</span></div><div class="line">    <span class="keyword">if</span> len(name) &gt; <span class="number">3</span>:</div><div class="line">        <span class="keyword">return</span> _private_1(name)</div><div class="line">    <span class="keyword">else</span>:</div><div class="line">        <span class="keyword">return</span> _private_2(name)</div></pre></td></tr></table></figure>
+<p>我们在模块里公开<code>greeting()</code>函数，而把内部逻辑用private函数隐藏起来了，这样，调用<code>greeting()</code>函数不用关心内部的private函数细节，这也是一种非常有用的代码封装和抽象的方法，即：</p>
+<p>外部不需要引用的函数全部定义成private，只有外部需要引用的函数才定义为public。</p>
+<h2 id="导出"><a href="#导出" class="headerlink" title="导出"></a>导出</h2><p>导出模块不需要特定的语句，整个<code>export.py</code>文件就是一个模块，比如在上述文件同级目录下有一个叫<code>test.py</code>的文件:</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">import</span> export</div><div class="line"></div><div class="line">hello = export.greeting(<span class="string">'xiaoyu'</span>)</div><div class="line">print(hello)</div><div class="line">hello = export.greeting(<span class="string">'a'</span>)</div><div class="line">print(hello)</div></pre></td></tr></table></figure>
+<p>测试:</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$ python test.py</div><div class="line">Hello, xiaoyu</div><div class="line">Hi, a</div></pre></td></tr></table></figure>
+<h1 id="安装第三方模块"><a href="#安装第三方模块" class="headerlink" title="安装第三方模块"></a>安装第三方模块</h1><p>在Python中，安装第三方模块，是通过包管理工具pip完成的。</p>
+<p>第三方库都会在Python官方的<a href="https://pypi.python.org/" target="_blank" rel="external">pypi.python.org</a>网站注册，要安装一个第三方库，必须先知道该库的名称，可以在官网或者pypi上搜索，比如Pillow的名称叫<a href="https://pypi.python.org/pypi/Pillow/" target="_blank" rel="external">Pillow</a>，因此，安装Pillow的命令就是：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">pip install Pillow</div></pre></td></tr></table></figure>
+<h2 id="Anaconda"><a href="#Anaconda" class="headerlink" title="Anaconda"></a>Anaconda</h2><p>在使用Python时，我们经常需要用到很多第三方库，例如，上面提到的Pillow，以及MySQL驱动程序，Web框架Flask，科学计算Numpy等。用pip一个一个安装费时费力，还需要考虑兼容性。我们推荐直接使用<a href="https://www.anaconda.com/" target="_blank" rel="external">Anaconda</a>，这是一个基于Python的数据处理和科学计算平台，它已经内置了许多非常有用的第三方库，我们装上Anaconda，就相当于把数十个第三方模块自动安装好了，非常简单易用。</p>
+<p>可以从<a href="https://www.anaconda.com/download/" target="_blank" rel="external">Anaconda官网</a>下载GUI安装包，安装包有500~600M，所以需要耐心等待下载。下载后直接安装，Anaconda会把系统Path中的python指向自己自带的Python，并且，Anaconda安装的第三方模块会安装在Anaconda自己的路径下，不影响系统已安装的Python目录。</p>
+<h1 id="python-内建模块"><a href="#python-内建模块" class="headerlink" title="python 内建模块"></a>python 内建模块</h1><h2 id="sys"><a href="#sys" class="headerlink" title="sys"></a>sys</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">import</span> sys</div></pre></td></tr></table></figure>
 <blockquote>
 <p>系统模块。</p>
 </blockquote>
@@ -236,13 +261,17 @@
 <figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sys.stdout.write(<span class="string">"123456\n"</span>)</div></pre></td></tr></table></figure>
 <h2 id="os"><a href="#os" class="headerlink" title="os"></a>os</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">import</span> os</div></pre></td></tr></table></figure>
 <blockquote>
-<p>os模块主要对目录或文件操作。</p>
+<p>os模块封装了操作系统的目录和文件操作，要注意这些函数有的在<code>os</code>模块中，有的在<code>os.path</code>模块中。</p>
 </blockquote>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div></pre></td><td class="code"><pre><div class="line">os.name <span class="comment"># 返回操作系统类型，返回值是"posix"代表linux，"nt"代表windows</span></div><div class="line">os.getcwd() <span class="comment"># 获取当前路径</span></div><div class="line">os.environ <span class="comment"># 以字典形式返回系统变量</span></div><div class="line">os.listdir(path) <span class="comment"># 列表形式列出目录，path可选填，不填写为当前路径</span></div><div class="line">os.chdir(path) <span class="comment"># 改变当前工作目录到指定目录</span></div><div class="line">os.mkdir(path [, mode=<span class="number">0777</span>]) <span class="comment"># 创建目录</span></div><div class="line">os.makedirs(path [, mode=<span class="number">0777</span>]) <span class="comment"># 递归创建目录</span></div><div class="line">os.rmdir(path) <span class="comment"># 移除空目录</span></div><div class="line">os.remove(path) <span class="comment"># 移除文件</span></div><div class="line">os.rename(old, new) <span class="comment"># 重命名文件或目录</span></div><div class="line">os.stat(path) <span class="comment"># 获取文件或目录属性</span></div><div class="line">os.chown(path, uid, gid) <span class="comment"># 改变文件或目录所有者</span></div><div class="line">os.chmod(path, mode) <span class="comment"># 改变文件访问权限</span></div><div class="line">os.symlink(src, dst) <span class="comment"># 创建软链接</span></div><div class="line">os.unlink(path) <span class="comment"># 移除软链接</span></div><div class="line">os.urandom(n) <span class="comment"># 返回随机字节，适合加密使用</span></div><div class="line">os.getuid() <span class="comment"># 返回当前进程UID</span></div><div class="line">os.getlogin() <span class="comment"># 返回登录用户名</span></div><div class="line">os.getpid() <span class="comment"># 返回当前进程ID</span></div><div class="line">os.kill(pid, sig) <span class="comment"># 发送一个信号给进程</span></div><div class="line">os.walk(path) <span class="comment"># 目录树生成器，返回格式：(dirpath, [dirnames], [filenames])</span></div><div class="line">os.system(command) <span class="comment"># 执行shell命令，不能存储结果</span></div><div class="line">os.popen(command [, mode=<span class="string">'r'</span> [, bufsize]]) <span class="comment"># 打开管道来自shell命令，并返回一个文件对象</span></div></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div></pre></td><td class="code"><pre><div class="line">os.name <span class="comment"># 返回操作系统类型，返回值是"posix"代表linux，"nt"代表windows</span></div><div class="line">os.getcwd() <span class="comment"># 获取当前路径</span></div><div class="line">os.environ <span class="comment"># 以字典形式返回系统变量</span></div><div class="line">os.environ.get(<span class="string">'PATH'</span>) <span class="comment"># 获取指定环境变量</span></div><div class="line">os.listdir(path) <span class="comment"># 列表形式列出目录，path可选填，不填写为当前路径</span></div><div class="line">os.chdir(path) <span class="comment"># 改变当前工作目录到指定目录</span></div><div class="line">os.mkdir(path [, mode=<span class="number">0777</span>]) <span class="comment"># 创建目录</span></div><div class="line">os.makedirs(path [, mode=<span class="number">0777</span>]) <span class="comment"># 递归创建目录</span></div><div class="line">os.rmdir(path) <span class="comment"># 移除空目录</span></div><div class="line">os.remove(path) <span class="comment"># 移除文件</span></div><div class="line">os.rename(old, new) <span class="comment"># 重命名文件或目录</span></div><div class="line">os.stat(path) <span class="comment"># 获取文件或目录属性</span></div><div class="line">os.chown(path, uid, gid) <span class="comment"># 改变文件或目录所有者</span></div><div class="line">os.chmod(path, mode) <span class="comment"># 改变文件访问权限</span></div><div class="line">os.symlink(src, dst) <span class="comment"># 创建软链接</span></div><div class="line">os.unlink(path) <span class="comment"># 移除软链接</span></div><div class="line">os.urandom(n) <span class="comment"># 返回随机字节，适合加密使用</span></div><div class="line">os.getuid() <span class="comment"># 返回当前进程UID</span></div><div class="line">os.getlogin() <span class="comment"># 返回登录用户名</span></div><div class="line">os.getpid() <span class="comment"># 返回当前进程ID</span></div><div class="line">os.kill(pid, sig) <span class="comment"># 发送一个信号给进程</span></div><div class="line">os.walk(path) <span class="comment"># 目录树生成器，返回格式：(dirpath, [dirnames], [filenames])</span></div><div class="line">os.system(command) <span class="comment"># 执行shell命令，不能存储结果</span></div><div class="line">os.popen(command [, mode=<span class="string">'r'</span> [, bufsize]]) <span class="comment"># 打开管道来自shell命令，并返回一个文件对象</span></div></pre></td></tr></table></figure>
 <h3 id="os-path"><a href="#os-path" class="headerlink" title="os.path"></a>os.path</h3><blockquote>
 <p> os.path类用于获取文件属性</p>
 </blockquote>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line">os.path.basename(path) <span class="comment"># 返回最后一个文件或目录名</span></div><div class="line">os.path.dirname(path) <span class="comment"># 返回最后一个文件前面目录</span></div><div class="line">os.path.abspath(path) <span class="comment"># 返回一个绝对路径</span></div><div class="line">os.path.exists(path) <span class="comment"># 判断路径是否存在，返回布尔值</span></div><div class="line">os.path.isdir(path) <span class="comment"># 判断是否是目录</span></div><div class="line">os.path.isfile(path) <span class="comment"># 判断是否是文件</span></div><div class="line">os.path.islink(path) <span class="comment"># 判断是否是链接</span></div><div class="line">os.path.ismount(path) <span class="comment"># 判断是否挂载</span></div><div class="line">os.path.getatime(filename) <span class="comment"># 返回文件访问时间戳</span></div><div class="line">os.path.getctime(filename) <span class="comment"># 返回文件变化时间戳</span></div><div class="line">os.path.getmtime(filename) <span class="comment"># 返回文件修改时间戳</span></div><div class="line">os.path.getsize(filename) <span class="comment"># 返回文件大小，单位字节</span></div><div class="line">os.path.join(a, *p) <span class="comment"># 加入两个或两个以上路径，以正斜杠"/"分隔。常用于拼接路径 </span></div><div class="line"><span class="comment"># 如: os.path.join('/home/user','test.py')，返回: '/home/user/test.py/a.py'</span></div><div class="line">os.path.split(path) <span class="comment"># 分隔路径名</span></div><div class="line">os.path.splitext(path)</div></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line">os.path.basename(path) <span class="comment"># 返回最后一个文件或目录名</span></div><div class="line">os.path.dirname(path) <span class="comment"># 返回最后一个文件前面目录</span></div><div class="line">os.path.abspath(path) <span class="comment"># 返回一个绝对路径</span></div><div class="line">os.path.exists(path) <span class="comment"># 判断路径是否存在，返回布尔值</span></div><div class="line">os.path.isdir(path) <span class="comment"># 判断是否是目录</span></div><div class="line">os.path.isfile(path) <span class="comment"># 判断是否是文件</span></div><div class="line">os.path.islink(path) <span class="comment"># 判断是否是链接</span></div><div class="line">os.path.ismount(path) <span class="comment"># 判断是否挂载</span></div><div class="line">os.path.getatime(filename) <span class="comment"># 返回文件访问时间戳</span></div><div class="line">os.path.getctime(filename) <span class="comment"># 返回文件变化时间戳</span></div><div class="line">os.path.getmtime(filename) <span class="comment"># 返回文件修改时间戳</span></div><div class="line">os.path.getsize(filename) <span class="comment"># 返回文件大小，单位字节</span></div><div class="line">os.path.join(a, *p) <span class="comment"># 加入两个或两个以上路径，以正斜杠"/"分隔。常用于拼接路径 </span></div><div class="line"><span class="comment"># 如: os.path.join('/home/user','test.py')，返回: '/home/user/test.py/a.py'</span></div><div class="line">os.path.split(path) <span class="comment"># 分隔路径名</span></div><div class="line">os.path.splitext(path) <span class="comment"># 分割扩展名</span></div></pre></td></tr></table></figure>
+<h3 id="应用"><a href="#应用" class="headerlink" title="应用"></a>应用</h3><p>列出当前目录下所有目录:</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">[x <span class="keyword">for</span> x <span class="keyword">in</span> os.listdir(<span class="string">'.'</span>) <span class="keyword">if</span> os.path.isdir(x)]</div></pre></td></tr></table></figure>
+<p>列出当前目录下所有.py文件</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">[x <span class="keyword">for</span> x <span class="keyword">in</span> os.listdir(<span class="string">'.'</span>) <span class="keyword">if</span> os.path.isfile(x) <span class="keyword">and</span> os.path.splitext(x)[<span class="number">1</span>]==<span class="string">'.py'</span>]</div></pre></td></tr></table></figure>
 <h2 id="glob"><a href="#glob" class="headerlink" title="glob"></a>glob</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">import</span> glob</div></pre></td></tr></table></figure>
 <blockquote>
 <p>文件查找，支持通配符（*、？、[]）</p>
@@ -263,25 +292,11 @@
 <p>获取操作系统详细信息</p>
 </blockquote>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">platform.platform() <span class="comment"># 返回操作系统平台</span></div><div class="line">platform.uname() <span class="comment"># 返回操作系统信息</span></div><div class="line">platform.system() <span class="comment"># 返回操作系统平台</span></div><div class="line">platform.version() <span class="comment"># 返回操作系统版本</span></div><div class="line">platform.machine() <span class="comment"># 返回计算机类型</span></div><div class="line">platform.processor() <span class="comment"># 返回计算机处理器类型</span></div><div class="line">platform.node() <span class="comment"># 返回计算机网络名</span></div><div class="line">platform.python_version() <span class="comment"># 返回Python版本号</span></div></pre></td></tr></table></figure>
-<h2 id="pickle和cPickle"><a href="#pickle和cPickle" class="headerlink" title="pickle和cPickle"></a>pickle和cPickle</h2><p>cPickle库是C语言实现，对pickle进行了优化，提升了性能，建议在写代码中使用。</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">import</span> pickle</div><div class="line"><span class="comment"># or</span></div><div class="line"><span class="keyword">import</span> cPickle</div></pre></td></tr></table></figure>
-<blockquote>
-<p>创建可移植的Python序列化对象，持久化存储到文件。</p>
-</blockquote>
-<h3 id="dump"><a href="#dump" class="headerlink" title="dump()"></a><code>dump()</code></h3><p>把对象保存到文件中</p>
-<p>格式：<code>dump(obj, file, protocol=None)</code></p>
-<h3 id="load"><a href="#load" class="headerlink" title="load()"></a><code>load()</code></h3><p>从文件中读数据，重构为原来的Python对象</p>
-<p>格式：<code>load(file)</code></p>
-<h3 id="dumps"><a href="#dumps" class="headerlink" title="dumps()"></a><code>dumps()</code></h3><p>返回一个pickle格式化的字符串</p>
-<p>格式：<code>dumps(obj, protocol=None)</code></p>
 <h2 id="subprocess"><a href="#subprocess" class="headerlink" title="subprocess"></a>subprocess</h2><blockquote>
 <p>subprocess库会fork一个子进程去执行任务，连接到子进程的标准输入、输出、错误，并获得它们的返回代码。这个模块将取代os.system、os.spawn<em>、os.popen</em>、popen2.<em>和commands.</em>。</p>
 </blockquote>
 <h2 id="Queue"><a href="#Queue" class="headerlink" title="Queue"></a>Queue</h2><blockquote>
 <p>队列，数据存放在内存中，一般用于交换数据。</p>
-</blockquote>
-<h2 id="StringIO"><a href="#StringIO" class="headerlink" title="StringIO"></a>StringIO</h2><blockquote>
-<p>StringIO库将字符串存储在内存中，像操作文件一样操作。主要提供了一个StringIO类。</p>
 </blockquote>
 <h2 id="logging"><a href="#logging" class="headerlink" title="logging"></a>logging</h2><blockquote>
 <p>记录日志库。</p>
@@ -430,9 +445,6 @@
 <p>这个库我们主要用到ConfigParser.ConfigParser()类，对ini格式文件增删改查。</p>
 <p>ini文件固定结构：有多个部分块组成，每个部分有一个[标识]，并有多个key，每个key对应每个值，以等号”=”分隔。值的类型有三种：字符串、整数和布尔值。其中字符串可以不用双引号，布尔值为真用1表示，布尔值为假用0表示。注释以分号”;”开头。</p>
 <h2 id="urllib与urllib2"><a href="#urllib与urllib2" class="headerlink" title="urllib与urllib2"></a>urllib与urllib2</h2><p>打开URL。urllib2是urllib的增强版，新增了一些功能，比如Request()用来修改Header信息。但是urllib2还去掉了一些好用的方法，比如urlencode()编码序列中的两个元素（元组或字典）为URL查询字符串。一般情况下这两个库结合着用。</p>
-<h2 id="json"><a href="#json" class="headerlink" title="json"></a>json</h2><blockquote>
-<p>JSON是一种轻量级数据交换格式，一般API返回的数据大多是JSON、XML，如果返回JSON的话，将获取的数据转换成字典，方面在程序中处理。</p>
-</blockquote>
 <h2 id="time"><a href="#time" class="headerlink" title="time"></a>time</h2><blockquote>
 <p>这个time库提供了各种操作时间值。</p>
 </blockquote>
@@ -742,12 +754,12 @@
     <div class="content">
         
 <span class="post-time">
-    最后更新时间：<time datetime="2017-12-05T10:14:02.671Z" itemprop="dateUpdated">2017-12-05 18:14:02</time>
+    Last updated: <time datetime="2017-12-06T05:52:12.976Z" itemprop="dateUpdated">2017-12-06 13:52:12</time>
 </span><br>
 
 
         
-        这里可以写作者留言，标签和 hexo 中所有变量及辅助函数等均可调用，示例：<a href="/2017/12/05/Python学习笔记04 - 模块导入和导出、标准库/" target="_blank" rel="external">http://blog.xiaoyulive.top/2017/12/05/Python学习笔记04 - 模块导入和导出、标准库/</a>
+        这里可以写作者留言，标签和 hexo 中所有变量及辅助函数等均可调用，示例：<a href="/2017/12/06/Python学习笔记04 - 模块、标准库/" target="_blank" rel="external">http://blog.xiaoyulive.top/2017/12/06/Python学习笔记04 - 模块、标准库/</a>
         
     </div>
     <footer>
@@ -777,7 +789,7 @@
 <div class="page-share" id="pageShare">
     <ul class="reset share-icons">
       <li>
-        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://blog.xiaoyulive.top/2017/12/05/Python学习笔记04 - 模块导入和导出、标准库/&title=《Python学习笔记04 - 模块导入和导出、标准库》 — 小昱博客&pic=http://blog.xiaoyulive.top/img/avatar.jpg" data-title="微博">
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://blog.xiaoyulive.top/2017/12/06/Python学习笔记04 - 模块、标准库/&title=《Python学习笔记04 - 模块、标准库》 — 小昱博客&pic=http://blog.xiaoyulive.top/img/avatar.jpg" data-title="微博">
           <i class="icon icon-weibo"></i>
         </a>
       </li>
@@ -787,22 +799,22 @@
         </a>
       </li>
       <li>
-        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://blog.xiaoyulive.top/2017/12/05/Python学习笔记04 - 模块导入和导出、标准库/&title=《Python学习笔记04 - 模块导入和导出、标准库》 — 小昱博客&source=" data-title=" QQ">
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://blog.xiaoyulive.top/2017/12/06/Python学习笔记04 - 模块、标准库/&title=《Python学习笔记04 - 模块、标准库》 — 小昱博客&source=" data-title=" QQ">
           <i class="icon icon-qq"></i>
         </a>
       </li>
       <li>
-        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://blog.xiaoyulive.top/2017/12/05/Python学习笔记04 - 模块导入和导出、标准库/" data-title=" Facebook">
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://blog.xiaoyulive.top/2017/12/06/Python学习笔记04 - 模块、标准库/" data-title=" Facebook">
           <i class="icon icon-facebook"></i>
         </a>
       </li>
       <li>
-        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《Python学习笔记04 - 模块导入和导出、标准库》 — 小昱博客&url=http://blog.xiaoyulive.top/2017/12/05/Python学习笔记04 - 模块导入和导出、标准库/&via=http://blog.xiaoyulive.top" data-title=" Twitter">
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《Python学习笔记04 - 模块、标准库》 — 小昱博客&url=http://blog.xiaoyulive.top/2017/12/06/Python学习笔记04 - 模块、标准库/&via=http://blog.xiaoyulive.top" data-title=" Twitter">
           <i class="icon icon-twitter"></i>
         </a>
       </li>
       <li>
-        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://blog.xiaoyulive.top/2017/12/05/Python学习笔记04 - 模块导入和导出、标准库/" data-title=" Google+">
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://blog.xiaoyulive.top/2017/12/06/Python学习笔记04 - 模块、标准库/" data-title=" Google+">
           <i class="icon icon-google-plus"></i>
         </a>
       </li>
@@ -822,7 +834,14 @@
     </div>
 
     
-<nav class="post-nav flex-row flex-justify-between flex-row-reverse">
+<nav class="post-nav flex-row flex-justify-between">
+  
+    <div class="waves-block waves-effect prev">
+      <a href="/2017/12/06/Python学习笔记05 - 文件系统/" id="post-prev" class="post-nav-link">
+        <div class="tips"><i class="icon icon-angle-left icon-lg icon-pr"></i> Prev</div>
+        <h4 class="title">Python学习笔记05 - IO</h4>
+      </a>
+    </div>
   
 
   
@@ -934,7 +953,7 @@
 
         <p>
             
-            <!-- <span>博客内容遵循 <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">知识共享 署名 - 非商业性 - 相同方式共享 4.0 国际协议</a></span> -->
+            <!-- <span>This blog is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</span> -->
         </p>
     </div>
     <div class="bottom">
@@ -958,7 +977,7 @@
 <div class="global-share" id="globalShare">
     <ul class="reset share-icons">
       <li>
-        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://blog.xiaoyulive.top/2017/12/05/Python学习笔记04 - 模块导入和导出、标准库/&title=《Python学习笔记04 - 模块导入和导出、标准库》 — 小昱博客&pic=http://blog.xiaoyulive.top/img/avatar.jpg" data-title="微博">
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://blog.xiaoyulive.top/2017/12/06/Python学习笔记04 - 模块、标准库/&title=《Python学习笔记04 - 模块、标准库》 — 小昱博客&pic=http://blog.xiaoyulive.top/img/avatar.jpg" data-title="微博">
           <i class="icon icon-weibo"></i>
         </a>
       </li>
@@ -968,22 +987,22 @@
         </a>
       </li>
       <li>
-        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://blog.xiaoyulive.top/2017/12/05/Python学习笔记04 - 模块导入和导出、标准库/&title=《Python学习笔记04 - 模块导入和导出、标准库》 — 小昱博客&source=" data-title=" QQ">
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://blog.xiaoyulive.top/2017/12/06/Python学习笔记04 - 模块、标准库/&title=《Python学习笔记04 - 模块、标准库》 — 小昱博客&source=" data-title=" QQ">
           <i class="icon icon-qq"></i>
         </a>
       </li>
       <li>
-        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://blog.xiaoyulive.top/2017/12/05/Python学习笔记04 - 模块导入和导出、标准库/" data-title=" Facebook">
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://blog.xiaoyulive.top/2017/12/06/Python学习笔记04 - 模块、标准库/" data-title=" Facebook">
           <i class="icon icon-facebook"></i>
         </a>
       </li>
       <li>
-        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《Python学习笔记04 - 模块导入和导出、标准库》 — 小昱博客&url=http://blog.xiaoyulive.top/2017/12/05/Python学习笔记04 - 模块导入和导出、标准库/&via=http://blog.xiaoyulive.top" data-title=" Twitter">
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《Python学习笔记04 - 模块、标准库》 — 小昱博客&url=http://blog.xiaoyulive.top/2017/12/06/Python学习笔记04 - 模块、标准库/&via=http://blog.xiaoyulive.top" data-title=" Twitter">
           <i class="icon icon-twitter"></i>
         </a>
       </li>
       <li>
-        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://blog.xiaoyulive.top/2017/12/05/Python学习笔记04 - 模块导入和导出、标准库/" data-title=" Google+">
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://blog.xiaoyulive.top/2017/12/06/Python学习笔记04 - 模块、标准库/" data-title=" Google+">
           <i class="icon icon-google-plus"></i>
         </a>
       </li>
@@ -994,7 +1013,7 @@
 <div class="page-modal wx-share" id="wxShare">
     <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
-    <img src="//api.qrserver.com/v1/create-qr-code/?data=http://blog.xiaoyulive.top/2017/12/05/Python学习笔记04 - 模块导入和导出、标准库/" alt="微信分享二维码">
+    <img src="//api.qrserver.com/v1/create-qr-code/?data=http://blog.xiaoyulive.top/2017/12/06/Python学习笔记04 - 模块、标准库/" alt="微信分享二维码">
 </div>
 
 
