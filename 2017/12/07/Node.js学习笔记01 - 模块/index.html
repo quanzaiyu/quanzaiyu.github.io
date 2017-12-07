@@ -18,7 +18,7 @@
     
     
     
-    <title>Node.js学习笔记01 - CMD规范 | 小昱博客 | 勤学如春起之苗，不见其增，日有所长；辍学如磨刀之石，不见其损，日有所亏</title>
+    <title>Node.js学习笔记01 - 模块 | 小昱博客 | 勤学如春起之苗，不见其增，日有所长；辍学如磨刀之石，不见其损，日有所亏</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
     <meta name="theme-color" content="#3F51B5">
@@ -28,13 +28,13 @@
     <meta name="description" content="CommonJS在CommonJS这个规范下，每个.js文件都是一个模块，它们内部各自使用的变量名和函数名都互不冲突，例如，hello.js和main.js都申明了全局变量var s = &amp;#39;xxx&amp;#39;，但互不影响。 一个模块想要对外暴露变量（函数也是变量），可以用module.exports = variable;，一个模块要引用其他模块暴露的变量，用var ref = requir">
 <meta name="keywords" content="Node.js">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Node.js学习笔记01 - CMD规范">
-<meta property="og:url" content="http://blog.xiaoyulive.top/2017/12/06/Node.js学习笔记01 - CMD规范/index.html">
+<meta property="og:title" content="Node.js学习笔记01 - 模块">
+<meta property="og:url" content="http://blog.xiaoyulive.top/2017/12/07/Node.js学习笔记01 - 模块/index.html">
 <meta property="og:site_name" content="小昱博客">
 <meta property="og:description" content="CommonJS在CommonJS这个规范下，每个.js文件都是一个模块，它们内部各自使用的变量名和函数名都互不冲突，例如，hello.js和main.js都申明了全局变量var s = &amp;#39;xxx&amp;#39;，但互不影响。 一个模块想要对外暴露变量（函数也是变量），可以用module.exports = variable;，一个模块要引用其他模块暴露的变量，用var ref = requir">
-<meta property="og:updated_time" content="2017-12-06T13:12:02.488Z">
+<meta property="og:updated_time" content="2017-12-07T01:30:50.277Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Node.js学习笔记01 - CMD规范">
+<meta name="twitter:title" content="Node.js学习笔记01 - 模块">
 <meta name="twitter:description" content="CommonJS在CommonJS这个规范下，每个.js文件都是一个模块，它们内部各自使用的变量名和函数名都互不冲突，例如，hello.js和main.js都申明了全局变量var s = &amp;#39;xxx&amp;#39;，但互不影响。 一个模块想要对外暴露变量（函数也是变量），可以用module.exports = variable;，一个模块要引用其他模块暴露的变量，用var ref = requir">
     
     <link rel="shortcut icon" href="/favicon.ico">
@@ -145,13 +145,13 @@
         <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
           <i class="icon icon-lg icon-navicon"></i>
         </a>
-        <div class="flex-col header-title ellipsis">Node.js学习笔记01 - CMD规范</div>
+        <div class="flex-col header-title ellipsis">Node.js学习笔记01 - 模块</div>
         
         <div class="search-wrap" id="search-wrap">
             <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
                 <i class="icon icon-lg icon-chevron-left"></i>
             </a>
-            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="输入感兴趣的关键字">
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="Search">
             <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
                 <i class="icon icon-lg icon-search"></i>
             </a>
@@ -167,11 +167,11 @@
 <header class="content-header post-header">
 
     <div class="container fade-scale">
-        <h1 class="title">Node.js学习笔记01 - CMD规范</h1>
+        <h1 class="title">Node.js学习笔记01 - 模块</h1>
         <h5 class="subtitle">
             
-                <time datetime="2017-12-06T12:44:16.000Z" itemprop="datePublished" class="page-time">
-  2017-12-06
+                <time datetime="2017-12-07T01:30:50.277Z" itemprop="datePublished" class="page-time">
+  2017-12-07
 </time>
 
 
@@ -193,17 +193,17 @@
     <aside class="post-widget">
         <nav class="post-toc-wrap" id="post-toc">
             <h4>TOC</h4>
-            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#CommonJS"><span class="post-toc-number">1.</span> <span class="post-toc-text">CommonJS</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#module-exports-和-exports"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">module.exports 和 exports</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#基本模块"><span class="post-toc-number">2.</span> <span class="post-toc-text">基本模块</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#global"><span class="post-toc-number">2.1.</span> <span class="post-toc-text">global</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#参考资料"><span class="post-toc-number">3.</span> <span class="post-toc-text">参考资料</span></a></li></ol>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#CommonJS"><span class="post-toc-number">1.</span> <span class="post-toc-text">CommonJS</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#module-exports-和-exports"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">module.exports 和 exports</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#基本模块"><span class="post-toc-number">2.</span> <span class="post-toc-text">基本模块</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#global"><span class="post-toc-number">2.1.</span> <span class="post-toc-text">global</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#process"><span class="post-toc-number">2.2.</span> <span class="post-toc-text">process</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#参考资料"><span class="post-toc-number">3.</span> <span class="post-toc-text">参考资料</span></a></li></ol>
         </nav>
     </aside>
     
-<article id="post-Node.js学习笔记01 - CMD规范"
+<article id="post-Node.js学习笔记01 - 模块"
   class="post-article article-type-post fade" itemprop="blogPost">
 
     <div class="post-card">
-        <h1 class="post-card-title">Node.js学习笔记01 - CMD规范</h1>
+        <h1 class="post-card-title">Node.js学习笔记01 - 模块</h1>
         <div class="post-meta">
-            <time class="post-time" title="2017-12-06 20:44:16" datetime="2017-12-06T12:44:16.000Z"  itemprop="datePublished">2017-12-06</time>
+            <time class="post-time" title="2017-12-07 09:30:50" datetime="2017-12-07T01:30:50.277Z"  itemprop="datePublished">2017-12-07</time>
 
             
 	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/Node-js/">Node.js</a></li></ul>
@@ -241,6 +241,15 @@
 <p>给<code>exports</code>赋值是无效的，因为赋值后，<code>module.exports</code>仍然是空对象<code>{}</code>。</p>
 <h1 id="基本模块"><a href="#基本模块" class="headerlink" title="基本模块"></a>基本模块</h1><h2 id="global"><a href="#global" class="headerlink" title="global"></a>global</h2><p>JavaScript有且仅有一个全局对象，在浏览器中，叫<code>window</code>对象。而在Node.js环境中，也有唯一的全局对象，但不叫<code>window</code>，而叫<code>global</code>，这个对象的属性和方法也和浏览器环境的<code>window</code>不同。</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div></pre></td><td class="code"><pre><div class="line">&gt; global.console</div><div class="line">Console &#123;</div><div class="line">  log: [<span class="built_in">Function</span>: bound consoleCall],</div><div class="line">  info: [<span class="built_in">Function</span>: bound consoleCall],</div><div class="line">  warn: [<span class="built_in">Function</span>: bound consoleCall],</div><div class="line">  error: [<span class="built_in">Function</span>: bound consoleCall],</div><div class="line">  dir: [<span class="built_in">Function</span>: bound consoleCall],</div><div class="line">  time: [<span class="built_in">Function</span>: bound consoleCall],</div><div class="line">  timeEnd: [<span class="built_in">Function</span>: bound consoleCall],</div><div class="line">  trace: [<span class="built_in">Function</span>: bound consoleCall],</div><div class="line">  assert: [<span class="built_in">Function</span>: bound consoleCall],</div><div class="line">  Console: [<span class="built_in">Function</span>: Console],</div><div class="line">  debug: [<span class="built_in">Function</span>: debug],</div><div class="line">  dirxml: [<span class="built_in">Function</span>: dirxml],</div><div class="line">  table: [<span class="built_in">Function</span>: table],</div><div class="line">  group: [<span class="built_in">Function</span>: group],</div><div class="line">  groupCollapsed: [<span class="built_in">Function</span>: groupCollapsed],</div><div class="line">  groupEnd: [<span class="built_in">Function</span>: groupEnd],</div><div class="line">  clear: [<span class="built_in">Function</span>: clear],</div><div class="line">  count: [<span class="built_in">Function</span>: count],</div><div class="line">  markTimeline: [<span class="built_in">Function</span>: markTimeline],</div><div class="line">  profile: [<span class="built_in">Function</span>: profile],</div><div class="line">  profileEnd: [<span class="built_in">Function</span>: profileEnd],</div><div class="line">  timeline: [<span class="built_in">Function</span>: timeline],</div><div class="line">  timelineEnd: [<span class="built_in">Function</span>: timelineEnd],</div><div class="line">  timeStamp: [<span class="built_in">Function</span>: timeStamp] &#125;</div></pre></td></tr></table></figure>
+<h2 id="process"><a href="#process" class="headerlink" title="process"></a>process</h2><p><code>process</code> 代表当前Node.js进程。</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">process.version # 当前Node版本</div><div class="line">process.platform # 系统[平台</div><div class="line">process.arch # 系统架构</div><div class="line">process.cwd() # 当前目录</div><div class="line">process.chdir('/tmp') # 切换目录</div></pre></td></tr></table></figure>
+<p>process.nextTick()将在下一轮事件循环中调用</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">process.nextTick(<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">  <span class="built_in">console</span>.log(<span class="string">'nextTick callback!'</span>);</div><div class="line">&#125;);</div><div class="line"><span class="built_in">console</span>.log(<span class="string">'nextTick was set!'</span>);</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">nextTick was set!</div><div class="line">nextTick callback!</div></pre></td></tr></table></figure>
+<p>程序即将退出时的回调函数</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">process.on(<span class="string">'exit'</span>, <span class="function"><span class="keyword">function</span> (<span class="params">code</span>) </span>&#123;</div><div class="line">  <span class="built_in">console</span>.log(<span class="string">'about to exit with code: '</span> + code);</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+<p>平台判断</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">if</span> (<span class="keyword">typeof</span>(<span class="built_in">window</span>) === <span class="string">'undefined'</span>) &#123;</div><div class="line">  <span class="built_in">console</span>.log(<span class="string">'node.js'</span>);</div><div class="line">&#125; <span class="keyword">else</span> &#123;</div><div class="line">  <span class="built_in">console</span>.log(<span class="string">'browser'</span>);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <h1 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h1><p><a href="https://www.liaoxuefeng.com/wiki/001434446689867b27157e896e74d51a89c25cc8b43bdb3000/001434502419592fd80bbb0613a42118ccab9435af408fd000" target="_blank" rel="external">廖雪峰官方网站: node.js</a> </p>
 
         </div>
@@ -249,12 +258,12 @@
     <div class="content">
         
 <span class="post-time">
-    最后更新时间：<time datetime="2017-12-06T13:12:02.488Z" itemprop="dateUpdated">2017-12-06 21:12:02</time>
+    Last updated: <time datetime="2017-12-07T01:30:50.277Z" itemprop="dateUpdated">2017-12-07 09:30:50</time>
 </span><br>
 
 
         
-        这里可以写作者留言，标签和 hexo 中所有变量及辅助函数等均可调用，示例：<a href="/2017/12/06/Node.js学习笔记01 - CMD规范/" target="_blank" rel="external">http://blog.xiaoyulive.top/2017/12/06/Node.js学习笔记01 - CMD规范/</a>
+        这里可以写作者留言，标签和 hexo 中所有变量及辅助函数等均可调用，示例：<a href="/2017/12/07/Node.js学习笔记01 - 模块/" target="_blank" rel="external">http://blog.xiaoyulive.top/2017/12/07/Node.js学习笔记01 - 模块/</a>
         
     </div>
     <footer>
@@ -284,7 +293,7 @@
 <div class="page-share" id="pageShare">
     <ul class="reset share-icons">
       <li>
-        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://blog.xiaoyulive.top/2017/12/06/Node.js学习笔记01 - CMD规范/&title=《Node.js学习笔记01 - CMD规范》 — 小昱博客&pic=http://blog.xiaoyulive.top/img/avatar.jpg" data-title="微博">
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://blog.xiaoyulive.top/2017/12/07/Node.js学习笔记01 - 模块/&title=《Node.js学习笔记01 - 模块》 — 小昱博客&pic=http://blog.xiaoyulive.top/img/avatar.jpg" data-title="微博">
           <i class="icon icon-weibo"></i>
         </a>
       </li>
@@ -294,22 +303,22 @@
         </a>
       </li>
       <li>
-        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://blog.xiaoyulive.top/2017/12/06/Node.js学习笔记01 - CMD规范/&title=《Node.js学习笔记01 - CMD规范》 — 小昱博客&source=" data-title=" QQ">
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://blog.xiaoyulive.top/2017/12/07/Node.js学习笔记01 - 模块/&title=《Node.js学习笔记01 - 模块》 — 小昱博客&source=" data-title=" QQ">
           <i class="icon icon-qq"></i>
         </a>
       </li>
       <li>
-        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://blog.xiaoyulive.top/2017/12/06/Node.js学习笔记01 - CMD规范/" data-title=" Facebook">
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://blog.xiaoyulive.top/2017/12/07/Node.js学习笔记01 - 模块/" data-title=" Facebook">
           <i class="icon icon-facebook"></i>
         </a>
       </li>
       <li>
-        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《Node.js学习笔记01 - CMD规范》 — 小昱博客&url=http://blog.xiaoyulive.top/2017/12/06/Node.js学习笔记01 - CMD规范/&via=http://blog.xiaoyulive.top" data-title=" Twitter">
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《Node.js学习笔记01 - 模块》 — 小昱博客&url=http://blog.xiaoyulive.top/2017/12/07/Node.js学习笔记01 - 模块/&via=http://blog.xiaoyulive.top" data-title=" Twitter">
           <i class="icon icon-twitter"></i>
         </a>
       </li>
       <li>
-        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://blog.xiaoyulive.top/2017/12/06/Node.js学习笔记01 - CMD规范/" data-title=" Google+">
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://blog.xiaoyulive.top/2017/12/07/Node.js学习笔记01 - 模块/" data-title=" Google+">
           <i class="icon icon-google-plus"></i>
         </a>
       </li>
@@ -329,7 +338,14 @@
     </div>
 
     
-<nav class="post-nav flex-row flex-justify-between flex-row-reverse">
+<nav class="post-nav flex-row flex-justify-between">
+  
+    <div class="waves-block waves-effect prev">
+      <a href="/2017/12/07/Node.js学习笔记02 - IO/" id="post-prev" class="post-nav-link">
+        <div class="tips"><i class="icon icon-angle-left icon-lg icon-pr"></i> Prev</div>
+        <h4 class="title">Node.js学习笔记02 - IO</h4>
+      </a>
+    </div>
   
 
   
@@ -441,7 +457,7 @@
 
         <p>
             
-            <!-- <span>博客内容遵循 <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">知识共享 署名 - 非商业性 - 相同方式共享 4.0 国际协议</a></span> -->
+            <!-- <span>This blog is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</span> -->
         </p>
     </div>
     <div class="bottom">
@@ -465,7 +481,7 @@
 <div class="global-share" id="globalShare">
     <ul class="reset share-icons">
       <li>
-        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://blog.xiaoyulive.top/2017/12/06/Node.js学习笔记01 - CMD规范/&title=《Node.js学习笔记01 - CMD规范》 — 小昱博客&pic=http://blog.xiaoyulive.top/img/avatar.jpg" data-title="微博">
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://blog.xiaoyulive.top/2017/12/07/Node.js学习笔记01 - 模块/&title=《Node.js学习笔记01 - 模块》 — 小昱博客&pic=http://blog.xiaoyulive.top/img/avatar.jpg" data-title="微博">
           <i class="icon icon-weibo"></i>
         </a>
       </li>
@@ -475,22 +491,22 @@
         </a>
       </li>
       <li>
-        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://blog.xiaoyulive.top/2017/12/06/Node.js学习笔记01 - CMD规范/&title=《Node.js学习笔记01 - CMD规范》 — 小昱博客&source=" data-title=" QQ">
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://blog.xiaoyulive.top/2017/12/07/Node.js学习笔记01 - 模块/&title=《Node.js学习笔记01 - 模块》 — 小昱博客&source=" data-title=" QQ">
           <i class="icon icon-qq"></i>
         </a>
       </li>
       <li>
-        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://blog.xiaoyulive.top/2017/12/06/Node.js学习笔记01 - CMD规范/" data-title=" Facebook">
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://blog.xiaoyulive.top/2017/12/07/Node.js学习笔记01 - 模块/" data-title=" Facebook">
           <i class="icon icon-facebook"></i>
         </a>
       </li>
       <li>
-        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《Node.js学习笔记01 - CMD规范》 — 小昱博客&url=http://blog.xiaoyulive.top/2017/12/06/Node.js学习笔记01 - CMD规范/&via=http://blog.xiaoyulive.top" data-title=" Twitter">
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《Node.js学习笔记01 - 模块》 — 小昱博客&url=http://blog.xiaoyulive.top/2017/12/07/Node.js学习笔记01 - 模块/&via=http://blog.xiaoyulive.top" data-title=" Twitter">
           <i class="icon icon-twitter"></i>
         </a>
       </li>
       <li>
-        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://blog.xiaoyulive.top/2017/12/06/Node.js学习笔记01 - CMD规范/" data-title=" Google+">
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://blog.xiaoyulive.top/2017/12/07/Node.js学习笔记01 - 模块/" data-title=" Google+">
           <i class="icon icon-google-plus"></i>
         </a>
       </li>
@@ -501,7 +517,7 @@
 <div class="page-modal wx-share" id="wxShare">
     <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
-    <img src="//api.qrserver.com/v1/create-qr-code/?data=http://blog.xiaoyulive.top/2017/12/06/Node.js学习笔记01 - CMD规范/" alt="微信分享二维码">
+    <img src="//api.qrserver.com/v1/create-qr-code/?data=http://blog.xiaoyulive.top/2017/12/07/Node.js学习笔记01 - 模块/" alt="微信分享二维码">
 </div>
 
 
