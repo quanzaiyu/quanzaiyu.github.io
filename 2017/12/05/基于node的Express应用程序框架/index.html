@@ -25,17 +25,17 @@
     
     
     <meta name="keywords" content="Express">
-    <meta name="description" content="前言Express 是一个简洁而灵活的 node.js Web应用框架, 提供了一系列强大特性帮助你创建各种 Web 应用，和丰富的 HTTP 工具。 使用 Express 可以快速地搭建一个完整功能的网站。 Express 框架核心特性：  可以设置中间件来响应 HTTP 请求。 定义了路由表用于执行不同的 HTTP 请求动作。 可以通过向模板传递参数来动态渲染 HTML 页面。  安装 Exp">
+    <meta name="description" content="前言Express 是一个简洁而灵活的 node.js Web应用框架, 提供了一系列强大特性帮助你创建各种 Web 应用，和丰富的 HTTP 工具。 使用 Express 可以快速地搭建一个完整功能的网站。 Express 框架核心特性：  可以设置中间件来响应 HTTP 请求。 定义了路由表用于执行不同的 HTTP 请求动作。 可以通过向模板传递参数来动态渲染 HTML 页面。  本文写作时使">
 <meta name="keywords" content="Express">
 <meta property="og:type" content="article">
 <meta property="og:title" content="基于node的Express应用程序框架">
 <meta property="og:url" content="http://blog.xiaoyulive.top/2017/12/05/基于node的Express应用程序框架/index.html">
 <meta property="og:site_name" content="小昱博客">
-<meta property="og:description" content="前言Express 是一个简洁而灵活的 node.js Web应用框架, 提供了一系列强大特性帮助你创建各种 Web 应用，和丰富的 HTTP 工具。 使用 Express 可以快速地搭建一个完整功能的网站。 Express 框架核心特性：  可以设置中间件来响应 HTTP 请求。 定义了路由表用于执行不同的 HTTP 请求动作。 可以通过向模板传递参数来动态渲染 HTML 页面。  安装 Exp">
-<meta property="og:updated_time" content="2017-12-05T03:42:00.404Z">
+<meta property="og:description" content="前言Express 是一个简洁而灵活的 node.js Web应用框架, 提供了一系列强大特性帮助你创建各种 Web 应用，和丰富的 HTTP 工具。 使用 Express 可以快速地搭建一个完整功能的网站。 Express 框架核心特性：  可以设置中间件来响应 HTTP 请求。 定义了路由表用于执行不同的 HTTP 请求动作。 可以通过向模板传递参数来动态渲染 HTML 页面。  本文写作时使">
+<meta property="og:updated_time" content="2017-12-08T02:05:53.687Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="基于node的Express应用程序框架">
-<meta name="twitter:description" content="前言Express 是一个简洁而灵活的 node.js Web应用框架, 提供了一系列强大特性帮助你创建各种 Web 应用，和丰富的 HTTP 工具。 使用 Express 可以快速地搭建一个完整功能的网站。 Express 框架核心特性：  可以设置中间件来响应 HTTP 请求。 定义了路由表用于执行不同的 HTTP 请求动作。 可以通过向模板传递参数来动态渲染 HTML 页面。  安装 Exp">
+<meta name="twitter:description" content="前言Express 是一个简洁而灵活的 node.js Web应用框架, 提供了一系列强大特性帮助你创建各种 Web 应用，和丰富的 HTTP 工具。 使用 Express 可以快速地搭建一个完整功能的网站。 Express 框架核心特性：  可以设置中间件来响应 HTTP 请求。 定义了路由表用于执行不同的 HTTP 请求动作。 可以通过向模板传递参数来动态渲染 HTML 页面。  本文写作时使">
     
     <link rel="shortcut icon" href="/favicon.ico">
     <link rel="stylesheet" href="/css/style.css?v=1.6.17">
@@ -151,7 +151,7 @@
             <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
                 <i class="icon icon-lg icon-chevron-left"></i>
             </a>
-            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="Search">
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="输入感兴趣的关键字">
             <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
                 <i class="icon icon-lg icon-search"></i>
             </a>
@@ -226,6 +226,7 @@
 <li>定义了路由表用于执行不同的 HTTP 请求动作。</li>
 <li>可以通过向模板传递参数来动态渲染 HTML 页面。</li>
 </ul>
+<p>本文写作时使用的Express版本为4.x</p>
 <h2 id="安装-Express"><a href="#安装-Express" class="headerlink" title="安装 Express"></a>安装 Express</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">yarn add express</div></pre></td></tr></table></figure>
 <p>通常还会安装以下几个常用的模块:</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">yarn add body-parser cookie-parser multer</div></pre></td></tr></table></figure>
@@ -495,7 +496,7 @@
     <div class="content">
         
 <span class="post-time">
-    Last updated: <time datetime="2017-12-05T03:42:00.404Z" itemprop="dateUpdated">2017-12-05 11:42:00</time>
+    最后更新时间：<time datetime="2017-12-08T02:05:53.687Z" itemprop="dateUpdated">2017-12-08 10:05:53</time>
 </span><br>
 
 
@@ -578,9 +579,9 @@
 <nav class="post-nav flex-row flex-justify-between">
   
     <div class="waves-block waves-effect prev">
-      <a href="/2017/12/05/提升效率的必备VSCode插件/" id="post-prev" class="post-nav-link">
+      <a href="/2017/12/05/玩转交互式命令行/" id="post-prev" class="post-nav-link">
         <div class="tips"><i class="icon icon-angle-left icon-lg icon-pr"></i> Prev</div>
-        <h4 class="title">提升效率的必备VSCode插件</h4>
+        <h4 class="title">玩转交互式命令行</h4>
       </a>
     </div>
   
@@ -694,7 +695,7 @@
 
         <p>
             
-            <!-- <span>This blog is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</span> -->
+            <!-- <span>博客内容遵循 <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">知识共享 署名 - 非商业性 - 相同方式共享 4.0 国际协议</a></span> -->
         </p>
     </div>
     <div class="bottom">
