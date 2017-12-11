@@ -32,7 +32,7 @@
 <meta property="og:url" content="http://blog.xiaoyulive.top/2017/12/11/常用前端代码片段整理/index.html">
 <meta property="og:site_name" content="小昱博客">
 <meta property="og:description" content="JS代码片段打印浏览器信息123456789101112document.write(&quot;CodeName=&quot; + navigator.appCodeName + &quot;&amp;lt;br /&amp;gt;&quot;);document.write(&quot;MinorVersion=&quot; + navigator.appMinorVersion + &quot;&amp;lt;br /&amp;gt;&quot;);document.write(&quot;Name=&quot; + n">
-<meta property="og:updated_time" content="2017-12-11T03:21:42.581Z">
+<meta property="og:updated_time" content="2017-12-11T03:29:19.769Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="常用前端代码片段整理">
 <meta name="twitter:description" content="JS代码片段打印浏览器信息123456789101112document.write(&quot;CodeName=&quot; + navigator.appCodeName + &quot;&amp;lt;br /&amp;gt;&quot;);document.write(&quot;MinorVersion=&quot; + navigator.appMinorVersion + &quot;&amp;lt;br /&amp;gt;&quot;);document.write(&quot;Name=&quot; + n">
@@ -151,7 +151,7 @@
             <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
                 <i class="icon icon-lg icon-chevron-left"></i>
             </a>
-            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="搜尋">
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="输入感兴趣的关键字">
             <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
                 <i class="icon icon-lg icon-search"></i>
             </a>
@@ -193,7 +193,7 @@
     <aside class="post-widget">
         <nav class="post-toc-wrap" id="post-toc">
             <h4>TOC</h4>
-            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#JS代码片段"><span class="post-toc-number">1.</span> <span class="post-toc-text">JS代码片段</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#打印浏览器信息"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">打印浏览器信息</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#判断浏览器类型"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">判断浏览器类型</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#CSS代码片段"><span class="post-toc-number">2.</span> <span class="post-toc-text">CSS代码片段</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#单行文本溢出显示省略号"><span class="post-toc-number">2.1.</span> <span class="post-toc-text">单行文本溢出显示省略号</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#多行文本溢出显示省略号"><span class="post-toc-number">2.2.</span> <span class="post-toc-text">多行文本溢出显示省略号</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#针对苹果手机页面滚动不流畅的处理"><span class="post-toc-number">2.3.</span> <span class="post-toc-text">针对苹果手机页面滚动不流畅的处理</span></a></li></ol></li></ol>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#JS代码片段"><span class="post-toc-number">1.</span> <span class="post-toc-text">JS代码片段</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#打印浏览器信息"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">打印浏览器信息</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#判断浏览器类型"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">判断浏览器类型</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#CSS代码片段"><span class="post-toc-number">2.</span> <span class="post-toc-text">CSS代码片段</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#单行文本溢出显示省略号"><span class="post-toc-number">2.1.</span> <span class="post-toc-text">单行文本溢出显示省略号</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#多行文本溢出显示省略号"><span class="post-toc-number">2.2.</span> <span class="post-toc-text">多行文本溢出显示省略号</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#针对苹果手机页面滚动不流畅的处理"><span class="post-toc-number">2.3.</span> <span class="post-toc-text">针对苹果手机页面滚动不流畅的处理</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#HTML代码片段"><span class="post-toc-number">3.</span> <span class="post-toc-text">HTML代码片段</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#viewport"><span class="post-toc-number">3.1.</span> <span class="post-toc-text">viewport</span></a></li></ol></li></ol>
         </nav>
     </aside>
     
@@ -230,6 +230,7 @@
 <h2 id="针对苹果手机页面滚动不流畅的处理"><a href="#针对苹果手机页面滚动不流畅的处理" class="headerlink" title="针对苹果手机页面滚动不流畅的处理"></a>针对苹果手机页面滚动不流畅的处理</h2><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">-webkit-overflow-scrolling</span> : <span class="selector-tag">touch</span>;</div></pre></td></tr></table></figure>
 <p>原理: 实际上在iOS系统的手机上创建了一个UIWebOverflowScrollView，它继承自UIScrollView，使得滚动具有”橡皮筋特效”</p>
 <p>参考: <a href="http://blog.csdn.net/hursing/article/details/9186199" target="_blank" rel="external">网页在Safari快速滚动和回弹的原理： -webkit-overflow-scrolling : touch;的实现</a> </p>
+<h1 id="HTML代码片段"><a href="#HTML代码片段" class="headerlink" title="HTML代码片段"></a>HTML代码片段</h1><h2 id="viewport"><a href="#viewport" class="headerlink" title="viewport"></a>viewport</h2><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">"viewport"</span> <span class="attr">content</span>=<span class="string">"width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"</span> /&gt;</span></div></pre></td></tr></table></figure>
 
         </div>
 
@@ -237,7 +238,7 @@
     <div class="content">
         
 <span class="post-time">
-    最後更新時間：<time datetime="2017-12-11T03:21:42.581Z" itemprop="dateUpdated">2017-12-11 11:21:42</time>
+    最后更新时间：<time datetime="2017-12-11T03:29:19.769Z" itemprop="dateUpdated">2017-12-11 11:29:19</time>
 </span><br>
 
 
@@ -317,7 +318,14 @@
     </div>
 
     
-<nav class="post-nav flex-row flex-justify-between flex-row-reverse">
+<nav class="post-nav flex-row flex-justify-between">
+  
+    <div class="waves-block waves-effect prev">
+      <a href="/2017/12/11/CSS3图像处理/" id="post-prev" class="post-nav-link">
+        <div class="tips"><i class="icon icon-angle-left icon-lg icon-pr"></i> Prev</div>
+        <h4 class="title">CSS3图像处理</h4>
+      </a>
+    </div>
   
 
   
@@ -429,7 +437,7 @@
 
         <p>
             
-            <!-- <span>本部落格係採用<a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.zh_TW">創用 CC 姓名標示 4.0 國際 授權條款授權</a></span> -->
+            <!-- <span>博客内容遵循 <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">知识共享 署名 - 非商业性 - 相同方式共享 4.0 国际协议</a></span> -->
         </p>
     </div>
     <div class="bottom">

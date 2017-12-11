@@ -18,20 +18,27 @@
     
     
     
-    <title>关于我 | 小昱博客 | 勤学如春起之苗，不见其增，日有所长；辍学如磨刀之石，不见其损，日有所亏</title>
+    <title>CSS3图像处理 | 小昱博客 | 勤学如春起之苗，不见其增，日有所长；辍学如磨刀之石，不见其损，日有所亏</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
     <meta name="theme-color" content="#3F51B5">
     
     
-    <meta name="keywords" content="">
-    <meta property="og:type" content="website">
-<meta property="og:title" content="关于我">
-<meta property="og:url" content="http://blog.xiaoyulive.top/custom/index.html">
+    <meta name="keywords" content="CSS3">
+    <meta name="description" content="在以前，图像处理通常是使用PS进行美化，现在，CSS3也能做到这些。 滤镜 Filter模糊 blurblur用来给图像设置高斯模糊。参数值设定高斯函数的标准差，或者是屏幕上以多少像素融在一起，这个值设置为百分比除外的css长度值，默认是0效果为左边的原图，值越大越模糊，上面的图片设置成100px时就什么都没有了。    参考资料如何用 CSS 修出好看的照片">
+<meta name="keywords" content="CSS3">
+<meta property="og:type" content="article">
+<meta property="og:title" content="CSS3图像处理">
+<meta property="og:url" content="http://blog.xiaoyulive.top/2017/12/11/CSS3图像处理/index.html">
 <meta property="og:site_name" content="小昱博客">
-<meta property="og:updated_time" content="2017-12-05T01:35:46.273Z">
+<meta property="og:description" content="在以前，图像处理通常是使用PS进行美化，现在，CSS3也能做到这些。 滤镜 Filter模糊 blurblur用来给图像设置高斯模糊。参数值设定高斯函数的标准差，或者是屏幕上以多少像素融在一起，这个值设置为百分比除外的css长度值，默认是0效果为左边的原图，值越大越模糊，上面的图片设置成100px时就什么都没有了。    参考资料如何用 CSS 修出好看的照片">
+<meta property="og:image" content="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/filter01.png">
+<meta property="og:image" content="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/filter02.png">
+<meta property="og:updated_time" content="2017-12-11T03:41:57.915Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="关于我">
+<meta name="twitter:title" content="CSS3图像处理">
+<meta name="twitter:description" content="在以前，图像处理通常是使用PS进行美化，现在，CSS3也能做到这些。 滤镜 Filter模糊 blurblur用来给图像设置高斯模糊。参数值设定高斯函数的标准差，或者是屏幕上以多少像素融在一起，这个值设置为百分比除外的css长度值，默认是0效果为左边的原图，值越大越模糊，上面的图片设置成100px时就什么都没有了。    参考资料如何用 CSS 修出好看的照片">
+<meta name="twitter:image" content="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/filter01.png">
     
     <link rel="shortcut icon" href="/favicon.ico">
     <link rel="stylesheet" href="/css/style.css?v=1.6.17">
@@ -123,7 +130,7 @@
               </a>
             </li>
         
-            <li class="waves-block waves-effect active">
+            <li class="waves-block waves-effect">
               <a href="/custom"  >
                 <i class="icon icon-lg icon-link"></i>
                 关于我
@@ -141,7 +148,7 @@
         <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
           <i class="icon icon-lg icon-navicon"></i>
         </a>
-        <div class="flex-col header-title ellipsis">关于我</div>
+        <div class="flex-col header-title ellipsis">CSS3图像处理</div>
         
         <div class="search-wrap" id="search-wrap">
             <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
@@ -160,11 +167,19 @@
         
     </div>
 </header>
-<header class="content-header page-header">
+<header class="content-header post-header">
 
     <div class="container fade-scale">
-        <h1 class="title">关于我</h1>
+        <h1 class="title">CSS3图像处理</h1>
         <h5 class="subtitle">
+            
+                <time datetime="2017-12-11T03:29:46.913Z" itemprop="datePublished" class="page-time">
+  2017-12-11
+</time>
+
+
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/前端开发/">前端开发</a></li></ul>
+
             
         </h5>
     </div>
@@ -176,12 +191,63 @@
 
 
 <div class="container body-wrap">
-    <article class="page-article fade" itemprop="blogPage">
-        <div class="post-content page-content" id="page-content" itemprop="pageContent">
+    <!-- <div id="canvas-container"></div> -->
+    
+    <aside class="post-widget">
+        <nav class="post-toc-wrap" id="post-toc">
+            <h4>TOC</h4>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#滤镜-Filter"><span class="post-toc-number">1.</span> <span class="post-toc-text">滤镜 Filter</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#模糊-blur"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">模糊 blur</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#参考资料"><span class="post-toc-number">2.</span> <span class="post-toc-text">参考资料</span></a></li></ol>
+        </nav>
+    </aside>
+    
+<article id="post-CSS3图像处理"
+  class="post-article article-type-post fade" itemprop="blogPost">
+
+    <div class="post-card">
+        <h1 class="post-card-title">CSS3图像处理</h1>
+        <div class="post-meta">
+            <time class="post-time" title="2017-12-11 11:29:46" datetime="2017-12-11T03:29:46.913Z"  itemprop="datePublished">2017-12-11</time>
+
             
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/前端开发/">前端开发</a></li></ul>
+
+
+
+            
+<span id="busuanzi_container_page_pv" title="文章总阅读量" style='display:none'>
+    <i class="icon icon-eye icon-pr"></i><span id="busuanzi_value_page_pv"></span>
+</span>
+
+
+        </div>
+        <div class="post-content" id="post-content" itemprop="postContent">
+            <p>在以前，图像处理通常是使用PS进行美化，现在，CSS3也能做到这些。</p>
+<h1 id="滤镜-Filter"><a href="#滤镜-Filter" class="headerlink" title="滤镜 Filter"></a>滤镜 Filter</h1><h2 id="模糊-blur"><a href="#模糊-blur" class="headerlink" title="模糊 blur"></a>模糊 blur</h2><p>blur用来给图像设置高斯模糊。参数值设定高斯函数的标准差，或者是屏幕上以多少像素融在一起，这个值设置为百分比除外的css长度值，默认是0效果为左边的原图，值越大越模糊，上面的图片设置成100px时就什么都没有了。</p>
+<p><img src="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/filter01.png" alt=""></p>
+<p><img src="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/filter02.png" alt=""> </p>
+<h1 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h1><p><a href="http://mp.weixin.qq.com/s/JF8jAWWklsvBarUR54al2g" target="_blank" rel="external">如何用 CSS 修出好看的照片</a> </p>
+
         </div>
 
+        <blockquote class="post-copyright">
+    <div class="content">
         
+<span class="post-time">
+    最后更新时间：<time datetime="2017-12-11T03:41:57.915Z" itemprop="dateUpdated">2017-12-11 11:41:57</time>
+</span><br>
+
+
+        
+        这里可以写作者留言，标签和 hexo 中所有变量及辅助函数等均可调用，示例：<a href="/2017/12/11/CSS3图像处理/" target="_blank" rel="external">http://blog.xiaoyulive.top/2017/12/11/CSS3图像处理/</a>
+        
+    </div>
+    <footer>
+        <a href="http://blog.xiaoyulive.top">
+            <img src="/img/avatar.jpg" alt="Quanzaiyu">
+            Quanzaiyu
+        </a>
+    </footer>
+</blockquote>
 
         
 <div class="page-reward">
@@ -190,7 +256,79 @@
 
 
 
-        
+        <div class="post-footer">
+            
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/CSS3/">CSS3</a></li></ul>
+
+
+            
+<div class="page-share-wrap">
+    
+
+<div class="page-share" id="pageShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://blog.xiaoyulive.top/2017/12/11/CSS3图像处理/&title=《CSS3图像处理》 — 小昱博客&pic=http://blog.xiaoyulive.top/img/avatar.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://blog.xiaoyulive.top/2017/12/11/CSS3图像处理/&title=《CSS3图像处理》 — 小昱博客&source=" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://blog.xiaoyulive.top/2017/12/11/CSS3图像处理/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《CSS3图像处理》 — 小昱博客&url=http://blog.xiaoyulive.top/2017/12/11/CSS3图像处理/&via=http://blog.xiaoyulive.top" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://blog.xiaoyulive.top/2017/12/11/CSS3图像处理/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+
+    <a href="javascript:;" id="shareFab" class="page-share-fab waves-effect waves-circle">
+        <i class="icon icon-share-alt icon-lg"></i>
+    </a>
+</div>
+
+
+
+        </div>
+    </div>
+
+    
+<nav class="post-nav flex-row flex-justify-between flex-row-reverse">
+  
+
+  
+    <div class="waves-block waves-effect next">
+      <a href="/2017/12/11/常用前端代码片段整理/" id="post-next" class="post-nav-link">
+        <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
+        <h4 class="title">常用前端代码片段整理</h4>
+      </a>
+    </div>
+  
+</nav>
+
+
+
+    
 
 
 <section class="comments" id="comments">
@@ -235,8 +373,8 @@
 
 
 
-    </article>
-    
+</article>
+
 <div id="reward" class="page-modal reward-lay">
     <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
     <h3 class="reward-title">
@@ -264,8 +402,14 @@
 </div>
 
 
+
 </div>
 
+<!-- <script>
+    particlesJS.load('canvas-container', '/json/particles2.json', function () {
+        console.log('callback - particles.js config loaded');
+    })
+</script> -->
         <footer class="footer">
     <div class="top">
         
@@ -305,7 +449,7 @@
 <div class="global-share" id="globalShare">
     <ul class="reset share-icons">
       <li>
-        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://blog.xiaoyulive.top/custom/&title=《关于我》 — 小昱博客&pic=http://blog.xiaoyulive.top/img/avatar.jpg" data-title="微博">
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://blog.xiaoyulive.top/2017/12/11/CSS3图像处理/&title=《CSS3图像处理》 — 小昱博客&pic=http://blog.xiaoyulive.top/img/avatar.jpg" data-title="微博">
           <i class="icon icon-weibo"></i>
         </a>
       </li>
@@ -315,22 +459,22 @@
         </a>
       </li>
       <li>
-        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://blog.xiaoyulive.top/custom/&title=《关于我》 — 小昱博客&source=" data-title=" QQ">
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://blog.xiaoyulive.top/2017/12/11/CSS3图像处理/&title=《CSS3图像处理》 — 小昱博客&source=" data-title=" QQ">
           <i class="icon icon-qq"></i>
         </a>
       </li>
       <li>
-        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://blog.xiaoyulive.top/custom/" data-title=" Facebook">
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://blog.xiaoyulive.top/2017/12/11/CSS3图像处理/" data-title=" Facebook">
           <i class="icon icon-facebook"></i>
         </a>
       </li>
       <li>
-        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《关于我》 — 小昱博客&url=http://blog.xiaoyulive.top/custom/&via=http://blog.xiaoyulive.top" data-title=" Twitter">
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《CSS3图像处理》 — 小昱博客&url=http://blog.xiaoyulive.top/2017/12/11/CSS3图像处理/&via=http://blog.xiaoyulive.top" data-title=" Twitter">
           <i class="icon icon-twitter"></i>
         </a>
       </li>
       <li>
-        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://blog.xiaoyulive.top/custom/" data-title=" Google+">
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://blog.xiaoyulive.top/2017/12/11/CSS3图像处理/" data-title=" Google+">
           <i class="icon icon-google-plus"></i>
         </a>
       </li>
@@ -341,7 +485,7 @@
 <div class="page-modal wx-share" id="wxShare">
     <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
-    <img src="//api.qrserver.com/v1/create-qr-code/?data=http://blog.xiaoyulive.top/custom/" alt="微信分享二维码">
+    <img src="//api.qrserver.com/v1/create-qr-code/?data=http://blog.xiaoyulive.top/2017/12/11/CSS3图像处理/" alt="微信分享二维码">
 </div>
 
 
