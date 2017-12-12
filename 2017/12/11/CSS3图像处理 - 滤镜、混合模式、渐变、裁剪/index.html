@@ -73,7 +73,7 @@
 <meta property="og:image" content="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/gradient17.png">
 <meta property="og:image" content="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/clip02.png">
 <meta property="og:image" content="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/clip01.png">
-<meta property="og:updated_time" content="2017-12-12T04:54:10.573Z">
+<meta property="og:updated_time" content="2017-12-12T04:56:20.247Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="CSS3图像处理 - 滤镜、混合模式、渐变、裁剪">
 <meta name="twitter:description" content="在以前，图像处理通常是使用PS进行美化，现在，CSS3也能做到这些。 本文针对svg图像做处理，原图为:                                                                                                            素材地址: 前景图 背景图  滤镜 Filter模糊 blurblur用来给图像">
@@ -282,10 +282,22 @@
 <h2 id="透明度-opacity"><a href="#透明度-opacity" class="headerlink" title="透明度 opacity"></a>透明度 opacity</h2><p>opacity会调整图片的透明度，这个和filter中的opacity效果是一样哒，但是并不是一个属性呢，因为他们是可以叠加使用的。</p>
 <p>opacity只能接受小数，filter:opactiy()既可以接受小数也可以接受百分比，值越小越透明。</p>
 <figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">filter</span>: <span class="selector-tag">opacity</span>(<span class="selector-class">.5</span>);</div><div class="line"><span class="selector-tag">opacity</span>: <span class="selector-class">.5</span>; <span class="comment">/*注意，可以和filter属性的opacity重叠，这里相当于是 .5 * .5 = .25 */</span></div></pre></td></tr></table></figure>
-<p><img src="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/filter03.png" alt=""></p>
+<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/filter03.png" alt="" title="">
+                </div>
+                <div class="image-caption"></div>
+            </figure>
 <h2 id="灰度-grayscale"><a href="#灰度-grayscale" class="headerlink" title="灰度 grayscale"></a>灰度 grayscale</h2><p>grayscale为图片设置灰度，当值为100%时就成为完全的灰度图片了。</p>
 <figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">filter</span>: <span class="selector-tag">grayscale</span>(100%);</div></pre></td></tr></table></figure>
-<p><img src="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/filter04.png" alt=""></p>
+<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/filter04.png" alt="" title="">
+                </div>
+                <div class="image-caption"></div>
+            </figure>
 <h2 id="对比度-contrast"><a href="#对比度-contrast" class="headerlink" title="对比度 contrast"></a>对比度 contrast</h2><p>contrast的参数接受百分比形式的数值也接受小数形式的，值为0 的时候是整个图片都是灰黑色的，为1时是原图，值越大对比度越大，默认值为1。</p>
 <figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">filter</span>: <span class="selector-tag">contrast</span>(200%);</div></pre></td></tr></table></figure>
 <figure class="image-bubble">
@@ -784,7 +796,7 @@
     <div class="content">
         
 <span class="post-time">
-    最後更新時間：<time datetime="2017-12-12T04:54:10.573Z" itemprop="dateUpdated">2017-12-12 12:54:10</time>
+    最後更新時間：<time datetime="2017-12-12T04:56:20.247Z" itemprop="dateUpdated">2017-12-12 12:56:20</time>
 </span><br>
 
 
