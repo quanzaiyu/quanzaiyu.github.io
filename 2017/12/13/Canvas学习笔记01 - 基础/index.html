@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+
+    
+
+    
+<!-- Baidu Tongji -->
+<script>var _hmt = _hmt || []</script>
+<script async src="//hm.baidu.com/hm.js?3c8be249330224d7c919b4f22750d872"></script>
+<!-- End Baidu Tongji -->
+
+
+
+
+    <meta charset="utf-8">
+    
+    
+    
+    <title>Canvas学习笔记01 - 基础 | 小昱博客 | 勤学如春起之苗，不见其增，日有所长；辍学如磨刀之石，不见其损，日有所亏</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="theme-color" content="#3F51B5">
+    
+    
+    <meta name="keywords" content="Canvas">
+    <meta name="description" content="Canvas简介&amp;lt;canvas&amp;gt; 是 HTML5 新增的，一个可以使用脚本(通常为JavaScript)在其中绘制图像的 HTML 元素。它可以用来制作照片集或者制作简单(也不是那么简单)的动画，甚至可以进行实时视频处理和渲染。 创建Canvas&amp;lt;canvas&amp;gt;会创建一个固定大小的画布，会公开一个或多个 渲染上下文(画笔)，使用 渲染上下文来绘制和处理要展示的内容。 1&amp;l">
+<meta name="keywords" content="Canvas">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Canvas学习笔记01 - 基础">
+<meta property="og:url" content="http://blog.xiaoyulive.top/2017/12/13/Canvas学习笔记01 - 基础/index.html">
+<meta property="og:site_name" content="小昱博客">
+<meta property="og:description" content="Canvas简介&amp;lt;canvas&amp;gt; 是 HTML5 新增的，一个可以使用脚本(通常为JavaScript)在其中绘制图像的 HTML 元素。它可以用来制作照片集或者制作简单(也不是那么简单)的动画，甚至可以进行实时视频处理和渲染。 创建Canvas&amp;lt;canvas&amp;gt;会创建一个固定大小的画布，会公开一个或多个 渲染上下文(画笔)，使用 渲染上下文来绘制和处理要展示的内容。 1&amp;l">
+<meta property="og:image" content="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/Canvas_default_grid.png">
+<meta property="og:image" content="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/0012.png">
+<meta property="og:image" content="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/0013.png">
+<meta property="og:image" content="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/0015.png">
+<meta property="og:image" content="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/0014.png">
+<meta property="og:image" content="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/0016.png">
+<meta property="og:image" content="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/0017.png">
+<meta property="og:image" content="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/0020.png">
+<meta property="og:updated_time" content="2017-12-13T08:41:46.565Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Canvas学习笔记01 - 基础">
+<meta name="twitter:description" content="Canvas简介&amp;lt;canvas&amp;gt; 是 HTML5 新增的，一个可以使用脚本(通常为JavaScript)在其中绘制图像的 HTML 元素。它可以用来制作照片集或者制作简单(也不是那么简单)的动画，甚至可以进行实时视频处理和渲染。 创建Canvas&amp;lt;canvas&amp;gt;会创建一个固定大小的画布，会公开一个或多个 渲染上下文(画笔)，使用 渲染上下文来绘制和处理要展示的内容。 1&amp;l">
+<meta name="twitter:image" content="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/Canvas_default_grid.png">
+    
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="stylesheet" href="/css/style.css?v=1.6.17">
+    <script>window.lazyScripts=[]</script>
+
+    <!-- custom head -->
+    
+
+    <script src="/js/particles.min.js?v=1.6.17"></script>
+</head>
+
+<body>
+    <div id="loading" class="active"></div>
+
+    <aside id="menu" class="hide" >
+  <div class="inner flex-row-vertical">
+    <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+        <i class="icon icon-lg icon-close"></i>
+    </a>
+    <div class="brand-wrap" style="background-image:url(/img/brand.webp)">
+      <div class="brand">
+        <!-- 头像 -->
+        <a href="/" class="avatar waves-effect waves-circle waves-light">
+          <img src="/img/avatar.jpg">
+        </a>
+        <!-- 简介 -->
+        <hgroup class="introduce">
+          <h5 class="nickname">Quanzaiyu</h5>
+          <a href="mailto:quanzaiyu@outlook.com" title="quanzaiyu@outlook.com" class="mail">quanzaiyu@outlook.com</a>
+          <!-- 链接 -->
+          <div class="iconGroup">
+            
+              <div class="icon">
+                <a  href="https://github.com/quanzaiyu"
+                    target="_blank" 
+                    title="GitHub">
+                  <i class="icon icon-lg icon-github"></i>
+                </a>
+              </div>
+            
+              <div class="icon">
+                <a  href="http://www.weibo.com/quanzaiyu"
+                    target="_blank" 
+                    title="微博">
+                  <i class="icon icon-lg icon-weibo"></i>
+                </a>
+              </div>
+            
+              <div class="icon">
+                <a  href="http://www.jianshu.com/u/2e74d0659da1"
+                    target="_blank" 
+                    title="简书">
+                  <i class="icon icon-lg icon-book"></i>
+                </a>
+              </div>
+            
+          </div>
+        </hgroup>
+      </div>
+    </div>
+    <div class="scroll-wrap flex-col">
+      <ul class="nav">
+        
+            <li class="waves-block waves-effect">
+              <a href="/"  >
+                <i class="icon icon-lg icon-home"></i>
+                主页
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/archives"  >
+                <i class="icon icon-lg icon-archives"></i>
+                归档
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/tags"  >
+                <i class="icon icon-lg icon-tags"></i>
+                标签云
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/categories"  >
+                <i class="icon icon-lg icon-th-list"></i>
+                分类
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/custom"  >
+                <i class="icon icon-lg icon-link"></i>
+                关于我
+              </a>
+            </li>
+        
+      </ul>
+    </div>
+  </div>
+</aside>
+
+    <main id="main">
+        <header class="top-header" id="header">
+    <div class="flex-row">
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">Canvas学习笔记01 - 基础</div>
+        
+        <div class="search-wrap" id="search-wrap">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+                <i class="icon icon-lg icon-chevron-left"></i>
+            </a>
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="输入感兴趣的关键字">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
+                <i class="icon icon-lg icon-search"></i>
+            </a>
+        </div>
+        
+        
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menuShare">
+            <i class="icon icon-lg icon-share-alt"></i>
+        </a>
+        
+    </div>
+</header>
+<header class="content-header post-header">
+
+    <div class="container fade-scale">
+        <h1 class="title">Canvas学习笔记01 - 基础</h1>
+        <h5 class="subtitle">
+            
+                <time datetime="2017-12-13T06:33:29.829Z" itemprop="datePublished" class="page-time">
+  2017-12-13
+</time>
+
+
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/前端开发/">前端开发</a><ul class="article-category-list-child"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/前端开发/Canvas学习笔记/">Canvas学习笔记</a></li></ul></li></ul>
+
+            
+        </h5>
+    </div>
+
+    
+
+
+</header>
+
+
+<div class="container body-wrap">
+    <!-- <div id="canvas-container"></div> -->
+    
+    <aside class="post-widget">
+        <nav class="post-toc-wrap" id="post-toc">
+            <h4>TOC</h4>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#Canvas简介"><span class="post-toc-number">1.</span> <span class="post-toc-text">Canvas简介</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#创建Canvas"><span class="post-toc-number">2.</span> <span class="post-toc-text">创建Canvas</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#栅格和坐标空间"><span class="post-toc-number">3.</span> <span class="post-toc-text">栅格和坐标空间</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#绘制形状"><span class="post-toc-number">4.</span> <span class="post-toc-text">绘制形状</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#矩形"><span class="post-toc-number">4.1.</span> <span class="post-toc-text">矩形</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#绘制路径"><span class="post-toc-number">5.</span> <span class="post-toc-text">绘制路径</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#添加颜色和样式"><span class="post-toc-number">6.</span> <span class="post-toc-text">添加颜色和样式</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#颜色"><span class="post-toc-number">6.1.</span> <span class="post-toc-text">颜色</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#样式"><span class="post-toc-number">6.2.</span> <span class="post-toc-text">样式</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#绘制文字"><span class="post-toc-number">7.</span> <span class="post-toc-text">绘制文字</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#文本样式"><span class="post-toc-number">7.1.</span> <span class="post-toc-text">文本样式</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#绘制图片"><span class="post-toc-number">8.</span> <span class="post-toc-text">绘制图片</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#参考资料"><span class="post-toc-number">9.</span> <span class="post-toc-text">参考资料</span></a></li></ol>
+        </nav>
+    </aside>
+    
+<article id="post-Canvas学习笔记01 - 基础"
+  class="post-article article-type-post fade" itemprop="blogPost">
+
+    <div class="post-card">
+        <h1 class="post-card-title">Canvas学习笔记01 - 基础</h1>
+        <div class="post-meta">
+            <time class="post-time" title="2017-12-13 14:33:29" datetime="2017-12-13T06:33:29.829Z"  itemprop="datePublished">2017-12-13</time>
+
+            
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/前端开发/">前端开发</a><ul class="article-category-list-child"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/前端开发/Canvas学习笔记/">Canvas学习笔记</a></li></ul></li></ul>
+
+
+
+            
+<span id="busuanzi_container_page_pv" title="文章总阅读量" style='display:none'>
+    <i class="icon icon-eye icon-pr"></i><span id="busuanzi_value_page_pv"></span>
+</span>
+
+
+        </div>
+        <div class="post-content" id="post-content" itemprop="postContent">
+            <h1 id="Canvas简介"><a href="#Canvas简介" class="headerlink" title="Canvas简介"></a>Canvas简介</h1><p><code>&lt;canvas&gt;</code> 是 <code>HTML5</code> 新增的，一个可以使用脚本(通常为<code>JavaScript</code>)在其中绘制图像的 <code>HTML</code> 元素。它可以用来制作照片集或者制作简单(也不是那么简单)的动画，甚至可以进行实时视频处理和渲染。</p>
+<h1 id="创建Canvas"><a href="#创建Canvas" class="headerlink" title="创建Canvas"></a>创建Canvas</h1><p><code>&lt;canvas&gt;</code>会创建一个固定大小的画布，会公开一个或多个 <strong>渲染上下文</strong>(画笔)，使用 <strong>渲染上下文</strong>来绘制和处理要展示的内容。</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">canvas</span> <span class="attr">id</span>=<span class="string">"canvas"</span> <span class="attr">width</span>=<span class="string">"200"</span> <span class="attr">height</span>=<span class="string">"200"</span>&gt;</span><span class="tag">&lt;/<span class="name">canvas</span>&gt;</span></div></pre></td></tr></table></figure>
+<p>其中<code>width</code>和<code>height</code>并不是指<code>canvas</code>的真正尺寸，而是指<code>canvas</code>的精度，即将整个画布平分为200*200个像素点，真正指定<code>canvas</code>尺寸大小可以由CSS指定</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="selector-id">#canvas</span> &#123;</div><div class="line">  <span class="attribute">width</span>: <span class="number">500px</span>;</div><div class="line">  <span class="attribute">height</span>: <span class="number">500px</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>通过js操作canvas的<strong>渲染上下文</strong>(Thre Rending Context)画笔实现绘制</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">let</span> canvas = <span class="built_in">document</span>.getElementById(<span class="string">'canvas'</span>) <span class="comment">// 获取canvas元素 -&gt; HTMLCanvasElement</span></div><div class="line"><span class="keyword">let</span> ctx = canvas.getContext(<span class="string">'2d'</span>) <span class="comment">// 获取到canvas上下文(画笔) -&gt; CanvasRenderingContext2D</span></div></pre></td></tr></table></figure>
+<h1 id="栅格和坐标空间"><a href="#栅格和坐标空间" class="headerlink" title="栅格和坐标空间"></a>栅格和坐标空间</h1><p>上面说了，canvas的属性width和height将canvas平均分布200*200个像素点，左上顶点坐标为(0, 0)，右下顶点为(200, 200)，如图所示:</p>
+<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/Canvas_default_grid.png" alt="" title="">
+                </div>
+                <div class="image-caption"></div>
+            </figure>
+<h1 id="绘制形状"><a href="#绘制形状" class="headerlink" title="绘制形状"></a>绘制形状</h1><p>canvas只支持一种基本形状——矩形，所有其它形状都是通过一个或多个路径组合而成，甚至是基本的矩形也可以通过路径组合成。 更多的图形可以使用第三方插件 <a href="http://www.draw2d.org/draw2d/" target="_blank" rel="external">draw2d.js</a> 完成。</p>
+<h2 id="矩形"><a href="#矩形" class="headerlink" title="矩形"></a>矩形</h2><p>canvas提供三个绘制矩形的方法:</p>
+<ol>
+<li><code>fillRect(x, y, width, height)</code> 绘制一个填充的矩形</li>
+<li><code>strokeRect(x, y, width, height)</code> 绘制一个矩形的边框</li>
+<li><code>clearRect(x, y, widh, height)</code> 清除指定的矩形区域，然后这块区域会变的完全透明。(可以理解为一块矩形橡皮擦)</li>
+</ol>
+<p>参数说明:</p>
+<ul>
+<li><code>x, y</code>：矩形的左上角的坐标。</li>
+<li><code>width, height</code>：绘制的矩形的宽和高。</li>
+</ul>
+<p>填充的默认颜色为黑色</p>
+<p>如:</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">ctx.fillRect(<span class="number">10</span>, <span class="number">10</span>, <span class="number">100</span>, <span class="number">50</span>);</div><div class="line">ctx.strokeRect(<span class="number">10</span>, <span class="number">70</span>, <span class="number">100</span>, <span class="number">50</span>);</div><div class="line">ctx.clearRect(<span class="number">15</span>, <span class="number">15</span>, <span class="number">50</span>, <span class="number">25</span>);</div></pre></td></tr></table></figure>
+<h1 id="绘制路径"><a href="#绘制路径" class="headerlink" title="绘制路径"></a>绘制路径</h1><p>图形的基本元素是路径。路径是通过不同颜色和宽度的线段或曲线相连形成的不同形状的点的集合。一个路径，甚至一个子路径，都是闭合的。</p>
+<p>使用路径绘制图形一般需要以下步骤：</p>
+<ol>
+<li>创建路径起始点</li>
+<li>调用绘制方法去绘制出路径</li>
+<li>把路径封闭</li>
+<li>一旦路径生成，通过描边或填充路径区域来渲染图形。</li>
+</ol>
+<p>canvas绘制路径相关的API:</p>
+<ol>
+<li><code>beginPath()</code> 新建一条路径，路径一旦创建成功，图形绘制命令被指向到路径上生成路径</li>
+<li><code>moveTo(x, y)</code> 把画笔移动到指定的坐标<code>(x, y)</code>。相当于设置路径的起始点坐标。(可以理解为将画笔悬空移动)</li>
+<li><code>lineTo(x, y)</code> 将画笔以画线的形式移动到另一点坐标<code>(x, y)</code>。(可以理解为让画笔在画纸上移动)</li>
+<li><code>closePath()</code> 闭合路径之后，图形绘制命令又重新指向到上下文中</li>
+<li><code>stroke()</code> 通过线条来绘制图形轮廓</li>
+<li><code>fill()</code> 通过填充路径的内容区域生成实心的图形</li>
+</ol>
+<p>如: 通过路径绘制一个矩形</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">ctx.beginPath();</div><div class="line">ctx.moveTo(<span class="number">50</span>, <span class="number">50</span>);</div><div class="line">ctx.lineTo(<span class="number">50</span>, <span class="number">100</span>);</div><div class="line">ctx.lineTo(<span class="number">100</span>, <span class="number">100</span>);</div><div class="line">ctx.lineTo(<span class="number">100</span>, <span class="number">50</span>);</div><div class="line">ctx.closePath();</div><div class="line">ctx.fill();</div></pre></td></tr></table></figure>
+<h1 id="添加颜色和样式"><a href="#添加颜色和样式" class="headerlink" title="添加颜色和样式"></a>添加颜色和样式</h1><h2 id="颜色"><a href="#颜色" class="headerlink" title="颜色"></a>颜色</h2><p>给绘制的图形上色，可以使用以下API:</p>
+<ol>
+<li><p><code>fillStyle = color</code> 设置图形的填充颜色</p>
+</li>
+<li><p><code>strokeStyle = color</code> 设置图形轮廓的颜色</p>
+</li>
+<li><p><code>globalAlpha = transparencyValue</code>  这个属性影响到 canvas 里所有图形的透明度，有效的值范围是 0.0 （完全透明）到 1.0（完全不透明），默认是 1.0。</p>
+<p> <code>globalAlpha</code> 属性在需要绘制大量拥有相同透明度的图形时候相当高效。不过，个人认为使用<code>rgba()</code>设置透明度更加好一些。</p>
+</li>
+</ol>
+<p>注意:</p>
+<ol>
+<li><code>color</code> 可以是表示 <code>css</code> 颜色值的字符串、渐变对象或者图案对象。</li>
+<li>默认情况下，线条和填充颜色都是黑色。</li>
+<li>一旦您设置了 <code>strokeStyle</code> 或者 <code>fillStyle</code> 的值，那么这个新值就会成为新绘制的图形的默认值。如果你要给每个图形上不同的颜色，需要重新设置 <code>fillStyle</code>。</li>
+</ol>
+<p>如: </p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">for</span> (<span class="keyword">let</span> i = <span class="number">0</span>; i &lt; <span class="number">100</span>; i++)&#123;</div><div class="line">  <span class="keyword">for</span> (<span class="keyword">let</span> j = <span class="number">0</span>; j &lt; <span class="number">100</span>; j++)&#123;</div><div class="line">    <span class="keyword">for</span> (<span class="keyword">let</span> k = <span class="number">0</span>; k &lt; <span class="number">100</span>; k++) &#123;</div><div class="line">      ctx.fillStyle = <span class="string">'rgb('</span> +</div><div class="line">        <span class="built_in">Math</span>.floor(<span class="number">255</span> - <span class="number">20</span> * i) + <span class="string">','</span> +</div><div class="line">        <span class="built_in">Math</span>.floor(<span class="number">255</span> - <span class="number">20</span> * j) + <span class="string">','</span> +</div><div class="line">        <span class="built_in">Math</span>.floor(<span class="number">255</span> - <span class="number">20</span> * k) + <span class="string">')'</span>;</div><div class="line">      ctx.fillRect(j * <span class="number">10</span>, i * <span class="number">10</span>, <span class="number">10</span>, <span class="number">10</span>);</div><div class="line">    &#125;</div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/0012.png" alt="" title="">
+                </div>
+                <div class="image-caption"></div>
+            </figure>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">randomInt</span>(<span class="params">from, to</span>)</span>&#123;</div><div class="line">  <span class="keyword">return</span> <span class="built_in">parseInt</span>(<span class="built_in">Math</span>.random() * (to - <span class="keyword">from</span> + <span class="number">1</span>) + <span class="keyword">from</span>);</div><div class="line">&#125;</div><div class="line"><span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; <span class="number">6</span>; i++)&#123;</div><div class="line">  <span class="keyword">for</span> (<span class="keyword">var</span> j = <span class="number">0</span>; j &lt; <span class="number">6</span>; j++)&#123;</div><div class="line">    ctx.strokeStyle = <span class="string">`rgb(<span class="subst">$&#123;randomInt(<span class="number">0</span>, <span class="number">255</span>)&#125;</span>,<span class="subst">$&#123;randomInt(<span class="number">0</span>, <span class="number">255</span>)&#125;</span>,<span class="subst">$&#123;randomInt(<span class="number">0</span>, <span class="number">255</span>)&#125;</span>)`</span>;</div><div class="line">    ctx.strokeRect(j * <span class="number">50</span>, i * <span class="number">50</span>, <span class="number">40</span>, <span class="number">40</span>);</div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/0013.png" alt="" title="">
+                </div>
+                <div class="image-caption"></div>
+            </figure>
+<h2 id="样式"><a href="#样式" class="headerlink" title="样式"></a>样式</h2><ol>
+<li><code>lineWidth = value</code> 线宽。只能是正值。默认是<code>1.0</code></li>
+<li><p><code>lineCap = type</code> 线条末端样式，允许的值有:</p>
+<ol>
+<li><code>butt</code>：线段末端以方形结束</li>
+<li><code>round</code>：线段末端以圆形结束</li>
+<li><code>square</code>：线段末端以方形结束，但是增加了一个宽度和线段相同，高度是线段厚度一半的矩形区域。</li>
+</ol>
+</li>
+<li><code>lineJoin = type</code> 同一个path内，设定线条与线条间接合处的样式。<ol>
+<li><code>round</code> 通过填充一个额外的，圆心在相连部分末端的扇形，绘制拐角的形状。 圆角的半径是线段的宽度。</li>
+<li><code>bevel</code> 在相连部分的末端填充一个额外的以三角形为底的区域， 每个部分都有各自独立的矩形拐角。</li>
+<li><code>miter</code> (默认) 通过延伸相连部分的外边缘，使其相交于一点，形成一个额外的菱形区域。</li>
+</ol>
+</li>
+<li>设置虚线样式: <code>setLineDash</code> 方法接受一个数组，来指定线段与间隙的交替；<code>lineDashOffset</code>属性设置起始偏移量。</li>
+</ol>
+<p>如: 设置线条末端样式</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">ctx.beginPath(); </div><div class="line">ctx.moveTo(<span class="number">10</span>, <span class="number">10</span>); </div><div class="line">ctx.lineTo(<span class="number">100</span>, <span class="number">10</span>); </div><div class="line">ctx.lineWidth = <span class="number">10</span>; </div><div class="line">ctx.lineCap = <span class="string">'round'</span></div><div class="line">ctx.stroke();</div></pre></td></tr></table></figure>
+<p>如: 设置线条结合处样式</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> lineJoin = [<span class="string">'round'</span>, <span class="string">'bevel'</span>, <span class="string">'miter'</span>];</div><div class="line">ctx.lineWidth = <span class="number">20</span>;</div><div class="line"><span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; lineJoin.length; i++)&#123;</div><div class="line">  ctx.lineJoin = lineJoin[i];</div><div class="line">  ctx.beginPath();</div><div class="line">  ctx.moveTo(<span class="number">50</span>, <span class="number">50</span> + i * <span class="number">50</span>);</div><div class="line">  ctx.lineTo(<span class="number">100</span>, <span class="number">100</span> + i * <span class="number">50</span>);</div><div class="line">  ctx.lineTo(<span class="number">150</span>, <span class="number">50</span> + i * <span class="number">50</span>);</div><div class="line">  ctx.lineTo(<span class="number">200</span>, <span class="number">100</span> + i * <span class="number">50</span>);</div><div class="line">  ctx.lineTo(<span class="number">250</span>, <span class="number">50</span> + i * <span class="number">50</span>);</div><div class="line">  ctx.stroke();</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/0015.png" alt="" title="">
+                </div>
+                <div class="image-caption"></div>
+            </figure>
+<p>如: 设置虚线样式</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">ctx.setLineDash([<span class="number">20</span>, <span class="number">5</span>, <span class="number">10</span>, <span class="number">5</span>]);  <span class="comment">// [实线长度, 间隙长度]</span></div><div class="line">ctx.lineDashOffset = <span class="number">10</span>;</div><div class="line">ctx.strokeRect(<span class="number">50</span>, <span class="number">50</span>, <span class="number">100</span>, <span class="number">100</span>);</div></pre></td></tr></table></figure>
+<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/0014.png" alt="" title="">
+                </div>
+                <div class="image-caption"></div>
+            </figure>
+<h1 id="绘制文字"><a href="#绘制文字" class="headerlink" title="绘制文字"></a>绘制文字</h1><p>canvas 提供了两种方法来渲染文本:</p>
+<ol>
+<li><code>fillText(text, x, y [, maxWidth])</code> 在指定的(x,y)位置填充指定的文本，绘制的最大宽度是可选的.</li>
+<li><code>strokeText(text, x, y [, maxWidth])</code> 在指定的(x,y)位置绘制文本边框，绘制的最大宽度是可选的.</li>
+</ol>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">let</span> text = <span class="string">'Hello canvas!'</span></div><div class="line">ctx.font = <span class="string">"20px sans-serif"</span></div><div class="line">ctx.fillText(text, <span class="number">50</span>, <span class="number">50</span>)</div><div class="line">ctx.strokeText(text, <span class="number">50</span>, <span class="number">100</span>)</div></pre></td></tr></table></figure>
+<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/0016.png" alt="" title="">
+                </div>
+                <div class="image-caption"></div>
+            </figure>
+<h2 id="文本样式"><a href="#文本样式" class="headerlink" title="文本样式"></a>文本样式</h2><ol>
+<li><code>font = value</code> 当前我们用来绘制文本的样式。这个字符串使用和 <code>CSS font</code>属性相同的语法. 默认的字体是 <code>10px sans-serif</code>。</li>
+<li><code>textAlign = value</code> 文本对齐选项. 可选的值包括：<code>start</code>, <code>end</code>, <code>left</code>, <code>right</code> or <code>center</code>. 默认值是 <code>start</code>。</li>
+<li><code>textBaseline = value</code> 基线对齐选项，可选的值包括：<code>top</code>, <code>hanging</code>, <code>middle</code>, <code>alphabetic</code>, <code>ideographic</code>, <code>bottom</code>。默认值是 <code>alphabetic。</code></li>
+<li><code>direction = value</code> 文本方向。可能的值包括：<code>ltr</code>, <code>rtl</code>, <code>inherit</code>。默认值是 <code>inherit。</code></li>
+</ol>
+<h1 id="绘制图片"><a href="#绘制图片" class="headerlink" title="绘制图片"></a>绘制图片</h1><p>使用<code>drawImage</code>绘制图像</p>
+<p>有以下三种使用方法:</p>
+<ol>
+<li><code>context.drawImage(img,x,y)</code></li>
+<li><code>context.drawImage(img,x,y,width,height)</code></li>
+<li><code>context.drawImage(img,sx,sy,swidth,sheight,x,y,width,height)</code></li>
+</ol>
+<ul>
+<li><p>第一参数<code>img</code>可以是一个<code>Image()</code>的实例，也可以是一个<code>&lt;img&gt;</code>的Dom元素。</p>
+</li>
+<li><p><code>sx, sy</code> 必选，为绘制图像的顶点坐标。</p>
+</li>
+<li><code>sWidth, sHeight</code> 可选，为图片缩放大小。</li>
+</ul>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> img = <span class="keyword">new</span> Image();   <span class="comment">// 创建img元素</span></div><div class="line">img.onload = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">  ctx.drawImage(img, <span class="number">20</span>, <span class="number">20</span>, <span class="number">150</span>, <span class="number">100</span>)</div><div class="line">&#125;</div><div class="line">img.src = <span class="string">'city.jpg'</span>; <span class="comment">// 设置图片源地址</span></div></pre></td></tr></table></figure>
+<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/0017.png" alt="" title="">
+                </div>
+                <div class="image-caption"></div>
+            </figure>
+<p>如果除<code>img</code>外有8个参数:</p>
+<ul>
+<li>前4个是定义图像源的切片位置和大小。</li>
+<li>后4个则是定义切片的目标显示位置和大小。</li>
+</ul>
+<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/0020.png" alt="](http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/0018.jpg) ![" title="">
+                </div>
+                <div class="image-caption">](http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/0018.jpg) ![</div>
+            </figure>
+<h1 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h1><p> <a href="http://blog.csdn.net/u012468376/article/details/73350998" target="_blank" rel="external">学习HTML5 Canvas这一篇文章就够了</a> </p>
+<p><a href="http://www.jianshu.com/p/14164d222f0b" target="_blank" rel="external">HTML5 Canvas 学习</a> </p>
+<p><a href="http://blog.csdn.net/pyx6119822/article/details/52384637" target="_blank" rel="external">HTML5之Canvas 2D入门2 - Canvas绘制图形</a> </p>
+
+        </div>
+
+        <blockquote class="post-copyright">
+    <div class="content">
+        
+<span class="post-time">
+    最后更新时间：<time datetime="2017-12-13T08:41:46.565Z" itemprop="dateUpdated">2017-12-13 16:41:46</time>
+</span><br>
+
+
+        
+        这里可以写作者留言，标签和 hexo 中所有变量及辅助函数等均可调用，示例：<a href="/2017/12/13/Canvas学习笔记01 - 基础/" target="_blank" rel="external">http://blog.xiaoyulive.top/2017/12/13/Canvas学习笔记01 - 基础/</a>
+        
+    </div>
+    <footer>
+        <a href="http://blog.xiaoyulive.top">
+            <img src="/img/avatar.jpg" alt="Quanzaiyu">
+            Quanzaiyu
+        </a>
+    </footer>
+</blockquote>
+
+        
+<div class="page-reward">
+    <a id="rewardBtn" href="javascript:;" class="page-reward-btn waves-effect waves-circle waves-light">赏</a>
+</div>
+
+
+
+        <div class="post-footer">
+            
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Canvas/">Canvas</a></li></ul>
+
+
+            
+<div class="page-share-wrap">
+    
+
+<div class="page-share" id="pageShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://blog.xiaoyulive.top/2017/12/13/Canvas学习笔记01 - 基础/&title=《Canvas学习笔记01 - 基础》 — 小昱博客&pic=http://blog.xiaoyulive.top/img/avatar.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://blog.xiaoyulive.top/2017/12/13/Canvas学习笔记01 - 基础/&title=《Canvas学习笔记01 - 基础》 — 小昱博客&source=" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://blog.xiaoyulive.top/2017/12/13/Canvas学习笔记01 - 基础/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《Canvas学习笔记01 - 基础》 — 小昱博客&url=http://blog.xiaoyulive.top/2017/12/13/Canvas学习笔记01 - 基础/&via=http://blog.xiaoyulive.top" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://blog.xiaoyulive.top/2017/12/13/Canvas学习笔记01 - 基础/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+
+    <a href="javascript:;" id="shareFab" class="page-share-fab waves-effect waves-circle">
+        <i class="icon icon-share-alt icon-lg"></i>
+    </a>
+</div>
+
+
+
+        </div>
+    </div>
+
+    
+<nav class="post-nav flex-row flex-justify-between">
+  
+    <div class="waves-block waves-effect prev">
+      <a href="/2017/12/13/Canvas学习笔记04 - 图像视频处理/" id="post-prev" class="post-nav-link">
+        <div class="tips"><i class="icon icon-angle-left icon-lg icon-pr"></i> Prev</div>
+        <h4 class="title">Canvas学习笔记04 - 图像视频处理</h4>
+      </a>
+    </div>
+  
+
+  
+    <div class="waves-block waves-effect next">
+      <a href="/2017/12/13/巧妙的前端特效 - 实现折角效果/" id="post-next" class="post-nav-link">
+        <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
+        <h4 class="title">巧妙的前端特效 - 实现折角效果</h4>
+      </a>
+    </div>
+  
+</nav>
+
+
+
+    
+
+
+<section class="comments" id="comments">
+    <div id="disqus_thread"></div>
+    <script>
+    var disqus_shortname = 'true';
+    lazyScripts.push('//' + disqus_shortname + '.disqus.com/embed.js')
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</section>
+
+
+
+
+<section class="comments" id="comments">
+    <!-- UY BEGIN -->
+    <div id="uyan_frame"></div>
+    <script src="http://v2.uyan.cc/code/uyan.js?uid=true"></script>
+    <!-- UY END -->
+</section>
+
+
+
+
+<section class="comments" id="comments">
+    <div id="gitment_thread"></div>
+    <link rel="stylesheet" href="//unpkg.com/gitment/style/default.css">
+    <script src="//unpkg.com/gitment/dist/gitment.browser.js"></script>
+    <script>
+        var gitment = new Gitment({
+            owner: 'quanzaiyu',
+            repo: 'quanzaiyu.github.io',
+            oauth: {
+                client_id: '3f4b90df85c3c29d643f',
+                client_secret: 'c951dd3dbd71e2edd597aa527a1a5d7e473d7375',
+            },
+        })
+        gitment.render('comments')
+    </script>
+</section>
+
+
+
+
+</article>
+
+<div id="reward" class="page-modal reward-lay">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <h3 class="reward-title">
+        <i class="icon icon-quote-left"></i>
+        谢谢大爷~
+        <i class="icon icon-quote-right"></i>
+    </h3>
+    <div class="reward-content">
+        
+        <div class="reward-code">
+            <img id="rewardCode" src="/img/wechat.jpg" alt="打赏二维码">
+        </div>
+        
+        <label class="reward-toggle">
+            <input id="rewardToggle" type="checkbox" class="reward-toggle-check"
+                data-wechat="/img/wechat.jpg" data-alipay="/img/alipay.jpg">
+            <div class="reward-toggle-ctrol">
+                <span class="reward-toggle-item wechat">微信</span>
+                <span class="reward-toggle-label"></span>
+                <span class="reward-toggle-item alipay">支付宝</span>
+            </div>
+        </label>
+        
+    </div>
+</div>
+
+
+
+</div>
+
+<!-- <script>
+    particlesJS.load('canvas-container', '/json/particles2.json', function () {
+        console.log('callback - particles.js config loaded');
+    })
+</script> -->
+        <footer class="footer">
+    <div class="top">
+        
+<p>
+    <span id="busuanzi_container_site_uv" style='display:none'>
+        站点总访客数：<span id="busuanzi_value_site_uv"></span>
+    </span>
+    <span id="busuanzi_container_site_pv" style='display:none'>
+        站点总访问量：<span id="busuanzi_value_site_pv"></span>
+    </span>
+</p>
+
+
+        <p>
+            
+            <!-- <span>博客内容遵循 <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">知识共享 署名 - 非商业性 - 相同方式共享 4.0 国际协议</a></span> -->
+        </p>
+    </div>
+    <div class="bottom">
+        <p><span>Quanzaiyu &copy; 2015 - 2017</span>
+            <span>
+                
+                <a href="http://www.miitbeian.gov.cn/" target="_blank">滇ICP备16006294号</a><br>
+                
+                Power by <a href="http://hexo.io/" target="_blank">Hexo</a>
+            </span>
+        </p>
+    </div>
+</footer>
+
+    </main>
+    <div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+
+
+<div class="global-share" id="globalShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://blog.xiaoyulive.top/2017/12/13/Canvas学习笔记01 - 基础/&title=《Canvas学习笔记01 - 基础》 — 小昱博客&pic=http://blog.xiaoyulive.top/img/avatar.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://blog.xiaoyulive.top/2017/12/13/Canvas学习笔记01 - 基础/&title=《Canvas学习笔记01 - 基础》 — 小昱博客&source=" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://blog.xiaoyulive.top/2017/12/13/Canvas学习笔记01 - 基础/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《Canvas学习笔记01 - 基础》 — 小昱博客&url=http://blog.xiaoyulive.top/2017/12/13/Canvas学习笔记01 - 基础/&via=http://blog.xiaoyulive.top" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://blog.xiaoyulive.top/2017/12/13/Canvas学习笔记01 - 基础/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+<div class="page-modal wx-share" id="wxShare">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <img src="//api.qrserver.com/v1/create-qr-code/?data=http://blog.xiaoyulive.top/2017/12/13/Canvas学习笔记01 - 基础/" alt="微信分享二维码">
+</div>
+
+
+
+
+    <script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+<script>
+var BLOG = { ROOT: '/', SHARE: true, REWARD: true };
+
+
+</script>
+
+<script src="/js/main.min.js?v=1.6.17"></script>
+
+
+<div class="search-panel" id="search-panel">
+    <ul class="search-result" id="search-result"></ul>
+</div>
+<template id="search-tpl">
+<li class="item">
+    <a href="{path}" class="waves-block waves-effect">
+        <div class="title ellipsis" title="{title}">{title}</div>
+        <div class="flex-row flex-middle">
+            <div class="tags ellipsis">
+                {tags}
+            </div>
+            <time class="flex-col time">{date}</time>
+        </div>
+    </a>
+</li>
+</template>
+
+<script src="/js/search.min.js?v=1.6.17" async></script>
+
+
+
+
+
+
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+<script>
+(function() {
+    var OriginTitile = document.title, titleTime;
+    document.addEventListener('visibilitychange', function() {
+        if (document.hidden) {
+            document.title = 'ﾍ(;´Д｀ﾍ)快回来啊！';
+            clearTimeout(titleTime);
+        } else {
+            document.title = '(つェ⊂)欢迎回来!';
+            titleTime = setTimeout(function() {
+                document.title = OriginTitile;
+            },2000);
+        }
+    });
+})();
+</script>
+
+
+
+</body>
+</html>
