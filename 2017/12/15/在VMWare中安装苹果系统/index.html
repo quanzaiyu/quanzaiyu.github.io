@@ -18,26 +18,30 @@
     
     
     
-    <title>意想不到的CSS - 细说calc | 小昱博客 | 勤学如春起之苗，不见其增，日有所长；辍学如磨刀之石，不见其损，日有所亏</title>
+    <title>在VMWare中安装苹果系统 | 小昱博客 | 勤学如春起之苗，不见其增，日有所长；辍学如磨刀之石，不见其损，日有所亏</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
     <meta name="theme-color" content="#3F51B5">
     
     
-    <meta name="keywords" content="CSS3">
-    <meta name="description" content="在很早以前，就知道CSS3有一个计算函数calc()，但一直没有深入了解。今天在别人的博客上偶然看到了关于calc的详细介绍，于是燃起了深入了解此特性的想法。 什么是Calccalc是英文单词calculate的缩写，是css3的一个新增的功能，用来指定元素的长度。比如说，你可以使用calc()给元素的border、margin、pading、font-size和width等属性设置动态值。为何说">
-<meta name="keywords" content="CSS3">
+    <meta name="keywords" content="VMWare,OSX">
+    <meta name="description" content="前言VMWare本身并不支持OSX的安装，但是可以通过破解补丁unlocker208可以突破限制，安装苹果系统。 之所以选择使用虚拟机安装OSX，主要是由于本人太穷，买不起苹果机，个人只是出于兴趣想要研究下苹果系统，另外就是想学一下Swift，而用一下XCode。 各种工具的下载地址下载VMware 12 Pro  http://pan.baidu.com/s/1hrSuPZe 提取密码：7qz3">
+<meta name="keywords" content="VMWare,OSX">
 <meta property="og:type" content="article">
-<meta property="og:title" content="意想不到的CSS - 细说calc">
-<meta property="og:url" content="http://blog.xiaoyulive.top/2017/12/12/意想不到的CSS - 细说calc/index.html">
+<meta property="og:title" content="在VMWare中安装苹果系统">
+<meta property="og:url" content="http://blog.xiaoyulive.top/2017/12/15/在VMWare中安装苹果系统/index.html">
 <meta property="og:site_name" content="小昱博客">
-<meta property="og:description" content="在很早以前，就知道CSS3有一个计算函数calc()，但一直没有深入了解。今天在别人的博客上偶然看到了关于calc的详细介绍，于是燃起了深入了解此特性的想法。 什么是Calccalc是英文单词calculate的缩写，是css3的一个新增的功能，用来指定元素的长度。比如说，你可以使用calc()给元素的border、margin、pading、font-size和width等属性设置动态值。为何说">
-<meta property="og:image" content="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/calc.png">
-<meta property="og:updated_time" content="2017-12-13T02:41:35.505Z">
+<meta property="og:description" content="前言VMWare本身并不支持OSX的安装，但是可以通过破解补丁unlocker208可以突破限制，安装苹果系统。 之所以选择使用虚拟机安装OSX，主要是由于本人太穷，买不起苹果机，个人只是出于兴趣想要研究下苹果系统，另外就是想学一下Swift，而用一下XCode。 各种工具的下载地址下载VMware 12 Pro  http://pan.baidu.com/s/1hrSuPZe 提取密码：7qz3">
+<meta property="og:image" content="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/OSX01.jpg">
+<meta property="og:image" content="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/OSX02.jpg">
+<meta property="og:image" content="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/OSX03.jpg">
+<meta property="og:image" content="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/OSX04.jpg">
+<meta property="og:image" content="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/OSX05.jpg">
+<meta property="og:updated_time" content="2017-12-15T06:09:05.838Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="意想不到的CSS - 细说calc">
-<meta name="twitter:description" content="在很早以前，就知道CSS3有一个计算函数calc()，但一直没有深入了解。今天在别人的博客上偶然看到了关于calc的详细介绍，于是燃起了深入了解此特性的想法。 什么是Calccalc是英文单词calculate的缩写，是css3的一个新增的功能，用来指定元素的长度。比如说，你可以使用calc()给元素的border、margin、pading、font-size和width等属性设置动态值。为何说">
-<meta name="twitter:image" content="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/calc.png">
+<meta name="twitter:title" content="在VMWare中安装苹果系统">
+<meta name="twitter:description" content="前言VMWare本身并不支持OSX的安装，但是可以通过破解补丁unlocker208可以突破限制，安装苹果系统。 之所以选择使用虚拟机安装OSX，主要是由于本人太穷，买不起苹果机，个人只是出于兴趣想要研究下苹果系统，另外就是想学一下Swift，而用一下XCode。 各种工具的下载地址下载VMware 12 Pro  http://pan.baidu.com/s/1hrSuPZe 提取密码：7qz3">
+<meta name="twitter:image" content="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/OSX01.jpg">
     
     <link rel="shortcut icon" href="/favicon.ico">
     <link rel="stylesheet" href="/css/style.css?v=1.6.17">
@@ -147,7 +151,7 @@
         <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
           <i class="icon icon-lg icon-navicon"></i>
         </a>
-        <div class="flex-col header-title ellipsis">意想不到的CSS - 细说calc</div>
+        <div class="flex-col header-title ellipsis">在VMWare中安装苹果系统</div>
         
         <div class="search-wrap" id="search-wrap">
             <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
@@ -169,15 +173,15 @@
 <header class="content-header post-header">
 
     <div class="container fade-scale">
-        <h1 class="title">意想不到的CSS - 细说calc</h1>
+        <h1 class="title">在VMWare中安装苹果系统</h1>
         <h5 class="subtitle">
             
-                <time datetime="2017-12-12T07:37:24.388Z" itemprop="datePublished" class="page-time">
-  2017-12-12
+                <time datetime="2017-12-15T06:09:05.837Z" itemprop="datePublished" class="page-time">
+  2017-12-15
 </time>
 
 
-	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/前端开发/">前端开发</a><ul class="article-category-list-child"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/前端开发/意想不到的CSS/">意想不到的CSS</a></li></ul></li></ul>
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/计算机/">计算机</a></li></ul>
 
             
         </h5>
@@ -195,20 +199,20 @@
     <aside class="post-widget">
         <nav class="post-toc-wrap" id="post-toc">
             <h4>TOC</h4>
-            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#什么是Calc"><span class="post-toc-number">1.</span> <span class="post-toc-text">什么是Calc</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#如何使用"><span class="post-toc-number">2.</span> <span class="post-toc-text">如何使用</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#兼容性"><span class="post-toc-number">3.</span> <span class="post-toc-text">兼容性</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#参考资料"><span class="post-toc-number">4.</span> <span class="post-toc-text">参考资料</span></a></li></ol>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#前言"><span class="post-toc-number">1.</span> <span class="post-toc-text">前言</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#各种工具的下载地址"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">各种工具的下载地址</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#安装流程"><span class="post-toc-number">2.</span> <span class="post-toc-text">安装流程</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#安装VMWare虚拟机"><span class="post-toc-number">2.1.</span> <span class="post-toc-text">安装VMWare虚拟机</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#使用unlocker解锁OSX"><span class="post-toc-number">2.2.</span> <span class="post-toc-text">使用unlocker解锁OSX</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#安装OSX系统"><span class="post-toc-number">2.3.</span> <span class="post-toc-text">安装OSX系统</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#参考资料"><span class="post-toc-number">3.</span> <span class="post-toc-text">参考资料</span></a></li></ol>
         </nav>
     </aside>
     
-<article id="post-意想不到的CSS - 细说calc"
+<article id="post-在VMWare中安装苹果系统"
   class="post-article article-type-post fade" itemprop="blogPost">
 
     <div class="post-card">
-        <h1 class="post-card-title">意想不到的CSS - 细说calc</h1>
+        <h1 class="post-card-title">在VMWare中安装苹果系统</h1>
         <div class="post-meta">
-            <time class="post-time" title="2017-12-12 15:37:24" datetime="2017-12-12T07:37:24.388Z"  itemprop="datePublished">2017-12-12</time>
+            <time class="post-time" title="2017-12-15 14:09:05" datetime="2017-12-15T06:09:05.837Z"  itemprop="datePublished">2017-12-15</time>
 
             
-	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/前端开发/">前端开发</a><ul class="article-category-list-child"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/前端开发/意想不到的CSS/">意想不到的CSS</a></li></ul></li></ul>
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/计算机/">计算机</a></li></ul>
 
 
 
@@ -220,28 +224,67 @@
 
         </div>
         <div class="post-content" id="post-content" itemprop="postContent">
-            <p>在很早以前，就知道CSS3有一个计算函数<code>calc()</code>，但一直没有深入了解。今天在别人的博客上偶然看到了关于<code>calc</code>的详细介绍，于是燃起了深入了解此特性的想法。</p>
-<h1 id="什么是Calc"><a href="#什么是Calc" class="headerlink" title="什么是Calc"></a>什么是Calc</h1><p><code>calc</code>是英文单词<code>calculate</code>的缩写，是css3的一个新增的功能，用来指定元素的长度。比如说，你可以使用<code>calc()</code>给元素的border、margin、pading、font-size和width等属性设置动态值。为何说是动态值呢?因为我们使用的表达式来得到的值。不过calc()最大的好处就是用在流体布局上，可以通过calc()计算得到元素的宽高。</p>
-<h1 id="如何使用"><a href="#如何使用" class="headerlink" title="如何使用"></a>如何使用</h1><p><code>calc()</code>使用通用的数学运算规则，但是也提供更智能的功能：</p>
-<ol>
-<li>使用“+”、“-”、“*” 和 “/”四则运算；</li>
-<li>可以使用%、px、em、rem等单位；</li>
-<li>可以混合使用各种单位进行计算；</li>
-<li>表达式中有“+”和“-”时，其前后必须要有空格，如”widht: calc(12%+5em)”这种没有空格的写法是错误的；</li>
-<li>表达式中有“*”和“/”时，其前后可以没有空格，但建议留有空格。</li>
-</ol>
-<p>使用起来其实很简单，比如:</p>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.box</span> &#123;</div><div class="line">  <span class="attribute">width</span>: <span class="built_in">calc</span>(50% + 2em);</div><div class="line">  <span class="attribute">height</span>: <span class="built_in">calc</span>(100% - 2em);</div><div class="line">  <span class="attribute">background-color</span>: <span class="number">#f00</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<h1 id="兼容性"><a href="#兼容性" class="headerlink" title="兼容性"></a>兼容性</h1><p>查询结果来自: <a href="https://caniuse.com/#search=calc" target="_blank" rel="external">https://caniuse.com/#search=calc</a></p>
+            <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>VMWare本身并不支持OSX的安装，但是可以通过破解补丁<code>unlocker208</code>可以突破限制，安装苹果系统。</p>
+<p>之所以选择使用虚拟机安装<code>OSX</code>，主要是由于本人太穷，买不起苹果机，个人只是出于兴趣想要研究下苹果系统，另外就是想学一下<code>Swift</code>，而用一下<code>XCode</code>。</p>
+<h2 id="各种工具的下载地址"><a href="#各种工具的下载地址" class="headerlink" title="各种工具的下载地址"></a>各种工具的下载地址</h2><p>下载VMware 12 Pro</p>
+<ul>
+<li><a href="http://pan.baidu.com/s/1hrSuPZe" target="_blank" rel="external">http://pan.baidu.com/s/1hrSuPZe</a> 提取密码：7qz3</li>
+</ul>
+<p>下载VMware虚拟机mac Os补丁(Unlocker补丁工具)</p>
+<ul>
+<li><a href="http://pan.baidu.com/s/1pLLBnf1" target="_blank" rel="external">http://pan.baidu.com/s/1pLLBnf1</a> 提取密码：pcuu</li>
+</ul>
+<p>下载OS X Mavericks Install.cdr（苹果系统）</p>
+<ul>
+<li><a href="http://pan.baidu.com/s/1jI78s4Y" target="_blank" rel="external">http://pan.baidu.com/s/1jI78s4Y</a>  提取密码：drbh</li>
+</ul>
+<h1 id="安装流程"><a href="#安装流程" class="headerlink" title="安装流程"></a>安装流程</h1><h2 id="安装VMWare虚拟机"><a href="#安装VMWare虚拟机" class="headerlink" title="安装VMWare虚拟机"></a>安装VMWare虚拟机</h2><p>不多说了，很简单，网上教程很多。</p>
+<h2 id="使用unlocker解锁OSX"><a href="#使用unlocker解锁OSX" class="headerlink" title="使用unlocker解锁OSX"></a>使用unlocker解锁OSX</h2><p>安装unlocker以解锁OSX</p>
+<h2 id="安装OSX系统"><a href="#安装OSX系统" class="headerlink" title="安装OSX系统"></a>安装OSX系统</h2><p>首先使用VMWare创建一个虚拟机，分配磁盘至少60GB，创建完成后，修改对应虚拟机目录下的<code>xxx.vmx</code>文件，在<code>smc.present = &quot;TRUE&quot;</code>后添加:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">smc.version = 0</div></pre></td></tr></table></figure>
+<p>之后开启虚拟机，等待进度条跑完。</p>
+<p>当选择安装磁盘的时候，会出现<code>OSX Base System 空间不够</code>的错误提示，此时得对硬盘重新分区:</p>
 <figure class="image-bubble">
                 <div class="img-lightbox">
                     <div class="overlay"></div>
-                    <img src="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/calc.png" alt="" title="">
+                    <img src="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/OSX01.jpg" alt="" title="">
                 </div>
                 <div class="image-caption"></div>
             </figure>
-<p>总体上，兼容性还不错，本人目前主要针对移动端做开发，还过得去。</p>
-<h1 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h1><p><a href="https://www.w3cplus.com/css3/how-to-use-css3-calc-function.html" target="_blank" rel="external">CSS3的calc()使用</a> </p>
+<p>重新分区完毕，选择安装磁盘为新划分出来的磁盘即可</p>
+<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/OSX02.jpg" alt="" title="">
+                </div>
+                <div class="image-caption"></div>
+            </figure>
+<p>之后就是安装过程</p>
+<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/OSX03.jpg" alt="" title="">
+                </div>
+                <div class="image-caption"></div>
+            </figure>
+<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/OSX04.jpg" alt="" title="">
+                </div>
+                <div class="image-caption"></div>
+            </figure>
+<p>安装完成后的界面:</p>
+<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/OSX05.jpg" alt="" title="">
+                </div>
+                <div class="image-caption"></div>
+            </figure>
+<p>这下子就可以体验OSX系统的各种操作了，最主要的是可以安装XCode进行苹果软件开发了!</p>
+<h1 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h1><p><a href="https://www.ithome.com/html/mac/312273.htm" target="_blank" rel="external">IT之家学院：一步一步教你VMWare安装苹果Mac OS X</a> </p>
+<p><a href="http://blog.51cto.com/zhaoyuqiang/1430686" target="_blank" rel="external">50CTO: 苹果系统初体验 之 虚拟机安装MAC OS X Mavericks</a> </p>
 
         </div>
 
@@ -249,12 +292,12 @@
     <div class="content">
         
 <span class="post-time">
-    Last updated: <time datetime="2017-12-13T02:41:35.505Z" itemprop="dateUpdated">2017-12-13 10:41:35</time>
+    Last updated: <time datetime="2017-12-15T06:09:05.838Z" itemprop="dateUpdated">2017-12-15 14:09:05</time>
 </span><br>
 
 
         
-        这里可以写作者留言，标签和 hexo 中所有变量及辅助函数等均可调用，示例：<a href="/2017/12/12/意想不到的CSS - 细说calc/" target="_blank" rel="external">http://blog.xiaoyulive.top/2017/12/12/意想不到的CSS - 细说calc/</a>
+        这里可以写作者留言，标签和 hexo 中所有变量及辅助函数等均可调用，示例：<a href="/2017/12/15/在VMWare中安装苹果系统/" target="_blank" rel="external">http://blog.xiaoyulive.top/2017/12/15/在VMWare中安装苹果系统/</a>
         
     </div>
     <footer>
@@ -274,7 +317,7 @@
 
         <div class="post-footer">
             
-	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/CSS3/">CSS3</a></li></ul>
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/OSX/">OSX</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/VMWare/">VMWare</a></li></ul>
 
 
             
@@ -284,7 +327,7 @@
 <div class="page-share" id="pageShare">
     <ul class="reset share-icons">
       <li>
-        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://blog.xiaoyulive.top/2017/12/12/意想不到的CSS - 细说calc/&title=《意想不到的CSS - 细说calc》 — 小昱博客&pic=http://blog.xiaoyulive.top/img/avatar.jpg" data-title="微博">
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://blog.xiaoyulive.top/2017/12/15/在VMWare中安装苹果系统/&title=《在VMWare中安装苹果系统》 — 小昱博客&pic=http://blog.xiaoyulive.top/img/avatar.jpg" data-title="微博">
           <i class="icon icon-weibo"></i>
         </a>
       </li>
@@ -294,22 +337,22 @@
         </a>
       </li>
       <li>
-        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://blog.xiaoyulive.top/2017/12/12/意想不到的CSS - 细说calc/&title=《意想不到的CSS - 细说calc》 — 小昱博客&source=" data-title=" QQ">
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://blog.xiaoyulive.top/2017/12/15/在VMWare中安装苹果系统/&title=《在VMWare中安装苹果系统》 — 小昱博客&source=" data-title=" QQ">
           <i class="icon icon-qq"></i>
         </a>
       </li>
       <li>
-        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://blog.xiaoyulive.top/2017/12/12/意想不到的CSS - 细说calc/" data-title=" Facebook">
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://blog.xiaoyulive.top/2017/12/15/在VMWare中安装苹果系统/" data-title=" Facebook">
           <i class="icon icon-facebook"></i>
         </a>
       </li>
       <li>
-        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《意想不到的CSS - 细说calc》 — 小昱博客&url=http://blog.xiaoyulive.top/2017/12/12/意想不到的CSS - 细说calc/&via=http://blog.xiaoyulive.top" data-title=" Twitter">
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《在VMWare中安装苹果系统》 — 小昱博客&url=http://blog.xiaoyulive.top/2017/12/15/在VMWare中安装苹果系统/&via=http://blog.xiaoyulive.top" data-title=" Twitter">
           <i class="icon icon-twitter"></i>
         </a>
       </li>
       <li>
-        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://blog.xiaoyulive.top/2017/12/12/意想不到的CSS - 细说calc/" data-title=" Google+">
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://blog.xiaoyulive.top/2017/12/15/在VMWare中安装苹果系统/" data-title=" Google+">
           <i class="icon icon-google-plus"></i>
         </a>
       </li>
@@ -332,18 +375,18 @@
 <nav class="post-nav flex-row flex-justify-between">
   
     <div class="waves-block waves-effect prev">
-      <a href="/2017/12/13/意想不到的CSS - 巧用overflow/" id="post-prev" class="post-nav-link">
+      <a href="/2017/12/15/巧妙的前端特效 - 实现折角效果/" id="post-prev" class="post-nav-link">
         <div class="tips"><i class="icon icon-angle-left icon-lg icon-pr"></i> Prev</div>
-        <h4 class="title">意想不到的CSS - 巧用overflow</h4>
+        <h4 class="title">巧妙的前端特效 - 实现折角效果</h4>
       </a>
     </div>
   
 
   
     <div class="waves-block waves-effect next">
-      <a href="/2017/12/11/常用前端代码片段整理/" id="post-next" class="post-nav-link">
+      <a href="/2017/12/15/在VMWare中安装CentOS并配置SSH远程登录/" id="post-next" class="post-nav-link">
         <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
-        <h4 class="title">常用前端代码片段整理</h4>
+        <h4 class="title">在VMWare中安装CentOS并配置SSH远程登录</h4>
       </a>
     </div>
   
@@ -472,7 +515,7 @@
 <div class="global-share" id="globalShare">
     <ul class="reset share-icons">
       <li>
-        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://blog.xiaoyulive.top/2017/12/12/意想不到的CSS - 细说calc/&title=《意想不到的CSS - 细说calc》 — 小昱博客&pic=http://blog.xiaoyulive.top/img/avatar.jpg" data-title="微博">
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://blog.xiaoyulive.top/2017/12/15/在VMWare中安装苹果系统/&title=《在VMWare中安装苹果系统》 — 小昱博客&pic=http://blog.xiaoyulive.top/img/avatar.jpg" data-title="微博">
           <i class="icon icon-weibo"></i>
         </a>
       </li>
@@ -482,22 +525,22 @@
         </a>
       </li>
       <li>
-        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://blog.xiaoyulive.top/2017/12/12/意想不到的CSS - 细说calc/&title=《意想不到的CSS - 细说calc》 — 小昱博客&source=" data-title=" QQ">
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://blog.xiaoyulive.top/2017/12/15/在VMWare中安装苹果系统/&title=《在VMWare中安装苹果系统》 — 小昱博客&source=" data-title=" QQ">
           <i class="icon icon-qq"></i>
         </a>
       </li>
       <li>
-        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://blog.xiaoyulive.top/2017/12/12/意想不到的CSS - 细说calc/" data-title=" Facebook">
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://blog.xiaoyulive.top/2017/12/15/在VMWare中安装苹果系统/" data-title=" Facebook">
           <i class="icon icon-facebook"></i>
         </a>
       </li>
       <li>
-        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《意想不到的CSS - 细说calc》 — 小昱博客&url=http://blog.xiaoyulive.top/2017/12/12/意想不到的CSS - 细说calc/&via=http://blog.xiaoyulive.top" data-title=" Twitter">
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《在VMWare中安装苹果系统》 — 小昱博客&url=http://blog.xiaoyulive.top/2017/12/15/在VMWare中安装苹果系统/&via=http://blog.xiaoyulive.top" data-title=" Twitter">
           <i class="icon icon-twitter"></i>
         </a>
       </li>
       <li>
-        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://blog.xiaoyulive.top/2017/12/12/意想不到的CSS - 细说calc/" data-title=" Google+">
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://blog.xiaoyulive.top/2017/12/15/在VMWare中安装苹果系统/" data-title=" Google+">
           <i class="icon icon-google-plus"></i>
         </a>
       </li>
@@ -508,7 +551,7 @@
 <div class="page-modal wx-share" id="wxShare">
     <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
-    <img src="//api.qrserver.com/v1/create-qr-code/?data=http://blog.xiaoyulive.top/2017/12/12/意想不到的CSS - 细说calc/" alt="微信分享二维码">
+    <img src="//api.qrserver.com/v1/create-qr-code/?data=http://blog.xiaoyulive.top/2017/12/15/在VMWare中安装苹果系统/" alt="微信分享二维码">
 </div>
 
 

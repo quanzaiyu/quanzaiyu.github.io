@@ -183,6 +183,156 @@
         <ul class="post-list">
             
                 <li class="post-list-item fade">
+                    <article id="post-Node.js应用篇 - 新一代Node服务器框架KOA"
+  class="article-card article-type-post" itemprop="blogPost">
+
+    <div class="post-meta">
+        <time class="post-time" title="2017-12-08 10:13:07" datetime="2017-12-08T02:13:07.710Z"  itemprop="datePublished">2017-12-08</time>
+
+        
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/Node-js/">Node.js</a><ul class="article-category-list-child"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/Node-js/Node-js应用篇/">Node.js应用篇</a></li></ul></li></ul>
+
+
+
+    </div>
+
+    
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/2017/12/08/Node.js应用篇 - 新一代Node服务器框架KOA/">Node.js应用篇 - 新一代Node服务器框架KOA</a>
+    </h3>
+  
+
+
+
+
+    <div class="post-content" id="post-content" itemprop="postContent">
+
+    
+        简介为什么说是新一代?
+新一代是koa，那上一代呢? 上一代就是大名鼎鼎的Express，koa经过了两个大版本，比起koa1，koa2使用了ES7进行开发，完全使用Promise并配合async来实现异步。
+本文编写的时候使用的是koa2
+开始使用简单使用新建一个项目名叫myapp，进入此目录
+1234npm initnpm i koa -stouch index.jsvim idnex....
+    
+
+        <a href="/2017/12/08/Node.js应用篇 - 新一代Node服务器框架KOA/" class="post-more waves-effect waves-button">
+            Continue reading...
+        </a>
+    </div>
+    
+    <div class="post-footer">
+        
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/KOA/">KOA</a></li></ul>
+
+    </div>
+    
+</article>
+
+                </li>
+            
+                <li class="post-list-item fade">
+                    <article id="post-Node.js学习笔记04 - 加密"
+  class="article-card article-type-post" itemprop="blogPost">
+
+    <div class="post-meta">
+        <time class="post-time" title="2017-12-07 11:18:18" datetime="2017-12-07T03:18:18.591Z"  itemprop="datePublished">2017-12-07</time>
+
+        
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/Node-js/">Node.js</a><ul class="article-category-list-child"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/Node-js/Node-js学习笔记/">Node.js学习笔记</a></li></ul></li></ul>
+
+
+
+    </div>
+
+    
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/2017/12/07/Node.js学习笔记04 - 加密/">Node.js学习笔记04 - 加密</a>
+    </h3>
+  
+
+
+
+
+    <div class="post-content" id="post-content" itemprop="postContent">
+
+    
+        crypto模块的目的是为了提供通用的加密和哈希算法。用纯JavaScript代码实现这些功能不是不可能，但速度会非常慢。Nodejs用C/C++实现这些算法后，通过cypto这个模块暴露为JavaScript接口，这样用起来方便，运行速度也快。
+MD5MD5是一种常用的哈希算法，用于给任意数据一个“签名”。这个签名通常用一个十六进制的字符串表示：
+123456789const crypto...
+    
+
+        <a href="/2017/12/07/Node.js学习笔记04 - 加密/" class="post-more waves-effect waves-button">
+            Continue reading...
+        </a>
+    </div>
+    
+    <div class="post-footer">
+        
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Node-js/">Node.js</a></li></ul>
+
+    </div>
+    
+</article>
+
+                </li>
+            
+                <li class="post-list-item fade">
+                    <article id="post-Node.js学习笔记03 - http"
+  class="article-card article-type-post" itemprop="blogPost">
+
+    <div class="post-meta">
+        <time class="post-time" title="2017-12-07 10:10:48" datetime="2017-12-07T02:10:48.245Z"  itemprop="datePublished">2017-12-07</time>
+
+        
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/Node-js/">Node.js</a><ul class="article-category-list-child"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/Node-js/Node-js学习笔记/">Node.js学习笔记</a></li></ul></li></ul>
+
+
+
+    </div>
+
+    
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/2017/12/07/Node.js学习笔记03 - http/">Node.js学习笔记03 - http</a>
+    </h3>
+  
+
+
+
+
+    <div class="post-content" id="post-content" itemprop="postContent">
+
+    
+        HTTP服务器request对象封装了HTTP请求，我们调用request对象的属性和方法就可以拿到所有HTTP请求的信息；
+response对象封装了HTTP响应，我们操作response对象的方法，就可以把HTTP响应返回给浏览器。
+用Node.js实现一个HTTP服务器程序:
+1234567891011121314151617181920'use strict';// 导入http模块...
+    
+
+        <a href="/2017/12/07/Node.js学习笔记03 - http/" class="post-more waves-effect waves-button">
+            Continue reading...
+        </a>
+    </div>
+    
+    <div class="post-footer">
+        
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Node-js/">Node.js</a></li></ul>
+
+    </div>
+    
+</article>
+
+                </li>
+            
+                <li class="post-list-item fade">
                     <article id="post-Node.js学习笔记02 - IO"
   class="article-card article-type-post" itemprop="blogPost">
 
@@ -479,54 +629,6 @@ read() 方法，可以一...
                 </li>
             
                 <li class="post-list-item fade">
-                    <article id="post-高效使用VSCode进行开发"
-  class="article-card article-type-post" itemprop="blogPost">
-
-    <div class="post-meta">
-        <time class="post-time" title="2017-12-05 09:35:46" datetime="2017-12-05T01:35:46.272Z"  itemprop="datePublished">2017-12-05</time>
-
-        
-	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/开发工具/">开发工具</a></li></ul>
-
-
-
-    </div>
-
-    
-
-
-  
-    <h3 class="post-title" itemprop="name">
-      <a class="post-title-link" href="/2017/12/05/高效使用VSCode进行开发/">高效使用VSCode进行开发</a>
-    </h3>
-  
-
-
-
-
-    <div class="post-content" id="post-content" itemprop="postContent">
-
-    
-        VSCode简介VSCode是微软推出的一款产品，他不是一款强大的IDE，而是支持按需扩展各种插件的轻量级编辑器，可以看作是Visual Studio的精简版，界面风格相同。竞争对手会是Sublime、Atom，提供丰富的插件和优雅的编辑界面，内置多项丰富的功能，包括版本控制、插件管理、代码调试、多项目管理(v1.8)等。
-为什么选择VSCode之前一直很排斥微软的产品，特别是IE和.Net...
-    
-
-        <a href="/2017/12/05/高效使用VSCode进行开发/" class="post-more waves-effect waves-button">
-            Continue reading...
-        </a>
-    </div>
-    
-    <div class="post-footer">
-        
-	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/VSCode/">VSCode</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/开发工具/">开发工具</a></li></ul>
-
-    </div>
-    
-</article>
-
-                </li>
-            
-                <li class="post-list-item fade">
                     <article id="post-高效使用ESlint进行开发"
   class="article-card article-type-post" itemprop="blogPost">
 
@@ -582,111 +684,6 @@ ESLint 配置文件
     <div class="post-footer">
         
 	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ESlint/">ESlint</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/VSCode/">VSCode</a></li></ul>
-
-    </div>
-    
-</article>
-
-                </li>
-            
-                <li class="post-list-item fade">
-                    <article id="post-提升效率的必备VSCode插件"
-  class="article-card article-type-post" itemprop="blogPost">
-
-    <div class="post-meta">
-        <time class="post-time" title="2017-12-05 09:35:46" datetime="2017-12-05T01:35:46.271Z"  itemprop="datePublished">2017-12-05</time>
-
-        
-	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/开发工具/">开发工具</a></li></ul>
-
-
-
-    </div>
-
-    
-
-
-  
-    <h3 class="post-title" itemprop="name">
-      <a class="post-title-link" href="/2017/12/05/提升效率的必备VSCode插件/">提升效率的必备VSCode插件</a>
-    </h3>
-  
-
-
-
-
-    <div class="post-content" id="post-content" itemprop="postContent">
-
-    
-        常用优质插件的用法TODO+
- 创建一个TODO列表问题件
-
-安装  ext install vscode-todo-plus 
-常用命令
-1Todo: Open # 打开TODO文件
-快捷键
-1234Cmd/Ctrl+Enter # 将TODO标记为boxAlt+S # 将TODO标记为startedAlt+D # 将TODO标记为doneAlt+C # 将TODO标记为cancel
-常用...
-    
-
-        <a href="/2017/12/05/提升效率的必备VSCode插件/" class="post-more waves-effect waves-button">
-            Continue reading...
-        </a>
-    </div>
-    
-    <div class="post-footer">
-        
-	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/VSCode/">VSCode</a></li></ul>
-
-    </div>
-    
-</article>
-
-                </li>
-            
-                <li class="post-list-item fade">
-                    <article id="post-玩转交互式命令行"
-  class="article-card article-type-post" itemprop="blogPost">
-
-    <div class="post-meta">
-        <time class="post-time" title="2017-12-05 09:35:46" datetime="2017-12-05T01:35:46.271Z"  itemprop="datePublished">2017-12-05</time>
-
-        
-	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/计算机/">计算机</a></li></ul>
-
-
-
-    </div>
-
-    
-
-
-  
-    <h3 class="post-title" itemprop="name">
-      <a class="post-title-link" href="/2017/12/05/玩转交互式命令行/">玩转交互式命令行</a>
-    </h3>
-  
-
-
-
-
-    <div class="post-content" id="post-content" itemprop="postContent">
-
-    
-        前言震惊过命令行中那些五颜六色的文本显示，使用包管理安装程序时进度条的变化，vim、Emacs等编辑器在终端中的实现。其实，这些都是Ansi Escape Codes的应用。
-绝大部分Ansi Escape Codes都以\u001b开头。本文以python命令行交互环境演示。
-Ansi Escape Codes的使用字体颜色8色基本上所有的控制台都支持以下8种颜色：
-格式: \u001b[...
-    
-
-        <a href="/2017/12/05/玩转交互式命令行/" class="post-more waves-effect waves-button">
-            Continue reading...
-        </a>
-    </div>
-    
-    <div class="post-footer">
-        
-	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/命令行/">命令行</a></li></ul>
 
     </div>
     
@@ -811,6 +808,22 @@ Ansi Escape Codes的使用字体颜色8色基本上所有的控制台都支持�
             <li
                 style="background-color: #2196f3;"
             ><a href="/tags/开发工具/">开发工具</a></li>
+        
+            <li
+                style="background-color: #8bc34a;"
+            ><a href="/tags/VMWare/">VMWare</a></li>
+        
+            <li
+                style="background-color: #673ab7;"
+            ><a href="/tags/CentOS/">CentOS</a></li>
+        
+            <li
+                style="background-color: #ff9800;"
+            ><a href="/tags/远程登录/">远程登录</a></li>
+        
+            <li
+                style="background-color: #f44336;"
+            ><a href="/tags/OSX/">OSX</a></li>
         
       </ul>
     </div>
