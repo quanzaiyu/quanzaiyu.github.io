@@ -34,6 +34,9 @@
 <meta property="og:description" content="translatetranslate(x, y)  用来移动 canvas 的原点到指定的位置(坐标变换)  translate方法接受两个参数:  x 是左右偏移量 y 是上下偏移量  在做变形之前先保存状态是一个良好的习惯。大多数情况下，调用 restore 方法比手动恢复原先的状态要简单得多。又如果你是在一个循环中做位移但没有保存和恢复canvas 的状态，很可能到最后会发现怎么有些东西不见">
 <meta property="og:image" content="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/canvas01.jpg">
 <meta property="og:image" content="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/canvas02.jpg">
+<meta property="og:image" content="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/0034.png">
+<meta property="og:image" content="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/0035.png">
+<meta property="og:image" content="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/0036.png">
 <meta property="og:image" content="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/canvas05.png">
 <meta property="og:image" content="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/canvas06.png">
 <meta property="og:image" content="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/canvas07.png">
@@ -47,7 +50,7 @@
 <meta property="og:image" content="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/canvas14.png">
 <meta property="og:image" content="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/canvas15.png">
 <meta property="og:image" content="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/canvas16.png">
-<meta property="og:updated_time" content="2017-12-15T06:01:07.082Z">
+<meta property="og:updated_time" content="2017-12-15T08:42:05.435Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Canvas学习笔记05 - 变形与合成">
 <meta name="twitter:description" content="translatetranslate(x, y)  用来移动 canvas 的原点到指定的位置(坐标变换)  translate方法接受两个参数:  x 是左右偏移量 y 是上下偏移量  在做变形之前先保存状态是一个良好的习惯。大多数情况下，调用 restore 方法比手动恢复原先的状态要简单得多。又如果你是在一个循环中做位移但没有保存和恢复canvas 的状态，很可能到最后会发现怎么有些东西不见">
@@ -167,7 +170,7 @@
             <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
                 <i class="icon icon-lg icon-chevron-left"></i>
             </a>
-            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="输入感兴趣的关键字">
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="Search">
             <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
                 <i class="icon icon-lg icon-search"></i>
             </a>
@@ -209,7 +212,7 @@
     <aside class="post-widget">
         <nav class="post-toc-wrap" id="post-toc">
             <h4>TOC</h4>
-            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#translate"><span class="post-toc-number">1.</span> <span class="post-toc-text">translate</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#rotate"><span class="post-toc-number">2.</span> <span class="post-toc-text">rotate</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#scale"><span class="post-toc-number">3.</span> <span class="post-toc-text">scale</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#Transforms"><span class="post-toc-number">4.</span> <span class="post-toc-text">Transforms</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#合成"><span class="post-toc-number">5.</span> <span class="post-toc-text">合成</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#参考资料"><span class="post-toc-number">6.</span> <span class="post-toc-text">参考资料</span></a></li></ol>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#translate"><span class="post-toc-number">1.</span> <span class="post-toc-text">translate</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#rotate"><span class="post-toc-number">2.</span> <span class="post-toc-text">rotate</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#scale"><span class="post-toc-number">3.</span> <span class="post-toc-text">scale</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#transforms"><span class="post-toc-number">4.</span> <span class="post-toc-text">transforms</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#合成"><span class="post-toc-number">5.</span> <span class="post-toc-text">合成</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#参考资料"><span class="post-toc-number">6.</span> <span class="post-toc-text">参考资料</span></a></li></ol>
         </nav>
     </aside>
     
@@ -251,8 +254,8 @@
             </figure>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">ctx.save(); <span class="comment">//保存坐原点平移之前的状态</span></div><div class="line">ctx.translate(<span class="number">100</span>, <span class="number">100</span>);</div><div class="line">ctx.strokeRect(<span class="number">0</span>, <span class="number">0</span>, <span class="number">100</span>, <span class="number">100</span>)</div><div class="line">ctx.restore(); <span class="comment">//恢复到最初状态</span></div><div class="line">ctx.translate(<span class="number">200</span>, <span class="number">200</span>);</div><div class="line">ctx.fillRect(<span class="number">0</span>, <span class="number">0</span>, <span class="number">100</span>, <span class="number">100</span>)</div></pre></td></tr></table></figure>
 <h1 id="rotate"><a href="#rotate" class="headerlink" title="rotate"></a>rotate</h1><p><code>rotate(angle)</code></p>
-<p> 旋转坐标轴， 旋转的中心是坐标原点。</p>
-<p> 这个方法只接受一个参数：旋转的角度(angle)，它是顺时针方向的，以弧度为单位的值。</p>
+<p> 旋转坐标轴， 旋转的中心是<strong>坐标原点</strong>。</p>
+<p> 这个方法只接受一个参数：旋转的角度(angle)，它是<strong>顺时针方向</strong>的，以弧度为单位的值。</p>
 <figure class="image-bubble">
                 <div class="img-lightbox">
                     <div class="overlay"></div>
@@ -260,12 +263,35 @@
                 </div>
                 <div class="image-caption"></div>
             </figure>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line">ctx.fillStyle = <span class="string">"red"</span>;</div><div class="line">ctx.save();</div><div class="line"></div><div class="line">ctx.translate(<span class="number">100</span>, <span class="number">100</span>);</div><div class="line">ctx.rotate(<span class="built_in">Math</span>.PI / <span class="number">180</span> * <span class="number">45</span>);</div><div class="line">ctx.fillStyle = <span class="string">"blue"</span>;</div><div class="line">ctx.fillRect(<span class="number">0</span>, <span class="number">0</span>, <span class="number">100</span>, <span class="number">100</span>);</div><div class="line">ctx.restore();</div><div class="line"></div><div class="line">ctx.save();</div><div class="line">ctx.translate(<span class="number">0</span>, <span class="number">0</span>);</div><div class="line">ctx.fillRect(<span class="number">0</span>, <span class="number">0</span>, <span class="number">50</span>, <span class="number">50</span>)</div><div class="line">ctx.restore();</div><div class="line"></div><div class="line">ctx.fillRect(<span class="number">50</span>, <span class="number">50</span>, <span class="number">50</span>, <span class="number">50</span>)</div></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">ctx.save()</div><div class="line">ctx.translate(<span class="number">100</span>, <span class="number">100</span>)</div><div class="line">ctx.fillRect(<span class="number">0</span>,<span class="number">0</span>,<span class="number">50</span>,<span class="number">100</span>)</div><div class="line">ctx.fillStyle = <span class="string">'#f00'</span></div><div class="line">ctx.rotate(<span class="built_in">Math</span>.PI/<span class="number">2</span>)</div><div class="line">ctx.fillRect(<span class="number">0</span>,<span class="number">0</span>,<span class="number">50</span>,<span class="number">100</span>)</div><div class="line">ctx.fillStyle = <span class="string">'#0f0'</span></div><div class="line">ctx.rotate(<span class="built_in">Math</span>.PI/<span class="number">2</span>)</div><div class="line">ctx.fillRect(<span class="number">0</span>,<span class="number">0</span>,<span class="number">50</span>,<span class="number">100</span>)</div><div class="line">ctx.fillStyle = <span class="string">'#00f'</span></div><div class="line">ctx.rotate(<span class="built_in">Math</span>.PI/<span class="number">2</span>)</div><div class="line">ctx.fillRect(<span class="number">0</span>,<span class="number">0</span>,<span class="number">50</span>,<span class="number">100</span>)</div><div class="line">ctx.restore()</div></pre></td></tr></table></figure>
+<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/0034.png" alt="" title="">
+                </div>
+                <div class="image-caption"></div>
+            </figure>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div></pre></td><td class="code"><pre><div class="line">ctx.save()</div><div class="line"></div><div class="line">ctx.translate(<span class="number">120</span>, <span class="number">120</span>)</div><div class="line">ctx.lineWidth = <span class="number">10</span></div><div class="line"></div><div class="line">ctx.beginPath()</div><div class="line">ctx.strokeStyle = <span class="string">'#f00'</span></div><div class="line">ctx.moveTo(<span class="number">20</span>, <span class="number">20</span>)</div><div class="line">ctx.lineTo(<span class="number">100</span>,<span class="number">100</span>)</div><div class="line">ctx.stroke()</div><div class="line">ctx.closePath()</div><div class="line"></div><div class="line">ctx.rotate(<span class="built_in">Math</span>.PI/<span class="number">2</span>)</div><div class="line">ctx.beginPath()</div><div class="line">ctx.strokeStyle = <span class="string">'#0f0'</span></div><div class="line">ctx.moveTo(<span class="number">20</span>, <span class="number">20</span>)</div><div class="line">ctx.lineTo(<span class="number">100</span>,<span class="number">100</span>)</div><div class="line">ctx.stroke()</div><div class="line">ctx.closePath()</div><div class="line"></div><div class="line">ctx.rotate(<span class="built_in">Math</span>.PI/<span class="number">2</span>)</div><div class="line">ctx.beginPath()</div><div class="line">ctx.strokeStyle = <span class="string">'#00f'</span></div><div class="line">ctx.moveTo(<span class="number">20</span>, <span class="number">20</span>)</div><div class="line">ctx.lineTo(<span class="number">100</span>,<span class="number">100</span>)</div><div class="line">ctx.stroke()</div><div class="line">ctx.closePath()</div><div class="line"></div><div class="line">ctx.rotate(<span class="built_in">Math</span>.PI/<span class="number">2</span>)</div><div class="line">ctx.beginPath()</div><div class="line">ctx.strokeStyle = <span class="string">'#ff0'</span></div><div class="line">ctx.moveTo(<span class="number">20</span>, <span class="number">20</span>)</div><div class="line">ctx.lineTo(<span class="number">100</span>,<span class="number">100</span>)</div><div class="line">ctx.stroke()</div><div class="line">ctx.closePath()</div><div class="line"></div><div class="line">ctx.restore()</div></pre></td></tr></table></figure>
+<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/0035.png" alt="" title="">
+                </div>
+                <div class="image-caption"></div>
+            </figure>
 <h1 id="scale"><a href="#scale" class="headerlink" title="scale"></a>scale</h1><p><code>scale(x, y)</code></p>
-<p> 我们用它来增减图形在 <code>canvas</code> 中的像素数目，对形状，位图进行缩小或者放大。</p>
+<p> 我们用它来增减图形在 <code>canvas</code> 中的像素数目，对形状，位图进行缩小或者放大，。</p>
 <p> <code>scale</code>方法接受两个参数。<code>x,y</code>分别是横轴和纵轴的缩放因子，它们都必须是正值。值比 1.0 小表示缩 小，比 1.0 大则表示放大，值为 1.0 时什么效果都没有。</p>
 <p>举例说，如果<code>canvas</code> 的 1 单位就是 1 个像素。我们设置缩放因子是 0.5，1 个单位就变成对应 0.5 个像素，这样绘制出来的形状就会是原先的一半。同理，设置为 2.0 时，1 个单位就对应变成了 2 像素，绘制的结果就是图形放大了 2 倍。</p>
-<h1 id="Transforms"><a href="#Transforms" class="headerlink" title="Transforms"></a>Transforms</h1><p>transforms 直接对变形矩阵作修改。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">ctx.save()</div><div class="line"></div><div class="line">ctx.translate(<span class="number">120</span>, <span class="number">120</span>)</div><div class="line"></div><div class="line">ctx.strokeStyle = <span class="string">'#f00'</span></div><div class="line">ctx.strokeRect(<span class="number">0</span>,<span class="number">0</span>,<span class="number">50</span>,<span class="number">100</span>)</div><div class="line"></div><div class="line">ctx.scale(<span class="number">.5</span>, <span class="number">.5</span>)</div><div class="line">ctx.fillStyle = <span class="string">'#0f0'</span></div><div class="line">ctx.fillRect(<span class="number">0</span>,<span class="number">0</span>,<span class="number">50</span>,<span class="number">100</span>)</div><div class="line"></div><div class="line">ctx.restore()</div></pre></td></tr></table></figure>
+<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/0036.png" alt="" title="">
+                </div>
+                <div class="image-caption"></div>
+            </figure>
+<h1 id="transforms"><a href="#transforms" class="headerlink" title="transforms"></a>transforms</h1><p>transforms 直接对变形矩阵作修改。</p>
 <p>transform(m11, m12, m21, m22, dx, dy) 这个方法必须将当前的变形矩阵乘上下面的矩阵：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">m11 m21 dx</div><div class="line">m12 m22 dy</div><div class="line">0   0   1</div></pre></td></tr></table></figure>
 <p>这个方法必须重置当前的变形矩阵为单位矩阵，然后以相同的参数调用 transform 方法。如果任意一个参数是无限大，那么变形矩阵也必须被标记为无限大，否则会抛出异常。</p>
@@ -418,7 +444,7 @@
     <div class="content">
         
 <span class="post-time">
-    最后更新时间：<time datetime="2017-12-15T06:01:07.082Z" itemprop="dateUpdated">2017-12-15 14:01:07</time>
+    Last updated: <time datetime="2017-12-15T08:42:05.435Z" itemprop="dateUpdated">2017-12-15 16:42:05</time>
 </span><br>
 
 
@@ -617,7 +643,7 @@
 
         <p>
             
-            <!-- <span>博客内容遵循 <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">知识共享 署名 - 非商业性 - 相同方式共享 4.0 国际协议</a></span> -->
+            <!-- <span>This blog is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</span> -->
         </p>
     </div>
     <div class="bottom">

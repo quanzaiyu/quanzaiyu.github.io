@@ -33,7 +33,8 @@
 <meta property="og:site_name" content="小昱博客">
 <meta property="og:description" content="使用canvas捕捉视频图像使用drawImage甚至可以接受一个video的dom作为参数: 12345678910111213141516171819&amp;lt;video src=&quot;http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/mov_bbb.mp4&quot; controls&amp;gt;&amp;lt;/video&amp;gt;&amp;lt;canvas id=&quot;can">
 <meta property="og:image" content="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/0019.png">
-<meta property="og:updated_time" content="2017-12-13T08:45:27.335Z">
+<meta property="og:image" content="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/canvas18.png">
+<meta property="og:updated_time" content="2017-12-15T06:25:52.635Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Canvas学习笔记04 - 图像视频处理">
 <meta name="twitter:description" content="使用canvas捕捉视频图像使用drawImage甚至可以接受一个video的dom作为参数: 12345678910111213141516171819&amp;lt;video src=&quot;http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/mov_bbb.mp4&quot; controls&amp;gt;&amp;lt;/video&amp;gt;&amp;lt;canvas id=&quot;can">
@@ -153,7 +154,7 @@
             <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
                 <i class="icon icon-lg icon-chevron-left"></i>
             </a>
-            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="输入感兴趣的关键字">
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="Search">
             <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
                 <i class="icon icon-lg icon-search"></i>
             </a>
@@ -195,7 +196,7 @@
     <aside class="post-widget">
         <nav class="post-toc-wrap" id="post-toc">
             <h4>TOC</h4>
-            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#使用canvas捕捉视频图像"><span class="post-toc-number">1.</span> <span class="post-toc-text">使用canvas捕捉视频图像</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#参考资料"><span class="post-toc-number">2.</span> <span class="post-toc-text">参考资料</span></a></li></ol>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#使用canvas捕捉视频图像"><span class="post-toc-number">1.</span> <span class="post-toc-text">使用canvas捕捉视频图像</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#剪裁路径"><span class="post-toc-number">2.</span> <span class="post-toc-text">剪裁路径</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#参考资料"><span class="post-toc-number">3.</span> <span class="post-toc-text">参考资料</span></a></li></ol>
         </nav>
     </aside>
     
@@ -221,11 +222,22 @@
         </div>
         <div class="post-content" id="post-content" itemprop="postContent">
             <h1 id="使用canvas捕捉视频图像"><a href="#使用canvas捕捉视频图像" class="headerlink" title="使用canvas捕捉视频图像"></a>使用canvas捕捉视频图像</h1><p>使用<code>drawImage</code>甚至可以接受一个<code>video</code>的dom作为参数:</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">video</span> <span class="attr">src</span>=<span class="string">"http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/mov_bbb.mp4"</span> <span class="attr">controls</span>&gt;</span><span class="tag">&lt;/<span class="name">video</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">canvas</span> <span class="attr">id</span>=<span class="string">"canvas"</span> <span class="attr">width</span>=<span class="string">"200"</span> <span class="attr">height</span>=<span class="string">"200"</span>&gt;</span><span class="tag">&lt;/<span class="name">canvas</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="undefined"></span></div><div class="line"><span class="javascript">  <span class="keyword">let</span> canvas = <span class="built_in">document</span>.getElementById(<span class="string">'canvas'</span>)</span></div><div class="line"><span class="javascript">  <span class="keyword">let</span> video = <span class="built_in">document</span>.querySelector(<span class="string">'video'</span>)</span></div><div class="line"><span class="javascript">  <span class="keyword">let</span> ctx = canvas.getContext(<span class="string">'2d'</span>)</span></div><div class="line"><span class="javascript">  <span class="keyword">let</span> i = <span class="literal">undefined</span></span></div><div class="line"><span class="javascript">  video.addEventListener(<span class="string">'play'</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span></div><div class="line"><span class="javascript">    i = <span class="built_in">window</span>.setInterval(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span></div><div class="line"><span class="undefined">      ctx.drawImage(video, 0, 0, 270, 135)</span></div><div class="line"><span class="undefined">    &#125;, 20);</span></div><div class="line"><span class="javascript">  &#125;, <span class="literal">false</span>);</span></div><div class="line"><span class="javascript">  video.addEventListener(<span class="string">'pause'</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span></div><div class="line"><span class="javascript">    <span class="built_in">window</span>.clearInterval(i);</span></div><div class="line"><span class="javascript">  &#125;, <span class="literal">false</span>);</span></div><div class="line"><span class="javascript">  video.addEventListener(<span class="string">'ended'</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span></div><div class="line"><span class="undefined">    clearInterval(i);</span></div><div class="line"><span class="javascript">  &#125;, <span class="literal">false</span>);</span></div><div class="line"><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div></pre></td></tr></table></figure>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">video</span> <span class="attr">src</span>=<span class="string">"http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/mov_bbb.mp4"</span> <span class="attr">controls</span>&gt;</span><span class="tag">&lt;/<span class="name">video</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">canvas</span> <span class="attr">id</span>=<span class="string">"canvas"</span> <span class="attr">width</span>=<span class="string">"200"</span> <span class="attr">height</span>=<span class="string">"200"</span>&gt;</span><span class="tag">&lt;/<span class="name">canvas</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="undefined"></span></div><div class="line"><span class="undefined">  let canvas = document.getElementById('canvas')</span></div><div class="line"><span class="undefined">  let video = document.querySelector('video')</span></div><div class="line"><span class="undefined">  let ctx = canvas.getContext('2d')</span></div><div class="line"><span class="undefined">  let i = undefined</span></div><div class="line"><span class="undefined">  video.addEventListener('play', function() &#123;</span></div><div class="line"><span class="undefined">    i = window.setInterval(function() &#123;</span></div><div class="line"><span class="undefined">      ctx.drawImage(video, 0, 0, 270, 135)</span></div><div class="line"><span class="undefined">    &#125;, 20);</span></div><div class="line"><span class="undefined">  &#125;, false);</span></div><div class="line"><span class="undefined">  video.addEventListener('pause', function() &#123;</span></div><div class="line"><span class="undefined">    window.clearInterval(i);</span></div><div class="line"><span class="undefined">  &#125;, false);</span></div><div class="line"><span class="undefined">  video.addEventListener('ended', function() &#123;</span></div><div class="line"><span class="undefined">    clearInterval(i);</span></div><div class="line"><span class="undefined">  &#125;, false);</span></div><div class="line"><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div></pre></td></tr></table></figure>
 <figure class="image-bubble">
                 <div class="img-lightbox">
                     <div class="overlay"></div>
                     <img src="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/0019.png" alt="" title="">
+                </div>
+                <div class="image-caption"></div>
+            </figure>
+<h1 id="剪裁路径"><a href="#剪裁路径" class="headerlink" title="剪裁路径"></a>剪裁路径</h1><p><code>clip()</code> 把已经创建的路径转换成裁剪路径。</p>
+<p>裁剪路径的作用是遮罩。只显示裁剪路径内的区域，裁剪路径外的区域会被隐藏。</p>
+<p>注意：<code>clip()</code>只能遮罩在这个方法调用之后绘制的图像，如果是<code>clip()</code>方法调用之前绘制的图像，则无法实现遮罩。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">ctx.beginPath();</div><div class="line">ctx.arc(<span class="number">20</span>,<span class="number">20</span>, <span class="number">100</span>, <span class="number">0</span>, <span class="built_in">Math</span>.PI * <span class="number">2</span>);</div><div class="line">ctx.fillStyle = <span class="string">"pink"</span>;</div><div class="line">ctx.save();</div><div class="line"></div><div class="line">ctx.clip();</div><div class="line">ctx.fillRect(<span class="number">20</span>, <span class="number">20</span>, <span class="number">100</span>,<span class="number">100</span>);</div><div class="line"></div><div class="line">ctx.restore()</div><div class="line">ctx.fillRect(<span class="number">100</span>, <span class="number">100</span>, <span class="number">100</span>,<span class="number">100</span>);</div></pre></td></tr></table></figure>
+<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/canvas18.png" alt="" title="">
                 </div>
                 <div class="image-caption"></div>
             </figure>
@@ -237,7 +249,7 @@
     <div class="content">
         
 <span class="post-time">
-    最后更新时间：<time datetime="2017-12-13T08:45:27.335Z" itemprop="dateUpdated">2017-12-13 16:45:27</time>
+    Last updated: <time datetime="2017-12-15T06:25:52.635Z" itemprop="dateUpdated">2017-12-15 14:25:52</time>
 </span><br>
 
 
@@ -436,7 +448,7 @@
 
         <p>
             
-            <!-- <span>博客内容遵循 <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">知识共享 署名 - 非商业性 - 相同方式共享 4.0 国际协议</a></span> -->
+            <!-- <span>This blog is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</span> -->
         </p>
     </div>
     <div class="bottom">
