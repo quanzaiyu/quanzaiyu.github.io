@@ -46,7 +46,7 @@
 <meta property="og:image" content="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/0041.png">
 <meta property="og:image" content="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/0043.png">
 <meta property="og:image" content="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/0044.png">
-<meta property="og:updated_time" content="2017-12-18T10:01:11.983Z">
+<meta property="og:updated_time" content="2017-12-18T10:10:18.182Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="深入理解JavaScript - 深入探索XMLHttpRequest2">
 <meta name="twitter:description" content="前言web2.0出现很多年了，XMLHttpRequest也由此诞生，一代的XMLHttpRequest使用至今出现了诸多不足。作为其升级版的二代 XMLHttpRequest 引入了大量的新功能（例如跨源请求、上传进度事件以及对上传/下载二进制数据的支持等），而且 AJAX 可以与很多尖端的 HTML5 API 一起使用。 传统使用请求一段文本内容:12345678910111213141516">
@@ -166,7 +166,7 @@
             <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
                 <i class="icon icon-lg icon-chevron-left"></i>
             </a>
-            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="输入感兴趣的关键字">
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="Search">
             <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
                 <i class="icon icon-lg icon-search"></i>
             </a>
@@ -386,6 +386,8 @@
             </figure>
 <p>将<code>responseType</code>设置为<code>arraybuffer</code>即可返回<code>arraybuffer</code>类型的数据。</p>
 <p>可以使用<code>Blob</code>构造函数将<code>arraybuffer</code>的数据转化为<code>Blob</code>，注意得加上中括号<code>[]</code>。</p>
+<p>注意：</p>
+<p>以前有一个BlobBuilder对象，用于处理将ArrayBuffer转化为Blob格式，不过我测试的时候所有浏览器都报错，查了下MDN发现此对象已经废弃。所以开发的时候最好还是看W3C文档或者MDN，有助于了解API的实时更新。</p>
 <h3 id="类型化数组"><a href="#类型化数组" class="headerlink" title="类型化数组"></a>类型化数组</h3><p>类型化数组(Typed Arrays)是JavaScript中新出现的一个概念，专为访问原始的二进制数据而生。</p>
 <p>类型数组的类型有：</p>
 <table>
@@ -525,7 +527,7 @@
     <div class="content">
         
 <span class="post-time">
-    最后更新时间：<time datetime="2017-12-18T10:01:11.983Z" itemprop="dateUpdated">2017-12-18 18:01:11</time>
+    Last updated: <time datetime="2017-12-18T10:10:18.182Z" itemprop="dateUpdated">2017-12-18 18:10:18</time>
 </span><br>
 
 
@@ -717,7 +719,7 @@
 
         <p>
             
-            <!-- <span>博客内容遵循 <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">知识共享 署名 - 非商业性 - 相同方式共享 4.0 国际协议</a></span> -->
+            <!-- <span>This blog is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</span> -->
         </p>
     </div>
     <div class="bottom">
