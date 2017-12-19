@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+
+    
+
+    
+<!-- Baidu Tongji -->
+<script>var _hmt = _hmt || []</script>
+<script async src="//hm.baidu.com/hm.js?3c8be249330224d7c919b4f22750d872"></script>
+<!-- End Baidu Tongji -->
+
+
+
+
+    <meta charset="utf-8">
+    
+    
+    
+    <title>提升效率的必备SublimeText插件 | 小昱博客 | 勤学如春起之苗，不见其增，日有所长；辍学如磨刀之石，不见其损，日有所亏</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="theme-color" content="#3F51B5">
+    
+    
+    <meta name="keywords" content="SublimeText">
+    <meta name="description" content="安装package control使用  1Ctrl + `   打开命令面板，输入 1import urllib.request,os,hashlib; h = &amp;apos;6f4c264a24d933ce70df5dedcf1dcaee&amp;apos; + &amp;apos;ebe013ee18cced0ef93d5f746d80ef60&amp;apos;; pf = &amp;apos;Package Contro">
+<meta name="keywords" content="SublimeText">
+<meta property="og:type" content="article">
+<meta property="og:title" content="提升效率的必备SublimeText插件">
+<meta property="og:url" content="http://blog.xiaoyulive.top/2017/12/19/提升效率的必备SublimeText插件/index.html">
+<meta property="og:site_name" content="小昱博客">
+<meta property="og:description" content="安装package control使用  1Ctrl + `   打开命令面板，输入 1import urllib.request,os,hashlib; h = &amp;apos;6f4c264a24d933ce70df5dedcf1dcaee&amp;apos; + &amp;apos;ebe013ee18cced0ef93d5f746d80ef60&amp;apos;; pf = &amp;apos;Package Contro">
+<meta property="og:image" content="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/0052.gif">
+<meta property="og:image" content="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/0053.jpg">
+<meta property="og:image" content="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/0054.gif">
+<meta property="og:image" content="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/0055.png">
+<meta property="og:image" content="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/0056.gif">
+<meta property="og:image" content="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/0057.gif">
+<meta property="og:image" content="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/0058.gif">
+<meta property="og:image" content="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/0059.gif">
+<meta property="og:image" content="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/0060.gif">
+<meta property="og:image" content="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/0061.gif">
+<meta property="og:image" content="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/0062.gif">
+<meta property="og:image" content="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/0063.gif">
+<meta property="og:image" content="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/0064.gif">
+<meta property="og:image" content="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/0065.png">
+<meta property="og:image" content="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/0066.gif">
+<meta property="og:image" content="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/0067.gif">
+<meta property="og:image" content="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/0068.gif">
+<meta property="og:image" content="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/0069.gif">
+<meta property="og:image" content="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/0070.gif">
+<meta property="og:image" content="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/0071.gif">
+<meta property="og:image" content="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/0072.gif">
+<meta property="og:image" content="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/0073.gif">
+<meta property="og:image" content="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/0074.gif">
+<meta property="og:image" content="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/0075.gif">
+<meta property="og:image" content="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/0076.gif">
+<meta property="og:updated_time" content="2017-12-19T06:00:04.366Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="提升效率的必备SublimeText插件">
+<meta name="twitter:description" content="安装package control使用  1Ctrl + `   打开命令面板，输入 1import urllib.request,os,hashlib; h = &amp;apos;6f4c264a24d933ce70df5dedcf1dcaee&amp;apos; + &amp;apos;ebe013ee18cced0ef93d5f746d80ef60&amp;apos;; pf = &amp;apos;Package Contro">
+<meta name="twitter:image" content="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/0052.gif">
+    
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="stylesheet" href="/css/style.css?v=1.6.17">
+    <script>window.lazyScripts=[]</script>
+
+    <!-- custom head -->
+    
+
+    <script src="/js/particles.min.js?v=1.6.17"></script>
+</head>
+
+<body>
+    <div id="loading" class="active"></div>
+
+    <aside id="menu" class="hide" >
+  <div class="inner flex-row-vertical">
+    <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+        <i class="icon icon-lg icon-close"></i>
+    </a>
+    <div class="brand-wrap" style="background-image:url(/img/brand.webp)">
+      <div class="brand">
+        <!-- 头像 -->
+        <a href="/" class="avatar waves-effect waves-circle waves-light">
+          <img src="/img/avatar.jpg">
+        </a>
+        <!-- 简介 -->
+        <hgroup class="introduce">
+          <h5 class="nickname">Quanzaiyu</h5>
+          <a href="mailto:quanzaiyu@outlook.com" title="quanzaiyu@outlook.com" class="mail">quanzaiyu@outlook.com</a>
+          <!-- 链接 -->
+          <div class="iconGroup">
+            
+              <div class="icon">
+                <a  href="https://github.com/quanzaiyu"
+                    target="_blank" 
+                    title="GitHub">
+                  <i class="icon icon-lg icon-github"></i>
+                </a>
+              </div>
+            
+              <div class="icon">
+                <a  href="http://www.weibo.com/quanzaiyu"
+                    target="_blank" 
+                    title="微博">
+                  <i class="icon icon-lg icon-weibo"></i>
+                </a>
+              </div>
+            
+              <div class="icon">
+                <a  href="http://www.jianshu.com/u/2e74d0659da1"
+                    target="_blank" 
+                    title="简书">
+                  <i class="icon icon-lg icon-book"></i>
+                </a>
+              </div>
+            
+          </div>
+        </hgroup>
+      </div>
+    </div>
+    <div class="scroll-wrap flex-col">
+      <ul class="nav">
+        
+            <li class="waves-block waves-effect">
+              <a href="/"  >
+                <i class="icon icon-lg icon-home"></i>
+                主页
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/archives"  >
+                <i class="icon icon-lg icon-archives"></i>
+                归档
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/tags"  >
+                <i class="icon icon-lg icon-tags"></i>
+                标签云
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/categories"  >
+                <i class="icon icon-lg icon-th-list"></i>
+                分类
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/custom"  >
+                <i class="icon icon-lg icon-link"></i>
+                关于我
+              </a>
+            </li>
+        
+      </ul>
+    </div>
+  </div>
+</aside>
+
+    <main id="main">
+        <header class="top-header" id="header">
+    <div class="flex-row">
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">提升效率的必备SublimeText插件</div>
+        
+        <div class="search-wrap" id="search-wrap">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+                <i class="icon icon-lg icon-chevron-left"></i>
+            </a>
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="Search">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
+                <i class="icon icon-lg icon-search"></i>
+            </a>
+        </div>
+        
+        
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menuShare">
+            <i class="icon icon-lg icon-share-alt"></i>
+        </a>
+        
+    </div>
+</header>
+<header class="content-header post-header">
+
+    <div class="container fade-scale">
+        <h1 class="title">提升效率的必备SublimeText插件</h1>
+        <h5 class="subtitle">
+            
+                <time datetime="2017-12-19T06:00:04.365Z" itemprop="datePublished" class="page-time">
+  2017-12-19
+</time>
+
+
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/开发工具/">开发工具</a></li></ul>
+
+            
+        </h5>
+    </div>
+
+    
+
+
+</header>
+
+
+<div class="container body-wrap">
+    <!-- <div id="canvas-container"></div> -->
+    
+    <aside class="post-widget">
+        <nav class="post-toc-wrap" id="post-toc">
+            <h4>TOC</h4>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#安装package-control"><span class="post-toc-number">1.</span> <span class="post-toc-text">安装package control</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#常用插件"><span class="post-toc-number">2.</span> <span class="post-toc-text">常用插件</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#代码提示与自动完成"><span class="post-toc-number">2.1.</span> <span class="post-toc-text">代码提示与自动完成</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#All-Autocomplete"><span class="post-toc-number">2.1.1.</span> <span class="post-toc-text">All Autocomplete</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#AutoFileName"><span class="post-toc-number">2.1.2.</span> <span class="post-toc-text">AutoFileName</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Autoprefixer"><span class="post-toc-number">2.1.3.</span> <span class="post-toc-text">Autoprefixer</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Emmet"><span class="post-toc-number">2.1.4.</span> <span class="post-toc-text">Emmet</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#功能增强"><span class="post-toc-number">2.2.</span> <span class="post-toc-text">功能增强</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Sublime-Server"><span class="post-toc-number">2.2.1.</span> <span class="post-toc-text">Sublime Server</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#CSSREM"><span class="post-toc-number">2.2.2.</span> <span class="post-toc-text">CSSREM</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#SideBarEnhancements"><span class="post-toc-number">2.2.3.</span> <span class="post-toc-text">SideBarEnhancements</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#视觉体验"><span class="post-toc-number">2.3.</span> <span class="post-toc-text">视觉体验</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#BracketHighlighter"><span class="post-toc-number">2.3.1.</span> <span class="post-toc-text">BracketHighlighter</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Color-Highlighter"><span class="post-toc-number">2.3.2.</span> <span class="post-toc-text">Color Highlighter</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#代码格式化"><span class="post-toc-number">2.4.</span> <span class="post-toc-text">代码格式化</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Pretty-JSON"><span class="post-toc-number">2.4.1.</span> <span class="post-toc-text">Pretty JSON</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#HTML-CSS-JS-Prettify"><span class="post-toc-number">2.4.2.</span> <span class="post-toc-text">HTML-CSS-JS Prettify</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#jsformat"><span class="post-toc-number">2.4.3.</span> <span class="post-toc-text">jsformat</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#DeleteBlankLines"><span class="post-toc-number">2.4.4.</span> <span class="post-toc-text">DeleteBlankLines</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#语言包"><span class="post-toc-number">2.5.</span> <span class="post-toc-text">语言包</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#ChineseLocalization"><span class="post-toc-number">2.5.1.</span> <span class="post-toc-text">ChineseLocalization</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#GBK-Support"><span class="post-toc-number">2.5.2.</span> <span class="post-toc-text">GBK Support</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#指定环境"><span class="post-toc-number">2.6.</span> <span class="post-toc-text">指定环境</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#react开发插件"><span class="post-toc-number">2.6.1.</span> <span class="post-toc-text">react开发插件</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#babel"><span class="post-toc-number">2.6.1.1.</span> <span class="post-toc-text">babel</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#Emmet-1"><span class="post-toc-number">2.6.1.2.</span> <span class="post-toc-text">Emmet</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#jsformat-1"><span class="post-toc-number">2.6.1.3.</span> <span class="post-toc-text">jsformat</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#SublimeLinter-jsx"><span class="post-toc-number">2.6.1.4.</span> <span class="post-toc-text">SublimeLinter-jsx</span></a></li></ol></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#其他"><span class="post-toc-number">2.7.</span> <span class="post-toc-text">其他</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#SublimeCodeIntel"><span class="post-toc-number">2.7.1.</span> <span class="post-toc-text">SublimeCodeIntel</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#CTags"><span class="post-toc-number">2.7.2.</span> <span class="post-toc-text">CTags</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#CSS-Comments"><span class="post-toc-number">2.7.3.</span> <span class="post-toc-text">CSS Comments</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#CSS-Format"><span class="post-toc-number">2.7.4.</span> <span class="post-toc-text">CSS Format</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#DocBlockr"><span class="post-toc-number">2.7.5.</span> <span class="post-toc-text">DocBlockr</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#JavaScript-Completions"><span class="post-toc-number">2.7.6.</span> <span class="post-toc-text">JavaScript Completions</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#JsFormat"><span class="post-toc-number">2.7.7.</span> <span class="post-toc-text">JsFormat</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Keymaps"><span class="post-toc-number">2.7.8.</span> <span class="post-toc-text">Keymaps</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#LiveStyle"><span class="post-toc-number">2.7.9.</span> <span class="post-toc-text">LiveStyle</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#SublimeTmpl"><span class="post-toc-number">2.7.10.</span> <span class="post-toc-text">SublimeTmpl</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Alignment"><span class="post-toc-number">2.7.11.</span> <span class="post-toc-text">Alignment</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#PackageResourceViewer"><span class="post-toc-number">2.7.12.</span> <span class="post-toc-text">PackageResourceViewer</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Themr"><span class="post-toc-number">2.7.13.</span> <span class="post-toc-text">Themr</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Git"><span class="post-toc-number">2.7.14.</span> <span class="post-toc-text">Git</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Terminal"><span class="post-toc-number">2.7.15.</span> <span class="post-toc-text">Terminal</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#CSSComb"><span class="post-toc-number">2.7.16.</span> <span class="post-toc-text">CSSComb</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Trmmer"><span class="post-toc-number">2.7.17.</span> <span class="post-toc-text">Trmmer</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#ColorPicker"><span class="post-toc-number">2.7.18.</span> <span class="post-toc-text">ColorPicker</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#MarkDown-Editing"><span class="post-toc-number">2.7.19.</span> <span class="post-toc-text">MarkDown Editing</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#FileDiffs"><span class="post-toc-number">2.7.20.</span> <span class="post-toc-text">FileDiffs</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#CanIUse"><span class="post-toc-number">2.7.21.</span> <span class="post-toc-text">CanIUse</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#SASS-Build"><span class="post-toc-number">2.7.22.</span> <span class="post-toc-text">SASS Build</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#FTPSync"><span class="post-toc-number">2.7.23.</span> <span class="post-toc-text">FTPSync</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#语言提示插件"><span class="post-toc-number">2.8.</span> <span class="post-toc-text">语言提示插件</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#代码验证插件"><span class="post-toc-number">2.9.</span> <span class="post-toc-text">代码验证插件</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#SublimeLinter"><span class="post-toc-number">2.9.1.</span> <span class="post-toc-text">SublimeLinter</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#主题插件"><span class="post-toc-number">2.10.</span> <span class="post-toc-text">主题插件</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Colorsublime"><span class="post-toc-number">2.10.1.</span> <span class="post-toc-text">Colorsublime</span></a></li></ol></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#后记"><span class="post-toc-number">3.</span> <span class="post-toc-text">后记</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#激活码"><span class="post-toc-number">4.</span> <span class="post-toc-text">激活码</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#参考资料"><span class="post-toc-number">5.</span> <span class="post-toc-text">参考资料</span></a></li></ol>
+        </nav>
+    </aside>
+    
+<article id="post-提升效率的必备SublimeText插件"
+  class="post-article article-type-post fade" itemprop="blogPost">
+
+    <div class="post-card">
+        <h1 class="post-card-title">提升效率的必备SublimeText插件</h1>
+        <div class="post-meta">
+            <time class="post-time" title="2017-12-19 14:00:04" datetime="2017-12-19T06:00:04.365Z"  itemprop="datePublished">2017-12-19</time>
+
+            
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/开发工具/">开发工具</a></li></ul>
+
+
+
+            
+<span id="busuanzi_container_page_pv" title="文章总阅读量" style='display:none'>
+    <i class="icon icon-eye icon-pr"></i><span id="busuanzi_value_page_pv"></span>
+</span>
+
+
+        </div>
+        <div class="post-content" id="post-content" itemprop="postContent">
+            <h1 id="安装package-control"><a href="#安装package-control" class="headerlink" title="安装package control"></a>安装package control</h1><p>使用 </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Ctrl + `</div></pre></td></tr></table></figure>
+<p>  打开命令面板，输入</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">import urllib.request,os,hashlib; h = &apos;6f4c264a24d933ce70df5dedcf1dcaee&apos; + &apos;ebe013ee18cced0ef93d5f746d80ef60&apos;; pf = &apos;Package Control.sublime-package&apos;; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( &apos;http://packagecontrol.io/&apos; + pf.replace(&apos; &apos;, &apos;%20&apos;)).read(); dh = hashlib.sha256(by).hexdigest(); print(&apos;Error validating download (got %s instead of %s), please try manual install&apos; % (dh, h)) if dh != h else open(os.path.join( ipp, pf), &apos;wb&apos; ).write(by)</div></pre></td></tr></table></figure>
+<p>安装插件使用命令</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Ctrl + Shift + P</div></pre></td></tr></table></figure>
+<p>输入<code>package control: install package</code></p>
+<p>插件可以在 <a href="https://packagecontrol.io/" target="_blank" rel="external">https://packagecontrol.io/</a> 中查找</p>
+<h1 id="常用插件"><a href="#常用插件" class="headerlink" title="常用插件"></a>常用插件</h1><h2 id="代码提示与自动完成"><a href="#代码提示与自动完成" class="headerlink" title="代码提示与自动完成"></a>代码提示与自动完成</h2><h3 id="All-Autocomplete"><a href="#All-Autocomplete" class="headerlink" title="All Autocomplete"></a><u>All Autocomplete</u></h3><p>　　Sublime Text 默认的 Autocomplete 功能只考虑当前的文件，而 AllAutocomplete 插件会搜索所有打开的文件来寻找匹配的提示词。</p>
+<h3 id="AutoFileName"><a href="#AutoFileName" class="headerlink" title="AutoFileName"></a><u>AutoFileName</u></h3><p>　　快速帮助你在文件中写路径</p>
+<h3 id="Autoprefixer"><a href="#Autoprefixer" class="headerlink" title="Autoprefixer"></a><u>Autoprefixer</u></h3><p>　　这个插件主要应用css的浏览器兼容书写，自动分析你的css文件，解析出新的css文件，可以配置你要兼容的浏览器，不过这个插件要在之前安装nodejs</p>
+<p>​    <strong>使用方法</strong></p>
+<p>​    选中要进行分析的css代码，<code>ctrl</code>+<code>shift</code>+<code>P</code>,输入Autoprefixer CSS即可</p>
+<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/0052.gif" alt="" title="">
+                </div>
+                <div class="image-caption"></div>
+            </figure>
+<h3 id="Emmet"><a href="#Emmet" class="headerlink" title="Emmet"></a><u>Emmet</u></h3><p>Emmet的前身是大名鼎鼎的Zen coding，如果你从事Web前端开发的话，对该插件一定不会陌生。它使用仿CSS选择器的语法来生成代码，大大提高了HTML/CSS代码编写的速度</p>
+<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/0053.jpg" alt="" title="">
+                </div>
+                <div class="image-caption"></div>
+            </figure>
+<h2 id="功能增强"><a href="#功能增强" class="headerlink" title="功能增强"></a>功能增强</h2><h3 id="Sublime-Server"><a href="#Sublime-Server" class="headerlink" title="Sublime Server"></a><u>Sublime Server</u></h3><p>使用sublime开启一个本地服务器，右键可以看到View in sublime server</p>
+<h3 id="CSSREM"><a href="#CSSREM" class="headerlink" title="CSSREM"></a><u>CSSREM</u></h3><p>一个CSS的px值转rem值的Sublime Text 3自动完成插件。</p>
+<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/0054.gif" alt="" title="">
+                </div>
+                <div class="image-caption"></div>
+            </figure>
+<h3 id="SideBarEnhancements"><a href="#SideBarEnhancements" class="headerlink" title="SideBarEnhancements"></a><u>SideBarEnhancements</u></h3><p>　　增强右键菜单文件操作功能</p>
+<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/0055.png" alt="" title="">
+                </div>
+                <div class="image-caption"></div>
+            </figure>
+<h2 id="视觉体验"><a href="#视觉体验" class="headerlink" title="视觉体验"></a>视觉体验</h2><h3 id="BracketHighlighter"><a href="#BracketHighlighter" class="headerlink" title="BracketHighlighter"></a><u>BracketHighlighter</u></h3><p>　　配置文件的高亮设置，让你的代码有不同的颜色区分该插件提供配对标签，或大括号或字符引号的配对高亮显示，算是对系统高亮的加强吧。 </p>
+<h3 id="Color-Highlighter"><a href="#Color-Highlighter" class="headerlink" title="Color Highlighter"></a><u>Color Highlighter</u></h3><figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/0056.gif" alt="" title="">
+                </div>
+                <div class="image-caption"></div>
+            </figure>
+<h2 id="代码格式化"><a href="#代码格式化" class="headerlink" title="代码格式化"></a>代码格式化</h2><h3 id="Pretty-JSON"><a href="#Pretty-JSON" class="headerlink" title="Pretty JSON"></a><u>Pretty JSON</u></h3><figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/0057.gif" alt="" title="">
+                </div>
+                <div class="image-caption"></div>
+            </figure>
+<h3 id="HTML-CSS-JS-Prettify"><a href="#HTML-CSS-JS-Prettify" class="headerlink" title="HTML-CSS-JS Prettify"></a><u>HTML-CSS-JS Prettify</u></h3><p>　　全能序列化，需要指定Nodejs路径</p>
+<p>​    配置:</p>
+<blockquote>
+<p>HTMLPrettify.sublime-settings</p>
+</blockquote>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">  // 配置路径</div><div class="line">  "node_path": &#123;</div><div class="line">    "windows": "D:/Program Files/nodejs/node.exe",</div><div class="line">    "linux": "/usr/bin/nodejs",</div><div class="line">    "osx": "/usr/local/bin/node"</div><div class="line">  &#125;,</div><div class="line"></div><div class="line">  // 保存时自动格式化</div><div class="line">  "format_on_save": false,</div><div class="line"></div><div class="line">  // 只格式化选中部分</div><div class="line">  "format_selection_only": true,</div><div class="line"></div><div class="line">  // Log the settings passed to the prettifier from `.jsbeautifyrc`.</div><div class="line">  "print_diagnostics": true</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<blockquote>
+<p>Default (Windows).sublime-keymap</p>
+</blockquote>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line">[&#123;</div><div class="line">  <span class="attr">"keys"</span>: [<span class="string">"ctrl+shift+h"</span>],</div><div class="line">  <span class="attr">"command"</span>: <span class="string">"htmlprettify"</span></div><div class="line">&#125;, &#123;</div><div class="line">  <span class="attr">"keys"</span>: [<span class="string">"ctrl+alt+h"</span>, <span class="string">"p"</span>],</div><div class="line">  <span class="attr">"command"</span>: <span class="string">"htmlprettify_set_prettify_prefs"</span></div><div class="line">&#125;, &#123;</div><div class="line">  <span class="attr">"keys"</span>: [<span class="string">"shift+alt+h"</span>, <span class="string">"o"</span>],</div><div class="line">  <span class="attr">"command"</span>: <span class="string">"htmlprettify_set_plugin_options"</span></div><div class="line">&#125;, &#123;</div><div class="line">  <span class="attr">"keys"</span>: [<span class="string">"ctrl+alt+h"</span>, <span class="string">"k"</span>],</div><div class="line">  <span class="attr">"command"</span>: <span class="string">"htmlprettify_set_keyboard_shortcuts"</span></div><div class="line">&#125;, &#123;</div><div class="line">  <span class="attr">"keys"</span>: [<span class="string">"ctrl+alt+h"</span>, <span class="string">"n"</span>],</div><div class="line">  <span class="attr">"command"</span>: <span class="string">"htmlprettify_set_node_path"</span></div><div class="line">&#125;]</div></pre></td></tr></table></figure>
+<h3 id="jsformat"><a href="#jsformat" class="headerlink" title="jsformat"></a>jsformat</h3><p>​    <code>jsformat</code>是sublime上js格式化比较好用的插件之一，通过修改它的<code>e4x</code>属性可以使它支持<code>jsx</code>。</p>
+<h3 id="DeleteBlankLines"><a href="#DeleteBlankLines" class="headerlink" title="DeleteBlankLines"></a>DeleteBlankLines</h3><p>删除空白</p>
+<p>操作步骤：</p>
+<ol>
+<li>选中要删除空白行的文本范围，一般是ctrl+A直接全选</li>
+<li>通过ctrl+alt+backspace执行一键去除空白行功能</li>
+</ol>
+<h2 id="语言包"><a href="#语言包" class="headerlink" title="语言包"></a>语言包</h2><h3 id="ChineseLocalization"><a href="#ChineseLocalization" class="headerlink" title="ChineseLocalization"></a><u>ChineseLocalization</u></h3><p>　　各国语言包</p>
+<h3 id="GBK-Support"><a href="#GBK-Support" class="headerlink" title="GBK Support"></a><u>GBK Support</u></h3><p>​    支持GBK编码格式</p>
+<h2 id="指定环境"><a href="#指定环境" class="headerlink" title="指定环境"></a>指定环境</h2><h3 id="react开发插件"><a href="#react开发插件" class="headerlink" title="react开发插件"></a>react开发插件</h3><h4 id="babel"><a href="#babel" class="headerlink" title="babel"></a>babel</h4><p>​    支持ES6、React.js、jsx代码语法高亮。</p>
+<p>​    <strong>安装</strong></p>
+<p>​    <code>command+shift+p</code> -&gt; <code>install package</code> -&gt; <code>babel</code></p>
+<p>​    <strong>配置</strong></p>
+<p>​    该插件不需要额外配置，在打开<code>.js</code>或<code>.jsx</code>后缀的文件，直接选择<code>Babel</code>为对应的语法就可以了。</p>
+<h4 id="Emmet-1"><a href="#Emmet-1" class="headerlink" title="Emmet"></a>Emmet</h4><p>​    可以自动扩展react的className，这点不要太爽～<br>​    我们要做的，只是安装好它之后稍微做下配置修改，就可以愉快的开撸了。</p>
+<p>​    <strong>安装</strong></p>
+<p>​    <code>command+shift+p</code> -&gt; <code>install package</code> -&gt; <code>emmet</code></p>
+<p>​    <strong>配置</strong></p>
+<p>​    打开菜单<code>Preferences</code> -&gt; <code>Package Settings</code> -&gt; <code>Emmet</code> -&gt; <code>Key Bindings - User</code></p>
+<p>​    将下面代码贴进去保存。更详细的规则可以参考<a href="https://github.com/sergeche/emmet-sublime#how-to-expand-abbreviations-with-tab-in-other-syntaxes" target="_blank" rel="external">emmet-sublime文档</a></p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div></pre></td><td class="code"><pre><div class="line">[&#123;</div><div class="line">    <span class="attr">"keys"</span>: [<span class="string">"tab"</span>],</div><div class="line">    <span class="attr">"command"</span>: <span class="string">"expand_abbreviation_by_tab"</span>,</div><div class="line"></div><div class="line">    // put comma-separated syntax selectors for which </div><div class="line">    // you want to expandEmmet abbreviations into "operand" key </div><div class="line">    // instead of SCOPE_SELECTOR.</div><div class="line">    // Examples: source.js, text.html - source</div><div class="line">    "context": [&#123;</div><div class="line">            "operand": "source.js",</div><div class="line">            "operator": "equal",</div><div class="line">            "match_all": true,</div><div class="line">            "key": "selector"</div><div class="line">        &#125;,</div><div class="line"></div><div class="line">        // run only if there's no selected text</div><div class="line">        &#123;</div><div class="line">            <span class="attr">"match_all"</span>: <span class="literal">true</span>,</div><div class="line">            <span class="attr">"key"</span>: <span class="string">"selection_empty"</span></div><div class="line">        &#125;,</div><div class="line"></div><div class="line">        // don't work if there are active tabstops</div><div class="line">        &#123;</div><div class="line">            <span class="attr">"operator"</span>: <span class="string">"equal"</span>,</div><div class="line">            <span class="attr">"operand"</span>: <span class="literal">false</span>,</div><div class="line">            <span class="attr">"match_all"</span>: <span class="literal">true</span>,</div><div class="line">            <span class="attr">"key"</span>: <span class="string">"has_next_field"</span></div><div class="line">        &#125;,</div><div class="line"></div><div class="line">        // don't work if completion popup is visible and you</div><div class="line">        // want to insert completion with Tab. If you want to</div><div class="line">        // expand Emmet with Tab even if popup is visible -- </div><div class="line">        // remove this section</div><div class="line">        &#123;</div><div class="line">            <span class="attr">"operand"</span>: <span class="literal">false</span>,</div><div class="line">            <span class="attr">"operator"</span>: <span class="string">"equal"</span>,</div><div class="line">            <span class="attr">"match_all"</span>: <span class="literal">true</span>,</div><div class="line">            <span class="attr">"key"</span>: <span class="string">"auto_complete_visible"</span></div><div class="line">        &#125;, &#123;</div><div class="line">            "match_all": true,</div><div class="line">            "key": "is_abbreviation"</div><div class="line">        &#125;</div><div class="line">    ]</div><div class="line">&#125;]</div></pre></td></tr></table></figure>
+<h4 id="jsformat-1"><a href="#jsformat-1" class="headerlink" title="jsformat"></a>jsformat</h4><p>​    <code>jsformat</code>是sublime上js格式化比较好用的插件之一，通过修改它的<code>e4x</code>属性可以使它支持<code>jsx</code>。</p>
+<p>​    <strong>安装</strong></p>
+<p>​    <code>command+shift+p</code> -&gt; <code>install package</code> -&gt; <code>jsformat</code></p>
+<p>​    <strong>配置</strong></p>
+<p>​    打开菜单<code>Preferences</code> -&gt; <code>Package Settings</code> -&gt; <code>JsFormat</code> -&gt; <code>Settings - User</code>，将下面代码贴进去保存。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">  &quot;e4x&quot;: true,</div><div class="line">  // jsformat options</div><div class="line">  &quot;format_on_save&quot;: true,</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h4 id="SublimeLinter-jsx"><a href="#SublimeLinter-jsx" class="headerlink" title="SublimeLinter-jsx"></a>SublimeLinter-jsx</h4><p>​    jsx的验证插件</p>
+<h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><h3 id="SublimeCodeIntel"><a href="#SublimeCodeIntel" class="headerlink" title="SublimeCodeIntel"></a><u>SublimeCodeIntel</u></h3><p>　　一个全功能的 Sublime Text 代码自动完成引擎</p>
+<p>　　支持的语言挺多的（JavaScript, Mason, XBL, XUL, RHTML, SCSS, Python, HTML, Ruby, Python3, XML, Sass, XSLT, Django, HTML5, Perl, CSS, Twig, Less, Smarty, Node.js, Tcl, TemplateToolkit, PHP.）</p>
+<h3 id="CTags"><a href="#CTags" class="headerlink" title="CTags"></a>CTags</h3><p>　　实在方法跳转，跳转到你方法</p>
+<p>　　之后在win7下或者linux下安装ctags软件</p>
+<ol>
+<li>打开ctags插件包的use-setting配置”command”: “d:/IDE/ctags58/ctags.exe”这个路径是下载ctags的安装路径</li>
+<li>这个插件能跨文件跳转，跳转到指定函数声明的地方(ctrl+alt+左键)。 使用package control 搜索ctags 进行安装（安装ctags插件就可以了， 还有一个 CTags for PHP 插件没什么用）,注意安装好插件后要需要安装ctags命令。window 下载 ctags.exe  <a href="http://vdisk.weibo.com/s/7QZd7" target="_blank" rel="external">http://vdisk.weibo.com/s/7QZd7</a> 。 将ctags.exe文件放在一个环境变量能访问到的地方。打开cmd， 输入ctags，如果有这个命令，证明成功了。ubuntu下安装运行命令：sudo apt-get install exuberant-ctags 。然后在<strong>sublime项目文件夹右键</strong>， 会出       现Ctag:Rebuild Tags 的菜单。点击它，然后会<strong>生成.tags的文件</strong> 然后在你代码中， 光标放在某个函数上， 点击 就可以跳转到函数声明的地方。</li>
+</ol>
+<h3 id="CSS-Comments"><a href="#CSS-Comments" class="headerlink" title="CSS Comments"></a>CSS Comments</h3><figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/0058.gif" alt="" title="">
+                </div>
+                <div class="image-caption"></div>
+            </figure>
+<h3 id="CSS-Format"><a href="#CSS-Format" class="headerlink" title="CSS Format"></a>CSS Format</h3><p>　　css序列化插件，支持默认多种序列方案，还可以自己配置自己喜欢的</p>
+<h3 id="DocBlockr"><a href="#DocBlockr" class="headerlink" title="DocBlockr"></a>DocBlockr</h3><p>　　DocBlocker 是在Sublime平台上开发一款自动补全代码插件，支持JavaScript (including ES6), PHP, ActionScript, Haxe, CoffeeScript, TypeScript, Java, Apex, Groovy, Objective C, C, C++ and Rust.等众多语言</p>
+<p>​    DocBlockr 可以使你很方便地对代码建立文档。它会解析函数，变量，和参数，根据它们自动生成文档范式，你的工作就是去填充对应的说明。</p>
+<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/0059.gif" alt="" title="">
+                </div>
+                <div class="image-caption"></div>
+            </figure>
+<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/0060.gif" alt="" title="">
+                </div>
+                <div class="image-caption"></div>
+            </figure>
+<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/0061.gif" alt="" title="">
+                </div>
+                <div class="image-caption"></div>
+            </figure>
+<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/0062.gif" alt="" title="">
+                </div>
+                <div class="image-caption"></div>
+            </figure>
+<h3 id="JavaScript-Completions"><a href="#JavaScript-Completions" class="headerlink" title="JavaScript Completions"></a>JavaScript Completions</h3><p>　　js最基本的api快查片段</p>
+<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/0063.gif" alt="" title="">
+                </div>
+                <div class="image-caption"></div>
+            </figure>
+<h3 id="JsFormat"><a href="#JsFormat" class="headerlink" title="JsFormat"></a>JsFormat</h3><p>　　js序列化，能排在下载插件前25位，好的话就不用说了</p>
+<h3 id="Keymaps"><a href="#Keymaps" class="headerlink" title="Keymaps"></a>Keymaps</h3><p>　　快速查找所有插件的快捷键</p>
+<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/0064.gif" alt="" title="">
+                </div>
+                <div class="image-caption"></div>
+            </figure>
+<h3 id="LiveStyle"><a href="#LiveStyle" class="headerlink" title="LiveStyle"></a>LiveStyle</h3><p>　　LiveStyle是Chrome中提高开发效率的一款CSS编辑器插件。利用LiveStyle和Sublime Text3编辑器结合可实现可视化开发，一次配置，简单易用！，并且最近支持less,scss</p>
+<p>　　你本地css文件可以和浏览器的css文件映射，同步到本地，但是必须在chrome上运行，chrome必须安装相应的插件</p>
+<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/0065.png" alt="" title="">
+                </div>
+                <div class="image-caption"></div>
+            </figure>
+<h3 id="SublimeTmpl"><a href="#SublimeTmpl" class="headerlink" title="SublimeTmpl"></a>SublimeTmpl</h3><p>　　创建常用文件初始模板，必须html,css,js模板</p>
+<h3 id="Alignment"><a href="#Alignment" class="headerlink" title="Alignment"></a>Alignment</h3><p>　　这个插件让你能对齐你的代码，包括 PHP、CSS 和 Javascript。代码看起来更简洁和可读，便于编辑。</p>
+<h3 id="PackageResourceViewer"><a href="#PackageResourceViewer" class="headerlink" title="PackageResourceViewer"></a>PackageResourceViewer</h3><p>　　通过这个特殊的插件，会给你查看和编辑SublimeText附带的不同的包带来很多方便。您也可以提取任何给定的包。这一行动将其复制到用户文件夹，以便您可以安全地对其进行编辑。</p>
+<p>　　很多人苦恼不能修改左侧导航面板字体大小，用这个可以轻松办到</p>
+<p>　　安装PackageResourceViewer 快捷键 ⌘(command)+⇧(shift)+P 打开 Command Palette 输入 Package Control:Install 回车，等待加载package列表 搜索并安装 PackageResourceViewer 包</p>
+<p>　　最后，使用PackageResourceViewer打开Theme文件进行编辑 快捷键 ⌘(command)+⇧(shift)+P 打开 Command Palette 输入 PackageResourceViewer: Open Resource 回车，打开包列表 选择 Theme - Default，再选择 Default.sublimt-theme 搜索 　　sidebar_label，在 “class”: “sidebar_label” 后边加一行：”font.size”: 18，将字体大小设置为18，保存。 好啦，大功告成！</p>
+<p>　　如果觉得行间距太小，可以往上找下，有个class:”sidebartree”，调一下里边的rowpadding配置即可。</p>
+<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/0066.gif" alt="" title="">
+                </div>
+                <div class="image-caption"></div>
+            </figure>
+<h3 id="Themr"><a href="#Themr" class="headerlink" title="Themr"></a>Themr</h3><p>　　sublime可以下载很多风格样式，用这个插件可以管理所有的风格</p>
+<h3 id="Git"><a href="#Git" class="headerlink" title="Git"></a>Git</h3><figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/0067.gif" alt="" title="">
+                </div>
+                <div class="image-caption"></div>
+            </figure>
+<p>虽然名字看上去并不友好，但作为开发者的你肯定一眼就能明白它是干什么的。这个插件会将Git整合进你的SublimeText，使的你可以在SublimeText中运行Git命令，包括添加，提交文件，查看日志，文件注解以及其它Git功能。</p>
+<h3 id="Terminal"><a href="#Terminal" class="headerlink" title="Terminal"></a>Terminal</h3><figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/0068.gif" alt="" title="">
+                </div>
+                <div class="image-caption"></div>
+            </figure>
+<p>这个插件可以让你在Sublime中直接使用终端打开你的项目文件夹，并支持使用快捷键。</p>
+<h3 id="CSSComb"><a href="#CSSComb" class="headerlink" title="CSSComb"></a>CSSComb</h3><figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/0069.gif" alt="" title="">
+                </div>
+                <div class="image-caption"></div>
+            </figure>
+<p>这是用来给CSS属性进行排序的格式化插件。如果你想保持的代码干净整洁，并且希望按一定的顺序排列（是不是有点强迫症了？），那么这个插件是一种有效解决的方案。特别是当你和其他有自己代码编写风格的开发者一同协作的时候。</p>
+<h3 id="Trmmer"><a href="#Trmmer" class="headerlink" title="Trmmer"></a>Trmmer</h3><figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/0070.gif" alt="" title="">
+                </div>
+                <div class="image-caption"></div>
+            </figure>
+<p>你知道当你编写代码时，由于错误或别的某些原因，会产生一些不必要的空格。需要注意的是多余的空格有时也会造成错误。这个插件会自动删除这些不必要的空格。</p>
+<h3 id="ColorPicker"><a href="#ColorPicker" class="headerlink" title="ColorPicker"></a>ColorPicker</h3><figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/0071.gif" alt="" title="">
+                </div>
+                <div class="image-caption"></div>
+            </figure>
+<p>如果你经常要查看或设置颜色值，这个插件可以很方便地调用你本机的调色板应用。（译者扩充：）这是一个双向的功能，你既可以在调色板中选择一个颜色，然后按“确定”按钮把该值填写到 SublimeText 中活动文档的当前位置，也可以在活动文档中选择一个颜色的值，按此插件的快捷键就会在显示的调色板中定位到该值所对应的颜色。</p>
+<h3 id="MarkDown-Editing"><a href="#MarkDown-Editing" class="headerlink" title="MarkDown Editing"></a>MarkDown Editing</h3><figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/0072.gif" alt="" title="">
+                </div>
+                <div class="image-caption"></div>
+            </figure>
+<p>SublimeText不仅仅是能够查看和编辑 Markdown 文件，但它会视它们为格式很糟糕的纯文本。这个插件通过适当的颜色高亮和其它功能来更好地完成这些任务。</p>
+<h3 id="FileDiffs"><a href="#FileDiffs" class="headerlink" title="FileDiffs"></a>FileDiffs</h3><figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/0073.gif" alt="" title="">
+                </div>
+                <div class="image-caption"></div>
+            </figure>
+<p>这个插件允许你看到SublimeText中两个不同文件的差异。你可以比较的对象可以是从剪贴板中复制的数据，或工程中的文件，当前打开的文件等。</p>
+<h3 id="CanIUse"><a href="#CanIUse" class="headerlink" title="CanIUse"></a>CanIUse</h3><figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/0074.gif" alt="" title="">
+                </div>
+                <div class="image-caption"></div>
+            </figure>
+<p>如果您想检查浏览器是否支持你包括在你的代码中的CSS和HTML元素，那么这是你需要的插件。所有您需要做的就是选择有疑问的元素，插件将为你做其余的事情。</p>
+<h3 id="SASS-Build"><a href="#SASS-Build" class="headerlink" title="SASS Build"></a>SASS Build</h3><p>SASS Build 是一个编写CSS的预处理器。这个特别的插件将帮助你妥善构建包括压缩选项在内的SASS文件。一旦你安装了这个插件，你可以很容易地通过按Ctrl+ B（MAC系统是 Command +B）来启动它。</p>
+<h3 id="FTPSync"><a href="#FTPSync" class="headerlink" title="FTPSync"></a>FTPSync</h3><figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/0075.gif" alt="" title="">
+                </div>
+                <div class="image-caption"></div>
+            </figure>
+<p>默认情况下SublimeText不具备FTP的功能，如果你正在寻找能在您的SublimeText应用程序中使用的免费和易用的FTP工具，你可以考虑FTPSync。这是一个非常简单的FTP同步工具，它可以控制上传目标的多重命名。让我们知道您的想法。</p>
+<h2 id="语言提示插件"><a href="#语言提示插件" class="headerlink" title="语言提示插件"></a>语言提示插件</h2><p>CSS3、Less、Sass、Scss、Jade、Styls、JSX</p>
+<h2 id="代码验证插件"><a href="#代码验证插件" class="headerlink" title="代码验证插件"></a>代码验证插件</h2><h3 id="SublimeLinter"><a href="#SublimeLinter" class="headerlink" title="SublimeLinter"></a>SublimeLinter</h3><p>　　代码校验插件，支持多种语言，这个是主插件，如果想检测特定的文件需要单独下载</p>
+<p>SublimeLinter-jshint</p>
+<p>SublimeLinter-json</p>
+<p>SublimeLinter-jsx</p>
+<h2 id="主题插件"><a href="#主题插件" class="headerlink" title="主题插件"></a>主题插件</h2><p>拥有不同的主题可以触发创意和想法，你可能想使用这些插件来实现不同的主题，带来更好的和令人兴奋的前景。</p>
+<h3 id="Colorsublime"><a href="#Colorsublime" class="headerlink" title="Colorsublime"></a><a href="https://packagecontrol.io/packages/Colorsublime" target="_blank" rel="external">Colorsublime</a></h3><p>它允许您在Sublime Text中立即更改当前的颜色方案。</p>
+<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/0076.gif" alt="" title="">
+                </div>
+                <div class="image-caption"></div>
+            </figure>
+<p>Lyte、Boxy Theme</p>
+<h1 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h1><p>　　这些就是我们大部分要用到的，插件的网址如下，你可以找到你喜欢的插件</p>
+<p>　　<a href="https://packagecontrol.io/browse" target="_blank" rel="external">https://packagecontrol.io/browse</a></p>
+<h1 id="激活码"><a href="#激活码" class="headerlink" title="激活码"></a>激活码</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">—– BEGIN LICENSE —–</div><div class="line">Michael Barnes</div><div class="line">Single User License</div><div class="line">EA7E-821385</div><div class="line">8A353C41 872A0D5C DF9B2950 AFF6F667</div><div class="line">C458EA6D 8EA3C286 98D1D650 131A97AB</div><div class="line">AA919AEC EF20E143 B361B1E7 4C8B7F04</div><div class="line">B085E65E 2F5F5360 8489D422 FB8FC1AA</div><div class="line">93F6323C FD7F7544 3F39C318 D95E6480</div><div class="line">FCCC7561 8A4A1741 68FA4223 ADCEDE07</div><div class="line">200C25BE DBBC4855 C4CFB774 C5EC138C</div><div class="line">0FEC1CEF D9DCECEC D3A5DAD1 01316C36</div><div class="line">—— END LICENSE ——</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">—– BEGIN LICENSE —–  </div><div class="line">TwitterInc  </div><div class="line">200 User License  </div><div class="line">EA7E-890007  </div><div class="line">1D77F72E 390CDD93 4DCBA022 FAF60790  </div><div class="line">61AA12C0 A37081C5 D0316412 4584D136  </div><div class="line">94D7F7D4 95BC8C1C 527DA828 560BB037  </div><div class="line">D1EDDD8C AE7B379F 50C9D69D B35179EF  </div><div class="line">2FE898C4 8E4277A8 555CE714 E1FB0E43  </div><div class="line">D5D52613 C3D12E98 BC49967F 7652EED2  </div><div class="line">9D2D2E61 67610860 6D338B72 5CF95C69  </div><div class="line">E36B85CC 84991F19 7575D828 470A92AB  </div><div class="line">—— END LICENSE ——</div></pre></td></tr></table></figure>
+<h1 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h1><p><a href="http://www.cnblogs.com/qingkong/p/5039527.html" target="_blank" rel="external">常用的sublime text 3插件（很爽哦）</a></p>
+<p><a href="http://www.oschina.net/translate/20-powerful-sublimetext-plugins" target="_blank" rel="external">20 个强大的 Sublime Text 插件 </a> </p>
+<p><a href="https://devework.com/sublime-text-3-package-control.html" target="_blank" rel="external">Sublime text 3 中Package Control 的安装与使用方法</a> </p>
+
+        </div>
+
+        <blockquote class="post-copyright">
+    <div class="content">
+        
+<span class="post-time">
+    Last updated: <time datetime="2017-12-19T06:00:04.366Z" itemprop="dateUpdated">2017-12-19 14:00:04</time>
+</span><br>
+
+
+        
+        这里可以写作者留言，标签和 hexo 中所有变量及辅助函数等均可调用，示例：<a href="/2017/12/19/提升效率的必备SublimeText插件/" target="_blank" rel="external">http://blog.xiaoyulive.top/2017/12/19/提升效率的必备SublimeText插件/</a>
+        
+    </div>
+    <footer>
+        <a href="http://blog.xiaoyulive.top">
+            <img src="/img/avatar.jpg" alt="Quanzaiyu">
+            Quanzaiyu
+        </a>
+    </footer>
+</blockquote>
+
+        
+<div class="page-reward">
+    <a id="rewardBtn" href="javascript:;" class="page-reward-btn waves-effect waves-circle waves-light">赏</a>
+</div>
+
+
+
+        <div class="post-footer">
+            
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/SublimeText/">SublimeText</a></li></ul>
+
+
+            
+<div class="page-share-wrap">
+    
+
+<div class="page-share" id="pageShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://blog.xiaoyulive.top/2017/12/19/提升效率的必备SublimeText插件/&title=《提升效率的必备SublimeText插件》 — 小昱博客&pic=http://blog.xiaoyulive.top/img/avatar.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://blog.xiaoyulive.top/2017/12/19/提升效率的必备SublimeText插件/&title=《提升效率的必备SublimeText插件》 — 小昱博客&source=" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://blog.xiaoyulive.top/2017/12/19/提升效率的必备SublimeText插件/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《提升效率的必备SublimeText插件》 — 小昱博客&url=http://blog.xiaoyulive.top/2017/12/19/提升效率的必备SublimeText插件/&via=http://blog.xiaoyulive.top" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://blog.xiaoyulive.top/2017/12/19/提升效率的必备SublimeText插件/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+
+    <a href="javascript:;" id="shareFab" class="page-share-fab waves-effect waves-circle">
+        <i class="icon icon-share-alt icon-lg"></i>
+    </a>
+</div>
+
+
+
+        </div>
+    </div>
+
+    
+<nav class="post-nav flex-row flex-justify-between flex-row-reverse">
+  
+
+  
+    <div class="waves-block waves-effect next">
+      <a href="/2017/12/19/深入理解HTML5 - 可拖动的元素/" id="post-next" class="post-nav-link">
+        <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
+        <h4 class="title">深入理解HTML5 - 可拖动的元素</h4>
+      </a>
+    </div>
+  
+</nav>
+
+
+
+    
+
+
+<section class="comments" id="comments">
+    <div id="disqus_thread"></div>
+    <script>
+    var disqus_shortname = 'true';
+    lazyScripts.push('//' + disqus_shortname + '.disqus.com/embed.js')
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</section>
+
+
+
+
+<section class="comments" id="comments">
+    <!-- UY BEGIN -->
+    <div id="uyan_frame"></div>
+    <script src="http://v2.uyan.cc/code/uyan.js?uid=true"></script>
+    <!-- UY END -->
+</section>
+
+
+
+
+<section class="comments" id="comments">
+    <div id="gitment_thread"></div>
+    <link rel="stylesheet" href="//unpkg.com/gitment/style/default.css">
+    <script src="//unpkg.com/gitment/dist/gitment.browser.js"></script>
+    <script>
+        var gitment = new Gitment({
+            owner: 'quanzaiyu',
+            repo: 'quanzaiyu.github.io',
+            oauth: {
+                client_id: '3f4b90df85c3c29d643f',
+                client_secret: 'c951dd3dbd71e2edd597aa527a1a5d7e473d7375',
+            },
+        })
+        gitment.render('comments')
+    </script>
+</section>
+
+
+
+
+</article>
+
+<div id="reward" class="page-modal reward-lay">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <h3 class="reward-title">
+        <i class="icon icon-quote-left"></i>
+        谢谢大爷~
+        <i class="icon icon-quote-right"></i>
+    </h3>
+    <div class="reward-content">
+        
+        <div class="reward-code">
+            <img id="rewardCode" src="/img/wechat.jpg" alt="打赏二维码">
+        </div>
+        
+        <label class="reward-toggle">
+            <input id="rewardToggle" type="checkbox" class="reward-toggle-check"
+                data-wechat="/img/wechat.jpg" data-alipay="/img/alipay.jpg">
+            <div class="reward-toggle-ctrol">
+                <span class="reward-toggle-item wechat">微信</span>
+                <span class="reward-toggle-label"></span>
+                <span class="reward-toggle-item alipay">支付宝</span>
+            </div>
+        </label>
+        
+    </div>
+</div>
+
+
+
+</div>
+
+<!-- <script>
+    particlesJS.load('canvas-container', '/json/particles2.json', function () {
+        console.log('callback - particles.js config loaded');
+    })
+</script> -->
+        <footer class="footer">
+    <div class="top">
+        
+<p>
+    <span id="busuanzi_container_site_uv" style='display:none'>
+        站点总访客数：<span id="busuanzi_value_site_uv"></span>
+    </span>
+    <span id="busuanzi_container_site_pv" style='display:none'>
+        站点总访问量：<span id="busuanzi_value_site_pv"></span>
+    </span>
+</p>
+
+
+        <p>
+            
+            <!-- <span>This blog is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</span> -->
+        </p>
+    </div>
+    <div class="bottom">
+        <p><span>Quanzaiyu &copy; 2015 - 2017</span>
+            <span>
+                
+                <a href="http://www.miitbeian.gov.cn/" target="_blank">滇ICP备16006294号</a><br>
+                
+                Power by <a href="http://hexo.io/" target="_blank">Hexo</a>
+            </span>
+        </p>
+    </div>
+</footer>
+
+    </main>
+    <div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+
+
+<div class="global-share" id="globalShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://blog.xiaoyulive.top/2017/12/19/提升效率的必备SublimeText插件/&title=《提升效率的必备SublimeText插件》 — 小昱博客&pic=http://blog.xiaoyulive.top/img/avatar.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://blog.xiaoyulive.top/2017/12/19/提升效率的必备SublimeText插件/&title=《提升效率的必备SublimeText插件》 — 小昱博客&source=" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://blog.xiaoyulive.top/2017/12/19/提升效率的必备SublimeText插件/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《提升效率的必备SublimeText插件》 — 小昱博客&url=http://blog.xiaoyulive.top/2017/12/19/提升效率的必备SublimeText插件/&via=http://blog.xiaoyulive.top" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://blog.xiaoyulive.top/2017/12/19/提升效率的必备SublimeText插件/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+<div class="page-modal wx-share" id="wxShare">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <img src="//api.qrserver.com/v1/create-qr-code/?data=http://blog.xiaoyulive.top/2017/12/19/提升效率的必备SublimeText插件/" alt="微信分享二维码">
+</div>
+
+
+
+
+    <script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+<script>
+var BLOG = { ROOT: '/', SHARE: true, REWARD: true };
+
+
+</script>
+
+<script src="/js/main.min.js?v=1.6.17"></script>
+
+
+<div class="search-panel" id="search-panel">
+    <ul class="search-result" id="search-result"></ul>
+</div>
+<template id="search-tpl">
+<li class="item">
+    <a href="{path}" class="waves-block waves-effect">
+        <div class="title ellipsis" title="{title}">{title}</div>
+        <div class="flex-row flex-middle">
+            <div class="tags ellipsis">
+                {tags}
+            </div>
+            <time class="flex-col time">{date}</time>
+        </div>
+    </a>
+</li>
+</template>
+
+<script src="/js/search.min.js?v=1.6.17" async></script>
+
+
+
+
+
+
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+<script>
+(function() {
+    var OriginTitile = document.title, titleTime;
+    document.addEventListener('visibilitychange', function() {
+        if (document.hidden) {
+            document.title = 'ﾍ(;´Д｀ﾍ)快回来啊！';
+            clearTimeout(titleTime);
+        } else {
+            document.title = '(つェ⊂)欢迎回来!';
+            titleTime = setTimeout(function() {
+                document.title = OriginTitile;
+            },2000);
+        }
+    });
+})();
+</script>
+
+
+
+</body>
+</html>
