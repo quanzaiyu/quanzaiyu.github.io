@@ -183,6 +183,104 @@
         <ul class="post-list">
             
                 <li class="post-list-item fade">
+                    <article id="post-Node.js学习笔记02 - IO"
+  class="article-card article-type-post" itemprop="blogPost">
+
+    <div class="post-meta">
+        <time class="post-time" title="2017-12-07 09:33:00" datetime="2017-12-07T01:33:00.122Z"  itemprop="datePublished">2017-12-07</time>
+
+        
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/Node-js/">Node.js</a><ul class="article-category-list-child"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/Node-js/Node-js学习笔记/">Node.js学习笔记</a></li></ul></li></ul>
+
+
+
+    </div>
+
+    
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/2017/12/07/Node.js学习笔记02 - IO/">Node.js学习笔记02 - IO</a>
+    </h3>
+  
+
+
+
+
+    <div class="post-content" id="post-content" itemprop="postContent">
+
+    
+        Node.js内置的fs模块就是文件系统模块，负责读写文件。
+和所有其它JavaScript模块不同的是，fs模块同时提供了异步和同步的方法。
+同步和异步因为JavaScript的单线程模型，执行IO操作时，JavaScript代码无需等待，而是传入回调函数后，继续执行后续JavaScript代码。比如jQuery提供的getJSON()操作：
+1234$.getJSON('http://e...
+    
+
+        <a href="/2017/12/07/Node.js学习笔记02 - IO/" class="post-more waves-effect waves-button">
+            閱讀全文…
+        </a>
+    </div>
+    
+    <div class="post-footer">
+        
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Node-js/">Node.js</a></li></ul>
+
+    </div>
+    
+</article>
+
+                </li>
+            
+                <li class="post-list-item fade">
+                    <article id="post-Node.js学习笔记01 - 模块"
+  class="article-card article-type-post" itemprop="blogPost">
+
+    <div class="post-meta">
+        <time class="post-time" title="2017-12-07 09:30:50" datetime="2017-12-07T01:30:50.277Z"  itemprop="datePublished">2017-12-07</time>
+
+        
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/Node-js/">Node.js</a><ul class="article-category-list-child"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/Node-js/Node-js学习笔记/">Node.js学习笔记</a></li></ul></li></ul>
+
+
+
+    </div>
+
+    
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/2017/12/07/Node.js学习笔记01 - 模块/">Node.js学习笔记01 - 模块</a>
+    </h3>
+  
+
+
+
+
+    <div class="post-content" id="post-content" itemprop="postContent">
+
+    
+        CommonJS在CommonJS这个规范下，每个.js文件都是一个模块，它们内部各自使用的变量名和函数名都互不冲突，例如，hello.js和main.js都申明了全局变量var s = &#39;xxx&#39;，但互不影响。
+一个模块想要对外暴露变量（函数也是变量），可以用module.exports = variable;，一个模块要引用其他模块暴露的变量，用var ref = req...
+    
+
+        <a href="/2017/12/07/Node.js学习笔记01 - 模块/" class="post-more waves-effect waves-button">
+            閱讀全文…
+        </a>
+    </div>
+    
+    <div class="post-footer">
+        
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Node-js/">Node.js</a></li></ul>
+
+    </div>
+    
+</article>
+
+                </li>
+            
+                <li class="post-list-item fade">
                     <article id="post-Python学习笔记06 - 面向对象"
   class="article-card article-type-post" itemprop="blogPost">
 
@@ -381,54 +479,6 @@ read() 方法，可以一...
                 </li>
             
                 <li class="post-list-item fade">
-                    <article id="post-高效使用VSCode进行开发"
-  class="article-card article-type-post" itemprop="blogPost">
-
-    <div class="post-meta">
-        <time class="post-time" title="2017-12-05 09:35:46" datetime="2017-12-05T01:35:46.272Z"  itemprop="datePublished">2017-12-05</time>
-
-        
-	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/开发工具/">开发工具</a></li></ul>
-
-
-
-    </div>
-
-    
-
-
-  
-    <h3 class="post-title" itemprop="name">
-      <a class="post-title-link" href="/2017/12/05/高效使用VSCode进行开发/">高效使用VSCode进行开发</a>
-    </h3>
-  
-
-
-
-
-    <div class="post-content" id="post-content" itemprop="postContent">
-
-    
-        VSCode简介VSCode是微软推出的一款产品，他不是一款强大的IDE，而是支持按需扩展各种插件的轻量级编辑器，可以看作是Visual Studio的精简版，界面风格相同。竞争对手会是Sublime、Atom，提供丰富的插件和优雅的编辑界面，内置多项丰富的功能，包括版本控制、插件管理、代码调试、多项目管理(v1.8)等。
-为什么选择VSCode之前一直很排斥微软的产品，特别是IE和.Net...
-    
-
-        <a href="/2017/12/05/高效使用VSCode进行开发/" class="post-more waves-effect waves-button">
-            閱讀全文…
-        </a>
-    </div>
-    
-    <div class="post-footer">
-        
-	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/VSCode/">VSCode</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/开发工具/">开发工具</a></li></ul>
-
-    </div>
-    
-</article>
-
-                </li>
-            
-                <li class="post-list-item fade">
                     <article id="post-高效使用ESlint进行开发"
   class="article-card article-type-post" itemprop="blogPost">
 
@@ -492,14 +542,14 @@ ESLint 配置文件
                 </li>
             
                 <li class="post-list-item fade">
-                    <article id="post-玩转交互式命令行"
+                    <article id="post-高效使用VSCode进行开发"
   class="article-card article-type-post" itemprop="blogPost">
 
     <div class="post-meta">
-        <time class="post-time" title="2017-12-05 09:35:46" datetime="2017-12-05T01:35:46.271Z"  itemprop="datePublished">2017-12-05</time>
+        <time class="post-time" title="2017-12-05 09:35:46" datetime="2017-12-05T01:35:46.272Z"  itemprop="datePublished">2017-12-05</time>
 
         
-	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/计算机/">计算机</a></li></ul>
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/开发工具/">开发工具</a></li></ul>
 
 
 
@@ -510,7 +560,7 @@ ESLint 配置文件
 
   
     <h3 class="post-title" itemprop="name">
-      <a class="post-title-link" href="/2017/12/05/玩转交互式命令行/">玩转交互式命令行</a>
+      <a class="post-title-link" href="/2017/12/05/高效使用VSCode进行开发/">高效使用VSCode进行开发</a>
     </h3>
   
 
@@ -520,20 +570,18 @@ ESLint 配置文件
     <div class="post-content" id="post-content" itemprop="postContent">
 
     
-        前言震惊过命令行中那些五颜六色的文本显示，使用包管理安装程序时进度条的变化，vim、Emacs等编辑器在终端中的实现。其实，这些都是Ansi Escape Codes的应用。
-绝大部分Ansi Escape Codes都以\u001b开头。本文以python命令行交互环境演示。
-Ansi Escape Codes的使用字体颜色8色基本上所有的控制台都支持以下8种颜色：
-格式: \u001b[...
+        VSCode简介VSCode是微软推出的一款产品，他不是一款强大的IDE，而是支持按需扩展各种插件的轻量级编辑器，可以看作是Visual Studio的精简版，界面风格相同。竞争对手会是Sublime、Atom，提供丰富的插件和优雅的编辑界面，内置多项丰富的功能，包括版本控制、插件管理、代码调试、多项目管理(v1.8)等。
+为什么选择VSCode之前一直很排斥微软的产品，特别是IE和.Net...
     
 
-        <a href="/2017/12/05/玩转交互式命令行/" class="post-more waves-effect waves-button">
+        <a href="/2017/12/05/高效使用VSCode进行开发/" class="post-more waves-effect waves-button">
             閱讀全文…
         </a>
     </div>
     
     <div class="post-footer">
         
-	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/命令行/">命令行</a></li></ul>
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/VSCode/">VSCode</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/开发工具/">开发工具</a></li></ul>
 
     </div>
     
@@ -598,14 +646,14 @@ Ansi Escape Codes的使用字体颜色8色基本上所有的控制台都支持�
                 </li>
             
                 <li class="post-list-item fade">
-                    <article id="post-使用Hexo搭建静态博客"
+                    <article id="post-玩转交互式命令行"
   class="article-card article-type-post" itemprop="blogPost">
 
     <div class="post-meta">
-        <time class="post-time" title="2017-12-05 09:35:46" datetime="2017-12-05T01:35:46.270Z"  itemprop="datePublished">2017-12-05</time>
+        <time class="post-time" title="2017-12-05 09:35:46" datetime="2017-12-05T01:35:46.271Z"  itemprop="datePublished">2017-12-05</time>
 
         
-	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/Hexo/">Hexo</a></li></ul>
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/计算机/">计算机</a></li></ul>
 
 
 
@@ -616,7 +664,7 @@ Ansi Escape Codes的使用字体颜色8色基本上所有的控制台都支持�
 
   
     <h3 class="post-title" itemprop="name">
-      <a class="post-title-link" href="/2017/12/05/使用Hexo搭建静态博客/">使用Hexo搭建静态博客</a>
+      <a class="post-title-link" href="/2017/12/05/玩转交互式命令行/">玩转交互式命令行</a>
     </h3>
   
 
@@ -626,77 +674,20 @@ Ansi Escape Codes的使用字体颜色8色基本上所有的控制台都支持�
     <div class="post-content" id="post-content" itemprop="postContent">
 
     
-        
-这不是一个教程，只是记录个人配置Hexo的历程，方便下次使用，最后的参考资料中会有详细的搭建教程。
-
-Hexo简介hexo是一款快速、简洁且高效的博客框架，基于node.js构建，速度快，支持Markdown的编写文章，可以一键部署到GitHub，简单方便。参考 : Hexo中文网站
-环境搭建依赖环境: node.js、npm(或yarn)，部署网站需要 git
-安装和使用安装12yarn...
+        前言震惊过命令行中那些五颜六色的文本显示，使用包管理安装程序时进度条的变化，vim、Emacs等编辑器在终端中的实现。其实，这些都是Ansi Escape Codes的应用。
+绝大部分Ansi Escape Codes都以\u001b开头。本文以python命令行交互环境演示。
+Ansi Escape Codes的使用字体颜色8色基本上所有的控制台都支持以下8种颜色：
+格式: \u001b[...
     
 
-        <a href="/2017/12/05/使用Hexo搭建静态博客/" class="post-more waves-effect waves-button">
+        <a href="/2017/12/05/玩转交互式命令行/" class="post-more waves-effect waves-button">
             閱讀全文…
         </a>
     </div>
     
     <div class="post-footer">
         
-	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Hexo/">Hexo</a></li></ul>
-
-    </div>
-    
-</article>
-
-                </li>
-            
-                <li class="post-list-item fade">
-                    <article id="post-Node.js应用篇 - 基于node的Express应用程序框架"
-  class="article-card article-type-post" itemprop="blogPost">
-
-    <div class="post-meta">
-        <time class="post-time" title="2017-12-05 09:35:46" datetime="2017-12-05T01:35:46.270Z"  itemprop="datePublished">2017-12-05</time>
-
-        
-	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/Node-js/">Node.js</a><ul class="article-category-list-child"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/Node-js/Node-js应用篇/">Node.js应用篇</a></li></ul></li></ul>
-
-
-
-    </div>
-
-    
-
-
-  
-    <h3 class="post-title" itemprop="name">
-      <a class="post-title-link" href="/2017/12/05/Node.js应用篇 - 基于node的Express应用程序框架/">Node.js应用篇 - 基于node的Express应用程序框架</a>
-    </h3>
-  
-
-
-
-
-    <div class="post-content" id="post-content" itemprop="postContent">
-
-    
-        前言Express 是一个简洁而灵活的 node.js Web应用框架, 提供了一系列强大特性帮助你创建各种 Web 应用，和丰富的 HTTP 工具。
-使用 Express 可以快速地搭建一个完整功能的网站。
-Express 框架核心特性：
-
-可以设置中间件来响应 HTTP 请求。
-定义了路由表用于执行不同的 HTTP 请求动作。
-可以通过向模板传递参数来动态渲染 HTML 页面。
-
-本文写...
-    
-
-        <a href="/2017/12/05/Node.js应用篇 - 基于node的Express应用程序框架/" class="post-more waves-effect waves-button">
-            閱讀全文…
-        </a>
-    </div>
-    
-    <div class="post-footer">
-        
-	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Express/">Express</a></li></ul>
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/命令行/">命令行</a></li></ul>
 
     </div>
     
@@ -745,6 +736,8 @@ Express 框架核心特性：
             <li><a href="/categories/Python/Python学习笔记/">Python学习笔记</a></li>
         
             <li><a href="/categories/前端开发/深入理解HTML5/">深入理解HTML5</a></li>
+        
+            <li><a href="/categories/Weex/">Weex</a></li>
         
       </ul>
     </div>
@@ -855,6 +848,14 @@ Express 框架核心特性：
             <li
                 style="background-color: #673ab7;"
             ><a href="/tags/SublimeText/">SublimeText</a></li>
+        
+            <li
+                style="background-color: #ff9800;"
+            ><a href="/tags/npm/">npm</a></li>
+        
+            <li
+                style="background-color: #f44336;"
+            ><a href="/tags/Weex/">Weex</a></li>
         
       </ul>
     </div>

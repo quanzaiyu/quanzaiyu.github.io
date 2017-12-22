@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+
+    
+
+    
+<!-- Baidu Tongji -->
+<script>var _hmt = _hmt || []</script>
+<script async src="//hm.baidu.com/hm.js?3c8be249330224d7c919b4f22750d872"></script>
+<!-- End Baidu Tongji -->
+
+
+
+
+    <meta charset="utf-8">
+    
+    
+    
+    <title>如何发布自己开发的npm包 | 小昱博客 | 勤学如春起之苗，不见其增，日有所长；辍学如磨刀之石，不见其损，日有所亏</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="theme-color" content="#3F51B5">
+    
+    
+    <meta name="keywords" content="npm">
+    <meta name="description" content="前一段时间开发了一些基于Vue的插件，感觉还挺好用的，就发布到npm，希望大家都能使用。 下面说一下发布npm 的流程: 注册一个npm账号进入网址: https://www.npmjs.com 注册一个npm账号。 本人的npm地址为: https://www.npmjs.com/~quanzaiyu    注册后如果需要进行头像设置，需要到 https://en.gravatar.com 注册">
+<meta name="keywords" content="npm">
+<meta property="og:type" content="article">
+<meta property="og:title" content="如何发布自己开发的npm包">
+<meta property="og:url" content="http://blog.xiaoyulive.top/2017/12/22/如何发布自己开发的npm包/index.html">
+<meta property="og:site_name" content="小昱博客">
+<meta property="og:description" content="前一段时间开发了一些基于Vue的插件，感觉还挺好用的，就发布到npm，希望大家都能使用。 下面说一下发布npm 的流程: 注册一个npm账号进入网址: https://www.npmjs.com 注册一个npm账号。 本人的npm地址为: https://www.npmjs.com/~quanzaiyu    注册后如果需要进行头像设置，需要到 https://en.gravatar.com 注册">
+<meta property="og:image" content="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/npm/001.png">
+<meta property="og:image" content="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/npm/002.png">
+<meta property="og:updated_time" content="2017-12-22T03:48:29.659Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="如何发布自己开发的npm包">
+<meta name="twitter:description" content="前一段时间开发了一些基于Vue的插件，感觉还挺好用的，就发布到npm，希望大家都能使用。 下面说一下发布npm 的流程: 注册一个npm账号进入网址: https://www.npmjs.com 注册一个npm账号。 本人的npm地址为: https://www.npmjs.com/~quanzaiyu    注册后如果需要进行头像设置，需要到 https://en.gravatar.com 注册">
+<meta name="twitter:image" content="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/npm/001.png">
+    
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="stylesheet" href="/css/style.css?v=1.6.17">
+    <script>window.lazyScripts=[]</script>
+
+    <!-- custom head -->
+    
+
+    <script src="/js/particles.min.js?v=1.6.17"></script>
+</head>
+
+<body>
+    <div id="loading" class="active"></div>
+
+    <aside id="menu" class="hide" >
+  <div class="inner flex-row-vertical">
+    <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+        <i class="icon icon-lg icon-close"></i>
+    </a>
+    <div class="brand-wrap" style="background-image:url(/img/brand.webp)">
+      <div class="brand">
+        <!-- 头像 -->
+        <a href="/" class="avatar waves-effect waves-circle waves-light">
+          <img src="/img/avatar.jpg">
+        </a>
+        <!-- 简介 -->
+        <hgroup class="introduce">
+          <h5 class="nickname">Quanzaiyu</h5>
+          <a href="mailto:quanzaiyu@outlook.com" title="quanzaiyu@outlook.com" class="mail">quanzaiyu@outlook.com</a>
+          <!-- 链接 -->
+          <div class="iconGroup">
+            
+              <div class="icon">
+                <a  href="https://github.com/quanzaiyu"
+                    target="_blank" 
+                    title="GitHub">
+                  <i class="icon icon-lg icon-github"></i>
+                </a>
+              </div>
+            
+              <div class="icon">
+                <a  href="http://www.weibo.com/quanzaiyu"
+                    target="_blank" 
+                    title="微博">
+                  <i class="icon icon-lg icon-weibo"></i>
+                </a>
+              </div>
+            
+              <div class="icon">
+                <a  href="http://www.jianshu.com/u/2e74d0659da1"
+                    target="_blank" 
+                    title="简书">
+                  <i class="icon icon-lg icon-book"></i>
+                </a>
+              </div>
+            
+          </div>
+        </hgroup>
+      </div>
+    </div>
+    <div class="scroll-wrap flex-col">
+      <ul class="nav">
+        
+            <li class="waves-block waves-effect">
+              <a href="/"  >
+                <i class="icon icon-lg icon-home"></i>
+                主页
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/archives"  >
+                <i class="icon icon-lg icon-archives"></i>
+                归档
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/tags"  >
+                <i class="icon icon-lg icon-tags"></i>
+                标签云
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/categories"  >
+                <i class="icon icon-lg icon-th-list"></i>
+                分类
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/custom"  >
+                <i class="icon icon-lg icon-link"></i>
+                关于我
+              </a>
+            </li>
+        
+      </ul>
+    </div>
+  </div>
+</aside>
+
+    <main id="main">
+        <header class="top-header" id="header">
+    <div class="flex-row">
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">如何发布自己开发的npm包</div>
+        
+        <div class="search-wrap" id="search-wrap">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+                <i class="icon icon-lg icon-chevron-left"></i>
+            </a>
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="搜尋">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
+                <i class="icon icon-lg icon-search"></i>
+            </a>
+        </div>
+        
+        
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menuShare">
+            <i class="icon icon-lg icon-share-alt"></i>
+        </a>
+        
+    </div>
+</header>
+<header class="content-header post-header">
+
+    <div class="container fade-scale">
+        <h1 class="title">如何发布自己开发的npm包</h1>
+        <h5 class="subtitle">
+            
+                <time datetime="2017-12-22T02:59:00.096Z" itemprop="datePublished" class="page-time">
+  2017-12-22
+</time>
+
+
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/Node-js/">Node.js</a></li></ul>
+
+            
+        </h5>
+    </div>
+
+    
+
+
+</header>
+
+
+<div class="container body-wrap">
+    <!-- <div id="canvas-container"></div> -->
+    
+    <aside class="post-widget">
+        <nav class="post-toc-wrap" id="post-toc">
+            <h4>TOC</h4>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#注册一个npm账号"><span class="post-toc-number">1.</span> <span class="post-toc-text">注册一个npm账号</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#开发一个npm包"><span class="post-toc-number">2.</span> <span class="post-toc-text">开发一个npm包</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#初始化仓库"><span class="post-toc-number">2.1.</span> <span class="post-toc-text">初始化仓库</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#主入口文件"><span class="post-toc-number">2.2.</span> <span class="post-toc-text">主入口文件</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#测试此包"><span class="post-toc-number">2.3.</span> <span class="post-toc-text">测试此包</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#发布一个npm包"><span class="post-toc-number">3.</span> <span class="post-toc-text">发布一个npm包</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#添加npm用户"><span class="post-toc-number">3.1.</span> <span class="post-toc-text">添加npm用户</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#发布npm包"><span class="post-toc-number">3.2.</span> <span class="post-toc-text">发布npm包</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#更新npm包"><span class="post-toc-number">3.3.</span> <span class="post-toc-text">更新npm包</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#删除npm包"><span class="post-toc-number">3.4.</span> <span class="post-toc-text">删除npm包</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#安装使用npm包"><span class="post-toc-number">4.</span> <span class="post-toc-text">安装使用npm包</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#参考资料"><span class="post-toc-number">5.</span> <span class="post-toc-text">参考资料</span></a></li></ol>
+        </nav>
+    </aside>
+    
+<article id="post-如何发布自己开发的npm包"
+  class="post-article article-type-post fade" itemprop="blogPost">
+
+    <div class="post-card">
+        <h1 class="post-card-title">如何发布自己开发的npm包</h1>
+        <div class="post-meta">
+            <time class="post-time" title="2017-12-22 10:59:00" datetime="2017-12-22T02:59:00.096Z"  itemprop="datePublished">2017-12-22</time>
+
+            
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/Node-js/">Node.js</a></li></ul>
+
+
+
+            
+<span id="busuanzi_container_page_pv" title="文章总阅读量" style='display:none'>
+    <i class="icon icon-eye icon-pr"></i><span id="busuanzi_value_page_pv"></span>
+</span>
+
+
+        </div>
+        <div class="post-content" id="post-content" itemprop="postContent">
+            <p>前一段时间开发了一些基于Vue的插件，感觉还挺好用的，就发布到npm，希望大家都能使用。</p>
+<p>下面说一下发布npm 的流程:</p>
+<h1 id="注册一个npm账号"><a href="#注册一个npm账号" class="headerlink" title="注册一个npm账号"></a>注册一个npm账号</h1><p>进入网址: <a href="https://www.npmjs.com" target="_blank" rel="external">https://www.npmjs.com</a> 注册一个npm账号。</p>
+<p>本人的npm地址为: <a href="https://www.npmjs.com/~quanzaiyu" target="_blank" rel="external">https://www.npmjs.com/~quanzaiyu</a>  </p>
+<p><img src="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/npm/001.png" alt=""></p>
+<p>注册后如果需要进行头像设置，需要到 <a href="https://en.gravatar.com" target="_blank" rel="external">https://en.gravatar.com</a> 注册一个账号(使用的是WordPress账号)，添加头像。</p>
+<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/npm/002.png" alt="" title="">
+                </div>
+                <div class="image-caption"></div>
+            </figure>
+<h1 id="开发一个npm包"><a href="#开发一个npm包" class="headerlink" title="开发一个npm包"></a>开发一个npm包</h1><h2 id="初始化仓库"><a href="#初始化仓库" class="headerlink" title="初始化仓库"></a>初始化仓库</h2><p>每一个npm包都需要一个<code>package.json</code>文件，进行常规配置。</p>
+<p>首先进入需要发布npm的目录，输入</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm init</div></pre></td></tr></table></figure>
+<p>进行包初始化，自动生成一个<code>package.json</code>文件，填写一些简单的选项，包括: 包名、版本号、主入口文件、描述、作者、脚本 等。</p>
+<p>最终文件大致如下:</p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">  <span class="attr">"name"</span>: <span class="string">"qzy-npm-test"</span>,</div><div class="line">  <span class="attr">"version"</span>: <span class="string">"1.0.0"</span>,</div><div class="line">  <span class="attr">"description"</span>: <span class="string">"一个npm测试包"</span>,</div><div class="line">  <span class="attr">"main"</span>: <span class="string">"index.js"</span>,</div><div class="line">  <span class="attr">"scripts"</span>: &#123;</div><div class="line">    <span class="attr">"test"</span>: <span class="string">"echo \"Error: no test specified\" &amp;&amp; exit 1"</span></div><div class="line">  &#125;,</div><div class="line">  <span class="attr">"author"</span>: <span class="string">"quanzaiyu"</span>,</div><div class="line">  <span class="attr">"license"</span>: <span class="string">"ISC"</span></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h2 id="主入口文件"><a href="#主入口文件" class="headerlink" title="主入口文件"></a>主入口文件</h2><p>可以看到，在<code>package.json</code>中指定主入口文件为<code>index.js</code>，那么，就得在项目下创建一个名为<code>index.js</code>的文件。比如:</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">hello</span>(<span class="params">name</span>)</span>&#123;</div><div class="line">  <span class="built_in">console</span>.log(<span class="string">"hello "</span>+ name);</div><div class="line">&#125;</div><div class="line">exports.hello = hello;</div></pre></td></tr></table></figure>
+<p>可以看到，此文件导出了一个名叫<code>hello</code>的函数。</p>
+<h2 id="测试此包"><a href="#测试此包" class="headerlink" title="测试此包"></a>测试此包</h2><p>将整个文件夹丢到<code>node_modules</code>目录下，在<code>node_modules</code>同级目录下使用<code>npm init</code> 创建 <code>package.json</code>，内容大体如下:</p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">  <span class="attr">"name"</span>: <span class="string">"projects"</span>,</div><div class="line">  <span class="attr">"version"</span>: <span class="string">"1.0.0"</span>,</div><div class="line">  <span class="attr">"description"</span>: <span class="string">""</span>,</div><div class="line">  <span class="attr">"main"</span>: <span class="string">"index.js"</span>,</div><div class="line">  <span class="attr">"dependencies"</span>: &#123;</div><div class="line">    <span class="attr">"qzy-npm-test"</span>: <span class="string">"^1.0.1"</span></div><div class="line">  &#125;,</div><div class="line">  <span class="attr">"devDependencies"</span>: &#123;&#125;,</div><div class="line">  <span class="attr">"scripts"</span>: &#123;</div><div class="line">    <span class="attr">"test"</span>: <span class="string">"echo \"Error: no test specified\" &amp;&amp; exit 1"</span></div><div class="line">  &#125;,</div><div class="line">  <span class="attr">"author"</span>: <span class="string">""</span>,</div><div class="line">  <span class="attr">"license"</span>: <span class="string">"ISC"</span></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>再在同级目录下创建一个<code>test.js</code>，内容如下:</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> h = <span class="built_in">require</span>(<span class="string">'qzy-npm-test'</span>);</div><div class="line">h.hello(<span class="string">'Jarrick'</span>);</div></pre></td></tr></table></figure>
+<p>执行<code>node test</code>，控制台输出<code>hello Jarrick</code>。说明此包测试成功。</p>
+<p>创建的目录结构如下:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">projects/ # 测试项目目录</div><div class="line">	node_modules/ # 包目录</div><div class="line">		qzy-npm-test/ # 插件目录</div><div class="line">			index.js # 插件入口文件</div><div class="line">			package.json # 插件配置文件</div><div class="line">	test.js # 测试文件</div><div class="line">	package.json # 测试配置文件</div></pre></td></tr></table></figure>
+<h1 id="发布一个npm包"><a href="#发布一个npm包" class="headerlink" title="发布一个npm包"></a>发布一个npm包</h1><p>以下操作都在 <code>projects/node_modules/qzy-npm-test/</code> 目录下进行。</p>
+<h2 id="添加npm用户"><a href="#添加npm用户" class="headerlink" title="添加npm用户"></a>添加npm用户</h2><p>使用之前注册的npm账号进行登录</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">$ npm adduser</div><div class="line">username: xxx</div><div class="line">password: xxx</div><div class="line">email: xxx</div></pre></td></tr></table></figure>
+<h2 id="发布npm包"><a href="#发布npm包" class="headerlink" title="发布npm包"></a>发布npm包</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ npm publish</div></pre></td></tr></table></figure>
+<p>发布后可在自己的npm主页看到</p>
+<h2 id="更新npm包"><a href="#更新npm包" class="headerlink" title="更新npm包"></a>更新npm包</h2><p>如果之后修改过此包，需要修改<code>package.json</code>中的版本号字段<code>version</code>，使其大于当前版本，然后<code>npm publish</code>即可。</p>
+<p>如果未更改版本号，会报错:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">npm ERR! publish Failed PUT 403</div><div class="line">npm ERR! code E403</div><div class="line">npm ERR! You cannot publish over the previously published version 1.0.0. : qzy-npm-test</div><div class="line"></div><div class="line">npm ERR! A complete log of this run can be found in:</div><div class="line">npm ERR!     C:\Users\quanzaiyu\AppData\Roaming\npm-cache\_logs\2017-09-12T07_59_18_829Z-debug.log</div></pre></td></tr></table></figure>
+<p>修改版本号后则成功:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ npm publish</div><div class="line">+ qzy-npm-test@1.0.1</div></pre></td></tr></table></figure>
+<h2 id="删除npm包"><a href="#删除npm包" class="headerlink" title="删除npm包"></a>删除npm包</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ npm unpublish</div><div class="line">$ npm unpublish --force</div></pre></td></tr></table></figure>
+<h1 id="安装使用npm包"><a href="#安装使用npm包" class="headerlink" title="安装使用npm包"></a>安装使用npm包</h1><p>安装使用方法很简单，跟以前安装npm包同样的使用即可。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm i &lt;packageName&gt;</div></pre></td></tr></table></figure>
+<p>比如安装刚才发布的包:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm i qzy-npm-test --save</div></pre></td></tr></table></figure>
+<p>使用刚才发布的包:</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">let</span> a = <span class="built_in">require</span>(<span class="string">'qzy-npm-test'</span>)</div><div class="line">a.hello(<span class="string">'qzy'</span>)</div></pre></td></tr></table></figure>
+<p>执行<code>node index</code>即可看见输出了<code>hello qzy</code></p>
+<p>详细的使用请访问本人的npm: <a href="https://www.npmjs.com/~quanzaiyu" target="_blank" rel="external">https://www.npmjs.com/~quanzaiyu</a>  </p>
+<h1 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h1><p><a href="https://segmentfault.com/a/1190000009315989" target="_blank" rel="external">npm-参考手册</a> </p>
+<p><a href="http://www.jianshu.com/p/36d3e0e00157" target="_blank" rel="external">手把手教你用npm发布一个包</a> </p>
+<p><a href="https://segmentfault.com/q/1010000009389901" target="_blank" rel="external">怎样删除npm里已经发布的包？</a> </p>
+
+        </div>
+
+        <blockquote class="post-copyright">
+    <div class="content">
+        
+<span class="post-time">
+    最後更新時間：<time datetime="2017-12-22T03:48:29.659Z" itemprop="dateUpdated">2017-12-22 11:48:29</time>
+</span><br>
+
+
+        
+        这里可以写作者留言，标签和 hexo 中所有变量及辅助函数等均可调用，示例：<a href="/2017/12/22/如何发布自己开发的npm包/" target="_blank" rel="external">http://blog.xiaoyulive.top/2017/12/22/如何发布自己开发的npm包/</a>
+        
+    </div>
+    <footer>
+        <a href="http://blog.xiaoyulive.top">
+            <img src="/img/avatar.jpg" alt="Quanzaiyu">
+            Quanzaiyu
+        </a>
+    </footer>
+</blockquote>
+
+        
+<div class="page-reward">
+    <a id="rewardBtn" href="javascript:;" class="page-reward-btn waves-effect waves-circle waves-light">赏</a>
+</div>
+
+
+
+        <div class="post-footer">
+            
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/npm/">npm</a></li></ul>
+
+
+            
+<div class="page-share-wrap">
+    
+
+<div class="page-share" id="pageShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://blog.xiaoyulive.top/2017/12/22/如何发布自己开发的npm包/&title=《如何发布自己开发的npm包》 — 小昱博客&pic=http://blog.xiaoyulive.top/img/avatar.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://blog.xiaoyulive.top/2017/12/22/如何发布自己开发的npm包/&title=《如何发布自己开发的npm包》 — 小昱博客&source=" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://blog.xiaoyulive.top/2017/12/22/如何发布自己开发的npm包/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《如何发布自己开发的npm包》 — 小昱博客&url=http://blog.xiaoyulive.top/2017/12/22/如何发布自己开发的npm包/&via=http://blog.xiaoyulive.top" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://blog.xiaoyulive.top/2017/12/22/如何发布自己开发的npm包/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+
+    <a href="javascript:;" id="shareFab" class="page-share-fab waves-effect waves-circle">
+        <i class="icon icon-share-alt icon-lg"></i>
+    </a>
+</div>
+
+
+
+        </div>
+    </div>
+
+    
+<nav class="post-nav flex-row flex-justify-between flex-row-reverse">
+  
+
+  
+    <div class="waves-block waves-effect next">
+      <a href="/2017/12/21/Weex开发实践01 - 环境搭建/" id="post-next" class="post-nav-link">
+        <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
+        <h4 class="title">Weex开发实践01 - 环境搭建</h4>
+      </a>
+    </div>
+  
+</nav>
+
+
+
+    
+
+
+<section class="comments" id="comments">
+    <div id="disqus_thread"></div>
+    <script>
+    var disqus_shortname = 'true';
+    lazyScripts.push('//' + disqus_shortname + '.disqus.com/embed.js')
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</section>
+
+
+
+
+<section class="comments" id="comments">
+    <!-- UY BEGIN -->
+    <div id="uyan_frame"></div>
+    <script src="http://v2.uyan.cc/code/uyan.js?uid=true"></script>
+    <!-- UY END -->
+</section>
+
+
+
+
+<section class="comments" id="comments">
+    <div id="gitment_thread"></div>
+    <link rel="stylesheet" href="//unpkg.com/gitment/style/default.css">
+    <script src="//unpkg.com/gitment/dist/gitment.browser.js"></script>
+    <script>
+        var gitment = new Gitment({
+            owner: 'quanzaiyu',
+            repo: 'quanzaiyu.github.io',
+            oauth: {
+                client_id: '3f4b90df85c3c29d643f',
+                client_secret: 'c951dd3dbd71e2edd597aa527a1a5d7e473d7375',
+            },
+        })
+        gitment.render('comments')
+    </script>
+</section>
+
+
+
+
+</article>
+
+<div id="reward" class="page-modal reward-lay">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <h3 class="reward-title">
+        <i class="icon icon-quote-left"></i>
+        谢谢大爷~
+        <i class="icon icon-quote-right"></i>
+    </h3>
+    <div class="reward-content">
+        
+        <div class="reward-code">
+            <img id="rewardCode" src="/img/wechat.jpg" alt="打赏二维码">
+        </div>
+        
+        <label class="reward-toggle">
+            <input id="rewardToggle" type="checkbox" class="reward-toggle-check"
+                data-wechat="/img/wechat.jpg" data-alipay="/img/alipay.jpg">
+            <div class="reward-toggle-ctrol">
+                <span class="reward-toggle-item wechat">微信</span>
+                <span class="reward-toggle-label"></span>
+                <span class="reward-toggle-item alipay">支付宝</span>
+            </div>
+        </label>
+        
+    </div>
+</div>
+
+
+
+</div>
+
+<!-- <script>
+    particlesJS.load('canvas-container', '/json/particles2.json', function () {
+        console.log('callback - particles.js config loaded');
+    })
+</script> -->
+        <footer class="footer">
+    <div class="top">
+        
+<p>
+    <span id="busuanzi_container_site_uv" style='display:none'>
+        站点总访客数：<span id="busuanzi_value_site_uv"></span>
+    </span>
+    <span id="busuanzi_container_site_pv" style='display:none'>
+        站点总访问量：<span id="busuanzi_value_site_pv"></span>
+    </span>
+</p>
+
+
+        <p>
+            
+            <!-- <span>本部落格係採用<a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.zh_TW">創用 CC 姓名標示 4.0 國際 授權條款授權</a></span> -->
+        </p>
+    </div>
+    <div class="bottom">
+        <p><span>Quanzaiyu &copy; 2015 - 2017</span>
+            <span>
+                
+                <a href="http://www.miitbeian.gov.cn/" target="_blank">滇ICP备16006294号</a><br>
+                
+                Power by <a href="http://hexo.io/" target="_blank">Hexo</a>
+            </span>
+        </p>
+    </div>
+</footer>
+
+    </main>
+    <div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+
+
+<div class="global-share" id="globalShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://blog.xiaoyulive.top/2017/12/22/如何发布自己开发的npm包/&title=《如何发布自己开发的npm包》 — 小昱博客&pic=http://blog.xiaoyulive.top/img/avatar.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://blog.xiaoyulive.top/2017/12/22/如何发布自己开发的npm包/&title=《如何发布自己开发的npm包》 — 小昱博客&source=" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://blog.xiaoyulive.top/2017/12/22/如何发布自己开发的npm包/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《如何发布自己开发的npm包》 — 小昱博客&url=http://blog.xiaoyulive.top/2017/12/22/如何发布自己开发的npm包/&via=http://blog.xiaoyulive.top" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://blog.xiaoyulive.top/2017/12/22/如何发布自己开发的npm包/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+<div class="page-modal wx-share" id="wxShare">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <img src="//api.qrserver.com/v1/create-qr-code/?data=http://blog.xiaoyulive.top/2017/12/22/如何发布自己开发的npm包/" alt="微信分享二维码">
+</div>
+
+
+
+
+    <script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+<script>
+var BLOG = { ROOT: '/', SHARE: true, REWARD: true };
+
+
+</script>
+
+<script src="/js/main.min.js?v=1.6.17"></script>
+
+
+<div class="search-panel" id="search-panel">
+    <ul class="search-result" id="search-result"></ul>
+</div>
+<template id="search-tpl">
+<li class="item">
+    <a href="{path}" class="waves-block waves-effect">
+        <div class="title ellipsis" title="{title}">{title}</div>
+        <div class="flex-row flex-middle">
+            <div class="tags ellipsis">
+                {tags}
+            </div>
+            <time class="flex-col time">{date}</time>
+        </div>
+    </a>
+</li>
+</template>
+
+<script src="/js/search.min.js?v=1.6.17" async></script>
+
+
+
+
+
+
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+<script>
+(function() {
+    var OriginTitile = document.title, titleTime;
+    document.addEventListener('visibilitychange', function() {
+        if (document.hidden) {
+            document.title = 'ﾍ(;´Д｀ﾍ)快回来啊！';
+            clearTimeout(titleTime);
+        } else {
+            document.title = '(つェ⊂)欢迎回来!';
+            titleTime = setTimeout(function() {
+                document.title = OriginTitile;
+            },2000);
+        }
+    });
+})();
+</script>
+
+
+
+</body>
+</html>
