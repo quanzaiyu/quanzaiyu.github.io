@@ -146,7 +146,7 @@
             <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
                 <i class="icon icon-lg icon-chevron-left"></i>
             </a>
-            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="搜尋">
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="输入感兴趣的关键字">
             <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
                 <i class="icon icon-lg icon-search"></i>
             </a>
@@ -181,413 +181,6 @@
     <div class="container-main-articles">
 
         <ul class="post-list">
-            
-                <li class="post-list-item fade">
-                    <article id="post-Node.js学习笔记02 - IO"
-  class="article-card article-type-post" itemprop="blogPost">
-
-    <div class="post-meta">
-        <time class="post-time" title="2017-12-07 09:33:00" datetime="2017-12-07T01:33:00.122Z"  itemprop="datePublished">2017-12-07</time>
-
-        
-	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/Node-js/">Node.js</a><ul class="article-category-list-child"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/Node-js/Node-js学习笔记/">Node.js学习笔记</a></li></ul></li></ul>
-
-
-
-    </div>
-
-    
-
-
-  
-    <h3 class="post-title" itemprop="name">
-      <a class="post-title-link" href="/2017/12/07/Node.js学习笔记02 - IO/">Node.js学习笔记02 - IO</a>
-    </h3>
-  
-
-
-
-
-    <div class="post-content" id="post-content" itemprop="postContent">
-
-    
-        Node.js内置的fs模块就是文件系统模块，负责读写文件。
-和所有其它JavaScript模块不同的是，fs模块同时提供了异步和同步的方法。
-同步和异步因为JavaScript的单线程模型，执行IO操作时，JavaScript代码无需等待，而是传入回调函数后，继续执行后续JavaScript代码。比如jQuery提供的getJSON()操作：
-1234$.getJSON('http://e...
-    
-
-        <a href="/2017/12/07/Node.js学习笔记02 - IO/" class="post-more waves-effect waves-button">
-            閱讀全文…
-        </a>
-    </div>
-    
-    <div class="post-footer">
-        
-	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Node-js/">Node.js</a></li></ul>
-
-    </div>
-    
-</article>
-
-                </li>
-            
-                <li class="post-list-item fade">
-                    <article id="post-Node.js学习笔记01 - 模块"
-  class="article-card article-type-post" itemprop="blogPost">
-
-    <div class="post-meta">
-        <time class="post-time" title="2017-12-07 09:30:50" datetime="2017-12-07T01:30:50.277Z"  itemprop="datePublished">2017-12-07</time>
-
-        
-	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/Node-js/">Node.js</a><ul class="article-category-list-child"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/Node-js/Node-js学习笔记/">Node.js学习笔记</a></li></ul></li></ul>
-
-
-
-    </div>
-
-    
-
-
-  
-    <h3 class="post-title" itemprop="name">
-      <a class="post-title-link" href="/2017/12/07/Node.js学习笔记01 - 模块/">Node.js学习笔记01 - 模块</a>
-    </h3>
-  
-
-
-
-
-    <div class="post-content" id="post-content" itemprop="postContent">
-
-    
-        CommonJS在CommonJS这个规范下，每个.js文件都是一个模块，它们内部各自使用的变量名和函数名都互不冲突，例如，hello.js和main.js都申明了全局变量var s = &#39;xxx&#39;，但互不影响。
-一个模块想要对外暴露变量（函数也是变量），可以用module.exports = variable;，一个模块要引用其他模块暴露的变量，用var ref = req...
-    
-
-        <a href="/2017/12/07/Node.js学习笔记01 - 模块/" class="post-more waves-effect waves-button">
-            閱讀全文…
-        </a>
-    </div>
-    
-    <div class="post-footer">
-        
-	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Node-js/">Node.js</a></li></ul>
-
-    </div>
-    
-</article>
-
-                </li>
-            
-                <li class="post-list-item fade">
-                    <article id="post-Python学习笔记06 - 面向对象"
-  class="article-card article-type-post" itemprop="blogPost">
-
-    <div class="post-meta">
-        <time class="post-time" title="2017-12-06 13:58:30" datetime="2017-12-06T05:58:30.997Z"  itemprop="datePublished">2017-12-06</time>
-
-        
-	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/Python/">Python</a><ul class="article-category-list-child"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/Python/Python学习笔记/">Python学习笔记</a></li></ul></li></ul>
-
-
-
-    </div>
-
-    
-
-
-  
-    <h3 class="post-title" itemprop="name">
-      <a class="post-title-link" href="/2017/12/06/Python学习笔记06 - 面向对象/">Python学习笔记06 - 面向对象</a>
-    </h3>
-  
-
-
-
-
-    <div class="post-content" id="post-content" itemprop="postContent">
-
-    
-        类的创建1234567891011class Student(object):    def __init__(self, name, score):        self.name = name        self.__score = score    def print_score(self):        print('%s: %s' % (self.name, self.__...
-    
-
-        <a href="/2017/12/06/Python学习笔记06 - 面向对象/" class="post-more waves-effect waves-button">
-            閱讀全文…
-        </a>
-    </div>
-    
-    <div class="post-footer">
-        
-	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Python/">Python</a></li></ul>
-
-    </div>
-    
-</article>
-
-                </li>
-            
-                <li class="post-list-item fade">
-                    <article id="post-Python学习笔记05 - IO"
-  class="article-card article-type-post" itemprop="blogPost">
-
-    <div class="post-meta">
-        <time class="post-time" title="2017-12-06 09:42:27" datetime="2017-12-06T01:42:27.114Z"  itemprop="datePublished">2017-12-06</time>
-
-        
-	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/Python/">Python</a><ul class="article-category-list-child"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/Python/Python学习笔记/">Python学习笔记</a></li></ul></li></ul>
-
-
-
-    </div>
-
-    
-
-
-  
-    <h3 class="post-title" itemprop="name">
-      <a class="post-title-link" href="/2017/12/06/Python学习笔记05 - IO/">Python学习笔记05 - IO</a>
-    </h3>
-  
-
-
-
-
-    <div class="post-content" id="post-content" itemprop="postContent">
-
-    
-        
-file 对象使用 open 函数来创建
-
-文件操作读文件1234f = open('./info.log', 'r') # 以只读的方式打开一个文件t = f.read() # 读取文件内容，保存到一个str对象print(t) # 如果文件打开成功，将打印文件内容f.close() # 关闭文件
-open() 方法，传入文件名和标示符，可以打开一个文件对象。
-read() 方法，可以一...
-    
-
-        <a href="/2017/12/06/Python学习笔记05 - IO/" class="post-more waves-effect waves-button">
-            閱讀全文…
-        </a>
-    </div>
-    
-    <div class="post-footer">
-        
-	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Python/">Python</a></li></ul>
-
-    </div>
-    
-</article>
-
-                </li>
-            
-                <li class="post-list-item fade">
-                    <article id="post-Python学习笔记04 - 模块、标准库"
-  class="article-card article-type-post" itemprop="blogPost">
-
-    <div class="post-meta">
-        <time class="post-time" title="2017-12-06 09:42:27" datetime="2017-12-06T01:42:27.113Z"  itemprop="datePublished">2017-12-06</time>
-
-        
-	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/Python/">Python</a><ul class="article-category-list-child"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/Python/Python学习笔记/">Python学习笔记</a></li></ul></li></ul>
-
-
-
-    </div>
-
-    
-
-
-  
-    <h3 class="post-title" itemprop="name">
-      <a class="post-title-link" href="/2017/12/06/Python学习笔记04 - 模块、标准库/">Python学习笔记04 - 模块、标准库</a>
-    </h3>
-  
-
-
-
-
-    <div class="post-content" id="post-content" itemprop="postContent">
-
-    
-        import 与 from…import在 python 用 import 或者 from…import 来导入相应的模块。
-
-将整个模块(somemodule)导入，格式为：import somemodule
-从某个模块中导入某个函数,格式为：from somemodule import somefunction
-从某个模块中导入多个函数,格式为：from somemodule impor...
-    
-
-        <a href="/2017/12/06/Python学习笔记04 - 模块、标准库/" class="post-more waves-effect waves-button">
-            閱讀全文…
-        </a>
-    </div>
-    
-    <div class="post-footer">
-        
-	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Python/">Python</a></li></ul>
-
-    </div>
-    
-</article>
-
-                </li>
-            
-                <li class="post-list-item fade">
-                    <article id="post-深入理解JavaScript - Blob、Base64及其转化"
-  class="article-card article-type-post" itemprop="blogPost">
-
-    <div class="post-meta">
-        <time class="post-time" title="2017-12-05 12:42:43" datetime="2017-12-05T04:42:43.887Z"  itemprop="datePublished">2017-12-05</time>
-
-        
-	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/前端开发/">前端开发</a><ul class="article-category-list-child"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/前端开发/深入理解JavaScript/">深入理解JavaScript</a></li></ul></li></ul>
-
-
-
-    </div>
-
-    
-
-
-  
-    <h3 class="post-title" itemprop="name">
-      <a class="post-title-link" href="/2017/12/05/深入理解JavaScript - Blob、Base64及其转化/">深入理解JavaScript - Blob、Base64及其转化</a>
-    </h3>
-  
-
-
-
-
-    <div class="post-content" id="post-content" itemprop="postContent">
-
-    
-        前言之所以会写这篇文章，是由于前段时间研究JS的语音播放，当时想着使用H5自带的audio进行处理，然而上传的语音文件却是.amr格式的(个人不太熟悉这个格式，感觉很罕见)，使用audio只能处理mp3、wav、ogg三种格式，amr显然对H5并不友好。
-处理这个格式花费了大量功夫，想了很多办法，比如前端上传前类型转换、后端上传后类型转换、寻找可以播放amr 格式的插件等等，折腾了好久。由于...
-    
-
-        <a href="/2017/12/05/深入理解JavaScript - Blob、Base64及其转化/" class="post-more waves-effect waves-button">
-            閱讀全文…
-        </a>
-    </div>
-    
-    <div class="post-footer">
-        
-	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Base64/">Base64</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Blob/">Blob</a></li></ul>
-
-    </div>
-    
-</article>
-
-                </li>
-            
-                <li class="post-list-item fade">
-                    <article id="post-高效使用ESlint进行开发"
-  class="article-card article-type-post" itemprop="blogPost">
-
-    <div class="post-meta">
-        <time class="post-time" title="2017-12-05 09:35:46" datetime="2017-12-05T01:35:46.272Z"  itemprop="datePublished">2017-12-05</time>
-
-        
-	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/开发工具/">开发工具</a></li></ul>
-
-
-
-    </div>
-
-    
-
-
-  
-    <h3 class="post-title" itemprop="name">
-      <a class="post-title-link" href="/2017/12/05/高效使用ESlint进行开发/">高效使用ESlint进行开发</a>
-    </h3>
-  
-
-
-
-
-    <div class="post-content" id="post-content" itemprop="postContent">
-
-    
-        简介ESLint是一个用来识别 ECMAScript 并且按照规则给出报告的代码检测工具，使用它可以避免低级错误和统一代码的风格。
-相关网站
-
-ESLint 官网
-ESLint 验证规则
-ESLint 配置文件
-
-安装
-使用npm全局安装
-
-1npm install -g eslint
-
-在VSCode中安装eslint插件
-
-
-                
-              ...
-    
-
-        <a href="/2017/12/05/高效使用ESlint进行开发/" class="post-more waves-effect waves-button">
-            閱讀全文…
-        </a>
-    </div>
-    
-    <div class="post-footer">
-        
-	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ESlint/">ESlint</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/VSCode/">VSCode</a></li></ul>
-
-    </div>
-    
-</article>
-
-                </li>
-            
-                <li class="post-list-item fade">
-                    <article id="post-高效使用VSCode进行开发"
-  class="article-card article-type-post" itemprop="blogPost">
-
-    <div class="post-meta">
-        <time class="post-time" title="2017-12-05 09:35:46" datetime="2017-12-05T01:35:46.272Z"  itemprop="datePublished">2017-12-05</time>
-
-        
-	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/开发工具/">开发工具</a></li></ul>
-
-
-
-    </div>
-
-    
-
-
-  
-    <h3 class="post-title" itemprop="name">
-      <a class="post-title-link" href="/2017/12/05/高效使用VSCode进行开发/">高效使用VSCode进行开发</a>
-    </h3>
-  
-
-
-
-
-    <div class="post-content" id="post-content" itemprop="postContent">
-
-    
-        VSCode简介VSCode是微软推出的一款产品，他不是一款强大的IDE，而是支持按需扩展各种插件的轻量级编辑器，可以看作是Visual Studio的精简版，界面风格相同。竞争对手会是Sublime、Atom，提供丰富的插件和优雅的编辑界面，内置多项丰富的功能，包括版本控制、插件管理、代码调试、多项目管理(v1.8)等。
-为什么选择VSCode之前一直很排斥微软的产品，特别是IE和.Net...
-    
-
-        <a href="/2017/12/05/高效使用VSCode进行开发/" class="post-more waves-effect waves-button">
-            閱讀全文…
-        </a>
-    </div>
-    
-    <div class="post-footer">
-        
-	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/VSCode/">VSCode</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/开发工具/">开发工具</a></li></ul>
-
-    </div>
-    
-</article>
-
-                </li>
             
                 <li class="post-list-item fade">
                     <article id="post-提升效率的必备VSCode插件"
@@ -631,7 +224,7 @@ ESLint 配置文件
     
 
         <a href="/2017/12/05/提升效率的必备VSCode插件/" class="post-more waves-effect waves-button">
-            閱讀全文…
+            阅读全文…
         </a>
     </div>
     
@@ -646,14 +239,14 @@ ESLint 配置文件
                 </li>
             
                 <li class="post-list-item fade">
-                    <article id="post-玩转交互式命令行"
+                    <article id="post-Node.js应用篇 - 基于node的Express应用程序框架"
   class="article-card article-type-post" itemprop="blogPost">
 
     <div class="post-meta">
-        <time class="post-time" title="2017-12-05 09:35:46" datetime="2017-12-05T01:35:46.271Z"  itemprop="datePublished">2017-12-05</time>
+        <time class="post-time" title="2017-12-05 09:35:46" datetime="2017-12-05T01:35:46.270Z"  itemprop="datePublished">2017-12-05</time>
 
         
-	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/计算机/">计算机</a></li></ul>
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/Node-js/">Node.js</a><ul class="article-category-list-child"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/Node-js/Node-js应用篇/">Node.js应用篇</a></li></ul></li></ul>
 
 
 
@@ -664,7 +257,7 @@ ESLint 配置文件
 
   
     <h3 class="post-title" itemprop="name">
-      <a class="post-title-link" href="/2017/12/05/玩转交互式命令行/">玩转交互式命令行</a>
+      <a class="post-title-link" href="/2017/12/05/Node.js应用篇 - 基于node的Express应用程序框架/">Node.js应用篇 - 基于node的Express应用程序框架</a>
     </h3>
   
 
@@ -674,20 +267,233 @@ ESLint 配置文件
     <div class="post-content" id="post-content" itemprop="postContent">
 
     
-        前言震惊过命令行中那些五颜六色的文本显示，使用包管理安装程序时进度条的变化，vim、Emacs等编辑器在终端中的实现。其实，这些都是Ansi Escape Codes的应用。
-绝大部分Ansi Escape Codes都以\u001b开头。本文以python命令行交互环境演示。
-Ansi Escape Codes的使用字体颜色8色基本上所有的控制台都支持以下8种颜色：
-格式: \u001b[...
+        前言Express 是一个简洁而灵活的 node.js Web应用框架, 提供了一系列强大特性帮助你创建各种 Web 应用，和丰富的 HTTP 工具。
+使用 Express 可以快速地搭建一个完整功能的网站。
+Express 框架核心特性：
+
+可以设置中间件来响应 HTTP 请求。
+定义了路由表用于执行不同的 HTTP 请求动作。
+可以通过向模板传递参数来动态渲染 HTML 页面。
+
+本文写...
     
 
-        <a href="/2017/12/05/玩转交互式命令行/" class="post-more waves-effect waves-button">
-            閱讀全文…
+        <a href="/2017/12/05/Node.js应用篇 - 基于node的Express应用程序框架/" class="post-more waves-effect waves-button">
+            阅读全文…
         </a>
     </div>
     
     <div class="post-footer">
         
-	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/命令行/">命令行</a></li></ul>
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Express/">Express</a></li></ul>
+
+    </div>
+    
+</article>
+
+                </li>
+            
+                <li class="post-list-item fade">
+                    <article id="post-使用Hexo搭建静态博客"
+  class="article-card article-type-post" itemprop="blogPost">
+
+    <div class="post-meta">
+        <time class="post-time" title="2017-12-05 09:35:46" datetime="2017-12-05T01:35:46.270Z"  itemprop="datePublished">2017-12-05</time>
+
+        
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/Hexo/">Hexo</a></li></ul>
+
+
+
+    </div>
+
+    
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/2017/12/05/使用Hexo搭建静态博客/">使用Hexo搭建静态博客</a>
+    </h3>
+  
+
+
+
+
+    <div class="post-content" id="post-content" itemprop="postContent">
+
+    
+        
+这不是一个教程，只是记录个人配置Hexo的历程，方便下次使用，最后的参考资料中会有详细的搭建教程。
+
+Hexo简介hexo是一款快速、简洁且高效的博客框架，基于node.js构建，速度快，支持Markdown的编写文章，可以一键部署到GitHub，简单方便。参考 : Hexo中文网站
+环境搭建依赖环境: node.js、npm(或yarn)，部署网站需要 git
+安装和使用安装12yarn...
+    
+
+        <a href="/2017/12/05/使用Hexo搭建静态博客/" class="post-more waves-effect waves-button">
+            阅读全文…
+        </a>
+    </div>
+    
+    <div class="post-footer">
+        
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Hexo/">Hexo</a></li></ul>
+
+    </div>
+    
+</article>
+
+                </li>
+            
+                <li class="post-list-item fade">
+                    <article id="post-Vue的移动端多图上传插件vue-easy-uploader"
+  class="article-card article-type-post" itemprop="blogPost">
+
+    <div class="post-meta">
+        <time class="post-time" title="2017-12-05 09:35:46" datetime="2017-12-05T01:35:46.269Z"  itemprop="datePublished">2017-12-05</time>
+
+        
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/Vue/">Vue</a></li></ul>
+
+
+
+    </div>
+
+    
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/2017/12/05/Vue的移动端多图上传插件vue-easy-uploader/">Vue的移动端多图上传插件vue-easy-uploader</a>
+    </h3>
+  
+
+
+
+
+    <div class="post-content" id="post-content" itemprop="postContent">
+
+    
+        前言这段时间赶项目，需要用到多文件上传，用Vue进行前端项目开发。在网上找了不少插件，都不是十分满意，有的使用起来繁琐，有的不能适应本项目。就打算自己折腾一下，写一个Vue的上传插件，一劳永逸，以后可以直接使用。
+目前vue-easy-uploader已上传到GitHub和NPM，使用起来方便简单，不需要繁琐的配置即可投入生产，不过需要后端配合，实现上传接口。
+本项目GitHub地址: ht...
+    
+
+        <a href="/2017/12/05/Vue的移动端多图上传插件vue-easy-uploader/" class="post-more waves-effect waves-button">
+            阅读全文…
+        </a>
+    </div>
+    
+    <div class="post-footer">
+        
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Vue/">Vue</a></li></ul>
+
+    </div>
+    
+</article>
+
+                </li>
+            
+                <li class="post-list-item fade">
+                    <article id="post-深入理解JavaScript - JS中集合对象(Array、Map、Set)及类数组对象的使用与对比"
+  class="article-card article-type-post" itemprop="blogPost">
+
+    <div class="post-meta">
+        <time class="post-time" title="2017-12-05 09:35:46" datetime="2017-12-05T01:35:46.268Z"  itemprop="datePublished">2017-12-05</time>
+
+        
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/前端开发/">前端开发</a><ul class="article-category-list-child"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/前端开发/深入理解JavaScript/">深入理解JavaScript</a></li></ul></li></ul>
+
+
+
+    </div>
+
+    
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/2017/12/05/深入理解JavaScript - JS中集合对象(Array、Map、Set)及类数组对象的使用与对比/">深入理解JavaScript - JS中集合对象(Array、Map、Set)及类数组对象的使用与对比</a>
+    </h3>
+  
+
+
+
+
+    <div class="post-content" id="post-content" itemprop="postContent">
+
+    
+        
+在使用js编程的时候，常常会用到集合对象，集合对象其实是一种泛型，在js中没有明确的规定其内元素的类型，但在强类型语言譬如Java中泛型强制要求指定类型。
+ES6引入了iterable类型，Array，Map，Set都属于iterable类型，它们可以使用for…of循环来遍历，都内置forEach方法。
+
+数组遍历普通遍历最简单的一种，也是使用频率最高的一种。
+1234let arr =...
+    
+
+        <a href="/2017/12/05/深入理解JavaScript - JS中集合对象(Array、Map、Set)及类数组对象的使用与对比/" class="post-more waves-effect waves-button">
+            阅读全文…
+        </a>
+    </div>
+    
+    <div class="post-footer">
+        
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ECMAScript/">ECMAScript</a></li></ul>
+
+    </div>
+    
+</article>
+
+                </li>
+            
+                <li class="post-list-item fade">
+                    <article id="post-我的开发之路系列 - python3学习指南"
+  class="article-card article-type-post" itemprop="blogPost">
+
+    <div class="post-meta">
+        <time class="post-time" title="2017-12-05 09:35:46" datetime="2017-12-05T01:35:46.268Z"  itemprop="datePublished">2017-12-05</time>
+
+        
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/Python/">Python</a></li></ul>
+
+
+
+    </div>
+
+    
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/2017/12/05/我的开发之路系列 - python3学习指南/">python3学习指南</a>
+    </h3>
+  
+
+
+
+
+    <div class="post-content" id="post-content" itemprop="postContent">
+
+    
+        
+本文已制作成完整电子书发布，这里只是简单介绍python3的常用操作，更多详情请查看《我的开发之路系列 - python3学习指南》
+
+  
+
+
+
+python简介 Python是一门动态语言。变量本身类型不固定的语言称之为动态语言，与之对应的是静态语言。静态语言在定义变量时必须指定变量类型，如果赋值的时候类型不匹配，就会报错。
+Python的3.0版本，常被称为Python 3000，或...
+    
+
+        <a href="/2017/12/05/我的开发之路系列 - python3学习指南/" class="post-more waves-effect waves-button">
+            阅读全文…
+        </a>
+    </div>
+    
+    <div class="post-footer">
+        
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Python/">Python</a></li></ul>
 
     </div>
     
@@ -867,7 +673,7 @@ Ansi Escape Codes的使用字体颜色8色基本上所有的控制台都支持�
     
 <nav id="page-nav">
     <div class="inner">
-    <a class="extend prev" rel="prev" href="/page/3/">上一页</a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><span class="page-number current">4</span><a class="page-number" href="/page/5/">5</a><a class="extend next" rel="next" href="/page/5/">下一页</a>
+    <a class="extend prev" rel="prev" href="/page/3/">上一页</a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><span class="page-number current">4</span>
     </div>
 </nav>
 
@@ -895,11 +701,11 @@ Ansi Escape Codes的使用字体颜色8色基本上所有的控制台都支持�
 
         <p>
             
-            <!-- <span>本部落格係採用<a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.zh_TW">創用 CC 姓名標示 4.0 國際 授權條款授權</a></span> -->
+            <!-- <span>博客内容遵循 <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">知识共享 署名 - 非商业性 - 相同方式共享 4.0 国际协议</a></span> -->
         </p>
     </div>
     <div class="bottom">
-        <p><span>Quanzaiyu &copy; 2015 - 2017</span>
+        <p><span>Quanzaiyu &copy; 2015 - 2018</span>
             <span>
                 
                 <a href="http://www.miitbeian.gov.cn/" target="_blank">滇ICP备16006294号</a><br>

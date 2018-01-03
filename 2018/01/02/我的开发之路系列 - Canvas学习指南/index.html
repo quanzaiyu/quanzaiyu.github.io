@@ -18,34 +18,46 @@
     
     
     
-    <title>Canvas学习笔记01 - 基础 | 小昱博客 | 勤学如春起之苗，不见其增，日有所长；辍学如磨刀之石，不见其损，日有所亏</title>
+    <title>Canvas学习指南 | 小昱博客 | 勤学如春起之苗，不见其增，日有所长；辍学如磨刀之石，不见其损，日有所亏</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
     <meta name="theme-color" content="#3F51B5">
     
     
     <meta name="keywords" content="Canvas">
-    <meta name="description" content="Canvas简介&amp;lt;canvas&amp;gt; 是 HTML5 新增的，一个可以使用脚本(通常为JavaScript)在其中绘制图像的 HTML 元素。它可以用来制作照片集或者制作简单(也不是那么简单)的动画，甚至可以进行实时视频处理和渲染。 创建Canvas&amp;lt;canvas&amp;gt;会创建一个固定大小的画布，会公开一个或多个 渲染上下文(画笔)，使用 渲染上下文来绘制和处理要展示的内容。 1&amp;l">
+    <meta name="description" content="本文已制作成完整电子书发布，这里只是简单介绍Canvas的常用操作，更多详情请查看《我的开发之路系列 - Canvas学习指南》         Canvas简介&amp;lt;canvas&amp;gt; 是 HTML5 新增的，一个可以使用脚本(通常为JavaScript)在其中绘制图像的 HTML 元素。它可以用来制作照片集或者制作简单(也不是那么简单)的动画，甚至可以进行实时视频处理和渲染。 创建Can">
 <meta name="keywords" content="Canvas">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Canvas学习笔记01 - 基础">
-<meta property="og:url" content="http://blog.xiaoyulive.top/2017/12/13/Canvas学习笔记01 - 基础/index.html">
+<meta property="og:title" content="Canvas学习指南">
+<meta property="og:url" content="http://blog.xiaoyulive.top/2018/01/02/我的开发之路系列 - Canvas学习指南/index.html">
 <meta property="og:site_name" content="小昱博客">
-<meta property="og:description" content="Canvas简介&amp;lt;canvas&amp;gt; 是 HTML5 新增的，一个可以使用脚本(通常为JavaScript)在其中绘制图像的 HTML 元素。它可以用来制作照片集或者制作简单(也不是那么简单)的动画，甚至可以进行实时视频处理和渲染。 创建Canvas&amp;lt;canvas&amp;gt;会创建一个固定大小的画布，会公开一个或多个 渲染上下文(画笔)，使用 渲染上下文来绘制和处理要展示的内容。 1&amp;l">
+<meta property="og:description" content="本文已制作成完整电子书发布，这里只是简单介绍Canvas的常用操作，更多详情请查看《我的开发之路系列 - Canvas学习指南》         Canvas简介&amp;lt;canvas&amp;gt; 是 HTML5 新增的，一个可以使用脚本(通常为JavaScript)在其中绘制图像的 HTML 元素。它可以用来制作照片集或者制作简单(也不是那么简单)的动画，甚至可以进行实时视频处理和渲染。 创建Can">
+<meta property="og:image" content="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/canvas/canvas.jpg?x-oss-process=style/thumb">
 <meta property="og:image" content="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/Canvas_default_grid.png">
+<meta property="og:image" content="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/0021.jpg">
+<meta property="og:image" content="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/0022.jpg">
+<meta property="og:image" content="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/0023.jpg">
+<meta property="og:image" content="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/0024.jpg">
+<meta property="og:image" content="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/0025.jpg">
+<meta property="og:image" content="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/0026.jpg">
+<meta property="og:image" content="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/0027.png">
+<meta property="og:image" content="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/0028.png">
 <meta property="og:image" content="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/0012.png">
 <meta property="og:image" content="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/0013.png">
 <meta property="og:image" content="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/0015.png">
 <meta property="og:image" content="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/0014.png">
 <meta property="og:image" content="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/0016.png">
+<meta property="og:image" content="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/0029.png">
+<meta property="og:image" content="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/0030.png">
+<meta property="og:image" content="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/0031.png">
 <meta property="og:image" content="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/0017.png">
 <meta property="og:image" content="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/0018.jpg">
 <meta property="og:image" content="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/0020.png">
-<meta property="og:updated_time" content="2017-12-15T02:05:56.097Z">
+<meta property="og:updated_time" content="2018-01-02T01:11:22.949Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Canvas学习笔记01 - 基础">
-<meta name="twitter:description" content="Canvas简介&amp;lt;canvas&amp;gt; 是 HTML5 新增的，一个可以使用脚本(通常为JavaScript)在其中绘制图像的 HTML 元素。它可以用来制作照片集或者制作简单(也不是那么简单)的动画，甚至可以进行实时视频处理和渲染。 创建Canvas&amp;lt;canvas&amp;gt;会创建一个固定大小的画布，会公开一个或多个 渲染上下文(画笔)，使用 渲染上下文来绘制和处理要展示的内容。 1&amp;l">
-<meta name="twitter:image" content="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/Canvas_default_grid.png">
+<meta name="twitter:title" content="Canvas学习指南">
+<meta name="twitter:description" content="本文已制作成完整电子书发布，这里只是简单介绍Canvas的常用操作，更多详情请查看《我的开发之路系列 - Canvas学习指南》         Canvas简介&amp;lt;canvas&amp;gt; 是 HTML5 新增的，一个可以使用脚本(通常为JavaScript)在其中绘制图像的 HTML 元素。它可以用来制作照片集或者制作简单(也不是那么简单)的动画，甚至可以进行实时视频处理和渲染。 创建Can">
+<meta name="twitter:image" content="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/canvas/canvas.jpg?x-oss-process=style/thumb">
     
     <link rel="shortcut icon" href="/favicon.ico">
     <link rel="stylesheet" href="/css/style.css?v=1.6.17">
@@ -155,13 +167,13 @@
         <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
           <i class="icon icon-lg icon-navicon"></i>
         </a>
-        <div class="flex-col header-title ellipsis">Canvas学习笔记01 - 基础</div>
+        <div class="flex-col header-title ellipsis">Canvas学习指南</div>
         
         <div class="search-wrap" id="search-wrap">
             <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
                 <i class="icon icon-lg icon-chevron-left"></i>
             </a>
-            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="搜尋">
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="输入感兴趣的关键字">
             <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
                 <i class="icon icon-lg icon-search"></i>
             </a>
@@ -177,15 +189,15 @@
 <header class="content-header post-header">
 
     <div class="container fade-scale">
-        <h1 class="title">Canvas学习笔记01 - 基础</h1>
+        <h1 class="title">Canvas学习指南</h1>
         <h5 class="subtitle">
             
-                <time datetime="2017-12-13T06:33:29.829Z" itemprop="datePublished" class="page-time">
-  2017-12-13
+                <time datetime="2018-01-02T01:11:22.949Z" itemprop="datePublished" class="page-time">
+  2018-01-02
 </time>
 
 
-	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/前端开发/">前端开发</a><ul class="article-category-list-child"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/前端开发/Canvas学习笔记/">Canvas学习笔记</a></li></ul></li></ul>
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/前端开发/">前端开发</a></li></ul>
 
             
         </h5>
@@ -203,20 +215,20 @@
     <aside class="post-widget">
         <nav class="post-toc-wrap" id="post-toc">
             <h4>TOC</h4>
-            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#Canvas简介"><span class="post-toc-number">1.</span> <span class="post-toc-text">Canvas简介</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#创建Canvas"><span class="post-toc-number">2.</span> <span class="post-toc-text">创建Canvas</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#栅格和坐标空间"><span class="post-toc-number">3.</span> <span class="post-toc-text">栅格和坐标空间</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#绘制形状"><span class="post-toc-number">4.</span> <span class="post-toc-text">绘制形状</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#矩形"><span class="post-toc-number">4.1.</span> <span class="post-toc-text">矩形</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#绘制路径"><span class="post-toc-number">5.</span> <span class="post-toc-text">绘制路径</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#添加颜色和样式"><span class="post-toc-number">6.</span> <span class="post-toc-text">添加颜色和样式</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#颜色"><span class="post-toc-number">6.1.</span> <span class="post-toc-text">颜色</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#样式"><span class="post-toc-number">6.2.</span> <span class="post-toc-text">样式</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#绘制文字"><span class="post-toc-number">7.</span> <span class="post-toc-text">绘制文字</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#文本样式"><span class="post-toc-number">7.1.</span> <span class="post-toc-text">文本样式</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#绘制图片"><span class="post-toc-number">8.</span> <span class="post-toc-text">绘制图片</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#状态保存与恢复"><span class="post-toc-number">9.</span> <span class="post-toc-text">状态保存与恢复</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#参考资料"><span class="post-toc-number">10.</span> <span class="post-toc-text">参考资料</span></a></li></ol>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#Canvas简介"><span class="post-toc-number">1.</span> <span class="post-toc-text">Canvas简介</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#创建Canvas"><span class="post-toc-number">2.</span> <span class="post-toc-text">创建Canvas</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#栅格和坐标空间"><span class="post-toc-number">3.</span> <span class="post-toc-text">栅格和坐标空间</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#绘制形状"><span class="post-toc-number">4.</span> <span class="post-toc-text">绘制形状</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#矩形"><span class="post-toc-number">4.1.</span> <span class="post-toc-text">矩形</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#绘制路径"><span class="post-toc-number">5.</span> <span class="post-toc-text">绘制路径</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#绘制圆弧"><span class="post-toc-number">6.</span> <span class="post-toc-text">绘制圆弧</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#arc"><span class="post-toc-number">6.1.</span> <span class="post-toc-text">arc</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#arcTo"><span class="post-toc-number">6.2.</span> <span class="post-toc-text">arcTo</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#贝塞尔曲线"><span class="post-toc-number">7.</span> <span class="post-toc-text">贝塞尔曲线</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#原理动画"><span class="post-toc-number">7.1.</span> <span class="post-toc-text">原理动画</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#绘制贝塞尔曲线"><span class="post-toc-number">7.2.</span> <span class="post-toc-text">绘制贝塞尔曲线</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#绘制二次贝塞尔曲线"><span class="post-toc-number">7.2.1.</span> <span class="post-toc-text">绘制二次贝塞尔曲线</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#绘制三次贝塞尔曲线"><span class="post-toc-number">7.2.2.</span> <span class="post-toc-text">绘制三次贝塞尔曲线</span></a></li></ol></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#添加颜色和样式"><span class="post-toc-number">8.</span> <span class="post-toc-text">添加颜色和样式</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#颜色"><span class="post-toc-number">8.1.</span> <span class="post-toc-text">颜色</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#样式"><span class="post-toc-number">8.2.</span> <span class="post-toc-text">样式</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#绘制文字"><span class="post-toc-number">9.</span> <span class="post-toc-text">绘制文字</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#文本样式"><span class="post-toc-number">9.1.</span> <span class="post-toc-text">文本样式</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#渐变"><span class="post-toc-number">10.</span> <span class="post-toc-text">渐变</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#线性渐变"><span class="post-toc-number">10.1.</span> <span class="post-toc-text">线性渐变</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#径向渐变"><span class="post-toc-number">10.2.</span> <span class="post-toc-text">径向渐变</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#绘制图片"><span class="post-toc-number">11.</span> <span class="post-toc-text">绘制图片</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#状态保存与恢复"><span class="post-toc-number">12.</span> <span class="post-toc-text">状态保存与恢复</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#参考资料"><span class="post-toc-number">13.</span> <span class="post-toc-text">参考资料</span></a></li></ol>
         </nav>
     </aside>
     
-<article id="post-Canvas学习笔记01 - 基础"
+<article id="post-我的开发之路系列 - Canvas学习指南"
   class="post-article article-type-post fade" itemprop="blogPost">
 
     <div class="post-card">
-        <h1 class="post-card-title">Canvas学习笔记01 - 基础</h1>
+        <h1 class="post-card-title">Canvas学习指南</h1>
         <div class="post-meta">
-            <time class="post-time" title="2017-12-13 14:33:29" datetime="2017-12-13T06:33:29.829Z"  itemprop="datePublished">2017-12-13</time>
+            <time class="post-time" title="2018-01-02 09:11:22" datetime="2018-01-02T01:11:22.949Z"  itemprop="datePublished">2018-01-02</time>
 
             
-	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/前端开发/">前端开发</a><ul class="article-category-list-child"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/前端开发/Canvas学习笔记/">Canvas学习笔记</a></li></ul></li></ul>
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/前端开发/">前端开发</a></li></ul>
 
 
 
@@ -228,7 +240,15 @@
 
         </div>
         <div class="post-content" id="post-content" itemprop="postContent">
-            <h1 id="Canvas简介"><a href="#Canvas简介" class="headerlink" title="Canvas简介"></a>Canvas简介</h1><p><code>&lt;canvas&gt;</code> 是 <code>HTML5</code> 新增的，一个可以使用脚本(通常为<code>JavaScript</code>)在其中绘制图像的 <code>HTML</code> 元素。它可以用来制作照片集或者制作简单(也不是那么简单)的动画，甚至可以进行实时视频处理和渲染。</p>
+            <blockquote>
+<p>本文已制作成完整电子书发布，这里只是简单介绍Canvas的常用操作，更多详情请查看《<u><a href="http://book.canvas.xiaoyulive.top" target="_blank" rel="external">我的开发之路系列 - Canvas学习指南</a></u>》</p>
+</blockquote>
+<div style="text-align: center;"><br><a href="http://book.canvas.xiaoyulive.top" target="_blank" rel="external"><br>  <img src="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/canvas/canvas.jpg?x-oss-process=style/thumb"><br></a><br></div>
+
+
+
+
+<h1 id="Canvas简介"><a href="#Canvas简介" class="headerlink" title="Canvas简介"></a>Canvas简介</h1><p><code>&lt;canvas&gt;</code> 是 <code>HTML5</code> 新增的，一个可以使用脚本(通常为<code>JavaScript</code>)在其中绘制图像的 <code>HTML</code> 元素。它可以用来制作照片集或者制作简单(也不是那么简单)的动画，甚至可以进行实时视频处理和渲染。</p>
 <h1 id="创建Canvas"><a href="#创建Canvas" class="headerlink" title="创建Canvas"></a>创建Canvas</h1><p><code>&lt;canvas&gt;</code>会创建一个固定大小的画布，会公开一个或多个 <strong>渲染上下文</strong>(画笔)，使用 <strong>渲染上下文</strong>来绘制和处理要展示的内容。</p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">canvas</span> <span class="attr">id</span>=<span class="string">"canvas"</span> <span class="attr">width</span>=<span class="string">"200"</span> <span class="attr">height</span>=<span class="string">"200"</span>&gt;</span><span class="tag">&lt;/<span class="name">canvas</span>&gt;</span></div></pre></td></tr></table></figure>
 <p>其中<code>width</code>和<code>height</code>并不是指<code>canvas</code>的真正尺寸，而是指<code>canvas</code>的精度，即将整个画布平分为200*200个像素点，真正指定<code>canvas</code>尺寸大小可以由CSS指定</p>
@@ -277,6 +297,101 @@
 </ol>
 <p>如: 通过路径绘制一个矩形</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">ctx.beginPath();</div><div class="line">ctx.moveTo(<span class="number">50</span>, <span class="number">50</span>);</div><div class="line">ctx.lineTo(<span class="number">50</span>, <span class="number">100</span>);</div><div class="line">ctx.lineTo(<span class="number">100</span>, <span class="number">100</span>);</div><div class="line">ctx.lineTo(<span class="number">100</span>, <span class="number">50</span>);</div><div class="line">ctx.closePath();</div><div class="line">ctx.fill();</div></pre></td></tr></table></figure>
+<h1 id="绘制圆弧"><a href="#绘制圆弧" class="headerlink" title="绘制圆弧"></a>绘制圆弧</h1><h2 id="arc"><a href="#arc" class="headerlink" title="arc"></a>arc</h2><p><code>arc(x, y, r, startAngle, endAngle, anticlockwise)</code></p>
+<ul>
+<li>以<code>(x, y)</code>为圆心，以<code>r</code>为半径，从 <code>startAngle</code>弧度开始到<code>endAngle</code>弧度结束，注意: 单位为弧度。</li>
+<li><code>anticlosewise</code>是布尔值，<code>true</code>表示逆时针，<code>false</code>表示顺时针。(默认是顺时针)</li>
+<li>0弧度为在一个笛卡尔坐标系中的x轴正方向</li>
+<li>通常使用<code>Math.PI</code>进行弧度运算，一个<code>Math.PI</code>就是<code>180deg</code></li>
+<li><code>radians=(Math.PI/180)*degrees</code>   // 角度转换成弧度1</li>
+</ul>
+<p>如:</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">ctx.beginPath();</div><div class="line">ctx.arc(<span class="number">50</span>, <span class="number">50</span>, <span class="number">40</span>, <span class="number">0</span>, <span class="built_in">Math</span>.PI / <span class="number">2</span>, <span class="literal">false</span>);</div><div class="line">ctx.stroke();</div></pre></td></tr></table></figure>
+<p>可以看到从x轴正方向顺时针绘制出了半径为40的 1/4 圆弧。</p>
+<h2 id="arcTo"><a href="#arcTo" class="headerlink" title="arcTo"></a>arcTo</h2><p><code>arcTo(x1, y1, x2, y2, radius)</code></p>
+<p>根据给定的控制点和半径画一段圆弧，最后再以直线连接两个控制点。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">ctx.beginPath();</div><div class="line">ctx.moveTo(<span class="number">50</span>, <span class="number">50</span>);</div><div class="line"><span class="comment">//参数1、2：控制点1坐标   参数3、4：控制点2坐标  参数5：圆弧半径</span></div><div class="line">ctx.arcTo(<span class="number">200</span>, <span class="number">50</span>, <span class="number">200</span>, <span class="number">200</span>, <span class="number">50</span>);</div><div class="line">ctx.lineTo(<span class="number">200</span>, <span class="number">200</span>)</div><div class="line">ctx.stroke();</div></pre></td></tr></table></figure>
+<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/0021.jpg" alt="" title="">
+                </div>
+                <div class="image-caption"></div>
+            </figure>
+<p>可以理解为: 绘制的弧形是由两条切线所决定。</p>
+<p> 第 1 条切线：起始点和控制点1决定的直线。</p>
+<p> 第 2 条切线：控制点1 和控制点2决定的直线。</p>
+<p>圆弧半径可以回想一下css中<code>border-radius</code>的实现。</p>
+<h1 id="贝塞尔曲线"><a href="#贝塞尔曲线" class="headerlink" title="贝塞尔曲线"></a>贝塞尔曲线</h1><p>贝塞尔曲线(Bézier curve)，又称贝兹曲线或贝济埃曲线，是应用于二维图形应用程序的数学曲线。</p>
+<p> 一般的矢量图形软件通过它来精确画出曲线，贝兹曲线由线段与节点组成，节点是可拖动的支点，线段像可伸缩的皮筋，我们在绘图工具上看到的钢笔工具就是来做这种矢量曲线的。</p>
+<h2 id="原理动画"><a href="#原理动画" class="headerlink" title="原理动画"></a>原理动画</h2><p>一次贝塞尔曲线:</p>
+<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/0022.jpg" alt="" title="">
+                </div>
+                <div class="image-caption"></div>
+            </figure> 
+<p>二次贝塞尔曲线:</p>
+<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/0023.jpg" alt="" title="">
+                </div>
+                <div class="image-caption"></div>
+            </figure>
+<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/0024.jpg" alt="" title="">
+                </div>
+                <div class="image-caption"></div>
+            </figure>
+<p>三次贝塞尔曲线:</p>
+<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/0025.jpg" alt="" title="">
+                </div>
+                <div class="image-caption"></div>
+            </figure>
+<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/0026.jpg" alt="" title="">
+                </div>
+                <div class="image-caption"></div>
+            </figure>
+<h2 id="绘制贝塞尔曲线"><a href="#绘制贝塞尔曲线" class="headerlink" title="绘制贝塞尔曲线"></a>绘制贝塞尔曲线</h2><h3 id="绘制二次贝塞尔曲线"><a href="#绘制二次贝塞尔曲线" class="headerlink" title="绘制二次贝塞尔曲线"></a>绘制二次贝塞尔曲线</h3><p><code>quadraticCurveTo(cp1x, cp1y, x, y)</code></p>
+<p>参数说明：</p>
+<ul>
+<li>参数1和2：控制点坐标</li>
+<li>参数3和4：结束点坐标</li>
+</ul>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line">ctx.beginPath();</div><div class="line"><span class="keyword">var</span> bX = <span class="number">10</span>, bY = <span class="number">160</span>; <span class="comment">// 起始点</span></div><div class="line">ctx.moveTo(bX, bY);</div><div class="line"><span class="keyword">var</span> cX = <span class="number">40</span>, cY = <span class="number">100</span>;  <span class="comment">// 控制点</span></div><div class="line"><span class="keyword">var</span> toX = <span class="number">180</span>, toY = <span class="number">180</span>; <span class="comment">// 结束点</span></div><div class="line"><span class="comment">// 绘制二次贝塞尔曲线</span></div><div class="line">ctx.quadraticCurveTo(cX, cY, toX, toY);</div><div class="line">ctx.stroke();</div><div class="line"></div><div class="line">ctx.beginPath();</div><div class="line">ctx.rect(bX, bY, <span class="number">10</span>, <span class="number">10</span>);</div><div class="line">ctx.rect(cX, cY, <span class="number">10</span>, <span class="number">10</span>);</div><div class="line">ctx.rect(toX, toY, <span class="number">10</span>, <span class="number">10</span>);</div><div class="line">ctx.fill();</div></pre></td></tr></table></figure>
+<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/0027.png" alt="" title="">
+                </div>
+                <div class="image-caption"></div>
+            </figure>
+<p>为了方便理解，将起始点、控制点、结束点都用实心矩形标出。</p>
+<h3 id="绘制三次贝塞尔曲线"><a href="#绘制三次贝塞尔曲线" class="headerlink" title="绘制三次贝塞尔曲线"></a>绘制三次贝塞尔曲线</h3><p><code>bezierCurveTo(cp1x, cp1y, cp2x, cp2y, x, y)</code>：</p>
+<p>参数说明：</p>
+<ul>
+<li>参数1和2：控制点1的坐标</li>
+<li>参数3和4：控制点2的坐标</li>
+<li>参数5和6：结束点的坐标</li>
+</ul>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line">ctx.beginPath();</div><div class="line"><span class="keyword">var</span> bX = <span class="number">10</span>, bY = <span class="number">160</span>; <span class="comment">// 起始点</span></div><div class="line">ctx.moveTo(bX, bY);</div><div class="line"><span class="keyword">var</span> cX1 = <span class="number">20</span>, cY1 = <span class="number">50</span>;  <span class="comment">// 控制点1</span></div><div class="line"><span class="keyword">var</span> cX2 = <span class="number">60</span>, cY2 = <span class="number">150</span>;  <span class="comment">// 控制点2</span></div><div class="line"><span class="keyword">var</span> toX = <span class="number">180</span>, toY = <span class="number">180</span>; <span class="comment">// 结束点</span></div><div class="line"><span class="comment">// 绘制二次贝塞尔曲线</span></div><div class="line">ctx.bezierCurveTo(cX1, cY1, cX2, cY2, toX, toY);</div><div class="line">ctx.stroke();</div><div class="line"></div><div class="line">ctx.beginPath();</div><div class="line">ctx.rect(bX, bY, <span class="number">10</span>, <span class="number">10</span>);</div><div class="line">ctx.rect(cX1, cY1, <span class="number">10</span>, <span class="number">10</span>);</div><div class="line">ctx.rect(cX2, cY2, <span class="number">10</span>, <span class="number">10</span>);</div><div class="line">ctx.rect(toX, toY, <span class="number">10</span>, <span class="number">10</span>);</div><div class="line">ctx.fill();</div></pre></td></tr></table></figure>
+<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/0028.png" alt="" title="">
+                </div>
+                <div class="image-caption"></div>
+            </figure>
 <h1 id="添加颜色和样式"><a href="#添加颜色和样式" class="headerlink" title="添加颜色和样式"></a>添加颜色和样式</h1><h2 id="颜色"><a href="#颜色" class="headerlink" title="颜色"></a>颜色</h2><p>给绘制的图形上色，可以使用以下API:</p>
 <ol>
 <li><p><code>fillStyle = color</code> 设置图形的填充颜色</p>
@@ -366,6 +481,42 @@
 <li><code>textBaseline = value</code> 基线对齐选项，可选的值包括：<code>top</code>, <code>hanging</code>, <code>middle</code>, <code>alphabetic</code>, <code>ideographic</code>, <code>bottom</code>。默认值是 <code>alphabetic。</code></li>
 <li><code>direction = value</code> 文本方向。可能的值包括：<code>ltr</code>, <code>rtl</code>, <code>inherit</code>。默认值是 <code>inherit。</code></li>
 </ol>
+<h1 id="渐变"><a href="#渐变" class="headerlink" title="渐变"></a>渐变</h1><h2 id="线性渐变"><a href="#线性渐变" class="headerlink" title="线性渐变"></a>线性渐变</h2><p>使用<code>ctx.createLinearGradient(x1, y1, x2, y2)</code>可以创建一个线性渐变，线性渐变会从第一个点(x1, y1)扩展到第二个点(x2, y2)，即定义了渐变的线长与方向。</p>
+<p>如:</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> x1 = <span class="number">0</span>;</div><div class="line"><span class="keyword">var</span> y1 = <span class="number">0</span>;</div><div class="line"><span class="keyword">var</span> x2 = <span class="number">100</span>;</div><div class="line"><span class="keyword">var</span> y2 = <span class="number">0</span>;</div><div class="line"><span class="keyword">var</span> linearGradient1 = ctx.createLinearGradient(x1, y1, x2, y2);</div><div class="line">linearGradient1.addColorStop(<span class="number">0</span>, <span class="string">'rgb(255, 0, 0)'</span>);</div><div class="line">linearGradient1.addColorStop(<span class="number">0.5</span>, <span class="string">'rgb(0, 0, 255'</span>);</div><div class="line">linearGradient1.addColorStop(<span class="number">1</span>, <span class="string">'rgb(0, 0, 0)'</span>);</div><div class="line">ctx.fillStyle = linearGradient1</div><div class="line"></div><div class="line">ctx.fillRect(<span class="number">10</span>, <span class="number">10</span>, <span class="number">100</span>, <span class="number">50</span>);</div></pre></td></tr></table></figure>
+<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/0029.png" alt="" title="">
+                </div>
+                <div class="image-caption"></div>
+            </figure>
+<p>使用<code>addColorStop</code>可以添加一个颜色节点</p>
+<ul>
+<li>第一个参数是0-1之间的一个数值，这个数值指定该颜色进入渐变多长的距离</li>
+<li>第二个参数是颜色值</li>
+</ul>
+<h2 id="径向渐变"><a href="#径向渐变" class="headerlink" title="径向渐变"></a>径向渐变</h2><p>径向渐变是一种圆形的颜色扩展模式，颜色从圆心位置开始向外辐射。</p>
+<p>一个径向渐变于两个圆形来定义。每一个圆都有一个圆心和一条半径。</p>
+<p>使用<code>ctx.createRadialGradient(x1, y1, r1, x2, y2, r2)</code>可以创建一个径向渐变，(x1, y1, r1)和(x2, y2, r2)分别为两个圆的圆心坐标和半径。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> x1 = <span class="number">100</span>;   <span class="comment">// 第一个圆圆心的X坐标</span></div><div class="line"><span class="keyword">var</span> y1 = <span class="number">100</span>;   <span class="comment">// 第一个圆圆心的Y坐标</span></div><div class="line"><span class="keyword">var</span> r1 = <span class="number">30</span>;    <span class="comment">// 第一个圆的半径</span></div><div class="line"><span class="keyword">var</span> x2 = <span class="number">100</span>;   <span class="comment">// 第二个圆圆心的X坐标</span></div><div class="line"><span class="keyword">var</span> y2 = <span class="number">100</span>;   <span class="comment">// 第二个圆圆心的Y坐标</span></div><div class="line"><span class="keyword">var</span> r2 = <span class="number">100</span>;   <span class="comment">// 第二个圆的半径</span></div><div class="line"><span class="keyword">var</span> radialGradient1 = ctx.createRadialGradient(x1, y1, r1, x2, y2, r2);</div><div class="line">radialGradient1.addColorStop(<span class="number">0</span>, <span class="string">'rgb(0, 0, 255)'</span>);</div><div class="line">radialGradient1.addColorStop(<span class="number">1</span>, <span class="string">'rgb(0, 255, 0)'</span>);</div><div class="line">ctx.fillStyle = radialGradient1</div><div class="line"></div><div class="line">ctx.fillRect(<span class="number">10</span>, <span class="number">10</span>, <span class="number">200</span>, <span class="number">200</span>);</div></pre></td></tr></table></figure>
+<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/0030.png" alt="" title="">
+                </div>
+                <div class="image-caption"></div>
+            </figure>
+<p><code>addColorStop</code>的用法同线性渐变。</p>
+<p>如果两个圆形的圆心位置相同，那么径向渐变将是一个完整的圆形。如果两个圆的圆心位置不相同，那么径向渐变看起来就像是一个探照灯发出的光线。如:</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> x1 = <span class="number">100</span>;   <span class="comment">// 第一个圆圆心的X坐标</span></div><div class="line"><span class="keyword">var</span> y1 = <span class="number">100</span>;   <span class="comment">// 第一个圆圆心的Y坐标</span></div><div class="line"><span class="keyword">var</span> r1 = <span class="number">30</span>;    <span class="comment">// 第一个圆的半径</span></div><div class="line"><span class="keyword">var</span> x2 = <span class="number">150</span>;   <span class="comment">// 第二个圆圆心的X坐标</span></div><div class="line"><span class="keyword">var</span> y2 = <span class="number">120</span>;   <span class="comment">// 第二个圆圆心的Y坐标</span></div><div class="line"><span class="keyword">var</span> r2 = <span class="number">100</span>;   <span class="comment">// 第二个圆的半径</span></div><div class="line"><span class="keyword">var</span> radialGradient1 = ctx.createRadialGradient(x1, y1, r1, x2, y2, r2);</div><div class="line">radialGradient1.addColorStop(<span class="number">0</span>, <span class="string">'rgb(0, 0, 255)'</span>);</div><div class="line">radialGradient1.addColorStop(<span class="number">1</span>, <span class="string">'rgb(0, 255, 0)'</span>);</div><div class="line">ctx.fillStyle = radialGradient1</div><div class="line"></div><div class="line">ctx.fillRect(<span class="number">10</span>, <span class="number">10</span>, <span class="number">200</span>, <span class="number">200</span>);</div></pre></td></tr></table></figure>
+<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/0031.png" alt="" title="">
+                </div>
+                <div class="image-caption"></div>
+            </figure>
 <h1 id="绘制图片"><a href="#绘制图片" class="headerlink" title="绘制图片"></a>绘制图片</h1><p>使用<code>drawImage</code>绘制图像</p>
 <p>有以下三种使用方法:</p>
 <ol>
@@ -417,9 +568,11 @@
 </li>
 </ol>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">ctx.fillStyle = <span class="string">'#f00'</span></div><div class="line">ctx.fillRect(<span class="number">10</span>,<span class="number">10</span>,<span class="number">150</span>,<span class="number">150</span>)</div><div class="line">ctx.save()</div><div class="line"></div><div class="line">ctx.fillStyle = <span class="string">'#0f0'</span></div><div class="line">ctx.fillRect(<span class="number">20</span>,<span class="number">20</span>,<span class="number">100</span>,<span class="number">100</span>)</div><div class="line"></div><div class="line">ctx.restore() # 恢复 ctx.fillStyle = '#f00' 的状态</div><div class="line">ctx.fillRect(<span class="number">30</span>,<span class="number">30</span>,<span class="number">50</span>,<span class="number">50</span>)</div></pre></td></tr></table></figure>
-<h1 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h1><p> <a href="http://blog.csdn.net/u012468376/article/details/73350998" target="_blank" rel="external">学习HTML5 Canvas这一篇文章就够了</a> </p>
-<p><a href="http://www.jianshu.com/p/14164d222f0b" target="_blank" rel="external">HTML5 Canvas 学习</a> </p>
-<p><a href="http://blog.csdn.net/pyx6119822/article/details/52384637" target="_blank" rel="external">HTML5之Canvas 2D入门2 - Canvas绘制图形</a> </p>
+<h1 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h1><p><a href="https://developer.mozilla.org/zh-CN/docs/Web/API/CanvasRenderingContext2D" target="_blank" rel="external">MDN: CanvasRenderingContext2D</a></p>
+<p><a href="http://blog.csdn.net/u012468376/article/details/73350998" target="_blank" rel="external">CSDN: 学习HTML5 Canvas这一篇文章就够了</a></p>
+<p><a href="http://blog.csdn.net/pyx6119822/article/details/52384637" target="_blank" rel="external">CSDN: HTML5之Canvas 2D入门2 - Canvas绘制图形</a></p>
+<p><a href="http://www.jianshu.com/p/14164d222f0b" target="_blank" rel="external">简书: HTML5 Canvas 学习</a></p>
+<p><a href="https://www.w3cplus.com/blog/tags/616.html" target="_blank" rel="external">w3cplus: Canvas学习</a> </p>
 
         </div>
 
@@ -427,12 +580,12 @@
     <div class="content">
         
 <span class="post-time">
-    最後更新時間：<time datetime="2017-12-15T02:05:56.097Z" itemprop="dateUpdated">2017-12-15 10:05:56</time>
+    最后更新时间：<time datetime="2018-01-02T01:11:22.949Z" itemprop="dateUpdated">2018-01-02 09:11:22</time>
 </span><br>
 
 
         
-        这里可以写作者留言，标签和 hexo 中所有变量及辅助函数等均可调用，示例：<a href="/2017/12/13/Canvas学习笔记01 - 基础/" target="_blank" rel="external">http://blog.xiaoyulive.top/2017/12/13/Canvas学习笔记01 - 基础/</a>
+        这里可以写作者留言，标签和 hexo 中所有变量及辅助函数等均可调用，示例：<a href="/2018/01/02/我的开发之路系列 - Canvas学习指南/" target="_blank" rel="external">http://blog.xiaoyulive.top/2018/01/02/我的开发之路系列 - Canvas学习指南/</a>
         
     </div>
     <footer>
@@ -462,7 +615,7 @@
 <div class="page-share" id="pageShare">
     <ul class="reset share-icons">
       <li>
-        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://blog.xiaoyulive.top/2017/12/13/Canvas学习笔记01 - 基础/&title=《Canvas学习笔记01 - 基础》 — 小昱博客&pic=http://blog.xiaoyulive.top/img/avatar.jpg" data-title="微博">
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://blog.xiaoyulive.top/2018/01/02/我的开发之路系列 - Canvas学习指南/&title=《Canvas学习指南》 — 小昱博客&pic=http://blog.xiaoyulive.top/img/avatar.jpg" data-title="微博">
           <i class="icon icon-weibo"></i>
         </a>
       </li>
@@ -472,22 +625,22 @@
         </a>
       </li>
       <li>
-        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://blog.xiaoyulive.top/2017/12/13/Canvas学习笔记01 - 基础/&title=《Canvas学习笔记01 - 基础》 — 小昱博客&source=" data-title=" QQ">
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://blog.xiaoyulive.top/2018/01/02/我的开发之路系列 - Canvas学习指南/&title=《Canvas学习指南》 — 小昱博客&source=" data-title=" QQ">
           <i class="icon icon-qq"></i>
         </a>
       </li>
       <li>
-        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://blog.xiaoyulive.top/2017/12/13/Canvas学习笔记01 - 基础/" data-title=" Facebook">
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://blog.xiaoyulive.top/2018/01/02/我的开发之路系列 - Canvas学习指南/" data-title=" Facebook">
           <i class="icon icon-facebook"></i>
         </a>
       </li>
       <li>
-        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《Canvas学习笔记01 - 基础》 — 小昱博客&url=http://blog.xiaoyulive.top/2017/12/13/Canvas学习笔记01 - 基础/&via=http://blog.xiaoyulive.top" data-title=" Twitter">
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《Canvas学习指南》 — 小昱博客&url=http://blog.xiaoyulive.top/2018/01/02/我的开发之路系列 - Canvas学习指南/&via=http://blog.xiaoyulive.top" data-title=" Twitter">
           <i class="icon icon-twitter"></i>
         </a>
       </li>
       <li>
-        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://blog.xiaoyulive.top/2017/12/13/Canvas学习笔记01 - 基础/" data-title=" Google+">
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://blog.xiaoyulive.top/2018/01/02/我的开发之路系列 - Canvas学习指南/" data-title=" Google+">
           <i class="icon icon-google-plus"></i>
         </a>
       </li>
@@ -507,21 +660,14 @@
     </div>
 
     
-<nav class="post-nav flex-row flex-justify-between">
-  
-    <div class="waves-block waves-effect prev">
-      <a href="/2017/12/13/Canvas学习笔记04 - 图像视频处理/" id="post-prev" class="post-nav-link">
-        <div class="tips"><i class="icon icon-angle-left icon-lg icon-pr"></i> Prev</div>
-        <h4 class="title">Canvas学习笔记04 - 图像视频处理</h4>
-      </a>
-    </div>
+<nav class="post-nav flex-row flex-justify-between flex-row-reverse">
   
 
   
     <div class="waves-block waves-effect next">
-      <a href="/2017/12/13/意想不到的CSS - 细说css的各种单位/" id="post-next" class="post-nav-link">
+      <a href="/2017/12/25/提升效率的必备SublimeText插件/" id="post-next" class="post-nav-link">
         <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
-        <h4 class="title">意想不到的CSS - 细说css的各种单位</h4>
+        <h4 class="title">提升效率的必备SublimeText插件</h4>
       </a>
     </div>
   
@@ -626,11 +772,11 @@
 
         <p>
             
-            <!-- <span>本部落格係採用<a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.zh_TW">創用 CC 姓名標示 4.0 國際 授權條款授權</a></span> -->
+            <!-- <span>博客内容遵循 <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">知识共享 署名 - 非商业性 - 相同方式共享 4.0 国际协议</a></span> -->
         </p>
     </div>
     <div class="bottom">
-        <p><span>Quanzaiyu &copy; 2015 - 2017</span>
+        <p><span>Quanzaiyu &copy; 2015 - 2018</span>
             <span>
                 
                 <a href="http://www.miitbeian.gov.cn/" target="_blank">滇ICP备16006294号</a><br>
@@ -650,7 +796,7 @@
 <div class="global-share" id="globalShare">
     <ul class="reset share-icons">
       <li>
-        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://blog.xiaoyulive.top/2017/12/13/Canvas学习笔记01 - 基础/&title=《Canvas学习笔记01 - 基础》 — 小昱博客&pic=http://blog.xiaoyulive.top/img/avatar.jpg" data-title="微博">
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://blog.xiaoyulive.top/2018/01/02/我的开发之路系列 - Canvas学习指南/&title=《Canvas学习指南》 — 小昱博客&pic=http://blog.xiaoyulive.top/img/avatar.jpg" data-title="微博">
           <i class="icon icon-weibo"></i>
         </a>
       </li>
@@ -660,22 +806,22 @@
         </a>
       </li>
       <li>
-        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://blog.xiaoyulive.top/2017/12/13/Canvas学习笔记01 - 基础/&title=《Canvas学习笔记01 - 基础》 — 小昱博客&source=" data-title=" QQ">
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://blog.xiaoyulive.top/2018/01/02/我的开发之路系列 - Canvas学习指南/&title=《Canvas学习指南》 — 小昱博客&source=" data-title=" QQ">
           <i class="icon icon-qq"></i>
         </a>
       </li>
       <li>
-        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://blog.xiaoyulive.top/2017/12/13/Canvas学习笔记01 - 基础/" data-title=" Facebook">
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://blog.xiaoyulive.top/2018/01/02/我的开发之路系列 - Canvas学习指南/" data-title=" Facebook">
           <i class="icon icon-facebook"></i>
         </a>
       </li>
       <li>
-        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《Canvas学习笔记01 - 基础》 — 小昱博客&url=http://blog.xiaoyulive.top/2017/12/13/Canvas学习笔记01 - 基础/&via=http://blog.xiaoyulive.top" data-title=" Twitter">
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《Canvas学习指南》 — 小昱博客&url=http://blog.xiaoyulive.top/2018/01/02/我的开发之路系列 - Canvas学习指南/&via=http://blog.xiaoyulive.top" data-title=" Twitter">
           <i class="icon icon-twitter"></i>
         </a>
       </li>
       <li>
-        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://blog.xiaoyulive.top/2017/12/13/Canvas学习笔记01 - 基础/" data-title=" Google+">
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://blog.xiaoyulive.top/2018/01/02/我的开发之路系列 - Canvas学习指南/" data-title=" Google+">
           <i class="icon icon-google-plus"></i>
         </a>
       </li>
@@ -686,7 +832,7 @@
 <div class="page-modal wx-share" id="wxShare">
     <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
-    <img src="//api.qrserver.com/v1/create-qr-code/?data=http://blog.xiaoyulive.top/2017/12/13/Canvas学习笔记01 - 基础/" alt="微信分享二维码">
+    <img src="//api.qrserver.com/v1/create-qr-code/?data=http://blog.xiaoyulive.top/2018/01/02/我的开发之路系列 - Canvas学习指南/" alt="微信分享二维码">
 </div>
 
 
