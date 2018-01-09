@@ -513,172 +513,14 @@ vw
                 </li>
             
                 <li class="post-list-item fade">
-                    <article id="post-Pug学习笔记04 - 文件包含与继承"
-  class="article-card article-type-post" itemprop="blogPost">
-
-    <div class="post-meta">
-        <time class="post-time" title="2017-12-11 09:14:05" datetime="2017-12-11T01:14:05.048Z"  itemprop="datePublished">2017-12-11</time>
-
-        
-	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/模板引擎/">模板引擎</a><ul class="article-category-list-child"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/模板引擎/Pug学习笔记/">Pug学习笔记</a></li></ul></li></ul>
-
-
-
-    </div>
-
-    
-
-
-  
-    <h3 class="post-title" itemprop="name">
-      <a class="post-title-link" href="/2017/12/11/Pug学习笔记04 - 文件包含与继承/">Pug学习笔记04 - 文件包含与继承</a>
-    </h3>
-  
-
-
-
-
-    <div class="post-content" id="post-content" itemprop="postContent">
-
-    
-        文件包含(include)包含（include）功能允许把另外的文件内容插入进来
-简单使用index.pug
-1234567doctype htmlhtml  include includes/head  body    h1 我的网站    p 欢迎来到我这简陋得不能再简陋的网站。    include includes/foot
-includes/head.pug
-12head  tit...
-    
-
-        <a href="/2017/12/11/Pug学习笔记04 - 文件包含与继承/" class="post-more waves-effect waves-button">
-            阅读全文…
-        </a>
-    </div>
-    
-    <div class="post-footer">
-        
-	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Pug/">Pug</a></li></ul>
-
-    </div>
-    
-</article>
-
-                </li>
-            
-                <li class="post-list-item fade">
-                    <article id="post-Pug学习笔记03 - 混合"
-  class="article-card article-type-post" itemprop="blogPost">
-
-    <div class="post-meta">
-        <time class="post-time" title="2017-12-11 09:12:13" datetime="2017-12-11T01:12:13.721Z"  itemprop="datePublished">2017-12-11</time>
-
-        
-	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/模板引擎/">模板引擎</a><ul class="article-category-list-child"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/模板引擎/Pug学习笔记/">Pug学习笔记</a></li></ul></li></ul>
-
-
-
-    </div>
-
-    
-
-
-  
-    <h3 class="post-title" itemprop="name">
-      <a class="post-title-link" href="/2017/12/11/Pug学习笔记03 - 混合/">Pug学习笔记03 - 混合(mixins)</a>
-    </h3>
-  
-
-
-
-
-    <div class="post-content" id="post-content" itemprop="postContent">
-
-    
-        重复的代码块pug
-1234mixin sayHi  p hello everyone+sayHi+sayHi
-html
-12&lt;p&gt;hello everyone&lt;/p&gt;&lt;p&gt;hello everyone&lt;/p&gt;
-传入参数pug
-12345mixin person(name, age)  li.name= &apos;我的名字叫&apos; + ...
-    
-
-        <a href="/2017/12/11/Pug学习笔记03 - 混合/" class="post-more waves-effect waves-button">
-            阅读全文…
-        </a>
-    </div>
-    
-    <div class="post-footer">
-        
-	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Pug/">Pug</a></li></ul>
-
-    </div>
-    
-</article>
-
-                </li>
-            
-                <li class="post-list-item fade">
-                    <article id="post-Pug学习笔记02 - 控制流程"
-  class="article-card article-type-post" itemprop="blogPost">
-
-    <div class="post-meta">
-        <time class="post-time" title="2017-12-11 09:09:53" datetime="2017-12-11T01:09:53.327Z"  itemprop="datePublished">2017-12-11</time>
-
-        
-	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/模板引擎/">模板引擎</a><ul class="article-category-list-child"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/模板引擎/Pug学习笔记/">Pug学习笔记</a></li></ul></li></ul>
-
-
-
-    </div>
-
-    
-
-
-  
-    <h3 class="post-title" itemprop="name">
-      <a class="post-title-link" href="/2017/12/11/Pug学习笔记02 - 控制流程/">Pug学习笔记02 - 控制流程</a>
-    </h3>
-  
-
-
-
-
-    <div class="post-content" id="post-content" itemprop="postContent">
-
-    
-        分支if-elsepug
-1234567-var a = 5if a == 1  p 1else if a == 2  p 2else  p false
-html
-1&lt;p&gt;false&lt;/p&gt;
-unlessunless语句当表达式为false的时候执行
-pug
-123-var istrue=falseunless istrue  p hello
-html
-1&lt;p&...
-    
-
-        <a href="/2017/12/11/Pug学习笔记02 - 控制流程/" class="post-more waves-effect waves-button">
-            阅读全文…
-        </a>
-    </div>
-    
-    <div class="post-footer">
-        
-	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Pug/">Pug</a></li></ul>
-
-    </div>
-    
-</article>
-
-                </li>
-            
-                <li class="post-list-item fade">
-                    <article id="post-Pug学习笔记01 - 基础"
+                    <article id="post-我的开发之路系列 - Pug学习笔记"
   class="article-card article-type-post" itemprop="blogPost">
 
     <div class="post-meta">
         <time class="post-time" title="2017-12-11 09:03:23" datetime="2017-12-11T01:03:23.554Z"  itemprop="datePublished">2017-12-11</time>
 
         
-	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/模板引擎/">模板引擎</a><ul class="article-category-list-child"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/模板引擎/Pug学习笔记/">Pug学习笔记</a></li></ul></li></ul>
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/模板引擎/">模板引擎</a></li></ul>
 
 
 
@@ -689,7 +531,7 @@ html
 
   
     <h3 class="post-title" itemprop="name">
-      <a class="post-title-link" href="/2017/12/11/Pug学习笔记01 - 基础/">Pug学习笔记01 - 基础</a>
+      <a class="post-title-link" href="/2017/12/11/我的开发之路系列 - Pug学习笔记/">Pug学习笔记</a>
     </h3>
   
 
@@ -699,14 +541,17 @@ html
     <div class="post-content" id="post-content" itemprop="postContent">
 
     
-        pug简介Pug原名不叫Pug，原来是大名鼎鼎的jade，后来由于商标的原因，改为Pug，哈巴狗。
+        
+本文已发布到我的书籍，具体内容请访问 http://book.node.xiaoyulive.top/497568
+
+pug简介Pug原名不叫Pug，原来是大名鼎鼎的jade，后来由于商标的原因，改为Pug，哈巴狗。
 pug的使用安装
 12npm install -g pug-clipug -V
 编译
-123pug index.pug # 直接生成html(未格式化)pug -P index.pug # 生成格式化后的htmlpug -P -w index.pug # 监视文件变化并实时输出格式化后的htm...
+123pug index.pug # 直接生成html(未格式化)pug -P inde...
     
 
-        <a href="/2017/12/11/Pug学习笔记01 - 基础/" class="post-more waves-effect waves-button">
+        <a href="/2017/12/11/我的开发之路系列 - Pug学习笔记/" class="post-more waves-effect waves-button">
             阅读全文…
         </a>
     </div>
@@ -714,6 +559,160 @@ pug的使用安装
     <div class="post-footer">
         
 	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Pug/">Pug</a></li></ul>
+
+    </div>
+    
+</article>
+
+                </li>
+            
+                <li class="post-list-item fade">
+                    <article id="post-Node.js应用篇 - 使用Socket.io搭建一个聊天室"
+  class="article-card article-type-post" itemprop="blogPost">
+
+    <div class="post-meta">
+        <time class="post-time" title="2017-12-08 13:31:10" datetime="2017-12-08T05:31:10.252Z"  itemprop="datePublished">2017-12-08</time>
+
+        
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/Node-js/">Node.js</a><ul class="article-category-list-child"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/Node-js/Node-js应用篇/">Node.js应用篇</a></li></ul></li></ul>
+
+
+
+    </div>
+
+    
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/2017/12/08/Node.js应用篇 - 使用Socket.io搭建一个聊天室/">Node.js应用篇 - 使用Socket.io搭建一个聊天室</a>
+    </h3>
+  
+
+
+
+
+    <div class="post-content" id="post-content" itemprop="postContent">
+
+    
+        sock.io简介​    socket.io一个是基于Nodejs架构体系的，支持websocket的协议用于时时通信的一个软件包。socket.io 给跨浏览器构建实时应用提供了完整的封装，socket.io完全由javascript实现，包括服务器端和客户端。示例 
+环境搭建123mkdir sock.io-test &amp;&amp; cd sock.io-testnpm init...
+    
+
+        <a href="/2017/12/08/Node.js应用篇 - 使用Socket.io搭建一个聊天室/" class="post-more waves-effect waves-button">
+            阅读全文…
+        </a>
+    </div>
+    
+    <div class="post-footer">
+        
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/命令行/">命令行</a></li></ul>
+
+    </div>
+    
+</article>
+
+                </li>
+            
+                <li class="post-list-item fade">
+                    <article id="post-Node.js应用篇 - 新一代Node服务器框架KOA"
+  class="article-card article-type-post" itemprop="blogPost">
+
+    <div class="post-meta">
+        <time class="post-time" title="2017-12-08 10:13:07" datetime="2017-12-08T02:13:07.710Z"  itemprop="datePublished">2017-12-08</time>
+
+        
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/Node-js/">Node.js</a><ul class="article-category-list-child"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/Node-js/Node-js应用篇/">Node.js应用篇</a></li></ul></li></ul>
+
+
+
+    </div>
+
+    
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/2017/12/08/Node.js应用篇 - 新一代Node服务器框架KOA/">Node.js应用篇 - 新一代Node服务器框架KOA</a>
+    </h3>
+  
+
+
+
+
+    <div class="post-content" id="post-content" itemprop="postContent">
+
+    
+        简介为什么说是新一代?
+新一代是koa，那上一代呢? 上一代就是大名鼎鼎的Express，koa经过了两个大版本，比起koa1，koa2使用了ES7进行开发，完全使用Promise并配合async来实现异步。
+本文编写的时候使用的是koa2
+开始使用简单使用新建一个项目名叫myapp，进入此目录
+1234npm initnpm i koa -stouch index.jsvim idnex....
+    
+
+        <a href="/2017/12/08/Node.js应用篇 - 新一代Node服务器框架KOA/" class="post-more waves-effect waves-button">
+            阅读全文…
+        </a>
+    </div>
+    
+    <div class="post-footer">
+        
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/KOA/">KOA</a></li></ul>
+
+    </div>
+    
+</article>
+
+                </li>
+            
+                <li class="post-list-item fade">
+                    <article id="post-我的开发之路系列 - Node.js学习指南"
+  class="article-card article-type-post" itemprop="blogPost">
+
+    <div class="post-meta">
+        <time class="post-time" title="2017-12-07 09:30:50" datetime="2017-12-07T01:30:50.277Z"  itemprop="datePublished">2017-12-07</time>
+
+        
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/Node-js/">Node.js</a></li></ul>
+
+
+
+    </div>
+
+    
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/2017/12/07/我的开发之路系列 - Node.js学习指南/">我的开发之路系列 - Node.js学习指南</a>
+    </h3>
+  
+
+
+
+
+    <div class="post-content" id="post-content" itemprop="postContent">
+
+    
+        
+本文已制作成完整电子书发布，这里只是简单介绍python3的常用操作，更多详情请查看《我的开发之路系列 - node.js学习指南》
+
+  
+
+
+
+前言本书为本人在学习node.js过程中，从大量相关书籍和资料中汇总出的node.js开发精髓，其中包含大量实例，方便查阅，特在此分享，希望对大家有用。
+其实在写本书的时候，我很纠结，到底要不要涉及js的基础知识。说实话，写基础知识是一件很无聊...
+    
+
+        <a href="/2017/12/07/我的开发之路系列 - Node.js学习指南/" class="post-more waves-effect waves-button">
+            阅读全文…
+        </a>
+    </div>
+    
+    <div class="post-footer">
+        
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Node-js/">Node.js</a></li></ul>
 
     </div>
     
@@ -731,31 +730,29 @@ pug的使用安装
         
             <li><a href="/categories/Node-js/">Node.js</a></li>
         
-            <li><a href="/categories/模板引擎/">模板引擎</a></li>
+            <li><a href="/categories/Vue/">Vue</a></li>
         
             <li><a href="/categories/Node-js/Node-js应用篇/">Node.js应用篇</a></li>
         
-            <li><a href="/categories/Vue/">Vue</a></li>
-        
-            <li><a href="/categories/Hexo/">Hexo</a></li>
-        
             <li><a href="/categories/Weex/">Weex</a></li>
-        
-            <li><a href="/categories/模板引擎/Pug学习笔记/">Pug学习笔记</a></li>
         
             <li><a href="/categories/前端开发/">前端开发</a></li>
         
+            <li><a href="/categories/Hexo/">Hexo</a></li>
+        
             <li><a href="/categories/计算机/">计算机</a></li>
-        
-            <li><a href="/categories/Python/">Python</a></li>
-        
-            <li><a href="/categories/开发工具/">开发工具</a></li>
-        
-            <li><a href="/categories/前端开发/巧妙的前端特效/">巧妙的前端特效</a></li>
         
             <li><a href="/categories/前端开发/意想不到的CSS/">意想不到的CSS</a></li>
         
+            <li><a href="/categories/前端开发/巧妙的前端特效/">巧妙的前端特效</a></li>
+        
+            <li><a href="/categories/模板引擎/">模板引擎</a></li>
+        
+            <li><a href="/categories/Python/">Python</a></li>
+        
             <li><a href="/categories/前端开发/深入理解HTML5/">深入理解HTML5</a></li>
+        
+            <li><a href="/categories/开发工具/">开发工具</a></li>
         
             <li><a href="/categories/前端开发/深入理解JavaScript/">深入理解JavaScript</a></li>
         
@@ -775,31 +772,31 @@ pug的使用安装
         
             <li
                 style="background-color: #ff9800;"
-            ><a href="/tags/KOA/">KOA</a></li>
-        
-            <li
-                style="background-color: #f44336;"
-            ><a href="/tags/Pug/">Pug</a></li>
-        
-            <li
-                style="background-color: #00abc0;"
             ><a href="/tags/Vue/">Vue</a></li>
         
             <li
-                style="background-color: #2196f3;"
-            ><a href="/tags/Hexo/">Hexo</a></li>
+                style="background-color: #f44336;"
+            ><a href="/tags/KOA/">KOA</a></li>
         
             <li
-                style="background-color: #8bc34a;"
+                style="background-color: #00abc0;"
             ><a href="/tags/Weex/">Weex</a></li>
         
             <li
-                style="background-color: #673ab7;"
+                style="background-color: #2196f3;"
             ><a href="/tags/CSS3/">CSS3</a></li>
         
             <li
-                style="background-color: #ff9800;"
+                style="background-color: #8bc34a;"
             ><a href="/tags/Canvas/">Canvas</a></li>
+        
+            <li
+                style="background-color: #673ab7;"
+            ><a href="/tags/Hexo/">Hexo</a></li>
+        
+            <li
+                style="background-color: #ff9800;"
+            ><a href="/tags/npm/">npm</a></li>
         
             <li
                 style="background-color: #f44336;"
@@ -823,51 +820,51 @@ pug的使用安装
         
             <li
                 style="background-color: #ff9800;"
-            ><a href="/tags/npm/">npm</a></li>
-        
-            <li
-                style="background-color: #f44336;"
             ><a href="/tags/OSX/">OSX</a></li>
         
             <li
-                style="background-color: #00abc0;"
-            ><a href="/tags/Python/">Python</a></li>
-        
-            <li
-                style="background-color: #2196f3;"
-            ><a href="/tags/SublimeText/">SublimeText</a></li>
-        
-            <li
-                style="background-color: #8bc34a;"
-            ><a href="/tags/VSCode/">VSCode</a></li>
-        
-            <li
-                style="background-color: #673ab7;"
+                style="background-color: #f44336;"
             ><a href="/tags/Node-js/">Node.js</a></li>
         
             <li
-                style="background-color: #ff9800;"
-            ><a href="/tags/拖动/">拖动</a></li>
-        
-            <li
-                style="background-color: #f44336;"
-            ><a href="/tags/Blob/">Blob</a></li>
-        
-            <li
                 style="background-color: #00abc0;"
-            ><a href="/tags/Base64/">Base64</a></li>
+            ><a href="/tags/Pug/">Pug</a></li>
         
             <li
                 style="background-color: #2196f3;"
-            ><a href="/tags/requestAnimationFrame/">requestAnimationFrame</a></li>
+            ><a href="/tags/Python/">Python</a></li>
         
             <li
                 style="background-color: #8bc34a;"
-            ><a href="/tags/XMLHttpRequest/">XMLHttpRequest</a></li>
+            ><a href="/tags/拖动/">拖动</a></li>
         
             <li
                 style="background-color: #673ab7;"
+            ><a href="/tags/VSCode/">VSCode</a></li>
+        
+            <li
+                style="background-color: #ff9800;"
             ><a href="/tags/ECMAScript/">ECMAScript</a></li>
+        
+            <li
+                style="background-color: #f44336;"
+            ><a href="/tags/SublimeText/">SublimeText</a></li>
+        
+            <li
+                style="background-color: #00abc0;"
+            ><a href="/tags/Blob/">Blob</a></li>
+        
+            <li
+                style="background-color: #2196f3;"
+            ><a href="/tags/Base64/">Base64</a></li>
+        
+            <li
+                style="background-color: #8bc34a;"
+            ><a href="/tags/requestAnimationFrame/">requestAnimationFrame</a></li>
+        
+            <li
+                style="background-color: #673ab7;"
+            ><a href="/tags/XMLHttpRequest/">XMLHttpRequest</a></li>
         
             <li
                 style="background-color: #ff9800;"
@@ -887,7 +884,7 @@ pug的使用安装
     
 <nav id="page-nav">
     <div class="inner">
-    <a class="extend prev" rel="prev" href="/">上一页</a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><a class="page-number" href="/page/4/">4</a><a class="extend next" rel="next" href="/page/3/">下一页</a>
+    <a class="extend prev" rel="prev" href="/">上一页</a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/3/">下一页</a>
     </div>
 </nav>
 
