@@ -2,3 +2,8 @@
 
 这是使用 VuePress 搭建的个人网站
 
+```bash
+yarn dev # http://localhost:4000/
+yarn build # generator dist
+yarn deploy # generator dist and deploy
+```
