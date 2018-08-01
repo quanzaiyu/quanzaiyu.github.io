@@ -1,3 +1,37 @@
 {
-
+  "name": "Xiaoyulive",
+  "short_name": "Xiaoyulive",
+  "start_url": ".",
+  "display": "fullscreen",
+  "background_color": "#fff",
+  "description": "小昱个人网站",
+  "icons": [{
+    "src": "logo.png",
+    "sizes": "48x48",
+    "type": "image/png"
+  }, {
+    "src": "logo.png",
+    "sizes": "72x72",
+    "type": "image/png"
+  }, {
+    "src": "logo.png",
+    "sizes": "96x96",
+    "type": "image/png"
+  }, {
+    "src": "logo.png",
+    "sizes": "144x144",
+    "type": "image/png"
+  }, {
+    "src": "logo.png",
+    "sizes": "168x168",
+    "type": "image/png"
+  }, {
+    "src": "logo.png",
+    "sizes": "192x192",
+    "type": "image/png"
+  }],
+  "related_applications": [{
+    "platform": "web",
+    "url": "https://www.xiaoyulive.top"
+  }]
 }
