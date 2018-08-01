@@ -21,7 +21,7 @@ importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.4.1/workbox
 self.__precacheManifest = [
   {
     "url": "404.html",
-    "revision": "b6a058ffdc1a5b95e3ac958d18d82d26"
+    "revision": "a5be2b77071758267dd0b2271828b3f6"
   },
   {
     "url": "404.png",
@@ -29,27 +29,27 @@ self.__precacheManifest = [
   },
   {
     "url": "articles/docs/Deploy_with_Different_Platforms.html",
-    "revision": "330a5bfb5d49e4fe16115ceed0a302ad"
+    "revision": "830513e309b745a50858ab2fb0999451"
   },
   {
     "url": "articles/docs/Love.html",
-    "revision": "09f2c4e3ee23644de322349c5af16103"
+    "revision": "559915d886683f47e97dc06fdeca10e5"
   },
   {
     "url": "articles/docs/My_blog_journey.html",
-    "revision": "e7846806f002049d77f2aea4f55beda7"
+    "revision": "d69620412d2a6e29f7618fd3a7c0720f"
   },
   {
     "url": "articles/docs/Some_Advice_on_College_Life.html",
-    "revision": "1fc4272054922d1c8cd7e65fb58a2c05"
+    "revision": "e04baf88df5e6c2e65892a76ffb6d4ac"
   },
   {
     "url": "articles/docs/Tips_for_Issue.html",
-    "revision": "1f745f854529b3f8770c53ddc90c4255"
+    "revision": "b7839bcd628477a2a0146419b8a50a25"
   },
   {
     "url": "articles/index.html",
-    "revision": "8ca21edb7c1c613c5dd883c3fc8262cf"
+    "revision": "73783eb01e37f383efdfe7f0cbb2db1a"
   },
   {
     "url": "assets/css/0.styles.6e73dbad.css",
@@ -2560,8 +2560,8 @@ self.__precacheManifest = [
     "revision": "23c21d73cddb9a9cafb4ead4c76f0db3"
   },
   {
-    "url": "assets/js/app.4f2ba2fe.js",
-    "revision": "ad485b6c96d6ed46d0e7ca7fc7ecb8b9"
+    "url": "assets/js/app.c7085a70.js",
+    "revision": "929e13571dda4f42903d56ad0e812bb4"
   },
   {
     "url": "assets/js/vendors~docsearch.b7f2444a.js",
@@ -2569,1103 +2569,1103 @@ self.__precacheManifest = [
   },
   {
     "url": "blog/index.html",
-    "revision": "658e722fd1dbba212829039fa83c9e17"
+    "revision": "c0abd893cb86a9a706660c50138ff5c6"
   },
   {
     "url": "books/index.html",
-    "revision": "630fdf8fb278cd6a78cab403d29817bc"
+    "revision": "c43745c572affa524d8bbb4f99eeda5a"
   },
   {
     "url": "books/road_javascript/Comprehension/copy.html",
-    "revision": "751d6446fffbe9996ab6bb5dff7207f9"
+    "revision": "51ef88ac34b89c968e3071b622cb3fd9"
   },
   {
     "url": "books/road_javascript/Comprehension/object_assign.html",
-    "revision": "86eb033e0a7ce59158a3667d21bf2c2f"
+    "revision": "1ebc40cf73b9f2bd177de8c1ad893bc1"
   },
   {
     "url": "books/road_javascript/Comprehension/object_create.html",
-    "revision": "159686fad8924d9ac8c7a01347e03f04"
+    "revision": "ac8a5e261350442e1c7ac46c46237873"
   },
   {
     "url": "books/road_javascript/Comprehension/object_defineProperty.html",
-    "revision": "9244cbda2cbe00d938b90a1a016f0cc2"
+    "revision": "703177b1175bd54b80b8700eff537bc2"
   },
   {
     "url": "books/road_javascript/Comprehension/object_freeze.html",
-    "revision": "329ba2ac838e8e0aac713b53f55c49b8"
+    "revision": "467d429241e1afc8698389df6a651a55"
   },
   {
     "url": "books/road_javascript/Comprehension/object.html",
-    "revision": "8177c8e88343c7885d6cdaa6189e7fdc"
+    "revision": "5aa142da7cb480774d4b06c79aa4c279"
   },
   {
     "url": "books/road_javascript/Handbook/array.html",
-    "revision": "73a012980a3fc5608081c7523dd29f06"
+    "revision": "69bda9745daa656a16a1e102ec6ce662"
   },
   {
     "url": "books/road_javascript/index.html",
-    "revision": "54be82a65786f4054f70270fb6100ad4"
+    "revision": "0eca8662086d9a1512441d96278213cf"
   },
   {
     "url": "books/road_javascript/Plugins/moment.html",
-    "revision": "ce55fd9a24007e4420492fa73b61b843"
+    "revision": "5bb44bd2d16c8747ccebd295a2e6c0aa"
   },
   {
     "url": "books/road_javascript/Plugins/v8n.html",
-    "revision": "372a1753d0496a112d3b0197afd11e6b"
+    "revision": "f28842dc641dacfbf2ff3c6b92bb0136"
   },
   {
     "url": "books/road_javascript/Snippets/array.html",
-    "revision": "842d90f9adefe68459fd559343b14b84"
+    "revision": "84a7d12ff936d5b887950fb344993a35"
   },
   {
     "url": "books/road_javascript/Snippets/string.html",
-    "revision": "c2586dd5a2b78e41ac18a2a1b40057d2"
+    "revision": "d4a6778b602cf7b65f761fed8e7ce6e1"
   },
   {
     "url": "books/road_javascript/Snippets/transform.html",
-    "revision": "757cfc640123678a602d3aa56a78327a"
+    "revision": "d61248c2f86931b5e7cc479b3191547f"
   },
   {
     "url": "books/road_linux/Basis/compress.html",
-    "revision": "3aedc7bdd148903ff8797c000909ee27"
+    "revision": "cab960f028404c96ab529c8bb36a8d4e"
   },
   {
     "url": "books/road_linux/Basis/directory.html",
-    "revision": "6356d8e6cf97403846cfd672f85f7db7"
+    "revision": "80441b969c99ec1b66ac13adaf506be6"
   },
   {
     "url": "books/road_linux/Basis/file.html",
-    "revision": "4682a2213391502c6035c9714f6b61b3"
+    "revision": "92a8fc43375ee2c5cc29f8d38efde625"
   },
   {
     "url": "books/road_linux/Basis/index.html",
-    "revision": "264871d85444580f584401fcc8c0bc4b"
+    "revision": "ff7f636f34066dba79789d18d29faee3"
   },
   {
     "url": "books/road_linux/Basis/link.html",
-    "revision": "c9f9c5564cc0d49be16581797e476a33"
+    "revision": "275bc9163f3984038355b84ece610c1c"
   },
   {
     "url": "books/road_linux/Basis/mount.html",
-    "revision": "a60b0a1aae92a61546bf79862c850c36"
+    "revision": "85bacc713e53b9d74138dbde6fed0281"
   },
   {
     "url": "books/road_linux/Basis/pipe.html",
-    "revision": "5fa0d1c0f18f9e77fcde89c93845b566"
+    "revision": "c21e0613cc999ed12b74cc92ef308e57"
   },
   {
     "url": "books/road_linux/Basis/property.html",
-    "revision": "e9bdf034e823a88bc95bdf622a174f6e"
+    "revision": "91fce86bbc5884d5e7f9952bc96fb9b8"
   },
   {
     "url": "books/road_linux/Basis/reference.html",
-    "revision": "f992b40be3501ffab8a5442337efdc55"
+    "revision": "696208394f45788e646a38ff105b8fcf"
   },
   {
     "url": "books/road_linux/Basis/system.html",
-    "revision": "8a7eb18edd0b2745346e70d1804f7b61"
+    "revision": "04ebf8ad393cdc4d5e1ee1694c37cec6"
   },
   {
     "url": "books/road_linux/Basis/vim.html",
-    "revision": "f12a6c89bc7594dc6d7f05c69a1e54c8"
+    "revision": "29d7a91e3389650a4795ce9003b6faa0"
   },
   {
     "url": "books/road_linux/Config/alias.html",
-    "revision": "1654e268c9b3fbee653bdf8289954bf0"
+    "revision": "59e92ee6e911119062715cb03649bda7"
   },
   {
     "url": "books/road_linux/Config/env.html",
-    "revision": "ffef78118c0618d729a7a66574759931"
+    "revision": "bb53ee21a7e36b462b4da2d27e2d8525"
   },
   {
     "url": "books/road_linux/Config/firewall.html",
-    "revision": "697e840726846912a0d2b3f553b26851"
+    "revision": "7e5d1ab6f3c0d4ddfa2b1cb4da933507"
   },
   {
     "url": "books/road_linux/Config/index.html",
-    "revision": "7eeea5af372a93a5c734b4f8c2467500"
+    "revision": "75b5b428c49caaaedd5b83f4614d439f"
   },
   {
     "url": "books/road_linux/Config/launch.html",
-    "revision": "718c27a7485327c5de12e4b0998da0ed"
+    "revision": "fe9011ec6bf1db7d4752edee568ca6e4"
   },
   {
     "url": "books/road_linux/Config/reference.html",
-    "revision": "74e9ecd85706ebbb4e6488e2bbb1bde2"
+    "revision": "7b3d0264410189312b687af559c9ffb3"
   },
   {
     "url": "books/road_linux/Find/examples.html",
-    "revision": "6db75e8e87fb52338b66f72326872fca"
+    "revision": "cfdc6858b7a0a96ad5928a51225c4a37"
   },
   {
     "url": "books/road_linux/Find/find.html",
-    "revision": "7f9c419ff2d0cb4404e4cf2a71aad862"
+    "revision": "9575091be7c6485a40e6dadc4ded5dc6"
   },
   {
     "url": "books/road_linux/Find/grep.html",
-    "revision": "169d7db2b8c5f8e96a103b2e77fef383"
+    "revision": "31c708dc754014a3bbb77eb4395c4767"
   },
   {
     "url": "books/road_linux/Find/index.html",
-    "revision": "aa021be307ecc949dad84628b1de373e"
+    "revision": "15f959013f54abc93d15cf579920ee15"
   },
   {
     "url": "books/road_linux/Find/sort.html",
-    "revision": "0db96ec4c8829696ddc20632e53d7616"
+    "revision": "d861cd7337de9bf9b7ad11af63b7300b"
   },
   {
     "url": "books/road_linux/Find/whereis.html",
-    "revision": "a6e4bd8da9baa64589422f2c281ab70a"
+    "revision": "4183aa0bb854f85f884887e391cc6f37"
   },
   {
     "url": "books/road_linux/Find/which.html",
-    "revision": "807d0b54857a32850b157d1fa0820c5d"
+    "revision": "2b073af5a5aea8551f72a68501574377"
   },
   {
     "url": "books/road_linux/index.html",
-    "revision": "91b05d99616c5577263b4d9c4e80b429"
+    "revision": "4dce2eae12d88fd9cbe67c8609dd8f31"
   },
   {
     "url": "books/road_linux/Install/apt-get.html",
-    "revision": "9dc6e41fcabb6e189d7d1ec1cbc9eeb5"
+    "revision": "3fe81dbbc3dbee763bf98a5d153c7948"
   },
   {
     "url": "books/road_linux/Install/index.html",
-    "revision": "29139e2ac33fdfa902b43de867bd2338"
+    "revision": "4e52f5e4caa92dca5fe274838f88d739"
   },
   {
     "url": "books/road_linux/Install/reference.html",
-    "revision": "5231d2a773118c0fffa6d1b7f12b23b4"
+    "revision": "8f6a1ef38081d874641d20dc2bf52eee"
   },
   {
     "url": "books/road_linux/Install/rpm.html",
-    "revision": "e5ba67899be50a207633f8b53dda951e"
+    "revision": "487303b53d135c23bb01a6061050dee0"
   },
   {
     "url": "books/road_linux/Install/yum_origin.html",
-    "revision": "b46445d52eb77f7ebe41195d6dc5a8fa"
+    "revision": "6f88530800dd45d4c9799e28079b306e"
   },
   {
     "url": "books/road_linux/Install/yum_plugins.html",
-    "revision": "0a56c7892b6f783864d47fe18327b080"
+    "revision": "7959db8be2bbe9e469f8c158e9864b77"
   },
   {
     "url": "books/road_linux/Install/yum.html",
-    "revision": "bd27d24b632acbecd3e5aa266aef3917"
+    "revision": "3db67b79edb9d893a1882fae98bf4fe2"
   },
   {
     "url": "books/road_linux/Network/curl.html",
-    "revision": "d969942ec4a4c13b92962cba453654c6"
+    "revision": "df27392c427a71747c645b8dbfcfc8c1"
   },
   {
     "url": "books/road_linux/Network/index.html",
-    "revision": "f53ce3adda86c6aeeb897eca24818aa5"
+    "revision": "cc97119f29578537cb4a536f6fee1cc6"
   },
   {
     "url": "books/road_linux/Network/reference.html",
-    "revision": "7bc036e3ffd739b4b8073942453d88c9"
+    "revision": "dfa2bf61672ef9c4c4d244e91e132b76"
   },
   {
     "url": "books/road_linux/Network/wget.html",
-    "revision": "48b433f7e61ed6b55880925b910c09cb"
+    "revision": "1f14da94ab6fd7f114a4fe0fee87e302"
   },
   {
     "url": "books/road_linux/Script/bash.html",
-    "revision": "8d1eba01da39cfde3995c0ab09f7a10b"
+    "revision": "28505f07c3680baa03243bada50a4c2f"
   },
   {
     "url": "books/road_linux/Script/cpp.html",
-    "revision": "9883fe29cd4e59e421ae5ee1b544dd0e"
+    "revision": "a18295e0d4cdd142620b8f4f681e2183"
   },
   {
     "url": "books/road_linux/Script/index.html",
-    "revision": "d1cf099a7a2abdbf4124d7e328a05b02"
+    "revision": "3a1a2039249125cd987354106839da87"
   },
   {
     "url": "books/road_linux/Script/python.html",
-    "revision": "d5f3ae394453a31b91b964015f4ec895"
+    "revision": "a5a42473da440ccbf53b9fd082c47b08"
   },
   {
     "url": "books/road_linux/Script/reference.html",
-    "revision": "54b44756c6369de045aad9a890ba66f2"
+    "revision": "73238c4913a69674a2853fb8fa6ddb92"
   },
   {
     "url": "books/road_linux/User/chmod.html",
-    "revision": "cadfe57ce3ba787fc1f607b1db00cee0"
+    "revision": "12ef66385d4b8b919b424ee38d504bf4"
   },
   {
     "url": "books/road_linux/User/index.html",
-    "revision": "a94d27e1d043dda6c22d60a2c7568e08"
+    "revision": "7290eafc7f80e55ad194a8af144db4ba"
   },
   {
     "url": "books/road_linux/User/passwd.html",
-    "revision": "7d03d019d7b070269cd57c2fecaf4b03"
+    "revision": "fbe33f8eda85c2367f1a0b33a13a84a5"
   },
   {
     "url": "books/road_linux/User/reference.html",
-    "revision": "102776a1e944e328a398f2c7ba8cb497"
+    "revision": "3b420e31a36d1703e508ceac8e664c11"
   },
   {
     "url": "books/road_linux/User/ssh.html",
-    "revision": "1185f432b369307307eb32a058e3e510"
+    "revision": "07114f0d0451edffc7c1f1f14b6b9210"
   },
   {
     "url": "books/road_linux/User/sudo.html",
-    "revision": "38a7c01134909509c3e08942202a191b"
+    "revision": "dedae6759b11f2cc2ec226b9fc7a65c7"
   },
   {
     "url": "books/road_linux/User/usermod.html",
-    "revision": "908a5ceb46a2c01a8f2906e6dcdf7ce5"
+    "revision": "885075852fd685c09753197042930c6b"
   },
   {
     "url": "books/road_php/Array/Array_Column.html",
-    "revision": "fe49a18d832178028d269f9c75e460b8"
+    "revision": "b78d3ee4c16e67fb1e0252ef54877f3e"
   },
   {
     "url": "books/road_php/Array/Compare.html",
-    "revision": "7f93ef48375709a8a3275b40d904c673"
+    "revision": "b2935e8ee0de18318163d5f270ac320e"
   },
   {
     "url": "books/road_php/Array/Concat.html",
-    "revision": "af1063f2a0fb569c178d3d8a27bcd13e"
+    "revision": "c94cf376f7d1fd4a49c8be1d47b602bd"
   },
   {
     "url": "books/road_php/Array/Create.html",
-    "revision": "0eb2eb1d3efc22b0201723e37139802f"
+    "revision": "de63c41283009db691ff74b8d27c7663"
   },
   {
     "url": "books/road_php/Array/Filter.html",
-    "revision": "007fa093e477d2209bcba1282eaa516c"
+    "revision": "a5e4ecee75890fb229dc6f931fb6d476"
   },
   {
     "url": "books/road_php/Array/index.html",
-    "revision": "ee057fa5982931636c9555599419b0b2"
+    "revision": "3a7d39c9a9cf96607c61f2b6a367b8d8"
   },
   {
     "url": "books/road_php/Array/Methods.html",
-    "revision": "11e9d8459bcfddefec6ec249af608f57"
+    "revision": "3ca9ec320a25686439339b8469de1bb2"
   },
   {
     "url": "books/road_php/Array/Sort.html",
-    "revision": "0f7b93ee91ddcaa20dfd9c82965ac069"
+    "revision": "9ba5fc38c7455e8a9e75fedddf168e89"
   },
   {
     "url": "books/road_php/Array/Traversal.html",
-    "revision": "9ec21b81e0fc3ca843cc5618731003b1"
+    "revision": "f0b7527a398c02e8c829a2098f2201b9"
   },
   {
     "url": "books/road_php/Form/File.html",
-    "revision": "93e4bd52e66ad2b3d536f7aeda2ed5f5"
+    "revision": "9090fde184b9591968788fff164d97f6"
   },
   {
     "url": "books/road_php/Form/Get.html",
-    "revision": "559f9e3ed254904341c0834b16035042"
+    "revision": "687ab48a60b9749c24bf3c677704691d"
   },
   {
     "url": "books/road_php/Form/index.html",
-    "revision": "d4410bf12c786a071ac9e33907ee837f"
+    "revision": "c3b19f726aef89847a80e1e3b22f005a"
   },
   {
     "url": "books/road_php/Form/Post.html",
-    "revision": "3987259c95c9178a16d0ebda75d8ea4a"
+    "revision": "abd64e8e578c4bd4c6c153f99ed57115"
   },
   {
     "url": "books/road_php/Form/Request.html",
-    "revision": "fb6745ef7e981b45aeff650afb9bd1af"
+    "revision": "ecde273d01f08cdea5648d7690ed5a14"
   },
   {
     "url": "books/road_php/index.html",
-    "revision": "615d9e8c0214ff1a34fb49688b65fc54"
+    "revision": "f03c3e859c7e6f48ef22415fedcfb4f0"
   },
   {
     "url": "books/road_php/Learn/Basis.html",
-    "revision": "bdfb165408e8ab8f4831fefcdc725137"
+    "revision": "7388f9d21ef0d2f9eed68832dc5c14e4"
   },
   {
     "url": "books/road_php/Learn/Circulation.html",
-    "revision": "a5c19c96c3d5d32ddbbe5406e52d4830"
+    "revision": "38fdb4844b4c2e57a2dcad615c1fc342"
   },
   {
     "url": "books/road_php/Learn/Condition.html",
-    "revision": "cd3eabd306ea9a410eaa9ef93062459b"
+    "revision": "3e82c90b91742ded5a3b4443294a6c54"
   },
   {
     "url": "books/road_php/Learn/Function.html",
-    "revision": "1d04b19baac43d8464535d70724642a7"
+    "revision": "f14b3c912e068886b89205cdf619d5c9"
   },
   {
     "url": "books/road_php/Learn/Include.html",
-    "revision": "780772a2e5836eebd37394ba1ae7601f"
+    "revision": "08a9b714977d24f513d481867f5be5a5"
   },
   {
     "url": "books/road_php/Learn/index.html",
-    "revision": "d5e707e8dbe180d3cd37cb4bea804b8b"
+    "revision": "7cf2fad91f6d25e0ae733eca47dc4a8e"
   },
   {
     "url": "books/road_php/Learn/Magic_Constant.html",
-    "revision": "01d4bf9872f546b04a995c9cfecd95c9"
+    "revision": "87f9b2d70a0ac5e246f1c257035b4b84"
   },
   {
     "url": "books/road_php/Learn/Namespace.html",
-    "revision": "e96f393dbc0b44aa8f7edca87f1069ab"
+    "revision": "bd67088b2eedbf91673a73caeb218447"
   },
   {
     "url": "books/road_php/Learn/Operator.html",
-    "revision": "6c219040226208b9a389657d1934690f"
+    "revision": "86a860324b05efedf70b90518ba586ef"
   },
   {
     "url": "books/road_php/Learn/Super_Globals.html",
-    "revision": "7fca8feb809864b939a2c4aa2265999c"
+    "revision": "b67797bfb47bd2b870e2e286fe6afa1c"
   },
   {
     "url": "books/road_php/Learn/Types.html",
-    "revision": "f965b6e89de5bdc58730d72f368e417d"
+    "revision": "20aea302a043dacb64ebd4f003c03dd5"
   },
   {
     "url": "books/road_php/Module/Cookie.html",
-    "revision": "fb13d6e0e214ab9f1e33ef01db68db9c"
+    "revision": "20b9cec44d938397b8c47185670233a9"
   },
   {
     "url": "books/road_php/Module/Database.html",
-    "revision": "317ad0082380ba10da0e014ceba3eb8e"
+    "revision": "bdbe67ceff73559e9198abd13bdb0714"
   },
   {
     "url": "books/road_php/Module/Date.html",
-    "revision": "9af023448c5b60e5a3a77a02746aa478"
+    "revision": "9704bf60594ae38370599e2246891ad5"
   },
   {
     "url": "books/road_php/Module/Email.html",
-    "revision": "765070ae429501c8bebfa0937fa1a13c"
+    "revision": "81425f8715b72f4d4a91c470984496c0"
   },
   {
     "url": "books/road_php/Module/Error.html",
-    "revision": "8320bf5e216febd5764003e79622a049"
+    "revision": "c7548e1928c168a693345db25bd2c221"
   },
   {
     "url": "books/road_php/Module/Exception.html",
-    "revision": "26bf3bef1a36263e065dc7936a54af4e"
+    "revision": "aa255ffaa1c969b4490f795b4999acba"
   },
   {
     "url": "books/road_php/Module/Fs.html",
-    "revision": "ec2b3e5e1be0d3664070508c1ddae59e"
+    "revision": "48a3cad2c47442cd5b30c314973a9006"
   },
   {
     "url": "books/road_php/Module/index.html",
-    "revision": "c9a64354088ecbc352d8fffc437ff26d"
+    "revision": "a9ef6137002720db4776adffb36b86a6"
   },
   {
     "url": "books/road_php/Module/Json.html",
-    "revision": "e78f5fc318e1a3b4cb1e66ae1e05c183"
+    "revision": "d82d161ec229d4d71cdeb59023f4cb20"
   },
   {
     "url": "books/road_php/Module/Reference.html",
-    "revision": "4d0207014b34be12fc9fede77b831104"
+    "revision": "b074df7d78a7ad62f8dab1b31be9695a"
   },
   {
     "url": "books/road_php/Module/Session.html",
-    "revision": "09797abbe3b77baf4551d8a0d9f42410"
+    "revision": "cfb46bfe82322db1dc75d792dd98dc1d"
   },
   {
     "url": "books/road_php/OOP/Abstract.html",
-    "revision": "4aa9e70d0817c991a7e0479637d6f8fe"
+    "revision": "8aa29c1043f13da9fb42eab9f33ee3fc"
   },
   {
     "url": "books/road_php/OOP/Access_Control.html",
-    "revision": "c9c1c66f2247c7007e20daa9a6de2be2"
+    "revision": "9a3a4dfea9b84cd9f27fc0b6454c8e31"
   },
   {
     "url": "books/road_php/OOP/Constant.html",
-    "revision": "f440ceb9f8185628bd5921ae93ed488b"
+    "revision": "d5f87f75a50aea6ba76469f6370f1b5d"
   },
   {
     "url": "books/road_php/OOP/Definition.html",
-    "revision": "07b8869c4f7a0f7661c3b7af2c2416ac"
+    "revision": "d2056b1dd099b5d8f276805b89760992"
   },
   {
     "url": "books/road_php/OOP/index.html",
-    "revision": "0036a01a18acb9a58e84ed5aa9cf95cd"
+    "revision": "b87c37a513d01e916e67754c307bde96"
   },
   {
     "url": "books/road_php/OOP/Inherit.html",
-    "revision": "e760ab7a985b49177ff4e4c53c0abd69"
+    "revision": "3784b12409ada019ace6b5db7c6b8fad"
   },
   {
     "url": "books/road_php/OOP/Interface.html",
-    "revision": "6495252a740aff5f42b23dabc332a309"
+    "revision": "d7df012c0d5ff38ca4713e9ca04f976d"
   },
   {
     "url": "books/road_php/OOP/Static.html",
-    "revision": "69e32d263c803d77f29af7987ddf3a94"
+    "revision": "cc729befb3a80865b53b6ffef38b35df"
   },
   {
     "url": "books/road_php/OOP/Trait.html",
-    "revision": "3f3da985d77c016165e187c8d4b182f5"
+    "revision": "ef90a62c4df9dbdf08efa19b21f72785"
   },
   {
     "url": "books/road_php/Snippets/idcard.html",
-    "revision": "ce74769390f7b464f0eea300bcf9ac86"
+    "revision": "7daec4633fa6c3640c5ff4612471c3ff"
   },
   {
     "url": "books/road_php/Snippets/index.html",
-    "revision": "2b0e3ffaca172d3e3b4f6ba4899c3b06"
+    "revision": "e660dc44cd038c03f3de450a8bd7c490"
   },
   {
     "url": "books/road_php/String/index.html",
-    "revision": "3e6bc6886af3c1d607ba0d91584a69ca"
+    "revision": "159be7ed162fadd9ee4dd1dd19f12c61"
   },
   {
     "url": "books/road_php/String/Methods.html",
-    "revision": "cffb5e2792ca8c9afafde12b7b3492d9"
+    "revision": "55466ddd791f0ded6108b67a721c879b"
   },
   {
     "url": "books/road_php/String/Other.html",
-    "revision": "1d77643e8dbd297d8881c9842023f188"
+    "revision": "bcab65f04f4424219cd850dbb71f69b1"
   },
   {
     "url": "books/road_php/String/Replace.html",
-    "revision": "4cf82c73879ef835eaa956f6c5dafe0e"
+    "revision": "e1556ec911ca2b3aa64447fd173f8416"
   },
   {
     "url": "books/road_php/String/URL.html",
-    "revision": "a45af539cb2de48b15f7e07928dd41d5"
+    "revision": "29e60ca8b533a33522a5f849f2bd53dc"
   },
   {
     "url": "books/road_thinkphp/Config/Config_Detail.html",
-    "revision": "45d0411678140d94ac458891f8d4369d"
+    "revision": "7b94fec3c370e86a41526a36cd3f7a7c"
   },
   {
     "url": "books/road_thinkphp/Config/Dynamic.html",
-    "revision": "70c1d6eb1a7a65d9adc117a875a84968"
+    "revision": "a88275cd42d3453b5525229746e36815"
   },
   {
     "url": "books/road_thinkphp/Config/Env.html",
-    "revision": "ae5df07e738b34fe1b3d44fcdcad8aa8"
+    "revision": "ae07cf96f7ece948f9a160c244902ebb"
   },
   {
     "url": "books/road_thinkphp/Config/Format.html",
-    "revision": "0b13c64cf7238e8b868a09a026e997b1"
+    "revision": "9d268742e6f78bc8a9fa342698a31d57"
   },
   {
     "url": "books/road_thinkphp/Config/index.html",
-    "revision": "73445c30c903cfc2fd9f0a62aecb82e7"
+    "revision": "e2a6f9f025ec1cbb89de16bbf2ac1cec"
   },
   {
     "url": "books/road_thinkphp/Config/Read.html",
-    "revision": "98036b1444b312aef1ad002c53cff0b9"
+    "revision": "363077c21ad7df5eff5185b6b46b7ecd"
   },
   {
     "url": "books/road_thinkphp/Controller/Empty.html",
-    "revision": "124f53a869ac2c55deba8b02a75c1257"
+    "revision": "bdf0477de136b1cc9ab0203cdc009f34"
   },
   {
     "url": "books/road_thinkphp/Controller/index.html",
-    "revision": "2661568467ceff5d550ae22d4b2262b0"
+    "revision": "fc9c47e85a0ff8ef68167b618e486213"
   },
   {
     "url": "books/road_thinkphp/Controller/Multilevel.html",
-    "revision": "fa36630cc4e0646a2c2d4d3cd01c723a"
+    "revision": "f5ac993a4a7c1877876b5aa58def5021"
   },
   {
     "url": "books/road_thinkphp/Controller/Redirect.html",
-    "revision": "112cd957a8c8b2cc5cbfcb9cb3f82cfd"
+    "revision": "6401e620010b3ecdf5071164faf9a5fc"
   },
   {
     "url": "books/road_thinkphp/Controller/Resource.html",
-    "revision": "14000b27fab28c1ca123a2fe6308b470"
+    "revision": "2a83069e50fe906a35c58e403a830e5d"
   },
   {
     "url": "books/road_thinkphp/Database/Connect.html",
-    "revision": "e1a0167593b718699597f2f419c74988"
+    "revision": "94e7ef4b3950cf8f6299d0238bc881dc"
   },
   {
     "url": "books/road_thinkphp/Database/CURD.html",
-    "revision": "cec6063fbe40c96b0d8ecb65eb09d33f"
+    "revision": "966c70c634b29048636e33976ff068b2"
   },
   {
     "url": "books/road_thinkphp/Database/index.html",
-    "revision": "b8e02552efdcfa06647db158e6d4515a"
+    "revision": "7f6e4c3138e5dde741936cb6b2748b3e"
   },
   {
     "url": "books/road_thinkphp/Database/Query.html",
-    "revision": "689300e4872a35e007b332cb30f55b93"
+    "revision": "a3b6cdbfae4c1f33f467e6c7d245fcbb"
   },
   {
     "url": "books/road_thinkphp/Extend/Composer.html",
-    "revision": "410080e571c26ab95e31d9f2a865785e"
+    "revision": "bbf9999baf4e96a50b764db3da104cae"
   },
   {
     "url": "books/road_thinkphp/Extend/Function.html",
-    "revision": "c086ce4825ee742643a4592430e663a9"
+    "revision": "4c401a4767b779a28e417ca7c265ef8a"
   },
   {
     "url": "books/road_thinkphp/Extend/index.html",
-    "revision": "33b11ff5ac3bd69ecb526393eefc5680"
+    "revision": "ab7d9bc122ee6f6a429f26f388a27507"
   },
   {
     "url": "books/road_thinkphp/Extend/Library.html",
-    "revision": "1ebf9a60c32d5cec29ff0ac3c99c3bf3"
+    "revision": "7abb369fe0b3797bf0b7bbfb0c4e10c4"
   },
   {
     "url": "books/road_thinkphp/index.html",
-    "revision": "8269442c55bd8733cbe520c0475c0f4d"
+    "revision": "1c9c085aa026931f76d75d442e6d7675"
   },
   {
     "url": "books/road_thinkphp/Learn/Container.html",
-    "revision": "d52cafbedbb79063e523201c225e031b"
+    "revision": "3fe8898a1fce13e31b868a6fd88b4f9e"
   },
   {
     "url": "books/road_thinkphp/Learn/Hide_Path.html",
-    "revision": "e12b60e5cfc5a6943c56d4daedb7558a"
+    "revision": "e86577cf2d3a91ee0bd587b128a429fc"
   },
   {
     "url": "books/road_thinkphp/Learn/index.html",
-    "revision": "4f2277e7047733cd6d8555fc4f82003f"
+    "revision": "83e40a5a84cb2929f2edbb8e47090137"
   },
   {
     "url": "books/road_thinkphp/Learn/Inject.html",
-    "revision": "7c674a26bbfc0a6cd97af2b876194989"
+    "revision": "6c426f2b7af0374160a1ed54cdea7b99"
   },
   {
     "url": "books/road_thinkphp/Learn/Namespace.html",
-    "revision": "27baa929fcc0ed5327924bdb01cc4e77"
+    "revision": "eafa8216ac2cefd1ac8fc927d03e563d"
   },
   {
     "url": "books/road_thinkphp/Learn/Reference.html",
-    "revision": "4e5ce852d1125fec864d4afd37c9ef73"
+    "revision": "c56f6b215027984a584151acb9b2b34b"
   },
   {
     "url": "books/road_thinkphp/Learn/URL_Access.html",
-    "revision": "3f37d9f600d0f2f67319c501976a0e02"
+    "revision": "cc706526e4d33987ae1ecef7a7434a1e"
   },
   {
     "url": "books/road_thinkphp/Learn/URL_Params.html",
-    "revision": "53c453f083fb5ed132bc7132acb9bf29"
+    "revision": "05869402f189f9408f077eb3c2f7dac4"
   },
   {
     "url": "books/road_thinkphp/Learn/URL_Rewrite.html",
-    "revision": "35d3576645ec53f1dc29bfc126c5f38e"
+    "revision": "c45a4cc2b6442aa59f5fb3423ac9c163"
   },
   {
     "url": "books/road_thinkphp/Learn/Virtual_Host.html",
-    "revision": "d7ee5270cda6c625c2d209499d79d326"
+    "revision": "d5972c0a391a3522a4b1fa6e89251b72"
   },
   {
     "url": "books/road_thinkphp/Model/Add.html",
-    "revision": "5749e55841aa357113b8fb54bfb7fc4f"
+    "revision": "c617f2bc03446e1a2b062fd833846d2f"
   },
   {
     "url": "books/road_thinkphp/Model/AutoComplete.html",
-    "revision": "93b99aeb001473ecb15718a4da5b4281"
+    "revision": "3b9193c130f130d310a1765600bc47cd"
   },
   {
     "url": "books/road_thinkphp/Model/Constructor.html",
-    "revision": "497e8663164bee2f8835e838c4f08a6d"
+    "revision": "82830221da39c9f97f243a383680e5ee"
   },
   {
     "url": "books/road_thinkphp/Model/Delete.html",
-    "revision": "1ee74d0c758d641b4e871068eff948b0"
+    "revision": "1b200a684bbd6b3430903ee5ab26513d"
   },
   {
     "url": "books/road_thinkphp/Model/Event.html",
-    "revision": "6a26e0572ac07175b1bb8ce77b3e39d6"
+    "revision": "70f2167f121562b2c1ed7ab122d93566"
   },
   {
     "url": "books/road_thinkphp/Model/Get.html",
-    "revision": "f4071240378258293f5aff26b7b3c52b"
+    "revision": "37f7a699dab8203f6f183529e89600a9"
   },
   {
     "url": "books/road_thinkphp/Model/index.html",
-    "revision": "08ca33f30bc2b7616ab71c4c1b313910"
+    "revision": "3d9cd021293d71a79c9f6d5454b19128"
   },
   {
     "url": "books/road_thinkphp/Model/Init.html",
-    "revision": "4bb168aacd748b4b888b4bbe230bdf1e"
+    "revision": "bd7521022179e804d7bb3ed6598c4314"
   },
   {
     "url": "books/road_thinkphp/Model/Query.html",
-    "revision": "cf605224ddabf37f883e6ef939315f4e"
+    "revision": "6d2b4f12496541f00442133433744f15"
   },
   {
     "url": "books/road_thinkphp/Model/Range.html",
-    "revision": "22939e4e5498f8df73ba1becef12bc85"
+    "revision": "8831d3524ef35d12a60c1edd99faed3d"
   },
   {
     "url": "books/road_thinkphp/Model/Set.html",
-    "revision": "fe5a2ff00b6be96798506d174e508a05"
+    "revision": "c21100fc44b37190b1ec9f704147435b"
   },
   {
     "url": "books/road_thinkphp/Model/SoftDelete.html",
-    "revision": "042485f59d283571361491b984e80f52"
+    "revision": "c2263a77698c5209f1be5c5b6c02945f"
   },
   {
     "url": "books/road_thinkphp/Model/Timestamp.html",
-    "revision": "b96304e3d89c196f1d10d4e74b305ec7"
+    "revision": "9045396e392bf7b1c6d3331f27de6f2d"
   },
   {
     "url": "books/road_thinkphp/Model/Transform.html",
-    "revision": "aa55283a4d348fd2eee6d4530fea6190"
+    "revision": "c31e4797be7e894a3838c63ffe4f2d2d"
   },
   {
     "url": "books/road_thinkphp/Model/Union.html",
-    "revision": "fa0cdde352998af73944c7804bb4ada4"
+    "revision": "a1c0c57693a40d2fa6a12289fd813784"
   },
   {
     "url": "books/road_thinkphp/Model/Update.html",
-    "revision": "f4b6a05fb54e880ca26558b2d15e3cee"
+    "revision": "93706ff6c6591af1019a4a9ff4a27eb6"
   },
   {
     "url": "books/road_thinkphp/Proxy/Binding.html",
-    "revision": "3c397bfbf28d9f9a73fd2b790e9201d6"
+    "revision": "c681c5d14416d9a90b3b72ab8b401089"
   },
   {
     "url": "books/road_thinkphp/Proxy/Core.html",
-    "revision": "a143f615911068b24d78a36c2083b89b"
+    "revision": "41ec4a3e758147bb34b21603ce679ef3"
   },
   {
     "url": "books/road_thinkphp/Proxy/index.html",
-    "revision": "ec4dc603b713889752dd48ecb40c204f"
+    "revision": "b85b9330092edf993d6fbb14bf0e256b"
   },
   {
     "url": "books/road_thinkphp/Reference/Assistant.html",
-    "revision": "8dc5cf936329303791933d800f1ee812"
+    "revision": "5dcb9a5a2549a6ffa79b70c44f6266f6"
   },
   {
     "url": "books/road_thinkphp/Reference/Console.html",
-    "revision": "63ba8212c3317006ca17e98351bae8bd"
+    "revision": "a0db35c099d518396dbee53446d8958e"
   },
   {
     "url": "books/road_thinkphp/Reference/Constant.html",
-    "revision": "280b7d35cc8cb8b6cfa9f26a506dd2f1"
+    "revision": "8ff24be22fbefc5ad0cd3d2a79a2ce7f"
   },
   {
     "url": "books/road_thinkphp/Reference/Debug.html",
-    "revision": "fd07b08960969e1017d47026107ecc18"
+    "revision": "6b9cf25df7fffdbc5495d1330ffe608e"
   },
   {
     "url": "books/road_thinkphp/ReqRes/Header.html",
-    "revision": "e0b52239146439ce3fb4eb79a5dadff3"
+    "revision": "e84feb48ec428baa9a676144f1c27371"
   },
   {
     "url": "books/road_thinkphp/ReqRes/index.html",
-    "revision": "c3396bafdcb110b9d3b58915f642bf76"
+    "revision": "7e6b6e719059a350fd4b2376d9ff01d3"
   },
   {
     "url": "books/road_thinkphp/ReqRes/Inject.html",
-    "revision": "e89d1a78c1d4561fed234d08b0b4f167"
+    "revision": "6c9112c346a4f6164cde86f5249f9f05"
   },
   {
     "url": "books/road_thinkphp/ReqRes/Request_Info.html",
-    "revision": "242c6f771a2d962a78c60a466f21be80"
+    "revision": "1d7bc7bcf67a47711e1d4988b947befc"
   },
   {
     "url": "books/road_thinkphp/ReqRes/Request_Parms.html",
-    "revision": "19b66479942a5ced2a6ffa55e2ab3615"
+    "revision": "0046b43d69c983952fd7303b39b4384c"
   },
   {
     "url": "books/road_thinkphp/ReqRes/Request_Variable.html",
-    "revision": "2857b10026212741ef1a2b8c13973082"
+    "revision": "29b48fdf0bfd21ba71de0943c4ede037"
   },
   {
     "url": "books/road_thinkphp/ReqRes/Request.html",
-    "revision": "3d8b3f9618b3a96e18b030d9f1fb6ed7"
+    "revision": "8c695e34716208d5d4005283f3a38a50"
   },
   {
     "url": "books/road_thinkphp/ReqRes/Response.html",
-    "revision": "731e3ec05d0206fcb624d8325d36e71e"
+    "revision": "34d5d5ed3cbf2f27bb5b84a96189a4d5"
   },
   {
     "url": "books/road_thinkphp/Route/Closure.html",
-    "revision": "51b3aad9b96e3514c6afa39be0c200ec"
+    "revision": "35307990ecb7606df34639e272934c7c"
   },
   {
     "url": "books/road_thinkphp/Route/Dynamic.html",
-    "revision": "23d3e9fbc32eb0226e55925e922c25c1"
+    "revision": "d7ab36d591090e914e71a14241b8eace"
   },
   {
     "url": "books/road_thinkphp/Route/index.html",
-    "revision": "5779b3ce25e4661178cce0c1859a1884"
+    "revision": "21e0b5b90d54fa8397935ad1ad2f9b15"
   },
   {
     "url": "books/road_thinkphp/Route/Match.html",
-    "revision": "eae0ea9aec8ab5974185fca86a54bda2"
+    "revision": "e8a4de73bcba8befcd2022097406f21f"
   },
   {
     "url": "books/road_thinkphp/Route/Redirect.html",
-    "revision": "00df278fb0d082b40430f8ce7ceb552c"
+    "revision": "ccf46cd73a6e5eb04af74c081faa4206"
   },
   {
     "url": "books/road_thinkphp/Route/Rule.html",
-    "revision": "ed1002e3bdbb38864a7fdeb92e4f3e23"
+    "revision": "7e386f8fdfde43242218366b2d4ebc68"
   },
   {
     "url": "books/road_thinkphp/Route/URL.html",
-    "revision": "976eca82522f575b2d1f2fb62c2af664"
+    "revision": "87874fc4bf9c2ff37245600c718f588d"
   },
   {
     "url": "books/road_thinkphp/Validator/Controller.html",
-    "revision": "40fca6afa4981ef74810f99579059ae7"
+    "revision": "c5082038dcdbf7f3d7bbec7a1a510428"
   },
   {
     "url": "books/road_thinkphp/Validator/Custom.html",
-    "revision": "48b6347760c99f396c1827d34ae3e2c0"
+    "revision": "bbb9a314df5d5db5e6d1d6ebd83c5525"
   },
   {
     "url": "books/road_thinkphp/Validator/Facade.html",
-    "revision": "67706bd12fd17b4269344961ed39ad40"
+    "revision": "0b94e7d97b28c3bc7e5aeb394c166325"
   },
   {
     "url": "books/road_thinkphp/Validator/Independence.html",
-    "revision": "f9fd83b4b4738e6cc2750bb279871783"
+    "revision": "7e2b1a8cd0f563cc46a7976d9c991d43"
   },
   {
     "url": "books/road_thinkphp/Validator/index.html",
-    "revision": "688f208a69acda77306879f75a69f0d4"
+    "revision": "8b81b23743860b4b6595438c61a3e122"
   },
   {
     "url": "books/road_thinkphp/Validator/Rules.html",
-    "revision": "655a459762972f5e419e83f2bd19139e"
+    "revision": "99991aa92130533642ac34116cceae6f"
   },
   {
     "url": "books/road_thinkphp/Validator/Scene.html",
-    "revision": "1a1cebe3ce19d5b88b5d50eb0f7736a6"
+    "revision": "b6c6479501ad4553003926ccd8ba8ad0"
   },
   {
     "url": "books/road_thinkphp/View/index.html",
-    "revision": "b980e27d2c4c4a63331feb426ca0fc48"
+    "revision": "82bcfcb9d70a3c7db17166b7fda68087"
   },
   {
     "url": "books/road_thinkphp/View/Separation.html",
-    "revision": "eb57266b037cd7ab46151b5a201a3802"
+    "revision": "8cb382915d3dcfc5df123f00d4f70f18"
   },
   {
     "url": "books/road_thinkphp/View/Static.html",
-    "revision": "9a8566a02f1e2093a817fd80a09164be"
+    "revision": "f0095e0f8aa16b92a623f036a0f84b76"
   },
   {
     "url": "books/road_thinkphp/View/Tags.html",
-    "revision": "4d4f32617717e3dcb03d74a8fb27c63b"
+    "revision": "943d7be32c327cd858b431486cd903c9"
   },
   {
     "url": "books/road_thinkphp/View/Template_Config.html",
-    "revision": "f92dc8816da85e7aa7b67ce81ff993c5"
+    "revision": "1483cb301fc8677007a4e05ea3b5cc34"
   },
   {
     "url": "books/road_thinkphp/View/Template_Engine.html",
-    "revision": "d0485d1a52aaac3bc920d2ba29a7237d"
+    "revision": "dc9fce29a5170a75369b7655e5e77b39"
   },
   {
     "url": "books/road_thinkphp/View/Template_Example.html",
-    "revision": "4d6d998c537837ce68cf7756efe47b3a"
+    "revision": "65009fd074114e07335ec2b5df5aace3"
   },
   {
     "url": "books/road_vue/Animate/css_animate.html",
-    "revision": "fa0690de4fe239107ebc1c29c82d854e"
+    "revision": "3a003401f5f8431defb0dff7fcba6a49"
   },
   {
     "url": "books/road_vue/Animate/css_transition.html",
-    "revision": "8f08bee37fd677049d96217df1b0e366"
+    "revision": "e4bd5e2095d41586285bdeb1fffbdc9c"
   },
   {
     "url": "books/road_vue/Animate/duration.html",
-    "revision": "edd6781ba3d005a926f26af74817a5ac"
+    "revision": "55fdbd163a8b409acf5b140c5674bcab"
   },
   {
     "url": "books/road_vue/Animate/dynamic.html",
-    "revision": "2ffa22b65cfe36122b08617a99484da4"
+    "revision": "d80545a47b3296cc8a1747a72004b675"
   },
   {
     "url": "books/road_vue/Animate/index.html",
-    "revision": "6d5d58c93cc27df8ea19cf1c082c3708"
+    "revision": "40c2b5a5a9cbea0f4983dccf9e7bc569"
   },
   {
     "url": "books/road_vue/Animate/init.html",
-    "revision": "8bbba3700cdbdcc88915625d31b29b8a"
+    "revision": "b51727db6c82efd3df0b8a35551ddb58"
   },
   {
     "url": "books/road_vue/Animate/list_transition.html",
-    "revision": "8ac1a14f8bc513d1bd9e05dd51c78c45"
+    "revision": "489487fac388f8c2042e773fba3d0737"
   },
   {
     "url": "books/road_vue/Animate/multiple_component.html",
-    "revision": "d68c24373a306708443e21d1a7f7ff17"
+    "revision": "2ca0b5ebb6395db16d0bec5da8bf52a4"
   },
   {
     "url": "books/road_vue/Animate/multiple_element.html",
-    "revision": "b5b2af3115704782a02d8feeca048c69"
+    "revision": "dc928e5e3ff0db7ca20ce37d7531ee89"
   },
   {
     "url": "books/road_vue/Animate/reuse.html",
-    "revision": "960adc27699e9eb042f738c3d8b843f4"
+    "revision": "4a1c4d0d6a60f4c2873b9e4e46da816a"
   },
   {
     "url": "books/road_vue/Animate/single.html",
-    "revision": "4aeca757dd0d16f814ed55111302a380"
+    "revision": "0e1841396227bcb952b88ca4cdf32795"
   },
   {
     "url": "books/road_vue/Animate/status.html",
-    "revision": "df41a1194d6e6fca9becfabffb531e76"
+    "revision": "9dfd628d819aa471052797fbc4bfe8d2"
   },
   {
     "url": "books/road_vue/Animate/third_part.html",
-    "revision": "1e0bc1c5859c27020d0c5fa26e22f596"
+    "revision": "9f940898efcb9700de7b4ae22b6b102f"
   },
   {
     "url": "books/road_vue/Attribute/class.html",
-    "revision": "05c3f3ccb18e4a5ed504adb23cd16c22"
+    "revision": "91e593f41bcb62e206a5f33e6cf00667"
   },
   {
     "url": "books/road_vue/Attribute/index.html",
-    "revision": "041ac2a315368bfb9fdbe89a91c3eb8e"
+    "revision": "adb576a5d1ef1c257af697eea2eef36e"
   },
   {
     "url": "books/road_vue/Attribute/model.html",
-    "revision": "c38c225921303af747cffa6052d80745"
+    "revision": "4a9767ab6eb4bc5a83436a672410e697"
   },
   {
     "url": "books/road_vue/Attribute/style.html",
-    "revision": "87f4ec0ba7b3e78099fc7052feade3c6"
+    "revision": "cb7b431e5afc6f064d7fcf7077ef5c16"
   },
   {
     "url": "books/road_vue/Combination/directive.html",
-    "revision": "c69b0c78f1e9f04f7a054047e67a5d57"
+    "revision": "5679fa9a570f9854541755cec87a63c7"
   },
   {
     "url": "books/road_vue/Combination/filter.html",
-    "revision": "1103db6a9a25f30b39db9a6a4dcd7986"
+    "revision": "fb59782da35714dae5d3775551a2120d"
   },
   {
     "url": "books/road_vue/Combination/index.html",
-    "revision": "bf00d9d4cdc8e99f2db180beb41b7737"
+    "revision": "d2ee70700880ea9a567724558419c335"
   },
   {
     "url": "books/road_vue/Combination/mixins.html",
-    "revision": "094a4ec7fd7b96ab40aeb72ba7e98e41"
+    "revision": "cad173f299a3a5ea97bc3f4fd47a6f3f"
   },
   {
     "url": "books/road_vue/Combination/plugin.html",
-    "revision": "69344c5fac889529cb94029b92e15b62"
+    "revision": "22231ce4aacce129d9f2d8c4b8523291"
   },
   {
     "url": "books/road_vue/Component/async.html",
-    "revision": "ed5fa5e72c54e0812024e1b3a56dcd23"
+    "revision": "a11a4c98badcacc438bd79f1ea66908c"
   },
   {
     "url": "books/road_vue/Component/emit.html",
-    "revision": "9854989f0e3b1efe5cd28014191be5b8"
+    "revision": "1cfc69ceef4350fd952e5e827e2820b8"
   },
   {
     "url": "books/road_vue/Component/index.html",
-    "revision": "9c82fdd4e919079a4d830ac7a585a241"
+    "revision": "ae6f2516d74986aa375755ccf6aa54cb"
   },
   {
     "url": "books/road_vue/Component/is.html",
-    "revision": "4899bff4cdd4304be63bb74805f26576"
+    "revision": "cbe103cacae2a0e4c80e995814637ab8"
   },
   {
     "url": "books/road_vue/Component/name.html",
-    "revision": "72e6eb0440979986694575de4a47f332"
+    "revision": "d7dc1611e4eef4f7142f036c631bc2de"
   },
   {
     "url": "books/road_vue/Component/practice.html",
-    "revision": "b05b1e759ab0fc793100f9158a426fb0"
+    "revision": "352394f9f7e14bbb72ffc4c09af9aa46"
   },
   {
     "url": "books/road_vue/Component/prop.html",
-    "revision": "780d35cec3724293654a75f6867a2b16"
+    "revision": "e11b4054ed592e3b01dbfd93ae1a8695"
   },
   {
     "url": "books/road_vue/Component/recursion.html",
-    "revision": "6f51cd0a9a1f511a43156d2c4634a52f"
+    "revision": "396f95d98e9dc0fa6d2ea725c2bc25dc"
   },
   {
     "url": "books/road_vue/Component/register.html",
-    "revision": "b5c263ad3490936a3fbef0737ff15a42"
+    "revision": "59d27f2e8c089bdbac8356dbefbe1828"
   },
   {
     "url": "books/road_vue/Component/slot.html",
-    "revision": "39a5ac49c5c209a402ecfab1c40b4a54"
+    "revision": "b9d0bd45dd95871a1ba3e9ed24a5638a"
   },
   {
     "url": "books/road_vue/Event/btn_decorate.html",
-    "revision": "e89f9c6935aada95ad0b559f4ffd9a2d"
+    "revision": "0e3962e72e6b7e2a94cbf85911514642"
   },
   {
     "url": "books/road_vue/Event/event_decorate.html",
-    "revision": "15e569ad524b96ca28a1a1c0062718b2"
+    "revision": "f8db70d88f10b196715e7b1c4519dd8f"
   },
   {
     "url": "books/road_vue/Event/event.html",
-    "revision": "0665856d955f798acf7ec79a34d7bcf4"
+    "revision": "4d1276cedbff75aeac14e1735913a486"
   },
   {
     "url": "books/road_vue/Event/index.html",
-    "revision": "152b0239a6a406d04f89dc6de5929ae8"
+    "revision": "47b6ee388c60f60d7fa31c4705584dde"
   },
   {
     "url": "books/road_vue/Event/listener.html",
-    "revision": "ea9b165ecad2e93187ad727bf00d0ff7"
+    "revision": "f19fa79fb5e3690e8f7f1c9e192ef743"
   },
   {
     "url": "books/road_vue/Event/methods.html",
-    "revision": "6773c241aecc864d481c50262b46100f"
+    "revision": "62efd6ca8389da9778e73aa4c7b36f91"
   },
   {
     "url": "books/road_vue/Flow/index.html",
-    "revision": "c800351cb3ff453dfd9f60624f7c2dd6"
+    "revision": "7080ace33c3fd497c7c604e41a098158"
   },
   {
     "url": "books/road_vue/index.html",
-    "revision": "1447bec2be641ff883a7f12cc5e6b1a2"
+    "revision": "a76b9414e9a747e5cd68095e5420ab49"
   },
   {
     "url": "books/road_vue/Introduction/computed.html",
-    "revision": "5c4667e7f4f29ffcd4b62e5b9bc268ae"
+    "revision": "a6b229407b9fa3f96bde4a5b4a8d4d90"
   },
   {
     "url": "books/road_vue/Introduction/condition.html",
-    "revision": "34f37d75514a88492b52e291ae994e2c"
+    "revision": "0f06300611997b75d331e0c29234cece"
   },
   {
     "url": "books/road_vue/Introduction/data_and_mothods.html",
-    "revision": "764b623611d6c1d76d5e0d2073fb18b5"
+    "revision": "82afdd08a085872f40fc3aed6c182f49"
   },
   {
     "url": "books/road_vue/Introduction/index.html",
-    "revision": "fafa95d47c9f1b681a3ff9e63b6d16b2"
+    "revision": "bd23a3f445541d7d9a93cd49a29dffb9"
   },
   {
     "url": "books/road_vue/Introduction/install.html",
-    "revision": "51b3be3643ceb3dd8f593d50f829c52f"
+    "revision": "d8a6734cc51b36e6f56140e236865982"
   },
   {
     "url": "books/road_vue/Introduction/instance.html",
-    "revision": "37af38dd6b5314d69e2c3ce80bd6c93c"
+    "revision": "7f4ada2bfa9ea885944623767ea7abb0"
   },
   {
     "url": "books/road_vue/Introduction/lifecycle.html",
-    "revision": "a73ac9c90cb81ff3005d197953ccc9d9"
+    "revision": "4def88c9663d2a092dfbda2450dd063f"
   },
   {
     "url": "books/road_vue/Introduction/list.html",
-    "revision": "d87e55574754e8478195c601959b2ec3"
+    "revision": "990c615259fd326fc359199982e18d50"
   },
   {
     "url": "books/road_vue/Introduction/template.html",
-    "revision": "8e53747008dfd40a240c5248ba102b94"
+    "revision": "5b2ea0587dac2388e764dfb219d0cb08"
   },
   {
     "url": "books/road_vue/Introduction/update_inspection.html",
-    "revision": "704921064651acf175529a3662be03cc"
+    "revision": "6a24907330e02077bd3b94ea71b3dbc3"
   },
   {
     "url": "books/road_vue/Introduction/watch.html",
-    "revision": "f19a1611c569248fd08980362c3b48d8"
+    "revision": "3abf04ca51ad85286537262eb546791c"
   },
   {
     "url": "books/road_vue/Q&A/Vue_Data_Update_Views.html",
-    "revision": "0db06e00d65a112ec0a35b300bc56df8"
+    "revision": "fcf07e03e45a1f4515761f25b942b4da"
   },
   {
     "url": "books/road_vue/Q&A/Vue_Issues.html",
-    "revision": "7b84a0e8c867c2fab2f5394ceb371ae9"
+    "revision": "b7d19482fba37eb3771c947a0ed6a06d"
   },
   {
     "url": "books/road_vue/Q&A/Vue_No_Refresh.html",
-    "revision": "c46c8a9ecc70a83e6fc80c0b6e35b9a8"
+    "revision": "e7b78c9f279fbe9ff5fb22504cb4a405"
   },
   {
     "url": "books/road_vue/Response/dom.html",
-    "revision": "dcf173654104d6881ee3e1308f32856d"
+    "revision": "0d9b2fefe63ec1405d15c575b4fae00f"
   },
   {
     "url": "books/road_vue/Response/index.html",
-    "revision": "780d856e8339f34b95acde4c55b19429"
+    "revision": "b5baf82af9612104435011731990b0e7"
   },
   {
     "url": "books/road_vue/Response/principle.html",
-    "revision": "4ffd32d2e6fc28f7e6687f05107b3ffa"
+    "revision": "d0719266f212160380c2a5974ae6eefa"
   },
   {
     "url": "books/road_vue/Route/alias.html",
-    "revision": "df46bceb8876b162f46882e8a2b478af"
+    "revision": "0d863d954b36f59c1c457b561d609f77"
   },
   {
     "url": "books/road_vue/Route/dynamic.html",
-    "revision": "230da73d19e52122062c9e2632b07ccf"
+    "revision": "bf45977944e69dd25eb7521fd87731c9"
   },
   {
     "url": "books/road_vue/Route/fetch.html",
-    "revision": "bceb68fe57f07b6c7ddda4c7a893a2b8"
+    "revision": "f849de67791d5c2b8975d121fef170d2"
   },
   {
     "url": "books/road_vue/Route/guard.html",
-    "revision": "cfec374948a624e4327fd5738eca5fdb"
+    "revision": "76e2cacf1e704b6c55b3f79c6a5b6b12"
   },
   {
     "url": "books/road_vue/Route/history.html",
-    "revision": "0726889b932197bbd1206c7c7d6d65de"
+    "revision": "e0a3fc1c7f7b71a8b876ee0025c34412"
   },
   {
     "url": "books/road_vue/Route/index.html",
-    "revision": "92c8ddf7d18a2fd179e3bc7751130112"
+    "revision": "929c01f4efe90f3c1934f39bb296b212"
   },
   {
     "url": "books/road_vue/Route/lazy.html",
-    "revision": "9a1b039328533ccb99fc0aa5b4e1eaf0"
+    "revision": "481073ceaae644ed117ecd213ed8e369"
   },
   {
     "url": "books/road_vue/Route/meta.html",
-    "revision": "1c935e1773ef634b2187cb9ec45c0904"
+    "revision": "af63a4d490711c8a03f9c2073d7e112d"
   },
   {
     "url": "books/road_vue/Route/nest.html",
-    "revision": "58cfb4914ce8434946bc199b7ead772f"
+    "revision": "44b8ce147af8d7f33b7f55b799e7d27a"
   },
   {
     "url": "books/road_vue/Route/redirect.html",
-    "revision": "f3824fed8bb085aba44546489ea64e6e"
+    "revision": "201905d7f28bee296c0905f84f20d347"
   },
   {
     "url": "books/road_vue/Route/scroll.html",
-    "revision": "b1b27b5652f167aaa27bdffae14cc8ee"
+    "revision": "f894a0ac6fafb974356c216763e4ff4d"
   },
   {
     "url": "books/road_vue/Route/transition.html",
-    "revision": "451a8bc43ae96157db312f0e0bb474e4"
+    "revision": "39ee191ad48a17ce58f79b45994ff903"
   },
   {
     "url": "books/road_vue/Route/view.html",
-    "revision": "8e44dbf03167bebeec955e711811f1f4"
+    "revision": "2781ea2e70d84aa7255501e062a90f03"
   },
   {
     "url": "books/road_vue/Route/watch.html",
-    "revision": "385c73d314211abd1435fcb857534811"
+    "revision": "b611e3f34d8b2fb042e4efabf1da654d"
   },
   {
     "url": "books/road_vue/Vuex/action.html",
-    "revision": "405420cf54d6c2b66818928f6f8b25e9"
+    "revision": "4539ef66b3b68e8b116286346402ddb8"
   },
   {
     "url": "books/road_vue/Vuex/getter.html",
-    "revision": "9eadc52b53f2da29190f52ee0ea0037d"
+    "revision": "26fa0bc253e94a0fda0165105b918c0e"
   },
   {
     "url": "books/road_vue/Vuex/index.html",
-    "revision": "78d806408fa20a0a2edb69463a55017c"
+    "revision": "cbc387e45fc771a1220f17f64b57ea03"
   },
   {
     "url": "books/road_vue/Vuex/module.html",
-    "revision": "31e9d69eba2445425a46ffcb0ac69e91"
+    "revision": "6121be19ece1339a68a1a70894724ce1"
   },
   {
     "url": "books/road_vue/Vuex/mutation.html",
-    "revision": "7f7b3b1c0d1e3822e9f67c4c2de0ba17"
+    "revision": "767fe9ccb37ba67f67545c2a2d1bc5c1"
   },
   {
     "url": "books/road_vue/Vuex/state.html",
-    "revision": "2406827f406aa1b7e658234c9fd0eef1"
+    "revision": "0eaa4d6585464e928892a32347375eb8"
   },
   {
     "url": "cover/JavaScript.jpg",
@@ -3689,91 +3689,91 @@ self.__precacheManifest = [
   },
   {
     "url": "favorite/config/vscode.html",
-    "revision": "53df1b329ae4ebf8440bdb4e2aea14d5"
+    "revision": "67601b9d0faf903f83dfea7bd8fcf8a0"
   },
   {
     "url": "favorite/docs/Plugins_Markdown_It.html",
-    "revision": "3cba09f94abb928ccb5a7e1be7fed44b"
+    "revision": "c8fc41076cdf8cc781766a18b6f57061"
   },
   {
     "url": "favorite/docs/Plugins_VSCode.html",
-    "revision": "1fbed2c479b29adafa4b6969ede63cde"
+    "revision": "143bd54c5e11b039eca228e76bfbefd2"
   },
   {
     "url": "favorite/docs/Software_Automation.html",
-    "revision": "ab3b0afc2f94ade8725e70991e39fb6c"
+    "revision": "f28fbd48d5c5bbf7df0eaddcea0c04a9"
   },
   {
     "url": "favorite/docs/Software_Editor.html",
-    "revision": "88f1b24a5538afa4ef3f7ed528ac06c3"
+    "revision": "36c77181d176313356160e5b5a0780d2"
   },
   {
     "url": "favorite/docs/Software_Frontend_CSS.html",
-    "revision": "f28e4ae66dc74f005748a1b52167c486"
+    "revision": "64476fcb092b110bc1dc3e9943651cc8"
   },
   {
     "url": "favorite/docs/Software_Frontend_Package.html",
-    "revision": "394d279ae2de58929ec535fd74efb8ec"
+    "revision": "35ac4af7939dac8cd73bda10ba525501"
   },
   {
     "url": "favorite/docs/Software_Frontend_Template.html",
-    "revision": "7331403bc5ac39eeb25ebdcbc5e97844"
+    "revision": "214817baf9e0c9e91c16bb484e9f1c95"
   },
   {
     "url": "favorite/docs/Software_Frontend_Verify.html",
-    "revision": "b582c5fde40ba87b56c21fff6e4bb0d5"
+    "revision": "d87f0c7735b7314c2ec718a04e3c2b82"
   },
   {
     "url": "favorite/docs/Software_MacOS.html",
-    "revision": "66b8624e6d256391c67bae97196a1a1a"
+    "revision": "0a9bba9ab5c9f0f33d3fc97731212d4e"
   },
   {
     "url": "favorite/docs/VScode_Settings_Sync.html",
-    "revision": "efa0c7e94235ff82ee9d75a46196cf9c"
+    "revision": "5e71dfeabb40fed9b9e92531e728eea2"
   },
   {
     "url": "favorite/docs/Website_Collection_Book.html",
-    "revision": "a3051310dd8ff953032b02ceca8ec719"
+    "revision": "07fbabe8060dc867a2c290899a4ac70d"
   },
   {
     "url": "favorite/docs/Website_Collection_Build.html",
-    "revision": "6adfa9865c2ebbda15967af4058380d0"
+    "revision": "bc9412e1a5fe44f66248690eca497a12"
   },
   {
     "url": "favorite/docs/Website_Collection_Common.html",
-    "revision": "f77cf1ed837ca24a02a03e154cd64788"
+    "revision": "a23d23aea211abd2bebe68dcb1eab6fc"
   },
   {
     "url": "favorite/docs/Website_Collection_Frontend.html",
-    "revision": "6b1205d808009def9b1b2d65666e5fda"
+    "revision": "5cc2b98fa832e2c47df9169573d17e03"
   },
   {
     "url": "favorite/docs/Website_Collection_Mobile.html",
-    "revision": "4767ab58f952c6241ed1a6a313d4f1df"
+    "revision": "5d88578d77b3d2a3728b047f60084cf5"
   },
   {
     "url": "favorite/docs/Website_Collection_Node.html",
-    "revision": "805f75b262198c6939be216df3373102"
+    "revision": "76876a10e84896fcb49dccf29bf2f751"
   },
   {
     "url": "favorite/docs/Website_Collection_PHP.html",
-    "revision": "a624161fcb35ec170cafba914bcebf28"
+    "revision": "8f334f8752fac15d5cb80b7a68049d7a"
   },
   {
     "url": "favorite/docs/Website_Collection_Vue.html",
-    "revision": "06cb12f55342e4f5eb9e865a2a53441f"
+    "revision": "ef5547d636d84dc98c77b5a91cb3e8e7"
   },
   {
     "url": "favorite/docs/Website_Information.html",
-    "revision": "a4a3c58fc0b9206468081b467b962f88"
+    "revision": "ec84556df991abb0312ad189d11c341f"
   },
   {
     "url": "favorite/index.html",
-    "revision": "0085662fa814fbae19a91793bef3eb44"
+    "revision": "f3ba9f4f813adbebb8754e846f85e8a3"
   },
   {
     "url": "index.html",
-    "revision": "f160835912b900508dbeafea64e0d19d"
+    "revision": "9832ada424d687b8a1802810c0deaaa0"
   },
   {
     "url": "logo.png",
@@ -3781,35 +3781,35 @@ self.__precacheManifest = [
   },
   {
     "url": "note/docs/A_Central_Discipline_Life_Science.html",
-    "revision": "88f76e92959b927d30fbee929eea9abd"
+    "revision": "25a056a023f9a5fcf50a8634589affcb"
   },
   {
     "url": "note/docs/Luck_is_the_Universal_Passport.html",
-    "revision": "9fc12f79e02a5efc28f3720468f14687"
+    "revision": "610bd01bb839167f2726c8eca7c9c2c0"
   },
   {
     "url": "note/docs/Play_with_the_Best.html",
-    "revision": "6ae5244397202934adbfd4d283265bc7"
+    "revision": "40bdf521eb365657115bfa9088e91887"
   },
   {
     "url": "note/docs/Review_Life_3.0.html",
-    "revision": "5f1a98c1cb6c195ed2681990018d77a9"
+    "revision": "72f61da11164d9e11a7582be99eba5be"
   },
   {
     "url": "note/index.html",
-    "revision": "2f6671b2e54c6af5a9c1271e6778bc7a"
+    "revision": "71e2568085ab7259ed915c24c471b9f5"
   },
   {
     "url": "single/about_me.html",
-    "revision": "9cb2527050a4eb182256514cccc2717c"
+    "revision": "adec7a36433bf75753ad20422cc19543"
   },
   {
     "url": "single/all_article.html",
-    "revision": "34b8434e10f4afb4cca4ab967494af36"
+    "revision": "f5c8b9822758e11354b15dc3701d29a7"
   },
   {
     "url": "single/welcome.html",
-    "revision": "2faa3406a42f2d46f6c8959647ca4a10"
+    "revision": "88061a3e8b49f4aa00fc9e841903d82b"
   },
   {
     "url": "tech/001.png",
@@ -3881,511 +3881,511 @@ self.__precacheManifest = [
   },
   {
     "url": "technology/automation/webpack.html",
-    "revision": "660aa25f6a8569d8e8cc922130466367"
+    "revision": "5bb4935f3194f7b982017c28c65adf80"
   },
   {
     "url": "technology/back-end/node.html",
-    "revision": "a5c1edb6f5806cd55583efac00f64439"
+    "revision": "eea5ac68ab5ba9938a0d2d5d92b25226"
   },
   {
     "url": "technology/back-end/node/Node_Build_Chat_Room_with_socket.io.html",
-    "revision": "c2575f51d82cc17f5ab224974cef6853"
+    "revision": "947ad70384654eb381925b19f03e8e58"
   },
   {
     "url": "technology/back-end/node/Node_Explorations_on_NPM_and_Yarn.html",
-    "revision": "2d59c04c1cc90ef2015fd0922a29b3b3"
+    "revision": "81ae641208e08ba84dfa2da8fd3ea7be"
   },
   {
     "url": "technology/back-end/node/Node_Express_Application_Framework.html",
-    "revision": "74555d82168f624a38f2f4f240e757f5"
+    "revision": "03a804c05ed1bf93b3db5e8d504296c2"
   },
   {
     "url": "technology/back-end/node/Node_New_Node_ServerFramework_KOA.html",
-    "revision": "df892a5908090dfe033b18001c761c7f"
+    "revision": "782405f0d23cf3aa267d1ee5388fa537"
   },
   {
     "url": "technology/back-end/node/Node_Publish_NPM_Package.html",
-    "revision": "d037d99ec0cd47671c3ae16f9f1726d0"
+    "revision": "8b50e2af1231840f6a7e9a85422918b8"
   },
   {
     "url": "technology/back-end/php.html",
-    "revision": "95c680c638a5e267353f10c3200cc333"
+    "revision": "6a2f20559e2104085b76e49cc0231976"
   },
   {
     "url": "technology/back-end/php/Composer.html",
-    "revision": "28a9aaf5a6f1995e445adbf23df52562"
+    "revision": "95b792d9c16f5086a28a0c1b5de77e4f"
   },
   {
     "url": "technology/back-end/php/CURL_Error_Cacert.html",
-    "revision": "bf83379072615c62543087dc2b0f21e9"
+    "revision": "f0e4023a1555191e69a83ff76522228d"
   },
   {
     "url": "technology/back-end/php/Get_Data.html",
-    "revision": "93b00fd8421487c11b634a1655c7ff18"
+    "revision": "18fca84afa5a5122f5f4dc5cc3f0cdb4"
   },
   {
     "url": "technology/back-end/php/Local_API.html",
-    "revision": "011d6d3d1b7bf87283c5e2f5946c27b7"
+    "revision": "b82e050b70edcd50d67ed0c6490e6619"
   },
   {
     "url": "technology/back-end/php/Register_Tree.html",
-    "revision": "3af185927e11509606868d99f54274ba"
+    "revision": "9c02b58ae8627efa9b223bfebff3e19e"
   },
   {
     "url": "technology/back-end/thinkphp.html",
-    "revision": "22d70b1bd52551ea7d9d57882dade621"
+    "revision": "08eea3b0c165a179dafd63ceca082e94"
   },
   {
     "url": "technology/database/mysql.html",
-    "revision": "b06616f2970cb931204f7451b9135071"
+    "revision": "27488e39540bcb7d98ea671bfeef5e6b"
   },
   {
     "url": "technology/database/pages/Charset.html",
-    "revision": "f2e3c6983da1caf9b4cf666eef7c79e1"
+    "revision": "a321d14ebde4510310cd1a29f4f8e1a6"
   },
   {
     "url": "technology/database/pages/Command_Line.html",
-    "revision": "355cee720aa7ded32c3493a2d0f316e7"
+    "revision": "d47f1e5508b520091edf9d619d638bb8"
   },
   {
     "url": "technology/database/pages/Common_SQL.html",
-    "revision": "2eadfa34afa3f0d46da121743075fbfb"
+    "revision": "89df6136f8da975adf6ee0101f3af230"
   },
   {
     "url": "technology/database/pages/Create_Table.html",
-    "revision": "0119eae7235212b45ed472584fd1ea3b"
+    "revision": "3c31e13cf7c922bc8363b240587022ad"
   },
   {
     "url": "technology/database/pages/DataType.html",
-    "revision": "e2c521637afd8382db994dd493344a0a"
+    "revision": "514272442942483cc86d4715fda76d38"
   },
   {
     "url": "technology/database/pages/Delete_Drop_Truncate.html",
-    "revision": "22cb649befc93e980facf317cf65cc33"
+    "revision": "8a49f1eca3ac04031f37056bb978280b"
   },
   {
     "url": "technology/database/pages/Function.html",
-    "revision": "751728895db911f8416ab39e654ea20c"
+    "revision": "906ae78beb93466439dda0667a67d877"
   },
   {
     "url": "technology/database/pages/Join.html",
-    "revision": "f21a70affbf0b42be693704fb3617980"
+    "revision": "a2db525f238acba074528f3a248fa77a"
   },
   {
     "url": "technology/database/pages/Limit.html",
-    "revision": "417ad8964b66f5b903f83cc92e653ffd"
+    "revision": "f24b74a0dfb5d53a2648d0da19d41f19"
   },
   {
     "url": "technology/database/pages/Model.html",
-    "revision": "33137907c18992ff2337977519eebb0c"
+    "revision": "3876f59210a853e338d3a2461dc5c466"
   },
   {
     "url": "technology/database/pages/Procedure.html",
-    "revision": "daad67b00b09ab7e29444c0f8c927b03"
+    "revision": "cfa32bfcfc04088b56bc0308a4a219b5"
   },
   {
     "url": "technology/database/pages/Transaction.html",
-    "revision": "2f2d7ef9b43980dfdea87fabb54eeab5"
+    "revision": "3870a04f77d621dfa53f264f92b49ee9"
   },
   {
     "url": "technology/database/pages/View.html",
-    "revision": "56f2cb58c55c1b3357dbb0693272db41"
+    "revision": "827a62ef8e1fd3eecafb58c27204fa57"
   },
   {
     "url": "technology/front-end/css.html",
-    "revision": "d33101495720e8681c2f4dcfa92ea222"
+    "revision": "fb46f11a7ce4fba54632f3bc6dca6d0a"
   },
   {
     "url": "technology/front-end/css/CSS_Detail_for_Css_Units.html",
-    "revision": "c4821e187e10269094c4642bb76ab93f"
+    "revision": "1bd60387570de1ac543332baad821612"
   },
   {
     "url": "technology/front-end/css/CSS_Effect_of_Angle.html",
-    "revision": "5ad9738dbace69be1290f056ff41bc66"
+    "revision": "7d6812940b0b3a88559f93a7564f22d6"
   },
   {
     "url": "technology/front-end/css/CSS_Grid_Layout/Grid_Areas.html",
-    "revision": "0806cab910c3ff9ac5e88083dd1c54eb"
+    "revision": "1cc8f0e41a628a5c620517f02f1052d7"
   },
   {
     "url": "technology/front-end/css/CSS_Grid_Layout/Grid_Containers.html",
-    "revision": "90870fa73371dd4f4256308717c18394"
+    "revision": "13dbdae58f65bce71a8c68e135b7704a"
   },
   {
     "url": "technology/front-end/css/CSS_Grid_Layout/Grid_Items.html",
-    "revision": "7aece71b1f23d7249fc0742f780a7631"
+    "revision": "4ea6e3723e0bb1a8351bb3847b7ab8b6"
   },
   {
     "url": "technology/front-end/css/CSS_Grid_Layout/Grid_Lines.html",
-    "revision": "35fb716d5034e1ecc91db392cfcd15cd"
+    "revision": "f5340e459275ff515391b0610830f35b"
   },
   {
     "url": "technology/front-end/css/CSS_Grid_Layout/index.html",
-    "revision": "0c26e9c4028f45bce16251e5786f1dcc"
+    "revision": "81965be53b65011f9b97024ecc4594b9"
   },
   {
     "url": "technology/front-end/css/CSS_Grid_Layout/New_Value.html",
-    "revision": "baa7548da227da7cb501074473abd3fc"
+    "revision": "e472611a8d0b8cd92fdcb16c16006fef"
   },
   {
     "url": "technology/front-end/css/CSS_Grid_Layout/Reference.html",
-    "revision": "166113595528fffa306b9efafac57de7"
+    "revision": "16f55aed95f01f6e309c69dab317f54e"
   },
   {
     "url": "technology/front-end/css/CSS_Image_Procesing_Filter_and_Mix_Mode.html",
-    "revision": "ed5d055332db241b9c530175dd167ca5"
+    "revision": "0458b4fddc24ba02b495910c65e3a160"
   },
   {
     "url": "technology/front-end/css/CSS_Image_Processing _Gradient_and_Crop.html",
-    "revision": "62413cc35696cae965e4d9e754fb6dd3"
+    "revision": "34c8a1c0a34e672186265a1545107499"
   },
   {
     "url": "technology/front-end/css/CSS_Mobile_Scroll.html",
-    "revision": "39b3f3ba2685642fbe44905dd39a1ca0"
+    "revision": "faf7d068e4b14c04637338176a5420dc"
   },
   {
     "url": "technology/front-end/css/CSS_Use_Overflow.html",
-    "revision": "0ebce985bac7807a407d39ac9023564c"
+    "revision": "3c4a573cbe0b8a65b5ae792cdaab16f6"
   },
   {
     "url": "technology/front-end/frontend.html",
-    "revision": "a1fc19074d455186b3ad6a737ff95cfe"
+    "revision": "61c3724548855c69eded5f1e746ae4ea"
   },
   {
     "url": "technology/front-end/frontend/Gulp/gulpfile.html",
-    "revision": "fa97f6af03ef3a3e71a166de44fa745a"
+    "revision": "f5233db3cab0d4012049ea472ff71274"
   },
   {
     "url": "technology/front-end/frontend/Gulp/index.html",
-    "revision": "baf4bc5918ccd202a9609a3effd97b7c"
+    "revision": "33d107731b2d73c60131a51281cbcf22"
   },
   {
     "url": "technology/front-end/frontend/Gulp/option.html",
-    "revision": "0c648ff255be0202fee840ce6ed40b32"
+    "revision": "227b96eaecc0b60cbfc64a8aa4e3acf8"
   },
   {
     "url": "technology/front-end/frontend/Gulp/pattern.html",
-    "revision": "484122af3cf4510bef908185d4a2330f"
+    "revision": "92da8636021bd371309a5cb28b1a2fcd"
   },
   {
     "url": "technology/front-end/frontend/Gulp/plugins.html",
-    "revision": "3338c98c010f74e3cfd5853dcc8a1855"
+    "revision": "d4ab29e559bcd8a0dfd37e4a62ef5aa4"
   },
   {
     "url": "technology/front-end/frontend/Gulp/reference.html",
-    "revision": "5308aeddfe4ab723bd3168ca4aa79d30"
+    "revision": "b0f2c58594aae7b3497f8b66ecbcc8c2"
   },
   {
     "url": "technology/front-end/frontend/Gulp/sync.html",
-    "revision": "76301ec18142052d84c3d11142ba11b6"
+    "revision": "f3b5ff0226c2e53565e5ec7560251d7f"
   },
   {
     "url": "technology/front-end/frontend/Gulp/usage.html",
-    "revision": "878b9ffaea31208e1b4a2331056f1045"
+    "revision": "a9ae6dc17a8c5d0225fe4774f03d9164"
   },
   {
     "url": "technology/front-end/frontend/Pug/basis.html",
-    "revision": "66613229fd66cadd2ccb35b7f004bc8d"
+    "revision": "6c8cdd86e8891ed4bb0bd1361721bcae"
   },
   {
     "url": "technology/front-end/frontend/Pug/extend.html",
-    "revision": "b3d7265f62e6a70e39f49e455e12660d"
+    "revision": "6fb1057d58830952fd3aff9edb34ea80"
   },
   {
     "url": "technology/front-end/frontend/Pug/flow.html",
-    "revision": "821733c1ee458efb13ff550fadf660ce"
+    "revision": "e65870dab6922aed6374be1589ee865b"
   },
   {
     "url": "technology/front-end/frontend/Pug/include.html",
-    "revision": "fcfd66a645f082046db6f2782737ded2"
+    "revision": "8e3408c89e06a7f90a6d91830bbb52c8"
   },
   {
     "url": "technology/front-end/frontend/Pug/index.html",
-    "revision": "9f1244c47637f3b2ef6d41abfe6784df"
+    "revision": "35e369c9d908cfd80020f3fd690e465d"
   },
   {
     "url": "technology/front-end/frontend/Pug/mixins.html",
-    "revision": "fa5781b4e251dc0261a1bd0aeae87712"
+    "revision": "8c602ee0ab21ff4d7d7278f0d5e2917b"
   },
   {
     "url": "technology/front-end/frontend/Pug/reference.html",
-    "revision": "8f33687d9b91598434c3b5ae193af8e1"
+    "revision": "a2f54b0bea1fcf247524c27ab96fec52"
   },
   {
     "url": "technology/front-end/html.html",
-    "revision": "9fd5f405b5131bea9df3818449e67029"
+    "revision": "1c1e825ba80cec518c711ecade5c3104"
   },
   {
     "url": "technology/front-end/html/HTML_Dragable_Elements.html",
-    "revision": "20bb6b2fae4d64a264f7546202f944a6"
+    "revision": "c0ce2ce891f299e2276739c59e6f35e5"
   },
   {
     "url": "technology/front-end/js.html",
-    "revision": "748b7f36ec2c8ad64fdfec5d8dc0818f"
+    "revision": "b4214473707fad096c6b012f54ab9479"
   },
   {
     "url": "technology/front-end/js/JS_Array_Knowledge.html",
-    "revision": "4add912ea79065c8cd8b662ced68dca8"
+    "revision": "48e7f9b80b9bc826e29cd42eef25c867"
   },
   {
     "url": "technology/front-end/js/JS_Array_Map.html",
-    "revision": "4125c4df5b318e162ba877d14a25403a"
+    "revision": "a5e7e3c0d94418ce773e61b291085965"
   },
   {
     "url": "technology/front-end/js/JS_Array_Reduce.html",
-    "revision": "1952d60f7fbc7e7ce534cf2e0e0449a2"
+    "revision": "2d2489bfd194bbfc1decac2976a6f2d6"
   },
   {
     "url": "technology/front-end/js/JS_BigDecimal.html",
-    "revision": "29e1b1024231a65ba236496a4cc301c7"
+    "revision": "4b384432b99cf87cef0e07c2867bd598"
   },
   {
     "url": "technology/front-end/js/JS_Collection_Objects.html",
-    "revision": "3f12661dfc3f7b632a7bc45d203886e0"
+    "revision": "aa7cbec6470f172d1b9df58bb0b83c86"
   },
   {
     "url": "technology/front-end/js/JS_Comprehension_Blob_Base64.html",
-    "revision": "4f124117e9073aba08765c55bc91cf12"
+    "revision": "37ed3b457b8975ee84847a220486a7e0"
   },
   {
     "url": "technology/front-end/js/JS_Explore_XMLHttpRequest2.html",
-    "revision": "dd1adcd3eff65c0385a92896cdc3a00a"
+    "revision": "a678b9e1c61186bf4b98dc475daa1794"
   },
   {
     "url": "technology/front-end/js/JS_Module.html",
-    "revision": "c9420f5e823577315987e8abe342aa52"
+    "revision": "f3fef0bc6e24da683d9142fb5649307f"
   },
   {
     "url": "technology/front-end/js/JS_Object.html",
-    "revision": "36dd7bcb37585e02bdf2495e239ee2e9"
+    "revision": "5a05200555e6a4a74a6e54848ee6cec3"
   },
   {
     "url": "technology/front-end/js/JS_the_Application_of_RequestAnimationFrame.html",
-    "revision": "37714b48d309c1a7b4b7c3a1dc505835"
+    "revision": "c5bff1676b50bfcb2fe67fe4161efcb9"
   },
   {
     "url": "technology/front-end/js/JS_This.html",
-    "revision": "8058d95a8d1e3a308c26f2632f8fb9af"
+    "revision": "1ac1bdbf2d7482f291cc0dbd78224b26"
   },
   {
     "url": "technology/front-end/vue.html",
-    "revision": "b7a2bac1c2ae41f83d60f4b6aae7b6ae"
+    "revision": "363f360e5a0c202fdc78e23f6ac11c1d"
   },
   {
     "url": "technology/index.html",
-    "revision": "0fb2e53df0a22329ac53540ad5fbb4fe"
+    "revision": "ea633b1ca2319a6a3cd90acde73ecf8d"
   },
   {
     "url": "technology/other/linux/no_ipconfig.html",
-    "revision": "601953c8d1931f069a34128c7f357777"
+    "revision": "1851df148bddd8f15fb5681cfd5bc447"
   },
   {
     "url": "technology/other/linux/rm_trash.html",
-    "revision": "bb34faf632639104e0d65986a73e3d3e"
+    "revision": "4eabc2dbd45e987cf70754d63cc683c6"
   },
   {
     "url": "technology/other/linux/service_docker.html",
-    "revision": "44cf5de112df8ee6fc45ffc1dec701e6"
+    "revision": "35c29db93f80dd9f2bc143bed759aee1"
   },
   {
     "url": "technology/other/linux/Service_FTP/command.html",
-    "revision": "7f27f70358117d29e8d946e3d8a80249"
+    "revision": "e510f5f397a0f17e8593b0918ef4e611"
   },
   {
     "url": "technology/other/linux/Service_FTP/index.html",
-    "revision": "33fc45b6f658ee644f8a927f835f4e2e"
+    "revision": "3e26a962fb3c3db5ff57e9afc0e3f5a7"
   },
   {
     "url": "technology/other/linux/Service_FTP/reference.html",
-    "revision": "c6238721a4fe7987e06bd72cbf78a7bf"
+    "revision": "8450a367ac46ae899fa7a6ac3bd7cee5"
   },
   {
     "url": "technology/other/linux/Service_FTP/vsftpd.html",
-    "revision": "3363f9c1d8fa98459695533c4e9fc90b"
+    "revision": "df3bd770c61cf0b73e4958e8bd82f76e"
   },
   {
     "url": "technology/other/linux/Service_Git/atlas.html",
-    "revision": "b8d0c4f9f56859b7f2e38e869e7104a2"
+    "revision": "c0517a60c253252acc554e9cdb8e9176"
   },
   {
     "url": "technology/other/linux/Service_Git/gitlab.html",
-    "revision": "6912269be0632818d4da1a222d74b7d1"
+    "revision": "2fafdbfdc9a113e21d8575391221f5d6"
   },
   {
     "url": "technology/other/linux/Service_Git/index.html",
-    "revision": "2e39924855ce56edaab0d1f09e7ef71e"
+    "revision": "bc801837761dce010b7c016e36aacb6f"
   },
   {
     "url": "technology/other/linux/Service_Git/reference.html",
-    "revision": "59b8befa9e3f70e209b39404121bcbad"
+    "revision": "33321528764cf9e4fac5e1b25ca69c51"
   },
   {
     "url": "technology/other/linux/Service_Git/rollback.html",
-    "revision": "c2cb023c27b6e32f6263d6f098685e00"
+    "revision": "09343f29bba5658ecd1e2c6dda41a83c"
   },
   {
     "url": "technology/other/linux/Service_Git/simple.html",
-    "revision": "a6e89f19a9cb1265b194cd7593b6dc57"
+    "revision": "5d119194269ca28359d50ae9e7259a2d"
   },
   {
     "url": "technology/other/linux/Service_Git/ssh.html",
-    "revision": "781f61e019b1bfdadadaeca27245665e"
+    "revision": "c8a8035b68ec9cdc2d4cd55cedb95d94"
   },
   {
     "url": "technology/other/linux/Service_Git/status.html",
-    "revision": "6e88eee8d85c0e8926822e3a698847f7"
+    "revision": "4313cefc0db1319e3a78e112da0e86f9"
   },
   {
     "url": "technology/other/linux/Service_Git/theory.html",
-    "revision": "7ae660a977b3de506ff35807431d3ae6"
+    "revision": "686aacdb0245b4d713656940c5379ffe"
   },
   {
     "url": "technology/other/linux/Service_MySQL/control.html",
-    "revision": "e074cd4cdc89096e2f546bb582fdf0b3"
+    "revision": "f766fc20313ffb7a75ee2d5f21a5f1c8"
   },
   {
     "url": "technology/other/linux/Service_MySQL/index.html",
-    "revision": "c7b9e239196752d4253e248d07e9ad62"
+    "revision": "ad9c171d12fd986e451ceae2ea74f850"
   },
   {
     "url": "technology/other/linux/Service_MySQL/password.html",
-    "revision": "89d44cec6a10242609a0c80972df092a"
+    "revision": "8816eaf059f7078aaee2cb833250bb53"
   },
   {
     "url": "technology/other/linux/Service_MySQL/reference.html",
-    "revision": "ab37945414147ad53961970a38abfe60"
+    "revision": "6607bb4e686b6d697deccba7f426f6a2"
   },
   {
     "url": "technology/other/linux/Service_MySQL/strategy.html",
-    "revision": "81559fd1106c1745c6631e544d3c7500"
+    "revision": "4f5eeb9291fb0fd67acaed01b8b5b15c"
   },
   {
     "url": "technology/other/linux/Service_Nginx/index.html",
-    "revision": "cb06efb3c20f9262c8a86faaf7cf527a"
+    "revision": "b1e6964cd15061a9cd0541b145882fdc"
   },
   {
     "url": "technology/other/linux/Service_Nginx/php.html",
-    "revision": "e2a6aef90b4101ebbc2c649c8b25c979"
+    "revision": "f55f1093c8b604e5903097a6b3dffcbf"
   },
   {
     "url": "technology/other/linux/Service_Nginx/reference.html",
-    "revision": "f21c734c16090be595b746cd311666a0"
+    "revision": "7da97e92c3d656148684f110dfc82e21"
   },
   {
     "url": "technology/other/linux/service_node.html",
-    "revision": "43537575a7f2179ff16731ceaa1bfb8d"
+    "revision": "2093e86a4cfbbd4c5b3d70750f218344"
   },
   {
     "url": "technology/other/linux/ubuntu_install_notice.html",
-    "revision": "4a76956bfd68cce5b295be14be3fa0cc"
+    "revision": "21f72534c8384edf11bec0337e3663de"
   },
   {
     "url": "technology/other/linux/vm_auto_run.html",
-    "revision": "959757d8a72bbc35eed1efd2a83b2a83"
+    "revision": "db4dc208ca9f0e7fed13f8809ccce028"
   },
   {
     "url": "technology/other/notes.html",
-    "revision": "217317d0015acbbf1db8762c55ebbd80"
+    "revision": "e6a4fb0dca60fd6d5a42ac92beebba01"
   },
   {
     "url": "technology/other/notes/Blog_with_Hexo.html",
-    "revision": "132246c5be8ab1a731963d77e19a1b59"
+    "revision": "6efc0aae75c2c5d289d4f0b00ac42eec"
   },
   {
     "url": "technology/other/notes/Blog_with_Vuepress.html",
-    "revision": "2a57268b98f785b0225edced84b0d80d"
+    "revision": "b79ab3f1f6df3727718cb4085a2fa8ed"
   },
   {
     "url": "technology/other/notes/Interactive_Command_Line.html",
-    "revision": "2ca8d3fe8b4cd009b33742ef54a15230"
+    "revision": "9b6a2c345cf3e732c717cbf803e14060"
   },
   {
     "url": "technology/other/notes/MacOS_Launchctl.html",
-    "revision": "f23e012eb5bfd0cec6ec74a7d1a8f9e6"
+    "revision": "afc39963d3196c19599d4c75a9b0d5cf"
   },
   {
     "url": "technology/other/solution.html",
-    "revision": "2972f73146854d2270290a952da463fe"
+    "revision": "c1d054616e99f7d542462477637e878c"
   },
   {
     "url": "technology/other/solution/About_Split_Database.html",
-    "revision": "bd6c1b1ddc09fbf8b0dc4f33f20795d9"
+    "revision": "c954261992392d8f2fb803d6178ecd7d"
   },
   {
     "url": "technology/other/solution/Database_Solution.html",
-    "revision": "59d42160b555ba4ff308a89e7444a1d5"
+    "revision": "73cb1d7b7740a72d6c2ad4829c68e048"
   },
   {
     "url": "technology/other/solution/Frontend_Solution.html",
-    "revision": "8aeaf1b1479381ffeff7d8a9c4cdf738"
+    "revision": "1f923e21b374bae38e386b82aa0e710b"
   },
   {
     "url": "technology/other/solution/Git_Solution.html",
-    "revision": "8c17149340d4dcb06aa47a6792c3eaef"
+    "revision": "e1031ff8b2b3eb9362cd5bf38606fdc6"
   },
   {
     "url": "technology/other/solution/Iframe_Slide.html",
-    "revision": "65c567a3562c7270af71a9b7a2ce442f"
+    "revision": "90e402a17eb3b650cdbb70aa218b8ea9"
   },
   {
     "url": "technology/other/solution/MacOSX_Environment.html",
-    "revision": "07c47af83e341e36686507e06a211752"
+    "revision": "7d738e236792296ffbb6c3de127985ea"
   },
   {
     "url": "technology/other/solution/Tencent_Map_Web_Service.html",
-    "revision": "7680ada2c14fc90a98db3f70eb4ff598"
+    "revision": "7fa06d9812c740107d69bf52e8072035"
   },
   {
     "url": "technology/other/solution/WeixinJSBridge_is_not_defined.html",
-    "revision": "7b8372ace95cd534a762125a8e3e3373"
+    "revision": "bbb79b78050dff92e9d13fae7a79e93f"
   },
   {
     "url": "technology/other/system.html",
-    "revision": "3774a5c836804395cc2c7b207d989ae8"
+    "revision": "f4a464839fe081806ff161df8c91737c"
   },
   {
     "url": "technology/other/system/What_Happens_from_Typing_a_URL_to_Loading_a_Page/index.html",
-    "revision": "28792212846f8d66cca37c8c5bf32aea"
+    "revision": "0471ae40477b6a71e73be993d56a190a"
   },
   {
     "url": "technology/other/system/Windows_or_MacOS/index.html",
-    "revision": "bcc675f8565d8274e5bea3cd1638c93e"
+    "revision": "5bb022b89d5acff62a127e7e2bf3a46b"
   },
   {
     "url": "technology/other/system/Windows_or_MacOS/install.html",
-    "revision": "c12c0266260a8bc86508b3abd8c6736d"
+    "revision": "6bf2bd34f231ab2c3797c5afbebfc8ca"
   },
   {
     "url": "technology/other/system/Windows_or_MacOS/MacOS.html",
-    "revision": "1e61e1e44cbae31a931dfc53a5fd6f2c"
+    "revision": "37f535a3017668aa2e0ee6abf997cd19"
   },
   {
     "url": "technology/other/system/Windows_or_MacOS/reference.html",
-    "revision": "520159bf44a6259b8d224a6c9d30fd72"
+    "revision": "f8bba447e6598cb3ccd65a3c6769032e"
   },
   {
     "url": "technology/other/system/Windows_or_MacOS/shortcuts.html",
-    "revision": "f6dddb41bad21571eb6db2bd6b01fb51"
+    "revision": "582b8a4faaaa1d467e77b602cae4c399"
   },
   {
     "url": "technology/services/apache.html",
-    "revision": "b8619286a584f59c15985c1174b0b853"
+    "revision": "08507b7ea5fc3eaff88972673061d00e"
   },
   {
     "url": "technology/services/linux.html",
-    "revision": "310699c2edbc5bb50f6e90741fa80cad"
+    "revision": "58b05f768a0dbd9d7e26e57882ac7d54"
   },
   {
     "url": "technology/services/nginx.html",
-    "revision": "200827f9aa1dfd46f0228ef0ef634428"
+    "revision": "13c30d505037ebb6dd35140ed15a0061"
   },
   {
     "url": "technology/tools/vscode.html",
-    "revision": "793ff33f70198345f406ad7bce38dfc8"
+    "revision": "b6478bc29ebfde5377d4fe8bbd6c699e"
   },
   {
     "url": "test/index.html",
-    "revision": "e17116b4bca1a2624a554d4526690c32"
+    "revision": "bae122e3da2335392d4beee622c76992"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
