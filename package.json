@@ -4,6 +4,7 @@
   "description": "\"# 小昱个人网站\"",
   "main": "index.js",
   "scripts": {
+    "pull": "git add . && git commit -am 0 && git pull",
     "push:coding": "git add * && git commit -am docs && git push origin master",
     "push:github": "git add * && git commit -am docs && git push github master"
   },
