@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[515],{591:function(t,e,n){"use strict";n.r(e);var s={props:["slot-key"]},o=n(0),l=Object(o.a)(s,function(){var t=this.$createElement;return(this._self._c||t)("ContentSlotsDistributor",{attrs:{"slot-key":this.slotKey}})},[],!1,null,null,null);l.options.__file="frontend.md";e.default=l.exports}}]);
