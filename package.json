@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "pull": "git add . && git commit -am 0 && git pull",
-    "push": "git add . && git commit -am docs && git push origin master"
+    "push": "git add . && git commit -am docs && git push"
   },
   "repository": {
     "type": "git",
