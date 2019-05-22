@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>各种 Linux 发行版换源及包管理的使用 | 小昱个人网站</title>
+    <meta name="description" content="小昱个人网站">
+    <meta http-equiv="Expires" content="Mon,12 May 2050 00:20:00 GMT">
+  <link rel="icon" href="/logo.png">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="stylesheet" href="//at.alicdn.com/t/font_517060_lom78h954w.css">
+  <link rel="stylesheet" href="https://img.xiaoyulive.top/css/animate.css">
+    
+    <link rel="preload" href="/assets/css/0.styles.a54b61f3.css" as="style"><link rel="preload" href="/assets/js/app.3f0f8731.js" as="script"><link rel="preload" href="/assets/js/5.dab535d8.js" as="script"><link rel="prefetch" href="/assets/js/1.6715b577.js"><link rel="prefetch" href="/assets/js/10.a1e0378e.js"><link rel="prefetch" href="/assets/js/11.3eed75c1.js"><link rel="prefetch" href="/assets/js/12.af47a5e5.js"><link rel="prefetch" href="/assets/js/13.d3a2362b.js"><link rel="prefetch" href="/assets/js/14.bdf63aad.js"><link rel="prefetch" href="/assets/js/15.68a5cb0e.js"><link rel="prefetch" href="/assets/js/2.d82574fd.js"><link rel="prefetch" href="/assets/js/6.f5b4f877.js"><link rel="prefetch" href="/assets/js/7.f75538cd.js"><link rel="prefetch" href="/assets/js/8.c4f65c39.js"><link rel="prefetch" href="/assets/js/9.1da4ea7b.js"><link rel="prefetch" href="/assets/js/vendors~docsearch.73959913.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.a54b61f3.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container" data-v-38547c78><header class="navbar" data-v-38547c78><div class="navbar-content"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div><a href="/" class="home-link router-link-active"><img src="/logo.png" class="logo"><span class="site-name can-hide">小昱个人网站</span></a><div class="links"><nav class="nav-links can-hide"><div class="nav-item"><a href="/blog/" class="nav-link">开发者博客</a></div><div class="nav-item"><a href="/articles/" class="nav-link">生活漫谈</a></div><div class="nav-item"><a href="/note/" class="nav-link">阅读札记</a></div><div class="nav-item"><a href="/categories/" class="nav-link router-link-active">学无止境</a></div><div class="nav-item"><a href="/share/" class="nav-link">精品分享</a></div><div class="nav-item"><a href="/favorite/" class="nav-link">收藏夹</a></div><!----></nav><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""><!----></div></div></div></header><div class="sidebar-mask" data-v-38547c78></div><div class="sidebar" data-v-38547c78><div class="sidebar-container"><nav class="nav-links"><div class="nav-item"><a href="/blog/" class="nav-link">开发者博客</a></div><div class="nav-item"><a href="/articles/" class="nav-link">生活漫谈</a></div><div class="nav-item"><a href="/note/" class="nav-link">阅读札记</a></div><div class="nav-item"><a href="/categories/" class="nav-link router-link-active">学无止境</a></div><div class="nav-item"><a href="/share/" class="nav-link">精品分享</a></div><div class="nav-item"><a href="/favorite/" class="nav-link">收藏夹</a></div><!----></nav><ul class="sidebar-links"><li><div class="sidebar-group first"><p class="sidebar-heading open"><span>各种 Linux 发行版换源及包管理的使用</span> <!----></p> <ul class="sidebar-group-items"><li><a href="/categories/os/linux/_pages/Source.html#ubuntu" class="sidebar-link">Ubuntu</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/categories/os/linux/_pages/Source.html#debian" class="sidebar-link">Debian</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/categories/os/linux/_pages/Source.html#kali" class="sidebar-link">Kali</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/categories/os/linux/_pages/Source.html#centos" class="sidebar-link">CentOS</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/categories/os/linux/_pages/Source.html#搭建本地源（利用iso镜像）" class="sidebar-link">搭建本地源（利用ISO镜像）</a></li><li class="sidebar-sub-header"><a href="/categories/os/linux/_pages/Source.html#更换网络源" class="sidebar-link">更换网络源</a></li></ul></li><li><a href="/categories/os/linux/_pages/Source.html#apt-get-的使用" class="sidebar-link">apt-get 的使用</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/categories/os/linux/_pages/Source.html#更新源" class="sidebar-link">更新源</a></li><li class="sidebar-sub-header"><a href="/categories/os/linux/_pages/Source.html#安装包" class="sidebar-link">安装包</a></li><li class="sidebar-sub-header"><a href="/categories/os/linux/_pages/Source.html#卸载包" class="sidebar-link">卸载包</a></li><li class="sidebar-sub-header"><a href="/categories/os/linux/_pages/Source.html#清理包" class="sidebar-link">清理包</a></li><li class="sidebar-sub-header"><a href="/categories/os/linux/_pages/Source.html#更新包" class="sidebar-link">更新包</a></li></ul></li><li><a href="/categories/os/linux/_pages/Source.html#yum-的使用" class="sidebar-link">yum 的使用</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/categories/os/linux/_pages/Source.html#清除并重建本地缓存" class="sidebar-link">清除并重建本地缓存</a></li><li class="sidebar-sub-header"><a href="/categories/os/linux/_pages/Source.html#安装包-2" class="sidebar-link">安装包</a></li><li class="sidebar-sub-header"><a href="/categories/os/linux/_pages/Source.html#更新包-2" class="sidebar-link">更新包</a></li><li class="sidebar-sub-header"><a href="/categories/os/linux/_pages/Source.html#查找和显示" class="sidebar-link">查找和显示</a></li><li class="sidebar-sub-header"><a href="/categories/os/linux/_pages/Source.html#删除程序" class="sidebar-link">删除程序</a></li><li class="sidebar-sub-header"><a href="/categories/os/linux/_pages/Source.html#yum-插件" class="sidebar-link">yum 插件</a></li><li class="sidebar-sub-header"><a href="/categories/os/linux/_pages/Source.html#错误解决" class="sidebar-link">错误解决</a></li></ul></li><li><a href="/categories/os/linux/_pages/Source.html#其他" class="sidebar-link">其他</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/categories/os/linux/_pages/Source.html#参考资料" class="sidebar-link">参考资料</a><ul class="sidebar-sub-headers"></ul></li></ul></div></li></ul></div></div><div class="page" data-v-38547c78><div class="content default"><h1 id="各种-linux-发行版换源及包管理的使用"><a href="#各种-linux-发行版换源及包管理的使用" aria-hidden="true" class="header-anchor">#</a> 各种 Linux 发行版换源及包管理的使用</h1> <h2 id="ubuntu"><a href="#ubuntu" aria-hidden="true" class="header-anchor">#</a> Ubuntu</h2> <p>Ubuntu 的话, 在 <code>sources.list</code> 中输入以下内容:</p> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token comment"># 阿里云</span>
+deb http://mirrors.aliyun.com/ubuntu/ xenial main restricted universe multiverse
+deb http://mirrors.aliyun.com/ubuntu/ xenial-security main restricted universe multiverse
+deb http://mirrors.aliyun.com/ubuntu/ xenial-updates main restricted universe multiverse
+deb http://mirrors.aliyun.com/ubuntu/ xenial-backports main restricted universe multiverse
+deb-src http://mirrors.aliyun.com/ubuntu/ xenial main restricted universe multiverse
+deb-src http://mirrors.aliyun.com/ubuntu/ xenial-security main restricted universe multiverse
+deb-src http://mirrors.aliyun.com/ubuntu/ xenial-updates main restricted universe multiverse
+deb-src http://mirrors.aliyun.com/ubuntu/ xenial-backports main restricted universe multiverse
+
+<span class="token comment"># 阿里云测试版</span>
+deb http://mirrors.aliyun.com/ubuntu/ xenial-proposed main restricted universe multiverse
+deb-src http://mirrors.aliyun.com/ubuntu/ xenial-proposed main restricted universe multiverse
+
+<span class="token comment"># Canonical 合作伙伴和附加</span>
+deb http://archive.canonical.com/ubuntu/ xenial partner
+deb http://extras.ubuntu.com/ubuntu/ xenial main
+
+<span class="token comment"># 官方源</span>
+deb http://archive.ubuntu.com/ubuntu/ bionic main restricted
+deb-src http://archive.ubuntu.com/ubuntu/ bionic main restricted
+deb http://archive.ubuntu.com/ubuntu/ bionic-updates main restricted
+deb-src http://archive.ubuntu.com/ubuntu/ bionic-updates main restricted
+deb http://archive.ubuntu.com/ubuntu/ bionic universe
+deb-src http://archive.ubuntu.com/ubuntu/ bionic universe
+deb http://archive.ubuntu.com/ubuntu/ bionic-updates universe
+deb-src http://archive.ubuntu.com/ubuntu/ bionic-updates universe
+deb http://archive.ubuntu.com/ubuntu/ bionic multiverse
+deb-src http://archive.ubuntu.com/ubuntu/ bionic multiverse
+deb http://archive.ubuntu.com/ubuntu/ bionic-updates multiverse
+deb-src http://archive.ubuntu.com/ubuntu/ bionic-updates multiverse
+deb http://archive.ubuntu.com/ubuntu/ bionic-backports main restricted universe multiverse
+deb-src http://archive.ubuntu.com/ubuntu/ bionic-backports main restricted universe multiverse
+deb http://archive.canonical.com/ubuntu bionic partner
+deb-src http://archive.canonical.com/ubuntu bionic partner
+deb http://security.ubuntu.com/ubuntu/ bionic-security main restricted
+deb-src http://security.ubuntu.com/ubuntu/ bionic-security main restricted
+deb http://security.ubuntu.com/ubuntu/ bionic-security universe
+deb-src http://security.ubuntu.com/ubuntu/ bionic-security universe
+deb http://security.ubuntu.com/ubuntu/ bionic-security multiverse
+deb-src http://security.ubuntu.com/ubuntu/ bionic-security multiverse
+</code></pre></div><h2 id="debian"><a href="#debian" aria-hidden="true" class="header-anchor">#</a> Debian</h2> <p>Debian 的话, 在 <code>sources.list</code> 中输入以下内容:</p> <p>首先查看自己的Debian版本(版本不同配置的源不同):</p> <div class="language-bash extra-class"><pre class="language-bash"><code>$ <span class="token function">cat</span> /etc/issue
+Debian GNU/Linux 9 \n \l
+</code></pre></div><p>看到我的版本是9, 使用的是 stretch (详细配置可以到OPSX中查看)</p> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token comment"># 阿里云</span>
+deb http://mirrors.aliyun.com/debian/ stretch main non-free contrib
+deb-src http://mirrors.aliyun.com/debian/ stretch main non-free contrib
+deb http://mirrors.aliyun.com/debian-security stretch/updates main
+deb-src http://mirrors.aliyun.com/debian-security stretch/updates main
+deb http://mirrors.aliyun.com/debian/ stretch-updates main non-free contrib
+deb-src http://mirrors.aliyun.com/debian/ stretch-updates main non-free contrib
+deb http://mirrors.aliyun.com/debian/ stretch-backports main non-free contrib
+deb-src http://mirrors.aliyun.com/debian/ stretch-backports main non-free contrib
+
+<span class="token comment"># 官方源</span>
+deb http://deb.debian.org/debian stretch main
+deb http://deb.debian.org/debian stretch-updates main
+deb http://security.debian.org/debian-security/ stretch/updates main
+deb http://ftp.debian.org/debian stretch-backports main
+</code></pre></div><h2 id="kali"><a href="#kali" aria-hidden="true" class="header-anchor">#</a> Kali</h2> <p>Kali 的话, 在 <code>sources.list</code> 中输入以下内容:</p> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token comment">#阿里云</span>
+deb http://mirrors.aliyun.com/kali kali-rolling main non-free contrib
+deb-src http://mirrors.aliyun.com/kali kali-rolling main non-free contrib
+
+<span class="token comment">#中科大</span>
+deb http://mirrors.ustc.edu.cn/kali kali-rolling main non-free contrib
+deb-src http://mirrors.ustc.edu.cn/kali kali-rolling main non-free contrib
+
+<span class="token comment">#清华大学</span>
+deb http://mirrors.tuna.tsinghua.edu.cn/kali kali-rolling main contrib non-free
+deb-src https://mirrors.tuna.tsinghua.edu.cn/kali kali-rolling main contrib non-free
+
+<span class="token comment">#浙大</span>
+deb http://mirrors.zju.edu.cn/kali kali-rolling main contrib non-free
+deb-src http://mirrors.zju.edu.cn/kali kali-rolling main contrib non-free
+
+<span class="token comment">#东软大学</span>
+deb http://mirrors.neusoft.edu.cn/kali kali-rolling/main non-free contrib
+deb-src http://mirrors.neusoft.edu.cn/kali kali-rolling/main non-free contrib
+
+<span class="token comment">#官方源</span>
+deb http://http.kali.org/kali kali-rolling main non-free contrib
+deb-src http://http.kali.org/kali kali-rolling main non-free contrib
+</code></pre></div><h2 id="centos"><a href="#centos" aria-hidden="true" class="header-anchor">#</a> CentOS</h2> <h3 id="搭建本地源（利用iso镜像）"><a href="#搭建本地源（利用iso镜像）" aria-hidden="true" class="header-anchor">#</a> 搭建本地源（利用ISO镜像）</h3> <ol><li>备份默认的网络源CentOS-Base.repo</li></ol> <div class="language-bash extra-class"><pre class="language-bash"><code>$ <span class="token function">cp</span> /etc/yum.repos.d/CentOS-Base.repo /etc/yum.repos.d/CentOS-Base.repo.bak
+</code></pre></div><ol start="2"><li>拷贝iso镜像文件解压指/media/cdrom文件夹，如果是虚拟机可选择挂载</li> <li>配置/etc/yum.repos.d/CentOS-Media.repo</li></ol> <div class="language- extra-class"><pre class="language-text"><code>[c7-media]
+name=CentOS-$releasever - Media
+baseurl=file:///media/CentOS/   #镜像文件路径
+       file:///media/cdrom/
+       file:///media/cdrecorder/
+gpgcheck=1    #标志开启key验证，开启必须要有gpgkey文件，也可以选择关闭
+enabled=1       #标志开启此yum源
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-7
+</code></pre></div><h3 id="更换网络源"><a href="#更换网络源" aria-hidden="true" class="header-anchor">#</a> 更换网络源</h3> <ol><li>备份系统自带yum源</li></ol> <div class="language-bash extra-class"><pre class="language-bash"><code>$ <span class="token function">mv</span> /etc/yum.repos.d/CentOS-Base.repo /etc/yum.repos.d/CentOS-Base.repo.bak
+</code></pre></div><ol start="2"><li>下载阿里 yum 源到 <code>/etc/yum.repos.d</code></li></ol> <div class="language-bash extra-class"><pre class="language-bash"><code>$ <span class="token function">cd</span> /etc/yum.repos.d
+$ <span class="token function">sudo</span> <span class="token function">wget</span> -nc http://mirrors.aliyun.com/repo/Centos-7.repo
+</code></pre></div><p>优质的中国yum镜像源：</p> <ul><li>阿里yum源:<a href="http://mirrors.aliyun.com/repo/" target="_blank" rel="noopener noreferrer">http://mirrors.aliyun.com/repo/<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li> <li>163(网易)yum源: <a href="http://mirrors.163.com/.help/" target="_blank" rel="noopener noreferrer">http://mirrors.163.com/.help/<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li> <li>中科大的Linux安装镜像源：<a href="http://centos.ustc.edu.cn/" target="_blank" rel="noopener noreferrer">http://centos.ustc.edu.cn/<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li> <li>搜狐的Linux安装镜像源：<a href="http://mirrors.sohu.com/" target="_blank" rel="noopener noreferrer">http://mirrors.sohu.com/<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li> <li>北京首都在线科技：<a href="http://mirrors.yun-idc.com/" target="_blank" rel="noopener noreferrer">http://mirrors.yun-idc.com/<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul> <ol start="3"><li>更改阿里yum源为系统默认yum源</li></ol> <div class="language-bash extra-class"><pre class="language-bash"><code>$ <span class="token function">sudo</span> <span class="token function">mv</span> Centos-7.repo CentOS-Base.repo
+</code></pre></div><h2 id="apt-get-的使用"><a href="#apt-get-的使用" aria-hidden="true" class="header-anchor">#</a> apt-get 的使用</h2> <p>Debian系(Debian, Ubuntu, Kali, Deepin)使用apt进行包管理, 源文件位于 <code>/etc/apt/sources.list</code></p> <div class="language-bash extra-class"><pre class="language-bash"><code>$ <span class="token function">cd</span> /etc/apt  <span class="token comment"># 进入配置文件所在目录</span>
+$ <span class="token function">cp</span> sources.list sources.list.bak  <span class="token comment"># 备份配置文件</span>
+$ <span class="token keyword">echo</span> <span class="token string">''</span> <span class="token operator">&gt;</span> sources.list
+$ <span class="token function">vim</span> sources.list  <span class="token comment"># 编辑配置文件</span>
+</code></pre></div><h3 id="更新源"><a href="#更新源" aria-hidden="true" class="header-anchor">#</a> 更新源</h3> <div class="language-bash extra-class"><pre class="language-bash"><code>$ <span class="token function">apt</span> update
+$ <span class="token function">apt</span> list
+</code></pre></div><h3 id="安装包"><a href="#安装包" aria-hidden="true" class="header-anchor">#</a> 安装包</h3> <div class="language-bash extra-class"><pre class="language-bash"><code>$ <span class="token function">apt-get</span> <span class="token function">install</span> packagename
+</code></pre></div><h3 id="卸载包"><a href="#卸载包" aria-hidden="true" class="header-anchor">#</a> 卸载包</h3> <p>保留配置文件:</p> <div class="language-bash extra-class"><pre class="language-bash"><code>$ <span class="token function">apt-get</span> remove packagename
+</code></pre></div><p>删除配置文件:</p> <div class="language-bash extra-class"><pre class="language-bash"><code>$ <span class="token function">apt-get</span> –purge remove packagename
+</code></pre></div><h3 id="清理包"><a href="#清理包" aria-hidden="true" class="header-anchor">#</a> 清理包</h3> <p>卸载包会在系统内留有备份, 如果需要释放空间可以使用以下命令清理已经卸载掉的包:</p> <div class="language-bash extra-class"><pre class="language-bash"><code>$ <span class="token function">apt-get</span> autoclean
+</code></pre></div><p>如果您的需求十分迫切，可以使用<code>apt-get clean</code>以释放更多空间。这个命令会将已安装软件包裹的.deb文件一并删除。</p> <h3 id="更新包"><a href="#更新包" aria-hidden="true" class="header-anchor">#</a> 更新包</h3> <div class="language-bash extra-class"><pre class="language-bash"><code>$ <span class="token function">apt-get</span> upgrade
+</code></pre></div><p>将系统升级到新版本：</p> <div class="language-bash extra-class"><pre class="language-bash"><code>$ <span class="token function">apt-get</span> dist-upgrade
+</code></pre></div><p>定期运行这个命令来清除那些已经卸载的软件包的.deb文件。通过这种方式，您可以释放大量的磁盘空间。</p> <h2 id="yum-的使用"><a href="#yum-的使用" aria-hidden="true" class="header-anchor">#</a> yum 的使用</h2> <p>Redhat系(Redhat, CentOS, Fedora)使用yum进行包管理, 源配置文件位于 <code>/etc/yum.repos.d/</code></p> <h3 id="清除并重建本地缓存"><a href="#清除并重建本地缓存" aria-hidden="true" class="header-anchor">#</a> 清除并重建本地缓存</h3> <div class="language-bash extra-class"><pre class="language-bash"><code>$ yum clean all
+$ yum makecache
+</code></pre></div><p>清除指定的缓存</p> <div class="language-bash extra-class"><pre class="language-bash"><code>$ yum clean packages <span class="token comment"># 清除缓存目录下的软件包</span>
+$ yum clean headers <span class="token comment"># 清除缓存目录下的 headers</span>
+$ yum clean oldheaders <span class="token comment"># 清除缓存目录下旧的 headers</span>
+</code></pre></div><h3 id="安装包-2"><a href="#安装包-2" aria-hidden="true" class="header-anchor">#</a> 安装包</h3> <p>若一个软件包在官方源内，则应通过官方源安装:</p> <div class="language-bash extra-class"><pre class="language-bash"><code>$ yum <span class="token function">install</span> PackageName <span class="token comment"># 安装指定包</span>
+$ yum reinstall PackageName <span class="token comment"># 覆盖安装软件包</span>
+</code></pre></div><h3 id="更新包-2"><a href="#更新包-2" aria-hidden="true" class="header-anchor">#</a> 更新包</h3> <div class="language-bash extra-class"><pre class="language-bash"><code>$ yum update <span class="token comment"># 全部更新</span>
+$ yum update PackageName <span class="token comment"># 更新系统中的一个或多个软件包</span>
+$ yum check-update <span class="token comment"># 检查可更新的程序</span>
+$ yum upgrade PackageName <span class="token comment"># 更新软件包同时考虑软件包取代关系</span>
+</code></pre></div><h3 id="查找和显示"><a href="#查找和显示" aria-hidden="true" class="header-anchor">#</a> 查找和显示</h3> <div class="language-bash extra-class"><pre class="language-bash"><code>$ yum list <span class="token comment"># 显示所有已经安装和可以安装的程序包</span>
+$ yum list PackageName <span class="token comment"># 显示指定程序包安装情况</span>
+$ yum info PackageName <span class="token comment"># 显示安装包信息</span>
+$ yum deplist PackageName <span class="token comment"># 查看程序依赖情况</span>
+</code></pre></div><h3 id="删除程序"><a href="#删除程序" aria-hidden="true" class="header-anchor">#</a> 删除程序</h3> <div class="language-bash extra-class"><pre class="language-bash"><code>$ yum remove <span class="token operator">&amp;</span> erase PackageName <span class="token comment"># 删除程序包</span>
+</code></pre></div><h3 id="yum-插件"><a href="#yum-插件" aria-hidden="true" class="header-anchor">#</a> yum 插件</h3> <h4 id="yum-fastestmirror"><a href="#yum-fastestmirror" aria-hidden="true" class="header-anchor">#</a> yum-fastestmirror</h4> <p>自动搜索最快镜像插件</p> <div class="language-bash extra-class"><pre class="language-bash"><code>$ yum <span class="token function">install</span> yum-fastestmirror
+</code></pre></div><h4 id="yum-plugin-priorities"><a href="#yum-plugin-priorities" aria-hidden="true" class="header-anchor">#</a> yum-plugin-priorities</h4> <p>用于设置 yum 源的优先级</p> <p>当既有本地 yum 源又有阿里源的时候，我们在装软件包的时候当然希望先用本地的yum源去安装，本地找不到可用的包时再使用阿里源去安装软件,这里就涉及到了优先级的问题，yum提供的插件 <code>yum-plugin-priorities.noarch</code> 可以解决这个问题。</p> <p><strong>查看系统是否安装了优先级的插件</strong></p> <div class="language-bash extra-class"><pre class="language-bash"><code>$ <span class="token function">rpm</span> -qa <span class="token operator">|</span> <span class="token function">grep</span> yum-plugin-
+$ yum search yum-plugin-priorities
+<span class="token comment"># 用search查看是否有此插件可用</span>
+</code></pre></div><p><strong>安装yum-plugin-priorities.noarch插件</strong></p> <div class="language-bash extra-class"><pre class="language-bash"><code>$ yum -y <span class="token function">install</span> yum-plugin-priorities.noarch
+</code></pre></div><p><strong>看插件是否启用</strong></p> <div class="language-bash extra-class"><pre class="language-bash"><code>$ <span class="token function">cat</span> /etc/yum/pluginconf.d/priorities.conf
+<span class="token punctuation">[</span>main<span class="token punctuation">]</span>
+enabled <span class="token operator">=</span> 1
+<span class="token comment"># 1为启用；0为禁用</span>
+</code></pre></div><p><strong>修改本地yum源优先使用</strong></p> <p>比如本地有两个 yum 源配置文件，需要将 local.repo 设置为优先，需要在对应的文件中加入 <code>priority=1</code>，数字越小优先级越高 :</p> <div class="language-bash extra-class"><pre class="language-bash"><code>$ ll /etc/yum.repos.d/
+total 8
+-rw-r--r--. 1 root root 2573 May 15  2015 CentOS-Base.repo
+-rw-r--r--. 1 root root   67 Jun 20 06:04 local.repo
+</code></pre></div><p>改写对应文件:</p> <div class="language-bash extra-class"><pre class="language-bash"><code>$ <span class="token function">vi</span> /etc/yum.repos.d/local.repo
+<span class="token punctuation">[</span>local<span class="token punctuation">]</span>
+name<span class="token operator">=</span>local
+baseurl<span class="token operator">=</span>file:///opt/centos
+enabled<span class="token operator">=</span>1
+gpgcheck<span class="token operator">=</span>0
+priority<span class="token operator">=</span>1
+</code></pre></div><p>在原基础上加入 priority=1 ；数字越小优先级越高
+可以继续修改其他源的 priority 值，经测试仅配置本地源的优先级为 priority=1 就会优先使用本地源了</p> <h3 id="错误解决"><a href="#错误解决" aria-hidden="true" class="header-anchor">#</a> 错误解决</h3> <p><code>/var/run/yum.pid 已被锁定，PID 为 xxxx 的另一个程序正在运行的问题解决</code></p> <p>解决方案</p> <div class="language-bash extra-class"><pre class="language-bash"><code>$ <span class="token function">rm</span> -f /var/run/yum.pid
+</code></pre></div><h2 id="其他"><a href="#其他" aria-hidden="true" class="header-anchor">#</a> 其他</h2> <p>SUSE 使用 zypper 进行包管理, 没怎么研究</p> <h2 id="参考资料"><a href="#参考资料" aria-hidden="true" class="header-anchor">#</a> 参考资料</h2> <p>切换阿里源参考: <a href="https://opsx.alibaba.com/mirror" target="_blank" rel="noopener noreferrer">阿里巴巴开源镜像站OPSX<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p></div><div class="article-info"><div class="article-title">文档信息</div><p class="article-item">版权声明：著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。</p><p class="article-item">文章标题：各种 Linux 发行版换源及包管理的使用</p><p class="article-item">原文链接：<a href="https://www.xiaoyulive.top/categories/os/linux/_pages/Source.html">https://www.xiaoyulive.top/categories/os/linux/_pages/Source.html</a></p><p class="article-item">发表日期：2019-05-21</p></div><!----><!----></div><div class="footers" data-v-38547c78><p data-v-38547c78><span data-v-38547c78>MIT Licensed | Copyright © 2018-present  滇ICP备16006294号</span></p><p data-v-38547c78><span data-v-38547c78>Design by <a href="/">Quanzaiyu</a> | Power by <a href="https://vuepress.vuejs.org/" target="_blank">VuePress</a> | Hosted by <a href="https://pages.coding.me" target="_blank" style="font-weight: bold">Coding Pages</a></span></p></div></div><div class="global-ui"><!----><!----></div></div>
+    <script src="/assets/js/app.3f0f8731.js" defer></script><script src="/assets/js/5.dab535d8.js" defer></script>
+  </body>
+</html>
