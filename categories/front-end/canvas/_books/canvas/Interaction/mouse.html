@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>与鼠标进行交互 | 小昱个人网站</title>
+    <meta name="description" content="小昱个人网站">
+    <meta http-equiv="Expires" content="Mon,12 May 2050 00:20:00 GMT">
+  <link rel="icon" href="/logo.png">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="stylesheet" href="//at.alicdn.com/t/font_517060_lom78h954w.css">
+  <link rel="stylesheet" href="https://img.xiaoyulive.top/css/animate.css">
+    
+    <link rel="preload" href="/assets/css/0.styles.348d0f22.css" as="style"><link rel="preload" href="/assets/js/app.1b240dfe.js" as="script"><link rel="preload" href="/assets/js/5.6792f089.js" as="script"><link rel="prefetch" href="/assets/js/1.ad83c979.js"><link rel="prefetch" href="/assets/js/10.98de4871.js"><link rel="prefetch" href="/assets/js/11.8ec64a00.js"><link rel="prefetch" href="/assets/js/12.cd8fbbc0.js"><link rel="prefetch" href="/assets/js/13.a56bde87.js"><link rel="prefetch" href="/assets/js/14.45d6b04d.js"><link rel="prefetch" href="/assets/js/15.45ec049f.js"><link rel="prefetch" href="/assets/js/2.03da1a39.js"><link rel="prefetch" href="/assets/js/6.20d580bc.js"><link rel="prefetch" href="/assets/js/7.f397debc.js"><link rel="prefetch" href="/assets/js/8.3280d132.js"><link rel="prefetch" href="/assets/js/9.e99af05a.js"><link rel="prefetch" href="/assets/js/vendors~docsearch.d551b0d4.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.348d0f22.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container" data-v-38547c78><header class="navbar" data-v-38547c78><div class="navbar-content"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div><a href="/" class="home-link router-link-active"><img src="/logo.png" class="logo"><span class="site-name can-hide">小昱个人网站</span></a><div class="links"><nav class="nav-links can-hide"><div class="nav-item"><a href="/blog/" class="nav-link">开发者博客</a></div><div class="nav-item"><a href="/articles/" class="nav-link">生活漫谈</a></div><div class="nav-item"><a href="/note/" class="nav-link">阅读札记</a></div><div class="nav-item"><a href="/categories/" class="nav-link router-link-active">学无止境</a></div><div class="nav-item"><a href="/share/" class="nav-link">精品分享</a></div><div class="nav-item"><a href="/favorite/" class="nav-link">收藏夹</a></div><!----></nav><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""><!----></div></div></div></header><div class="sidebar-mask" data-v-38547c78></div><div class="sidebar" data-v-38547c78><div class="sidebar-container"><nav class="nav-links"><div class="nav-item"><a href="/blog/" class="nav-link">开发者博客</a></div><div class="nav-item"><a href="/articles/" class="nav-link">生活漫谈</a></div><div class="nav-item"><a href="/note/" class="nav-link">阅读札记</a></div><div class="nav-item"><a href="/categories/" class="nav-link router-link-active">学无止境</a></div><div class="nav-item"><a href="/share/" class="nav-link">精品分享</a></div><div class="nav-item"><a href="/favorite/" class="nav-link">收藏夹</a></div><!----></nav><ul class="sidebar-links"><li><div class="sidebar-group first"><p class="sidebar-heading open"><span>Canvas 学习指南</span> <!----></p> <ul class="sidebar-group-items"><li><a href="/categories/front-end/canvas/_books/canvas/Basic.html" class="sidebar-link">Canvas 基础概述</a></li><li><a href="/categories/front-end/canvas/_books/canvas/DrawGraphics.html" class="sidebar-link">绘制基础图形</a></li><li><a href="/categories/front-end/canvas/_books/canvas/DrawStyle.html" class="sidebar-link">绘制样式</a></li><li><a href="/categories/front-end/canvas/_books/canvas/DrawText.html" class="sidebar-link">绘制文字</a></li><li><a href="/categories/front-end/canvas/_books/canvas/DrawImage.html" class="sidebar-link">绘制图片</a></li><li><a href="/categories/front-end/canvas/_books/canvas/Save_Restore.html" class="sidebar-link">状态保存与恢复</a></li><li><a href="/categories/front-end/canvas/_books/canvas/DrawArc.html" class="sidebar-link">绘制曲线</a></li><li><a href="/categories/front-end/canvas/_books/canvas/DrawPolygon.html" class="sidebar-link">绘制多边形</a></li><li><a href="/categories/front-end/canvas/_books/canvas/Clip.html" class="sidebar-link">剪裁路径</a></li><li><a href="/categories/front-end/canvas/_books/canvas/ImageProcess.html" class="sidebar-link">Canvas 图像处理</a></li><li><a href="/categories/front-end/canvas/_books/canvas/Transform1.html" class="sidebar-link">Canvas 坐标变换1: 简单变换</a></li><li><a href="/categories/front-end/canvas/_books/canvas/Transform2.html" class="sidebar-link">Canvas 坐标变换2: 矩阵变换</a></li><li><a href="/categories/front-end/canvas/_books/canvas/Animation.html" class="sidebar-link">动画</a></li><li><a href="/categories/front-end/canvas/_books/canvas/Interaction.html" class="sidebar-link">交互</a></li><li><a href="/categories/front-end/canvas/_books/canvas/Coordinate.html" class="sidebar-link">附录：Canvas 坐标系</a></li><li><a href="/categories/front-end/canvas/_books/canvas/Matrix.html" class="sidebar-link">附录：矩阵基础知识</a></li><li><a href="/categories/front-end/canvas/_books/canvas/Point.html" class="sidebar-link">附录：关于页面中各种坐标</a></li><li><a href="/categories/front-end/canvas/_books/canvas/Reference.html" class="sidebar-link">参考资料</a></li></ul></div></li></ul></div></div><div class="page" data-v-38547c78><div class="content default"><h1 id="与鼠标进行交互"><a href="#与鼠标进行交互" aria-hidden="true" class="header-anchor">#</a> 与鼠标进行交互</h1> <div class="tip custom-block"><p class="custom-block-title">TIP</p> <p>Canvas是一种非保留性的绘图界面，即不会记录过去执行的绘图操作，而是保持最终结果（构成图像的彩色像素）。
+如果想让Canvas变得具有交互性，比如用户可以选择、拖动画布上的图形。那么我们必须记录绘制的每一个对象，才能在将来灵活的修改并重绘它们，实现交互。</p></div> <iframe src="https://img.xiaoyulive.top/html/005.html" style="height:350px;"></iframe> <p>需求:</p> <ol><li>点击“添加圆圈”按钮可以在画布上增加位置、大小、颜色都是随机的圆圈。</li> <li>点击“清空画布”按钮可以清除画布上所有圆圈。</li> <li>鼠标点击任意圆圈，该圆圈会出现黑色边框，表示选中。</li> <li>如果鼠标点击不在任何圆圈中，则以当前点击位置为圆心绘制随机圆圈。</li> <li>鼠标选择圆圈可以进行拖动，拖动的时候显示其颜色的提示框。</li></ol> <p>代码如下:</p> <div class="language-html extra-class"><pre class="language-html"><code><span class="token doctype">&lt;!DOCTYPE html&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">charset</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>UTF-8<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">&gt;</span></span>Document<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">&gt;</span></span>
+
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span><span class="token punctuation">&gt;</span></span><span class="token style"><span class="token language-css">
+    <span class="token selector">canvas</span> <span class="token punctuation">{</span>
+      <span class="token property">cursor</span><span class="token punctuation">:</span> pointer<span class="token punctuation">;</span>
+      <span class="token property">border</span><span class="token punctuation">:</span> 1px solid black<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+  </span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">&gt;</span></span>
+
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>canvas</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>canvas<span class="token punctuation">&quot;</span></span> <span class="token attr-name">width</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>400<span class="token punctuation">&quot;</span></span> <span class="token attr-name">height</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>300<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>canvas</span><span class="token punctuation">&gt;</span></span>
+
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">onclick</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>addRandomCircle()<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>添加圆圈<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">onclick</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>clearCanvas()<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>清空画布<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
+    <span class="token comment">// 这个方法用来储存每个圆圈对象</span>
+    <span class="token keyword">function</span> <span class="token function">Circle</span><span class="token punctuation">(</span><span class="token parameter">x<span class="token punctuation">,</span> y<span class="token punctuation">,</span> radius<span class="token punctuation">,</span> color</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span>x <span class="token operator">=</span> x<span class="token punctuation">;</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span>y <span class="token operator">=</span> y<span class="token punctuation">;</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span>radius <span class="token operator">=</span> radius<span class="token punctuation">;</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span>color <span class="token operator">=</span> color<span class="token punctuation">;</span>
+      <span class="token comment">// 存储当前圆是否被选中</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span>isSelected <span class="token operator">=</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+      <span class="token comment">// 存储当前圆是否可以拖动</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span>isDragging <span class="token operator">=</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">var</span> canvas<span class="token punctuation">;</span>
+    <span class="token keyword">var</span> context<span class="token punctuation">;</span>
+
+    <span class="token comment">// 保存画布上所有的圆圈</span>
+    <span class="token keyword">var</span> circles <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token comment">// 记录上一个被选中的圆</span>
+    <span class="token keyword">var</span> previousSelectedCircle<span class="token punctuation">;</span>
+
+    window<span class="token punctuation">.</span><span class="token function-variable function">onload</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      canvas <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">&quot;canvas&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      context <span class="token operator">=</span> canvas<span class="token punctuation">.</span><span class="token function">getContext</span><span class="token punctuation">(</span><span class="token string">&quot;2d&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+      canvas<span class="token punctuation">.</span>onmousedown <span class="token operator">=</span> canvasClick<span class="token punctuation">;</span>
+      canvas<span class="token punctuation">.</span>onmouseup <span class="token operator">=</span> stopDragging<span class="token punctuation">;</span>
+      canvas<span class="token punctuation">.</span>onmouseout <span class="token operator">=</span> stopDragging<span class="token punctuation">;</span>
+      canvas<span class="token punctuation">.</span>onmousemove <span class="token operator">=</span> mouseMove<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+    <span class="token comment">// 添加一个随机圆，圆心为(x, y)</span>
+    <span class="token keyword">function</span> <span class="token function">addRandomCircle</span><span class="token punctuation">(</span><span class="token parameter">x<span class="token punctuation">,</span> y</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token comment">// 为圆圈计算一个随机大小和位置</span>
+      <span class="token keyword">var</span> radius <span class="token operator">=</span> <span class="token function">randomFromTo</span><span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">,</span> <span class="token number">60</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token keyword">var</span> x <span class="token operator">=</span> x <span class="token operator">||</span> <span class="token function">randomFromTo</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> canvas<span class="token punctuation">.</span>width<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token keyword">var</span> y <span class="token operator">=</span> y <span class="token operator">||</span> <span class="token function">randomFromTo</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> canvas<span class="token punctuation">.</span>height<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+      <span class="token comment">// 为圆圈计算一个随机颜色</span>
+      <span class="token keyword">var</span> colors <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">&quot;green&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;blue&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;red&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;yellow&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;magenta&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;orange&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;brown&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;purple&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;pink&quot;</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+      <span class="token keyword">var</span> color <span class="token operator">=</span> colors<span class="token punctuation">[</span><span class="token function">randomFromTo</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">8</span><span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+      <span class="token comment">// 创建一个新圆圈</span>
+      <span class="token keyword">var</span> circle <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Circle</span><span class="token punctuation">(</span>x<span class="token punctuation">,</span> y<span class="token punctuation">,</span> radius<span class="token punctuation">,</span> color<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+      <span class="token comment">// 把它保存在数组中</span>
+      circles<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>circle<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+      <span class="token comment">// 重新绘制画布</span>
+      <span class="token function">drawCircles</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token comment">// 清空画布</span>
+    <span class="token keyword">function</span> <span class="token function">clearCanvas</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token comment">// 去除所有圆圈</span>
+      circles <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+      <span class="token comment">// 重新绘制画布.</span>
+      <span class="token function">drawCircles</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token comment">// 重绘画布</span>
+    <span class="token keyword">function</span> <span class="token function">drawCircles</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token comment">// 清除画布，准备绘制</span>
+      context<span class="token punctuation">.</span><span class="token function">clearRect</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> canvas<span class="token punctuation">.</span>width<span class="token punctuation">,</span> canvas<span class="token punctuation">.</span>height<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+      <span class="token comment">// 遍历所有圆圈</span>
+      <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">var</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> circles<span class="token punctuation">.</span>length<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">var</span> circle <span class="token operator">=</span> circles<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+        <span class="token comment">// 绘制圆圈</span>
+        context<span class="token punctuation">.</span>globalAlpha <span class="token operator">=</span> <span class="token number">0.85</span><span class="token punctuation">;</span>
+        context<span class="token punctuation">.</span><span class="token function">beginPath</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        context<span class="token punctuation">.</span><span class="token function">arc</span><span class="token punctuation">(</span>circle<span class="token punctuation">.</span>x<span class="token punctuation">,</span> circle<span class="token punctuation">.</span>y<span class="token punctuation">,</span> circle<span class="token punctuation">.</span>radius<span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> Math<span class="token punctuation">.</span><span class="token constant">PI</span> <span class="token operator">*</span> <span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        context<span class="token punctuation">.</span>fillStyle <span class="token operator">=</span> circle<span class="token punctuation">.</span>color<span class="token punctuation">;</span>
+        context<span class="token punctuation">.</span>strokeStyle <span class="token operator">=</span> <span class="token string">&quot;black&quot;</span><span class="token punctuation">;</span>
+
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>circle<span class="token punctuation">.</span>isSelected<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+          context<span class="token punctuation">.</span>lineWidth <span class="token operator">=</span> <span class="token number">5</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token keyword">else</span> <span class="token punctuation">{</span>
+          context<span class="token punctuation">.</span>lineWidth <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        context<span class="token punctuation">.</span><span class="token function">fill</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        context<span class="token punctuation">.</span><span class="token function">stroke</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token comment">// 在某个范围内生成随机数</span>
+    <span class="token keyword">function</span> <span class="token function">randomFromTo</span><span class="token punctuation">(</span><span class="token parameter"><span class="token keyword">from</span><span class="token punctuation">,</span> to</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">return</span> Math<span class="token punctuation">.</span><span class="token function">floor</span><span class="token punctuation">(</span>Math<span class="token punctuation">.</span><span class="token function">random</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">*</span> <span class="token punctuation">(</span>to <span class="token operator">-</span> <span class="token keyword">from</span> <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token keyword">from</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token comment">// 点击选择/添加圆圈</span>
+    <span class="token keyword">function</span> <span class="token function">canvasClick</span><span class="token punctuation">(</span><span class="token parameter">e</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token comment">// 取得画布上被单击的点</span>
+      <span class="token keyword">var</span> clickX <span class="token operator">=</span> e<span class="token punctuation">.</span>pageX <span class="token operator">-</span> canvas<span class="token punctuation">.</span>offsetLeft<span class="token punctuation">;</span>
+      <span class="token keyword">var</span> clickY <span class="token operator">=</span> e<span class="token punctuation">.</span>pageY <span class="token operator">-</span> canvas<span class="token punctuation">.</span>offsetTop<span class="token punctuation">;</span>
+
+      <span class="token comment">// 查找被单击的圆圈，由于是逆序循环，所以总能先找到最上层的圆圈</span>
+      <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">var</span> i <span class="token operator">=</span> circles<span class="token punctuation">.</span>length <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">;</span> i <span class="token operator">&gt;=</span> <span class="token number">0</span><span class="token punctuation">;</span> i<span class="token operator">--</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">var</span> circle <span class="token operator">=</span> circles<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">;</span>
+        <span class="token comment">// 使用勾股定理计算这个点与圆心之间的距离</span>
+        <span class="token keyword">var</span> distanceFromCenter <span class="token operator">=</span> Math<span class="token punctuation">.</span><span class="token function">sqrt</span><span class="token punctuation">(</span>Math<span class="token punctuation">.</span><span class="token function">pow</span><span class="token punctuation">(</span>circle<span class="token punctuation">.</span>x <span class="token operator">-</span> clickX<span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">)</span>
+          <span class="token operator">+</span> Math<span class="token punctuation">.</span><span class="token function">pow</span><span class="token punctuation">(</span>circle<span class="token punctuation">.</span>y <span class="token operator">-</span> clickY<span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+        <span class="token comment">// 判断这个点是否在圆圈中</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>distanceFromCenter <span class="token operator">&lt;=</span> circle<span class="token punctuation">.</span>radius<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+          <span class="token comment">// 清除之前选择的圆圈</span>
+          <span class="token keyword">if</span> <span class="token punctuation">(</span>previousSelectedCircle <span class="token operator">!=</span> <span class="token keyword">null</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            previousSelectedCircle<span class="token punctuation">.</span>isSelected <span class="token operator">=</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+            previousSelectedCircle<span class="token punctuation">.</span>isDragging <span class="token operator">=</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+          <span class="token punctuation">}</span>
+
+          <span class="token comment">// 更新上一个被选中的圆为当前圆</span>
+          previousSelectedCircle <span class="token operator">=</span> circle<span class="token punctuation">;</span>
+
+          <span class="token comment">// 选择新圆圈</span>
+          circle<span class="token punctuation">.</span>isSelected <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+          
+          <span class="token comment">// 使圆圈允许拖拽</span>
+          circle<span class="token punctuation">.</span>isDragging <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+
+          <span class="token comment">// 更新显示</span>
+          <span class="token function">drawCircles</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+          <span class="token comment">// 停止搜索</span>
+          <span class="token keyword">return</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">}</span>
+      <span class="token comment">// 如果当前位置没有圆，则添加一个随机圆</span>
+      <span class="token function">addRandomCircle</span><span class="token punctuation">(</span>clickX<span class="token punctuation">,</span> clickY<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token comment">// 绘制tooltip提示文字</span>
+    <span class="token keyword">function</span> <span class="token function">drawToolTip</span><span class="token punctuation">(</span><span class="token parameter">txtLoc<span class="token punctuation">,</span> x<span class="token punctuation">,</span> y</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      context<span class="token punctuation">.</span><span class="token function">save</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token keyword">var</span> padding <span class="token operator">=</span> <span class="token number">3</span><span class="token punctuation">;</span>
+      <span class="token keyword">var</span> font <span class="token operator">=</span> <span class="token string">&quot;16px arial&quot;</span><span class="token punctuation">;</span>
+      context<span class="token punctuation">.</span>font <span class="token operator">=</span> font<span class="token punctuation">;</span>
+      context<span class="token punctuation">.</span>textBaseline <span class="token operator">=</span> <span class="token string">'bottom'</span><span class="token punctuation">;</span>
+      context<span class="token punctuation">.</span>fillStyle <span class="token operator">=</span> <span class="token string">'yellow'</span><span class="token punctuation">;</span>
+
+      <span class="token comment">//绘制ToolTip背景</span>
+      <span class="token keyword">var</span> width <span class="token operator">=</span> context<span class="token punctuation">.</span><span class="token function">measureText</span><span class="token punctuation">(</span>txtLoc<span class="token punctuation">)</span><span class="token punctuation">.</span>width<span class="token punctuation">;</span>
+      <span class="token keyword">var</span> height <span class="token operator">=</span> <span class="token function">parseInt</span><span class="token punctuation">(</span>font<span class="token punctuation">,</span> <span class="token number">10</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      context<span class="token punctuation">.</span><span class="token function">fillRect</span><span class="token punctuation">(</span>x<span class="token punctuation">,</span> y<span class="token operator">-</span>height<span class="token punctuation">,</span> width<span class="token operator">+</span>padding<span class="token operator">*</span><span class="token number">2</span><span class="token punctuation">,</span> height<span class="token operator">+</span>padding<span class="token operator">*</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+      <span class="token comment">//绘制ToolTip文字</span>
+      context<span class="token punctuation">.</span>fillStyle <span class="token operator">=</span> <span class="token string">'#000'</span><span class="token punctuation">;</span>
+      context<span class="token punctuation">.</span><span class="token function">fillText</span><span class="token punctuation">(</span>txtLoc<span class="token punctuation">,</span> x<span class="token operator">+</span>padding<span class="token punctuation">,</span> y<span class="token operator">+</span>padding<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+      context<span class="token punctuation">.</span><span class="token function">restore</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token comment">// 停止拖动</span>
+    <span class="token keyword">function</span> <span class="token function">stopDragging</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">if</span> <span class="token punctuation">(</span>previousSelectedCircle<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        previousSelectedCircle<span class="token punctuation">.</span>isDragging <span class="token operator">=</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token comment">// 拖动圆圈</span>
+    <span class="token keyword">function</span> <span class="token function">mouseMove</span> <span class="token punctuation">(</span><span class="token parameter">e</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token comment">// 判断拖拽对象是否存在、圆圈是否开始拖拽</span>
+      <span class="token keyword">if</span> <span class="token punctuation">(</span>previousSelectedCircle <span class="token operator">&amp;&amp;</span> previousSelectedCircle<span class="token punctuation">.</span>isDragging <span class="token operator">==</span> <span class="token boolean">true</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token comment">// 取得鼠标位置</span>
+        <span class="token keyword">var</span> x <span class="token operator">=</span> e<span class="token punctuation">.</span>pageX <span class="token operator">-</span> canvas<span class="token punctuation">.</span>offsetLeft<span class="token punctuation">;</span>
+        <span class="token keyword">var</span> y <span class="token operator">=</span> e<span class="token punctuation">.</span>pageY <span class="token operator">-</span> canvas<span class="token punctuation">.</span>offsetTop<span class="token punctuation">;</span>
+
+        <span class="token comment">// 将圆圈移动到鼠标位置</span>
+        previousSelectedCircle<span class="token punctuation">.</span>x <span class="token operator">=</span> x<span class="token punctuation">;</span>
+        previousSelectedCircle<span class="token punctuation">.</span>y <span class="token operator">=</span> y<span class="token punctuation">;</span>
+
+        <span class="token comment">// 更新画布</span>
+        <span class="token function">drawCircles</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token comment">// 如果当前鼠标位置有圆圈，还要显示tip</span>
+        <span class="token function">drawToolTip</span><span class="token punctuation">(</span><span class="token string">&quot;颜色：&quot;</span> <span class="token operator">+</span> previousSelectedCircle<span class="token punctuation">.</span>color<span class="token punctuation">,</span> x<span class="token punctuation">,</span> y<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+  </span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><p>代码说明：</p> <ol><li><p>为了能够将圆圈对象保存起来，我们定义了一个叫 Circle() 的函数类创建自定义对象。同时要让这个对象能够保持数据，要使用关键字 this 来创建属性。</p></li> <li><p>drawCircles() 函数用来根据当前圆圈的集合来填充画布。每次程序刷新画布时，会先使用 clearRect() 方法清除画布上的所有内容。但不用当心这样会造成画布闪烁，即画布上的圆圈一下子全部消失，然后一下子又重新出现。因为Canvas针对这个问题进行了优化，会在所有绘图逻辑执行完毕后才清除或绘制所有内容，保证最终结果的流畅。</p></li> <li><p>要实现鼠标选中某个图像，就要用到碰撞检测。即计算鼠标点击的那个点是否落在某个形状里。对于圆圈而言，只要计算单击点与圆心的直线距离即可。</p></li></ol></div><div class="article-info"><div class="article-title">文档信息</div><p class="article-item">版权声明：著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。</p><p class="article-item">文章标题：与鼠标进行交互</p><p class="article-item">原文链接：<a href="https://www.xiaoyulive.top/categories/front-end/canvas/_books/canvas/Interaction/mouse.html">https://www.xiaoyulive.top/categories/front-end/canvas/_books/canvas/Interaction/mouse.html</a></p><!----></div><!----><!----></div><div class="footers" data-v-38547c78><p data-v-38547c78><span data-v-38547c78>MIT Licensed | Copyright © 2018-present  滇ICP备16006294号</span></p><p data-v-38547c78><span data-v-38547c78>Design by <a href="/">Quanzaiyu</a> | Power by <a href="https://vuepress.vuejs.org/" target="_blank">VuePress</a> | Hosted by <a href="https://pages.coding.me" target="_blank" style="font-weight: bold">Coding Pages</a></span></p></div></div><div class="global-ui"><!----><!----></div></div>
+    <script src="/assets/js/app.1b240dfe.js" defer></script><script src="/assets/js/5.6792f089.js" defer></script>
+  </body>
+</html>
