@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>磁盘管理与设备挂载 | 小昱个人网站</title>
+    <meta name="description" content="小昱个人网站">
+    <meta http-equiv="Expires" content="Mon,12 May 2050 00:20:00 GMT">
+  <link rel="icon" href="/logo.png">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="stylesheet" href="//at.alicdn.com/t/font_517060_lom78h954w.css">
+  <link rel="stylesheet" href="https://img.xiaoyulive.top/css/animate.css">
+    
+    <link rel="preload" href="/assets/css/0.styles.24fc6e4b.css" as="style"><link rel="preload" href="/assets/js/app.c9b87ba3.js" as="script"><link rel="preload" href="/assets/js/5.00e0032f.js" as="script"><link rel="preload" href="/assets/js/14.d5c780f9.js" as="script"><link rel="prefetch" href="/assets/js/1.e2051bba.js"><link rel="prefetch" href="/assets/js/10.3b6377e8.js"><link rel="prefetch" href="/assets/js/11.59e2eb14.js"><link rel="prefetch" href="/assets/js/12.c48bf1f8.js"><link rel="prefetch" href="/assets/js/13.e6babe72.js"><link rel="prefetch" href="/assets/js/15.faa0dcc3.js"><link rel="prefetch" href="/assets/js/2.b12152b6.js"><link rel="prefetch" href="/assets/js/6.b694d48c.js"><link rel="prefetch" href="/assets/js/7.def599ee.js"><link rel="prefetch" href="/assets/js/8.2eb9dd90.js"><link rel="prefetch" href="/assets/js/9.00c09838.js"><link rel="prefetch" href="/assets/js/vendors~docsearch.55b56be7.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.24fc6e4b.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container" data-v-38547c78><header class="navbar" data-v-38547c78><div class="navbar-content"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div><a href="/" class="home-link router-link-active"><img src="/logo.png" class="logo"><span class="site-name can-hide">小昱个人网站</span></a><div class="links"><nav class="nav-links can-hide"><div class="nav-item"><a href="/blog/" class="nav-link">开发者博客</a></div><div class="nav-item"><a href="/articles/" class="nav-link">生活漫谈</a></div><div class="nav-item"><a href="/note/" class="nav-link">阅读札记</a></div><div class="nav-item"><a href="/categories/" class="nav-link router-link-active">学无止境</a></div><div class="nav-item"><a href="/share/" class="nav-link">精品分享</a></div><div class="nav-item"><a href="/favorite/" class="nav-link">收藏夹</a></div><!----></nav><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""><!----></div></div></div></header><div class="sidebar-mask" data-v-38547c78></div><div class="sidebar" data-v-38547c78><div class="sidebar-container"><nav class="nav-links"><div class="nav-item"><a href="/blog/" class="nav-link">开发者博客</a></div><div class="nav-item"><a href="/articles/" class="nav-link">生活漫谈</a></div><div class="nav-item"><a href="/note/" class="nav-link">阅读札记</a></div><div class="nav-item"><a href="/categories/" class="nav-link router-link-active">学无止境</a></div><div class="nav-item"><a href="/share/" class="nav-link">精品分享</a></div><div class="nav-item"><a href="/favorite/" class="nav-link">收藏夹</a></div><!----></nav><ul class="sidebar-links"><li><div class="sidebar-group first collapsable"><p class="sidebar-heading open"><span>Linux基础</span> <span class="arrow down"></span></p> <ul class="sidebar-group-items"><li><a href="/categories/os/linux/_books/linux/" class="sidebar-link">Linux</a></li><li><a href="/categories/os/linux/_books/linux/Intro.html" class="sidebar-link">基础知识</a></li><li><a href="/categories/os/linux/_books/linux/Config.html" class="sidebar-link">基础配置</a></li><li><a href="/categories/os/linux/_books/linux/Command.html" class="sidebar-link">基础命令</a></li><li><a href="/categories/os/linux/_books/linux/Vim.html" class="sidebar-link">编辑器 vi/vim</a></li><li><a href="/categories/os/linux/_books/linux/Search.html" class="sidebar-link">搜索与排序</a></li><li><a href="/categories/os/linux/_books/linux/Pipe.html" class="sidebar-link">管道及重定向输入输出</a></li><li><a href="/categories/os/linux/_books/linux/Disk_and_Mount.html" class="active sidebar-link">磁盘管理与设备挂载</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/categories/os/linux/_books/linux/Disk_and_Mount.html#基础概念" class="sidebar-link">基础概念</a></li><li class="sidebar-sub-header"><a href="/categories/os/linux/_books/linux/Disk_and_Mount.html#列出所有磁盘" class="sidebar-link">列出所有磁盘</a></li><li class="sidebar-sub-header"><a href="/categories/os/linux/_books/linux/Disk_and_Mount.html#磁盘分区" class="sidebar-link">磁盘分区</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/categories/os/linux/_books/linux/Disk_and_Mount.html#获取帮助-m" class="sidebar-link">获取帮助 (m)</a></li><li class="sidebar-sub-header"><a href="/categories/os/linux/_books/linux/Disk_and_Mount.html#列出所有支持的分区格式-l" class="sidebar-link">列出所有支持的分区格式 (l)</a></li><li class="sidebar-sub-header"><a href="/categories/os/linux/_books/linux/Disk_and_Mount.html#创建新分区-n" class="sidebar-link">创建新分区 (n)</a></li><li class="sidebar-sub-header"><a href="/categories/os/linux/_books/linux/Disk_and_Mount.html#打印分区表-p" class="sidebar-link">打印分区表 (p)</a></li><li class="sidebar-sub-header"><a href="/categories/os/linux/_books/linux/Disk_and_Mount.html#保存分区表-w" class="sidebar-link">保存分区表 (w)</a></li><li class="sidebar-sub-header"><a href="/categories/os/linux/_books/linux/Disk_and_Mount.html#查看新的磁盘设备" class="sidebar-link">查看新的磁盘设备</a></li></ul></li><li class="sidebar-sub-header"><a href="/categories/os/linux/_books/linux/Disk_and_Mount.html#分区格式化" class="sidebar-link">分区格式化</a></li><li class="sidebar-sub-header"><a href="/categories/os/linux/_books/linux/Disk_and_Mount.html#设备挂载" class="sidebar-link">设备挂载</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/categories/os/linux/_books/linux/Disk_and_Mount.html#常用命令选项" class="sidebar-link">常用命令选项</a></li><li class="sidebar-sub-header"><a href="/categories/os/linux/_books/linux/Disk_and_Mount.html#o-options：-挂载文件系统的选项" class="sidebar-link">-o options：(挂载文件系统的选项)</a></li><li class="sidebar-sub-header"><a href="/categories/os/linux/_books/linux/Disk_and_Mount.html#挂载示例" class="sidebar-link">挂载示例</a></li></ul></li><li class="sidebar-sub-header"><a href="/categories/os/linux/_books/linux/Disk_and_Mount.html#etc-fstab和-etc-mtab" class="sidebar-link">/etc/fstab和/etc/mtab</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/categories/os/linux/_books/linux/Disk_and_Mount.html#etc-fstab文件的作用" class="sidebar-link">/etc/fstab文件的作用</a></li><li class="sidebar-sub-header"><a href="/categories/os/linux/_books/linux/Disk_and_Mount.html#etc-mtab文件的作用" class="sidebar-link">/etc/mtab文件的作用</a></li><li class="sidebar-sub-header"><a href="/categories/os/linux/_books/linux/Disk_and_Mount.html#开机自动挂载" class="sidebar-link">开机自动挂载</a></li></ul></li><li class="sidebar-sub-header"><a href="/categories/os/linux/_books/linux/Disk_and_Mount.html#查看所有挂载的设备" class="sidebar-link">查看所有挂载的设备</a></li><li class="sidebar-sub-header"><a href="/categories/os/linux/_books/linux/Disk_and_Mount.html#问题处理" class="sidebar-link">问题处理</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/categories/os/linux/_books/linux/Disk_and_Mount.html#挂载或格式化时提示设备正忙" class="sidebar-link">挂载或格式化时提示设备正忙</a></li></ul></li><li class="sidebar-sub-header"><a href="/categories/os/linux/_books/linux/Disk_and_Mount.html#参考资料" class="sidebar-link">参考资料</a></li></ul></li><li><a href="/categories/os/linux/_books/linux/SSH_Login.html" class="sidebar-link">使用 SSH 私钥登录 Linux 系统</a></li><li><a href="/categories/os/linux/_books/linux/Shell.html" class="sidebar-link">shell 脚本编程基础</a></li><li><a href="/categories/os/linux/_books/linux/Firewall.html" class="sidebar-link">防火墙与系统安全</a></li><li><a href="/categories/os/linux/_books/linux/Process.html" class="sidebar-link">进程操作</a></li><li><a href="/categories/os/linux/_books/linux/Request.html" class="sidebar-link">Linux 网络请求</a></li><li><a href="/categories/os/linux/_books/linux/Install.html" class="sidebar-link">软件安装</a></li><li><a href="/categories/os/linux/_books/linux/Upload_and_Download.html" class="sidebar-link">Linux 上传与下载</a></li></ul></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>用户及权限</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>网络及安全</span> <span class="arrow right"></span></p> <!----></div></li></ul></div></div><div class="page" data-v-38547c78><div class="content default"><h1 id="磁盘管理与设备挂载"><a href="#磁盘管理与设备挂载" aria-hidden="true" class="header-anchor">#</a> 磁盘管理与设备挂载</h1> <h2 id="基础概念"><a href="#基础概念" aria-hidden="true" class="header-anchor">#</a> 基础概念</h2> <ul><li><strong>设备驱动</strong> 位于 <code>/dev</code> 下，通过 <code>ls</code> 命令查看系统中所有设备</li> <li>根文件系统之外的其他文件要想能够被访问，都必须通过“关联”至根文件系统上的某个目录来实现，此关联操作即为“挂载”，此目录即为“挂载点”,解除此关联关系的过程称之为“卸载”
+<ul><li><strong>挂载</strong>: 根文件系统外通过关联至根文件系统上的某个目录来实现访问</li> <li><strong>挂载点</strong>: mount_point，用于作为另一个文件系统的访问入口
+<ol><li>挂载点目录事先存在</li> <li>应该使用未被或不会被其它进程使用到的目录</li> <li>挂载点下原有的文件将会被隐藏</li></ol></li></ul></li></ul> <h2 id="列出所有磁盘"><a href="#列出所有磁盘" aria-hidden="true" class="header-anchor">#</a> 列出所有磁盘</h2> <p>使用 <code>fdisk -l</code> 列出所有磁盘</p> <div class="language-bash extra-class"><pre class="language-bash"><code>$ <span class="token function">fdisk</span> -l
+Disk /dev/vda: 42.9 GB, 42949672960 bytes, 83886080 sectors
+Units <span class="token operator">=</span> sectors of 1 * 512 <span class="token operator">=</span> 512 bytes
+Sector size <span class="token punctuation">(</span>logical/physical<span class="token punctuation">)</span>: 512 bytes / 512 bytes
+I/O size <span class="token punctuation">(</span>minimum/optimal<span class="token punctuation">)</span>: 512 bytes / 512 bytes
+Disk label type: dos
+Disk identifier: 0x0008d73a
+
+   Device Boot      Start         End      Blocks   Id  System
+/dev/vda1   *        2048    83884031    41940992   83  Linux
+
+Disk /dev/vdb: 536.9 GB, 536870912000 bytes, 1048576000 sectors
+Units <span class="token operator">=</span> sectors of 1 * 512 <span class="token operator">=</span> 512 bytes
+Sector size <span class="token punctuation">(</span>logical/physical<span class="token punctuation">)</span>: 512 bytes / 512 bytes
+I/O size <span class="token punctuation">(</span>minimum/optimal<span class="token punctuation">)</span>: 512 bytes / 512 bytes
+
+Disk /dev/mapper/vg_f08a5cd7b4e31c2b93f7d6c385860882-brick_3d7dc9f1e6346efc7361d0f4ec4ddf8c: 2147 MB, 2147483648 bytes, 4194304 sectors
+Units <span class="token operator">=</span> sectors of 1 * 512 <span class="token operator">=</span> 512 bytes
+Sector size <span class="token punctuation">(</span>logical/physical<span class="token punctuation">)</span>: 512 bytes / 512 bytes
+I/O size <span class="token punctuation">(</span>minimum/optimal<span class="token punctuation">)</span>: 262144 bytes / 262144 bytes
+
+Disk /dev/mapper/vg_f08a5cd7b4e31c2b93f7d6c385860882-brick_0027aec42ae3a4b5171cc7fddea50bc0: 1073 MB, 1073741824 bytes, 2097152 sectors
+Units <span class="token operator">=</span> sectors of 1 * 512 <span class="token operator">=</span> 512 bytes
+Sector size <span class="token punctuation">(</span>logical/physical<span class="token punctuation">)</span>: 512 bytes / 512 bytes
+I/O size <span class="token punctuation">(</span>minimum/optimal<span class="token punctuation">)</span>: 262144 bytes / 262144 bytes
+</code></pre></div><p>可以看到, 有一块 42.9 GB 的磁盘设备 <code>/dev/vda</code> 已经使用, 划分了一个分区 <code>/dev/vda1</code>, 有一块 536.9GB 的磁盘设备 <code>/dev/vdb</code> 还未使用</p> <h2 id="磁盘分区"><a href="#磁盘分区" aria-hidden="true" class="header-anchor">#</a> 磁盘分区</h2> <p>使用 <code>fdisk /dev/vdb</code> 进入磁盘设备进行操作, 可以进行分区、保存分区表、打印分区表等等操作</p> <div class="language-bash extra-class"><pre class="language-bash"><code>$ <span class="token function">fdisk</span> /dev/vdb
+Welcome to <span class="token function">fdisk</span> <span class="token punctuation">(</span>util-linux 2.23.2<span class="token punctuation">)</span>.
+
+Changes will remain <span class="token keyword">in</span> memory only, <span class="token keyword">until</span> you decide to <span class="token function">write</span> them.
+Be careful before using the <span class="token function">write</span> command.
+
+Device does not contain a recognized partition table
+Building a new DOS disklabel with disk identifier 0x11171dc8.
+</code></pre></div><p>以下是一些常用的命令:</p> <ul><li><code>m</code> 打开帮助</li> <li><code>n</code> 添加新分区</li> <li><code>p</code> 打印分区表</li> <li><code>w</code> 保存分区表并退出</li> <li><code>q</code> 不保存分区表并退出</li> <li><code>l</code> 列出所有支持的分区格式</li></ul> <h3 id="获取帮助-m"><a href="#获取帮助-m" aria-hidden="true" class="header-anchor">#</a> 获取帮助 (m)</h3> <div class="language-bash extra-class"><pre class="language-bash"><code>Command <span class="token punctuation">(</span>m <span class="token keyword">for</span> help<span class="token punctuation">)</span>: m
+Command action
+   a   toggle a bootable flag
+   b   edit bsd disklabel
+   c   toggle the dos compatibility flag
+   d   delete a partition
+   g   create a new empty GPT partition table
+   G   create an IRIX <span class="token punctuation">(</span>SGI<span class="token punctuation">)</span> partition table
+   l   list known partition types
+   m   print this menu
+   n   <span class="token function">add</span> a new partition
+   o   create a new empty DOS partition table
+   p   print the partition table
+   q   quit without saving changes
+   s   create a new empty Sun disklabel
+   t   change a partition's system <span class="token function">id</span>
+   u   change display/entry <span class="token function">units</span>
+   v   verify the partition table
+   w   <span class="token function">write</span> table to disk and <span class="token keyword">exit</span>
+   x   extra functionality <span class="token punctuation">(</span>experts only<span class="token punctuation">)</span>
+</code></pre></div><h3 id="列出所有支持的分区格式-l"><a href="#列出所有支持的分区格式-l" aria-hidden="true" class="header-anchor">#</a> 列出所有支持的分区格式 (l)</h3> <div class="language-bash extra-class"><pre class="language-bash"><code>Command <span class="token punctuation">(</span>m <span class="token keyword">for</span> help<span class="token punctuation">)</span>: l
+
+ 0  Empty           24  NEC DOS         81  Minix / old Lin bf  Solaris
+ 1  FAT12           27  Hidden NTFS Win 82  Linux swap / So c1  DRDOS/sec <span class="token punctuation">(</span>FAT-
+ 2  XENIX root      39  Plan 9          83  Linux           c4  DRDOS/sec <span class="token punctuation">(</span>FAT-
+ 3  XENIX usr       3c  PartitionMagic  84  OS/2 hidden C:  c6  DRDOS/sec <span class="token punctuation">(</span>FAT-
+ 4  FAT16 <span class="token operator">&lt;</span>32M      40  Venix 80286     85  Linux extended  c7  Syrinx
+ 5  Extended        41  PPC PReP Boot   86  NTFS volume <span class="token keyword">set</span> da  Non-FS data
+ 6  FAT16           42  SFS             87  NTFS volume <span class="token keyword">set</span> db  CP/M / CTOS / <span class="token keyword">.</span>
+ 7  HPFS/NTFS/exFAT 4d  QNX4.x          88  Linux plaintext de  Dell Utility
+ 8  AIX             4e  QNX4.x 2nd part 8e  Linux LVM       <span class="token function">df</span>  BootIt
+ 9  AIX bootable    4f  QNX4.x 3rd part 93  Amoeba          e1  DOS access
+ a  OS/2 Boot Manag 50  OnTrack DM      94  Amoeba BBT      e3  DOS R/O
+ b  W95 FAT32       51  OnTrack DM6 Aux 9f  BSD/OS          e4  SpeedStor
+ c  W95 FAT32 <span class="token punctuation">(</span>LBA<span class="token punctuation">)</span> 52  CP/M            a0  IBM Thinkpad hi eb  BeOS fs
+ e  W95 FAT16 <span class="token punctuation">(</span>LBA<span class="token punctuation">)</span> 53  OnTrack DM6 Aux a5  FreeBSD         ee  GPT
+ f  W95 Ext'd <span class="token punctuation">(</span>LBA<span class="token punctuation">)</span> 54  OnTrackDM6      a6  OpenBSD         ef  EFI <span class="token punctuation">(</span>FAT-12/16/
+10  OPUS            55  EZ-Drive        a7  NeXTSTEP        f0  Linux/PA-RISC b
+11  Hidden FAT12    56  Golden Bow      a8  Darwin UFS      f1  SpeedStor
+12  Compaq diagnost 5c  Priam Edisk     a9  NetBSD          f4  SpeedStor
+14  Hidden FAT16 <span class="token operator">&lt;</span>3 61  SpeedStor       ab  Darwin boot     f2  DOS secondary
+16  Hidden FAT16    63  GNU HURD or Sys af  HFS / HFS+      fb  VMware VMFS
+17  Hidden HPFS/NTF 64  Novell Netware  b7  BSDI fs         fc  VMware VMKCORE
+18  AST SmartSleep  65  Novell Netware  b8  BSDI swap       fd  Linux raid auto
+1b  Hidden W95 FAT3 70  DiskSecure Mult bb  Boot Wizard hid fe  LANstep
+1c  Hidden W95 FAT3 75  PC/IX           be  Solaris boot    ff  BBT
+1e  Hidden W95 FAT1 80  Old Minix
+</code></pre></div><h3 id="创建新分区-n"><a href="#创建新分区-n" aria-hidden="true" class="header-anchor">#</a> 创建新分区 (n)</h3> <ul><li><strong>Partition type</strong> 分区类型 (直接回车就好)
+<ul><li>p: 主分区</li> <li>e: 扩展分区</li></ul></li> <li><strong>Partition number</strong> 分区序号 (直接回车就好)</li> <li><strong>First sector</strong> 起始扇区 (直接回车就好)</li> <li><strong>Last sector</strong> 分区大小, 输入 +100G 表示为此分区分配 100G 的空间</li></ul> <div class="language-bash extra-class"><pre class="language-bash"><code>Command <span class="token punctuation">(</span>m <span class="token keyword">for</span> help<span class="token punctuation">)</span>: n
+Partition type:
+   p   primary <span class="token punctuation">(</span>0 primary, 0 extended, 4 free<span class="token punctuation">)</span>
+   e   extended
+Select <span class="token punctuation">(</span>default p<span class="token punctuation">)</span>:
+Using default response p
+Partition number <span class="token punctuation">(</span>1-4, default 1<span class="token punctuation">)</span>:
+First sector <span class="token punctuation">(</span>2048-1048575999, default 2048<span class="token punctuation">)</span>:
+Using default value 2048
+Last sector, +sectors or +size<span class="token punctuation">{</span>K,M,G<span class="token punctuation">}</span> <span class="token punctuation">(</span>2048-1048575999, default 1048575999<span class="token punctuation">)</span>: +100G
+Partition 1 of <span class="token function">type</span> Linux and of size 100 GiB is <span class="token keyword">set</span>
+</code></pre></div><p>多次输入 n 命令, 可对磁盘进行多个分区划分</p> <h3 id="打印分区表-p"><a href="#打印分区表-p" aria-hidden="true" class="header-anchor">#</a> 打印分区表 (p)</h3> <p>创建完分区后, 使用 p 命令打印分区表</p> <div class="language-bash extra-class"><pre class="language-bash"><code>Command <span class="token punctuation">(</span>m <span class="token keyword">for</span> help<span class="token punctuation">)</span>: p
+
+Disk /dev/vdb: 536.9 GB, 536870912000 bytes, 1048576000 sectors
+Units <span class="token operator">=</span> sectors of 1 * 512 <span class="token operator">=</span> 512 bytes
+Sector size <span class="token punctuation">(</span>logical/physical<span class="token punctuation">)</span>: 512 bytes / 512 bytes
+I/O size <span class="token punctuation">(</span>minimum/optimal<span class="token punctuation">)</span>: 512 bytes / 512 bytes
+Disk label type: dos
+Disk identifier: 0x11171dc8
+
+   Device Boot      Start         End      Blocks   Id  System
+/dev/vdb1            2048   209717247   104857600   83  Linux
+/dev/vdb2       209717248   419432447   104857600   83  Linux
+/dev/vdb3       419432448   629147647   104857600   83  Linux
+/dev/vdb4       629149696  1048575999   209713152   83  Linux
+</code></pre></div><h3 id="保存分区表-w"><a href="#保存分区表-w" aria-hidden="true" class="header-anchor">#</a> 保存分区表 (w)</h3> <p>使用 w 命令对已划分的分区表进行保存</p> <div class="language-bash extra-class"><pre class="language-bash"><code>Command <span class="token punctuation">(</span>m <span class="token keyword">for</span> help<span class="token punctuation">)</span>: w
+The partition table has been altered<span class="token operator">!</span>
+
+Calling ioctl<span class="token punctuation">(</span><span class="token punctuation">)</span> to re-read partition table.
+Syncing disks.
+</code></pre></div><h3 id="查看新的磁盘设备"><a href="#查看新的磁盘设备" aria-hidden="true" class="header-anchor">#</a> 查看新的磁盘设备</h3> <p>创建完分区表并退出后, 使用 <code>ls /dev/vdb*</code> 可以看到, 已划分的4个分区都已出现</p> <div class="language-bash extra-class"><pre class="language-bash"><code>$ <span class="token function">ls</span> /dev/vdb*
+/dev/vdb  /dev/vdb1  /dev/vdb2  /dev/vdb3  /dev/vdb4
+</code></pre></div><p>再次使用 <code>fdisk -l</code> 查看磁盘信息</p> <div class="language-bash extra-class"><pre class="language-bash"><code>$ <span class="token function">fdisk</span> -l
+
+Disk /dev/vda: 42.9 GB, 42949672960 bytes, 83886080 sectors
+Units <span class="token operator">=</span> sectors of 1 * 512 <span class="token operator">=</span> 512 bytes
+Sector size <span class="token punctuation">(</span>logical/physical<span class="token punctuation">)</span>: 512 bytes / 512 bytes
+I/O size <span class="token punctuation">(</span>minimum/optimal<span class="token punctuation">)</span>: 512 bytes / 512 bytes
+Disk label type: dos
+Disk identifier: 0x0008d73a
+
+   Device Boot      Start         End      Blocks   Id  System
+/dev/vda1   *        2048    83884031    41940992   83  Linux
+
+Disk /dev/vdb: 536.9 GB, 536870912000 bytes, 1048576000 sectors
+Units <span class="token operator">=</span> sectors of 1 * 512 <span class="token operator">=</span> 512 bytes
+Sector size <span class="token punctuation">(</span>logical/physical<span class="token punctuation">)</span>: 512 bytes / 512 bytes
+I/O size <span class="token punctuation">(</span>minimum/optimal<span class="token punctuation">)</span>: 512 bytes / 512 bytes
+Disk label type: dos
+Disk identifier: 0x11171dc8
+
+   Device Boot      Start         End      Blocks   Id  System
+/dev/vdb1            2048   209717247   104857600   83  Linux
+/dev/vdb2       209717248   419432447   104857600   83  Linux
+/dev/vdb3       419432448   629147647   104857600   83  Linux
+/dev/vdb4       629149696  1048575999   209713152   83  Linux
+
+Disk /dev/mapper/vg_f08a5cd7b4e31c2b93f7d6c385860882-brick_3d7dc9f1e6346efc7361d0f4ec4ddf8c: 2147 MB, 2147483648 bytes, 4194304 sectors
+Units <span class="token operator">=</span> sectors of 1 * 512 <span class="token operator">=</span> 512 bytes
+Sector size <span class="token punctuation">(</span>logical/physical<span class="token punctuation">)</span>: 512 bytes / 512 bytes
+I/O size <span class="token punctuation">(</span>minimum/optimal<span class="token punctuation">)</span>: 262144 bytes / 262144 bytes
+
+
+Disk /dev/mapper/vg_f08a5cd7b4e31c2b93f7d6c385860882-brick_0027aec42ae3a4b5171cc7fddea50bc0: 1073 MB, 1073741824 bytes, 2097152 sectors
+Units <span class="token operator">=</span> sectors of 1 * 512 <span class="token operator">=</span> 512 bytes
+Sector size <span class="token punctuation">(</span>logical/physical<span class="token punctuation">)</span>: 512 bytes / 512 bytes
+I/O size <span class="token punctuation">(</span>minimum/optimal<span class="token punctuation">)</span>: 262144 bytes / 262144 bytes
+</code></pre></div><p>可以看到 <code>/dev/vdb</code> 的4个分区都已分配</p> <h2 id="分区格式化"><a href="#分区格式化" aria-hidden="true" class="header-anchor">#</a> 分区格式化</h2> <p>使用 <code>mkfs</code> 进行磁盘格式化, 通过 <code>-t</code> 选项指定文件系统的格式</p> <div class="language-bash extra-class"><pre class="language-bash"><code>$ <span class="token function">mkfs</span> -t ext3 /dev/vdb1
+<span class="token function">mke2fs</span> 1.42.9 <span class="token punctuation">(</span>28-Dec-2013<span class="token punctuation">)</span>
+Filesystem label<span class="token operator">=</span>
+OS type: Linux
+Block size<span class="token operator">=</span>4096 <span class="token punctuation">(</span>log<span class="token operator">=</span>2<span class="token punctuation">)</span>
+Fragment size<span class="token operator">=</span>4096 <span class="token punctuation">(</span>log<span class="token operator">=</span>2<span class="token punctuation">)</span>
+Stride<span class="token operator">=</span>0 blocks, Stripe width<span class="token operator">=</span>0 blocks
+6553600 inodes, 26214400 blocks
+1310720 blocks <span class="token punctuation">(</span>5.00%<span class="token punctuation">)</span> reserved <span class="token keyword">for</span> the super user
+First data block<span class="token operator">=</span>0
+Maximum filesystem blocks<span class="token operator">=</span>4294967296
+800 block <span class="token function">groups</span>
+32768 blocks per group, 32768 fragments per group
+8192 inodes per group
+Superblock backups stored on blocks:
+	32768, 98304, 163840, 229376, 294912, 819200, 884736, 1605632, 2654208,
+	4096000, 7962624, 11239424, 20480000, 23887872
+
+Allocating group tables: <span class="token keyword">done</span>
+Writing inode tables: <span class="token keyword">done</span>
+Creating journal <span class="token punctuation">(</span>32768 blocks<span class="token punctuation">)</span>: <span class="token keyword">done</span>
+Writing superblocks and filesystem accounting information:
+<span class="token keyword">done</span>
+</code></pre></div><h2 id="设备挂载"><a href="#设备挂载" aria-hidden="true" class="header-anchor">#</a> 设备挂载</h2> <p>比如，在 <code>/dev</code> 下有一个设备叫 <code>cdrom</code>，通常为光驱设备，要将此设备挂载到系统当中，只需使用 <code>mount /dev/cdrom /mnt/cdrom</code> 即可，此时，该设备已挂载至 <code>/mnt/cdrom</code> 下。</p> <div class="imgLink" data-v-16222526><img src="https://img.xiaoyulive.top/img/articles/011.jpg" data-v-16222526></div> <p>前面创建的分区, 使用以下命令进行挂载</p> <div class="language-bash extra-class"><pre class="language-bash"><code>$ <span class="token function">mkdir</span> -p  /mnt/vdb1  /mnt/vdb2  /mnt/vdb3  /mnt/vdb4
+$ <span class="token function">mount</span> /dev/vdb1 /mnt/vdb1
+$ <span class="token function">mount</span> /dev/vdb2 /mnt/vdb2
+$ <span class="token function">mount</span> /dev/vdb3 /mnt/vdb3
+$ <span class="token function">mount</span> /dev/vdb4 /mnt/vdb4
+</code></pre></div><p>挂载命令使用格式：<code>mount [-o options] device mount_point</code></p> <p>device：指明要挂载的设备；</p> <ol><li>设备文件：例如 /dev/sda5</li> <li>卷标：-L 'LABEL', 例如 -L 'MYDATA'</li> <li>UUID, -U 'UUID'：例如 -U '0c50523c-43f1-45e7-85c0-a126711d406e'</li> <li>伪文件系统名称：proc, sysfs, devtmpfs, configfs</li></ol> <p>卸载 (umount) 命令使用格式:</p> <div class="language-bash extra-class"><pre class="language-bash"><code>$ <span class="token function">umount</span> DEVICE
+$ <span class="token function">umount</span> MOUNT_POINT
+</code></pre></div><h3 id="常用命令选项"><a href="#常用命令选项" aria-hidden="true" class="header-anchor">#</a> 常用命令选项</h3> <ul><li><code>-t vsftype</code>：指定要挂载的设备上的文件系统类型；</li> <li><code>-r</code>: readonly，只读挂载；</li> <li><code>-w</code>: read and write, 读写挂载；</li> <li><code>-n</code>: 不更新/etc/mtab；</li> <li><code>-a</code>：自动挂载所有支持自动挂载的设备；(定义在了/etc/fstab文件中，且挂载选项中有“自动挂载”功能)</li> <li><code>-L 'LABEL'</code>: 以卷标指定挂载设备；</li> <li><code>-U 'UUID'</code>: 以UUID指定要挂载的设备；</li> <li><code>-B</code>, <code>--bind</code>: 绑定目录到另一个目录上；</li></ul> <h3 id="o-options：-挂载文件系统的选项"><a href="#o-options：-挂载文件系统的选项" aria-hidden="true" class="header-anchor">#</a> -o options：(挂载文件系统的选项)</h3> <ul><li>async：异步模式；</li> <li>sync：同步模式；</li> <li>atime/noatime：包含目录和文件；</li> <li>diratime/nodiratime：目录的访问时间戳</li> <li>auto/noauto：是否支持自动挂载</li> <li>exec/noexec：是否支持将文件系统上应用程序运行为进程</li> <li>dev/nodev：是否支持在此文件系统上使用设备文件；</li> <li>suid/nosuid：是否支持在此文件系统上使用特殊权限</li> <li>remount：重新挂载</li> <li>ro：只读</li> <li>rw:读写</li> <li>user/nouser：是否允许普通用户挂载此设备</li> <li>acl：启用此文件系统上的acl功能</li></ul> <p>注意：上述选项可多个同时使用，彼此使用逗号分隔；</p> <p>默认挂载选项：defaults：rw, suid, dev, exec, auto, nouser, and async</p> <h3 id="挂载示例"><a href="#挂载示例" aria-hidden="true" class="header-anchor">#</a> 挂载示例</h3> <div class="language-bash extra-class"><pre class="language-bash"><code>$ <span class="token function">mount</span> -o loop file.iso /mnt/cdrom <span class="token comment"># 挂载一个文件或ISO镜像文件</span>
+$ <span class="token function">mount</span> -t vfat /dev/hda5 /mnt/hda5 <span class="token comment"># 挂载一个Windows FAT32文件系统</span>
+$ <span class="token function">mount</span> -t smbfs -o username<span class="token operator">=</span>user,password<span class="token operator">=</span>pass //WinClient/share /mnt/share <span class="token comment"># 挂载一个windows网络共享磁盘空间</span>
+</code></pre></div><h2 id="etc-fstab和-etc-mtab"><a href="#etc-fstab和-etc-mtab" aria-hidden="true" class="header-anchor">#</a> /etc/fstab和/etc/mtab</h2> <h3 id="etc-fstab文件的作用"><a href="#etc-fstab文件的作用" aria-hidden="true" class="header-anchor">#</a> /etc/fstab文件的作用</h3> <p>记录了计算机上硬盘分区的相关信息，启动 Linux 的时候，检查分区的 fsck 命令，和挂载分区的 mount 命令，都需要 fstab 中的信息，来正确的检查和挂载硬盘。</p> <h3 id="etc-mtab文件的作用"><a href="#etc-mtab文件的作用" aria-hidden="true" class="header-anchor">#</a> /etc/mtab文件的作用</h3> <p>记载的是现在系统已经装载的文件系统，包括操作系统建立的虚拟文件等；而/etc/fstab是系统准备装载的。 每当 mount 挂载分区、umount 卸载分区，都会动态更新 mtab，mtab 总是保持着当前系统中已挂载的分区信息，fdisk、df 这类程序，必须要读取 mtab 文件，才能获得当前系统中的分区挂载情况。当然我们自己还可以通过读取/proc/mount也可以来获取当前挂载信息</p> <h3 id="开机自动挂载"><a href="#开机自动挂载" aria-hidden="true" class="header-anchor">#</a> 开机自动挂载</h3> <p>如果我们想实现开机自动挂载某设备，只要修改 <code>/etc/fstab</code> 文件即可。</p> <p>文件挂载的配置文件：<code>/etc/fstab</code></p> <p>每行定义一个要挂载的文件系统；</p> <p>格式例如</p> <table><thead><tr><th>要挂载的设备或伪文件系统</th> <th>挂载点</th> <th>文件系统类型</th> <th>挂载选项</th> <th>转储频率</th> <th>自检次序</th></tr></thead> <tbody><tr><td>UUID=6efb8a23-bae1-427c-ab10-3caca95250b1</td> <td>/boot</td> <td>xfs</td> <td>defaults</td> <td>0</td> <td>0</td></tr> <tr><td>/dev/mapper/cl-root</td> <td>/</td> <td>xfs</td> <td>defaults</td> <td>0</td> <td>0</td></tr> <tr><td>UUID=01758f71-af40-4a56-8763-bd2272746772</td> <td>/boot</td> <td>xfs</td> <td>defaults</td> <td>0</td> <td>0</td></tr> <tr><td>/dev/mapper/cl-swap</td> <td>swap</td> <td>swap</td> <td>defaults</td> <td>0</td> <td>0</td></tr> <tr><td>/dev/cdrom</td> <td>/mnt/cdrom</td> <td>auto</td> <td>defaults</td> <td>0</td> <td>0</td></tr></tbody></table> <ul><li><strong>要挂载的设备或伪文件系统</strong> 设备文件、LABEL(LABEL=&quot;&quot;)、UUID(UUID=&quot;&quot;)、伪文件系统名称(proc, sysfs)</li> <li><strong>挂载点</strong> 指定的文件夹</li> <li><strong>挂载选项</strong> 可指定多项，用英文逗号分隔，如 auto, ro
+<ul><li>auto 开机自动挂载</li> <li>default 按照大多数永久文件系统的缺省值设置挂载定义</li> <li>noauto 开机不自动挂载</li> <li>nouser 只有超级用户可以挂载</li> <li>ro 按只读权限挂载</li> <li>rw 按可读可写权限挂载</li> <li>user 任何用户都可以挂载</li></ul></li> <li><strong>转储频率</strong> <ul><li>0：不做备份</li> <li>1：每天转储</li> <li>2：每隔一天转储</li></ul></li> <li><strong>自检次序</strong> <ul><li>0：不自检</li> <li>1：首先自检；一般只有rootfs才用1；</li></ul></li></ul> <h2 id="查看所有挂载的设备"><a href="#查看所有挂载的设备" aria-hidden="true" class="header-anchor">#</a> 查看所有挂载的设备</h2> <p>使用 <code>cat /proc/mounts</code> 或 <code>df -lh</code> 查看所有挂载的设备</p> <div class="language-bash extra-class"><pre class="language-bash"><code>$ <span class="token function">cat</span> /proc/mounts
+$ <span class="token function">df</span> -lh
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/vda1        40G   18G   21G  47% /
+devtmpfs        7.8G     0  7.8G   0% /dev
+tmpfs           7.8G     0  7.8G   0% /dev/shm
+tmpfs           7.8G  672K  7.8G   1% /run
+tmpfs           7.8G     0  7.8G   0% /sys/fs/cgroup
+tmpfs           1.6G     0  1.6G   0% /run/user/0
+overlay          40G   18G   21G  47% /var/lib/docker/overlay2/387fee3668a3843c7520649366bafa3716562f7129f0ec6b5e94040a9bbc5a61/merged
+shm              64M     0   64M   0% /var/lib/docker/containers/0ac46dccc179c16c6fc8caa87704d78d9c096125d67939ad416c351d9bc01e61/mounts/shm
+/dev/vdb1        99G   60M   94G   1% /mnt/vdb1
+/dev/vdb2        99G   60M   94G   1% /mnt/vdb2
+/dev/vdb3        99G   60M   94G   1% /mnt/vdb3
+/dev/vdb5       197G   60M  187G   1% /mnt/vdb5
+</code></pre></div><h2 id="问题处理"><a href="#问题处理" aria-hidden="true" class="header-anchor">#</a> 问题处理</h2> <h3 id="挂载或格式化时提示设备正忙"><a href="#挂载或格式化时提示设备正忙" aria-hidden="true" class="header-anchor">#</a> 挂载或格式化时提示设备正忙</h3> <p>在格式化的时候, 报 <code>/dev/vdb1 is apparently in use by the system</code></p> <p>挂载的时候, 报 <code>/dev/vdb1 is already mounted or /mnt/vdb1 busy</code></p> <div class="language-bash extra-class"><pre class="language-bash"><code>$ <span class="token function">mount</span> /dev/vdb1 /mnt/vdb1
+mount: /dev/vdb1 is already mounted or /mnt/vdb1 busy
+
+$ <span class="token function">mkfs</span> -t ext3 /dev/vdb1
+<span class="token function">mke2fs</span> 1.42.9 <span class="token punctuation">(</span>28-Dec-2013<span class="token punctuation">)</span>
+/dev/vdb1 is apparently <span class="token keyword">in</span> use by the system<span class="token punctuation">;</span> will not <span class="token function">make</span> a filesystem here<span class="token operator">!</span>
+</code></pre></div><p>使用 <code>dmsetup status</code> 查看dm设备信息</p> <div class="language-bash extra-class"><pre class="language-bash"><code>$ dmsetup status
+vg_f08a5cd7b4e31c2b93f7d6c385860882-tp_0027aec42ae3a4b5171cc7fddea50bc0: 0 2097152 linear
+vg_f08a5cd7b4e31c2b93f7d6c385860882-brick_3d7dc9f1e6346efc7361d0f4ec4ddf8c: 0 4194304 thin 29184 4194303
+vg_f08a5cd7b4e31c2b93f7d6c385860882-tp_3d7dc9f1e6346efc7361d0f4ec4ddf8c: 0 4194304 linear
+vg_f08a5cd7b4e31c2b93f7d6c385860882-tp_3d7dc9f1e6346efc7361d0f4ec4ddf8c-tpool: 0 4194304 thin-pool 1 10/3072 57/8192 - rw no_discard_passdown queue_if_no_space -
+</code></pre></div><p>使用 <code>dmsetup remove_all</code> 移除所有dm设备即可</p> <div class="language-bash extra-class"><pre class="language-bash"><code>$ dmsetup remove_all
+$ dmsetup status
+No devices found
+</code></pre></div><h2 id="参考资料"><a href="#参考资料" aria-hidden="true" class="header-anchor">#</a> 参考资料</h2> <ul><li><a href="https://www.cnblogs.com/vipchenwei/articles/6909324.html" target="_blank" rel="noopener noreferrer">Linux下磁盘分区，格式化以及挂载<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li> <li><a href="https://www.linuxidc.com/Linux/2016-08/134666.htm" target="_blank" rel="noopener noreferrer">Linux基础知识之挂载详解(mount,umount及开机自动挂载)<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li> <li><a href="https://www.cnblogs.com/ddbear/p/7485857.html" target="_blank" rel="noopener noreferrer">挂载硬盘，提示 mount: unknown filesystem type 'LVM2_member'的解决方案<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li> <li><a href="https://blog.csdn.net/tianlesoftware/article/details/8594958" target="_blank" rel="noopener noreferrer">/dev/sdxx is apparently in use by the system; will not make a filesystem here! 解决方法<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul></div><div class="article-info"><div class="article-title">文档信息</div><p class="article-item">版权声明：著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。</p><p class="article-item">文章标题：磁盘管理与设备挂载</p><p class="article-item">原文链接：<a href="https://www.xiaoyulive.top/categories/os/linux/_books/linux/Disk_and_Mount.html">https://www.xiaoyulive.top/categories/os/linux/_books/linux/Disk_and_Mount.html</a></p><!----></div><!----><div class="content page-nav"><p class="inner"><span class="prev">← <a href="/categories/os/linux/_books/linux/Pipe.html">管道及重定向输入输出</a></span><span class="next"><a href="/categories/os/linux/_books/linux/SSH_Login.html">使用 SSH 私钥登录 Linux 系统</a>  →</span></p></div></div><div class="footers" data-v-38547c78><p data-v-38547c78><span data-v-38547c78>MIT Licensed | Copyright © 2018-present  滇ICP备16006294号</span></p><p data-v-38547c78><span data-v-38547c78>Design by <a href="/">Quanzaiyu</a> | Power by <a href="https://vuepress.vuejs.org/" target="_blank">VuePress</a> | Hosted by <a href="https://pages.coding.me" target="_blank" style="font-weight: bold">Coding Pages</a></span></p></div></div><div class="global-ui"><!----><!----></div></div>
+    <script src="/assets/js/app.c9b87ba3.js" defer></script><script src="/assets/js/5.00e0032f.js" defer></script><script src="/assets/js/14.d5c780f9.js" defer></script>
+  </body>
+</html>
