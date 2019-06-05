@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>进程操作 | 小昱个人网站</title>
+    <meta name="description" content="小昱个人网站">
+    <meta http-equiv="Expires" content="Mon,12 May 2050 00:20:00 GMT">
+  <link rel="icon" href="/logo.png">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="stylesheet" href="//at.alicdn.com/t/font_517060_lom78h954w.css">
+  <link rel="stylesheet" href="https://img.xiaoyulive.top/css/animate.css">
+    
+    <link rel="preload" href="/assets/css/0.styles.7327e2f4.css" as="style"><link rel="preload" href="/assets/js/app.e489a466.js" as="script"><link rel="preload" href="/assets/js/5.d836b1e2.js" as="script"><link rel="preload" href="/assets/js/14.a971426c.js" as="script"><link rel="prefetch" href="/assets/js/1.84e388ad.js"><link rel="prefetch" href="/assets/js/10.7ff8df27.js"><link rel="prefetch" href="/assets/js/11.565e6f64.js"><link rel="prefetch" href="/assets/js/12.9ca02e75.js"><link rel="prefetch" href="/assets/js/13.843e6a02.js"><link rel="prefetch" href="/assets/js/15.9c1bf976.js"><link rel="prefetch" href="/assets/js/2.11865fc6.js"><link rel="prefetch" href="/assets/js/6.a2b8a60b.js"><link rel="prefetch" href="/assets/js/7.1ec5cf71.js"><link rel="prefetch" href="/assets/js/8.08a8f80a.js"><link rel="prefetch" href="/assets/js/9.53f0cf87.js"><link rel="prefetch" href="/assets/js/vendors~docsearch.2723a1dc.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.7327e2f4.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container" data-v-38547c78><header class="navbar" data-v-38547c78><div class="navbar-content"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div><a href="/" class="home-link router-link-active"><img src="/logo.png" class="logo"><span class="site-name can-hide">小昱个人网站</span></a><div class="links"><nav class="nav-links can-hide"><div class="nav-item"><a href="/blog/" class="nav-link">开发者博客</a></div><div class="nav-item"><a href="/articles/" class="nav-link">生活漫谈</a></div><div class="nav-item"><a href="/note/" class="nav-link">阅读札记</a></div><div class="nav-item"><a href="/categories/" class="nav-link router-link-active">学无止境</a></div><div class="nav-item"><a href="/share/" class="nav-link">精品分享</a></div><div class="nav-item"><a href="/favorite/" class="nav-link">收藏夹</a></div><!----></nav><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""><!----></div></div></div></header><div class="sidebar-mask" data-v-38547c78></div><div class="sidebar" data-v-38547c78><div class="sidebar-container"><nav class="nav-links"><div class="nav-item"><a href="/blog/" class="nav-link">开发者博客</a></div><div class="nav-item"><a href="/articles/" class="nav-link">生活漫谈</a></div><div class="nav-item"><a href="/note/" class="nav-link">阅读札记</a></div><div class="nav-item"><a href="/categories/" class="nav-link router-link-active">学无止境</a></div><div class="nav-item"><a href="/share/" class="nav-link">精品分享</a></div><div class="nav-item"><a href="/favorite/" class="nav-link">收藏夹</a></div><!----></nav><ul class="sidebar-links"><li><div class="sidebar-group first collapsable"><p class="sidebar-heading"><span>Linux 学习指南</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>基础配置</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>基础命令</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>搜索与排序</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>用户及权限</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>网络及安全</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>磁盘管理与设备挂载</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading open"><span>其他相关操作</span> <span class="arrow down"></span></p> <ul class="sidebar-group-items"><li><a href="/categories/os/linux/_books/linux/related/SSH_Login.html" class="sidebar-link">使用 SSH 私钥登录 Linux 系统</a></li><li><a href="/categories/os/linux/_books/linux/related/Process.html" class="active sidebar-link">进程操作</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/categories/os/linux/_books/linux/related/Process.html#查看进程-ps" class="sidebar-link">查看进程: ps</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/categories/os/linux/_books/linux/related/Process.html#查看进程信息" class="sidebar-link">查看进程信息</a></li><li class="sidebar-sub-header"><a href="/categories/os/linux/_books/linux/related/Process.html#列出目前所有的正在内存当中的程序" class="sidebar-link">列出目前所有的正在内存当中的程序</a></li><li class="sidebar-sub-header"><a href="/categories/os/linux/_books/linux/related/Process.html#优化显示输出" class="sidebar-link">优化显示输出</a></li></ul></li><li class="sidebar-sub-header"><a href="/categories/os/linux/_books/linux/related/Process.html#结束进程-kill" class="sidebar-link">结束进程: kill</a></li><li class="sidebar-sub-header"><a href="/categories/os/linux/_books/linux/related/Process.html#结束进程-killall" class="sidebar-link">结束进程: killall</a></li><li class="sidebar-sub-header"><a href="/categories/os/linux/_books/linux/related/Process.html#结束进程-pkill" class="sidebar-link">结束进程: pkill</a></li><li class="sidebar-sub-header"><a href="/categories/os/linux/_books/linux/related/Process.html#查看系统资源分配-top" class="sidebar-link">查看系统资源分配: top</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/categories/os/linux/_books/linux/related/Process.html#显示参数含义" class="sidebar-link">显示参数含义</a></li><li class="sidebar-sub-header"><a href="/categories/os/linux/_books/linux/related/Process.html#快捷键" class="sidebar-link">快捷键</a></li></ul></li></ul></li></ul></div></li></ul></div></div><div class="page" data-v-38547c78><div class="content default"><h1 id="进程操作"><a href="#进程操作" aria-hidden="true" class="header-anchor">#</a> 进程操作</h1> <h2 id="查看进程-ps"><a href="#查看进程-ps" aria-hidden="true" class="header-anchor">#</a> 查看进程: ps</h2> <p>ps命令用于报告当前系统的进程状态。可以搭配kill指令随时中断、删除不必要的程序。ps命令是最基本同时也是非常强大的进程查看命令，使用该命令可以确定有哪些进程正在运行和运行的状态、进程是否结束、进程有没有僵死、哪些进程占用了过多的资源等等，总之大部分信息都是可以通过执行该命令得到的，格式为 <code>ps [参数]</code>。</p> <p>ps命令的参数以及作用</p> <table><thead><tr><th>参数</th> <th>作用</th></tr></thead> <tbody><tr><td>-a</td> <td>显示所有进程（包括其他用户的进程）</td></tr> <tr><td>-u</td> <td>用户以及其他详细信息</td></tr> <tr><td>-x</td> <td>显示没有控制终端的进程</td></tr></tbody></table> <p>输出格式：</p> <ul><li><strong>l</strong> ：较长、较详细的将该PID 的的信息列出；</li> <li><strong>j</strong> ：工作的格式 (jobs format)</li> <li><strong>-f</strong> ：做一个更为完整的输出。</li></ul> <p>Linux系统中时刻运行着许多进程，如果能够合理地管理它们，则可以优化系统的性能。在Linux系统中，有5种常见的进程状态，分别为运行、中断、不可中断、僵死与停止，其各自含义如下所示。</p> <ul><li>R（运行）：进程正在运行或在运行队列中等待。</li> <li>S（中断）：进程处于休眠中，当某个条件形成后或者接收到信号时，则脱离该   状态。</li> <li>D（不可中断）：进程不响应系统异步信号，即便用kill命令也不能将其中断。</li> <li>Z（僵死）：进程已经终止，但进程描述符依然存在, 直到父进程调用wait4()系统函数后将进程释放。</li> <li>T（停止）：进程收到停止信号后停止运行。</li></ul> <h3 id="查看进程信息"><a href="#查看进程信息" aria-hidden="true" class="header-anchor">#</a> 查看进程信息</h3> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token punctuation">[</span>admin@sshk1 ~<span class="token punctuation">]</span>$ <span class="token function">ps</span> -al
+F S   UID   PID  PPID  C PRI  NI ADDR SZ WCHAN  TTY          TIME CMD
+4 S     0 12086 11995  0  80   0 - 48077 do_wai pts/0    00:00:00 <span class="token function">su</span>
+4 S     0 12099 12086  0  80   0 - 28882 do_wai pts/0    00:00:00 <span class="token function">bash</span>
+0 S  1000 19693 19659  0  80   0 - 43992 poll_s pts/1    00:00:00 <span class="token function">ssh</span>
+4 T     0 21923 12099  0  80   0 - 35493 do_sig pts/0    00:00:00 kubectl
+0 S  1000 24169 20708  0  80   0 - 43992 poll_s pts/2    00:00:00 <span class="token function">ssh</span>
+4 S     0 25275 12099  0  80   0 - 35493 futex_ pts/0    00:00:00 kubectl
+0 R  1000 26137 24388  0  80   0 - 37235 -      pts/3    00:00:00 <span class="token function">ps</span>
+</code></pre></div><p>各相关信息的意义为：</p> <ul><li>F 代表这个程序的旗标 (flag)， 4 代表使用者为 superuser；</li> <li>S 代表这个程序的状态 (STAT)；</li> <li>UID 代表执行者身份</li> <li>PID 进程的ID号！</li> <li>PPID 父进程的ID；</li> <li>C CPU使用的资源百分比</li> <li>PRI指进程的执行优先权(Priority的简写)，其值越小越早被执行；</li> <li>NI 这个进程的nice值，其表示进程可被执行的优先级的修正数值。</li> <li>ADDR 这个是内核函数，指出该程序在内存的那个部分。如果是个执行 的程序，一般就是『 - 』</li> <li>SZ 使用掉的内存大小；</li> <li>WCHAN 目前这个程序是否正在运作当中，若为 - 表示正在运作；</li> <li>TTY 登入者的终端机位置；</li> <li>TIME 使用掉的 CPU 时间。</li> <li>CMD 所下达的指令名称</li></ul> <h3 id="列出目前所有的正在内存当中的程序"><a href="#列出目前所有的正在内存当中的程序" aria-hidden="true" class="header-anchor">#</a> 列出目前所有的正在内存当中的程序</h3> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token punctuation">[</span>admin@sshk1 ~<span class="token punctuation">]</span>$ <span class="token function">ps</span> aux
+USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root         1  0.0  0.0 191068  3532 ?        Ss   Nov15   1:11 /usr/lib/systemd/systemd --system --deserialize 20
+root         2  0.0  0.0      0     0 ?        S    Nov15   0:00 <span class="token punctuation">[</span>kthreadd<span class="token punctuation">]</span>
+</code></pre></div><p>各相关信息的意义为：</p> <ul><li>USER：该进程属于那个使用者账号。</li> <li>PID ：该进程的进程ID号。</li> <li>%CPU：该进程使用掉的 CPU 资源百分比；</li> <li>%MEM：该进程所占用的物理内存百分比；</li> <li>VSZ ：该进程使用掉的虚拟内存量 (Kbytes)</li> <li>RSS ：该进程占用的固定的内存量 (Kbytes)</li> <li>TTY ：该进程是在那个终端机上面运作，若与终端机无关，则显示 ?。另外， tty1-tty6 是本机上面的登入者程序，若为 pts/0 等等的，则表示为由网络连接进主机的程序。</li> <li>STAT：该程序目前的状态</li> <li>START：该进程被触发启动的时间；</li> <li>TIME ：该进程实际使用 CPU 运作的时间。</li> <li>COMMAND：该程序的实际指令。</li></ul> <h3 id="优化显示输出"><a href="#优化显示输出" aria-hidden="true" class="header-anchor">#</a> 优化显示输出</h3> <p>通常可以配合管道符或重定向到文件:</p> <div class="language-bash extra-class"><pre class="language-bash"><code>$ <span class="token function">ps</span> -aux <span class="token operator">|</span> <span class="token function">more</span>
+$ <span class="token function">ps</span> -aux <span class="token operator">&gt;</span> psInfo.txt
+</code></pre></div><p>可以使用 <code>-o</code> 选项输出指定字段:</p> <div class="language-bash extra-class"><pre class="language-bash"><code>$ <span class="token function">ps</span> -o pid,ppid,pgrp,session,tpgid,comm
+</code></pre></div><p>根据某个字段排序:</p> <div class="language-bash extra-class"><pre class="language-bash"><code>$ <span class="token function">ps</span> -aux --sort -pcpu <span class="token operator">|</span> <span class="token function">less</span> <span class="token comment"># 根据 CPU 使用来升序排序</span>
+$ <span class="token function">ps</span> -aux --sort -pmem <span class="token operator">|</span> <span class="token function">less</span> <span class="token comment"># 根据 内存使用 来升序排序</span>
+</code></pre></div><p>使用 <code>pstree</code> 命令树形显示进程:</p> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token punctuation">[</span>admin@sshk1 ~<span class="token punctuation">]</span>$ pstree
+systemd─┬─AliYunDun───19*<span class="token punctuation">[</span><span class="token punctuation">{</span>AliYunDun<span class="token punctuation">}</span><span class="token punctuation">]</span>
+        ├─dockerd─┬─docker-containe─┬─7*<span class="token punctuation">[</span>docker-containe─┬─pause<span class="token punctuation">]</span>
+        │         │                 │                    └─9*<span class="token punctuation">[</span><span class="token punctuation">{</span>docker-containe<span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">]</span>
+        │         │                 ├─docker-containe─┬─pause
+        │         │                 │                 └─11*<span class="token punctuation">[</span><span class="token punctuation">{</span>docker-containe<span class="token punctuation">}</span><span class="token punctuation">]</span>
+        │         │                 ├─docker-containe─┬─etcd───11*<span class="token punctuation">[</span><span class="token punctuation">{</span>etcd<span class="token punctuation">}</span><span class="token punctuation">]</span>
+        │         │                 │                 └─10*<span class="token punctuation">[</span><span class="token punctuation">{</span>docker-containe<span class="token punctuation">}</span><span class="token punctuation">]</span>
+        │         │                 └─31*<span class="token punctuation">[</span><span class="token punctuation">{</span>docker-containe<span class="token punctuation">}</span><span class="token punctuation">]</span>
+        │         └─19*<span class="token punctuation">[</span><span class="token punctuation">{</span>dockerd<span class="token punctuation">}</span><span class="token punctuation">]</span>
+</code></pre></div><p>查看特定用户进程:</p> <div class="language-bash extra-class"><pre class="language-bash"><code>$ <span class="token function">ps</span> -u admin
+</code></pre></div><p>通过进程名过滤:</p> <div class="language-bash extra-class"><pre class="language-bash"><code>$ <span class="token function">ps</span> -C <span class="token function">bash</span>
+</code></pre></div><p>显示所有进程信息:</p> <div class="language-bash extra-class"><pre class="language-bash"><code>$ <span class="token function">ps</span> -ef
+</code></pre></div><h2 id="结束进程-kill"><a href="#结束进程-kill" aria-hidden="true" class="header-anchor">#</a> 结束进程: kill</h2> <p>kill命令用来删除执行中的程序或工作。kill可将指定的信息送至程序。预设的信息为SIGTERM(15),可将指定程序终止。若仍无法终止该程序，可使用SIGKILL(9)信息尝试强制删除程序。程序或工作的编号可利用ps指令或job指令查看。</p> <p>通过 <code>kill -l</code> 列出所有信号名称：</p> <div class="language-bash extra-class"><pre class="language-bash"><code>$ <span class="token function">kill</span> -l
+ 1<span class="token punctuation">)</span> SIGHUP       2<span class="token punctuation">)</span> SIGINT       3<span class="token punctuation">)</span> SIGQUIT      4<span class="token punctuation">)</span> SIGILL
+ 2<span class="token punctuation">)</span> SIGTRAP      6<span class="token punctuation">)</span> SIGABRT      7<span class="token punctuation">)</span> SIGBUS       8<span class="token punctuation">)</span> SIGFPE
+ 3<span class="token punctuation">)</span> SIGKILL     10<span class="token punctuation">)</span> SIGUSR1     11<span class="token punctuation">)</span> SIGSEGV     12<span class="token punctuation">)</span> SIGUSR2
+1<span class="token punctuation">)</span>  SIGPIPE     14<span class="token punctuation">)</span> SIGALRM     15<span class="token punctuation">)</span> SIGTERM     16<span class="token punctuation">)</span> SIGSTKFLT
+2<span class="token punctuation">)</span>  SIGCHLD     18<span class="token punctuation">)</span> SIGCONT     19<span class="token punctuation">)</span> SIGSTOP     20<span class="token punctuation">)</span> SIGTSTP
+3<span class="token punctuation">)</span>  SIGTTIN     22<span class="token punctuation">)</span> SIGTTOU     23<span class="token punctuation">)</span> SIGURG      24<span class="token punctuation">)</span> SIGXCPU
+4<span class="token punctuation">)</span>  SIGXFSZ     26<span class="token punctuation">)</span> SIGVTALRM   27<span class="token punctuation">)</span> SIGPROF     28<span class="token punctuation">)</span> SIGWINCH
+5<span class="token punctuation">)</span>  SIGIO       30<span class="token punctuation">)</span> SIGPWR      31<span class="token punctuation">)</span> SIGSYS      34<span class="token punctuation">)</span> SIGRTMIN
+6<span class="token punctuation">)</span>  SIGRTMIN+1  36<span class="token punctuation">)</span> SIGRTMIN+2  37<span class="token punctuation">)</span> SIGRTMIN+3  38<span class="token punctuation">)</span> SIGRTMIN+4
+7<span class="token punctuation">)</span>  SIGRTMIN+5  40<span class="token punctuation">)</span> SIGRTMIN+6  41<span class="token punctuation">)</span> SIGRTMIN+7  42<span class="token punctuation">)</span> SIGRTMIN+8
+8<span class="token punctuation">)</span>  SIGRTMIN+9  44<span class="token punctuation">)</span> SIGRTMIN+10 45<span class="token punctuation">)</span> SIGRTMIN+11 46<span class="token punctuation">)</span> SIGRTMIN+12
+9<span class="token punctuation">)</span>  SIGRTMIN+13 48<span class="token punctuation">)</span> SIGRTMIN+14 49<span class="token punctuation">)</span> SIGRTMIN+15 50<span class="token punctuation">)</span> SIGRTMAX-14
+10<span class="token punctuation">)</span> SIGRTMAX-13 52<span class="token punctuation">)</span> SIGRTMAX-12 53<span class="token punctuation">)</span> SIGRTMAX-11 54<span class="token punctuation">)</span> SIGRTMAX-10
+11<span class="token punctuation">)</span> SIGRTMAX-9  56<span class="token punctuation">)</span> SIGRTMAX-8  57<span class="token punctuation">)</span> SIGRTMAX-7  58<span class="token punctuation">)</span> SIGRTMAX-6
+12<span class="token punctuation">)</span> SIGRTMAX-5  60<span class="token punctuation">)</span> SIGRTMAX-4  61<span class="token punctuation">)</span> SIGRTMAX-3  62<span class="token punctuation">)</span> SIGRTMAX-2
+13<span class="token punctuation">)</span> SIGRTMAX-1  64<span class="token punctuation">)</span> SIGRTMAX
+</code></pre></div><p>只有第9种信号(SIGKILL)才可以无条件终止进程，其他信号进程都有权利忽略，下面是常用的信号：</p> <div class="language- extra-class"><pre class="language-text"><code>HUP     1    终端断线
+INT     2    中断（同 Ctrl + C）
+QUIT    3    退出（同 Ctrl + \）
+TERM   15    终止
+KILL    9    强制终止
+CONT   18    继续（与STOP相反， fg/bg命令）
+STOP   19    暂停（同 Ctrl + Z）
+</code></pre></div><p>举例: 先用ps查找进程，然后用kill杀掉：</p> <div class="language-bash extra-class"><pre class="language-bash"><code>$ <span class="token function">ps</span> -ef <span class="token operator">|</span> <span class="token function">grep</span> <span class="token function">vim</span>
+root      3268  2884  0 16:21 pts/1    00:00:00 <span class="token function">vim</span> install.log
+root      3370  2822  0 16:21 pts/0    00:00:00 <span class="token function">grep</span> <span class="token function">vim</span>
+
+$ <span class="token function">kill</span> 3268
+$ <span class="token function">kill</span> 3268
+-bash: kill: <span class="token punctuation">(</span>3268<span class="token punctuation">)</span> - 没有那个进程
+</code></pre></div><h2 id="结束进程-killall"><a href="#结束进程-killall" aria-hidden="true" class="header-anchor">#</a> 结束进程: killall</h2> <p>killall命令使用进程的名称来杀死进程，使用此指令可以杀死一组同名进程。我们可以使用kill命令杀死指定进程PID的进程，如果要找到我们需要杀死的进程，我们还需要在之前使用ps等命令再配合grep来查找进程，而killall把这两个过程合二为一，是一个很好用的命令。</p> <p>参数列表:</p> <div class="language-bash extra-class"><pre class="language-bash"><code>-e：对长名称进行精确匹配；
+-l：忽略大小写的不同；
+-p：杀死进程所属的进程组；
+-i：交互式杀死进程，杀死进程前需要进行确认；
+-l：打印所有已知信号列表；
+-q：如果没有进程被杀死。则不输出任何信息；
+-r：使用正规表达式匹配要杀死的进程名称；
+-s：用指定的进程号代替默认信号“SIGTERM”；
+-u：杀死指定用户的进程。
+</code></pre></div><p>杀死所有同名进程:</p> <div class="language-bash extra-class"><pre class="language-bash"><code>$ <span class="token function">killall</span> <span class="token function">vi</span>
+</code></pre></div><h2 id="结束进程-pkill"><a href="#结束进程-pkill" aria-hidden="true" class="header-anchor">#</a> 结束进程: pkill</h2> <p>pkill命令可以按照进程名杀死进程。pkill和killall应用方法差不多，也是直接杀死运行中的程序。</p> <div class="language-bash extra-class"><pre class="language-bash"><code>$ pgrep -l java
+4514 java
+4594 java
+9263 java
+19715 java
+19846 java
+19954 java
+20347 java
+$ <span class="token function">pkill</span> java
+</code></pre></div><h2 id="查看系统资源分配-top"><a href="#查看系统资源分配-top" aria-hidden="true" class="header-anchor">#</a> 查看系统资源分配: top</h2> <p>top命令是Linux下常用的性能分析工具，能够实时显示系统中各个进程的资源占用状况，类似于Windows的任务管理器。</p> <p>top是一个动态显示过程,即可以通过用户按键来不断刷新当前状态.如果在前台执行该命令,它将独占前台,直到用户终止该程序为止.比较准确的说,top命令提供了实时的对系统处理器的状态监视.它将显示系统中CPU最“敏感”的任务列表.该命令可以按CPU使用.内存使用和执行时间对任务进行排序；而且该命令的很多特性都可以通过交互式命令或者在个人定制文件中进行设定.</p> <div class="imgLink" data-v-16222526><img src="https://img.xiaoyulive.top/img/date/20190103/001.png" data-v-16222526></div> <h3 id="显示参数含义"><a href="#显示参数含义" aria-hidden="true" class="header-anchor">#</a> 显示参数含义</h3> <p>Tasks</p> <ul><li>total 进程总数</li> <li>running 正在运行的进程数</li> <li>sleeping 睡眠的进程数</li> <li>stopped 停止的进程数</li> <li>zombie 僵尸进程数</li></ul> <p>Cpu(s)</p> <ul><li>0.3% us 用户空间占用CPU百分比</li> <li>1.0% sy 内核空间占用CPU百分比</li> <li>0.0% ni 用户进程空间内改变过优先级的进程占用CPU百分比</li> <li>98.7% id 空闲CPU百分比</li> <li>0.0% wa 等待输入输出的CPU时间百分比</li> <li>0.0%hi：硬件CPU中断占用百分比</li> <li>0.0%si：软中断占用百分比</li> <li>0.0%st：虚拟机占用百分比</li></ul> <p>Mem</p> <ul><li>191272k total 物理内存总量</li> <li>173656k used  使用的物理内存总量</li> <li>17616k free   空闲内存总量</li> <li>22052k buffers  用作内核缓存的内存量</li></ul> <p>Swap</p> <ul><li>192772k total 交换区总量</li> <li>0k used       使用的交换区总量</li> <li>192772k free  空闲交换区总量</li> <li>123988k cached  缓冲的交换区总量,内存中的内容被换出到交换区，而后又被换入到内存，但使用过的交换区尚未被覆盖，该数值即为这些内容已存在于内存中的交换区的大小,相应的内存再次被换出时可不必再对交换区写入。</li></ul> <p>进程信息区</p> <div class="language- extra-class"><pre class="language-text"><code>序号  列名    含义
+a    PID     进程id
+b    PPID    父进程id
+c    RUSER   Real user name
+d    UID     进程所有者的用户id
+e    USER    进程所有者的用户名
+f    GROUP   进程所有者的组名
+g    TTY     启动进程的终端名。不是从终端启动的进程则显示为 ?
+h    PR      优先级
+i    NI      nice值。负值表示高优先级，正值表示低优先级
+j    P       最后使用的CPU，仅在多CPU环境下有意义
+k    %CPU    上次更新到现在的CPU时间占用百分比
+l    TIME    进程使用的CPU时间总计，单位秒
+m    TIME+   进程使用的CPU时间总计，单位1/100秒
+n    %MEM    进程使用的物理内存百分比
+o    VIRT    进程使用的虚拟内存总量，单位kb。VIRT=SWAP+RES
+p    SWAP    进程使用的虚拟内存中，被换出的大小，单位kb。
+q    RES     进程使用的、未被换出的物理内存大小，单位kb。RES=CODE+DATA
+r    CODE    可执行代码占用的物理内存大小，单位kb
+s    DATA    可执行代码以外的部分(数据段+栈)占用的物理内存大小，单位kb
+t    SHR     共享内存大小，单位kb
+u    nFLT    页面错误次数
+v    nDRT    最后一次写入到现在，被修改过的页面数。
+w    S       进程状态(D=不可中断的睡眠状态,R=运行,S=睡眠,T=跟踪/停止,Z=僵尸进程)
+x    COMMAND 命令名/命令行
+y    WCHAN   若该进程在睡眠，则显示睡眠中的系统函数名
+z    Flags   任务标志，参考 sched.h
+</code></pre></div><p>默认情况下仅显示比较重要的 PID、USER、PR、NI、VIRT、RES、SHR、S、%CPU、%MEM、TIME+、COMMAND 列。</p> <h3 id="快捷键"><a href="#快捷键" aria-hidden="true" class="header-anchor">#</a> 快捷键</h3> <ul><li>f - 更改显示内容</li> <li>P - 以 CPU 占用率大小的顺序排列进程列表</li> <li>M - 以内存占用率大小的顺序排列进程列表</li></ul></div><div class="article-info"><div class="article-title">文档信息</div><p class="article-item">版权声明：著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。</p><p class="article-item">文章标题：进程操作</p><p class="article-item">原文链接：<a href="https://www.xiaoyulive.top/categories/os/linux/_books/linux/related/Process.html">https://www.xiaoyulive.top/categories/os/linux/_books/linux/related/Process.html</a></p><!----></div><!----><div class="content page-nav"><p class="inner"><span class="prev">← <a href="/categories/os/linux/_books/linux/related/SSH_Login.html">使用 SSH 私钥登录 Linux 系统</a></span><!----></p></div></div><div class="footers" data-v-38547c78><p data-v-38547c78><span data-v-38547c78>MIT Licensed | Copyright © 2018-present  滇ICP备16006294号</span></p><p data-v-38547c78><span data-v-38547c78>Design by <a href="/">Quanzaiyu</a> | Power by <a href="https://vuepress.vuejs.org/" target="_blank">VuePress</a> | Hosted by <a href="https://pages.coding.me" target="_blank" style="font-weight: bold">Coding Pages</a></span></p></div></div><div class="global-ui"><!----><!----></div></div>
+    <script src="/assets/js/app.e489a466.js" defer></script><script src="/assets/js/5.d836b1e2.js" defer></script><script src="/assets/js/14.a971426c.js" defer></script>
+  </body>
+</html>
