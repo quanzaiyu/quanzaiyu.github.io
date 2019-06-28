@@ -21,7 +21,7 @@ importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox
 self.__precacheManifest = [
   {
     "url": "404.html",
-    "revision": "15fad33d8e5812d883b3266c76cc5c7e"
+    "revision": "2dce01af6ee6b70ddaa750420288d12e"
   },
   {
     "url": "404.png",
@@ -29,35 +29,35 @@ self.__precacheManifest = [
   },
   {
     "url": "articles/docs/A_Year_After_Graduation_and_My_Choice.html",
-    "revision": "2510f6d98650be93fd619d9d8c4b3f8f"
+    "revision": "658bb6a2f7561ad6f49b2915127a9dc8"
   },
   {
     "url": "articles/docs/Deploy_with_Different_Platforms.html",
-    "revision": "a67db970ae22c39191aa774fe884cf90"
+    "revision": "9565c003a7d4096ef7f0f90478d89536"
   },
   {
     "url": "articles/docs/Love.html",
-    "revision": "f0ab4d7bddc32c2ebd6b2383c3b378b2"
+    "revision": "62d3159c2ed2dc67f8c939593ec2aa04"
   },
   {
     "url": "articles/docs/My_blog_journey.html",
-    "revision": "76a4cf8955dce05e74c69a3fcf9cedc8"
+    "revision": "df14ad0b4045e59cd60d972a6d18d413"
   },
   {
     "url": "articles/docs/Some_Advice_on_College_Life.html",
-    "revision": "6a749c8d1d7d567ce4b7a3e69e92ecda"
+    "revision": "da1b118b49b2b676716e565cbb80d676"
   },
   {
     "url": "articles/docs/Tips_for_Issue.html",
-    "revision": "4910b70187fafeeb1b121437487eff41"
+    "revision": "1985593b7a5d290287640ba8f3b52dac"
   },
   {
     "url": "articles/docs/Yoyo_Come_Back.html",
-    "revision": "e6485a29127e89797dfd9b093c11e034"
+    "revision": "43327c97f27dc97131337f0a7e28cf6f"
   },
   {
     "url": "articles/index.html",
-    "revision": "409630e2e5564f0518666de4d395d254"
+    "revision": "cf142c77e272608371849e893cba99ab"
   },
   {
     "url": "assets/css/0.styles.e2d81a46.css",
@@ -68,4072 +68,4076 @@ self.__precacheManifest = [
     "revision": "83621669651b9a3d4bf64d1a670ad856"
   },
   {
-    "url": "assets/js/1.24740520.js",
-    "revision": "3d4bb4bb9fdfa7e551bc869e0b1485f9"
+    "url": "assets/js/1.52f4d734.js",
+    "revision": "b95e53c1bff464083813748399384776"
   },
   {
-    "url": "assets/js/10.2d7ffad4.js",
-    "revision": "f60f4cdf341cb23b4fdb1684f42eaa69"
+    "url": "assets/js/10.60dc6806.js",
+    "revision": "fa20063d8ce49601e228dbb0f829c845"
   },
   {
-    "url": "assets/js/11.5b3d4a5b.js",
-    "revision": "14544aa418567cb553160a9d4a68a78d"
+    "url": "assets/js/11.b1daf321.js",
+    "revision": "a68d7cc27cfbce25c87712fe83730ffc"
   },
   {
-    "url": "assets/js/12.f56e5f65.js",
-    "revision": "64bd2db679a1b4abc86589bd0484a6e8"
+    "url": "assets/js/12.237783d5.js",
+    "revision": "13e89ced64fe8b3620108e96e12ceb3b"
   },
   {
-    "url": "assets/js/13.9378bf6c.js",
-    "revision": "7cdf39e93e2422baa577a7385a00f879"
+    "url": "assets/js/13.fa400ea0.js",
+    "revision": "8b5b6e5d9fc41b1d732d4af5aae968ba"
   },
   {
-    "url": "assets/js/14.0a844dc6.js",
-    "revision": "ea2b8621e24907f14f438a319ac062fd"
+    "url": "assets/js/14.a07c30d5.js",
+    "revision": "53687106348054d91ab1d701d86bde7d"
   },
   {
-    "url": "assets/js/15.87758b17.js",
-    "revision": "304a60804f7830406b4624b2e2638cbb"
+    "url": "assets/js/15.8dd13cfd.js",
+    "revision": "b872c91f8be68556d279749c16f00f11"
   },
   {
-    "url": "assets/js/2.2c9ffbff.js",
-    "revision": "fd000701720c539f3344b58134096443"
+    "url": "assets/js/2.1d223392.js",
+    "revision": "2c075fd6a74b0d89254c185c35390af6"
   },
   {
-    "url": "assets/js/5.6c11c6ba.js",
-    "revision": "017be6b8501f2fb3d1b57e7fe17d687a"
+    "url": "assets/js/5.86528666.js",
+    "revision": "a5fd475dfb12f7444ff982a4031e534a"
   },
   {
-    "url": "assets/js/6.495fb738.js",
-    "revision": "60b5903cce5980f4a6693f9e4d11351a"
+    "url": "assets/js/6.28cc4a7b.js",
+    "revision": "cffcdf6beb825c3cbd6ccea6bb9c4bfb"
   },
   {
-    "url": "assets/js/7.34dd23ee.js",
-    "revision": "4643d7662653b571e5268f0eeb08e37b"
+    "url": "assets/js/7.4bcd0783.js",
+    "revision": "92143ca4e9da4f40b8193da317aeb1e4"
   },
   {
-    "url": "assets/js/8.2690e737.js",
-    "revision": "d7420da3f17dc607cb16715bc255f15b"
+    "url": "assets/js/8.c4308431.js",
+    "revision": "048ee1e5452ef3e4fcb086f3cdc36755"
   },
   {
-    "url": "assets/js/9.316c4e53.js",
-    "revision": "c2076eb2155f15f6c556e54c7099c136"
+    "url": "assets/js/9.974238fc.js",
+    "revision": "681c64afdc7b87b69d2c84191ae483aa"
   },
   {
-    "url": "assets/js/vendors~docsearch.cba3b364.js",
-    "revision": "9e3e6db7222a781f34e3cb84c3061569"
+    "url": "assets/js/vendors~docsearch.4d1562ad.js",
+    "revision": "3f748354fd2d9ee56245da8e1416b63d"
   },
   {
     "url": "blog/index.html",
-    "revision": "140754b23c512285e9c1b89f713c4104"
+    "revision": "60ddc62f1817e78d503999d569889962"
   },
   {
     "url": "books/c_c++/index.html",
-    "revision": "152363c64a983786f3d41ae640ab0a0e"
+    "revision": "a3b2f2a9c2e934bb1529f9617c9367f1"
   },
   {
     "url": "books/c_c++/reference.html",
-    "revision": "1a1a316684fe84bc4ce8479c05025784"
+    "revision": "3294434d20a5e7d5fbbe7281c14408a5"
   },
   {
     "url": "books/index.html",
-    "revision": "6900fb914432fd71021d9698281a487f"
+    "revision": "d1f9645f692a56cea95ec96a42f9876a"
   },
   {
     "url": "books/kotlin/Basis.html",
-    "revision": "356246c68f4456079c40cd7fb645cb86"
+    "revision": "4b772cddf2387e1c8c3bd97b1352010c"
   },
   {
     "url": "books/kotlin/Class.html",
-    "revision": "206b0ef4fb0a58841f44585e4b621604"
+    "revision": "38bfe39674f843ee48573ad9f5a305c3"
   },
   {
     "url": "books/kotlin/Control_Flow.html",
-    "revision": "48362f867735643d98917e18982a3184"
+    "revision": "ddb10a3c5b15acab1d454f808c94ba7e"
   },
   {
     "url": "books/kotlin/Function.html",
-    "revision": "87245ac9f13635488b7b8c49c5ee0ba3"
+    "revision": "cef6faa5585d3389cf71dd3a8fc075fd"
   },
   {
     "url": "books/kotlin/index.html",
-    "revision": "3ea54405bb0820fa24ede8f692d21ced"
+    "revision": "407db6816ddca83eb7ae91d32d444312"
   },
   {
     "url": "books/kotlin/Null_Detection.html",
-    "revision": "f6de59c346c8508f2170e9c585dc2bbb"
+    "revision": "99a53f5966b14f0a0ddc4a1dec130bd8"
   },
   {
     "url": "books/kotlin/Reference.html",
-    "revision": "ae9c579e80b9fae244bc468945edb29c"
+    "revision": "5b086a916763741de40d7c536c473641"
   },
   {
     "url": "books/kotlin/Type.html",
-    "revision": "beae1da40a4be9d02859d5fa6793b777"
+    "revision": "b1df21d02921029d236b1d8b2084ad98"
   },
   {
     "url": "categories/cloud/aliyun/_pages/Oss_Upload.html",
-    "revision": "5418bdc8ea762c05a4956e71e33c506a"
+    "revision": "b0cdf4aa041ed8591b2a5e4f513ee030"
   },
   {
     "url": "categories/cloud/index.html",
-    "revision": "684dd72bba0dac7cf17334729a4dcaf7"
+    "revision": "1559a0ea2a94fed19e5018a3e4540d02"
   },
   {
     "url": "categories/cloud/qiniu/_pages/Oss_Upload.html",
-    "revision": "15708e00442f75781e5ff6db0eade92c"
+    "revision": "88d19d947ba98b1811dec302204597b3"
   },
   {
     "url": "categories/cloud/tencent/_pages/Jssdk.html",
-    "revision": "ba4825894005decd57dab362084fb39b"
+    "revision": "d2c7c65dcc6c37e483f49eb4ca6d298a"
   },
   {
     "url": "categories/cloud/tencent/_pages/Miniapp_Vioce.html",
-    "revision": "3c1ead49e821d1365a9fa31d35e619be"
+    "revision": "78142cb6d917f9bc5cfae74e22cfc998"
   },
   {
     "url": "categories/cloud/tencent/_pages/Openid.html",
-    "revision": "fb0b70b26973e25fac0f4bb42a6935ce"
+    "revision": "171ce98383abfdcba597b9ca49c5938a"
   },
   {
     "url": "categories/cloud/tencent/_pages/Tencent_Map_WebService.html",
-    "revision": "c53880d15eefb02356fc4173eb24305d"
+    "revision": "88b66e5ef46b83c57b237d7504d4b536"
   },
   {
     "url": "categories/cloud/tencent/_pages/vConsole.html",
-    "revision": "65c99179ce09ef4cdb920f2c011aa5cc"
+    "revision": "587f7c0c664df095e759cad8d6cdd1a2"
   },
   {
     "url": "categories/cloud/tencent/_pages/WeixinJSBridge_is_not_defined.html",
-    "revision": "cd480d10754510ea59b0c96da2a4cc11"
+    "revision": "db12a2f3363a6978f010c90413254b60"
   },
   {
     "url": "categories/cluster/docker/_pages/Build_Node.html",
-    "revision": "c8185635caeac121a3447b0482907411"
+    "revision": "3a077102ee10ad1967529f4ec732887e"
   },
   {
     "url": "categories/cluster/docker/_pages/Build_Vue.html",
-    "revision": "0a4d38b18829c2a2767fe2c57c0826e7"
+    "revision": "0406a073fffbf7276becb8a98003634e"
   },
   {
     "url": "categories/cluster/docker/_pages/Docker_Compose.html",
-    "revision": "27db466a20247828f7814c91f700d4ad"
+    "revision": "00fdedfec7e520358c92bd5eeed4ce36"
   },
   {
     "url": "categories/cluster/docker/_pages/Docker_Network.html",
-    "revision": "34763fa90f1536ce3e440c18f09034b5"
+    "revision": "66e1b57591c99636d4ee9d7a585de154"
   },
   {
     "url": "categories/cluster/docker/_pages/Docker.html",
-    "revision": "8aa180fc45e94ebd39ae52fb91bc98d6"
+    "revision": "44c760219b03b3ec13b2f69d5e05cacd"
   },
   {
     "url": "categories/cluster/docker/_pages/Dockerfile.html",
-    "revision": "2e093bf4c2ed9487365779fa883919c4"
+    "revision": "f393026573981fccb552f73bbeeeada8"
   },
   {
     "url": "categories/cluster/docker/_pages/Registry.html",
-    "revision": "a48dd8188aab873861eeaff3a0223a01"
+    "revision": "72b9535cac08caa0f1c839ae72689b36"
   },
   {
     "url": "categories/cluster/docker/_pages/Traefik.html",
-    "revision": "323351931d6c4e8251f13cae6658f17d"
+    "revision": "905dcc8fb0ab9e7070ef5d3b7b47880d"
   },
   {
     "url": "categories/cluster/docker/index.html",
-    "revision": "238e3b737b32a1dd0489d7daf18f31b9"
+    "revision": "b205e196dff761d4069ce7c74c15418e"
   },
   {
     "url": "categories/cluster/index.html",
-    "revision": "13f638206aea2cbd3c164b878ad182af"
+    "revision": "d1448257b5c4098c46c757bda6165cf9"
   },
   {
     "url": "categories/cluster/jenkins/_pages/Coding_Webhook_Jenkins.html",
-    "revision": "118c4aac9b65203e653ec0e995d16a31"
+    "revision": "ff6a9176ecc8a41a65bc92204f8ff9ea"
   },
   {
     "url": "categories/cluster/jenkins/_pages/Coding_Webhook_PHP.html",
-    "revision": "7d57ae1fdd2f1eed9a34a592a0178c2d"
+    "revision": "eaa716810b1b9cb0f6c7bcfd9ab85bc5"
   },
   {
     "url": "categories/cluster/jenkins/_pages/Gitee_Webhook_Jenkins.html",
-    "revision": "cd9454f70bc9b87d89ef26d9726aed17"
+    "revision": "d0d4dfb7c11fe9eb66d6eaa69429057a"
   },
   {
     "url": "categories/cluster/jenkins/_pages/Jenkins_SSH.html",
-    "revision": "386dc13316a2b5c9215456a674be23fc"
+    "revision": "a6044a0c025bfdf5207c7ba45cc3b402"
   },
   {
     "url": "categories/cluster/jenkins/_pages/Jenkins.html",
-    "revision": "98596ae282982f7538f1f3dfe7412551"
+    "revision": "c360688db02b3f45c81cbb5709017c92"
   },
   {
     "url": "categories/cluster/jenkins/index.html",
-    "revision": "39e46996e58e1bdca5f148c652f16121"
+    "revision": "d18fee421cb9b50728ac93d0c80fdbb8"
   },
   {
     "url": "categories/cluster/kubernetes/_pages/Concept.html",
-    "revision": "c98b3e1a1f2b6cf00564f0f076ba400c"
+    "revision": "8494254ab77eafad52ca7bc036ef831e"
   },
   {
     "url": "categories/cluster/kubernetes/_pages/Config.html",
-    "revision": "1f8b04b5d71c843a09e193936feb0e86"
+    "revision": "e1558e7645c8723f6beb9263fca08679"
   },
   {
     "url": "categories/cluster/kubernetes/_pages/Dashboard.html",
-    "revision": "1089c907520c138f73b0cbb661d8ac1d"
+    "revision": "219adfd84e9cfdb17b181f08aa032875"
   },
   {
     "url": "categories/cluster/kubernetes/_pages/Dispatch.html",
-    "revision": "0985609fb4987404798e9720b37e788f"
+    "revision": "ab8a33279cfd4dbafe95c30b53bf627f"
   },
   {
     "url": "categories/cluster/kubernetes/_pages/Helm.html",
-    "revision": "cc5da6edefa40724a89df21195fe4fd8"
+    "revision": "f451e0f7bf09ce02baae25f62d688dfb"
   },
   {
     "url": "categories/cluster/kubernetes/_pages/Job.html",
-    "revision": "460d1e3daf1b7c777d2dc4a28c6321b4"
+    "revision": "c940fc9406630824340e18a60774029f"
   },
   {
     "url": "categories/cluster/kubernetes/_pages/Kubeadm.html",
-    "revision": "bd202b40eaef258cb6003cf4787598de"
+    "revision": "a34fd511e83118ba99c2f6dca0a0e30d"
   },
   {
     "url": "categories/cluster/kubernetes/_pages/Kubectl.html",
-    "revision": "391c7ee72553001e3d95f9759f7b19ce"
+    "revision": "2f7f0d809ddafcaf97361e33fef3a16f"
   },
   {
     "url": "categories/cluster/kubernetes/_pages/Label.html",
-    "revision": "aa00b9b972e46b1d4e0c4dffbdbb6de3"
+    "revision": "9c92fa3e1462f06e77f776b175dde104"
   },
   {
     "url": "categories/cluster/kubernetes/_pages/Minikube.html",
-    "revision": "0801dcfb1fdd88abbb04a907acd26920"
+    "revision": "e80cda05de4f45565592db999d413c71"
   },
   {
     "url": "categories/cluster/kubernetes/_pages/Namespace.html",
-    "revision": "b2692fa9cd2aca639d643c27e3b01ad0"
+    "revision": "5ebf2cb44f055db2c6e9494615af869c"
   },
   {
     "url": "categories/cluster/kubernetes/_pages/Nginx.html",
-    "revision": "76ccd03df8b86439a436f35d9528c80c"
+    "revision": "2b12acb5ce1e6e565854fbe4063e9444"
   },
   {
     "url": "categories/cluster/kubernetes/_pages/Pod.html",
-    "revision": "95b5c6608bf7c114fe08f75224a77caf"
+    "revision": "72b6d8fc996b939e276613a457304676"
   },
   {
     "url": "categories/cluster/kubernetes/_pages/RBAC.html",
-    "revision": "2f5e70e68a7cfab2a7010c10b8d38353"
+    "revision": "ccdcae6ec826f59575223992f7c2fcb2"
   },
   {
     "url": "categories/cluster/kubernetes/_pages/Reference.html",
-    "revision": "5c354dc75cadf6c6474f7961037d51ce"
+    "revision": "e92078091c728fa6be49998e64922a89"
   },
   {
     "url": "categories/cluster/kubernetes/_pages/Service.html",
-    "revision": "6ba9cc4996e2a2f5cfcab0eb0cb97f20"
+    "revision": "20e9acbde62ac77c170ca131587ee215"
   },
   {
     "url": "categories/cluster/kubernetes/_pages/Storage.html",
-    "revision": "cf1d2a0749eceb2ccde539255c9fddd8"
+    "revision": "c044e3a10bc30e3e54b2abac78cef688"
   },
   {
     "url": "categories/cluster/kubernetes/_pages/Treafik.html",
-    "revision": "968a4c3f460104ffdd64d19a9664e8f0"
+    "revision": "7c969e7a99ac2e18c6139dc67de27383"
   },
   {
     "url": "categories/cluster/kubernetes/index.html",
-    "revision": "5dc0b781ea70923c95aba9a889a5ec0c"
+    "revision": "e52de91cd6a3b3e6410968f79f76ac51"
   },
   {
     "url": "categories/database/_books/sql/Common_SQL.html",
-    "revision": "535741e6974a7cb46c4d3cb2f91fd423"
+    "revision": "28243502d734f048c429f4cb2133bc1a"
   },
   {
     "url": "categories/database/_books/sql/Create_Table.html",
-    "revision": "83f1eaab537b07f3e83bc2c743556339"
+    "revision": "543d5a00a987d72446314c4fefd1c803"
   },
   {
     "url": "categories/database/_books/sql/DataType.html",
-    "revision": "a184ca3917bd74acd34846062f090b63"
+    "revision": "0538fadea355250d21baf8f43320849d"
   },
   {
     "url": "categories/database/_books/sql/Function.html",
-    "revision": "d1f6e0917cd6bd211e87f7d3baa87a5b"
+    "revision": "d81ba831a7d899ae7df9f2e4b557656a"
   },
   {
     "url": "categories/database/_books/sql/index.html",
-    "revision": "f076313336f8d07525f5d4fcf2e94fcb"
+    "revision": "8ee7f044b8c9102b409eb8f9ff67666c"
   },
   {
     "url": "categories/database/_books/sql/Join.html",
-    "revision": "d1d185afc90a5117984a9ecd5df456c7"
+    "revision": "88c6d1e5b930aa16dbd84d9fec750d0a"
   },
   {
     "url": "categories/database/_books/sql/Limit.html",
-    "revision": "f3a387da883c352cf49743c0a6b6dcab"
+    "revision": "a79a20996c1bb7fe3f2f86af83b2224d"
   },
   {
     "url": "categories/database/_books/sql/Procedure.html",
-    "revision": "fbb44e9b15e90835db0de52994d4c244"
+    "revision": "fbef8400dda68e95d56913306cf93555"
   },
   {
     "url": "categories/database/_books/sql/Transaction.html",
-    "revision": "180f3e8f779b0b43bb83d9f1dce97caf"
+    "revision": "5be3460e0f4f22343eae70551420a9f7"
   },
   {
     "url": "categories/database/_books/sql/Union.html",
-    "revision": "d5d99e83bf90edd58b10f61bb39b55dd"
+    "revision": "7bfe6e2e874c432db95894014cdeb6c2"
   },
   {
     "url": "categories/database/_books/sql/View.html",
-    "revision": "62da85f4c95d84a58ee00d0682931c99"
+    "revision": "73d3a481e48858eb60195ad7e568b9ca"
   },
   {
     "url": "categories/database/_pages/Charset.html",
-    "revision": "3eb8c72491647f59b214464bcf04f7a4"
+    "revision": "a57fbd612e8088d7519336d5337e4e1f"
   },
   {
     "url": "categories/database/_pages/Command_Line.html",
-    "revision": "ded3dc5e2fa5e3327e79df5ae30f2846"
+    "revision": "bfb7c73f90d9b179df8cf819b97c1cbf"
   },
   {
     "url": "categories/database/_pages/Delete_Drop_Truncate.html",
-    "revision": "83b2ad326b3c81bc06903d464d4d688d"
+    "revision": "f3ab4bdcc03a73b3a26bb7a946b9d8ef"
   },
   {
     "url": "categories/database/_pages/Model.html",
-    "revision": "5caa8dfe4e8dfd34d9a3ac5ed4800779"
+    "revision": "f218d1fc7b14d15bbd1619dca8a1c110"
   },
   {
     "url": "categories/database/_pages/Tip.html",
-    "revision": "93c0404975f6a9c5eeac96866ac1f0f1"
+    "revision": "46fa1adb3c1f558f083ae824a3db6579"
   },
   {
     "url": "categories/database/index.html",
-    "revision": "3f0fcfa1944fe63f1b4fb44d321f420d"
+    "revision": "f2ad2f2d3fcbdb2dbba0452f38c9b249"
   },
   {
     "url": "categories/front-end/_books/angular/Component.html",
-    "revision": "ff48781295012be1cfd729bb58b51344"
+    "revision": "ab804b090a734dbd0fbb2d56e4a47edc"
   },
   {
     "url": "categories/front-end/_books/angular/index.html",
-    "revision": "19b033d24231124baa1842e7aca7ea0f"
+    "revision": "ceb8c02d3722e12c5f9ef29fab770e5c"
   },
   {
     "url": "categories/front-end/_books/angular/Install.html",
-    "revision": "b961dca6bd256690d6b7b95d65e4986b"
+    "revision": "f64eab14d4fe799b41727bf03f7f7858"
   },
   {
     "url": "categories/front-end/_books/angular/Intro.html",
-    "revision": "2b46dcd6c66ecdc20cf4475e0b3f6e0d"
+    "revision": "467d19ac09e932510cbee35e69fc93cb"
   },
   {
     "url": "categories/front-end/_books/angular/NgModel.html",
-    "revision": "ca0f498217c7e7b04d6144bbd363abd6"
+    "revision": "6a061c176af034ed56a1a9eb5bdc4d31"
   },
   {
     "url": "categories/front-end/_books/angular/Pipe.html",
-    "revision": "914e1b8da4f20913c6e5c6f1b1da5bf7"
+    "revision": "9ba80ea74b7cae720afdac3794f7c1d5"
   },
   {
     "url": "categories/front-end/_books/angular/Template.html",
-    "revision": "e0d531259e0b5c2356a5e00a013a34e1"
+    "revision": "fe8ce49a18f84325abc6a342befaad8c"
   },
   {
     "url": "categories/front-end/_books/canvas/animation/Example.html",
-    "revision": "a72ac1ee05ebcdd11e2c4dd0052cac2e"
+    "revision": "fcdcacf306889ed8649d32e3bce602ff"
   },
   {
     "url": "categories/front-end/_books/canvas/animation/index.html",
-    "revision": "92fa72696126b6f0ef74ae07f4c1a1ff"
+    "revision": "a914ecc0ddb7b17606dbba4b4d4e7b14"
   },
   {
     "url": "categories/front-end/_books/canvas/animation/Reference.html",
-    "revision": "fac8e96d3ff9301115ae885880b1d80d"
+    "revision": "7abd1fcbe6187b7625cb5bfbd8faa2e8"
   },
   {
     "url": "categories/front-end/_books/canvas/Basic.html",
-    "revision": "81d11eff171245f38869ea9b1ccb1099"
+    "revision": "6927e61ef4d26536874e4b6533e8d0eb"
   },
   {
     "url": "categories/front-end/_books/canvas/basics/Arc.html",
-    "revision": "7ec0038a3474f505e97e476861f300e8"
+    "revision": "8702a65ef5323f7ab8af91061b071abb"
   },
   {
     "url": "categories/front-end/_books/canvas/basics/Gradient.html",
-    "revision": "72ed49af2764c6865c8ae74a7aa73e66"
+    "revision": "459719efab0b82068c0b0933f109bbba"
   },
   {
     "url": "categories/front-end/_books/canvas/basics/Image.html",
-    "revision": "02c75b3211df977469d394a0a91a070e"
+    "revision": "ae52175e58a133d5b220ba9df1b9adbb"
   },
   {
     "url": "categories/front-end/_books/canvas/basics/Path.html",
-    "revision": "80be4ba2673a4e3a429bba298f635459"
+    "revision": "b6794ebe82a51ac06865f1efc0c6b7ad"
   },
   {
     "url": "categories/front-end/_books/canvas/basics/Polygon.html",
-    "revision": "5d56cbeb5d2c006036616cbf34859ca0"
+    "revision": "77dd0d99b378a929ec35752882b11c31"
   },
   {
     "url": "categories/front-end/_books/canvas/basics/Prototype.html",
-    "revision": "f04f2e4c23fe0b5281a172b7159c3f0b"
+    "revision": "96cda481cadeabe1eb1f554287a29875"
   },
   {
     "url": "categories/front-end/_books/canvas/basics/Rectangle.html",
-    "revision": "406a23c51cf61782d72a67c2bcb188c0"
+    "revision": "17c7c0ad838994e268e7419d1fdf3468"
   },
   {
     "url": "categories/front-end/_books/canvas/basics/Reference.html",
-    "revision": "9bd4c92a4a71371ac4bd16f1b1790c9b"
+    "revision": "b6b4dd2c407ee105054d2d74a765ed31"
   },
   {
     "url": "categories/front-end/_books/canvas/basics/Save_Restore.html",
-    "revision": "dcce585c754a8144b0d47ba036c77af7"
+    "revision": "328c1e9eecf4e4a3245a76e364d17c1d"
   },
   {
     "url": "categories/front-end/_books/canvas/basics/Style.html",
-    "revision": "fd98634d982c81d7297d4b2a76f489a4"
+    "revision": "3838e727333a9c384053263c866bf833"
   },
   {
     "url": "categories/front-end/_books/canvas/basics/Text.html",
-    "revision": "60baca748796eaafeeb9c37fb579faf8"
+    "revision": "9894d28bb687e243b8bd67f42f1e0044"
   },
   {
     "url": "categories/front-end/_books/canvas/cases/Ball.html",
-    "revision": "ffa1b0b70d7eb7b019c4dc6018906563"
+    "revision": "22ffa4956349d20688be97fe591a66ec"
   },
   {
     "url": "categories/front-end/_books/canvas/cases/Card.html",
-    "revision": "1469928e5c8b22a3e0d0b8655a44eb0c"
+    "revision": "63a502fa540422b4568e0d77a6e3afd5"
   },
   {
     "url": "categories/front-end/_books/canvas/cases/Spotlight.html",
-    "revision": "df54044c3bf71707660eebec76c147c0"
+    "revision": "94e72eae39422270515eb5ce98840acc"
   },
   {
     "url": "categories/front-end/_books/canvas/coordinate/index.html",
-    "revision": "6acb5447b5537227221dadd7234c0be3"
+    "revision": "709459ccf96c3654ebc0cdacd047dce5"
   },
   {
     "url": "categories/front-end/_books/canvas/coordinate/Matrix.html",
-    "revision": "131caa5fb19402c536715249ae246297"
+    "revision": "a3b9956ec1307f468c2b8870858386e2"
   },
   {
     "url": "categories/front-end/_books/canvas/coordinate/Reference.html",
-    "revision": "456ab7d6fa957a5cd4b24e1b3a5a5ebf"
+    "revision": "a91dfb99f36a652ed3926b12ee439d58"
   },
   {
     "url": "categories/front-end/_books/canvas/coordinate/Rotate.html",
-    "revision": "c80412c198a3cf7fdcc3c8f4d02240ea"
+    "revision": "fcdc8893aacf459bf2cef5136b8c0b54"
   },
   {
     "url": "categories/front-end/_books/canvas/coordinate/Scale.html",
-    "revision": "e1525a75de1fb22afff5486da97a6e51"
+    "revision": "d8061a0785c04a074c132994153edcf1"
   },
   {
     "url": "categories/front-end/_books/canvas/coordinate/Translate.html",
-    "revision": "e803964b98c49bcdcad9d5be997387f2"
+    "revision": "7fec2ce04d7a842c9a12f244a069d8e5"
   },
   {
     "url": "categories/front-end/_books/canvas/image/Capture.html",
-    "revision": "40cf4dabff12bad0e929f13dc9ede98c"
+    "revision": "bc5b43d17f53bbdbac3a0389fba1e17f"
   },
   {
     "url": "categories/front-end/_books/canvas/image/Clip.html",
-    "revision": "c411ba96e2c2a52a0f215215977ec80d"
+    "revision": "cf172df18a4bc83257048bd14668852e"
   },
   {
     "url": "categories/front-end/_books/canvas/image/Composite.html",
-    "revision": "31830d549b005f9c547fb78c4542790e"
+    "revision": "56387b0c64f757eaf072f69d8f1d064a"
   },
   {
     "url": "categories/front-end/_books/canvas/image/Effect.html",
-    "revision": "b62be3e4e19a75ee968ad3caf998b866"
+    "revision": "1e9640c6134561004ae5b2c247b7eda7"
   },
   {
     "url": "categories/front-end/_books/canvas/image/Pixel.html",
-    "revision": "87194ea1a2dda3c08397741bd80ee2c2"
+    "revision": "34f237624e435fdb0b7c1744b97f6abe"
   },
   {
     "url": "categories/front-end/_books/canvas/image/Reference.html",
-    "revision": "938cb7b3dbddf2aee3c794add7d7292f"
+    "revision": "217b08a81ead3061201994986ae14ebe"
   },
   {
     "url": "categories/front-end/_books/canvas/image/Scale.html",
-    "revision": "a85276ef59befd4e92aa9a84030397e5"
+    "revision": "bc647b4581c8924f10fefe70ff7a568e"
   },
   {
     "url": "categories/front-end/_books/canvas/image/WaterMark.html",
-    "revision": "b474ad6f629cda48f32043931d7b8621"
+    "revision": "5afab55e3a6e73755104087dab2b2f1d"
   },
   {
     "url": "categories/front-end/_books/canvas/index.html",
-    "revision": "d25b0f33731b0242bb28a7ecb1d11b20"
+    "revision": "c03470fd2d4b1c0cc0358996f2b6564d"
   },
   {
     "url": "categories/front-end/_books/canvas/interaction/Element.html",
-    "revision": "cafaa17aa5b8bdb12b790f68eff285cd"
+    "revision": "53a1cf00515ac52455bd611162a5013e"
   },
   {
     "url": "categories/front-end/_books/canvas/interaction/Keyboard.html",
-    "revision": "2e49747febdf6afe3dff42cebfff3db4"
+    "revision": "c704dd012491bcf0d39f5e94fbfcce30"
   },
   {
     "url": "categories/front-end/_books/canvas/interaction/Mouse.html",
-    "revision": "6730b2cf1958dfc06b21481b7e042316"
+    "revision": "a24b5ade0094e57930acd7ea5d1d0012"
   },
   {
     "url": "categories/front-end/_books/canvas/interaction/Position.html",
-    "revision": "5ef42d3f859624c8a787a58032aa6e93"
+    "revision": "a75ff344dd8d910b4c516bc3dc577c7d"
   },
   {
     "url": "categories/front-end/_books/canvas/interaction/Reference.html",
-    "revision": "55a6fd9c0e0a26a2c330964a86523f33"
+    "revision": "297ba63d0a3ccf289447d3c106b65670"
   },
   {
     "url": "categories/front-end/_books/canvas/theory/Coordinate.html",
-    "revision": "c607302519d6ea435c8f49da68c1c396"
+    "revision": "9ab72166156c85c8845b105b42751a9b"
   },
   {
     "url": "categories/front-end/_books/canvas/theory/Matrix.html",
-    "revision": "95013763c1da15f7bbf202f028bf41b7"
+    "revision": "30713f6a4cff5c789c84b29c39e0ad1e"
   },
   {
     "url": "categories/front-end/_books/canvas/theory/Point.html",
-    "revision": "7f4f0a971a6e31d6dd7d7e765a3b8a88"
+    "revision": "52a5782c2cd17fb9e7384e47f0a9afe2"
   },
   {
     "url": "categories/front-end/_books/gulp/Dest.html",
-    "revision": "46184df470b7da655a01ba7ff94735bc"
+    "revision": "bd172a62592592b034149c4b6a709969"
   },
   {
     "url": "categories/front-end/_books/gulp/Gulpfile.html",
-    "revision": "7c2e9d74d99ed1acffede6bb37a11d17"
+    "revision": "de53879844d11d8cb8c4a16b40292fd3"
   },
   {
     "url": "categories/front-end/_books/gulp/index.html",
-    "revision": "04a05d72f443709d835c0fa1adb7ed2b"
+    "revision": "2dd0fd7407c80ea43b1110a623cfd783"
   },
   {
     "url": "categories/front-end/_books/gulp/Install.html",
-    "revision": "53cd59383fe0f59a5acddfcfac352f6f"
+    "revision": "e1260711b2592460978fa87c88610438"
   },
   {
     "url": "categories/front-end/_books/gulp/Intro.html",
-    "revision": "28de733a99c4491c9373bed0e9e80f4f"
+    "revision": "f7dc6790acbb365e6cb17b2eaa880c45"
   },
   {
     "url": "categories/front-end/_books/gulp/Pipe.html",
-    "revision": "f041d3908b89f6bde8c2162fd52560d3"
+    "revision": "90424cdcf77492591438c97833d071bb"
   },
   {
     "url": "categories/front-end/_books/gulp/Plugins.html",
-    "revision": "c46313acee3d02cdd470b88fa34b8e78"
+    "revision": "b30a306bac402f5b43387db1eea3c4b1"
   },
   {
     "url": "categories/front-end/_books/gulp/Src.html",
-    "revision": "eaaf5446b6fb781f53c0766299c982db"
+    "revision": "54a33faf724e744f9978ef1b64ac5f33"
   },
   {
     "url": "categories/front-end/_books/gulp/Sync.html",
-    "revision": "84676c05576f4de17a5a3c9e6cb49520"
+    "revision": "c8daf3619156ee2be5c9518a75be0ce1"
   },
   {
     "url": "categories/front-end/_books/gulp/Task.html",
-    "revision": "1dd1edf5baa8b2012c3bceb4a011d6aa"
+    "revision": "3ce88e98af994c6bb90076fe7cbc75e4"
   },
   {
     "url": "categories/front-end/_books/gulp/Usual.html",
-    "revision": "456e7f99aa5a4e2c334e61f7d0ad98c7"
+    "revision": "249f03d7a80b1a3bfd608e935ec8cbb7"
   },
   {
     "url": "categories/front-end/_books/gulp/Watch.html",
-    "revision": "242ad4b7dd2871e1a6b52c982e15ff3f"
+    "revision": "6ddbf09856af74afcff2b66a4128ae2f"
   },
   {
     "url": "categories/front-end/_books/pug/Attribute.html",
-    "revision": "2d38f8ef8cb74ce37725834cb79c37ba"
+    "revision": "4a277d0ca72da5f1f367f4b16501b611"
   },
   {
     "url": "categories/front-end/_books/pug/Circulation.html",
-    "revision": "84889ffda1600aa9e9f17ab7f68ca76b"
+    "revision": "9aa449d7439f96784c5d1f8efbe02141"
   },
   {
     "url": "categories/front-end/_books/pug/Condition.html",
-    "revision": "0494200deb8fb1a4f5b02d48cb69b034"
+    "revision": "c49df9dbe967e11285ea08c33f844249"
   },
   {
     "url": "categories/front-end/_books/pug/Embed.html",
-    "revision": "35fd91e592615bd8e91814237269d810"
+    "revision": "a426dded8d8ae72303c44226ab77ed59"
   },
   {
     "url": "categories/front-end/_books/pug/Extend.html",
-    "revision": "f32c460de18a13c6d85de30d262d80f2"
+    "revision": "c4ee8c02ebfb2ce26dff4c00704d7c7e"
   },
   {
     "url": "categories/front-end/_books/pug/Include.html",
-    "revision": "7ee8de6f88bdd046bd1eac99bfd38edc"
+    "revision": "e1e19c7a51ff44f739c4e41445eda7be"
   },
   {
     "url": "categories/front-end/_books/pug/index.html",
-    "revision": "db1c7b6c3fd9c2629c75859acade0203"
+    "revision": "1cac5319e8b272eb16d7f9d329583783"
   },
   {
     "url": "categories/front-end/_books/pug/Install.html",
-    "revision": "edb51e4ce9909d6996374249e99e4f25"
+    "revision": "acef9681dfe66ea9f4a2aa571bf671c6"
   },
   {
     "url": "categories/front-end/_books/pug/Intro.html",
-    "revision": "9915232e692e1a38523bc5cf2b2e4676"
+    "revision": "6927fea1dcb2213a461b0e8720599009"
   },
   {
     "url": "categories/front-end/_books/pug/Mixin.html",
-    "revision": "f2bb97c7a5f8026fa81322a51c045886"
+    "revision": "46c37240c8c816475ac81eaa9350acc3"
   },
   {
     "url": "categories/front-end/_books/pug/Structure.html",
-    "revision": "36adac4f03caaeb6d5051c8d229661cf"
+    "revision": "ce093c0e4e7d3a90f92076ad1470b6c9"
   },
   {
     "url": "categories/front-end/_books/pug/Text.html",
-    "revision": "77588be094e669ab5dca635f9f2aa6f2"
+    "revision": "619f6fd14c9af1931631d57cf13f43a2"
   },
   {
     "url": "categories/front-end/_books/pug/Variable.html",
-    "revision": "2e9afedf48f078564267f2bd98cc9111"
+    "revision": "e95b726f268298bfefa939f6b183a784"
   },
   {
     "url": "categories/front-end/_books/svg/animation.html",
-    "revision": "b5cbd2dec1ea6152884881823db99767"
+    "revision": "2d5ff770f4d94f2c5f67ed800ec0c70a"
   },
   {
     "url": "categories/front-end/_books/svg/basis.html",
-    "revision": "5ec5a5e600bf09168863d0015f86f30d"
+    "revision": "024270f3e09d7b1c62d82093905987c3"
   },
   {
     "url": "categories/front-end/_books/svg/clip.html",
-    "revision": "ed84247add4330497acb3ac178bf8abc"
+    "revision": "ea0f001114fcd1425981efadbb8a40bd"
   },
   {
     "url": "categories/front-end/_books/svg/css.html",
-    "revision": "1860e6357eea7867c814d781f5dd9086"
+    "revision": "e868e1e96f4987260e19c1161d0c7315"
   },
   {
     "url": "categories/front-end/_books/svg/filter.html",
-    "revision": "32f17a0c9fd90b14f9ed8d400be9876f"
+    "revision": "76e8761abeb894cc88970234efee0ffc"
   },
   {
     "url": "categories/front-end/_books/svg/gradient.html",
-    "revision": "118f07f78813e45e99e60c81445e5102"
+    "revision": "a6310f8c8437094a096722e5473693c2"
   },
   {
     "url": "categories/front-end/_books/svg/group.html",
-    "revision": "8b9d3957204cd5cb7256e5a55382c003"
+    "revision": "384083f8a1c7f8123a6d785124cbf1b3"
   },
   {
     "url": "categories/front-end/_books/svg/index.html",
-    "revision": "61271c060fc553703c3510ddd62b858b"
+    "revision": "9cee50c867eaef2b31aaaf0d7d3c7b29"
   },
   {
     "url": "categories/front-end/_books/svg/Intro.html",
-    "revision": "bb46057a1828544bddc0823df937c898"
+    "revision": "4c9a6cafe43ef2d2497fd99735e8e756"
   },
   {
     "url": "categories/front-end/_books/svg/javascript.html",
-    "revision": "2e2c7a86177953acacc72ee81461ab65"
+    "revision": "4013df76a70c829c746ebe209ad9a5d4"
   },
   {
     "url": "categories/front-end/_books/svg/namespace.html",
-    "revision": "bf6433cb91326ca0cee3630176468774"
+    "revision": "d3415b04f7bd3beefce4c249ba16c6c9"
   },
   {
     "url": "categories/front-end/_books/svg/path.html",
-    "revision": "e76d44275fd018c507a4f274c159ff53"
+    "revision": "d028d11d17d93f30ef6f7814971b5126"
   },
   {
     "url": "categories/front-end/_books/svg/pattern.html",
-    "revision": "722e888be0c8896358bc9127b30f863b"
+    "revision": "4546e5012b94a13e8d56426bd2d2ff6c"
   },
   {
     "url": "categories/front-end/_books/svg/reference.html",
-    "revision": "417b35e6e59a277c246d7903c6c4e9a7"
+    "revision": "27b627e13c4aff6bc19e036be18d0a68"
   },
   {
     "url": "categories/front-end/_books/svg/tags.html",
-    "revision": "b1ff054f25200c2c4f6204bb202136e2"
+    "revision": "1cc25163b680fafaa8fc671beb55cd26"
   },
   {
     "url": "categories/front-end/_books/svg/text.html",
-    "revision": "e516f7bc931c0f5092dff924bda84f56"
+    "revision": "e7feafb2358138b5c1e31bb0f5718f5a"
   },
   {
     "url": "categories/front-end/_books/svg/transform.html",
-    "revision": "4f98d33e4d1386cc7fbcf23bda0724b2"
+    "revision": "7941d87c1a5e8579c2f4c6102e607191"
   },
   {
     "url": "categories/front-end/_pages/Best_Scroll.html",
-    "revision": "fde6e52c301c88529f652d8eb1974073"
+    "revision": "859e7e88bd6a0fa941c2e56e3c4b60c7"
   },
   {
     "url": "categories/front-end/_pages/Ejs.html",
-    "revision": "8ce18f9a7ed759c82c6fe18c9b84b1ae"
+    "revision": "1082a63107eb2153b75528d6f2bdffc2"
   },
   {
     "url": "categories/front-end/_pages/Frontend_PDF.html",
-    "revision": "3f9093827ca1a65df2657d024e3e0b02"
+    "revision": "4ceaba66462153f7b3ba7408ca8b2271"
   },
   {
     "url": "categories/front-end/_pages/Gitment.html",
-    "revision": "3bf7e3d543813bde53e96a0cde9830e3"
+    "revision": "4f42a3cfbe74ea0e00419dfac37af87c"
   },
   {
     "url": "categories/front-end/_pages/PWA.html",
-    "revision": "054a6197df4eb16cd394bd4b64bd3475"
+    "revision": "af2d0018ab6e254f64493ddeb71a0c6d"
   },
   {
     "url": "categories/front-end/_pages/Rekit.html",
-    "revision": "6ace61853139d206c8f5b2a0cb282691"
+    "revision": "2662107da21438744ce02f1599ffad7d"
   },
   {
     "url": "categories/front-end/_pages/Request.html",
-    "revision": "c92df70e9fcf5526b57241c496c438ec"
+    "revision": "610be3789a52b41624c49207048332f8"
   },
   {
     "url": "categories/front-end/_pages/Scratch_Card.html",
-    "revision": "84e35812f6399f1b737f0d89dcd4bc87"
+    "revision": "b3323d705b3f2423a6acc461c53f3ba5"
   },
   {
     "url": "categories/front-end/css/_books/css_picture_processing/Blend.html",
-    "revision": "545a29b4249fb400899f651a703e9771"
+    "revision": "c391696097d44678b77f0a0e96656e57"
   },
   {
     "url": "categories/front-end/css/_books/css_picture_processing/Clip.html",
-    "revision": "8544ee9fb1d91c9f019b841374c65e6a"
+    "revision": "3be1415fc76b8b4dda4dd517c5fff41f"
   },
   {
     "url": "categories/front-end/css/_books/css_picture_processing/Filter.html",
-    "revision": "42140729103fc79d585fd52d870040a3"
+    "revision": "bd5aa654253f3349ff13ae7b0547ad6c"
   },
   {
     "url": "categories/front-end/css/_books/css_picture_processing/Gradient_Application.html",
-    "revision": "ceb34fbce0d9c2725b74c40f152a1077"
+    "revision": "b967741ebd3f7e3418e5a4b79c5e74c9"
   },
   {
     "url": "categories/front-end/css/_books/css_picture_processing/index.html",
-    "revision": "100d2b4f3cae70917a74fbd0d7204db9"
+    "revision": "5bf53cfa1b814238034675deb602ed3a"
   },
   {
     "url": "categories/front-end/css/_books/css_picture_processing/Linear_Gradient.html",
-    "revision": "c63b4b4aec164a1179cb07578dc7eafd"
+    "revision": "9734607cc4ba3cccc2dee79c47494197"
   },
   {
     "url": "categories/front-end/css/_books/css_picture_processing/Radial_Gradient.html",
-    "revision": "017eb1b52d4e9d6ca5c45c01944bddfd"
+    "revision": "cc9a3e04e5747bd91b5d4546420a8e85"
   },
   {
     "url": "categories/front-end/css/_books/css_picture_processing/Reference.html",
-    "revision": "7505212382143816b407e7e7019be201"
+    "revision": "2c5da4ca3d6391071a1fd9ed138e2db2"
   },
   {
     "url": "categories/front-end/css/_books/css/Animate.html",
-    "revision": "362dba531806170fb69fd0368b204fb5"
+    "revision": "1450f6ffc7e5cabb1d56b7f3d3480612"
   },
   {
     "url": "categories/front-end/css/_books/css/Blend.html",
-    "revision": "fa6a7d77f16d69b92a143c0927f58dd0"
+    "revision": "336ff0b5bcd221f76d97520ecca7ae7d"
   },
   {
     "url": "categories/front-end/css/_books/css/Border.html",
-    "revision": "4abd1e6212f43e6189ddaf7a678f82a0"
+    "revision": "ca08f86e568bac98b1899bc3bfbc5b99"
   },
   {
     "url": "categories/front-end/css/_books/css/Center.html",
-    "revision": "ad2a985fd217894e83a76c0affa06613"
+    "revision": "1006f2f49c0efa8546c3fb28c73f3be4"
   },
   {
     "url": "categories/front-end/css/_books/css/Clip.html",
-    "revision": "b1d883ab25980424e83f24b36f785361"
+    "revision": "ec13dfa54d9ecf3a4e8aa2aca1124bd3"
   },
   {
     "url": "categories/front-end/css/_books/css/Dialog.html",
-    "revision": "7cd5244b6662251a94509daed88a8e31"
+    "revision": "a151b3af7aaaad5282f178b383df9ad8"
   },
   {
     "url": "categories/front-end/css/_books/css/GradientText.html",
-    "revision": "55b4ce8110ed3d9645834dd90ab4ca31"
+    "revision": "16ca51a9d755c6c627279ccd752d559a"
   },
   {
     "url": "categories/front-end/css/_books/css/index.html",
-    "revision": "53a1e7c3f66f7467bfe95e61628db788"
+    "revision": "b089a53c1e575a3d6d5e393ac19e3673"
   },
   {
     "url": "categories/front-end/css/_books/css/Line.html",
-    "revision": "3b24b8d17f43ed7ac0b42d1f4a55b2f9"
+    "revision": "9d4cfa7191d10bb27618f20dec50b32b"
   },
   {
     "url": "categories/front-end/css/_books/css/Reference.html",
-    "revision": "f249f4adc499f4fb2663b89625ab2f6d"
+    "revision": "5dad7a98a1c6eb70fa295caef27a2bd0"
   },
   {
     "url": "categories/front-end/css/_books/css/Scrollbar.html",
-    "revision": "f8fd8fef255e413c623e2b18ddb473f7"
+    "revision": "bc65c83c9cc50c027c084e9a29414d9a"
   },
   {
     "url": "categories/front-end/css/_books/css/Snippets.html",
-    "revision": "51a7c991dd79955988c6326bb28d3657"
+    "revision": "43181d85bb3829647a8a8781727e4444"
   },
   {
     "url": "categories/front-end/css/_books/css/Switcher.html",
-    "revision": "81f0070f61bd7944b9e52721875f0524"
+    "revision": "760089690c7ba39d5d14ad011e8e327e"
   },
   {
     "url": "categories/front-end/css/_books/css/TransformOrigin.html",
-    "revision": "647518e72cdc4258ac99bbc40f4548a2"
+    "revision": "d18adc3a94ac5000449fe620be42cc3f"
   },
   {
     "url": "categories/front-end/css/_books/css/Unit.html",
-    "revision": "a436272d7a1fbc52e6a6c2c21db1a1a1"
+    "revision": "82b2f26f21b330caac4f5c3e69be3f56"
   },
   {
     "url": "categories/front-end/css/_pages/Effect_of_Angle.html",
-    "revision": "321106c15762260557cd11f9d338006e"
+    "revision": "331e4993881ffd4e4e8b4d2dec82c176"
   },
   {
     "url": "categories/front-end/css/_pages/Effect_of_Text.html",
-    "revision": "b3d19c7f5cf932c2b75114580fcca95a"
+    "revision": "24d206a957140e593d63fa6f32351efa"
   },
   {
     "url": "categories/front-end/css/_pages/Flex.html",
-    "revision": "92313b74b05f0b2d1a1f1b6704df2e4a"
+    "revision": "6b4be31ad00b26668a6527922bb27a49"
   },
   {
     "url": "categories/front-end/css/_pages/Font_Family.html",
-    "revision": "96e33365495f7f0fd4846343503b3f5f"
+    "revision": "e3336e6f7836b0e551f72465c307dc03"
   },
   {
     "url": "categories/front-end/css/_pages/Grid.html",
-    "revision": "e4602eff354c70232c697bb224ea20fa"
+    "revision": "57785543f5c315086c5ebd23b8995baa"
   },
   {
     "url": "categories/front-end/css/_pages/How_to_select_fonts_gracefully.html",
-    "revision": "d83336cf08d772b3a0f840bc7bbe3d95"
+    "revision": "47b564530d18216803aa8631da9671cc"
   },
   {
     "url": "categories/front-end/css/_pages/Mobile_Scroll.html",
-    "revision": "28d50daef8372aa4a622d404d5481ea1"
+    "revision": "c193bf0f6417526b161046148061cd5e"
   },
   {
     "url": "categories/front-end/css/_pages/Overflow.html",
-    "revision": "23bbc6b12cc0a309658f80d9c1d8a652"
+    "revision": "0c461f9b7972d874dcd5b3942362f100"
   },
   {
     "url": "categories/front-end/css/index.html",
-    "revision": "5f9380d3c0835545b345fa5a2a952291"
+    "revision": "f9b0a25bd1aef755ffdf52ca4bc78def"
   },
   {
     "url": "categories/front-end/html/_pages/H5_Dragable_Elements.html",
-    "revision": "e2272a3e57e3b64059962ab4619c3fb1"
+    "revision": "7d33e40431d2bed48c07fc5d8f6136cb"
   },
   {
     "url": "categories/front-end/html/_pages/H5_File_System.html",
-    "revision": "bad476063391cdbe88a01231d8680058"
+    "revision": "1d56732cdd358f049e966cdbf7e1f69d"
   },
   {
     "url": "categories/front-end/html/_pages/H5_Local_File.html",
-    "revision": "cea768e8b2189432eb20080918a31c06"
+    "revision": "f8108fda594dcb04e42c0e1713272e81"
   },
   {
     "url": "categories/front-end/html/_pages/H5_Media.html",
-    "revision": "abffa71bb6c7d00f4112c0e344784bef"
+    "revision": "9beddb20b88229531da3d051d4f6a8a7"
   },
   {
     "url": "categories/front-end/html/_pages/iOS_Upload.html",
-    "revision": "04c2f27548e977148797f3430f78886f"
+    "revision": "b757352beb58d5b23dde5e9fec9fd8f0"
   },
   {
     "url": "categories/front-end/html/index.html",
-    "revision": "0408fb47780f343037b6d3de8473ff67"
+    "revision": "54827a9a5d737b7cb961fcd573251d55"
   },
   {
     "url": "categories/front-end/index.html",
-    "revision": "7dec0e76647a12d9470fbfcf22711e3c"
+    "revision": "250478199abbe89adc5d4c7e96b838c9"
   },
   {
     "url": "categories/front-end/js/_books/js_functional_programming/Applicative.html",
-    "revision": "2c9415cdd0808717c942bc0efcc71e42"
+    "revision": "b64409c6c37c3769a06daac0dcc1b70b"
   },
   {
     "url": "categories/front-end/js/_books/js_functional_programming/Cache.html",
-    "revision": "b5e9a805c0516423e592d396c7ff134d"
+    "revision": "99afee419119f035b5f3b2c3841c4948"
   },
   {
     "url": "categories/front-end/js/_books/js_functional_programming/Compose.html",
-    "revision": "1cc2969967220a68a5daa3bbb1ffbf94"
+    "revision": "e33d9ff816ed2cac1db32821069e921b"
   },
   {
     "url": "categories/front-end/js/_books/js_functional_programming/Curry.html",
-    "revision": "5dc90cfb41b349bfb00dc8036e54799d"
+    "revision": "add1ae03408596e39301383f603f94c0"
   },
   {
     "url": "categories/front-end/js/_books/js_functional_programming/Either.html",
-    "revision": "6f72425febbf4651235ceb0ec4bd9b53"
+    "revision": "6f7f6d7f5d4b2e3b462a22e4dfe241aa"
   },
   {
     "url": "categories/front-end/js/_books/js_functional_programming/Functor.html",
-    "revision": "7e37b635b726e47d9ca141ed4409bcd7"
+    "revision": "ece8856a46fa2faab5286c20bed851d2"
   },
   {
     "url": "categories/front-end/js/_books/js_functional_programming/index.html",
-    "revision": "a5b3d216b864f6b11de7be647349edea"
+    "revision": "0098008512d5d319eda70c6719103788"
   },
   {
     "url": "categories/front-end/js/_books/js_functional_programming/Intro.html",
-    "revision": "fbba61329eeaa3a72dca6b3d71681fb2"
+    "revision": "ac4d7a279c01fef3763678115ed4e9b5"
   },
   {
     "url": "categories/front-end/js/_books/js_functional_programming/Monad.html",
-    "revision": "66c54e85255591681d259a5e451f2cf5"
+    "revision": "4a1120f9b9d7fd56cb10ff519cf4995f"
   },
   {
     "url": "categories/front-end/js/_books/js_functional_programming/Reference.html",
-    "revision": "588a9cb96e46363edb0b7bf3d017c655"
+    "revision": "38a23da85659e3c4f3027e50da178655"
   },
   {
     "url": "categories/front-end/js/_books/js_you_might_not_know/Abbreviations.html",
-    "revision": "4d8c7d1a0c96054f1df2703da50c3594"
+    "revision": "cc0ead87e076286d21cb08bad3777ed4"
   },
   {
     "url": "categories/front-end/js/_books/js_you_might_not_know/Abbreviations/condition.html",
-    "revision": "bcb528aac46758b2f953611d2b3da8dc"
+    "revision": "7745858bd35a42f0894b57f3e5a5fe3e"
   },
   {
     "url": "categories/front-end/js/_books/js_you_might_not_know/Abbreviations/es6.html",
-    "revision": "1206eb4258a6f4f6ae548afde71e9ed0"
+    "revision": "9ea4d03560fb6f5466e1187b095e85ab"
   },
   {
     "url": "categories/front-end/js/_books/js_you_might_not_know/Abbreviations/short.html",
-    "revision": "2b64d2ba58b886cb48b8d3f6f13c2dd0"
+    "revision": "c885e37012524cbae4770f97dcc0f88a"
   },
   {
     "url": "categories/front-end/js/_books/js_you_might_not_know/Array.html",
-    "revision": "23b652a379d1b4eeab50ea8344dcd579"
+    "revision": "202d4a0b483894cb21d6f53fd42b57c6"
   },
   {
     "url": "categories/front-end/js/_books/js_you_might_not_know/Basic.html",
-    "revision": "ded6784966ea436342285cc480890fb7"
+    "revision": "e31fccf981c739cacdbbb861fbc80d14"
   },
   {
     "url": "categories/front-end/js/_books/js_you_might_not_know/BOM.html",
-    "revision": "d6d905b0c886114ec74463ed7b526888"
+    "revision": "4e0d0334fd0731dadec904de25e55f38"
   },
   {
     "url": "categories/front-end/js/_books/js_you_might_not_know/Comprehension/array_map.html",
-    "revision": "b6b1d9e16ad4d9079f49438f319c9b63"
+    "revision": "e1a43d8153709c55bb9f8c7bc3e6d9a3"
   },
   {
     "url": "categories/front-end/js/_books/js_you_might_not_know/Comprehension/array_reduce.html",
-    "revision": "2711c3290c325f75ee79201338d4507d"
+    "revision": "4848b7dcfb8b4db1ae25d7e4042ebac8"
   },
   {
     "url": "categories/front-end/js/_books/js_you_might_not_know/Comprehension/object_assign.html",
-    "revision": "eee2402c50d69085f9179594c3e0d528"
+    "revision": "efaa4455c46b17e2a94ac5a0ee9f0481"
   },
   {
     "url": "categories/front-end/js/_books/js_you_might_not_know/Comprehension/object_create.html",
-    "revision": "f2362d69390002b54e3c296c2d1cd830"
+    "revision": "b8a3e9a0c2f8edecbb7933dfe902e4ce"
   },
   {
     "url": "categories/front-end/js/_books/js_you_might_not_know/Comprehension/object_defineProperty.html",
-    "revision": "cd4b652fb21e8105bd92e42a79da4144"
+    "revision": "d4f8fd70df2c92b043b590c2d367407c"
   },
   {
     "url": "categories/front-end/js/_books/js_you_might_not_know/Comprehension/object_entries.html",
-    "revision": "406776789aaf0b7d77fea5b97ebba00b"
+    "revision": "48c6112cfef1f6a4fedc89c528da67a4"
   },
   {
     "url": "categories/front-end/js/_books/js_you_might_not_know/Comprehension/object_freeze.html",
-    "revision": "4c0c50d18a82efbb6295726589dfc242"
+    "revision": "d235f3d3d419d5be1bde3a05e99f52f8"
   },
   {
     "url": "categories/front-end/js/_books/js_you_might_not_know/Comprehension/object_getOwnPropertyDescriptor.html",
-    "revision": "005f1e64f5850196af4df83ac08829a4"
+    "revision": "3f4a0c0c58f241ccabbbf14840f77a1b"
   },
   {
     "url": "categories/front-end/js/_books/js_you_might_not_know/Comprehension/object_getOwnPropertyDescriptors.html",
-    "revision": "64ae1ba3a90f5876ff664790fc6fc41b"
+    "revision": "ed30ac3376bc704da4c20ce5f820b5dd"
   },
   {
     "url": "categories/front-end/js/_books/js_you_might_not_know/Comprehension/object_getOwnPropertySymbols.html",
-    "revision": "8e713fff9aba469e971207dba895958b"
+    "revision": "f47f3a18b75bfee4d32ba214aa2ecc6b"
   },
   {
     "url": "categories/front-end/js/_books/js_you_might_not_know/Comprehension/object_getPropertyNames.html",
-    "revision": "b1d364d56b8bf366fed9a5d7db951a57"
+    "revision": "cf9479bb6b2f98ccfb6044552cc5fd5c"
   },
   {
     "url": "categories/front-end/js/_books/js_you_might_not_know/Comprehension/object_getPrototypeOf.html",
-    "revision": "df90162bade535b53d47242303064176"
+    "revision": "868faeb0e74787031ae7003cf4dc5ea2"
   },
   {
     "url": "categories/front-end/js/_books/js_you_might_not_know/Comprehension/object_keys.html",
-    "revision": "1095e21f7dbeafa883e5324b0310062d"
+    "revision": "0c2c1079ffe9d25edc227f556f736d5b"
   },
   {
     "url": "categories/front-end/js/_books/js_you_might_not_know/Date.html",
-    "revision": "48e5eea95a1929010cc2045aec0e1a08"
+    "revision": "212e0f2e545c7a8b6d3d082f566f059d"
   },
   {
     "url": "categories/front-end/js/_books/js_you_might_not_know/DOM.html",
-    "revision": "652e8ae7adb887eb105804b7ab3e8f83"
+    "revision": "3a0cad4db8db57265944730076a4bce9"
   },
   {
     "url": "categories/front-end/js/_books/js_you_might_not_know/Function.html",
-    "revision": "14be333c6e4e2d5ed81f2ff09f2d120c"
+    "revision": "0ce26e9b2a24bce68b95ae7fbff6eb02"
   },
   {
     "url": "categories/front-end/js/_books/js_you_might_not_know/Handbook.html",
-    "revision": "eff289c4df52e037585205da1e3f99fe"
+    "revision": "75a825ef3a9ccf8cdac781736dd7e75b"
   },
   {
     "url": "categories/front-end/js/_books/js_you_might_not_know/Handbook/array.html",
-    "revision": "0ff7dffe0d4ecd84500b9ade1aab0f33"
+    "revision": "66eed3fc7862f8281e9836a140dd974b"
   },
   {
     "url": "categories/front-end/js/_books/js_you_might_not_know/index.html",
-    "revision": "f055ee26354faa9fc54b6052a3df8296"
+    "revision": "71aa4df7ac9e83cfc0771be94f2b7a95"
   },
   {
     "url": "categories/front-end/js/_books/js_you_might_not_know/Library.html",
-    "revision": "484c5a33c9421ed0029f570924abbc13"
+    "revision": "e20333b166b6e651b6770328c3ba57a1"
   },
   {
     "url": "categories/front-end/js/_books/js_you_might_not_know/Object.html",
-    "revision": "55868edc7d0588cbb8e9c1fa8d481335"
+    "revision": "6b76f30d8a9fa0fe078365d3cc77b3b6"
   },
   {
     "url": "categories/front-end/js/_books/js_you_might_not_know/Plugins/bigDecimal.html",
-    "revision": "2fb303323c7a1cd6fb0de29a9dfac2bb"
+    "revision": "c8b4b2c29c00b8b5c0b46642d7b213ed"
   },
   {
     "url": "categories/front-end/js/_books/js_you_might_not_know/Plugins/favico.html",
-    "revision": "2279f5e9c8415d495a00b510be4503c2"
+    "revision": "08a375220fe85c6d16b7bba6f47482d0"
   },
   {
     "url": "categories/front-end/js/_books/js_you_might_not_know/Plugins/jquery.html",
-    "revision": "b3df372a3a71af6502a71e8b33331e0f"
+    "revision": "35069184c076487414e33f356c201b3a"
   },
   {
     "url": "categories/front-end/js/_books/js_you_might_not_know/Plugins/moment.html",
-    "revision": "bba5c09227142d05e998fef91d8a8985"
+    "revision": "9a13404abd3fa9350c1756ab7e5d52be"
   },
   {
     "url": "categories/front-end/js/_books/js_you_might_not_know/Plugins/move.html",
-    "revision": "725cc23ac41a6f1feee63761537d23fb"
+    "revision": "c8cc935c4894d97d993adec7bf8bb4f9"
   },
   {
     "url": "categories/front-end/js/_books/js_you_might_not_know/Plugins/pdf.html",
-    "revision": "517e02f0be04aab056e28db18688805e"
+    "revision": "ce34a4a8042a95265b5e82b9c66e7b7b"
   },
   {
     "url": "categories/front-end/js/_books/js_you_might_not_know/Plugins/v8n.html",
-    "revision": "0081531fe1a583397a177fb4294415f3"
+    "revision": "6a2e9345ffcba164dd6924c85fcfa263"
   },
   {
     "url": "categories/front-end/js/_books/js_you_might_not_know/Reference.html",
-    "revision": "aadd02cfe8ecb6dfc7dd533a1804e667"
+    "revision": "c3025b7b40ec782deb56dd26b9c8a4c2"
   },
   {
     "url": "categories/front-end/js/_books/js_you_might_not_know/Snippets.html",
-    "revision": "06ca1cbf6844e09fb7566bc81aaaae92"
+    "revision": "f12d3a6075919881eca2d6e50dc48efa"
   },
   {
     "url": "categories/front-end/js/_books/js_you_might_not_know/Snippets/array.html",
-    "revision": "d803588d657dd170963d5576b8aea464"
+    "revision": "cd9ceabf63fe5fb0e96b8220f62b4337"
   },
   {
     "url": "categories/front-end/js/_books/js_you_might_not_know/Snippets/color.html",
-    "revision": "b6d449f5f182760468c8dd130c8e4bc2"
+    "revision": "a2d647de4cf3ad4b5a67e12be8bf345d"
   },
   {
     "url": "categories/front-end/js/_books/js_you_might_not_know/Snippets/date.html",
-    "revision": "0c2f26e7630dd3a2c6144b9490e459a7"
+    "revision": "a8b139f1bbb53d00fc53b9ea39b854c6"
   },
   {
     "url": "categories/front-end/js/_books/js_you_might_not_know/Snippets/detection.html",
-    "revision": "084a47c0d79b3444fa15dd5eaac05350"
+    "revision": "0c5106f08b1a15afd4b15742d93057d1"
   },
   {
     "url": "categories/front-end/js/_books/js_you_might_not_know/Snippets/math.html",
-    "revision": "19fdb8c49979996750c8344168a0f400"
+    "revision": "fbb883a6d388ef276acae279305f0da0"
   },
   {
     "url": "categories/front-end/js/_books/js_you_might_not_know/Snippets/regExp.html",
-    "revision": "6f4c0fe66e8a2f86240d91d188041405"
+    "revision": "c60ad145dda1dc20c38ea3299a733a52"
   },
   {
     "url": "categories/front-end/js/_books/js_you_might_not_know/Snippets/string.html",
-    "revision": "20b5dc7f0877b8e06f3cc98ee5eb3240"
+    "revision": "c4893a90c70060b636596fb5553f4859"
   },
   {
     "url": "categories/front-end/js/_books/js_you_might_not_know/Snippets/transform.html",
-    "revision": "181d3b6738e2f2b021541b6471f9f250"
+    "revision": "83957d4f662aa207451be9b3d0b6c0f2"
   },
   {
     "url": "categories/front-end/js/_books/js_you_might_not_know/Snippets/utility.html",
-    "revision": "c6afcc61562b07d5350a2cc36bf72672"
+    "revision": "be94cee682c7fb50d8401f23025e2325"
   },
   {
     "url": "categories/front-end/js/_books/js_you_might_not_know/Snippets/validation.html",
-    "revision": "90d3efd1004b26cb4e5f13a263c31d48"
+    "revision": "583cf5af27bdde6a5b118ac4c3a29269"
   },
   {
     "url": "categories/front-end/js/_books/js_you_might_not_know/String.html",
-    "revision": "383fe3b4940efafe99e36233c7b6e1ed"
+    "revision": "ecc46ae59b8c22109d8b00ad8f4d19b6"
   },
   {
     "url": "categories/front-end/js/_pages/Async.html",
-    "revision": "0c6fa6afeda59162904781de9c3b90bc"
+    "revision": "58cef723d82e1793e410dfe523ccaf2d"
   },
   {
     "url": "categories/front-end/js/_pages/Blob_Base64.html",
-    "revision": "c235ba2953c639234fdf2ac11f15aaf3"
+    "revision": "f59f3e04de4d92c11bae38c75fc5c8b4"
   },
   {
     "url": "categories/front-end/js/_pages/Call_Apply_Bind.html",
-    "revision": "fa54ed91d97cc2a495685a52385c7d1a"
+    "revision": "e833c83ad1185bd3723ae1a7956cee67"
   },
   {
     "url": "categories/front-end/js/_pages/Closure.html",
-    "revision": "3b3820265360324d6013da51ce3fe2a2"
+    "revision": "2808bce21dee853e73f6e7c786574354"
   },
   {
     "url": "categories/front-end/js/_pages/Collection_Objects.html",
-    "revision": "0eb54e1e5f67532d28f21ae2a0174cc3"
+    "revision": "a5708609370688b2256b7857392fa1ac"
   },
   {
     "url": "categories/front-end/js/_pages/Copy.html",
-    "revision": "0114f9845d760ba16152530d45497de9"
+    "revision": "cac1a2d7db949d7b591ce05b38f41b0a"
   },
   {
     "url": "categories/front-end/js/_pages/Encode.html",
-    "revision": "21aae8e9568c133c1e40e87ccf6a8985"
+    "revision": "12890dc67f6cb059dbbf6749dcb8806f"
   },
   {
     "url": "categories/front-end/js/_pages/Immutable_Objects.html",
-    "revision": "b5a611e527f175680367d57b91f994a0"
+    "revision": "90964f2d7053075aeef89f3c3d61e164"
   },
   {
     "url": "categories/front-end/js/_pages/MockJS.html",
-    "revision": "d7fde3356910a80449a35d5488526a9c"
+    "revision": "b784f3ebe22e3f1bcfe56b126b89f31b"
   },
   {
     "url": "categories/front-end/js/_pages/Module.html",
-    "revision": "2ef9ebc7e18990e9c35bba7f5022aa1f"
+    "revision": "b6445f98e2c69b66de8c12b246252f5a"
   },
   {
     "url": "categories/front-end/js/_pages/Object_Empty.html",
-    "revision": "132d34119025a94b4208652cf5084034"
+    "revision": "c9aea8b1650127d5dff8a5bb868c1602"
   },
   {
     "url": "categories/front-end/js/_pages/Prototype_Chain.html",
-    "revision": "df47ce20e0f1a0af154347dc2530f5d1"
+    "revision": "f6491c664cc0c1a85a5a7b6b35429ba7"
   },
   {
     "url": "categories/front-end/js/_pages/RequestAnimationFrame.html",
-    "revision": "a37efe42a43d2525e572a4d6c80bbae0"
+    "revision": "f4e83e3c7eb12ae47e97a9689ee79a3e"
   },
   {
     "url": "categories/front-end/js/_pages/This.html",
-    "revision": "3635bc4b35aa734ab0104de79944cf65"
+    "revision": "4c16e7e9b8e663a1aff38257dc6fc8a0"
   },
   {
     "url": "categories/front-end/js/_pages/WebWorker.html",
-    "revision": "900e3f1d89fd74a29fd53662acdb021f"
+    "revision": "2e1e92a12cc025f1fb30528c7da593e7"
   },
   {
     "url": "categories/front-end/js/_pages/XMLHttpRequest2.html",
-    "revision": "b638fae27421d438c596cb1927c91695"
+    "revision": "7936ece6fd40305ca89d69216233d9a3"
   },
   {
     "url": "categories/front-end/js/index.html",
-    "revision": "795459a877178a986d4dcbf38e719d3b"
+    "revision": "a4c6faa64d11c4a81ce1f3c091bb80ba"
   },
   {
     "url": "categories/front-end/react/_books/react_native/api/Fetch.html",
-    "revision": "342d6e605f222226a7a8de4bd8571e47"
+    "revision": "fbdf4bf3c8d0dcc33b048fd8d271c3c2"
   },
   {
     "url": "categories/front-end/react/_books/react_native/api/index.html",
-    "revision": "7490f9d580cdd99db920fe370eba27c7"
+    "revision": "5c1eed417eaddafaa6317bb94c4b08dc"
   },
   {
     "url": "categories/front-end/react/_books/react_native/api/Platform.html",
-    "revision": "e6c2023ed3f6c9008d693ac13a7ab697"
+    "revision": "08695dff61be3a0e7eed418597f5150c"
   },
   {
     "url": "categories/front-end/react/_books/react_native/basis/Debug.html",
-    "revision": "eb8a877edcda272b8761d5dcde164828"
+    "revision": "79833d30c7e7081106e346c137f831aa"
   },
   {
     "url": "categories/front-end/react/_books/react_native/basis/Entry.html",
-    "revision": "27b0a892c0e0cf4c3b8964e4db79d116"
+    "revision": "ff2a5a9aba78a2dedd4a04219092f3b5"
   },
   {
     "url": "categories/front-end/react/_books/react_native/basis/Flex.html",
-    "revision": "9a2cd973b350aa469f73fdf6c0bb5672"
+    "revision": "e55f9eab134396b259a52943c7c8f738"
   },
   {
     "url": "categories/front-end/react/_books/react_native/basis/Redux.html",
-    "revision": "68d7d1389ae59b4331328b651af35a9b"
+    "revision": "df43ca77ebd997ecf67267c60e26ab8b"
   },
   {
     "url": "categories/front-end/react/_books/react_native/basis/Size.html",
-    "revision": "30959a9465819f6abfad5579072fe662"
+    "revision": "9719bcf4b8b1a32d2610d6aed3aa4c43"
   },
   {
     "url": "categories/front-end/react/_books/react_native/basis/Style.html",
-    "revision": "e9966b32b4fec8ab8a2b2c7406f8737a"
+    "revision": "9cf6753431ad5a6b7e9d9e945e80bd1d"
   },
   {
     "url": "categories/front-end/react/_books/react_native/component/core/Android.html",
-    "revision": "12cc892eae029842b24ca205c10bad53"
+    "revision": "31663a6d972facd22401d5232665aec4"
   },
   {
     "url": "categories/front-end/react/_books/react_native/component/core/Image.html",
-    "revision": "bfa4615e0d312ba171b4abb62d2c0863"
+    "revision": "81c41f193b7da8991ee7c4874f097f65"
   },
   {
     "url": "categories/front-end/react/_books/react_native/component/core/index.html",
-    "revision": "6e7e1850db6316c4a23706fb5a2d8864"
+    "revision": "0cce3a1e83ed8b4492674ac0f676fc2b"
   },
   {
     "url": "categories/front-end/react/_books/react_native/component/core/iOS.html",
-    "revision": "40c5bdaf283f18746494c9d4c517f2b3"
+    "revision": "86d4a41291981eb6946dc80020f8dbc7"
   },
   {
     "url": "categories/front-end/react/_books/react_native/component/core/List.html",
-    "revision": "8c88bdb263481b56f5b7f5a320e8c0ad"
+    "revision": "4340b5f4fdfe7b87815a9239ef85bfe8"
   },
   {
     "url": "categories/front-end/react/_books/react_native/component/core/ScrollView.html",
-    "revision": "a708801bc686ad701cf6573f402bac09"
+    "revision": "2eac48ae5194e6c3819d36a3a1f3c7d1"
+  },
+  {
+    "url": "categories/front-end/react/_books/react_native/component/core/TextInput.html",
+    "revision": "10f16479473fa3c119121c8fa517e127"
   },
   {
     "url": "categories/front-end/react/_books/react_native/component/core/Touchable.html",
-    "revision": "cda5628eab5e9188694e38ee66e70182"
+    "revision": "a7649d2a61d351eacd4f3d54c80d18c0"
   },
   {
     "url": "categories/front-end/react/_books/react_native/component/extend/Audio.html",
-    "revision": "85edfc923e7e691781b42642b99a6d8b"
+    "revision": "75950236f7f4b0259cf0b78ce6796860"
   },
   {
     "url": "categories/front-end/react/_books/react_native/component/extend/Camera.html",
-    "revision": "f2405cba551ee107578ec01472d1ecb2"
+    "revision": "01eb5d474907da1b38e73dfe91f1d11a"
   },
   {
     "url": "categories/front-end/react/_books/react_native/component/extend/Gradient.html",
-    "revision": "c77fe03366a59eeb32d4ae601d5cf4bd"
+    "revision": "547d9e0f418810fd31b80993b5d13d94"
   },
   {
     "url": "categories/front-end/react/_books/react_native/component/extend/Icons.html",
-    "revision": "499298a78207b9fadfcc8b2b0b0e9ca6"
+    "revision": "120ebfbb9900bbcd3652c183245186a2"
   },
   {
     "url": "categories/front-end/react/_books/react_native/component/extend/Image.html",
-    "revision": "2400cd56df99212181242b0cc780cfcf"
+    "revision": "cc0c493e167be5e51db1fcf5c7cee680"
   },
   {
     "url": "categories/front-end/react/_books/react_native/component/extend/ProgressBar.html",
-    "revision": "55fa1e9e1ddd6243cf937bd65e600bf9"
+    "revision": "4cb5724486b1181d04ac2b4e76420229"
   },
   {
     "url": "categories/front-end/react/_books/react_native/component/extend/Shadow.html",
-    "revision": "0bd333a38add9ff8c27b9af43090b84a"
+    "revision": "6dd00f38a01478a7da7c61f7c546a9d4"
   },
   {
     "url": "categories/front-end/react/_books/react_native/component/extend/Svg.html",
-    "revision": "0d153958be6ea1ecc691f22aaaf73b49"
+    "revision": "a2bb24683dab17c7c7d029609199c8b3"
   },
   {
     "url": "categories/front-end/react/_books/react_native/component/extend/Swiper.html",
-    "revision": "b7444425803757b68dd835f0327741ac"
+    "revision": "a63548cae8d70ac7928fc1b88b2e2d00"
   },
   {
     "url": "categories/front-end/react/_books/react_native/component/extend/Toast.html",
-    "revision": "4f280dadff641bcc476a9fa5d27fbc28"
+    "revision": "6949b4f4b09c0c5832b7d72cc2ca910a"
   },
   {
     "url": "categories/front-end/react/_books/react_native/component/extend/Video.html",
-    "revision": "c96487bed612b85f1b44418ab7e612ea"
+    "revision": "aac7b9b1e3ae7b74700b4ab2b811d840"
   },
   {
     "url": "categories/front-end/react/_books/react_native/index.html",
-    "revision": "87dfd901dfc3d2b5f70df5c24df2f3eb"
+    "revision": "8be4e088b69cfc9809d2c056d8798757"
   },
   {
     "url": "categories/front-end/react/_books/react_native/Install.html",
-    "revision": "5dd6ae4f24b76aefd88e1048c2b72a2a"
+    "revision": "79a5fb43c079ddb452e409bb875a705c"
   },
   {
     "url": "categories/front-end/react/_books/react_native/Intro.html",
-    "revision": "d2169fb919f6168dcda43036c4595529"
+    "revision": "f678042e86035bd86047ab3997203b47"
   },
   {
     "url": "categories/front-end/react/_books/react_native/navigation/CreateBottomTabNavigator.html",
-    "revision": "c6e51383314d7c8cdce2e425f0e4e79d"
+    "revision": "44b62f3a4034209feffd44d40ed18e02"
   },
   {
     "url": "categories/front-end/react/_books/react_native/navigation/CreateDrawerNavigator.html",
-    "revision": "3e44515f1756b74619344314b7514c85"
+    "revision": "5b4e6ecfec33ec98bd10a2902f4c46dd"
   },
   {
     "url": "categories/front-end/react/_books/react_native/navigation/CreateMaterialTopTabNavigator.html",
-    "revision": "b2ad2a39676ae37c330c71cb92df94bc"
+    "revision": "97d37a660214cc37adfdb17068219aab"
   },
   {
     "url": "categories/front-end/react/_books/react_native/navigation/CreateStackNavigator.html",
-    "revision": "59410f1b608fd63b8f7f03fec596e374"
+    "revision": "4fb03b3610a40ab0caae2d348b7e4c42"
   },
   {
     "url": "categories/front-end/react/_books/react_native/navigation/React_Navigation.html",
-    "revision": "0fba222452ef62994ce410390a354050"
+    "revision": "c0ffbcc5b3192575c9b66361b768435d"
   },
   {
     "url": "categories/front-end/react/_books/react_native/navigation/Redux.html",
-    "revision": "9f49af41a36e31b64799c026adeca876"
+    "revision": "f1a036e0cb83e350be387b74adc1f616"
   },
   {
     "url": "categories/front-end/react/_books/react_native/Reference.html",
-    "revision": "9d0f5a1987c55a2f67e1145687a595f5"
+    "revision": "4cff6bb56f61e71caa04688d03a08483"
   },
   {
     "url": "categories/front-end/react/_books/react_native/Solution.html",
-    "revision": "86557408c63f22050dac717541b6eac0"
+    "revision": "a52e7b517aa44fa0af699eb2b0151479"
   },
   {
     "url": "categories/front-end/react/_books/redux/Basis.html",
-    "revision": "0ac026f37453ba5ea9efa3254fa011ef"
+    "revision": "c4ba5cf60fd67b3664186a4d9daad622"
   },
   {
     "url": "categories/front-end/react/_books/redux/index.html",
-    "revision": "da74a67fcb99e8e2737d1ba87e270164"
+    "revision": "516dceeac9be4ad1f8aaf911175d92fb"
   },
   {
     "url": "categories/front-end/react/_books/redux/Install.html",
-    "revision": "df2df18cf64a2bf0b84a30f72c21ebff"
+    "revision": "7f8db16f2a247e9d74459e2698ec6b6f"
   },
   {
     "url": "categories/front-end/react/_books/redux/React_Redux.html",
-    "revision": "f97806e3c5538c86825f8536704aa9ce"
+    "revision": "df19fccaadb6129cf4519e59df2a333c"
   },
   {
     "url": "categories/front-end/react/_books/redux/Reference.html",
-    "revision": "303107cfbe172e7908946406d102efb2"
+    "revision": "e402cc7d86270dbf547c382455318c7a"
   },
   {
     "url": "categories/front-end/react/_pages/Component.html",
-    "revision": "2164b12bc14f43b7e63929de0110c72f"
+    "revision": "dfac7dbe56ab0e857f979846e012ca15"
   },
   {
     "url": "categories/front-end/react/_pages/Event.html",
-    "revision": "07ec7037394cd81477421db3711e0fef"
+    "revision": "5b9867c4911248aecc0b4946c3c69689"
   },
   {
     "url": "categories/front-end/react/_pages/Form.html",
-    "revision": "20d33f0e14b3759866bfa4a8bcc8efba"
+    "revision": "52104405a9685d3c46b48c4eb6512a00"
   },
   {
     "url": "categories/front-end/react/_pages/Install.html",
-    "revision": "0ce69372d34b1943d84ae47d05fdf78b"
+    "revision": "7e45bae22d49be9385e744cee8ebd5ab"
   },
   {
     "url": "categories/front-end/react/_pages/JSX.html",
-    "revision": "bfe1252bbed15865d396cf73b6b0a9b4"
+    "revision": "b4755aa5c638d312c96389acef4ee3ba"
   },
   {
     "url": "categories/front-end/react/_pages/Lifecycle.html",
-    "revision": "99b485d9d4e46dfe93504a6981846fae"
+    "revision": "cfedf95b0810bca1d1cf9b2063c0ff98"
   },
   {
     "url": "categories/front-end/react/_pages/Slot.html",
-    "revision": "04000dffac738998598c9525e84a73f2"
+    "revision": "262e8ad38b7b0567903f08cbfd391987"
   },
   {
     "url": "categories/front-end/react/index.html",
-    "revision": "57ea9a867a9b877676366567c9cbad11"
+    "revision": "02cea87b9fa624569c6e931cddd33201"
   },
   {
     "url": "categories/front-end/ts/_books/typescript/basis/Built_In_Objects.html",
-    "revision": "5e563bdad2f1f0cb4f14381846669c81"
+    "revision": "9b45c715fad690877dbb735ebd94f350"
   },
   {
     "url": "categories/front-end/ts/_books/typescript/basis/Classes.html",
-    "revision": "daac6125da5fed0f8a1e31b298ee6c40"
+    "revision": "cc648acd8162d7b9af01dbc2bcdda394"
   },
   {
     "url": "categories/front-end/ts/_books/typescript/basis/Functions.html",
-    "revision": "f6bed42bc136fbeb0b69c7b50796978b"
+    "revision": "6103383e5460facf262d4bc1d0162fa6"
   },
   {
     "url": "categories/front-end/ts/_books/typescript/basis/Interfaces.html",
-    "revision": "477bd3a50848c931b52add60c924f4f8"
+    "revision": "d197852d8b96e1551198732014d3ef64"
   },
   {
     "url": "categories/front-end/ts/_books/typescript/basis/Variable.html",
-    "revision": "3c887f2f6342682ea9017ad089b3506c"
+    "revision": "b791fed35bb54012fce1fe92b0a4f502"
   },
   {
     "url": "categories/front-end/ts/_books/typescript/declare/Auto_Generate.html",
-    "revision": "56296c3b940e598cc6eb710bbd7b4ab4"
+    "revision": "96fd6af8926aabe9e1addf3b2ac3d4d3"
   },
   {
     "url": "categories/front-end/ts/_books/typescript/declare/Dependence.html",
-    "revision": "9b645afebe33568057fb5660060aadf6"
+    "revision": "4fdf935341013032fcfd5e21af727ee0"
   },
   {
     "url": "categories/front-end/ts/_books/typescript/declare/Global.html",
-    "revision": "08aa45170a87003801720072518ccd79"
+    "revision": "e7c59bfda7eddc346b5a3f3818d68455"
   },
   {
     "url": "categories/front-end/ts/_books/typescript/declare/index.html",
-    "revision": "c2e2944aa077f998bcf6c3e0b5f7057f"
+    "revision": "dec47a491b960cd813455bf25655a143"
   },
   {
     "url": "categories/front-end/ts/_books/typescript/declare/Npm.html",
-    "revision": "65274a7b7317be13d6dba40a3d1d2a2a"
+    "revision": "8c0ba21bcddd677973bcbca698d573a4"
   },
   {
     "url": "categories/front-end/ts/_books/typescript/declare/Plugin.html",
-    "revision": "d9ca79bd65403a0f576f1dbfefae4171"
+    "revision": "24b889a4baef7022e2b888a9d001d054"
   },
   {
     "url": "categories/front-end/ts/_books/typescript/declare/Publish.html",
-    "revision": "72b0e21190759fd50c104c414d713185"
+    "revision": "79d4e5781ed846f9f7844b3cf2725162"
   },
   {
     "url": "categories/front-end/ts/_books/typescript/declare/Umd.html",
-    "revision": "46ce998a2086497c29e22026b667508b"
+    "revision": "f2605d0b12ed52d0408052c88fce466d"
   },
   {
     "url": "categories/front-end/ts/_books/typescript/declare/Write.html",
-    "revision": "fa9fc5b9e0e84b7fbd3be9cbc0bb0dcf"
+    "revision": "a84453381f159d63bbe39ec31f9dee40"
   },
   {
     "url": "categories/front-end/ts/_books/typescript/decorator/Accessor.html",
-    "revision": "874a748b773993f5216fdcf778ad5b91"
+    "revision": "cd46b3fbfd218f3d323c06f071005ab8"
   },
   {
     "url": "categories/front-end/ts/_books/typescript/decorator/Attribute.html",
-    "revision": "176c3d0b74061ae07ac41899669f26a3"
+    "revision": "9bd9138c5642904974e6a1b0dc027fb6"
   },
   {
     "url": "categories/front-end/ts/_books/typescript/decorator/Class.html",
-    "revision": "571acdc298f251b805ad1843500eee49"
+    "revision": "61298b4bf0c50fbbebd5eab25c3af71e"
   },
   {
     "url": "categories/front-end/ts/_books/typescript/decorator/Definition.html",
-    "revision": "dde393549329e00442a6b74ea0e6842e"
+    "revision": "5ff87d434150f9dfb095dde329770495"
   },
   {
     "url": "categories/front-end/ts/_books/typescript/decorator/index.html",
-    "revision": "3497735694f98a7fe5f902896c2fa6c9"
+    "revision": "670e0924c31aad14f8e0ea4d6d4a650b"
   },
   {
     "url": "categories/front-end/ts/_books/typescript/decorator/Method.html",
-    "revision": "ced636a80ba25a15dcdbaa8461279fc6"
+    "revision": "19abf582e5c5bdd12adfaa027e99eb01"
   },
   {
     "url": "categories/front-end/ts/_books/typescript/decorator/Params.html",
-    "revision": "54f9d41535fa6bbc2a7f28cdb960fec8"
+    "revision": "aebede31820a11efd8d3fc7849ca2206"
   },
   {
     "url": "categories/front-end/ts/_books/typescript/decorator/Sequence.html",
-    "revision": "01e6d5af8678211728ec5758ce42e231"
+    "revision": "ef083d35a440049034fa1b785414d60e"
   },
   {
     "url": "categories/front-end/ts/_books/typescript/generics/Classes.html",
-    "revision": "a7e9376d1ee709bd66387502435280df"
+    "revision": "65c13c83dd68ee458562d631c4a6fefd"
   },
   {
     "url": "categories/front-end/ts/_books/typescript/generics/Constraint.html",
-    "revision": "bae4861eb222120eebe957811b1beb14"
+    "revision": "da91ea213bf19804078138c3a6a6b5a7"
   },
   {
     "url": "categories/front-end/ts/_books/typescript/generics/Function.html",
-    "revision": "513bb34d06f9a81934d46ba27f0763f0"
+    "revision": "313a6354d0fa672d28140aab94fe3597"
   },
   {
     "url": "categories/front-end/ts/_books/typescript/generics/index.html",
-    "revision": "bb67f1584e17004e525a98b95c9e9fad"
+    "revision": "a61dfe1925429901e87796e97e3b56de"
   },
   {
     "url": "categories/front-end/ts/_books/typescript/generics/Interfaces.html",
-    "revision": "670d0b689597cbd139de2206f106c6bc"
+    "revision": "920cec7bd686dd34962085b702307d06"
   },
   {
     "url": "categories/front-end/ts/_books/typescript/index.html",
-    "revision": "6bcdba3b5ab9e52e7b212e3854a9d260"
+    "revision": "c764e896f5676991156ec869428afb0a"
   },
   {
     "url": "categories/front-end/ts/_books/typescript/Install.html",
-    "revision": "d3a3565d2249a81e24c75c1049fb1f1e"
+    "revision": "a79034403fa40e4c4ded1733cea3c9e8"
   },
   {
     "url": "categories/front-end/ts/_books/typescript/Intro.html",
-    "revision": "3c5d3421c7f4dcc9bb37b751b1bdbf8d"
+    "revision": "b1536aec78d61b66e7d1f5a5778a9f47"
   },
   {
     "url": "categories/front-end/ts/_books/typescript/Reference.html",
-    "revision": "0bcb4671dff3cc747633f3f5a02c1a1f"
+    "revision": "75ed48a7b8330596d59acf40561e0817"
   },
   {
     "url": "categories/front-end/ts/_books/typescript/types/Any.html",
-    "revision": "8faf5e1c23015988e894dcc9a125f314"
+    "revision": "6f35f3c5e52f6a794954fa0c8fb847e7"
   },
   {
     "url": "categories/front-end/ts/_books/typescript/types/Array.html",
-    "revision": "0967a555f74e180975bb863f8a428459"
+    "revision": "bcbb6d7fe489c923e67cd08d11aff41f"
   },
   {
     "url": "categories/front-end/ts/_books/typescript/types/Assertions.html",
-    "revision": "f415f2d9a90869aceba64c16fd0ec888"
+    "revision": "c46256c6d02d5489c95d598d27740b09"
   },
   {
     "url": "categories/front-end/ts/_books/typescript/types/Basis.html",
-    "revision": "76e42325c8d59732dfc9c5d2da9f7e9a"
+    "revision": "d9186c4d02cd9b65c5920289b931925d"
   },
   {
     "url": "categories/front-end/ts/_books/typescript/types/Enum.html",
-    "revision": "a99133087e72a028034cbfe1ae829b92"
+    "revision": "edceb5b04770f0d0fd07b3296f1521a1"
   },
   {
     "url": "categories/front-end/ts/_books/typescript/types/Never.html",
-    "revision": "f3976efc7ceab10ca349eb5187d5e9fc"
+    "revision": "cba0f310e8bfc1358997098f4a4d4646"
   },
   {
     "url": "categories/front-end/ts/_books/typescript/types/Object.html",
-    "revision": "e5ec347854309c0e351c014e18c0620a"
+    "revision": "dcf778827615efa952221a36fe5176e4"
   },
   {
     "url": "categories/front-end/ts/_books/typescript/types/Tuple.html",
-    "revision": "d68cbb77e794fc6d1724eaf73e3ba046"
+    "revision": "b60344767d3731075997db8943d1728d"
   },
   {
     "url": "categories/front-end/ts/_books/typescript/types/Types.html",
-    "revision": "188843a54491f19326fa2be509a704f1"
+    "revision": "915a803a276b45027905eef6b737dee6"
   },
   {
     "url": "categories/front-end/ts/_books/typescript/types/Union.html",
-    "revision": "e11f202a62d8db2b7a36b4eb939e52db"
+    "revision": "db53ebd0dea4522026e25796f69c3354"
   },
   {
     "url": "categories/front-end/ts/_books/typescript/types/Void.html",
-    "revision": "0be2f17b9793ad81ac7444030fe06a3f"
+    "revision": "dc57cdb184bbc27cac5c641c81ce19f1"
   },
   {
     "url": "categories/front-end/ts/index.html",
-    "revision": "06733d3362189461b71612db3be9a24b"
+    "revision": "bfde35efbb32afb7caae394d741875d9"
   },
   {
     "url": "categories/front-end/uniapp/_pages/API.html",
-    "revision": "9fae10b382855abce2f730c7d4b291b5"
+    "revision": "20bc4d5db07ecc0aef3a33318e98561f"
   },
   {
     "url": "categories/front-end/uniapp/_pages/Basis.html",
-    "revision": "01f5fd52c66831950db8831adaef9b15"
+    "revision": "48558996c4f4a6361704b65248231621"
   },
   {
     "url": "categories/front-end/uniapp/_pages/Bluetooth.html",
-    "revision": "10489d2083107c25722e710691a6c0b6"
+    "revision": "fc98785e2b9bdda92efd5722b8cf845d"
   },
   {
     "url": "categories/front-end/uniapp/_pages/Camera.html",
-    "revision": "96585529eb545fd36b0e30829f7eecf3"
+    "revision": "0bbb879deddb3012340495c946bc5db7"
   },
   {
     "url": "categories/front-end/uniapp/_pages/Components.html",
-    "revision": "90e1c4a027262b229eb94e87a433d156"
+    "revision": "6837c94aa809897623f20013c8e211f1"
   },
   {
     "url": "categories/front-end/uniapp/_pages/Device.html",
-    "revision": "d72be807b3eecd6f8ac887294243cc00"
+    "revision": "35b5f06951bfcb19aa272118940c2276"
   },
   {
     "url": "categories/front-end/uniapp/_pages/File.html",
-    "revision": "9fa0da83321c47406f63db42414fb033"
+    "revision": "68562a36e6d66f93f66999c0eac0a348"
   },
   {
     "url": "categories/front-end/uniapp/_pages/Image.html",
-    "revision": "70d2f8940b34a7ebb1e32be37f81a7b1"
+    "revision": "ecc8520e3078b9500f10accab19bd303"
   },
   {
     "url": "categories/front-end/uniapp/_pages/Lifecycle.html",
-    "revision": "e8ea78e5fb1c26930a478674de51b800"
+    "revision": "3d4db82d0b83af26f9d1a8bef2f9415a"
   },
   {
     "url": "categories/front-end/uniapp/_pages/Location.html",
-    "revision": "6b360f37a48e717bc43d39bc02b5c8e6"
+    "revision": "60e86d2a8551e35f0af805ea8fdeaaa0"
   },
   {
     "url": "categories/front-end/uniapp/_pages/PageEvent.html",
-    "revision": "f472df009b5d4469a108886b03215dda"
+    "revision": "e6e6ace95e88cb3b3c198a5cd029cc79"
   },
   {
     "url": "categories/front-end/uniapp/_pages/Recorder.html",
-    "revision": "a829bd029c6406753fe03874a26073ad"
+    "revision": "9a83055eb91bfea3a43aaea643c04aa4"
   },
   {
     "url": "categories/front-end/uniapp/_pages/Request.html",
-    "revision": "b5772bfe58be32bc73652413cf15309b"
+    "revision": "32830ab96e4dae0497746bdb56cf7e68"
   },
   {
     "url": "categories/front-end/uniapp/_pages/Route.html",
-    "revision": "98746c54e85c7deab2bbb1e62739a60d"
+    "revision": "c2cb798c56515899eaca100f02092572"
   },
   {
     "url": "categories/front-end/uniapp/_pages/Storage.html",
-    "revision": "4de36bc526d979ea84586807100046a5"
+    "revision": "2ea0360718653233d02c004197034443"
   },
   {
     "url": "categories/front-end/uniapp/_pages/Style.html",
-    "revision": "34d4e854bb12c0070c5287a47ea1a6fa"
+    "revision": "b96347c0da087646d4155b174b58d810"
   },
   {
     "url": "categories/front-end/uniapp/_pages/Upload_Download.html",
-    "revision": "48d0f270f583f41c7898fd37ea946a73"
+    "revision": "d9b0fbd6e611cfd1ca66d7e848460235"
   },
   {
     "url": "categories/front-end/uniapp/_pages/Vue.html",
-    "revision": "a990da9495c06121b74b8f9782f44bc4"
+    "revision": "9dd4a88f6ed0c60bc3c98d31b069d71c"
   },
   {
     "url": "categories/front-end/uniapp/_pages/Vuex.html",
-    "revision": "7a268e5a27cecbedbcafe081ea103123"
+    "revision": "b76378d9817bc365ddc70caf7e4ca3f4"
   },
   {
     "url": "categories/front-end/uniapp/index.html",
-    "revision": "ed979c52ed6229819be3546adb3debbe"
+    "revision": "4f2fc55eabb83300273b90fe4bb24c4b"
   },
   {
     "url": "categories/front-end/vue/_books/nuxt/AsyncData.html",
-    "revision": "dd906fb0af01e0555f02e03ece21626c"
+    "revision": "d0f5b2020fa1003947312985ce8ec76b"
   },
   {
     "url": "categories/front-end/vue/_books/nuxt/Config.html",
-    "revision": "66644fda860d634cde73fab3564c5512"
+    "revision": "e15f4c527fcf082e8c45754d220d2d2c"
   },
   {
     "url": "categories/front-end/vue/_books/nuxt/index.html",
-    "revision": "a80538ec38cc2c00f041af78fb43c6fe"
+    "revision": "44dd593758f6ccc47992bb28ff16c87b"
   },
   {
     "url": "categories/front-end/vue/_books/nuxt/Install.html",
-    "revision": "23b2195eb75f9db9b88f5bcf4d4e0415"
+    "revision": "f18fc35ded835e4e2f215dc92c459e37"
   },
   {
     "url": "categories/front-end/vue/_books/nuxt/Intro.html",
-    "revision": "9f998cf8823a11e2a25a5ebd38a005cd"
+    "revision": "981920aee6c35221a906195c71367975"
   },
   {
     "url": "categories/front-end/vue/_books/nuxt/Reference.html",
-    "revision": "6cd07422456603c673e06bb54c352584"
+    "revision": "7f2293d48c15128dfbb2c0075a2e73eb"
   },
   {
     "url": "categories/front-end/vue/_books/nuxt/Route.html",
-    "revision": "c7a0f8ae12e1d6fd6216c03423cfd6bf"
+    "revision": "abed974dfc07132c61fa0790ebfa80e1"
   },
   {
     "url": "categories/front-end/vue/_books/nuxt/View.html",
-    "revision": "c9a99b6e6ce0d19084060783ea2bd9b3"
+    "revision": "6bf67fe5b21b12e1956345622d8ba26d"
   },
   {
     "url": "categories/front-end/vue/_books/vue/advanced/Directive.html",
-    "revision": "18b690cda4a0d023a163ec9def12d042"
+    "revision": "6c84bf7fa6ecaf8fae13ce6ce7800b30"
   },
   {
     "url": "categories/front-end/vue/_books/vue/advanced/Filter.html",
-    "revision": "e9b437425145cd5b6d856dae16d062e7"
+    "revision": "9def8b528d36a3f71719ac58483eb88c"
   },
   {
     "url": "categories/front-end/vue/_books/vue/advanced/Mixins.html",
-    "revision": "de71fcbf531eaa738a49712976363385"
+    "revision": "ce605ec09af5b810a1fd3f7e24423da0"
   },
   {
     "url": "categories/front-end/vue/_books/vue/advanced/Plugin.html",
-    "revision": "e72845bc09e4e08763e896ed86721db8"
+    "revision": "3389796f34bd6b323dde022b7132a16f"
   },
   {
     "url": "categories/front-end/vue/_books/vue/animation/Dynamic.html",
-    "revision": "193677d20c47f47f64c2efbd63460cf8"
+    "revision": "5729a772e320e98e73450ef4dd919a6d"
   },
   {
     "url": "categories/front-end/vue/_books/vue/animation/index.html",
-    "revision": "af3690aee595f70386444d2ab10f77a8"
+    "revision": "a3a0a490194e9df7929e65cb9ccb248f"
   },
   {
     "url": "categories/front-end/vue/_books/vue/animation/List_Transition.html",
-    "revision": "c23bfacb451c47759626cd3c3227505f"
+    "revision": "d15df381eca65521a4af379d9f766c48"
   },
   {
     "url": "categories/front-end/vue/_books/vue/animation/Multiple_Component.html",
-    "revision": "be57f4caba4afad9a481e39d5527d65e"
+    "revision": "206115b9b3fbf2fff9fb29c894f02a11"
   },
   {
     "url": "categories/front-end/vue/_books/vue/animation/Multiple_Element.html",
-    "revision": "c61d06dba1af3cdafab70d869ea8726a"
+    "revision": "57df4b0c47a107433915edfc90a66876"
   },
   {
     "url": "categories/front-end/vue/_books/vue/animation/Related.html",
-    "revision": "3c0e5cd3c6ccbcd9a5128296b000c7b8"
+    "revision": "aa09a48485b95ebb2020b65fb6abf7b7"
   },
   {
     "url": "categories/front-end/vue/_books/vue/animation/Reuse.html",
-    "revision": "9a8b3fc794d6c34597ccab07144a06c1"
+    "revision": "54ae6bd8775a756f261304cf20a8c380"
   },
   {
     "url": "categories/front-end/vue/_books/vue/animation/Single.html",
-    "revision": "c33e5c33f619290f5be6e1bebdbffdd4"
+    "revision": "80d100c9c9b6d16686e960baaaba276d"
   },
   {
     "url": "categories/front-end/vue/_books/vue/animation/Status.html",
-    "revision": "ad3d95a141a4a03f5008896c49eb2a8d"
+    "revision": "56b769c29c485d9cf17f27407ea0a23e"
   },
   {
     "url": "categories/front-end/vue/_books/vue/animation/Third_Part.html",
-    "revision": "9a13aa298092f9ec2387d48f6f075b62"
+    "revision": "500dfa1e9296bb70194fc77efdc8c218"
   },
   {
     "url": "categories/front-end/vue/_books/vue/basis/Event.html",
-    "revision": "a4eb605ef75a3ee78b7b9e7e290ea08f"
+    "revision": "d8e807cf15b2594ce053d1c3b37c61c7"
   },
   {
     "url": "categories/front-end/vue/_books/vue/basis/Instance.html",
-    "revision": "a9957fa43c04b1cf83ae4adc78cbec9f"
+    "revision": "7a8eacb02d77ad87b783447335ffeb0b"
   },
   {
     "url": "categories/front-end/vue/_books/vue/basis/Lifecycle.html",
-    "revision": "06bbe27ebaa712c7373f4f0b4945ed20"
+    "revision": "3699927cdcf0edaa65f8f6902abd47f7"
   },
   {
     "url": "categories/front-end/vue/_books/vue/basis/Style.html",
-    "revision": "ffaf5a736aa1a6539154fb89321e55b0"
+    "revision": "1c0b9769f7282ed8b1144638172dda75"
   },
   {
     "url": "categories/front-end/vue/_books/vue/basis/Template.html",
-    "revision": "109b840a0347d62520076d5f22879b7d"
+    "revision": "60e44cc1aee4dccde3450a235ccc041e"
   },
   {
     "url": "categories/front-end/vue/_books/vue/basis/Update_Inspection.html",
-    "revision": "21a19a26c2754f61a0e16ff1be8a9821"
+    "revision": "e89b3e35bf3f0f7aed396ddb327b7fb2"
   },
   {
     "url": "categories/front-end/vue/_books/vue/component/Advanced.html",
-    "revision": "16f7c5dcbe1f60724a96cf5922fb2188"
+    "revision": "1f287aa61d5637623f82b1114a611b0e"
   },
   {
     "url": "categories/front-end/vue/_books/vue/component/Emit.html",
-    "revision": "01ea8fcd1a21ece21d6ea42814702d4e"
+    "revision": "87f572df15c4b0f462c4bb0ec9c03c1a"
   },
   {
     "url": "categories/front-end/vue/_books/vue/component/index.html",
-    "revision": "5c822b6e778fd2a3b3f5e889957e4bf3"
+    "revision": "988a3d682cb3b5c2006cfbb76ca14ceb"
   },
   {
     "url": "categories/front-end/vue/_books/vue/component/Prop.html",
-    "revision": "dbe220544465715f7f6aa0e7fc43a4cf"
+    "revision": "c3a669573049cee896ddd19166cf46d8"
   },
   {
     "url": "categories/front-end/vue/_books/vue/component/Slot.html",
-    "revision": "0290adad7de79e30907af987376378c4"
+    "revision": "aeae65c38502c9f16b87352baa335753"
   },
   {
     "url": "categories/front-end/vue/_books/vue/extension/Flow.html",
-    "revision": "9cf88a9870ff850f226ffad9e0cb8c91"
+    "revision": "1838bc47d134289a26bcae28d4a6b1ac"
   },
   {
     "url": "categories/front-end/vue/_books/vue/index.html",
-    "revision": "60b40ae87c1a8449abb02b97729d906d"
+    "revision": "791f4075ce0ef9b15f71b2bc9551d0d6"
   },
   {
     "url": "categories/front-end/vue/_books/vue/Install.html",
-    "revision": "b79a65f7fd20da1388e82844ad1ccb7b"
+    "revision": "583fd5af9b3889ac8e47d0e50008344f"
   },
   {
     "url": "categories/front-end/vue/_books/vue/integration/Axios.html",
-    "revision": "ffa7fd7381804e20fae138d471eae541"
+    "revision": "3dd6feb267e36d0855824840e9aafcf9"
   },
   {
     "url": "categories/front-end/vue/_books/vue/Intro.html",
-    "revision": "e6ed245517189541d02ba04b429f5ee8"
+    "revision": "fb4df735c787a74f9d6e74ebe507b90c"
   },
   {
     "url": "categories/front-end/vue/_books/vue/optimization/Injection.html",
-    "revision": "f48b4b7e9fc079ab3bb2778295715638"
+    "revision": "391ef23bf762a064aec2416e13659b00"
   },
   {
     "url": "categories/front-end/vue/_books/vue/Q&A/Vue_Data_Update_Views.html",
-    "revision": "8ca71b723eed538ea67793ceeec81640"
+    "revision": "f28c075481ac14bbb95a89b3708703f3"
   },
   {
     "url": "categories/front-end/vue/_books/vue/Q&A/Vue_Deploy.html",
-    "revision": "fc4ee7228a3a10d919a1071b2acd0d85"
+    "revision": "a52a44be352166cc9d6614219190f4fb"
   },
   {
     "url": "categories/front-end/vue/_books/vue/Q&A/Vue_Issues.html",
-    "revision": "cb2abb29a6fdcdfc5ffef575ff3c835b"
+    "revision": "747197348de3633eca34c55e13dd8288"
   },
   {
     "url": "categories/front-end/vue/_books/vue/Q&A/Vue_No_Refresh.html",
-    "revision": "da7184e2718bb9706c91691171b93b14"
+    "revision": "b433d7c738fef653cbab40eb26975241"
   },
   {
     "url": "categories/front-end/vue/_books/vue/Reference.html",
-    "revision": "03601dc23f9ee075a2638c1945bed981"
+    "revision": "4d88e18646d955dfdabbc33c084a1694"
   },
   {
     "url": "categories/front-end/vue/_books/vue/response/Data.html",
-    "revision": "ff0e40d072b197158947a45db724626b"
+    "revision": "c9f4c3b3cbe192fa68e5c3f278bf5981"
   },
   {
     "url": "categories/front-end/vue/_books/vue/response/index.html",
-    "revision": "cee458acbf88ee5565a4953f10e13147"
+    "revision": "246fb763ab2a459cdd63195239662d79"
   },
   {
     "url": "categories/front-end/vue/_books/vue/response/View.html",
-    "revision": "9428ac29ae14130e5431abbf0b5769e8"
+    "revision": "eff66bb429c5ac9109f16fdb668e0ee3"
   },
   {
     "url": "categories/front-end/vue/_books/vue/vue-router/404.html",
-    "revision": "2aca2fe303eebb4219e2e31fb78e01de"
+    "revision": "b8c50b389676178705ec3f123e2d4cb4"
   },
   {
     "url": "categories/front-end/vue/_books/vue/vue-router/Alias.html",
-    "revision": "768b67c62c31ced22c619c76c46af168"
+    "revision": "b19fc39986826378d75fdcc088f40a79"
   },
   {
     "url": "categories/front-end/vue/_books/vue/vue-router/Animation.html",
-    "revision": "5dde36e720d12e0b7f2aa578e5560df2"
+    "revision": "091c2a654dd57ae7088b2696c8f7384c"
   },
   {
     "url": "categories/front-end/vue/_books/vue/vue-router/Data.html",
-    "revision": "841cd3477b30b724444e0a4151d74089"
+    "revision": "3417aa3e741870d7e6490c772ee5e31e"
   },
   {
     "url": "categories/front-end/vue/_books/vue/vue-router/Dynamic.html",
-    "revision": "317a501c76550622ecaa186f47b3fe3d"
+    "revision": "c1fa20e08311eba662c394e5dfcb4b9e"
   },
   {
     "url": "categories/front-end/vue/_books/vue/vue-router/Guard.html",
-    "revision": "9220594aed56cebe9de1c4a5035946ac"
+    "revision": "7372157c33f4143c286251a0871f933f"
   },
   {
     "url": "categories/front-end/vue/_books/vue/vue-router/History.html",
-    "revision": "fec4f9e040bd9383068abfca657695c1"
+    "revision": "e89f217078465b146a387b681e2c68d7"
   },
   {
     "url": "categories/front-end/vue/_books/vue/vue-router/index.html",
-    "revision": "c130700ca122a2709b9b0d83cb77745a"
+    "revision": "7a06b4075da52bd798cebc21833f84c7"
   },
   {
     "url": "categories/front-end/vue/_books/vue/vue-router/Lazy.html",
-    "revision": "be6fe9bf52c160d54579badadcb3e738"
+    "revision": "6b1cf179f96775f3f433e88a42641fff"
   },
   {
     "url": "categories/front-end/vue/_books/vue/vue-router/Meta.html",
-    "revision": "874d4b4347954cfa5b6b1f4857625437"
+    "revision": "1b159fdbf4af5ad8f937dcb33d7d311a"
   },
   {
     "url": "categories/front-end/vue/_books/vue/vue-router/Nest.html",
-    "revision": "6cd2f9ce9f88f46f3843614d2ac4a0f3"
+    "revision": "48139429479f0bdbf8e75f2b0ed62ec8"
   },
   {
     "url": "categories/front-end/vue/_books/vue/vue-router/Params.html",
-    "revision": "515d427490de89440bf057de1ea30088"
+    "revision": "665ccfcb5e2edbeca003fc574e160a3a"
   },
   {
     "url": "categories/front-end/vue/_books/vue/vue-router/Redirect.html",
-    "revision": "29e0b3a3f13b8871577f5d00aff7aafc"
+    "revision": "26112396ab09da03219e0ea3f8e98dea"
   },
   {
     "url": "categories/front-end/vue/_books/vue/vue-router/Response.html",
-    "revision": "66d6cb35c0f39a92a94ede1d1e25b4c3"
+    "revision": "bc0f1e55813a399c1466ebcdad725e14"
   },
   {
     "url": "categories/front-end/vue/_books/vue/vue-router/Scroll.html",
-    "revision": "71d6203b854c717276d5d1ebb2194c69"
+    "revision": "1ec4560d65959c984d974f1bbdbdee14"
   },
   {
     "url": "categories/front-end/vue/_books/vue/vue-router/View.html",
-    "revision": "fbc40fd5efedfb0137a770b5c01c1a62"
+    "revision": "49ccfddebfdfe48ccb1ec8ef60239fd1"
   },
   {
     "url": "categories/front-end/vue/_books/vue/vuex/Action.html",
-    "revision": "b56489fdf4ffd728dd2d2d51d652e58c"
+    "revision": "aa318b82aca264077d6a0065c0aa9fcb"
   },
   {
     "url": "categories/front-end/vue/_books/vue/vuex/Getter.html",
-    "revision": "62bff12f5ce6b6dfb50272d22edb3121"
+    "revision": "c14629369a08f0a8bc8304a694aeed9e"
   },
   {
     "url": "categories/front-end/vue/_books/vue/vuex/index.html",
-    "revision": "d2bfcb2b87cc1b0f7f592fabc4645e08"
+    "revision": "aa70c29f4ce42f4cbd6efa4eafd12ffb"
   },
   {
     "url": "categories/front-end/vue/_books/vue/vuex/Module.html",
-    "revision": "893818331174448038346d588a53578f"
+    "revision": "945e320058bb580dbeea99a27788b9c4"
   },
   {
     "url": "categories/front-end/vue/_books/vue/vuex/Mutation.html",
-    "revision": "6a05ebc819da4494c7b2839659755ef3"
+    "revision": "41be896aa468c5c400660a37597fa4e1"
   },
   {
     "url": "categories/front-end/vue/_books/vue/vuex/Namespace.html",
-    "revision": "e99f778e243e14927379af1079e73327"
+    "revision": "f2c23204dd406e46b2eca15d94c5f34e"
   },
   {
     "url": "categories/front-end/vue/_books/vue/vuex/State.html",
-    "revision": "36e1123d805481ea0e82b6ed94a4362b"
+    "revision": "f9f3f935078acfa39848dd3c2c2951aa"
   },
   {
     "url": "categories/front-end/vue/_books/weex/index.html",
-    "revision": "382380a247433230a07b71ce7d022a68"
+    "revision": "d4693e30c408564d502e0eb5cd00e13a"
   },
   {
     "url": "categories/front-end/vue/_books/weex/Install.html",
-    "revision": "5c0f16d900a7a2e1c75c7eefe743eff7"
+    "revision": "0d13a5948a5f598b5a827f64514e92b2"
   },
   {
     "url": "categories/front-end/vue/_books/weex/Intro.html",
-    "revision": "1e11a191699f506e43385b7f97d38489"
+    "revision": "7749ea033806883995bf1e0e070cea5e"
   },
   {
     "url": "categories/front-end/vue/_pages/CKEditor.html",
-    "revision": "08ba824bd060a3f90cf5e24f4badaf20"
+    "revision": "fd2cfc2c5462a459d0dabc561d906194"
   },
   {
     "url": "categories/front-end/vue/_pages/Element_UI_Tree.html",
-    "revision": "5e0851383ec750eba2a6f589aae7f9ce"
+    "revision": "90b60552fcd30d03a9fd1ebd89dab9dc"
   },
   {
     "url": "categories/front-end/vue/_pages/Flexible.html",
-    "revision": "ee5927bb2d9f052758e12f4d53f7da13"
+    "revision": "543eb164acfb1232ccaa0b9380e04f07"
   },
   {
     "url": "categories/front-end/vue/_pages/Loading.html",
-    "revision": "bd084a8cb8ae3ff2f4b73a9e6d008eae"
+    "revision": "543f067e0c52378d770ed419fbcd0a03"
   },
   {
     "url": "categories/front-end/vue/_pages/LongPress.html",
-    "revision": "5692511b7b7b215f6c12890e11af38ec"
+    "revision": "1ab8b65fc15d70ce7fe8b8c36572efa8"
   },
   {
     "url": "categories/front-end/vue/_pages/Typescript_with_Vue.html",
-    "revision": "73d10b1af4336036cf876dfb172d2658"
+    "revision": "408464cce459862ea0cff5c3134d8ebc"
   },
   {
     "url": "categories/front-end/vue/index.html",
-    "revision": "75c1de642278c4d93ba168fea94e9868"
+    "revision": "36bc9826de2e77cdd4cba1ef388ac111"
   },
   {
     "url": "categories/index.html",
-    "revision": "501c560cbd5b43a6b4683e56902f24e2"
+    "revision": "a9ea31ca8c19a2000665b6965b685769"
   },
   {
     "url": "categories/java/_books/android/Adb.html",
-    "revision": "77bd53e775b98e0f0e850455e9a0ba36"
+    "revision": "2cb0c873e126a3d1947b05c6c457ef79"
   },
   {
     "url": "categories/java/_books/android/index.html",
-    "revision": "3c15ebd7dca4a066de639cbb0eca3d2d"
+    "revision": "3c432de7ab1e211ab80929b14a8d26fd"
   },
   {
     "url": "categories/java/_books/android/Simulator.html",
-    "revision": "fe098cf3d1dcb53ae146da46849f3366"
+    "revision": "bd81f0b798dfce98a21e807fb9f09e2b"
   },
   {
     "url": "categories/java/_books/java/advance/Generics.html",
-    "revision": "4db7a8376289bf5e918649bf0306d4b9"
+    "revision": "efdd5235e7a91cba097d1c78839149ee"
   },
   {
     "url": "categories/java/_books/java/advance/Reflect.html",
-    "revision": "fde4871fadf5dda356c05ea4ec5313e2"
+    "revision": "01eca6a122357bfd12d22a484945c0eb"
   },
   {
     "url": "categories/java/_books/java/advance/Stream.html",
-    "revision": "c12f13edff569b6d0099ecf4ed9250ec"
+    "revision": "f9121ac70459d983e98aea73d01e0217"
   },
   {
     "url": "categories/java/_books/java/basis/Box.html",
-    "revision": "925b225b27ebe9b272ce0c930912fef8"
+    "revision": "fb383dc3deb790aa44e98be0e7d655c4"
   },
   {
     "url": "categories/java/_books/java/basis/Control_Flow_Circulation.html",
-    "revision": "cf9177d255790362b4ad8db05dd6decf"
+    "revision": "9ebc4a7019480ce60aa188465499abcb"
   },
   {
     "url": "categories/java/_books/java/basis/Control_Flow_Condition.html",
-    "revision": "d269e678d9a5030dfc874444c5cdf56a"
+    "revision": "cd04362837176f18b1dd07b2cd14ba07"
   },
   {
     "url": "categories/java/_books/java/basis/index.html",
-    "revision": "0c15f2910ef53cda59508e84e5663fc2"
+    "revision": "7121b020dce25682724b19b10c4d1e55"
   },
   {
     "url": "categories/java/_books/java/basis/Method.html",
-    "revision": "439a441cc42a51cd9d198cb4d77dd407"
+    "revision": "3c868251b5694fad596b78c013aee5f4"
   },
   {
     "url": "categories/java/_books/java/basis/Operatior.html",
-    "revision": "07d80ff7f8054129df5458c15ecd4c2f"
+    "revision": "3cf32feb0ccdbb427326e30f4d7d91de"
   },
   {
     "url": "categories/java/_books/java/basis/Types.html",
-    "revision": "b3b7f9d7bae427c15b0aaf11f3e83db7"
+    "revision": "94d99928b89d08c10fe9ad7f386bdce4"
   },
   {
     "url": "categories/java/_books/java/Command.html",
-    "revision": "159b43f1e02d94dad10fcbf020b0a3e5"
+    "revision": "4d0c4a09da3b9651d6460a13aa5f3f34"
   },
   {
     "url": "categories/java/_books/java/index.html",
-    "revision": "43b3386d50acd136f449fa8ac226466e"
+    "revision": "f2242d121323da0040b0a48132cb66f1"
   },
   {
     "url": "categories/java/_books/java/Install.html",
-    "revision": "ddb14332eef911309fec2771d3413d4c"
+    "revision": "8119b37a2b7e33b3cf1b501c79502233"
   },
   {
     "url": "categories/java/_books/java/Intro.html",
-    "revision": "6b7f2192acc4e013d23e1babed58d560"
+    "revision": "c5314f6daa2d944f4bd1762d0aae4299"
   },
   {
     "url": "categories/java/_books/java/module/Date.html",
-    "revision": "c78d71bbf99cd158b7ba673a8eae0f2b"
+    "revision": "c8fa961f7c78325d0a0cac9921db074f"
   },
   {
     "url": "categories/java/_books/java/module/Math.html",
-    "revision": "e63ec9b7c4b27a6f92deee8047b4015d"
+    "revision": "da84adea17a7214870801aa41ff8d4a2"
   },
   {
     "url": "categories/java/_books/java/oo/Abstract.html",
-    "revision": "08efb817b515064d2766b49f3841f77d"
+    "revision": "d0a9adba4ea739ad6cfce878503e879e"
   },
   {
     "url": "categories/java/_books/java/oo/Inherit.html",
-    "revision": "ed238af26c54190e65407b23de7e859f"
+    "revision": "54f538d8c8c7ad9159db49c5513104fa"
   },
   {
     "url": "categories/java/_books/java/oo/Interface.html",
-    "revision": "4364c49779f8bb8dd2db7b272e38513a"
+    "revision": "e86271aa79481b3c09dff87741b3a30e"
   },
   {
     "url": "categories/java/_books/java/oo/Object_Oriented.html",
-    "revision": "ff11ffe74461d6d7bdbd7379ceb11838"
+    "revision": "25227bc508fa68877a77b22d5f95e646"
   },
   {
     "url": "categories/java/_books/java/oo/Package.html",
-    "revision": "24726d96bf660ada7fd2e3d085c60538"
+    "revision": "dd0a430a343db407367734bcc87fad40"
   },
   {
     "url": "categories/java/_books/java/pattern/index.html",
-    "revision": "068a6f34a2d87a1768579491a4cbc60e"
+    "revision": "90e65f9af708acdd851151b89ebb948c"
   },
   {
     "url": "categories/java/_books/java/Reference.html",
-    "revision": "da538d3e99fb0a0a2958a822e8cfe894"
+    "revision": "e6e364343927b999da252776bd19e3d3"
   },
   {
     "url": "categories/java/_books/java/structure/Array.html",
-    "revision": "49bb073f12cfbf1b93f0c5828c8c52fa"
+    "revision": "55e4e4f31b771a8f08a3cd1c0e44f0d3"
   },
   {
     "url": "categories/java/_books/java/structure/Collection.html",
-    "revision": "d9f792b4af84ee1f3620068dd23ce5b7"
+    "revision": "fd29e264f119e887a6735b93e6f54e86"
   },
   {
     "url": "categories/java/_books/java/structure/List.html",
-    "revision": "b952b5f110fbb2723750c295b7740e0e"
+    "revision": "4db91e16b21045d627b10d0cfd371ce6"
   },
   {
     "url": "categories/java/_books/java/structure/Map.html",
-    "revision": "daa9c8003ecf1e344991bdfd92355748"
+    "revision": "9f8adb1fa35d8f7936e75af138db2ac0"
   },
   {
     "url": "categories/java/_books/java/structure/Set.html",
-    "revision": "def765dfc827ba658bf050c68d761178"
+    "revision": "a092335e502b80a3c3e70cb56153cc05"
   },
   {
     "url": "categories/java/_books/java/structure/String.html",
-    "revision": "bea87374eb381c2a304ba485d51ed00d"
+    "revision": "5bf52768a54ed9acb24bdeb399ea5847"
   },
   {
     "url": "categories/java/_books/java/thread/Callable.html",
-    "revision": "d427d1c2ef28acecf23bf757394e490d"
+    "revision": "52c9f3ebd67157168b2630956fb0fcb3"
   },
   {
     "url": "categories/java/_books/java/thread/Current.html",
-    "revision": "3acf7dae70398b9358501eac70380555"
+    "revision": "9ba95d3c4fe23003c739c93e416bbe4a"
   },
   {
     "url": "categories/java/_books/java/thread/Daemon.html",
-    "revision": "2016759a48abdc099a5e7ed0ed1ad3ee"
+    "revision": "fe23ccdb91f0003bae34e5ad2be390a8"
   },
   {
     "url": "categories/java/_books/java/thread/index.html",
-    "revision": "5fbe2a42fb67bbf574fe04521951b247"
+    "revision": "21ebb27ede1702e9c6492f8de0e8f23b"
   },
   {
     "url": "categories/java/_books/java/thread/Interrupt.html",
-    "revision": "9c58c16c6fcbe158015bb3198b297016"
+    "revision": "d782c6e4000f63a6378c9d68a0779165"
   },
   {
     "url": "categories/java/_books/java/thread/Join.html",
-    "revision": "9132d5df34b625c28fe100c43cf76533"
+    "revision": "026a49179f18a5dcef2b67a777555ab8"
   },
   {
     "url": "categories/java/_books/java/thread/Lifecycle.html",
-    "revision": "6357fe222a52a7a7c3b8cfc074141fb4"
+    "revision": "c2ba57e29dc0a3034fa4dd5b2b27c025"
   },
   {
     "url": "categories/java/_books/java/thread/Priority.html",
-    "revision": "053406511f057a4c574afa938fcb51ab"
+    "revision": "e31840511456c367424b7b0c2e9753db"
   },
   {
     "url": "categories/java/_books/java/thread/Runnable.html",
-    "revision": "2ab982d27724d6afc3449b3a25093161"
+    "revision": "9aadd083ba693088c95252cf13c36af1"
   },
   {
     "url": "categories/java/_books/java/thread/Sleep.html",
-    "revision": "3c843510954e09ebce01d999f9b69c03"
+    "revision": "7214caf8f876381501a3b0c1a69cfc30"
   },
   {
     "url": "categories/java/_books/java/thread/Status.html",
-    "revision": "eba5e43317b6ce91ac7db645fe55e979"
+    "revision": "b4057839ab85cdbca69275c38049b84d"
   },
   {
     "url": "categories/java/_books/java/thread/Synchronized.html",
-    "revision": "5a778c415f8b205fe14436f97579703d"
+    "revision": "850d8c7d2970e183b23f53420674b886"
   },
   {
     "url": "categories/java/_books/java/thread/Thread.html",
-    "revision": "0e62feb773fb676988693c586fcfd0b2"
+    "revision": "d00e6fa85da359be46d29579631f2a08"
   },
   {
     "url": "categories/java/_books/java/thread/Volatile.html",
-    "revision": "42602a6981c03dea5feabb4525d187ab"
+    "revision": "e2f848bff4378e50c2a044dc54521ff9"
   },
   {
     "url": "categories/java/_books/maven/Build.html",
-    "revision": "ecb1adfbdb1eaf9ec4e2b3993dee418b"
+    "revision": "e67da0ff73f1ce7369a2e7e6ea6eda24"
   },
   {
     "url": "categories/java/_books/maven/Clean.html",
-    "revision": "a71c00b138b824027839fd8dd9921780"
+    "revision": "5eeef12de37392ff37fe800f897f6d1a"
   },
   {
     "url": "categories/java/_books/maven/Command.html",
-    "revision": "2b4037aa42b9ceb49f488090c298db67"
+    "revision": "16e862c305b2f8d8914201580b37aa34"
   },
   {
     "url": "categories/java/_books/maven/Create.html",
-    "revision": "cf155ab6d0c00040b9a52b5cb975279b"
+    "revision": "a7016236fec50eedd092cf1c6a23bbd3"
   },
   {
     "url": "categories/java/_books/maven/index.html",
-    "revision": "011273a90a1292cd9c9a72322b0bb53a"
+    "revision": "31203f6ee8ca4da825c20b84870110c4"
   },
   {
     "url": "categories/java/_books/maven/Install.html",
-    "revision": "1ebd819a4ed408ea15de28ef3027c119"
+    "revision": "3afa667d173b60ed50428a80b75704c8"
   },
   {
     "url": "categories/java/_books/maven/Intro.html",
-    "revision": "cadc7995d2fccd94fb7fcdc690540344"
+    "revision": "1888ced9ef05fa77e14a7290c1172b5d"
   },
   {
     "url": "categories/java/_books/maven/Lifecycle.html",
-    "revision": "1bdb8c69f013e0e5ac5927e936fa0031"
+    "revision": "5ab97a0261a6d2cd54b4610e93f5f88b"
   },
   {
     "url": "categories/java/_books/maven/Plugin.html",
-    "revision": "7163697bd8bac09e6690495858b3345f"
+    "revision": "d0ffd64ebd74ca86523bbc868aa4538b"
   },
   {
     "url": "categories/java/_books/maven/Pom.html",
-    "revision": "8597b7fcb25ebcfd5e035027a6ab040b"
+    "revision": "3b01d50a9820e9f3a2cf758704206921"
   },
   {
     "url": "categories/java/_books/maven/Properties.html",
-    "revision": "a3f92d58815154f474f0e23721af1294"
+    "revision": "f68e1cf64cda65630bdf0dbc1bf1de3f"
   },
   {
     "url": "categories/java/_books/maven/Reference.html",
-    "revision": "e96ae77b9135888c0c9ca46f2b2ef4ab"
+    "revision": "9db33f6385db6be7a84fb861c5569882"
   },
   {
     "url": "categories/java/_books/maven/Repository.html",
-    "revision": "db91e9fecbe124abbb616a287ccbe289"
+    "revision": "d31d5763866a93ed22ccdc9d912e7183"
   },
   {
     "url": "categories/java/_books/maven/Settings.html",
-    "revision": "4b5d8a77b2ee5659ef38a7917c7e027a"
+    "revision": "6ac7d6533ddc9e6a7ca8005c5dc84f6a"
   },
   {
     "url": "categories/java/_books/maven/Site.html",
-    "revision": "9ef99142115ba9bf2982146188d366ea"
+    "revision": "ef5d6701e7e5832f5e1fc2a019d20c30"
   },
   {
     "url": "categories/java/_books/springBoot/basis/Bean.html",
-    "revision": "4b81f3a81ad0060617ac4159cd8e18f9"
+    "revision": "e68c468c2713ca51b69ef78ab59e3dd7"
   },
   {
     "url": "categories/java/_books/springBoot/basis/Controller.html",
-    "revision": "4e0e4ded812d696dc109966f59d25d38"
+    "revision": "37e7d3101d152b1ed7840be103369aec"
   },
   {
     "url": "categories/java/_books/springBoot/basis/Filter.html",
-    "revision": "d0130c68a6bdbae37a25a5ded22a666c"
+    "revision": "c203574d21ce6adc2c02028a3466c47f"
   },
   {
     "url": "categories/java/_books/springBoot/basis/HttpClient.html",
-    "revision": "d55c68e00b4c00e8c607f21bdc43c03f"
+    "revision": "012ea24708e01ee2cdc0a48175ad3d4b"
   },
   {
     "url": "categories/java/_books/springBoot/basis/Mail.html",
-    "revision": "302111196fc92d26c606b4bf5d5c5805"
+    "revision": "26adda84d92cb3a7a7cca87dc7e82727"
   },
   {
     "url": "categories/java/_books/springBoot/basis/Scheduler.html",
-    "revision": "f969dd755d9e0773d40e32eb9de3db80"
+    "revision": "53c4904d09d9d12317107448bab9ee1b"
   },
   {
     "url": "categories/java/_books/springBoot/basis/UnitTest.html",
-    "revision": "305854974e39122250c1e99402623c0f"
+    "revision": "a4406922d0e511bd741dc57f0f153643"
   },
   {
     "url": "categories/java/_books/springBoot/config/Config.html",
-    "revision": "eab84c93993b8b91b9e1b815c105c43a"
+    "revision": "4410566622a96b2059ac443d6c5e763b"
   },
   {
     "url": "categories/java/_books/springBoot/config/Env.html",
-    "revision": "30d5e207b334411549e6ee07a6a5a103"
+    "revision": "892a47ef1522a239832ebde632471cd3"
   },
   {
     "url": "categories/java/_books/springBoot/config/Hot_Update.html",
-    "revision": "0a7746b5921495c46307302847bc108a"
+    "revision": "5c71f07d085dba8fd03a50a4c21819a9"
   },
   {
     "url": "categories/java/_books/springBoot/config/index.html",
-    "revision": "953cdbdd57c96e1529f20f0888c9866d"
+    "revision": "ee806120ddfa03493a8d011c58af7187"
   },
   {
     "url": "categories/java/_books/springBoot/config/Log.html",
-    "revision": "01f8983ff24c357ae5fc611ea8dd41ff"
+    "revision": "54167e9f48c5e25ee63d9e37d98bf2b1"
   },
   {
     "url": "categories/java/_books/springBoot/config/Package.html",
-    "revision": "4886388bf7e0f891b4801d71045e6992"
+    "revision": "cab2b3689ac0d0383d30229557f09c27"
   },
   {
     "url": "categories/java/_books/springBoot/config/Structure.html",
-    "revision": "a621804cc2b7d4155fb70438da07133d"
+    "revision": "eebc0b52998021ce3f7099a0f74e4f1e"
   },
   {
     "url": "categories/java/_books/springBoot/database/MybatisPlus_Usage.html",
-    "revision": "0e16488b6529628c89cc3c28dda483ae"
+    "revision": "6e1d7baffee8d66696392c855892d115"
   },
   {
     "url": "categories/java/_books/springBoot/database/MybatisPlus.html",
-    "revision": "3a4f96165d2e7bdc1643a748f9436055"
+    "revision": "c04b7f3d76f8c0253b8aebcdf8294f12"
   },
   {
     "url": "categories/java/_books/springBoot/database/Redis_Usage.html",
-    "revision": "7bb1d4cd525f914d7a1df0657e00723f"
+    "revision": "d69e979dba743392c00329a7125b770e"
   },
   {
     "url": "categories/java/_books/springBoot/index.html",
-    "revision": "ee47abe756e71595a8e045fe1fc4d62f"
+    "revision": "4831e1e90a00116d61dea0fffbfc5e8a"
   },
   {
     "url": "categories/java/_books/springBoot/Install.html",
-    "revision": "326ecba7288154a935adf535473cd9f0"
+    "revision": "51dd998266f78a3b1d4430e694f99c67"
   },
   {
     "url": "categories/java/_books/springBoot/Intro.html",
-    "revision": "3fdf5efd1251e5324b5855b4c71127f2"
+    "revision": "670a4d457ce235e5b862e9243da3a246"
   },
   {
     "url": "categories/java/_books/springBoot/Reference.html",
-    "revision": "7892262c576493eea4d01c61d2edef0f"
+    "revision": "9946b072561bfc7a5351059861b10728"
   },
   {
     "url": "categories/java/_books/springCloud/euraka/Cluster.html",
-    "revision": "cc203a4866533c7e4c44ca1df35c27c9"
+    "revision": "91faf09930e260095fc0962052fe65b0"
   },
   {
     "url": "categories/java/_books/springCloud/euraka/Feign.html",
-    "revision": "1dce6b8dd7d4bd3d4010612871179fdb"
+    "revision": "8399bff88ddf82c4fea87f380b5a9a19"
   },
   {
     "url": "categories/java/_books/springCloud/euraka/Hystrix.html",
-    "revision": "e671a22cddffd3bdf1be83b1d8786b6c"
+    "revision": "8e1478e0eea2f2a0dd1abb8751bc654a"
   },
   {
     "url": "categories/java/_books/springCloud/euraka/index.html",
-    "revision": "b29945bca9db86f681f32b2310b5c7e9"
+    "revision": "4b7a4ad20ba927e39b365516c6a6714b"
   },
   {
     "url": "categories/java/_books/springCloud/euraka/Producer.html",
-    "revision": "37f1141ab65d62f1684fede3f0f0b0d0"
+    "revision": "0ee54b88321a0eeed3dfc663e4d831e4"
   },
   {
     "url": "categories/java/_books/springCloud/euraka/Register.html",
-    "revision": "b4f81720d857e573c3ee699fee9de094"
+    "revision": "71662549fb23f86914d47f250f604953"
   },
   {
     "url": "categories/java/_books/springCloud/euraka/Ribbon.html",
-    "revision": "674da1dea929dc34aa62c413bdf4f385"
+    "revision": "9b5f1282f325c1cfb1869954feb3f747"
   },
   {
     "url": "categories/java/_books/springCloud/index.html",
-    "revision": "90e89a73cc34ce167f43b90608a2e97c"
+    "revision": "c0a8dd3458afb0d6579b46177f1c5b01"
   },
   {
     "url": "categories/java/_books/springCloud/Install.html",
-    "revision": "20cd2149eccc45c6413f14c9b6580da0"
+    "revision": "0d186ae87a64ef8b5be33486f5394f39"
   },
   {
     "url": "categories/java/_books/springCloud/Intro.html",
-    "revision": "cc1ce1868d6db7f2af3be36f761442c1"
+    "revision": "009c67748ba0c5b21ed785e6474b91e0"
   },
   {
     "url": "categories/java/_books/springCloud/Reference.html",
-    "revision": "2bf83d58e32cba1153244bc4af574ffb"
+    "revision": "747e20034bc4d4cff06aa1c0fff32518"
   },
   {
     "url": "categories/java/_pages/JSONObject.html",
-    "revision": "3e0b9c5860b398ed993927a292c9ba85"
+    "revision": "548191de5370d59b0a81890a22773cda"
   },
   {
     "url": "categories/java/_pages/Lombok.html",
-    "revision": "e194ebac25bd450fa6c0b31ddd3de597"
+    "revision": "772d46bddcc73ab58ec64664837609de"
   },
   {
     "url": "categories/java/index.html",
-    "revision": "4d231fe9b0d64cae01e22bb2b3678906"
+    "revision": "9ce68beeb728d23e426baf549b04bb82"
   },
   {
     "url": "categories/nodejs/_books/egg/Basis.html",
-    "revision": "ccd45c64df1be7d6ea57440e8e3ce2a7"
+    "revision": "d53d44628d030d2eb9bee6ff03a9c471"
   },
   {
     "url": "categories/nodejs/_books/egg/Config.html",
-    "revision": "ce21950164097ed1a95d8040acc527c9"
+    "revision": "99fffa25dcc6434c45917f28d4ce0119"
   },
   {
     "url": "categories/nodejs/_books/egg/Controller.html",
-    "revision": "e3630d19511f269fe1f2b69fc8a8133a"
+    "revision": "b2da1c3d8e4d561ab01325ef26e07dcd"
   },
   {
     "url": "categories/nodejs/_books/egg/Cors.html",
-    "revision": "5fb9afbddb07189135f2727035b42441"
+    "revision": "2828d053f50f0c8175a2a330c62d7e49"
   },
   {
     "url": "categories/nodejs/_books/egg/CURL.html",
-    "revision": "65b506158cd5808ed30db88abe17410d"
+    "revision": "66175bdeb6461b092ca25c73541bda20"
   },
   {
     "url": "categories/nodejs/_books/egg/Extension.html",
-    "revision": "e447453e4c0147566f28bdca2ff3e4d3"
+    "revision": "8d533fa2d71a3b6c8c38a7a60ee35d62"
   },
   {
     "url": "categories/nodejs/_books/egg/index.html",
-    "revision": "72c521baf01c3fabf34b2d1aa3bba6bb"
+    "revision": "17ea6350321f5d4680443abdf2d774be"
   },
   {
     "url": "categories/nodejs/_books/egg/Inner_Object.html",
-    "revision": "5abe8b0ab910b0a4e2ea3edbf2263de6"
+    "revision": "e116663db1d102f1f5977a0fa6fb943a"
   },
   {
     "url": "categories/nodejs/_books/egg/Install.html",
-    "revision": "6b6b8c391a69ce1e8f43b4a60ee42b29"
+    "revision": "55691062824c3bf5e75ba41516e16b80"
   },
   {
     "url": "categories/nodejs/_books/egg/Intro.html",
-    "revision": "2eb66a077fef4eb5b723408fff4adb33"
+    "revision": "a597abdca500aa097fad400523c0cf42"
   },
   {
     "url": "categories/nodejs/_books/egg/Log.html",
-    "revision": "9df90e6ea5277e2d3a12b4d5703012b3"
+    "revision": "17f04816fed6ac20f5b9d8d0a7aab09c"
   },
   {
     "url": "categories/nodejs/_books/egg/Middleware.html",
-    "revision": "285ae8d4383ceab2298bff1f792b0cc5"
+    "revision": "a3aa8339d7c09a985bbeac5fbe9c14e5"
   },
   {
     "url": "categories/nodejs/_books/egg/MySQL.html",
-    "revision": "3f406b19220f7779434d804b181399f2"
+    "revision": "69df049f7cf1dcc7f11adfcc94fcd7fd"
   },
   {
     "url": "categories/nodejs/_books/egg/Passport.html",
-    "revision": "030d9b032c10fa4d0bd58d47cacdc53c"
+    "revision": "7e171c815bac58c4ac9f671ad675cc10"
   },
   {
     "url": "categories/nodejs/_books/egg/Plugin.html",
-    "revision": "cdfbc16262946f619c90c7407989a992"
+    "revision": "70347aa3b32b72a7aad280a9e9aab1d1"
   },
   {
     "url": "categories/nodejs/_books/egg/Router.html",
-    "revision": "7b5ffdc1adf07d261d5d04aa7f1c7c85"
+    "revision": "a82d1397a4ea68ba785289bb9d0ca27c"
   },
   {
     "url": "categories/nodejs/_books/egg/Schedule.html",
-    "revision": "27c5218d48244dc4895a4524e92470af"
+    "revision": "111ab4f533ac8c7d5f3094e5c0c03f30"
   },
   {
     "url": "categories/nodejs/_books/egg/Security.html",
-    "revision": "3166c4c3bc5c9790aa94437d5731ad31"
+    "revision": "d8092c312cc34d77413da128cfde0f98"
   },
   {
     "url": "categories/nodejs/_books/egg/Sequelize.html",
-    "revision": "5dd4baa5988c99c300c1cfb48a4d03c3"
+    "revision": "5901ffaa04f0e9a78094d96dbb2294d9"
   },
   {
     "url": "categories/nodejs/_books/egg/Service.html",
-    "revision": "602d63fe5dbf2fc07a80cb595d7795e2"
+    "revision": "5fbb693a81917f8c5a81813b2625269b"
   },
   {
     "url": "categories/nodejs/_books/egg/Socket_io.html",
-    "revision": "d61a1a06d4bbab87476b6ce08b90b191"
+    "revision": "8d8f9f265f0b70cbdfdf3acbe6025dbb"
   },
   {
     "url": "categories/nodejs/_books/egg/Solution.html",
-    "revision": "e755252da8fa82c78d75ddc6ea7920cc"
+    "revision": "92ebb0e900a43abdfffba8c721ca013a"
   },
   {
     "url": "categories/nodejs/_books/egg/Upload.html",
-    "revision": "853a38cb6840f6f9bf5f697c7c8303fd"
+    "revision": "a4ecf46096a89d871e1c6a59d84f23b8"
   },
   {
     "url": "categories/nodejs/_books/egg/Validate.html",
-    "revision": "4d35abc45a44eb5186b7c6ca06c1e123"
+    "revision": "d552f4d7ccf2f8861741f494587dce9e"
   },
   {
     "url": "categories/nodejs/_books/egg/View.html",
-    "revision": "df8838e9b00a0a0c123bdc4718e528d3"
+    "revision": "7d3a72ad93279087bae76629f509cb59"
   },
   {
     "url": "categories/nodejs/_books/express/Cookie_Session.html",
-    "revision": "a8b9a618d62ec10a6382dfdb76568c9c"
+    "revision": "ffacb396d7c223a36ab1efb2a694d6c7"
   },
   {
     "url": "categories/nodejs/_books/express/Debug.html",
-    "revision": "f3b68ca202b8b9b2a67e99d59668fe93"
+    "revision": "086fd7556d9d52812a9b0a175525822b"
   },
   {
     "url": "categories/nodejs/_books/express/index.html",
-    "revision": "6f363e7d910a691eab0fb1824c902d8e"
+    "revision": "e0a8bf9be7b6a9dbf4e1c620865baebb"
   },
   {
     "url": "categories/nodejs/_books/express/Install.html",
-    "revision": "b1a52a3d5cb708c786e3ecbf22c0c48f"
+    "revision": "c4d05013a416816a561fb4238c2204ad"
   },
   {
     "url": "categories/nodejs/_books/express/Intro.html",
-    "revision": "88f915f45e8056ffc7d0a00c82a0ad6f"
+    "revision": "9b4ebc3c12fb5c87c155566fe03dc4bb"
   },
   {
     "url": "categories/nodejs/_books/express/Middleware.html",
-    "revision": "6b42eab518db0c410a8e7dfe30a4a91b"
+    "revision": "88a2ec3e1b24fca5e38b3e2b2e61e27e"
   },
   {
     "url": "categories/nodejs/_books/express/MySQL.html",
-    "revision": "6bbddc62076f4021723a26defedca764"
+    "revision": "d8ca83c77e743f30365aa0707ec2dc10"
   },
   {
     "url": "categories/nodejs/_books/express/Proxy.html",
-    "revision": "1974ce581d1b6e7676231a89beccf14c"
+    "revision": "446fe4daabe2d37b07cc1def8d477066"
   },
   {
     "url": "categories/nodejs/_books/express/Req_Res.html",
-    "revision": "678bf2c5dd6bbf07b8cdb150f9d95cf9"
+    "revision": "16243a1892de5c5035e29c68c4523cbd"
   },
   {
     "url": "categories/nodejs/_books/express/Router.html",
-    "revision": "6f74ad462aafd56169b136714eefd956"
+    "revision": "c940753b665b60e050fd1fa0927bdef7"
   },
   {
     "url": "categories/nodejs/_books/express/Static.html",
-    "revision": "bfe0544f188652844c627d1f97fb4960"
+    "revision": "3bb6e1e9ead9b46c0ab81ebcf912ec7e"
   },
   {
     "url": "categories/nodejs/_books/express/Structure.html",
-    "revision": "1c7db7b3ef1036d6aa88f18daff92c5c"
+    "revision": "e7ac2311abe0fba6499b256d9aa48184"
   },
   {
     "url": "categories/nodejs/_books/express/Template.html",
-    "revision": "bc5bc5997fdd62e46b085995b3ac9d3b"
+    "revision": "98f359066a016ef59d76fd5fecbba9aa"
   },
   {
     "url": "categories/nodejs/_books/express/Upload.html",
-    "revision": "80d737b1af52558ab9683ce3543c5324"
+    "revision": "762777549f20b2b05e26416b2d08d772"
   },
   {
     "url": "categories/nodejs/_books/koa/Cookie_Session.html",
-    "revision": "968e7501bd480e3dda738e5041e8d257"
+    "revision": "d1d2e64200301521b47ade2c0075dc45"
   },
   {
     "url": "categories/nodejs/_books/koa/CORS.html",
-    "revision": "bc66cfd24ff1e6c575f032bb869da76c"
+    "revision": "67f1e53f4338180cc5643de5c4c34fa8"
   },
   {
     "url": "categories/nodejs/_books/koa/Exception.html",
-    "revision": "0962dcbdad6c172820dfcb6fdcc315d2"
+    "revision": "6da6c9caad1c47817c3478526de56d05"
   },
   {
     "url": "categories/nodejs/_books/koa/index.html",
-    "revision": "0cc5c364719dd81fd363d84d50a98978"
+    "revision": "b30ddc576c8d5ce3e0e87900672e85ae"
   },
   {
     "url": "categories/nodejs/_books/koa/Install.html",
-    "revision": "2e74a898e2c9fc6183a0f0353e1e6d4e"
+    "revision": "6943e9ce5b7f599d9017735a4c325e81"
   },
   {
     "url": "categories/nodejs/_books/koa/Intro.html",
-    "revision": "a01b9b1d088f906be5f427f67fe5a01b"
+    "revision": "02b8c775d7d251faa902ce07f7bd7a00"
   },
   {
     "url": "categories/nodejs/_books/koa/Log.html",
-    "revision": "05cd498fd1945a308ddf205770738064"
+    "revision": "5b5f7cb898dd2fdc6babadb83137398f"
   },
   {
     "url": "categories/nodejs/_books/koa/Middleware.html",
-    "revision": "25046ae19f1a03348c7caa60792d17d4"
+    "revision": "e4210c762f5b2fd0d562420338005091"
   },
   {
     "url": "categories/nodejs/_books/koa/Nodemon.html",
-    "revision": "9b4be3c45dbdac67193f08c3a75f65b5"
+    "revision": "27f58d5440934ed2071120eabed5fb80"
   },
   {
     "url": "categories/nodejs/_books/koa/Req_Res.html",
-    "revision": "e8b7f2e37d04bbd59a4cc1279c13d2fb"
+    "revision": "6ca928db5bed19def56fae2b5311d291"
   },
   {
     "url": "categories/nodejs/_books/koa/Route.html",
-    "revision": "31257c6c25ad7d42e01df6f1b4f6ef7a"
+    "revision": "13be21ce52a69601116b136eb3b613ae"
   },
   {
     "url": "categories/nodejs/_books/koa/Sequelize.html",
-    "revision": "4052804b21eb763acb75741ddcafb193"
+    "revision": "9b7c216e63f74feaca80d691e4e5ba62"
   },
   {
     "url": "categories/nodejs/_books/koa/Static.html",
-    "revision": "81f9512c074f48db548af18ff481751f"
+    "revision": "3726ee8f315220786621e8bfacf27e4e"
   },
   {
     "url": "categories/nodejs/_books/koa/Template.html",
-    "revision": "129867d44f0b4bfcb3d27c6adadf1b6e"
+    "revision": "8ff1854057a4595edbea59ecb9c408a1"
   },
   {
     "url": "categories/nodejs/_books/node/Class_Object.html",
-    "revision": "5e0c9c615ce28b77beee599c2bbd34ac"
+    "revision": "92bdf15a4ead422724e98ab44502be9b"
   },
   {
     "url": "categories/nodejs/_books/node/Database.html",
-    "revision": "6802009b4e0d0734cee5a445ce42313c"
+    "revision": "1f8a853b696fd14524ab282f898b5143"
   },
   {
     "url": "categories/nodejs/_books/node/Flow.html",
-    "revision": "bbf50b5d08663d6b8306b82b556d8489"
+    "revision": "e4eb42ee3cb92c0abe4478c777c764ee"
   },
   {
     "url": "categories/nodejs/_books/node/Function.html",
-    "revision": "a152d6a9eb889d1f8ebc9e8502abce96"
+    "revision": "d5bacedf730324ab4fe147e03641a6be"
   },
   {
     "url": "categories/nodejs/_books/node/HTTP.html",
-    "revision": "8f1e4537a21d673be015db23d5d98c45"
+    "revision": "746188304aef23d7aa555afbe812c1e6"
   },
   {
     "url": "categories/nodejs/_books/node/index.html",
-    "revision": "9153f90002fc37ad13c7891c42cedd20"
+    "revision": "4c18d79c95674fcc2681e473a95a016e"
   },
   {
     "url": "categories/nodejs/_books/node/Inner_Module_Console.html",
-    "revision": "c5dd57dffe58827397b14c1a7a2d0997"
+    "revision": "5a6bee0626455ae9aba3d5154bb82186"
   },
   {
     "url": "categories/nodejs/_books/node/Inner_Module_Crypto.html",
-    "revision": "9ea46c764460fa602f20db659d8c52a9"
+    "revision": "dfa083f9af8d1d5f5b8f169ee15e0787"
   },
   {
     "url": "categories/nodejs/_books/node/Inner_Module_Global.html",
-    "revision": "a4ec9e103afb4c4e209d2a5577f2679b"
+    "revision": "ff006bfea8903a532e51c4c51f2258ad"
   },
   {
     "url": "categories/nodejs/_books/node/Inner_Module_Process.html",
-    "revision": "ab2bb81be2d25e3186bc0237d2f07022"
+    "revision": "413d79846a5614cb8bbee67f975de53e"
   },
   {
     "url": "categories/nodejs/_books/node/Inner_Object.html",
-    "revision": "632aeb5be52faf6bdf8516cf93370a8c"
+    "revision": "2c821022b68fd2827661c1022516f98c"
   },
   {
     "url": "categories/nodejs/_books/node/Install.html",
-    "revision": "aafc74580952d29c5264d1f326624efc"
+    "revision": "f69c7e0b0cc7228d3188e43a775d6930"
   },
   {
     "url": "categories/nodejs/_books/node/Intro.html",
-    "revision": "0a9bc541c9e1e04b33c7dedeaf2c619d"
+    "revision": "057d95a0eb8e7e82dbf6e926a93e6888"
   },
   {
     "url": "categories/nodejs/_books/node/IO.html",
-    "revision": "f293a57a191b4bb7b7f67985e117d690"
+    "revision": "0e67439d0a39dfc2bd7cae42ccdd56fb"
   },
   {
     "url": "categories/nodejs/_books/node/Module.html",
-    "revision": "6f1da2cbf7a37a4a5ad0b161f5776b56"
+    "revision": "43f086110d99bc6553a0fa30e324764f"
   },
   {
     "url": "categories/nodejs/_books/node/Operator.html",
-    "revision": "38cdaaf053a82a76f9e1ae29e677d05f"
+    "revision": "29f635822567f4e82727207c79c52f61"
   },
   {
     "url": "categories/nodejs/_books/node/Reference.html",
-    "revision": "a9c0237a04deacf4c9b58a97e1924dad"
+    "revision": "06c7ca4bb6443dab4e607daa27411b99"
   },
   {
     "url": "categories/nodejs/_books/node/Scope.html",
-    "revision": "06d60a8dc57d4de451ace0411c638a08"
+    "revision": "daf6ea5ce7c5d030e69c8c825a58c05b"
   },
   {
     "url": "categories/nodejs/_books/node/This.html",
-    "revision": "26f0faa601496ada20b072515a8aa9e1"
+    "revision": "2c1134206da84fac4910238847f0261a"
   },
   {
     "url": "categories/nodejs/_books/node/Type.html",
-    "revision": "9fa40d1bfe9ae2134c7ca3cd41cc22d3"
+    "revision": "16c987d3f61caac3f188f7bbf4e53879"
   },
   {
     "url": "categories/nodejs/_books/node/Variable.html",
-    "revision": "c2c2ad29837ccee5ed725a33618d6292"
+    "revision": "49c486268c5f7006e649168f52cbab35"
   },
   {
     "url": "categories/nodejs/_books/node/Versions.html",
-    "revision": "469fe38283dac407d532e7bfccd4f378"
+    "revision": "b5b3974775fb202ec89893b32021a1bb"
   },
   {
     "url": "categories/nodejs/_books/sequelize/Class_Model.html",
-    "revision": "71283f182ab92a2acf45f98f1e551a04"
+    "revision": "627fef72ed14faf24a2ab1ecba0dc03b"
   },
   {
     "url": "categories/nodejs/_books/sequelize/Class_Sequelize.html",
-    "revision": "7e8e924e72d6e3bd727d0db48d3bae55"
+    "revision": "0a0e953d172b0673d09e703f14c4c1b1"
   },
   {
     "url": "categories/nodejs/_books/sequelize/Connection.html",
-    "revision": "c7acbf38db1978cb8224755e355095d4"
+    "revision": "561dfdb5c228b350bf9a0d6c9d87a319"
   },
   {
     "url": "categories/nodejs/_books/sequelize/index.html",
-    "revision": "3c1cb7b3e620cabef103b3f65d15a2d2"
+    "revision": "71f395261b0609def7cb595042be2667"
   },
   {
     "url": "categories/nodejs/_books/sequelize/Install.html",
-    "revision": "efd78ec87a906a3136ddf649e4ee167f"
+    "revision": "12e2817e7ef663b5b1a112e19716b866"
   },
   {
     "url": "categories/nodejs/_books/sequelize/Intro.html",
-    "revision": "3351c4407a42af3d9c1586b66f2c35b3"
+    "revision": "8936219fcf5dcac9a523e9d5fa798b0c"
   },
   {
     "url": "categories/nodejs/_books/sequelize/Model_Options.html",
-    "revision": "9c04df7aa310d113ebdc8efdeade7f8a"
+    "revision": "1089336afe15bf1fa1bdc569bb02c989"
   },
   {
     "url": "categories/nodejs/_books/sequelize/Model.html",
-    "revision": "ee83bb82d89d77c383aff02feb121df6"
+    "revision": "b8f4820441fb408db8ee33507bcb8f68"
   },
   {
     "url": "categories/nodejs/_books/sequelize/Query.html",
-    "revision": "9f2980ccd006bcf04a24b1b9bb085d8b"
+    "revision": "50246fa63bc39810772a56676bb5203b"
   },
   {
     "url": "categories/nodejs/_books/socket.io/Boardcast.html",
-    "revision": "242ed9713f5b3dd7a94aa70ff9806dbe"
+    "revision": "f4cb349f6195be32b9586a8e094ee8ff"
   },
   {
     "url": "categories/nodejs/_books/socket.io/Engine.io.html",
-    "revision": "4c2853a4fb686c31e5a9dca362d472c5"
+    "revision": "e8071f4994b1d6e0c060c93f700373b4"
   },
   {
     "url": "categories/nodejs/_books/socket.io/Eventsource.html",
-    "revision": "3f4da8bed5bad78a6f5f9c03dd66c8d1"
+    "revision": "45338b77ebc57a437b24014a559deb85"
   },
   {
     "url": "categories/nodejs/_books/socket.io/index.html",
-    "revision": "79ea5d38418dad1f5cf81d86a2fc982c"
+    "revision": "0eba67008718fe67932da317cedeb1fe"
   },
   {
     "url": "categories/nodejs/_books/socket.io/Install.html",
-    "revision": "a94fc9bb107f0ccb922b7adbcb25fb31"
+    "revision": "b008e9e8886c05d3b9f5a0184e2316f5"
   },
   {
     "url": "categories/nodejs/_books/socket.io/Intro.html",
-    "revision": "3ac05ce650128c1ab924e3853ae30d5e"
+    "revision": "ed0a7934b20aa60fa46986ecf67c7e60"
   },
   {
     "url": "categories/nodejs/_books/socket.io/Namespace.html",
-    "revision": "3af8190c5d40730f19a69893dd5948fe"
+    "revision": "9624c284112c1c509d72a27acb085465"
   },
   {
     "url": "categories/nodejs/_books/socket.io/Reference.html",
-    "revision": "40ec7397c57cf64d0eb4ffac5188cd57"
+    "revision": "99c48d5c4af623f4a8a3a87ddd16ab8c"
   },
   {
     "url": "categories/nodejs/_books/socket.io/Send.html",
-    "revision": "5b535e6b30ee4f453c3f68204a803e5d"
+    "revision": "30594f4ee0bd96b83b6273e3c165bdc4"
   },
   {
     "url": "categories/nodejs/_books/socket.io/Service.html",
-    "revision": "c68ef64121eb0d865c14911fee5d3c30"
+    "revision": "e6f2db274de976a101a8aa96de8e9201"
   },
   {
     "url": "categories/nodejs/_books/socket.io/Websocket.html",
-    "revision": "cde4a5b64a90feb098556a960dbd813b"
+    "revision": "074b7808282a26f6f08177d81f86f493"
   },
   {
     "url": "categories/nodejs/_pages/包管理/Node_Issue.html",
-    "revision": "3bd37d49d84946baf62bdcf45eea7e36"
+    "revision": "d247230d05b1a92cfe531384cb6df2ab"
   },
   {
     "url": "categories/nodejs/_pages/包管理/Node_Origin.html",
-    "revision": "fe66a700dbbba8fc35b5f77d28d6671a"
+    "revision": "5134011734ec0eafeec96d46f3f7e1e9"
   },
   {
     "url": "categories/nodejs/_pages/包管理/Npm_and_Yarn.html",
-    "revision": "a9db9a51c8c01d76457b68f34835959f"
+    "revision": "113a0388457e4db10547b19fe7b23746"
   },
   {
     "url": "categories/nodejs/_pages/包管理/Package_Management_Compare.html",
-    "revision": "415912018b0cb90541df8bd707ad93f3"
+    "revision": "f3da1414fe13037063b35576fd057d57"
   },
   {
     "url": "categories/nodejs/_pages/包管理/Pubilsh_Npm.html",
-    "revision": "ca485f451e83af3afc893bc33556742a"
+    "revision": "9f18708cca98b3e9f1147187a043d00d"
   },
   {
     "url": "categories/nodejs/index.html",
-    "revision": "09b16ab15dd03b286f456b284487b4a6"
+    "revision": "a8cb8ba2993e49f588f18f6bd0e6bacf"
   },
   {
     "url": "categories/notes/_pages/Blog_with_Hexo.html",
-    "revision": "58c48b9de233921bd9d7de50b063273a"
+    "revision": "762fa848555b7f49533a293e7c219c74"
   },
   {
     "url": "categories/notes/_pages/Blog_with_Vuepress.html",
-    "revision": "3807d1e6c9116bfc32855a74b9dc511e"
+    "revision": "67a7af59d6cd90e6f9a4d6303cfe4b8b"
   },
   {
     "url": "categories/notes/_pages/Free_SSL.html",
-    "revision": "d5cf10992e9172a19f1b2849c775bdea"
+    "revision": "21e2ee9165e945ce768a9d0ba4a59f59"
   },
   {
     "url": "categories/notes/_pages/Interactive_Command_Line.html",
-    "revision": "7ecb6967a9ead1e57470840a9726b149"
+    "revision": "5d7066464ec2de9e0ddd5f1c257b4aa7"
   },
   {
     "url": "categories/notes/index.html",
-    "revision": "39656a213428d31947cc1e314135ca9f"
+    "revision": "87d66e8673820c2fa40a5757e1485dcf"
   },
   {
     "url": "categories/os/index.html",
-    "revision": "d7656f94a69095812cc11aee34d68cdc"
+    "revision": "b7fa235c86be26a8429e29eeb57c5bd6"
   },
   {
     "url": "categories/os/linux/_books/linux/basic_command/Compress.html",
-    "revision": "25dcffef89415c109a0868931c8c1192"
+    "revision": "befacc840210c32c5e6304b2b43af42b"
   },
   {
     "url": "categories/os/linux/_books/linux/basic_command/Curl.html",
-    "revision": "689f4c8420969e7cbe3be3bdc310bd04"
+    "revision": "acfd247fe170bcba3bf7b99876b43e50"
   },
   {
     "url": "categories/os/linux/_books/linux/basic_command/Dir_and_File.html",
-    "revision": "f6464181e4feb11e8f836e20364133e2"
+    "revision": "e7c148de8d846193714f450de3422022"
   },
   {
     "url": "categories/os/linux/_books/linux/basic_command/Edit.html",
-    "revision": "5e8581e13990e9d3c19af10c4fc78bcc"
+    "revision": "39378ff8bc3eb807dd8d947e1ce02f26"
   },
   {
     "url": "categories/os/linux/_books/linux/basic_command/Help.html",
-    "revision": "26e89fe31918df47ad4af20d84d2e286"
+    "revision": "842a3f0e06e3d665eb887e946a2a479a"
   },
   {
     "url": "categories/os/linux/_books/linux/basic_command/Link.html",
-    "revision": "84711a5b249a3550db856728169e5906"
+    "revision": "21f312d1701b33168878164be58b9e52"
   },
   {
     "url": "categories/os/linux/_books/linux/basic_command/Other.html",
-    "revision": "e099a8502b2065a34d035240df930b5a"
+    "revision": "17bdb216bc3d2aacd2cd5e07b6d59dee"
   },
   {
     "url": "categories/os/linux/_books/linux/basic_command/Scp.html",
-    "revision": "728ac18224c21904bc0f077d0a7e1fed"
+    "revision": "259828fa2ee4620d3e922706b7098a3e"
   },
   {
     "url": "categories/os/linux/_books/linux/basic_command/System.html",
-    "revision": "231ae228b2b3a0dccd0c263f34094c52"
+    "revision": "c827b8aeec229bc68dc68717ecc2cc91"
   },
   {
     "url": "categories/os/linux/_books/linux/basic_command/Vim.html",
-    "revision": "32d88e78058019dcb926d092277547ca"
+    "revision": "1a6cf96c9873babce81d0a4361791907"
   },
   {
     "url": "categories/os/linux/_books/linux/basic_command/Wget.html",
-    "revision": "1d5b1d6b01eca7989c7f068eee649c30"
+    "revision": "199e1991bb73188069a26ce8ad4f7b53"
   },
   {
     "url": "categories/os/linux/_books/linux/basic_config/Alias.html",
-    "revision": "8d671735a44e73e40c2c4ffe332f6043"
+    "revision": "8a0ba971a9c3470033e1d3173f64dfd9"
   },
   {
     "url": "categories/os/linux/_books/linux/basic_config/Env_Variable.html",
-    "revision": "ec06e28a61467ecb4a4ec424eb412588"
+    "revision": "1a0aa3ebf7d749a43bbf05fd96f99273"
   },
   {
     "url": "categories/os/linux/_books/linux/basic_config/Hostname.html",
-    "revision": "9db7dc7305950d40491732f76339d2ad"
+    "revision": "de5ad38e6718804bf0e0d88c89aff3a5"
   },
   {
     "url": "categories/os/linux/_books/linux/basic_config/Hosts.html",
-    "revision": "e11c87fb490771e464b9e529a853b908"
+    "revision": "b079ee6a7147602dbe4d53927c7a9900"
   },
   {
     "url": "categories/os/linux/_books/linux/basic_config/Origin.html",
-    "revision": "d2236d1adf22b13f0a4e42701cb42098"
+    "revision": "883b02f72b1acf7bb764b0709379cabe"
   },
   {
     "url": "categories/os/linux/_books/linux/basic_config/System_Info.html",
-    "revision": "4566d2b532b35466324047cb9116923e"
+    "revision": "7e23eeeebd8a67935e1ce34680314b5c"
   },
   {
     "url": "categories/os/linux/_books/linux/disk/Format.html",
-    "revision": "042bdf3d51f1d92712c22ee742cc7ccd"
+    "revision": "72c01d6029ce0f5f434859fc42aca402"
   },
   {
     "url": "categories/os/linux/_books/linux/disk/Fstab_Mtab.html",
-    "revision": "94cd7d5c67df66181058ee3609fbe65f"
+    "revision": "a98e33a638a17606beaa138e42b6d98f"
   },
   {
     "url": "categories/os/linux/_books/linux/disk/index.html",
-    "revision": "d116e670515a05bf41e00ebfc180d59a"
+    "revision": "453f72da59aac8dcdcdc96c780aed5b1"
   },
   {
     "url": "categories/os/linux/_books/linux/disk/List.html",
-    "revision": "0a9750760a94daa10fd25bd6c6920fa7"
+    "revision": "80fe80ccd6bbcc60e4d0a9585b950583"
   },
   {
     "url": "categories/os/linux/_books/linux/disk/Mount.html",
-    "revision": "5387ffc0447720874daa7c508aac7a7b"
+    "revision": "3805c1b34e77467ecffab7e7ace5a6d3"
   },
   {
     "url": "categories/os/linux/_books/linux/disk/Partition.html",
-    "revision": "8355976f7666e1cc4fc52a4bf14c2926"
+    "revision": "8e7fa4992a84eb684535d0d36e0ec46d"
   },
   {
     "url": "categories/os/linux/_books/linux/disk/Reference.html",
-    "revision": "e9f6b875a4a0db7e993209f2a07ee381"
+    "revision": "caea19eb477029f011619ca239391f99"
   },
   {
     "url": "categories/os/linux/_books/linux/disk/Solution.html",
-    "revision": "cf3aa771aa5104c6955a48feb035aff6"
+    "revision": "ffa8ebbd2e2544d327811d7d3add6656"
   },
   {
     "url": "categories/os/linux/_books/linux/index.html",
-    "revision": "9912c76140c24b39d0a85bd25cd7969e"
+    "revision": "8c3bbdad8170a812f38f75c743e31464"
   },
   {
     "url": "categories/os/linux/_books/linux/Install.html",
-    "revision": "e2ccc39d1fa637909ed02bc107a598ed"
+    "revision": "4aaa7ad47f45b416174061a222bbb0c1"
   },
   {
     "url": "categories/os/linux/_books/linux/Intro.html",
-    "revision": "5e4cd6548b6bdd905ccedcf8b215f7f3"
+    "revision": "fcbd4bacbf87f2ce624306a3ffcc91a6"
   },
   {
     "url": "categories/os/linux/_books/linux/network_and_secure/Firewall.html",
-    "revision": "0e2cfb8b33ca41d4b482be18680270c6"
+    "revision": "3c874e30294f3195f4d6ba63883b27b2"
   },
   {
     "url": "categories/os/linux/_books/linux/network_and_secure/Port.html",
-    "revision": "645894946666d7625a8056d440f2ed26"
+    "revision": "a27d7f65e997dccc85b9886057354479"
   },
   {
     "url": "categories/os/linux/_books/linux/network_and_secure/Setup.html",
-    "revision": "6afede6fb6bbe4bbb5a7e2e0523960d1"
+    "revision": "52b1d470c229c39b1ab6208fdf4eb1fd"
   },
   {
     "url": "categories/os/linux/_books/linux/network_and_secure/Solution.html",
-    "revision": "28c0905fbbc5ed0e4569871395b7a20c"
+    "revision": "247baf9944468bf830d00aa60c9838f0"
   },
   {
     "url": "categories/os/linux/_books/linux/related/Process.html",
-    "revision": "418aa5ee27a2efca18a0975a21319811"
+    "revision": "862993c3868b02c3f8f445257ca7b7a1"
   },
   {
     "url": "categories/os/linux/_books/linux/related/SSH_Login.html",
-    "revision": "55fa2647c359cc4a23524711e475584c"
+    "revision": "3ae6edcb468e7336de0249d88ac3c12a"
   },
   {
     "url": "categories/os/linux/_books/linux/search/Escape.html",
-    "revision": "e70d6bb68b64480b3076742196e5dbd4"
+    "revision": "2c056aded1e191888bb9f5e2b9c4042c"
   },
   {
     "url": "categories/os/linux/_books/linux/search/Find.html",
-    "revision": "6828d0539f68326913015b27c613372c"
+    "revision": "c28e113326599ce4dd8dbbe580e96135"
   },
   {
     "url": "categories/os/linux/_books/linux/search/Grep.html",
-    "revision": "a779fa8b577fcd609ae0272bc8c3abbc"
+    "revision": "c324f71488f8faa6c6a020587a9badb5"
   },
   {
     "url": "categories/os/linux/_books/linux/search/Pipe.html",
-    "revision": "a536cd2399d09b8965457ca8265d747c"
+    "revision": "a3369ee98c56eef336851effacdd165e"
   },
   {
     "url": "categories/os/linux/_books/linux/search/Redirect.html",
-    "revision": "522349dc8e15648abb33ecdd4952d180"
+    "revision": "cede21b508ff4ae89b69140adf753087"
   },
   {
     "url": "categories/os/linux/_books/linux/search/Sort.html",
-    "revision": "c1e35d07a582c9a3e55b8b6b997bc78b"
+    "revision": "d9c6e6ecb31b17f5b36579d5278023ee"
   },
   {
     "url": "categories/os/linux/_books/linux/search/Whereis.html",
-    "revision": "ad83fcd1028c7456e0ee923ddccbda30"
+    "revision": "fac0c6af158fedbde1962d2683611c6f"
   },
   {
     "url": "categories/os/linux/_books/linux/search/Which.html",
-    "revision": "0ae77bb07be252827d2852297ae46abb"
+    "revision": "a5063da5f783108049fd357da9560a88"
   },
   {
     "url": "categories/os/linux/_books/linux/search/Wildcard.html",
-    "revision": "dbcd487515dc5f579febdab4304f2bf4"
+    "revision": "060b1d40fb073a84eda64cd1cd8de99d"
   },
   {
     "url": "categories/os/linux/_books/linux/Shell.html",
-    "revision": "7728d21a911abb549385f490f73feb0f"
+    "revision": "71928d7b9fe809596168079795a88461"
   },
   {
     "url": "categories/os/linux/_books/linux/user_and_authority/Chattr.html",
-    "revision": "078c4edc1a13fd45c210094374297351"
+    "revision": "d9fd59721770a88508857a2cab3d18e3"
   },
   {
     "url": "categories/os/linux/_books/linux/user_and_authority/Chmod.html",
-    "revision": "4cfaeff5512779f89dec477c1125a00a"
+    "revision": "d499ab2641d7167a7c76b9050338e6d9"
   },
   {
     "url": "categories/os/linux/_books/linux/user_and_authority/Chown.html",
-    "revision": "eacbdc927d60c774162831a12db8019f"
+    "revision": "4dc305b3c159b44e755c7d67b8a3f83f"
   },
   {
     "url": "categories/os/linux/_books/linux/user_and_authority/Passwd_Shadow.html",
-    "revision": "5dd7ec9e1b27a82aada521f0c8647141"
+    "revision": "f3f79a0eecd13699304781a71b40719e"
   },
   {
     "url": "categories/os/linux/_books/linux/user_and_authority/Su_Sudo.html",
-    "revision": "c9dece39fc93b7302eec265c89b2b81b"
+    "revision": "0a5b6b4e50345616520bb7612d11f235"
   },
   {
     "url": "categories/os/linux/_books/linux/user_and_authority/Uid.html",
-    "revision": "65c011f67eb608e338217535334b57aa"
+    "revision": "fa6c26be52e615f916eff1daa08a887e"
   },
   {
     "url": "categories/os/linux/_books/linux/user_and_authority/User_Group.html",
-    "revision": "d792b58789300b7d2788fd0e370fbe1b"
+    "revision": "9f93ea9790fdbb18dab0935fd0512e7c"
   },
   {
     "url": "categories/os/linux/_books/linux/user_and_authority/User.html",
-    "revision": "91442c5888efd85926d41d1db597f335"
+    "revision": "bf9f124ea5808fe522de81b0eb5aaeea"
   },
   {
     "url": "categories/os/linux/_pages/Certificate.html",
-    "revision": "27c4238321ef71cfda424b454087c7e9"
+    "revision": "c1701fc91e283eafcf278bf08299cc8a"
   },
   {
     "url": "categories/os/linux/_pages/Cpp.html",
-    "revision": "0d822f42da905950b8edaf9c7fa51ce5"
+    "revision": "f6440b5c7ffa3b2e06d43a8ed2326039"
   },
   {
     "url": "categories/os/linux/_pages/kali/Nmap.html",
-    "revision": "8031358335b97b65f9d52f2591d0b8e4"
+    "revision": "b41c5a7622fa01fc52d54dd33da3b24a"
   },
   {
     "url": "categories/os/linux/_pages/kali/漏洞扫描.html",
-    "revision": "b44e8a10a3970e3df817543af61a559b"
+    "revision": "1626e2d8d2ac8939d08b0f68316fbe0e"
   },
   {
     "url": "categories/os/linux/_pages/Oh_My_ZSH.html",
-    "revision": "6791ebf2b5a7b92c19afce9dbb0c6dd3"
+    "revision": "e9af6afce9d8b71a741834d8390f45a0"
   },
   {
     "url": "categories/os/linux/_pages/Python.html",
-    "revision": "35021f9d20c815374c0376058d049198"
+    "revision": "5ff69d3aac4739262e35a91e4c40de1d"
   },
   {
     "url": "categories/os/linux/_pages/RM_Trash.html",
-    "revision": "2abcdb89552359433289b8a76d1cac6f"
+    "revision": "97a7063025963a95ae285f216ef54fa3"
   },
   {
     "url": "categories/os/linux/_pages/Source.html",
-    "revision": "d084004bc8e70e17b1318a81cc13fb21"
+    "revision": "67f1e312a3e52812742ea1a33af5dace"
   },
   {
     "url": "categories/os/linux/_pages/Ubuntu_Install_Notice.html",
-    "revision": "f0bf49e4d94134ae82d94d50676f38b1"
+    "revision": "d6c51e10df85c15a25a3d49f8e5b4609"
   },
   {
     "url": "categories/os/linux/index.html",
-    "revision": "1905f87e09c603324762cd4b85fb19e7"
+    "revision": "391a1fbc266d3420cf2b7b3cf08dc2c0"
   },
   {
     "url": "categories/os/macOS/_pages/Feature_and_Skill.html",
-    "revision": "c7cbfdda8d4941f184ca7f8878eb0d3b"
+    "revision": "df4d183a366b621baf9daad29d892ef3"
   },
   {
     "url": "categories/os/macOS/_pages/Launchctl.html",
-    "revision": "539226a5f391b2dec97e3ad82c281416"
+    "revision": "737477bdc541e42ad6d95f3b193d8dad"
   },
   {
     "url": "categories/os/macOS/_pages/MacOSX_Environment.html",
-    "revision": "964ffae0c2c5eeb2d8d37de83b718234"
+    "revision": "f927fc97483dc1a8a2a0a317a1df99c0"
   },
   {
     "url": "categories/os/macOS/_pages/Shortcuts.html",
-    "revision": "a485b0d99539189902fa297f2409f5b2"
+    "revision": "c18996a5ae4906ea48e94536ace0122d"
   },
   {
     "url": "categories/os/macOS/_pages/SSH.html",
-    "revision": "00445226325beeba7fd293c6c903f4a6"
+    "revision": "b4d1eec3079e0e0ae2c304eb14654252"
   },
   {
     "url": "categories/os/macOS/index.html",
-    "revision": "0c9723681dbaa248b28ca45e534f4b18"
+    "revision": "ea393337c33f959a1bd19ee97356580e"
   },
   {
     "url": "categories/os/windows/_pages/Alias.html",
-    "revision": "5dd013c3de5e0be85ea2452e8f3b534b"
+    "revision": "06c9f7260ecfa729f088f79bcd56bede"
   },
   {
     "url": "categories/os/windows/_pages/Feature_and_Skill.html",
-    "revision": "fc64c31ef72ab78416b0bd37096fc530"
+    "revision": "bd069a182d3a999c18c7198768c72943"
   },
   {
     "url": "categories/os/windows/_pages/Log.html",
-    "revision": "c276b0aa8b3aeb1ced1143e37297beb2"
+    "revision": "08ceea440cdc31d504effeef9bcd88d7"
   },
   {
     "url": "categories/os/windows/_pages/Regedit.html",
-    "revision": "3b98d554c20a3219b65d62d4c1874aaa"
+    "revision": "43b169b1b67cba74ceaa64384d90127f"
   },
   {
     "url": "categories/os/windows/_pages/Shortcuts.html",
-    "revision": "d928d9b6ef131b69e2d593a2aeb2483d"
+    "revision": "8902f3e0f233c324ff8bf8c077e2064a"
   },
   {
     "url": "categories/os/windows/_pages/WSL.html",
-    "revision": "bd59695bba81cb2e5c64b3deccfcda9a"
+    "revision": "7ada403519919eac5f33c6a6a3c7207b"
   },
   {
     "url": "categories/os/windows/index.html",
-    "revision": "4fe033a1b56a7153829888795be9b407"
+    "revision": "4536d97549b2555e40b88ccfeb90e599"
   },
   {
     "url": "categories/php/_books/php/advance/Cookie.html",
-    "revision": "57a84468f9108508e08a8f38e986bc55"
+    "revision": "863b301228ebbfd2c256834cdfadea76"
   },
   {
     "url": "categories/php/_books/php/advance/Error.html",
-    "revision": "cd2b98c0ce5bcf484c8fe3277eea089b"
+    "revision": "4132c844b19b7bdb76670f4ce733378a"
   },
   {
     "url": "categories/php/_books/php/advance/Exception.html",
-    "revision": "8119a7eee79e18e4d58756ee49f39e46"
+    "revision": "df3726f3732465f7e8f24abc043a5cfb"
   },
   {
     "url": "categories/php/_books/php/advance/File.html",
-    "revision": "aa2a669b9cef4f1b0e5a8072a3ba2579"
+    "revision": "5ff67a995091c86557079d3724262b02"
   },
   {
     "url": "categories/php/_books/php/advance/Form.html",
-    "revision": "8db04c7cc1b64cd72fa8449cc76faaa2"
+    "revision": "8b172efee9820508ce2b693121ec9fcb"
   },
   {
     "url": "categories/php/_books/php/advance/Origin.html",
-    "revision": "9c51f62e0ee01faad776e348c7c127f0"
+    "revision": "cab80b6e790d346e0ed70cc93f016f00"
   },
   {
     "url": "categories/php/_books/php/advance/Request.html",
-    "revision": "0445cf03bea34604dc4c929b3d02a95b"
+    "revision": "34784bacc6b8266746859bfe8c620f6a"
   },
   {
     "url": "categories/php/_books/php/advance/Session.html",
-    "revision": "c999404bc3b1d4f4784b2f28286a34ad"
+    "revision": "1b0f12a1d1171a06d5eca79a0c31bae5"
   },
   {
     "url": "categories/php/_books/php/basis/Array.html",
-    "revision": "ba8dc62b9a1334be3b1451531c9cdfcd"
+    "revision": "ecac18d3b7c58162d03a8918a3f5b776"
   },
   {
     "url": "categories/php/_books/php/basis/Comment.html",
-    "revision": "8a5f5ee60d878b2e032f48cfe898a606"
+    "revision": "4f89b6457b6a6bf727741d8ec891f9db"
   },
   {
     "url": "categories/php/_books/php/basis/Constant.html",
-    "revision": "237500e79f3ddb3e4185db6782790b0d"
+    "revision": "cc4090100b32380282f009c548628f6c"
   },
   {
     "url": "categories/php/_books/php/basis/Control_Flow_Circulation.html",
-    "revision": "5b85a0a4893c36c3fb88e177200a8625"
+    "revision": "5ebb1434d8f04c4b4ea5d8428879f715"
   },
   {
     "url": "categories/php/_books/php/basis/Control_Flow_Condition.html",
-    "revision": "f17c093f09e55a672b51ca7489af386a"
+    "revision": "1944df91ed2692dc9712a6e12eafd8f9"
   },
   {
     "url": "categories/php/_books/php/basis/Function.html",
-    "revision": "d6d1f146a969c0d3b9eb11531d89f5ff"
+    "revision": "2cb0784cffb7667f74adee0c8315cdc5"
   },
   {
     "url": "categories/php/_books/php/basis/Magic_Constant.html",
-    "revision": "9fd11b80073825cfd4634a958232272e"
+    "revision": "ed254793143cdd9e862947655e3d06da"
   },
   {
     "url": "categories/php/_books/php/basis/Operatior.html",
-    "revision": "00b05046fb4f73129a2d43dff031da40"
+    "revision": "73a4f5564803e00aad53c3ecbc1dcee8"
   },
   {
     "url": "categories/php/_books/php/basis/Output.html",
-    "revision": "62c5216927984fdd1215062bbf439e97"
+    "revision": "bc6d89c58bf759799a9f9d1e21e9b385"
   },
   {
     "url": "categories/php/_books/php/basis/String.html",
-    "revision": "c68bdaf4575725c8f1608dfa86b6771b"
+    "revision": "3d45e6f15505d5701acf492e3837fe7c"
   },
   {
     "url": "categories/php/_books/php/basis/Super_Globals.html",
-    "revision": "0c92556875c0831faab9ef20bc1c5a17"
+    "revision": "78db0403420d331c2f769b8c1ca28dde"
   },
   {
     "url": "categories/php/_books/php/basis/Types.html",
-    "revision": "7633bcb97b87bdecc0809feaa1f1cf15"
+    "revision": "b9e893e759b8e42deaf8ff52bdf51993"
   },
   {
     "url": "categories/php/_books/php/basis/Variable.html",
-    "revision": "068ea940c934929cf2757a0a43726b5c"
+    "revision": "b63f722ccf6ab1f9d713afa182aac24a"
   },
   {
     "url": "categories/php/_books/php/index.html",
-    "revision": "54dcfead21ec1ab748ecfaf4dc950b0a"
+    "revision": "09767aaa509ce4fdfe00b796058da92b"
   },
   {
     "url": "categories/php/_books/php/inner_module/Datetime.html",
-    "revision": "e47db4457a5d053dd89e11bf10cf3b01"
+    "revision": "3ea68ac075984d2f7668e185a33803bf"
   },
   {
     "url": "categories/php/_books/php/inner_module/Fs.html",
-    "revision": "a726ea0d86b7770f4ac73533fb9cce89"
+    "revision": "92c02e5ed86a3a01868eb5365e137777"
   },
   {
     "url": "categories/php/_books/php/inner_module/JSON.html",
-    "revision": "25fdd71ab34f29cacbb77b88153f0514"
+    "revision": "621ba6a30a0eea7fb107a38570d1b478"
   },
   {
     "url": "categories/php/_books/php/inner_module/MySQL.html",
-    "revision": "aa00bd8f57b8e573cede04443a149f70"
+    "revision": "fcbba7495a98c883b53a02649682763d"
   },
   {
     "url": "categories/php/_books/php/Install.html",
-    "revision": "d5b3ab05b1ca471506dd80bea7ecd983"
+    "revision": "258643d1a4f453168cfadc5628f7dc0e"
   },
   {
     "url": "categories/php/_books/php/Intro.html",
-    "revision": "1a5d593bf431c4b26b1a6dd78416e97b"
+    "revision": "c16f7408216248966ce40a9609da0c96"
   },
   {
     "url": "categories/php/_books/php/module/Include.html",
-    "revision": "1ec6fa97f31688ec505170084a5cde21"
+    "revision": "a68d0d424db9a178a86e033af54d83bf"
   },
   {
     "url": "categories/php/_books/php/module/Module.html",
-    "revision": "9f175bba4b6fdf56e1ed8da9e12aabfe"
+    "revision": "2b3142c57f18bbaa31896f6607331622"
   },
   {
     "url": "categories/php/_books/php/module/Namespace.html",
-    "revision": "468d98bdd2205bef92f6888db9c59947"
+    "revision": "3f268b9549b9b7b4fef1129b3180dca4"
   },
   {
     "url": "categories/php/_books/php/oo/Abstract_Class.html",
-    "revision": "034bd9e70480d7dbbaca372192708968"
+    "revision": "9f4ddffefa7964ad0e7a5a073e4627d8"
   },
   {
     "url": "categories/php/_books/php/oo/Inherit.html",
-    "revision": "877a9876485109951b4a153ce1e06698"
+    "revision": "17524481e780c81d5df5b171b931e073"
   },
   {
     "url": "categories/php/_books/php/oo/Interface.html",
-    "revision": "0793bbe14b3bc8f4fc29b15a6231e134"
+    "revision": "d32d3eb3bc0ffd6c11d104ab7edf4608"
   },
   {
     "url": "categories/php/_books/php/oo/Object_Oriented.html",
-    "revision": "b78d3eabcade8cbb69cf1a4bd8832401"
+    "revision": "cbd7b09d655f9f8dc48bb96c9827b6ac"
   },
   {
     "url": "categories/php/_books/php/oo/Train.html",
-    "revision": "ebd13698eefe8763cb054b1d029f9769"
+    "revision": "e03b4e8219433c097adbb3281a5a9163"
   },
   {
     "url": "categories/php/_books/thinkphp/basis/Container.html",
-    "revision": "749349a63acdb034b8355298d00dd65d"
+    "revision": "41fc251e9210db8fafab661656da3b2f"
   },
   {
     "url": "categories/php/_books/thinkphp/basis/Facade.html",
-    "revision": "ce6b04eae64b2e376dd93c1e309939f4"
+    "revision": "ddca2a677f2733b86885bba3962cecc9"
   },
   {
     "url": "categories/php/_books/thinkphp/basis/Inject.html",
-    "revision": "000662e415299fbd81485c41c5955ef3"
+    "revision": "24d2664713dde1b8d34a77d4564bc512"
   },
   {
     "url": "categories/php/_books/thinkphp/basis/Namespace.html",
-    "revision": "68a9ce0f6f2139610222c6e19c01e232"
+    "revision": "87a7afd5d72ef1abc3b163600f1610f7"
   },
   {
     "url": "categories/php/_books/thinkphp/config/Detail.html",
-    "revision": "e0bd14bf3fc74e0d7b78eef8af661ebb"
+    "revision": "3aeb9efe7ab4f22fe2781bc471c7e9b3"
   },
   {
     "url": "categories/php/_books/thinkphp/config/Env.html",
-    "revision": "2a897abd9d57ebe0e39b0690488f5405"
+    "revision": "8c82e6b2aaf85296f465d2fb5b19746e"
   },
   {
     "url": "categories/php/_books/thinkphp/config/index.html",
-    "revision": "5bfe1262af0980f3d7f7c0a70be82be5"
+    "revision": "f18de260585a8fff469dac970e453cdd"
   },
   {
     "url": "categories/php/_books/thinkphp/controller/index.html",
-    "revision": "fc0ede4da320db76a508dab5901b751e"
+    "revision": "5496ff82e26f7df64f589350bc58604e"
   },
   {
     "url": "categories/php/_books/thinkphp/database/CURD.html",
-    "revision": "598f9e83e5b41da9c2a8726553edec75"
+    "revision": "0f74be4ced5572d7c7958f3470d5e06c"
   },
   {
     "url": "categories/php/_books/thinkphp/database/index.html",
-    "revision": "f69ef8ba8ec9ad0ab00e9f0fd894812f"
+    "revision": "70008d5c151dfee2b4da9584feab2477"
   },
   {
     "url": "categories/php/_books/thinkphp/database/Query.html",
-    "revision": "d2da526da7870a59bfd0cf172527ed80"
+    "revision": "105c7a28b1ead4ba5cd2caeb7da0ab7d"
   },
   {
     "url": "categories/php/_books/thinkphp/extend/Composer.html",
-    "revision": "e8ae6940f9d59848d7deefd939cc3ebf"
+    "revision": "a6bec4a3973a142157bb4adc793de392"
   },
   {
     "url": "categories/php/_books/thinkphp/extend/Function.html",
-    "revision": "b9aa17df5232f9844b27999ddebfc0f4"
+    "revision": "8c97efd6b67905302f9d7af096be5de7"
   },
   {
     "url": "categories/php/_books/thinkphp/extend/Library.html",
-    "revision": "99ce7a2f60c07d54adf78aa1a8d22b75"
+    "revision": "85315045ff3983a35770bd90620de17d"
   },
   {
     "url": "categories/php/_books/thinkphp/index.html",
-    "revision": "f614e9f466ff24ed555519221964a256"
+    "revision": "68816db7981bd7ccd5ededafbc168c92"
   },
   {
     "url": "categories/php/_books/thinkphp/Install.html",
-    "revision": "b4b0a47ee7fcea6c0264596b00f0e7f0"
+    "revision": "278fa1f9c83d028b4c9ee0a2d59326bf"
   },
   {
     "url": "categories/php/_books/thinkphp/model/Advance.html",
-    "revision": "9a5628b2564635fbc2aeb1c63e27673a"
+    "revision": "7b0fe89e06daa6a127524183c0e156d3"
   },
   {
     "url": "categories/php/_books/thinkphp/model/CURD.html",
-    "revision": "c02e3355a224a3f187d067d4e43e9881"
+    "revision": "d2e36febf2da7e30efff7c8cc0a7b961"
   },
   {
     "url": "categories/php/_books/thinkphp/model/index.html",
-    "revision": "471007b135aecb7d7302dae78739c075"
+    "revision": "76d51149c0a3b727ad825280188682e7"
   },
   {
     "url": "categories/php/_books/thinkphp/model/Transform.html",
-    "revision": "62f6353c3561aec72f7b11eab770ac6c"
+    "revision": "f33e52393a200b3c2e92319be8a85183"
   },
   {
     "url": "categories/php/_books/thinkphp/Reference.html",
-    "revision": "ad44b1be8ffa7ec4a608bab2b1535ed3"
+    "revision": "debfce581c045664975e94280932e34d"
   },
   {
     "url": "categories/php/_books/thinkphp/reference/Assistant.html",
-    "revision": "b602f818e22a7e750aea658029e6b428"
+    "revision": "909fac446ce833276c928b3efcbdad88"
   },
   {
     "url": "categories/php/_books/thinkphp/reference/Console.html",
-    "revision": "4320eef79ea9e4dd016ccaa787c572ff"
+    "revision": "1a050f6e2584760edaf873721caceef3"
   },
   {
     "url": "categories/php/_books/thinkphp/reference/Constant.html",
-    "revision": "b2dab20377dd5ced36bf9b0d8727efda"
+    "revision": "957d87ad1260ce1783a359f6bb1094ec"
   },
   {
     "url": "categories/php/_books/thinkphp/reference/Debug.html",
-    "revision": "c9906fcc6ab4f21c54c9be3c3a1e8185"
+    "revision": "d89343348a1e1f7a4dfb0fd52e5d8501"
   },
   {
     "url": "categories/php/_books/thinkphp/req_res/Request.html",
-    "revision": "f668de0dc5c4233ad28b15e9992285c9"
+    "revision": "54657ffd230d0bf0f27cb501e7996f62"
   },
   {
     "url": "categories/php/_books/thinkphp/req_res/Response.html",
-    "revision": "1455ad7703b6291139b9de0cfb702532"
+    "revision": "f97497599ad21e1085288823e19bbbf5"
   },
   {
     "url": "categories/php/_books/thinkphp/route/index.html",
-    "revision": "5acd707317121573e6e7b295e7318c04"
+    "revision": "4a7c7fe30468473de85f766f4b3e33d2"
   },
   {
     "url": "categories/php/_books/thinkphp/Server.html",
-    "revision": "7c1321fc4a56cfa9f0d5e0b5656601c4"
+    "revision": "6274af45809485b78b0ff3f728572efe"
   },
   {
     "url": "categories/php/_books/thinkphp/validator/index.html",
-    "revision": "8d39f95bb8e2123a666291c5ec93f16f"
+    "revision": "e35925c5924b643de0f162d51d7eae37"
   },
   {
     "url": "categories/php/_books/thinkphp/validator/Rules.html",
-    "revision": "a339a01f36d90a5032bf114494619995"
+    "revision": "f5534f1e242f2b1ea2f11ff265c3dfa4"
   },
   {
     "url": "categories/php/_books/thinkphp/view/index.html",
-    "revision": "708f57aeaffd8952ed95ab207cc5e17e"
+    "revision": "649ee3169270bf0a7b29745190ef1922"
   },
   {
     "url": "categories/php/_books/thinkphp/view/Static.html",
-    "revision": "3d430cc6c6d100011274b541aa383133"
+    "revision": "949275a0ba1d66e63c59a4fe123a8657"
   },
   {
     "url": "categories/php/_books/thinkphp/view/Template.html",
-    "revision": "b32e240e7fe01eca7d31da8ff5635b27"
+    "revision": "0027fceb3009e73830de0efa6feddfd9"
   },
   {
     "url": "categories/php/_pages/代码片段/Idcard.html",
-    "revision": "359675c96166685afdf4ccc22b9cb73c"
+    "revision": "b6d1be20b6625eee65d6ad25d63fe9d9"
   },
   {
     "url": "categories/php/_pages/扩展/Composer.html",
-    "revision": "ccc1cde8e3b2c53e4278db8c3f0c3999"
+    "revision": "da30fa82decccf988c9277b233d0a2f0"
   },
   {
     "url": "categories/php/_pages/设计模式/Design_Pattern_Register_Tree.html",
-    "revision": "fca4122eda510306bea36e9e06c04fa0"
+    "revision": "8c8d7a6d0696c2c87b87847eaf4d0ad0"
   },
   {
     "url": "categories/php/index.html",
-    "revision": "375047b8c1e5ae8544ffd458f8622116"
+    "revision": "b42450d447a2f442646c45c0b2aef20b"
   },
   {
     "url": "categories/python/_books/python_spider/Bs4.html",
-    "revision": "e4a0ffe40744fe155e360f481e516d77"
+    "revision": "ac10362b3aa5acbd07097505bfe7a1c0"
   },
   {
     "url": "categories/python/_books/python_spider/index.html",
-    "revision": "d9e99cf36b5d136a76094ef976182bdc"
+    "revision": "5b09bdb2ba5f170e800628cd8f76aef0"
   },
   {
     "url": "categories/python/_books/python_spider/Intro.html",
-    "revision": "892a235d53a127b5ff774c01a0d2c7ed"
+    "revision": "e70b39d3f913816943a83b508631d2ef"
   },
   {
     "url": "categories/python/_books/python_spider/Pymysql.html",
-    "revision": "41d574ef7e996e66ce67be5e38d0eb05"
+    "revision": "aa64b6447750bb18493ba6b060056163"
   },
   {
     "url": "categories/python/_books/python_spider/Re.html",
-    "revision": "f0d74f58df9c3d02d208dcf2d899a76c"
+    "revision": "9653ae28ad0047aa14eb8ddb7868fd09"
   },
   {
     "url": "categories/python/_books/python_spider/Reference.html",
-    "revision": "9029fd6515b23fddb3aaf4661ea0cfae"
+    "revision": "c4136a8635862038220f845b48d0ecdb"
   },
   {
     "url": "categories/python/_books/python_spider/Requests.html",
-    "revision": "4066c798e48cee951238a3d8aee175e7"
+    "revision": "54df07af711e7e83d88ce599bf7202e8"
   },
   {
     "url": "categories/python/_books/python_spider/Scarpy_Basis.html",
-    "revision": "0ec00a7dada18397f633760fcad5caed"
+    "revision": "401923b9551eb15e2115ac38653bc453"
   },
   {
     "url": "categories/python/_books/python_spider/Scrapy_Command.html",
-    "revision": "932b08a178374d2406638fa0a1c518c9"
+    "revision": "36178b59d8c202a0e1629c6ebdde09f9"
   },
   {
     "url": "categories/python/_books/python_spider/Scrapy_File.html",
-    "revision": "f57d4a9eb226b29d172bbf05c4da6b37"
+    "revision": "9a06b61e435548e94072b7250e5b6d8d"
   },
   {
     "url": "categories/python/_books/python_spider/Scrapy_Image.html",
-    "revision": "3576f7bf61bd7be61cdd9999b8bf5ede"
+    "revision": "53376a190306e1ad152c8955a4531d1c"
   },
   {
     "url": "categories/python/_books/python_spider/Scrapy_Mysql.html",
-    "revision": "90b823f74beb38fd8fc0b2e4c2bf0212"
+    "revision": "94d626290ed9f182619f4957bc3990d4"
   },
   {
     "url": "categories/python/_books/python_spider/Scrapy_Selector.html",
-    "revision": "da80c08fe44d841c5fb96998d73a2556"
+    "revision": "440604c32f74ec8ed93ab8110daf163c"
   },
   {
     "url": "categories/python/_books/python_spider/Scrapy_Simple.html",
-    "revision": "6c27a2a1715fcd1147f0583be7a8f630"
+    "revision": "1498ba0fc909706db1b8cb65051736bb"
   },
   {
     "url": "categories/python/_books/python_spider/Scrapy.html",
-    "revision": "971a0298745d0267640ce1f74bf49fbd"
+    "revision": "267a39bf5ecddf06f8698c8c39c8b731"
   },
   {
     "url": "categories/python/_books/python/advance/Generator_Expressions.html",
-    "revision": "21245b8b98f5927a56a51f86dece00d4"
+    "revision": "b09311b7bca8041a08efff4d4ac7fc9c"
   },
   {
     "url": "categories/python/_books/python/advance/Generators.html",
-    "revision": "f85e2ccaca0ce13f7506367438482a1e"
+    "revision": "99911382680efe05afa5912c21d0ced2"
   },
   {
     "url": "categories/python/_books/python/advance/Iterators.html",
-    "revision": "6cbedee9d9f3addfbc35cbbbc882c85f"
+    "revision": "923976b27bd4b3e8710c8623f36b0367"
   },
   {
     "url": "categories/python/_books/python/advance/Slice.html",
-    "revision": "8398b0dd9227bb66e9c40bf3ffb35368"
+    "revision": "03d983c54e11f2502aa313ac5c382297"
   },
   {
     "url": "categories/python/_books/python/basis/Comment.html",
-    "revision": "7aa60a94c11e23474b7dc2027f088e9a"
+    "revision": "aa97579ec8c85e41d3cf8e1170ba7b98"
   },
   {
     "url": "categories/python/_books/python/basis/Control_Flow_Circulation.html",
-    "revision": "f0e9a2bd82b535477badc582a01e646e"
+    "revision": "8f6e9d9fe0e57d688ea8a936fd7b8533"
   },
   {
     "url": "categories/python/_books/python/basis/Control_Flow_Condition.html",
-    "revision": "603a6f609cb498d32713ba4cfb370e1b"
+    "revision": "e8693dec6c98e159073c04c5005ed502"
   },
   {
     "url": "categories/python/_books/python/basis/Input_Output.html",
-    "revision": "25626bbb915b3273bd597f28c423b131"
+    "revision": "785c397f37de70f90a1cbc34d82785a7"
   },
   {
     "url": "categories/python/_books/python/basis/Reserved_Word.html",
-    "revision": "32df31e8b8cbbfd58806d72771bf368e"
+    "revision": "9a60ff90111bdf88d02360f564118e65"
   },
   {
     "url": "categories/python/_books/python/basis/Variable_Constant.html",
-    "revision": "49e987fd04796a18d6e86997248df11d"
+    "revision": "6794935fc79e14c799e4c78c1c990160"
   },
   {
     "url": "categories/python/_books/python/function/Build_In.html",
-    "revision": "15e40c067aefea0e0af05c2c34055e1f"
+    "revision": "7cc2a352dde7e0d096beff9efb753737"
   },
   {
     "url": "categories/python/_books/python/function/Closure.html",
-    "revision": "402d5a7d74df6adaaed174695a0db08a"
+    "revision": "f03c161263863cd34e6455c89cd638b0"
   },
   {
     "url": "categories/python/_books/python/function/Decorator.html",
-    "revision": "6f878d0b5da26d3e4d75f097d86c6b3b"
+    "revision": "cdfe2fbd84b5a02091e9f7a50bbe8927"
   },
   {
     "url": "categories/python/_books/python/function/Empty.html",
-    "revision": "40aaf8eb91c2a314baf277195b34785c"
+    "revision": "2569555c4e5c297b54e4a98cd1d2f3bc"
   },
   {
     "url": "categories/python/_books/python/function/High_Level.html",
-    "revision": "0bbecdf664543f3e9ce4feb411f75f42"
+    "revision": "7cf77377947d4722a6466e0271bf1566"
   },
   {
     "url": "categories/python/_books/python/function/index.html",
-    "revision": "8936157d66cbc1ae1e28f164ae336f84"
+    "revision": "7ecea96421486994751f9deee93276c9"
   },
   {
     "url": "categories/python/_books/python/function/Lambda.html",
-    "revision": "6f1910a690048e0fdf16c4da38a80670"
+    "revision": "4e3b912e62466eba129550ae05421ebd"
   },
   {
     "url": "categories/python/_books/python/function/Params.html",
-    "revision": "945d1edbf1ac6b628e5c814a54a00ee6"
+    "revision": "2d6ae364b2ade65b39c2948180bd01a3"
   },
   {
     "url": "categories/python/_books/python/function/Partial.html",
-    "revision": "44e504155ccb4a130f090cf9f8395bf9"
+    "revision": "94143b209a7bd7952e3b6ec5a2d56970"
   },
   {
     "url": "categories/python/_books/python/function/Recursion.html",
-    "revision": "8ec618554c8bbbb4be6bb13becdbc8e5"
+    "revision": "26ae90d5ea75900d98c13a67d7de654f"
   },
   {
     "url": "categories/python/_books/python/function/Return.html",
-    "revision": "c40e693718a3a018f2a438ebe7efe443"
+    "revision": "6468d519db9ecb3493246bcd8e65d451"
   },
   {
     "url": "categories/python/_books/python/index.html",
-    "revision": "d2a9ef917a448094754c4539cceffdb0"
+    "revision": "e2c599dcf8abb577b1e446d922c823d3"
   },
   {
     "url": "categories/python/_books/python/Install.html",
-    "revision": "46113076042ba557deac69f22a0a6279"
+    "revision": "0f4f18619efd39fa0fdea54212bd3f8a"
   },
   {
     "url": "categories/python/_books/python/Intro.html",
-    "revision": "45664c4f76737431f376da9cf1e3eea2"
+    "revision": "e7e6e3b5a41cc1dcf279cbb54f808cff"
   },
   {
     "url": "categories/python/_books/python/module/index.html",
-    "revision": "e10a4125c2807cff0a9700958ed79c67"
+    "revision": "dd49f58fd42e3a877102be03b183bdb5"
   },
   {
     "url": "categories/python/_books/python/module/IO.html",
-    "revision": "d1a2320aaa1387c8119e47eb5087e100"
+    "revision": "ac5943e25beb31e2ac08dcc284b072a9"
   },
   {
     "url": "categories/python/_books/python/module/MySQL.html",
-    "revision": "e5840df02ea4ad4d2419a0baf1630d4f"
+    "revision": "14c837f87dc1e019190861774386e33b"
   },
   {
     "url": "categories/python/_books/python/module/Other.html",
-    "revision": "96cbd721f6f695c9be145aaf62f30ff1"
+    "revision": "5c9b997051e97cfa21abe684b6e80b52"
   },
   {
     "url": "categories/python/_books/python/module/Package.html",
-    "revision": "4cf44996eecd8ae0e71f89b6c8c19804"
+    "revision": "189c5bc6d4a8806d74cf3889c8234e99"
   },
   {
     "url": "categories/python/_books/python/module/Regex.html",
-    "revision": "d29edcf6d7ed50502e3562184e5768ad"
+    "revision": "98151f89d14bc4415c1f08560fb20a11"
   },
   {
     "url": "categories/python/_books/python/module/Socket.html",
-    "revision": "6e6ba48d80fbfd067cba2d2ff436f497"
+    "revision": "207caa40c911936a4f58f37797878d6f"
   },
   {
     "url": "categories/python/_books/python/module/System.html",
-    "revision": "b8f8af2571427efffe6b14e8f377f6ba"
+    "revision": "79ebfc4df935d9903925de73ebf65ba0"
   },
   {
     "url": "categories/python/_books/python/module/Time.html",
-    "revision": "13abca0c7f13ad4b722d568b380a71c0"
+    "revision": "3f3b1ff673fd4c9cbad0bcf448966af0"
   },
   {
     "url": "categories/python/_books/python/oo/index.html",
-    "revision": "23046f2e0c114c9e05edba9db1af5e25"
+    "revision": "c161713ee1882291fe5ae917a5b249bf"
   },
   {
     "url": "categories/python/_books/python/oo/Inherit.html",
-    "revision": "8d537edabc457feaa88e9645464a56db"
+    "revision": "96b4f01a0437fa695a85f12aa789164f"
   },
   {
     "url": "categories/python/_books/python/oo/Polymorphic.html",
-    "revision": "482be707b24fd2a0966c888ec24a8a8d"
+    "revision": "c204a15d619c32beb5b86e635cbccc05"
   },
   {
     "url": "categories/python/_books/python/types/Dict.html",
-    "revision": "fb96fcb2a220337e6deb2227e88b20e7"
+    "revision": "f6a1787720b5cfd60c13e21f2c1755bf"
   },
   {
     "url": "categories/python/_books/python/types/index.html",
-    "revision": "09d98cb198347021a94c4e1f86b86067"
+    "revision": "1d8d125a1210a063b7d6b43e33b3756f"
   },
   {
     "url": "categories/python/_books/python/types/List.html",
-    "revision": "bf0989b3907d5dc00744e923e294351b"
+    "revision": "b591984c4a7343d5a1dacb388ab2fe93"
   },
   {
     "url": "categories/python/_books/python/types/Operator.html",
-    "revision": "c398b8c8d7a4d790d5e5581680308a36"
+    "revision": "e3f4d97af463c454fc2399fc11ad5218"
   },
   {
     "url": "categories/python/_books/python/types/Set.html",
-    "revision": "be706579632d45fb5e5c32ea159cf909"
+    "revision": "5246e4ec7b9e80127ba74941d3e968a8"
   },
   {
     "url": "categories/python/_books/python/types/String.html",
-    "revision": "a07a18c4032ba7d79d444a0224c215b1"
+    "revision": "c866327360d6581d5c3a1a0337f79ed0"
   },
   {
     "url": "categories/python/_books/python/types/Tuple.html",
-    "revision": "a96957ebde8a3df6c1be4f669b79fbe7"
+    "revision": "228b33fedde1c5640f3d67333d32c0a7"
   },
   {
     "url": "categories/python/_books/python/Venv.html",
-    "revision": "1ec4ae245b33908f4a8d22e1d1e9b75b"
+    "revision": "509138476935859df4b9a7cb5da84429"
   },
   {
     "url": "categories/python/index.html",
-    "revision": "7d6ebfc5e44016dfe536c210f9451f91"
+    "revision": "a55cfa33e6cfe89b72ce43bfeb857873"
   },
   {
     "url": "categories/solution/_pages/About_Split_Database.html",
-    "revision": "1477fea4308b116cfcba306d0c5ddbb8"
+    "revision": "2f48e2d9d8b7fd90717bb6d292ce1388"
   },
   {
     "url": "categories/solution/_pages/Cache.html",
-    "revision": "78186df53960373226de31e8c55de81b"
+    "revision": "752415ea953cdc12f33ba475015cfe57"
   },
   {
     "url": "categories/solution/_pages/Database_Solution.html",
-    "revision": "e6fa74e1feb7660cfc290d8f2477f01f"
+    "revision": "5ce0274e0fdb38f9459d9b88a4b35036"
   },
   {
     "url": "categories/solution/_pages/Frontend_Solution.html",
-    "revision": "9c00be9e17104ca057db6a16d15420f5"
+    "revision": "bc28abfaeba1069d1e76900e50fca26a"
   },
   {
     "url": "categories/solution/_pages/Iframe_Slide.html",
-    "revision": "9c2b125564a43bf3f8e318a6970d8f1b"
+    "revision": "76f9273b3c21e4b840a04cc54aa59f77"
   },
   {
     "url": "categories/solution/_pages/NodeJS_Solution.html",
-    "revision": "c374c60bc555a22648da3ad812c1675e"
+    "revision": "2f1c9221742f4dfabe148db09e7b1046"
   },
   {
     "url": "categories/solution/_pages/PHP_Solution.html",
-    "revision": "48eff884f4e414fb641922e459936686"
+    "revision": "1160bba29327269feaf1547a1c7ddfd5"
   },
   {
     "url": "categories/solution/_pages/Uniapp_Solution.html",
-    "revision": "f4cd7e6a31f650228ec81039c20aa69e"
+    "revision": "85c0d84ad5c178605e4e1e61ab167acb"
   },
   {
     "url": "categories/solution/index.html",
-    "revision": "26240e056e55619fe33ccb3d94dbbde0"
+    "revision": "53acedc1a733fec399d5b45082da1de2"
   },
   {
     "url": "categories/system/_pages/The_evolution_of_large-scale_website_architecture.html",
-    "revision": "6211869dbe75ae64eeb5e17118194aa2"
+    "revision": "8a87c5e2666424d0eca38777a7eedef3"
   },
   {
     "url": "categories/system/_pages/What_Happens_from_Typing_a_URL_to_Loading_a_Page.html",
-    "revision": "263ce4af1b5d7e7a25bb0dd281ed259b"
+    "revision": "a9519de90fc35531ad34d819dd0158c2"
   },
   {
     "url": "categories/system/index.html",
-    "revision": "115d9924195dc576e7e24198d03a081b"
+    "revision": "6aae40487fcdfab87e51d4dd7c3deaf8"
   },
   {
     "url": "categories/technology/_books/git/Add_and_Commit.html",
-    "revision": "2ac31022beb4bde2d531859e610c15d9"
+    "revision": "dd8560e640a20667c1b61bb10456fc5d"
   },
   {
     "url": "categories/technology/_books/git/Basis.html",
-    "revision": "ddc76bc407940ea64b8b88311dcd7ee5"
+    "revision": "fe64c46ffc3985cb469e43326e22b702"
   },
   {
     "url": "categories/technology/_books/git/Branch_and_Tag.html",
-    "revision": "a1462fbf2839ae778d39ad4fa67f81c5"
+    "revision": "9a5867df0a60bc9d389469ee245544e8"
   },
   {
     "url": "categories/technology/_books/git/Checkout.html",
-    "revision": "5fd644a3ae899ca2b4e024ecd5ef03f4"
+    "revision": "ed939580c42d0d5b2945842dda94a816"
   },
   {
     "url": "categories/technology/_books/git/Config.html",
-    "revision": "83d894ee28deacae01cf960a6558332a"
+    "revision": "733bf2092963071fbe98d9994551b474"
   },
   {
     "url": "categories/technology/_books/git/Flow.html",
-    "revision": "674d1265e69ef9572cbdbff85bc71821"
+    "revision": "eed843577dfe65c7a414405d5922b570"
   },
   {
     "url": "categories/technology/_books/git/Gitignore.html",
-    "revision": "2c87c08cc0dadf163e68aa44ca4cbf70"
+    "revision": "de11d64665c2a8b5d5922ae3dcfdd130"
   },
   {
     "url": "categories/technology/_books/git/index.html",
-    "revision": "08880b4e37456e5cba3ed645e150bcea"
+    "revision": "568955e8c281e4005e4c3c4079aad360"
   },
   {
     "url": "categories/technology/_books/git/Intro.html",
-    "revision": "c2c8dacc6eec9e91f7ed4f8cf665ef82"
+    "revision": "4737aba6184129ab3e66962a1819157b"
   },
   {
     "url": "categories/technology/_books/git/Pull_and_Merge.html",
-    "revision": "d3e53239056682e0da1511ef76c7722a"
+    "revision": "15f60d6b0a3f1a686de7fb0b27453036"
   },
   {
     "url": "categories/technology/_books/git/Push.html",
-    "revision": "6d5f4b2928481ed2e51ea986ac8b4430"
+    "revision": "5d705e83b1048d97043aed060e9d07ef"
   },
   {
     "url": "categories/technology/_books/git/Reference.html",
-    "revision": "03231dcc50272a91efa5caca247d15e9"
+    "revision": "70202de5f1759af85b692b6db82d50ec"
   },
   {
     "url": "categories/technology/_books/git/Remote.html",
-    "revision": "f05f43c46bf5ac2ddbd4b3ccda949bcd"
+    "revision": "adbdc05836c5469efaddcf1b57d1f45e"
   },
   {
     "url": "categories/technology/_books/git/Reset.html",
-    "revision": "3812d2df97ab5a6d73d57d7e30f468e1"
+    "revision": "30cc1cda99a71e4e2d5618d5003efd0a"
   },
   {
     "url": "categories/technology/_books/git/Solution.html",
-    "revision": "f88f8360fdfdca7fc5135c3f7fd985ca"
+    "revision": "71b9048d703a73839bec90737b120889"
   },
   {
     "url": "categories/technology/_books/git/Stash.html",
-    "revision": "2da76947911370b822ae5ae07fe0e1c4"
+    "revision": "16a90c577de329079a3a001c19cb0380"
   },
   {
     "url": "categories/technology/_books/git/Status.html",
-    "revision": "d3758e08b249269334a851a980719b6f"
+    "revision": "7c87a8bc90e9682d0e51b68d3db73293"
   },
   {
     "url": "categories/technology/_books/nginx/Cache.html",
-    "revision": "199fa7d45b9a7e4c7053aac2bba0eb19"
+    "revision": "e7d6fdf01963047ebd7f47d158872c90"
   },
   {
     "url": "categories/technology/_books/nginx/Command.html",
-    "revision": "5fb120f8ebca6197778eb8ff4b1122a0"
+    "revision": "1a6d1d35795d05c8d39834d6a113581e"
   },
   {
     "url": "categories/technology/_books/nginx/Config.html",
-    "revision": "15adf11b15766c81539a59376991e5cc"
+    "revision": "6ea173b313ca965b2712ac2bb475c511"
   },
   {
     "url": "categories/technology/_books/nginx/Hosts.html",
-    "revision": "eefad8acfc78636c655badf8ac29a3f5"
+    "revision": "4811a5107df952e0f41194e0b70a4348"
   },
   {
     "url": "categories/technology/_books/nginx/index.html",
-    "revision": "aadae13469b922ac317f7a6bbe54c04e"
+    "revision": "daedfcccee8ab993b31a329806310115"
   },
   {
     "url": "categories/technology/_books/nginx/Install.html",
-    "revision": "99945c586835238c3fb864c24f4031aa"
+    "revision": "bd5b70016b70181ecb3ac327c4e42704"
   },
   {
     "url": "categories/technology/_books/nginx/Load_Balance.html",
-    "revision": "c8845753ee7d026f610679a05888d75c"
+    "revision": "bef6dd90027f711824c195e36c56e96a"
   },
   {
     "url": "categories/technology/_books/nginx/PHP.html",
-    "revision": "5f0aea3859930b5212bf30c8bc5a43b2"
+    "revision": "e0a11937b853a07a969af6f3ff8e97c0"
   },
   {
     "url": "categories/technology/_books/nginx/Proxy.html",
-    "revision": "4ce80ae92d8a7d51ce729a1d03f3a640"
+    "revision": "26a1cd0f06b47c491cdc9b5da3b19697"
   },
   {
     "url": "categories/technology/_books/nginx/Reference.html",
-    "revision": "1cf23165881077c3c160d547cc1a9140"
+    "revision": "d22da6bc8b1d380456bf585dced53b78"
   },
   {
     "url": "categories/technology/_books/nginx/Rewrite.html",
-    "revision": "c5bac1d8e73be1dccc7b20163bab185f"
+    "revision": "e5a5570363cdb4275cc6e73670013062"
   },
   {
     "url": "categories/technology/_books/nginx/Solution.html",
-    "revision": "97bca0fc7a9f7a4fc9436b0597f4d936"
+    "revision": "c204983f421172ebfdf41e32cf407806"
   },
   {
     "url": "categories/technology/_books/nginx/SSL.html",
-    "revision": "2060683408dbef7ccbc5257ae58e403f"
+    "revision": "d8874ad0a6af165d558164a2b7c2753f"
   },
   {
     "url": "categories/technology/_books/vsftpd/config/Basis.html",
-    "revision": "dcf3d13124f8c1d77ce8d172bb12d420"
+    "revision": "866f2d115e741aa31604f5a1ff9bd3a4"
   },
   {
     "url": "categories/technology/_books/vsftpd/config/Detail.html",
-    "revision": "7287d76a02bd89f90236d889ffb6e252"
+    "revision": "838a2a473b63f632e01cba0bda18b35e"
   },
   {
     "url": "categories/technology/_books/vsftpd/index.html",
-    "revision": "a5ec2465c887ed73464a49364c21e1a8"
+    "revision": "c0e8b1f79698df6b1305535e61461cc5"
   },
   {
     "url": "categories/technology/_books/vsftpd/Install.html",
-    "revision": "f272a77612eaf130f3351e2cc0217742"
+    "revision": "bd9c391d720ddd5e18b4da40c7df28d8"
   },
   {
     "url": "categories/technology/_books/vsftpd/Reference.html",
-    "revision": "8e7c15875d1f1dd098bafeb3b057d830"
+    "revision": "4e5002dc7566af601bffaf921ce38c7d"
   },
   {
     "url": "categories/technology/_books/vsftpd/User.html",
-    "revision": "ee209c5e7d4e4fb3fa13d51cf90d9b7a"
+    "revision": "7f5f1442c1280366c1ac97724f2b8f39"
   },
   {
     "url": "categories/technology/_books/vsftpd/Windows_Command.html",
-    "revision": "e9686be236b97fd54f4f3bf5624e9786"
+    "revision": "0d53e512c400e38e181be943ce10c17b"
   },
   {
     "url": "categories/technology/_pages/Git_Server.html",
-    "revision": "6591f88afdaab2f19c68a01d7c71449f"
+    "revision": "62e5f214ddd9e4de91fb6a23fd1c61d2"
   },
   {
     "url": "categories/technology/_pages/Gitbook.html",
-    "revision": "b4ee061b4812c142b718606899dbe104"
+    "revision": "c897acfd62eb49dcc6997a464c8d8bc7"
   },
   {
     "url": "categories/technology/_pages/Markdown.html",
-    "revision": "f5d4e6620dc66a785d39042ab6f244a4"
+    "revision": "7adeb70512f812c9b7d3c0af74d0f16d"
   },
   {
     "url": "categories/technology/_pages/MongoDB.html",
-    "revision": "084bf8e66a5eacadadc385e2cf000df5"
+    "revision": "48a0d0e73a8c8e0a026be033ab713c93"
   },
   {
     "url": "categories/technology/_pages/MySQL.html",
-    "revision": "26625b8a4d84be9118b663027f74d2be"
+    "revision": "f68f3ec65e877f466f06a7809b4684c2"
   },
   {
     "url": "categories/technology/_pages/RabbitMQ.html",
-    "revision": "ab4058360b9254f1acb570bb211bce95"
+    "revision": "af0c52b2a0b3ae4d8f68aa018e26b28b"
   },
   {
     "url": "categories/technology/_pages/Redis.html",
-    "revision": "db418c0ac5194e09a9d97eebcf4e42ed"
+    "revision": "2cbb38bf43f79fe5fa097a48593e4b41"
   },
   {
     "url": "categories/technology/_pages/VirtualMachine.html",
-    "revision": "00f649440cea889b01f0afdd4d867752"
+    "revision": "3c742c19ffd8fdde2589295ee9cdb3b3"
   },
   {
     "url": "categories/technology/index.html",
-    "revision": "6da3380bea3030de14440daa377a4b5f"
+    "revision": "fe3917a50abbc9041a2a903b6841051e"
   },
   {
     "url": "categories/tips/_pages/Batch_Download_TS.html",
-    "revision": "46a43792e310c3d7b7b615e805dfc2ea"
+    "revision": "9e4a32be0206ec40885cfee7191e259f"
   },
   {
     "url": "categories/tips/_pages/Chrome_Usage.html",
-    "revision": "04289ee802b5425419e8995467f48435"
+    "revision": "9d1ae9b51a59b9c5310c84d6ba19fabf"
   },
   {
     "url": "categories/tips/_pages/jetbrains/idea/Config.html",
-    "revision": "e6c411eca087a648d6e5be4da3a810cf"
+    "revision": "c28c393fb69de2928ac25c61578ebdd3"
   },
   {
     "url": "categories/tips/_pages/jetbrains/idea/Keymap.html",
-    "revision": "1e2784df96d49470ec84df978841c9ed"
+    "revision": "09be76b0d4d39e0be44a22a23126b270"
   },
   {
     "url": "categories/tips/_pages/jetbrains/index.html",
-    "revision": "f21767ff7fcd5e2e5a0be0413f3ad805"
+    "revision": "da69c41e7bcf7803d531caeb5226d730"
   },
   {
     "url": "categories/tips/_pages/jetbrains/phpstrom/Config.html",
-    "revision": "70b5218f86665f9550ad542a890138f9"
+    "revision": "a2ff653b3477dd146f61bfec1d580989"
   },
   {
     "url": "categories/tips/_pages/jetbrains/phpstrom/Database.html",
-    "revision": "10773cfbafd41842e87fe23ef7a9f2ef"
+    "revision": "b908343ef4e0971192f0af373b96e572"
   },
   {
     "url": "categories/tips/_pages/jetbrains/phpstrom/Plugin.html",
-    "revision": "0dd926d6daf06a914773ac43b0e3af0f"
+    "revision": "df8cb9293f15be7d5104826e8f01cc95"
   },
   {
     "url": "categories/tips/_pages/jetbrains/phpstrom/Usage.html",
-    "revision": "cc32b7a99a4fec13cad6b68e59cfc86c"
+    "revision": "43daeb74ad75f41c56b2402865636182"
   },
   {
     "url": "categories/tips/_pages/jetbrains/Shortcuts.html",
-    "revision": "e18c5dc16aaad8a962022e883ccd1792"
+    "revision": "9d041530da387c1dd01bae198fb3f11b"
   },
   {
     "url": "categories/tips/_pages/jetbrains/Solution.html",
-    "revision": "41762392b02de67d6c51d91022dfd221"
+    "revision": "900a8cdab779ff7a1c3e6efea48ed830"
   },
   {
     "url": "categories/tips/_pages/jetbrains/webstrom/Shortcuts.html",
-    "revision": "5db57231c66a39afb0e2fb6862c8f4e3"
+    "revision": "a0c8afdb6f5a5e815419548aa89e5e3c"
   },
   {
     "url": "categories/tips/_pages/jetbrains/webstrom/Usage.html",
-    "revision": "6f3dca05f454b1b080c8a13944d799d9"
+    "revision": "e22b0e04c098cb263c43ebb7a359d996"
   },
   {
     "url": "categories/tips/_pages/NDS_Problem.html",
-    "revision": "b99b858cf00a86a51bccadc8ea704081"
+    "revision": "8ecde8df3758b25fbef1cc8944939051"
   },
   {
     "url": "categories/tips/_pages/vscode/Config.html",
-    "revision": "6520284ca892a12b2f510f88444060e2"
+    "revision": "53a874935e565008c85052f45e4daeab"
   },
   {
     "url": "categories/tips/_pages/vscode/ESLint.html",
-    "revision": "00c1d60b5a2c34314a4f71d5ec23a493"
+    "revision": "8333a52a9dc7f381691fc7ab7f14922c"
   },
   {
     "url": "categories/tips/_pages/vscode/index.html",
-    "revision": "79c10465ea6cb00f8cc664c453479242"
+    "revision": "6b7048eace4deeb3287906388b894c69"
   },
   {
     "url": "categories/tips/_pages/vscode/Plugins.html",
-    "revision": "2d29813f1a29c8db782b4740936de066"
+    "revision": "b22d52ccb8befdd5c5bd3dd52a7d331d"
   },
   {
     "url": "categories/tips/_pages/vscode/React.html",
-    "revision": "3b070fea124dae5b9b6940aeca529d01"
+    "revision": "7c7420836bea4e06393d2fde13cda009"
   },
   {
     "url": "categories/tips/_pages/vscode/Reference.html",
-    "revision": "6ceae191bf0b0c711d6ea1f000ab6d39"
+    "revision": "c5ff4641447a5f871dfb4803f995feac"
   },
   {
     "url": "categories/tips/_pages/vscode/Settings_Sync.html",
-    "revision": "84e8d31da756e74136a4b4a651c5a3c3"
+    "revision": "891edae3309b6b4aeaf9410c217d562f"
   },
   {
     "url": "categories/tips/_pages/vscode/Usage.html",
-    "revision": "6b9c7f12423aa8917e17a30d73071917"
+    "revision": "35219499ba9f465af3c2163d54313daf"
   },
   {
     "url": "categories/tips/_pages/WuliHub.html",
-    "revision": "3fbf57f18202e56d5117636a0e2f5bc4"
+    "revision": "84619e61168ff2ed61e0b1989b65c3fe"
   },
   {
     "url": "categories/tips/index.html",
-    "revision": "7460b511ed333f0cede848ee621be93f"
+    "revision": "a3beb85dcb7dc8ca982faab04e2d3c9d"
   },
   {
     "url": "categories/weixin/index.html",
-    "revision": "e9b0841130b894e4a9de33d6f74b7773"
+    "revision": "3d054bbc6b696ed010d77f84f56bdc67"
   },
   {
     "url": "categories/weixin/miniapp/Cookie.html",
-    "revision": "30e3b83753f9193bd97b608c6932155c"
+    "revision": "c77699ccad2d94ae2715866474b51682"
   },
   {
     "url": "categories/weixin/miniapp/Login.html",
-    "revision": "dad48ebeba21a911a79d2628dce95b4f"
+    "revision": "a6e9386bf7390c1b4dbb75b11549fe93"
   },
   {
     "url": "categories/weixin/miniapp/Navigate.html",
-    "revision": "10d144de1d4a7566b3d8f63a160d9fa6"
+    "revision": "2f3d5dd43bd5a7eee83820d073311695"
   },
   {
     "url": "categories/weixin/miniapp/Picker.html",
-    "revision": "f17462d3498a43a715ee77ef9bc722e3"
+    "revision": "8008eca58d6800ac0f3639077448b035"
   },
   {
     "url": "categories/weixin/miniapp/Reference.html",
-    "revision": "d0a024bf98f1d8da81db0db729049e67"
+    "revision": "465ecb7cc9c896476c2ca04c6cc15c56"
   },
   {
     "url": "categories/weixin/miniapp/Route.html",
-    "revision": "949557fa3ef2d4cfabb4a5026fdff2fe"
+    "revision": "1a7bc6aa791277a806f534ca027f121f"
   },
   {
     "url": "categories/weixin/miniapp/Textarea.html",
-    "revision": "ca2f94f9a20dc7f5709770920b91c828"
+    "revision": "50758ea393475020d837f5dd3837d57a"
   },
   {
     "url": "favorite/docs/Collection_Tools.html",
-    "revision": "ab4d21e379cbf346dd4152c8a8cdeecd"
+    "revision": "3dafd95117b8343d89777c39af41d401"
   },
   {
     "url": "favorite/docs/Collection/Common.html",
-    "revision": "699dce78429ac44e3d765f38a10acd23"
+    "revision": "b43c1756e6bc7e0e9be08fa61b65a12a"
   },
   {
     "url": "favorite/docs/Collection/Cross.html",
-    "revision": "f003bfacdff9f429c851707008efacb2"
+    "revision": "8c5bf8d31d4255a0ad0351855c219e7c"
   },
   {
     "url": "favorite/docs/Collection/Entertainment.html",
-    "revision": "b0e6ea8894cc81631ef97599b68d1f4c"
+    "revision": "5e3725befdafedf9d4ccdefd11c0d13a"
   },
   {
     "url": "favorite/docs/Collection/Framework.html",
-    "revision": "77da59f190f04a2dc350a70299341ba8"
+    "revision": "30ae46d4f3bd69b17ebec14855d92c13"
   },
   {
     "url": "favorite/docs/Collection/Frontend.html",
-    "revision": "30d122c064d94c56422ca2818b63b6fc"
+    "revision": "aa5f88b762c64af3963ea7938b9a31ad"
   },
   {
     "url": "favorite/docs/Collection/JAVA.html",
-    "revision": "5af57f954b670b5455d547d8ddf24976"
+    "revision": "e47a942ac0d94ae7c62b4605d8f86858"
   },
   {
     "url": "favorite/docs/Collection/ReactNative.html",
-    "revision": "acc62f338be646f1833ca71605f32cfa"
+    "revision": "801bc38ab79411b8f2f0d9f547c6d3db"
   },
   {
     "url": "favorite/docs/Collection/Services.html",
-    "revision": "2ac6b3b34da5d900870148963848f5a1"
+    "revision": "99582fda4c434a88f1dfeb41c36ffa33"
   },
   {
     "url": "favorite/docs/Collection/System.html",
-    "revision": "0e54387fce731916fc9124977bfa38ee"
+    "revision": "94a0aef6190d7d13d8e92cdc045d8f48"
   },
   {
     "url": "favorite/docs/Collection/Vue.html",
-    "revision": "19cd0b105dfd1fe3246f7c5223201940"
+    "revision": "6a8d8abfc254cec52525bbec35d96fa4"
   },
   {
     "url": "favorite/docs/Plugins_Chrome.html",
-    "revision": "652448d06d6b36a5924ad925f4e95e0d"
+    "revision": "88fec8f7d1d6212add174025ce59fd26"
   },
   {
     "url": "favorite/docs/Plugins_Greasy_Fork.html",
-    "revision": "ad45e102b72986f394b8a31f7c44b1c1"
+    "revision": "52540546d08d4c94b44bd236de9f620e"
   },
   {
     "url": "favorite/docs/Plugins_Markdown_It.html",
-    "revision": "93f951955d4d54a6cfeea762e95f6aab"
+    "revision": "62784702f7732415938e7511583263aa"
   },
   {
     "url": "favorite/docs/Software_Automation.html",
-    "revision": "fc9b706ed37010e06203a0b63dd4c0ca"
+    "revision": "3e454d79bffe6685d73aba5a316cdf65"
   },
   {
     "url": "favorite/docs/Software_Editor.html",
-    "revision": "ff76590880af4133bb88b85e014bcf8f"
+    "revision": "920391132367f42b86a4d27c639234d7"
   },
   {
     "url": "favorite/docs/Software_MacOS.html",
-    "revision": "8ec8317f4c191906b8335664f6d5f616"
+    "revision": "c4052cd8387ef101da4013babdd85097"
   },
   {
     "url": "favorite/docs/Tools/Api_Doc.html",
-    "revision": "7db34cb0b78bc406247099709b06443f"
+    "revision": "884b36faabd07ea01e4fedc6a23d8f88"
   },
   {
     "url": "favorite/docs/Tools/Tools_to_Improve_Efficiency.html",
-    "revision": "4858300d3db1fd9300e023090d4d8420"
+    "revision": "535023c6a068d5a14a3e27313f0d30cd"
   },
   {
     "url": "favorite/index.html",
-    "revision": "baf74f9fac3a11ac613a22d718cb8e65"
+    "revision": "1e989567bf791c5c6b09de777136f985"
   },
   {
     "url": "index.html",
-    "revision": "ea8818ed03e127f9420de72e98f6e9b8"
+    "revision": "0eded8e66d0b89acf1e4c461a6c19da8"
   },
   {
     "url": "logo.png",
@@ -4141,71 +4145,71 @@ self.__precacheManifest = [
   },
   {
     "url": "note/docs/A_Central_Discipline_Life_Science.html",
-    "revision": "f167321f7aaff4095a65737351565879"
+    "revision": "16b309c6fb6ec8e88306496592feda1b"
   },
   {
     "url": "note/docs/Doraemon_Why_JingXiang_Marry_DaXiong.html",
-    "revision": "1074f1c839e7849eb26d474ec5c38b50"
+    "revision": "db270e8d0d11b7141d47e2980e631c5b"
   },
   {
     "url": "note/docs/Luck_is_the_Universal_Passport.html",
-    "revision": "a35066a9a61d81b8dba4408c6fb29edb"
+    "revision": "1e2e176b05b45de4eb4ce44dd7d8497d"
   },
   {
     "url": "note/docs/Play_with_the_Best.html",
-    "revision": "a11ca5459ea1a3f934a231e0fa62e03a"
+    "revision": "7d2e97c10995bd5d0bc57f2a3f3e67f1"
   },
   {
     "url": "note/docs/Predestination.html",
-    "revision": "b040ef6a7cf3fb7653d0a71c5eb536ce"
+    "revision": "670dace4152884d30280dad5bcc02c01"
   },
   {
     "url": "note/docs/Review_Life_3.0.html",
-    "revision": "19fc27853183962be420f8cfa6cd25fc"
+    "revision": "8f835e27f9ec726d11cc454b39c08a4c"
   },
   {
     "url": "note/index.html",
-    "revision": "ebab05da7ebb870979e40a54e1b1c5c2"
+    "revision": "0c4a7dc44e9c310f69c669bda5bf180a"
   },
   {
     "url": "share/docs/20180909.html",
-    "revision": "296aa33d31fde29e6b128d1087eee76d"
+    "revision": "0f451f6666a53c35d55d693c46ecdb6c"
   },
   {
     "url": "share/docs/20181027.html",
-    "revision": "18e5be3d38c3d992f50ddcdf74d8dbf8"
+    "revision": "6f315bd1d13bfda051dcd46abba6254d"
   },
   {
     "url": "share/docs/20181118.html",
-    "revision": "e74de4afcd1c87118e2aecb003faef7b"
+    "revision": "68250c73bb1c94a0b8e043ef40196c34"
   },
   {
     "url": "share/docs/20190404.html",
-    "revision": "0122f5dba3737ceceb307dd975f706f1"
+    "revision": "33fe1c8497963b09734d92737249d9c7"
   },
   {
     "url": "share/index.html",
-    "revision": "8885df76d213e9d604db2e38fb5388b2"
+    "revision": "8f1b8bc8b50bd46774e63c70dffecaa7"
   },
   {
     "url": "single/about_me.html",
-    "revision": "587eb9f17c4f13e65ddb16c20d275a98"
+    "revision": "cf3a2c1e824c84dc58f222caa5c4e2c1"
   },
   {
     "url": "single/all_article.html",
-    "revision": "67266489b87e8b4b8c7aa606494132ec"
+    "revision": "1b80203419cf3b0e683507f5d9392539"
   },
   {
     "url": "single/welcome.html",
-    "revision": "4142671627a5ec1026295269b056f41f"
+    "revision": "4d721930032f301ffd17485c47bc9a94"
   },
   {
     "url": "test/index.html",
-    "revision": "344e5bddca4f3d20388dee5f5869a9b4"
+    "revision": "f3b56758b15f15e241e82b57fb7533ae"
   },
   {
     "url": "test/test.html",
-    "revision": "3c0a6e7bb63f02dde0507fbaf915784b"
+    "revision": "233a7778e1a90724d7b0f1eaa792a717"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
