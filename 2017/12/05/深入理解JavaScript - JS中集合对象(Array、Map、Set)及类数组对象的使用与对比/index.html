@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+
+    
+
+    
+<!-- Baidu Tongji -->
+<script>var _hmt = _hmt || []</script>
+<script async src="//hm.baidu.com/hm.js?3c8be249330224d7c919b4f22750d872"></script>
+<!-- End Baidu Tongji -->
+
+
+
+
+    <meta charset="utf-8">
+    
+    
+    
+    <title>深入理解JavaScript - JS中集合对象(Array、Map、Set)及类数组对象的使用与对比 | 小昱博客 | 勤学如春起之苗，不见其增，日有所长；辍学如磨刀之石，不见其损，日有所亏</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="theme-color" content="#3F51B5">
+    
+    
+    <meta name="keywords" content="ECMAScript">
+    <meta name="description" content="在使用js编程的时候，常常会用到集合对象，集合对象其实是一种泛型，在js中没有明确的规定其内元素的类型，但在强类型语言譬如Java中泛型强制要求指定类型。 ES6引入了iterable类型，Array，Map，Set都属于iterable类型，它们可以使用for…of循环来遍历，都内置forEach方法。  数组遍历普通遍历最简单的一种，也是使用频率最高的一种。 1234let arr = [&apos;">
+<meta name="keywords" content="ECMAScript">
+<meta property="og:type" content="article">
+<meta property="og:title" content="深入理解JavaScript - JS中集合对象(Array、Map、Set)及类数组对象的使用与对比">
+<meta property="og:url" content="http://blog.xiaoyulive.top/2017/12/05/深入理解JavaScript - JS中集合对象(Array、Map、Set)及类数组对象的使用与对比/index.html">
+<meta property="og:site_name" content="小昱博客">
+<meta property="og:description" content="在使用js编程的时候，常常会用到集合对象，集合对象其实是一种泛型，在js中没有明确的规定其内元素的类型，但在强类型语言譬如Java中泛型强制要求指定类型。 ES6引入了iterable类型，Array，Map，Set都属于iterable类型，它们可以使用for…of循环来遍历，都内置forEach方法。  数组遍历普通遍历最简单的一种，也是使用频率最高的一种。 1234let arr = [&apos;">
+<meta property="og:updated_time" content="2017-12-13T02:40:43.521Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="深入理解JavaScript - JS中集合对象(Array、Map、Set)及类数组对象的使用与对比">
+<meta name="twitter:description" content="在使用js编程的时候，常常会用到集合对象，集合对象其实是一种泛型，在js中没有明确的规定其内元素的类型，但在强类型语言譬如Java中泛型强制要求指定类型。 ES6引入了iterable类型，Array，Map，Set都属于iterable类型，它们可以使用for…of循环来遍历，都内置forEach方法。  数组遍历普通遍历最简单的一种，也是使用频率最高的一种。 1234let arr = [&apos;">
+    
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="stylesheet" href="/css/style.css?v=1.6.17">
+    <script>window.lazyScripts=[]</script>
+
+    <!-- custom head -->
+    
+
+    <script src="/js/particles.min.js?v=1.6.17"></script>
+</head>
+
+<body>
+    <div id="loading" class="active"></div>
+
+    <aside id="menu" class="hide" >
+  <div class="inner flex-row-vertical">
+    <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+        <i class="icon icon-lg icon-close"></i>
+    </a>
+    <div class="brand-wrap" style="background-image:url(/img/brand.webp)">
+      <div class="brand">
+        <!-- 头像 -->
+        <a href="/" class="avatar waves-effect waves-circle waves-light">
+          <img src="/img/avatar.jpg">
+        </a>
+        <!-- 简介 -->
+        <hgroup class="introduce">
+          <h5 class="nickname">Quanzaiyu</h5>
+          <a href="mailto:quanzaiyu@outlook.com" title="quanzaiyu@outlook.com" class="mail">quanzaiyu@outlook.com</a>
+          <!-- 链接 -->
+          <div class="iconGroup">
+            
+              <div class="icon">
+                <a  href="https://github.com/quanzaiyu"
+                    target="_blank" 
+                    title="GitHub">
+                  <i class="icon icon-lg icon-github"></i>
+                </a>
+              </div>
+            
+              <div class="icon">
+                <a  href="http://www.weibo.com/quanzaiyu"
+                    target="_blank" 
+                    title="微博">
+                  <i class="icon icon-lg icon-weibo"></i>
+                </a>
+              </div>
+            
+              <div class="icon">
+                <a  href="http://www.jianshu.com/u/2e74d0659da1"
+                    target="_blank" 
+                    title="简书">
+                  <i class="icon icon-lg icon-book"></i>
+                </a>
+              </div>
+            
+          </div>
+        </hgroup>
+      </div>
+    </div>
+    <div class="scroll-wrap flex-col">
+      <ul class="nav">
+        
+            <li class="waves-block waves-effect">
+              <a href="/"  >
+                <i class="icon icon-lg icon-home"></i>
+                主页
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/archives"  >
+                <i class="icon icon-lg icon-archives"></i>
+                归档
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/tags"  >
+                <i class="icon icon-lg icon-tags"></i>
+                标签云
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/categories"  >
+                <i class="icon icon-lg icon-th-list"></i>
+                分类
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/custom"  >
+                <i class="icon icon-lg icon-link"></i>
+                关于我
+              </a>
+            </li>
+        
+      </ul>
+    </div>
+  </div>
+</aside>
+
+    <main id="main">
+        <header class="top-header" id="header">
+    <div class="flex-row">
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">深入理解JavaScript - JS中集合对象(Array、Map、Set)及类数组对象的使用与对比</div>
+        
+        <div class="search-wrap" id="search-wrap">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+                <i class="icon icon-lg icon-chevron-left"></i>
+            </a>
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="输入感兴趣的关键字">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
+                <i class="icon icon-lg icon-search"></i>
+            </a>
+        </div>
+        
+        
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menuShare">
+            <i class="icon icon-lg icon-share-alt"></i>
+        </a>
+        
+    </div>
+</header>
+<header class="content-header post-header">
+
+    <div class="container fade-scale">
+        <h1 class="title">深入理解JavaScript - JS中集合对象(Array、Map、Set)及类数组对象的使用与对比</h1>
+        <h5 class="subtitle">
+            
+                <time datetime="2017-12-05T01:35:46.268Z" itemprop="datePublished" class="page-time">
+  2017-12-05
+</time>
+
+
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/前端开发/">前端开发</a><ul class="article-category-list-child"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/前端开发/深入理解JavaScript/">深入理解JavaScript</a></li></ul></li></ul>
+
+            
+        </h5>
+    </div>
+
+    
+
+
+</header>
+
+
+<div class="container body-wrap">
+    <!-- <div id="canvas-container"></div> -->
+    
+    <aside class="post-widget">
+        <nav class="post-toc-wrap" id="post-toc">
+            <h4>TOC</h4>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#数组"><span class="post-toc-number">1.</span> <span class="post-toc-text">数组</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#遍历"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">遍历</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#普通遍历"><span class="post-toc-number">1.1.1.</span> <span class="post-toc-text">普通遍历</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#for-in"><span class="post-toc-number">1.1.2.</span> <span class="post-toc-text">for-in</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#for-of"><span class="post-toc-number">1.1.3.</span> <span class="post-toc-text">for-of</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#forEach"><span class="post-toc-number">1.1.4.</span> <span class="post-toc-text">forEach</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#map"><span class="post-toc-number">1.1.5.</span> <span class="post-toc-text">map</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#过滤"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">过滤</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#filter"><span class="post-toc-number">1.2.1.</span> <span class="post-toc-text">filter</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#map-1"><span class="post-toc-number">1.2.2.</span> <span class="post-toc-text">map</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#some"><span class="post-toc-number">1.2.3.</span> <span class="post-toc-text">some</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#every"><span class="post-toc-number">1.2.4.</span> <span class="post-toc-text">every</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#排序"><span class="post-toc-number">1.3.</span> <span class="post-toc-text">排序</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#sort自定义排序"><span class="post-toc-number">1.3.1.</span> <span class="post-toc-text">sort自定义排序</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#搜索"><span class="post-toc-number">1.4.</span> <span class="post-toc-text">搜索</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#增删、清空操作"><span class="post-toc-number">1.5.</span> <span class="post-toc-text">增删、清空操作</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#添加元素"><span class="post-toc-number">1.5.1.</span> <span class="post-toc-text">添加元素</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#删除元素"><span class="post-toc-number">1.5.2.</span> <span class="post-toc-text">删除元素</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#清空数组"><span class="post-toc-number">1.5.3.</span> <span class="post-toc-text">清空数组</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#splice"><span class="post-toc-number">1.5.4.</span> <span class="post-toc-text">splice</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#截取、合并与拷贝"><span class="post-toc-number">1.6.</span> <span class="post-toc-text">截取、合并与拷贝</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#Map"><span class="post-toc-number">2.</span> <span class="post-toc-text">Map</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#创建"><span class="post-toc-number">2.1.</span> <span class="post-toc-text">创建</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#基础操作"><span class="post-toc-number">2.2.</span> <span class="post-toc-text">基础操作</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#遍历-1"><span class="post-toc-number">2.3.</span> <span class="post-toc-text">遍历</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#forEach-1"><span class="post-toc-number">2.3.1.</span> <span class="post-toc-text">forEach</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#for-of-1"><span class="post-toc-number">2.3.2.</span> <span class="post-toc-text">for-of</span></a></li></ol></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#Set"><span class="post-toc-number">3.</span> <span class="post-toc-text">Set</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#创建-1"><span class="post-toc-number">3.1.</span> <span class="post-toc-text">创建</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#基础操作-1"><span class="post-toc-number">3.2.</span> <span class="post-toc-text">基础操作</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#遍历-2"><span class="post-toc-number">3.3.</span> <span class="post-toc-text">遍历</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#forEach-2"><span class="post-toc-number">3.3.1.</span> <span class="post-toc-text">forEach</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#for-of-2"><span class="post-toc-number">3.3.2.</span> <span class="post-toc-text">for-of</span></a></li></ol></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#类数组对象"><span class="post-toc-number">4.</span> <span class="post-toc-text">类数组对象</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#遍历-3"><span class="post-toc-number">4.1.</span> <span class="post-toc-text">遍历</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#forEach-3"><span class="post-toc-number">4.1.1.</span> <span class="post-toc-text">forEach</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#map-2"><span class="post-toc-number">4.1.2.</span> <span class="post-toc-text">map</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#增删截取操作"><span class="post-toc-number">4.2.</span> <span class="post-toc-text">增删截取操作</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#String也是一个类数组对象"><span class="post-toc-number">4.3.</span> <span class="post-toc-text">String也是一个类数组对象</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#String也可以使用for-of进行遍历"><span class="post-toc-number">4.3.1.</span> <span class="post-toc-text">String也可以使用for-of进行遍历</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#String独有方法"><span class="post-toc-number">4.3.2.</span> <span class="post-toc-text">String独有方法</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#转换"><span class="post-toc-number">4.3.3.</span> <span class="post-toc-text">转换</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#截取"><span class="post-toc-number">4.3.4.</span> <span class="post-toc-text">截取</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#正则"><span class="post-toc-number">4.3.5.</span> <span class="post-toc-text">正则</span></a></li></ol></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#转化"><span class="post-toc-number">5.</span> <span class="post-toc-text">转化</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Map-gt-Object"><span class="post-toc-number">5.1.</span> <span class="post-toc-text">Map => Object</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Set-gt-Array"><span class="post-toc-number">5.2.</span> <span class="post-toc-text">Set => Array</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Array-gt-String"><span class="post-toc-number">5.3.</span> <span class="post-toc-text">Array => String</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#String-gt-Array"><span class="post-toc-number">5.4.</span> <span class="post-toc-text">String => Array</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#参考资料"><span class="post-toc-number">6.</span> <span class="post-toc-text">参考资料</span></a></li></ol>
+        </nav>
+    </aside>
+    
+<article id="post-深入理解JavaScript - JS中集合对象(Array、Map、Set)及类数组对象的使用与对比"
+  class="post-article article-type-post fade" itemprop="blogPost">
+
+    <div class="post-card">
+        <h1 class="post-card-title">深入理解JavaScript - JS中集合对象(Array、Map、Set)及类数组对象的使用与对比</h1>
+        <div class="post-meta">
+            <time class="post-time" title="2017-12-05 09:35:46" datetime="2017-12-05T01:35:46.268Z"  itemprop="datePublished">2017-12-05</time>
+
+            
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/前端开发/">前端开发</a><ul class="article-category-list-child"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/前端开发/深入理解JavaScript/">深入理解JavaScript</a></li></ul></li></ul>
+
+
+
+            
+<span id="busuanzi_container_page_pv" title="文章总阅读量" style='display:none'>
+    <i class="icon icon-eye icon-pr"></i><span id="busuanzi_value_page_pv"></span>
+</span>
+
+
+        </div>
+        <div class="post-content" id="post-content" itemprop="postContent">
+            <blockquote>
+<p>在使用js编程的时候，常常会用到集合对象，集合对象其实是一种泛型，在js中没有明确的规定其内元素的类型，但在强类型语言譬如Java中泛型强制要求指定类型。</p>
+<p>ES6引入了iterable类型，Array，Map，Set都属于iterable类型，它们可以使用<strong>for…of循环来遍历</strong>，都内置<strong>forEach</strong>方法。</p>
+</blockquote>
+<h1 id="数组"><a href="#数组" class="headerlink" title="数组"></a>数组</h1><h2 id="遍历"><a href="#遍历" class="headerlink" title="遍历"></a>遍历</h2><h3 id="普通遍历"><a href="#普通遍历" class="headerlink" title="普通遍历"></a>普通遍历</h3><p>最简单的一种，也是使用频率最高的一种。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">let</span> arr = [<span class="string">'a'</span>, <span class="string">'b'</span>, <span class="string">'c'</span>, <span class="string">'d'</span>, <span class="string">'e'</span>]</div><div class="line"><span class="keyword">for</span> (<span class="keyword">let</span> i = <span class="number">0</span>; i &lt; arr.length; i++) &#123;</div><div class="line">  <span class="built_in">console</span>.log(i, <span class="string">' =&gt; '</span>, arr[i])</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>优化: 缓存数组长度:</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">let</span> arr = [<span class="string">'a'</span>, <span class="string">'b'</span>, <span class="string">'c'</span>, <span class="string">'d'</span>, <span class="string">'e'</span>]</div><div class="line"><span class="keyword">for</span> (<span class="keyword">let</span> i = <span class="number">0</span>, len = arr.length; i &lt; len; i++) &#123;</div><div class="line">  <span class="built_in">console</span>.log(i, <span class="string">' =&gt; '</span>, arr[i])</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>使用临时变量，将长度缓存起来，避免重复获取数组长度，当数组较大时优化效果才会比较明显。</p>
+<h3 id="for-in"><a href="#for-in" class="headerlink" title="for-in"></a>for-in</h3><blockquote>
+<p>这个循环很多人爱用，但实际上，经分析测试，在众多的循环遍历方式中它的效率是最低的。</p>
+</blockquote>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">let</span> arr = [<span class="string">'a'</span>, <span class="string">'b'</span>, <span class="string">'c'</span>, <span class="string">'d'</span>, <span class="string">'e'</span>]</div><div class="line"><span class="keyword">for</span> (<span class="keyword">let</span> i <span class="keyword">in</span> arr) &#123;</div><div class="line">  <span class="built_in">console</span>.log(i, <span class="string">' =&gt; '</span>, arr[i])</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h3 id="for-of"><a href="#for-of" class="headerlink" title="for-of"></a>for-of</h3><blockquote>
+<p>这种方式是es6里面用到的，性能要好于forin，但仍然比不上普通for循环。</p>
+</blockquote>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">let</span> arr = [<span class="string">'a'</span>, <span class="string">'b'</span>, <span class="string">'c'</span>, <span class="string">'d'</span>, <span class="string">'e'</span>]</div><div class="line"><span class="keyword">let</span> index = <span class="number">0</span></div><div class="line"><span class="keyword">for</span> (<span class="keyword">let</span> item <span class="keyword">of</span> arr) &#123;</div><div class="line">  <span class="built_in">console</span>.log(index++, <span class="string">' =&gt; '</span>, item)</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h3 id="forEach"><a href="#forEach" class="headerlink" title="forEach"></a>forEach</h3><blockquote>
+<p>数组自带的foreach循环，使用频率较高，实际上性能比普通for循环弱。</p>
+</blockquote>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">let</span> arr = [<span class="string">'a'</span>, <span class="string">'b'</span>, <span class="string">'c'</span>, <span class="string">'d'</span>, <span class="string">'e'</span>]</div><div class="line">arr.forEach(<span class="function">(<span class="params">v, k</span>) =&gt;</span> &#123;</div><div class="line">  <span class="built_in">console</span>.log(k, <span class="string">' =&gt; '</span>, v)</div><div class="line">&#125;)</div></pre></td></tr></table></figure>
+<blockquote>
+<p>forEach接受第三个参数，指向原数组，没有返回值，对其进行操作会改变原数组对象</p>
+</blockquote>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">let</span> ary = [<span class="number">12</span>, <span class="number">23</span>, <span class="number">24</span>, <span class="number">42</span>, <span class="number">1</span>]</div><div class="line"><span class="keyword">let</span> res = ary.forEach(<span class="function">(<span class="params">item, index, input</span>) =&gt;</span> &#123;</div><div class="line">   input[index] = item * <span class="number">10</span></div><div class="line">&#125;)</div><div class="line"><span class="built_in">console</span>.log(res) <span class="comment">//--&gt;undefined</span></div><div class="line"><span class="built_in">console</span>.log(ary) <span class="comment">//--&gt;会对原来的数组产生改变</span></div></pre></td></tr></table></figure>
+<p>如果版本低的浏览器不兼容(IE8-)，可以自定义方法实现:</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div></pre></td><td class="code"><pre><div class="line"><span class="comment">/**</span></div><div class="line"><span class="comment">* forEach遍历数组</span></div><div class="line"><span class="comment">* @param callback [function] 回调函数；</span></div><div class="line"><span class="comment">* @param context [object] 上下文；</span></div><div class="line"><span class="comment">*/</span></div><div class="line"><span class="built_in">Array</span>.prototype.myForEach = <span class="function"><span class="keyword">function</span> (<span class="params">callback,context</span>) </span>&#123;</div><div class="line">  context = context || <span class="built_in">window</span>;</div><div class="line">  <span class="keyword">if</span>(<span class="string">'forEach'</span> <span class="keyword">in</span> <span class="built_in">Array</span>.prototype) &#123;</div><div class="line">    <span class="keyword">this</span>.forEach(callback,context)</div><div class="line">    <span class="keyword">return</span></div><div class="line">  &#125;</div><div class="line">  <span class="comment">// IE6-8下自己编写回调函数执行的逻辑</span></div><div class="line">  <span class="keyword">for</span>(<span class="keyword">let</span> i = <span class="number">0</span>,len = <span class="keyword">this</span>.length; i &lt; len; i++) &#123;</div><div class="line">    callback &amp;&amp; callback.call(context, <span class="keyword">this</span>[i], i, <span class="keyword">this</span>)</div><div class="line">  &#125;</div><div class="line">&#125;</div><div class="line"><span class="keyword">let</span> arr = [<span class="number">12</span>, <span class="number">23</span>, <span class="number">24</span>, <span class="number">42</span>, <span class="number">1</span>]</div><div class="line">arr.myForEach(<span class="function">(<span class="params">v, k</span>) =&gt;</span> &#123;</div><div class="line">  <span class="built_in">console</span>.log(k, <span class="string">' =&gt; '</span>, v)</div><div class="line">&#125;)</div></pre></td></tr></table></figure>
+<h3 id="map"><a href="#map" class="headerlink" title="map"></a>map</h3><blockquote>
+<p>map会返回一个全新的数组，同样接受第三个参数，如果对其进行操作会改变原数组。</p>
+</blockquote>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">let</span> ary = [<span class="number">12</span>, <span class="number">23</span>, <span class="number">24</span>, <span class="number">42</span>, <span class="number">1</span>]</div><div class="line"><span class="keyword">let</span> res = ary.map(<span class="function">(<span class="params">item, index, input</span>) =&gt;</span> &#123;</div><div class="line">   <span class="keyword">return</span> item * <span class="number">10</span></div><div class="line">&#125;)</div><div class="line"><span class="built_in">console</span>.log(res) <span class="comment">//--&gt;[120,230,240,420,10]</span></div><div class="line"><span class="built_in">console</span>.log(ary) <span class="comment">//--&gt;[12,23,24,42,1]</span></div></pre></td></tr></table></figure>
+<p>如果版本低的浏览器不兼容(IE8-)，可以自定义方法实现:</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div></pre></td><td class="code"><pre><div class="line"><span class="comment">/**</span></div><div class="line"><span class="comment">* map遍历数组</span></div><div class="line"><span class="comment">* @param callback [function] 回调函数；</span></div><div class="line"><span class="comment">* @param context [object] 上下文；</span></div><div class="line"><span class="comment">*/</span></div><div class="line"><span class="built_in">Array</span>.prototype.myMap = <span class="function"><span class="keyword">function</span> <span class="title">myMap</span>(<span class="params">callback,context</span>)</span>&#123;</div><div class="line">  context = context || <span class="built_in">window</span></div><div class="line">  <span class="keyword">if</span>(<span class="string">'map'</span> <span class="keyword">in</span> <span class="built_in">Array</span>.prototype) &#123;</div><div class="line">    <span class="keyword">return</span> <span class="keyword">this</span>.map(callback, context)</div><div class="line">  &#125;</div><div class="line">  <span class="comment">//IE6-8下自己编写回调函数执行的逻辑</span></div><div class="line">  <span class="keyword">let</span> newAry = []</div><div class="line">  <span class="keyword">for</span>(<span class="keyword">var</span> i = <span class="number">0</span>,len = <span class="keyword">this</span>.length; i &lt; len; i++) &#123;</div><div class="line">    <span class="keyword">if</span>(<span class="keyword">typeof</span> callback === <span class="string">'function'</span>) &#123;</div><div class="line">      <span class="keyword">var</span> val = callback.call(context, <span class="keyword">this</span>[i], i, <span class="keyword">this</span>)</div><div class="line">      newAry[newAry.length] = val</div><div class="line">    &#125;</div><div class="line">  &#125;</div><div class="line">  <span class="keyword">return</span> newAry</div><div class="line">&#125;</div><div class="line">arr.myMap(<span class="function">(<span class="params">v, k</span>) =&gt;</span> &#123;</div><div class="line">  <span class="built_in">console</span>.log(k, <span class="string">' =&gt; '</span>, v)</div><div class="line">&#125;)</div></pre></td></tr></table></figure>
+<h2 id="过滤"><a href="#过滤" class="headerlink" title="过滤"></a>过滤</h2><h3 id="filter"><a href="#filter" class="headerlink" title="filter"></a>filter</h3><blockquote>
+<p>对数组中的每个元素都执行一次指定的函数（callback），并且创建一个新的数组，该数组元素是所有回调函数执行时返回值为 true 的原数组元素。它只对数组中的非空元素执行指定的函数，没有赋值或者已经删除的元素将被忽略，同时，新创建的数组也不会包含这些元素。</p>
+</blockquote>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">let</span> arr = [<span class="number">12</span>, <span class="number">5</span>, <span class="number">8</span>, <span class="number">130</span>, <span class="number">44</span>]</div><div class="line"><span class="keyword">let</span> ret = arr.filter(<span class="function">(<span class="params">el, index, array</span>) =&gt;</span> &#123;</div><div class="line">  <span class="keyword">return</span> el &gt; <span class="number">10</span></div><div class="line">&#125;)</div><div class="line"><span class="built_in">console</span>.log(ret) <span class="comment">// [12, 130, 44]</span></div></pre></td></tr></table></figure>
+<h3 id="map-1"><a href="#map-1" class="headerlink" title="map"></a>map</h3><blockquote>
+<p>map也可以作为过滤器使用，不过返回的是对原数组每项元素进行操作变换后的数组，而不是每项元素返回为true的元素集合。</p>
+</blockquote>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">let</span> strings = [<span class="string">"hello"</span>, <span class="string">"Array"</span>, <span class="string">"WORLD"</span>]</div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">makeUpperCase</span>(<span class="params">v</span>) </span>&#123;</div><div class="line">  <span class="keyword">return</span> v.toUpperCase()</div><div class="line">&#125;</div><div class="line"><span class="keyword">let</span> uppers = strings.map(makeUpperCase)</div><div class="line"><span class="built_in">console</span>.log(uppers) <span class="comment">// ["HELLO", "ARRAY", "WORLD"]</span></div></pre></td></tr></table></figure>
+<h3 id="some"><a href="#some" class="headerlink" title="some"></a>some</h3><blockquote>
+<p>对数组中的每个元素都执行一次指定的函数（callback），直到此函数返回 true，如果发现这个元素，some 将返回 true，如果回调函数对每个元素执行后都返回 false ，some 将返回 false。它只对数组中的非空元素执行指定的函数，没有赋值或者已经删除的元素将被忽略。</p>
+</blockquote>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// 检查是否有数组元素大于等于10：</span></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">isBigEnough</span>(<span class="params">element, index, array</span>) </span>&#123;</div><div class="line">  <span class="keyword">return</span> (element &gt;= <span class="number">10</span>)</div><div class="line">&#125;</div><div class="line"><span class="keyword">let</span> passed1 = [<span class="number">2</span>, <span class="number">5</span>, <span class="number">8</span>, <span class="number">1</span>, <span class="number">4</span>].some(isBigEnough) <span class="comment">// passed1 is false</span></div><div class="line"><span class="keyword">let</span> passed2 = [<span class="number">12</span>, <span class="number">5</span>, <span class="number">8</span>, <span class="number">1</span>, <span class="number">4</span>].some(isBigEnough) <span class="comment">// passed2 is true</span></div></pre></td></tr></table></figure>
+<h3 id="every"><a href="#every" class="headerlink" title="every"></a>every</h3><blockquote>
+<p>对数组中的每个元素都执行一次指定的函数（callback），直到此函数返回 false，如果发现这个元素，every 将返回 false，如果回调函数对每个元素执行后都返回 true ，every 将返回 true。它只对数组中的非空元素执行指定的函数，没有赋值或者已经删除的元素将被忽略。</p>
+</blockquote>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// 测试是否所有数组元素都大于等于10：</span></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">isBigEnough</span>(<span class="params">element, index, array</span>) </span>&#123;</div><div class="line">  <span class="keyword">return</span> (element &gt;= <span class="number">10</span>)</div><div class="line">&#125;</div><div class="line"><span class="keyword">let</span> passed1 = [<span class="number">12</span>, <span class="number">5</span>, <span class="number">8</span>, <span class="number">1</span>, <span class="number">4</span>].every(isBigEnough) <span class="comment">// passed1 is false</span></div><div class="line"><span class="keyword">let</span> passed2 = [<span class="number">12</span>, <span class="number">15</span>, <span class="number">18</span>, <span class="number">11</span>, <span class="number">14</span>].every(isBigEnough) <span class="comment">// passed2 is true</span></div></pre></td></tr></table></figure>
+<h2 id="排序"><a href="#排序" class="headerlink" title="排序"></a>排序</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">let</span> arr = [<span class="string">'a'</span>, <span class="number">1</span>, <span class="string">'b'</span>, <span class="number">3</span>, <span class="string">'c'</span>, <span class="number">2</span>, <span class="string">'d'</span>, <span class="string">'e'</span>]</div><div class="line"><span class="built_in">console</span>.log(arr) <span class="comment">// ["a", 1, "b", 3, "c", 2, "d", "e"]</span></div><div class="line"><span class="built_in">console</span>.log(arr.reverse()) <span class="comment">// 反转元素(改变原数组) // ["e", "d", 2, "c", 3, "b", 1, "a"]</span></div><div class="line"><span class="built_in">console</span>.log(arr.sort()) <span class="comment">// 对数组元素排序(改变原数组) // [1, 2, 3, "a", "b", "c", "d", "e"]</span></div><div class="line"><span class="built_in">console</span>.log(arr) <span class="comment">// [1, 2, 3, "a", "b", "c", "d", "e"]</span></div></pre></td></tr></table></figure>
+<h3 id="sort自定义排序"><a href="#sort自定义排序" class="headerlink" title="sort自定义排序"></a>sort自定义排序</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">let</span> arr = [<span class="number">1</span>, <span class="number">100</span>, <span class="number">52</span>, <span class="number">6</span>, <span class="number">88</span>, <span class="number">99</span>]</div><div class="line"><span class="keyword">let</span> arr1 = arr.sort(<span class="function">(<span class="params">a, b</span>) =&gt;</span> a-b) <span class="comment">// 从小到大排序</span></div><div class="line"><span class="built_in">console</span>.log(arr1) <span class="comment">// [1, 6, 52, 88, 99, 100]</span></div><div class="line"><span class="keyword">let</span> arr2 = arr.sort(<span class="function">(<span class="params">a, b</span>) =&gt;</span> b-a) <span class="comment">// 从大到小排序</span></div><div class="line"><span class="built_in">console</span>.log(arr2) <span class="comment">// [100, 99, 88, 52, 6, 1]</span></div><div class="line"><span class="built_in">console</span>.log(arr) <span class="comment">// 原数组也发生改变</span></div></pre></td></tr></table></figure>
+<h2 id="搜索"><a href="#搜索" class="headerlink" title="搜索"></a>搜索</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">let</span> arr = [<span class="number">12</span>, <span class="number">5</span>, <span class="number">4</span>, <span class="number">8</span>, <span class="number">1</span>, <span class="number">4</span>]</div><div class="line">arr.indexOf(<span class="number">4</span>) <span class="comment">// 2，从前往后搜索，返回第一次搜索到的数组下标，搜索不到返回-1</span></div><div class="line">arr.lastIndexOf(<span class="number">4</span>) <span class="comment">// 5，从后往前搜索，返回第一次搜索到的数组下标，搜索不到返回-1</span></div><div class="line">arr.indexOf(<span class="number">0</span>) <span class="comment">// -1</span></div></pre></td></tr></table></figure>
+<h2 id="增删、清空操作"><a href="#增删、清空操作" class="headerlink" title="增删、清空操作"></a>增删、清空操作</h2><h3 id="添加元素"><a href="#添加元素" class="headerlink" title="添加元素"></a>添加元素</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">let</span> arr = [<span class="string">'a'</span>, <span class="string">'b'</span>, <span class="string">'c'</span>, <span class="string">'d'</span>, <span class="string">'e'</span>]</div><div class="line">arr.push(<span class="number">10</span>, <span class="number">11</span>) <span class="comment">// 模仿栈进行操作，往数组末尾添加一个或多个元素(改变原数组)</span></div><div class="line">arr.unshift(<span class="number">0</span>, <span class="number">1</span>) <span class="comment">// 模仿队列进行操作，往数组前端添加一个或多个元素(改变原数组)</span></div><div class="line"><span class="built_in">console</span>.log(arr) <span class="comment">// [0, 1, "a", "b", 'c', "d", "e", 10, 11]</span></div></pre></td></tr></table></figure>
+<h3 id="删除元素"><a href="#删除元素" class="headerlink" title="删除元素"></a>删除元素</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">arr.pop() <span class="comment">// 移除最后一个元素并返回该元素值(改变原数组)</span></div><div class="line">arr.shift() <span class="comment">// 移除最前一个元素并返回该元素值，数组中元素自动前移(改变原数组)</span></div><div class="line"><span class="built_in">console</span>.log(arr) <span class="comment">// ["b", "c", "d"]</span></div></pre></td></tr></table></figure>
+<h3 id="清空数组"><a href="#清空数组" class="headerlink" title="清空数组"></a>清空数组</h3><blockquote>
+<p>将数组的length设置为0即可</p>
+</blockquote>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">let</span> arr = [<span class="string">'a'</span>, <span class="number">1</span>, <span class="string">'b'</span>, <span class="number">3</span>, <span class="string">'c'</span>, <span class="number">2</span>, <span class="string">'d'</span>, <span class="string">'e'</span>]</div><div class="line">arr.length = <span class="number">0</span></div></pre></td></tr></table></figure>
+<blockquote>
+<p>length详解:</p>
+<ul>
+<li>因为数组的索引总是由0开始，所以一个数组的上下限分别是：0和length-1；</li>
+</ul>
+<ul>
+<li>当length属性被设置得更大时，整个数组的状态事实上不会发生变化，仅仅是length属性变大；</li>
+<li>当length属性被设置得比原来小时，则原先数组中索引大于或等于length的元素的值全部被丢失。</li>
+</ul>
+</blockquote>
+<h3 id="splice"><a href="#splice" class="headerlink" title="splice"></a>splice</h3><blockquote>
+<p>既可以删除也可以添加元素</p>
+</blockquote>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">let</span> arr = [<span class="string">'a'</span>, <span class="string">'b'</span>, <span class="string">'c'</span>, <span class="string">'d'</span>, <span class="string">'e'</span>]</div><div class="line">arr.splice(<span class="number">2</span>, <span class="number">1</span>, <span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>)</div><div class="line"><span class="built_in">console</span>.log(arr) <span class="comment">// ["a", "b", 1, 2, 3, "d", "e"]</span></div></pre></td></tr></table></figure>
+<blockquote>
+<p><strong>splice(start, len, elems)</strong> : 删除并添加元素(改变原数组)</p>
+<ul>
+<li>start: 起始位置</li>
+<li>len: 删除元素的长度</li>
+<li>elems: 添加的元素队列<ul>
+<li>几种形式:</li>
+<li><strong>splice(start, 0, elems)</strong> : 从start位置添加元素</li>
+<li><strong>splice(start, len)</strong> : 从start位置删除len个元素</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<h2 id="截取、合并与拷贝"><a href="#截取、合并与拷贝" class="headerlink" title="截取、合并与拷贝"></a>截取、合并与拷贝</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">let</span> arr = [<span class="string">'a'</span>, <span class="string">'b'</span>, <span class="string">'c'</span>, <span class="string">'d'</span>, <span class="string">'e'</span>]</div><div class="line"><span class="keyword">let</span> arr1 = arr.slice(<span class="number">1</span>, <span class="number">2</span>) <span class="comment">// 以数组的形式返回数组的一部分，注意不包括 end 对应的元素，如果省略 end 将复制 start 之后的所有元素(返回新数组)</span></div><div class="line"><span class="keyword">let</span> arr2 = arr.concat([<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>]); <span class="comment">// 将多个数组（也可以是字符串，或者是数组和字符串的混合）连接为一个数组(返回新数组)</span></div><div class="line"><span class="built_in">console</span>.log(arr) <span class="comment">// ["a", "b", "c", "d", "e"]</span></div><div class="line"><span class="built_in">console</span>.log(arr1) <span class="comment">// ["b"]</span></div><div class="line"><span class="built_in">console</span>.log(arr2) <span class="comment">// ["a", "b", "c", "d", "e", 1, 2, 3]</span></div></pre></td></tr></table></figure>
+<blockquote>
+<p>其实<code>slice</code>和<code>concat</code>也可以作为数组的拷贝方法:</p>
+</blockquote>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">arr.slice(<span class="number">0</span>) <span class="comment">// 返回数组的拷贝数组，注意是一个新的数组，不是指向</span></div><div class="line">arr.concat() <span class="comment">// 返回数组的拷贝数组，注意是一个新的数组，不是指向</span></div></pre></td></tr></table></figure>
+<h1 id="Map"><a href="#Map" class="headerlink" title="Map"></a>Map</h1><blockquote>
+<p>Map是一组键值对的结构，具有极快的查找速度。</p>
+</blockquote>
+<h2 id="创建"><a href="#创建" class="headerlink" title="创建"></a>创建</h2><p>方法一: 创建的时候初始化</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">let</span> mapObj = <span class="keyword">new</span> <span class="built_in">Map</span>([</div><div class="line">  [<span class="string">'a'</span>, <span class="number">1</span>],</div><div class="line">  [<span class="string">'b'</span>, <span class="number">2</span>],</div><div class="line">  [<span class="string">'c'</span>, <span class="number">3</span>]</div><div class="line">])</div><div class="line"><span class="built_in">console</span>.log(mapObj.size) <span class="comment">// 3</span></div></pre></td></tr></table></figure>
+<p>方法二: 创建空Map，之后添加元素</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">let</span> mapObj = <span class="keyword">new</span> <span class="built_in">Map</span>()</div><div class="line">mapObj.set(<span class="string">'a'</span>, <span class="number">1</span>)</div><div class="line">mapObj.set(<span class="string">'b'</span>, <span class="number">2</span>)</div><div class="line">mapObj.set(<span class="string">'c'</span>, <span class="number">3</span>)</div><div class="line"><span class="built_in">console</span>.log(mapObj.size) <span class="comment">// 3</span></div></pre></td></tr></table></figure>
+<blockquote>
+<p>注意: Map对象的长度不是length，而是size</p>
+</blockquote>
+<h2 id="基础操作"><a href="#基础操作" class="headerlink" title="基础操作"></a>基础操作</h2><p>Map对象的创建、添加元素、删除元素…</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">mapObj.set(<span class="string">'a'</span>, <span class="number">1</span>) <span class="comment">// 添加元素</span></div><div class="line">mapObj.delete(<span class="string">'d'</span>) <span class="comment">// 删除指定元素</span></div><div class="line">mapObj.has(<span class="string">'a'</span>) <span class="comment">// true</span></div><div class="line">mapObj.get(<span class="string">'a'</span>) <span class="comment">// 1</span></div></pre></td></tr></table></figure>
+<h2 id="遍历-1"><a href="#遍历-1" class="headerlink" title="遍历"></a>遍历</h2><p>使用上面创建的Map进行操作</p>
+<h3 id="forEach-1"><a href="#forEach-1" class="headerlink" title="forEach"></a>forEach</h3><blockquote>
+<p>同数组的forEach遍历，三个参数分别代表: value、key、map本身</p>
+</blockquote>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">mapObj.forEach(<span class="function">(<span class="params">e, index, self</span>) =&gt;</span> &#123;</div><div class="line">  <span class="built_in">console</span>.log(index, <span class="string">' =&gt; '</span>, e)</div><div class="line">&#125;)</div></pre></td></tr></table></figure>
+<p>打印出:</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">a  =&gt;  <span class="number">1</span></div><div class="line">b  =&gt;  <span class="number">2</span></div><div class="line">c  =&gt;  <span class="number">3</span></div></pre></td></tr></table></figure>
+<h3 id="for-of-1"><a href="#for-of-1" class="headerlink" title="for-of"></a>for-of</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">for</span> (<span class="keyword">const</span> e <span class="keyword">of</span> mapObj) &#123;</div><div class="line">  <span class="built_in">console</span>.log(e)</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>打印出:</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">[<span class="string">"a"</span>, <span class="number">1</span>]</div><div class="line">[<span class="string">"b"</span>, <span class="number">2</span>]</div><div class="line">[<span class="string">"c"</span>, <span class="number">3</span>]</div></pre></td></tr></table></figure>
+<blockquote>
+<p>注意: for-of遍历出来的是一个数组，其中e[0]为key，e[1]为value</p>
+</blockquote>
+<h1 id="Set"><a href="#Set" class="headerlink" title="Set"></a>Set</h1><blockquote>
+<p>Set和Map类似，但set只存储key，且key不重复。</p>
+</blockquote>
+<h2 id="创建-1"><a href="#创建-1" class="headerlink" title="创建"></a>创建</h2><p>方法一: 创建的时候初始化</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">let</span> setObj = <span class="keyword">new</span> <span class="built_in">Set</span>([<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>])</div><div class="line"><span class="built_in">console</span>.log(setObj.size)</div></pre></td></tr></table></figure>
+<p>方法二: 创建空Map，之后添加元素</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">let</span> setObj = <span class="keyword">new</span> <span class="built_in">Set</span>()</div><div class="line">setObj.add(<span class="number">1</span>)</div><div class="line">setObj.add(<span class="number">2</span>)</div><div class="line">setObj.add(<span class="number">3</span>)</div><div class="line"><span class="built_in">console</span>.log(setObj.size)</div></pre></td></tr></table></figure>
+<blockquote>
+<p>注意: Map对象的长度不是length，而是size</p>
+</blockquote>
+<h2 id="基础操作-1"><a href="#基础操作-1" class="headerlink" title="基础操作"></a>基础操作</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">let</span> s = <span class="keyword">new</span> <span class="built_in">Set</span>([<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>])</div><div class="line">s.add(<span class="number">3</span>) <span class="comment">// 由于key重复，添加不进</span></div><div class="line">s.delete(<span class="number">3</span>) <span class="comment">// 删除指定key</span></div><div class="line"><span class="built_in">console</span>.log(s) <span class="comment">// 1 2</span></div></pre></td></tr></table></figure>
+<h2 id="遍历-2"><a href="#遍历-2" class="headerlink" title="遍历"></a>遍历</h2><p>使用上面创建的Set进行操作</p>
+<h3 id="forEach-2"><a href="#forEach-2" class="headerlink" title="forEach"></a>forEach</h3><blockquote>
+<p>Set与Array类似，但Set没有索引，因此回调函数的前两个参数都是元素本身</p>
+</blockquote>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">s1.forEach(<span class="function"><span class="keyword">function</span> (<span class="params">element, sameElement, set</span>) </span>&#123;</div><div class="line">  <span class="built_in">console</span>.log(element) <span class="comment">// element === sameElement</span></div><div class="line">&#125;)</div><div class="line"><span class="comment">// 打印 1 2 3</span></div></pre></td></tr></table></figure>
+<h3 id="for-of-2"><a href="#for-of-2" class="headerlink" title="for-of"></a>for-of</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">for</span> (<span class="keyword">const</span> item <span class="keyword">of</span> s1) &#123;</div><div class="line">  <span class="built_in">console</span>.log(item)</div><div class="line">&#125;</div><div class="line"><span class="comment">// 打印 1 2 3</span></div></pre></td></tr></table></figure>
+<h1 id="类数组对象"><a href="#类数组对象" class="headerlink" title="类数组对象"></a>类数组对象</h1><p>JavaScript中，数组是一个特殊的对象，其property名为正整数，且其length属性会随着数组成员的增减而发生变化，同时又从Array构造函数中继承了一些用于进行数组操作的方法。而对于一个普通的对象来说:</p>
+<blockquote>
+<p>如果它的所有property名均为正整数，同时也有相应的length属性，那么虽然该对象并不是由Array构造函数所创建的，它依然呈现出数组的行为，在这种情况下，这些对象被称为“类数组对象”。</p>
+</blockquote>
+<p>形如:</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">let</span> obj = &#123;</div><div class="line">  <span class="number">0</span>: <span class="string">'qzy'</span>,</div><div class="line">  <span class="number">1</span>: <span class="number">22</span>,</div><div class="line">  <span class="number">2</span>: <span class="literal">false</span>,</div><div class="line">  length: <span class="number">3</span></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>类数组对象可以使用Array对象原生方法进行操作。</p>
+<h2 id="遍历-3"><a href="#遍历-3" class="headerlink" title="遍历"></a>遍历</h2><p>沿用上述对象进行操作</p>
+<h3 id="forEach-3"><a href="#forEach-3" class="headerlink" title="forEach"></a>forEach</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">Array</span>.prototype.forEach.call(obj, <span class="function"><span class="keyword">function</span>(<span class="params">el, index</span>)</span>&#123;  </div><div class="line">   <span class="built_in">console</span>.log(index, <span class="string">' =&gt; '</span>, el)</div><div class="line">&#125;)</div></pre></td></tr></table></figure>
+<h3 id="map-2"><a href="#map-2" class="headerlink" title="map"></a>map</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">Array</span>.prototype.map.call(obj, <span class="function"><span class="keyword">function</span>(<span class="params">el, index</span>)</span>&#123;  </div><div class="line">   <span class="built_in">console</span>.log(index, <span class="string">' =&gt; '</span>, el)</div><div class="line">&#125;)</div></pre></td></tr></table></figure>
+<blockquote>
+<p>注意: 类数组对象不支持使用for-of进行遍历，否则会报错: [Symbol.iterator] is not a function</p>
+</blockquote>
+<h2 id="增删截取操作"><a href="#增删截取操作" class="headerlink" title="增删截取操作"></a>增删截取操作</h2><p>沿用上述对象进行操作</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">Array</span>.prototype.join.call(obj, <span class="string">'-'</span>) <span class="comment">// qzy-22-false</span></div><div class="line"><span class="built_in">Array</span>.prototype.slice.call(obj, <span class="number">1</span>, <span class="number">2</span>) <span class="comment">// [22]</span></div><div class="line"><span class="built_in">Array</span>.prototype.push.call(obj, <span class="number">5</span>) <span class="comment">// Object &#123;0: "qzy", 1: 22, 2: false, 3: 5, length: 4&#125;</span></div></pre></td></tr></table></figure>
+<h2 id="String也是一个类数组对象"><a href="#String也是一个类数组对象" class="headerlink" title="String也是一个类数组对象"></a>String也是一个类数组对象</h2><p>由于字符串对象也存在length，且序号从0开始增加，因此字符串也可以看做一个只读的类数组对象，这意味着String对象可以使用Array的所有原型方法。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">let</span> str = <span class="string">'hello world'</span></div><div class="line"><span class="built_in">console</span>.log(<span class="built_in">Array</span>.prototype.slice.call(str, <span class="number">0</span>, <span class="number">5</span>)) <span class="comment">// ["h", "e", "l", "l", "o"]</span></div></pre></td></tr></table></figure>
+<h3 id="String也可以使用for-of进行遍历"><a href="#String也可以使用for-of进行遍历" class="headerlink" title="String也可以使用for-of进行遍历"></a>String也可以使用for-of进行遍历</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">let</span> str = <span class="string">'hello world'</span></div><div class="line"><span class="keyword">for</span> (<span class="keyword">const</span> s <span class="keyword">of</span> str) &#123;</div><div class="line">  <span class="built_in">console</span>.log(s)</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h3 id="String独有方法"><a href="#String独有方法" class="headerlink" title="String独有方法"></a>String独有方法</h3><p>除了使用Array原型对象的方法，String还包含其他一些自己独有的方法:</p>
+<p><strong>与Array使用方法相同的方法</strong> </p>
+<p>搜索: indexOf()、lastIndexOf()、concat()</p>
+<h3 id="转换"><a href="#转换" class="headerlink" title="转换"></a>转换</h3><p>toLowerCase()、toUpperCase()</p>
+<h3 id="截取"><a href="#截取" class="headerlink" title="截取"></a>截取</h3><p>substr(start, len)</p>
+<p>substring(start, end)</p>
+<p>slice(start, end)</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">let</span> str = <span class="string">'hello world'</span></div><div class="line"><span class="keyword">let</span> ret1 = str.substr(<span class="number">6</span>, <span class="number">5</span>) <span class="comment">// "world"</span></div><div class="line"><span class="keyword">let</span> ret2 = str.substring(<span class="number">6</span>, <span class="number">11</span>) <span class="comment">// "world"</span></div><div class="line"><span class="keyword">let</span> ret3 = str.slice(<span class="number">3</span>, <span class="number">8</span>) <span class="comment">// "lo wo"</span></div></pre></td></tr></table></figure>
+<blockquote>
+<p>substring 是以两个参数中较小一个作为起始位置，较大的参数作为结束位置。</p>
+<p>slice 是第一参数为起始位置，第二参数为结束位置，如果结束位置小于起始位置返回空字符串</p>
+</blockquote>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">console</span>.log(str.substring(<span class="number">11</span>, <span class="number">6</span>) === str.substring(<span class="number">6</span>, <span class="number">11</span>)) <span class="comment">// true</span></div></pre></td></tr></table></figure>
+<blockquote>
+<p>接收负数为参数时:</p>
+<ul>
+<li>slice会将它字符串的长度与对应的负数相加，结果作为参数；</li>
+<li>substr则仅仅是将第一个参数与字符串长度相加后的结果作为第一个参数；</li>
+<li>substring则干脆将负参数都直接转换为0。</li>
+</ul>
+</blockquote>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">let</span> str = <span class="string">'hello world'</span></div><div class="line"><span class="keyword">let</span> ret1 = str.substr(<span class="number">-5</span>) <span class="comment">// "world"</span></div><div class="line"><span class="keyword">let</span> ret2 = str.substr(<span class="number">-5</span>, <span class="number">3</span>) <span class="comment">// "wor"</span></div><div class="line"><span class="keyword">let</span> ret3 = str.substring(<span class="number">6</span>, <span class="number">-1</span>) <span class="comment">// "hello"</span></div><div class="line"><span class="keyword">let</span> ret4 = str.slice(<span class="number">6</span>, <span class="number">-1</span>) <span class="comment">// "worl"</span></div><div class="line"></div><div class="line"><span class="built_in">console</span>.log(ret1 === str.substr(str.length - <span class="number">5</span>)) <span class="comment">// true</span></div><div class="line"><span class="built_in">console</span>.log(ret2 === str.substr(str.length - <span class="number">5</span>, <span class="number">3</span>)) <span class="comment">// true</span></div><div class="line"><span class="built_in">console</span>.log(ret3 === str.substring(<span class="number">6</span>, <span class="number">0</span>)) <span class="comment">// true</span></div><div class="line"><span class="built_in">console</span>.log(ret4 === str.slice(<span class="number">6</span>, str.length - <span class="number">1</span>)) <span class="comment">// true</span></div></pre></td></tr></table></figure>
+<h3 id="正则"><a href="#正则" class="headerlink" title="正则"></a>正则</h3><ul>
+<li>match()</li>
+<li>replace()</li>
+<li>search()</li>
+<li>split()</li>
+</ul>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">let</span> str = <span class="string">'hello world'</span></div><div class="line"><span class="keyword">let</span> ret0 = str.match(<span class="regexp">/r/</span>) <span class="comment">// 非全局搜索，返回匹配的第一个字符串数组(length为1)，包括index和input</span></div><div class="line"><span class="keyword">let</span> ret1 = str.match(<span class="regexp">/o/g</span>) <span class="comment">// 全局搜索，返回匹配的字符串数组，length为搜索到的匹配正则表达式的长度</span></div><div class="line"><span class="keyword">let</span> ret2 = str.replace(<span class="regexp">/o/g</span>, <span class="string">'e'</span>) <span class="comment">// 全局替换</span></div><div class="line"><span class="keyword">let</span> ret3 = str.replace(<span class="regexp">/O/i</span>, <span class="string">'e'</span>) <span class="comment">// 不区分大小写，只替换搜索到的第一个字串</span></div><div class="line"><span class="keyword">let</span> ret4 = str.search(<span class="regexp">/l/</span>) <span class="comment">// 返回搜索到的第一个匹配字串的索引</span></div><div class="line"><span class="keyword">let</span> ret5 = str.search(<span class="regexp">/l/g</span>) <span class="comment">// 全局无效，同上</span></div><div class="line"><span class="keyword">let</span> ret6 = str.split(<span class="regexp">/o|l/</span>)</div><div class="line"></div><div class="line"><span class="built_in">console</span>.log(ret0) <span class="comment">// ["r", index: 8, input: "hello world"]</span></div><div class="line"><span class="built_in">console</span>.log(ret1) <span class="comment">// ["o", "o"]</span></div><div class="line"><span class="built_in">console</span>.log(ret2) <span class="comment">// "helle werld"</span></div><div class="line"><span class="built_in">console</span>.log(ret3) <span class="comment">// "helle world"</span></div><div class="line"><span class="built_in">console</span>.log(ret4) <span class="comment">// 2</span></div><div class="line"><span class="built_in">console</span>.log(ret5) <span class="comment">// 2</span></div><div class="line"><span class="built_in">console</span>.log(ret6) <span class="comment">// ["he", "", "", " w", "r", "d"]</span></div><div class="line"><span class="built_in">console</span>.log(str) <span class="comment">// 不改变源字符串 'hello world'</span></div></pre></td></tr></table></figure>
+<h1 id="转化"><a href="#转化" class="headerlink" title="转化"></a>转化</h1><h2 id="Map-gt-Object"><a href="#Map-gt-Object" class="headerlink" title="Map =&gt; Object"></a>Map =&gt; Object</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">let</span> mapObj = <span class="keyword">new</span> <span class="built_in">Map</span>([ [<span class="string">'a'</span>, <span class="number">1</span>], [<span class="string">'b'</span>, <span class="number">2</span>], [<span class="string">'c'</span>, <span class="number">3</span>] ])</div><div class="line"></div><div class="line"><span class="keyword">let</span> obj = &#123;&#125;</div><div class="line"><span class="keyword">for</span> (<span class="keyword">const</span> item <span class="keyword">of</span> mapObj) &#123;</div><div class="line">  obj[item[<span class="number">0</span>]] = item[<span class="number">1</span>]</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="built_in">console</span>.log(obj)</div></pre></td></tr></table></figure>
+<h2 id="Set-gt-Array"><a href="#Set-gt-Array" class="headerlink" title="Set =&gt; Array"></a>Set =&gt; Array</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">let</span> setObj = <span class="keyword">new</span> <span class="built_in">Set</span>([<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>])</div><div class="line"></div><div class="line"><span class="keyword">let</span> arr = []</div><div class="line"><span class="keyword">for</span> (<span class="keyword">const</span> item <span class="keyword">of</span> setObj) &#123;</div><div class="line">  arr.push(item)</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="built_in">console</span>.log(arr)</div></pre></td></tr></table></figure>
+<h2 id="Array-gt-String"><a href="#Array-gt-String" class="headerlink" title="Array =&gt; String"></a>Array =&gt; String</h2><blockquote>
+<p>arr.join(separator)</p>
+</blockquote>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">[<span class="string">'a'</span>, <span class="string">'b'</span>, <span class="string">'c'</span>, <span class="string">'d'</span>, <span class="string">'e'</span>].join(<span class="string">''</span>)</div><div class="line"><span class="comment">// toLocaleString 、toString 、valueOf：可以看作是join的特殊用法，不常用</span></div></pre></td></tr></table></figure>
+<h2 id="String-gt-Array"><a href="#String-gt-Array" class="headerlink" title="String =&gt; Array"></a>String =&gt; Array</h2><blockquote>
+<p>str.split(separator)</p>
+</blockquote>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="string">'hello world'</span>.split(<span class="string">' '</span>) <span class="comment">// ["hello", "world"]</span></div></pre></td></tr></table></figure>
+<h1 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h1><p><a href="http://www.jb51.net/article/84609.htm" target="_blank" rel="external">JavaScript中的数组遍历forEach()与map()方法以及兼容写法介绍</a> </p>
+<p><a href="http://www.cnblogs.com/lvmh/p/6104397.html" target="_blank" rel="external">JS几种数组遍历方式以及性能分析对比</a> </p>
+<p><a href="http://www.jb51.net/article/59169.htm" target="_blank" rel="external">JavaScript中的类数组对象介绍</a> </p>
+<p><a href="http://blog.csdn.net/ailongyang/article/details/60466654" target="_blank" rel="external">数组对象和类数组对象区别</a> </p>
+<p><a href="http://www.jb51.net/article/59084.htm" target="_blank" rel="external">js数组的操作指南</a> </p>
+<p><a href="http://www.jb51.net/article/110487.htm" target="_blank" rel="external">详谈js遍历集合(Array,Map,Set)</a> </p>
+<p><a href="http://www.cnblogs.com/weilan/p/7002088.html" target="_blank" rel="external">JavaScript中的Map、Set及其遍历</a> </p>
+<p><a href="http://blog.csdn.net/mr__fang/article/details/42024535" target="_blank" rel="external">JavaScript创建Map对象</a> </p>
+<p><a href="http://www.cnblogs.com/littledu/archive/2011/04/18/2019475.html" target="_blank" rel="external">slice,substr和substring的区别</a> </p>
+
+        </div>
+
+        <blockquote class="post-copyright">
+    <div class="content">
+        
+<span class="post-time">
+    最后更新时间：<time datetime="2017-12-13T02:40:43.521Z" itemprop="dateUpdated">2017-12-13 10:40:43</time>
+</span><br>
+
+
+        
+        这里可以写作者留言，标签和 hexo 中所有变量及辅助函数等均可调用，示例：<a href="/2017/12/05/深入理解JavaScript - JS中集合对象(Array、Map、Set)及类数组对象的使用与对比/" target="_blank" rel="external">http://blog.xiaoyulive.top/2017/12/05/深入理解JavaScript - JS中集合对象(Array、Map、Set)及类数组对象的使用与对比/</a>
+        
+    </div>
+    <footer>
+        <a href="http://blog.xiaoyulive.top">
+            <img src="/img/avatar.jpg" alt="Quanzaiyu">
+            Quanzaiyu
+        </a>
+    </footer>
+</blockquote>
+
+        
+<div class="page-reward">
+    <a id="rewardBtn" href="javascript:;" class="page-reward-btn waves-effect waves-circle waves-light">赏</a>
+</div>
+
+
+
+        <div class="post-footer">
+            
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ECMAScript/">ECMAScript</a></li></ul>
+
+
+            
+<div class="page-share-wrap">
+    
+
+<div class="page-share" id="pageShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://blog.xiaoyulive.top/2017/12/05/深入理解JavaScript - JS中集合对象(Array、Map、Set)及类数组对象的使用与对比/&title=《深入理解JavaScript - JS中集合对象(Array、Map、Set)及类数组对象的使用与对比》 — 小昱博客&pic=http://blog.xiaoyulive.top/img/avatar.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://blog.xiaoyulive.top/2017/12/05/深入理解JavaScript - JS中集合对象(Array、Map、Set)及类数组对象的使用与对比/&title=《深入理解JavaScript - JS中集合对象(Array、Map、Set)及类数组对象的使用与对比》 — 小昱博客&source=" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://blog.xiaoyulive.top/2017/12/05/深入理解JavaScript - JS中集合对象(Array、Map、Set)及类数组对象的使用与对比/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《深入理解JavaScript - JS中集合对象(Array、Map、Set)及类数组对象的使用与对比》 — 小昱博客&url=http://blog.xiaoyulive.top/2017/12/05/深入理解JavaScript - JS中集合对象(Array、Map、Set)及类数组对象的使用与对比/&via=http://blog.xiaoyulive.top" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://blog.xiaoyulive.top/2017/12/05/深入理解JavaScript - JS中集合对象(Array、Map、Set)及类数组对象的使用与对比/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+
+    <a href="javascript:;" id="shareFab" class="page-share-fab waves-effect waves-circle">
+        <i class="icon icon-share-alt icon-lg"></i>
+    </a>
+</div>
+
+
+
+        </div>
+    </div>
+
+    
+<nav class="post-nav flex-row flex-justify-between">
+  
+    <div class="waves-block waves-effect prev">
+      <a href="/2017/12/05/Vue的移动端多图上传插件vue-easy-uploader/" id="post-prev" class="post-nav-link">
+        <div class="tips"><i class="icon icon-angle-left icon-lg icon-pr"></i> Prev</div>
+        <h4 class="title">Vue的移动端多图上传插件vue-easy-uploader</h4>
+      </a>
+    </div>
+  
+
+  
+    <div class="waves-block waves-effect next">
+      <a href="/2017/12/05/我的开发之路系列 - python3学习指南/" id="post-next" class="post-nav-link">
+        <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
+        <h4 class="title">我的开发之路系列 - python3学习指南</h4>
+      </a>
+    </div>
+  
+</nav>
+
+
+
+    
+
+
+<section class="comments" id="comments">
+    <div id="disqus_thread"></div>
+    <script>
+    var disqus_shortname = 'true';
+    lazyScripts.push('//' + disqus_shortname + '.disqus.com/embed.js')
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</section>
+
+
+
+
+<section class="comments" id="comments">
+    <!-- UY BEGIN -->
+    <div id="uyan_frame"></div>
+    <script src="http://v2.uyan.cc/code/uyan.js?uid=true"></script>
+    <!-- UY END -->
+</section>
+
+
+
+
+<section class="comments" id="comments">
+    <div id="gitment_thread"></div>
+    <link rel="stylesheet" href="//unpkg.com/gitment/style/default.css">
+    <script src="//unpkg.com/gitment/dist/gitment.browser.js"></script>
+    <script>
+        var gitment = new Gitment({
+            owner: 'quanzaiyu',
+            repo: 'quanzaiyu.github.io',
+            oauth: {
+                client_id: '3f4b90df85c3c29d643f',
+                client_secret: 'c951dd3dbd71e2edd597aa527a1a5d7e473d7375',
+            },
+        })
+        gitment.render('comments')
+    </script>
+</section>
+
+
+
+
+</article>
+
+<div id="reward" class="page-modal reward-lay">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <h3 class="reward-title">
+        <i class="icon icon-quote-left"></i>
+        谢谢大爷~
+        <i class="icon icon-quote-right"></i>
+    </h3>
+    <div class="reward-content">
+        
+        <div class="reward-code">
+            <img id="rewardCode" src="/img/wechat.jpg" alt="打赏二维码">
+        </div>
+        
+        <label class="reward-toggle">
+            <input id="rewardToggle" type="checkbox" class="reward-toggle-check"
+                data-wechat="/img/wechat.jpg" data-alipay="/img/alipay.jpg">
+            <div class="reward-toggle-ctrol">
+                <span class="reward-toggle-item wechat">微信</span>
+                <span class="reward-toggle-label"></span>
+                <span class="reward-toggle-item alipay">支付宝</span>
+            </div>
+        </label>
+        
+    </div>
+</div>
+
+
+
+</div>
+
+<!-- <script>
+    particlesJS.load('canvas-container', '/json/particles2.json', function () {
+        console.log('callback - particles.js config loaded');
+    })
+</script> -->
+        <footer class="footer">
+    <div class="top">
+        
+<p>
+    <span id="busuanzi_container_site_uv" style='display:none'>
+        站点总访客数：<span id="busuanzi_value_site_uv"></span>
+    </span>
+    <span id="busuanzi_container_site_pv" style='display:none'>
+        站点总访问量：<span id="busuanzi_value_site_pv"></span>
+    </span>
+</p>
+
+
+        <p>
+            
+            <!-- <span>博客内容遵循 <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">知识共享 署名 - 非商业性 - 相同方式共享 4.0 国际协议</a></span> -->
+        </p>
+    </div>
+    <div class="bottom">
+        <p><span>Quanzaiyu &copy; 2015 - 2018</span>
+            <span>
+                
+                <a href="http://www.miitbeian.gov.cn/" target="_blank">滇ICP备16006294号</a><br>
+                
+                Power by <a href="http://hexo.io/" target="_blank">Hexo</a>
+            </span>
+        </p>
+    </div>
+</footer>
+
+    </main>
+    <div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+
+
+<div class="global-share" id="globalShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://blog.xiaoyulive.top/2017/12/05/深入理解JavaScript - JS中集合对象(Array、Map、Set)及类数组对象的使用与对比/&title=《深入理解JavaScript - JS中集合对象(Array、Map、Set)及类数组对象的使用与对比》 — 小昱博客&pic=http://blog.xiaoyulive.top/img/avatar.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://blog.xiaoyulive.top/2017/12/05/深入理解JavaScript - JS中集合对象(Array、Map、Set)及类数组对象的使用与对比/&title=《深入理解JavaScript - JS中集合对象(Array、Map、Set)及类数组对象的使用与对比》 — 小昱博客&source=" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://blog.xiaoyulive.top/2017/12/05/深入理解JavaScript - JS中集合对象(Array、Map、Set)及类数组对象的使用与对比/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《深入理解JavaScript - JS中集合对象(Array、Map、Set)及类数组对象的使用与对比》 — 小昱博客&url=http://blog.xiaoyulive.top/2017/12/05/深入理解JavaScript - JS中集合对象(Array、Map、Set)及类数组对象的使用与对比/&via=http://blog.xiaoyulive.top" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://blog.xiaoyulive.top/2017/12/05/深入理解JavaScript - JS中集合对象(Array、Map、Set)及类数组对象的使用与对比/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+<div class="page-modal wx-share" id="wxShare">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <img src="//api.qrserver.com/v1/create-qr-code/?data=http://blog.xiaoyulive.top/2017/12/05/深入理解JavaScript - JS中集合对象(Array、Map、Set)及类数组对象的使用与对比/" alt="微信分享二维码">
+</div>
+
+
+
+
+    <script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+<script>
+var BLOG = { ROOT: '/', SHARE: true, REWARD: true };
+
+
+</script>
+
+<script src="/js/main.min.js?v=1.6.17"></script>
+
+
+<div class="search-panel" id="search-panel">
+    <ul class="search-result" id="search-result"></ul>
+</div>
+<template id="search-tpl">
+<li class="item">
+    <a href="{path}" class="waves-block waves-effect">
+        <div class="title ellipsis" title="{title}">{title}</div>
+        <div class="flex-row flex-middle">
+            <div class="tags ellipsis">
+                {tags}
+            </div>
+            <time class="flex-col time">{date}</time>
+        </div>
+    </a>
+</li>
+</template>
+
+<script src="/js/search.min.js?v=1.6.17" async></script>
+
+
+
+
+
+
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+<script>
+(function() {
+    var OriginTitile = document.title, titleTime;
+    document.addEventListener('visibilitychange', function() {
+        if (document.hidden) {
+            document.title = 'ﾍ(;´Д｀ﾍ)快回来啊！';
+            clearTimeout(titleTime);
+        } else {
+            document.title = '(つェ⊂)欢迎回来!';
+            titleTime = setTimeout(function() {
+                document.title = OriginTitile;
+            },2000);
+        }
+    });
+})();
+</script>
+
+
+
+</body>
+</html>

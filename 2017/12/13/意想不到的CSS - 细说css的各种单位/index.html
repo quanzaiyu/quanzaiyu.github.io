@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+
+    
+
+    
+<!-- Baidu Tongji -->
+<script>var _hmt = _hmt || []</script>
+<script async src="//hm.baidu.com/hm.js?3c8be249330224d7c919b4f22750d872"></script>
+<!-- End Baidu Tongji -->
+
+
+
+
+    <meta charset="utf-8">
+    
+    
+    
+    <title>意想不到的CSS - 细说css的各种单位 | 小昱博客 | 勤学如春起之苗，不见其增，日有所长；辍学如磨刀之石，不见其损，日有所亏</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="theme-color" content="#3F51B5">
+    
+    
+    <meta name="keywords" content="CSS3">
+    <meta name="description" content="最近在各种网页上陆续看到出现各种以前都没怎么了解过的单位，譬如vw、vh、pc、turn等等，在网上查阅了很多资料，打算深入一番了解这些单位的作用。 CSS长度单位   单位 含义     em 相对于父元素的字体大小   ex 相对于小写字母”x”的高度   gd 一般用在东亚字体排版上，这个与英文并无关系   rem 相对于根元素字体大小   vw 相对于视窗的宽度：视窗宽度是100vw">
+<meta name="keywords" content="CSS3">
+<meta property="og:type" content="article">
+<meta property="og:title" content="意想不到的CSS - 细说css的各种单位">
+<meta property="og:url" content="http://blog.xiaoyulive.top/2017/12/13/意想不到的CSS - 细说css的各种单位/index.html">
+<meta property="og:site_name" content="小昱博客">
+<meta property="og:description" content="最近在各种网页上陆续看到出现各种以前都没怎么了解过的单位，譬如vw、vh、pc、turn等等，在网上查阅了很多资料，打算深入一番了解这些单位的作用。 CSS长度单位   单位 含义     em 相对于父元素的字体大小   ex 相对于小写字母”x”的高度   gd 一般用在东亚字体排版上，这个与英文并无关系   rem 相对于根元素字体大小   vw 相对于视窗的宽度：视窗宽度是100vw">
+<meta property="og:image" content="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/caniuse01.png">
+<meta property="og:updated_time" content="2017-12-13T02:41:41.670Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="意想不到的CSS - 细说css的各种单位">
+<meta name="twitter:description" content="最近在各种网页上陆续看到出现各种以前都没怎么了解过的单位，譬如vw、vh、pc、turn等等，在网上查阅了很多资料，打算深入一番了解这些单位的作用。 CSS长度单位   单位 含义     em 相对于父元素的字体大小   ex 相对于小写字母”x”的高度   gd 一般用在东亚字体排版上，这个与英文并无关系   rem 相对于根元素字体大小   vw 相对于视窗的宽度：视窗宽度是100vw">
+<meta name="twitter:image" content="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/caniuse01.png">
+    
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="stylesheet" href="/css/style.css?v=1.6.17">
+    <script>window.lazyScripts=[]</script>
+
+    <!-- custom head -->
+    
+
+    <script src="/js/particles.min.js?v=1.6.17"></script>
+</head>
+
+<body>
+    <div id="loading" class="active"></div>
+
+    <aside id="menu" class="hide" >
+  <div class="inner flex-row-vertical">
+    <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+        <i class="icon icon-lg icon-close"></i>
+    </a>
+    <div class="brand-wrap" style="background-image:url(/img/brand.webp)">
+      <div class="brand">
+        <!-- 头像 -->
+        <a href="/" class="avatar waves-effect waves-circle waves-light">
+          <img src="/img/avatar.jpg">
+        </a>
+        <!-- 简介 -->
+        <hgroup class="introduce">
+          <h5 class="nickname">Quanzaiyu</h5>
+          <a href="mailto:quanzaiyu@outlook.com" title="quanzaiyu@outlook.com" class="mail">quanzaiyu@outlook.com</a>
+          <!-- 链接 -->
+          <div class="iconGroup">
+            
+              <div class="icon">
+                <a  href="https://github.com/quanzaiyu"
+                    target="_blank" 
+                    title="GitHub">
+                  <i class="icon icon-lg icon-github"></i>
+                </a>
+              </div>
+            
+              <div class="icon">
+                <a  href="http://www.weibo.com/quanzaiyu"
+                    target="_blank" 
+                    title="微博">
+                  <i class="icon icon-lg icon-weibo"></i>
+                </a>
+              </div>
+            
+              <div class="icon">
+                <a  href="http://www.jianshu.com/u/2e74d0659da1"
+                    target="_blank" 
+                    title="简书">
+                  <i class="icon icon-lg icon-book"></i>
+                </a>
+              </div>
+            
+          </div>
+        </hgroup>
+      </div>
+    </div>
+    <div class="scroll-wrap flex-col">
+      <ul class="nav">
+        
+            <li class="waves-block waves-effect">
+              <a href="/"  >
+                <i class="icon icon-lg icon-home"></i>
+                主页
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/archives"  >
+                <i class="icon icon-lg icon-archives"></i>
+                归档
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/tags"  >
+                <i class="icon icon-lg icon-tags"></i>
+                标签云
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/categories"  >
+                <i class="icon icon-lg icon-th-list"></i>
+                分类
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/custom"  >
+                <i class="icon icon-lg icon-link"></i>
+                关于我
+              </a>
+            </li>
+        
+      </ul>
+    </div>
+  </div>
+</aside>
+
+    <main id="main">
+        <header class="top-header" id="header">
+    <div class="flex-row">
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">意想不到的CSS - 细说css的各种单位</div>
+        
+        <div class="search-wrap" id="search-wrap">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+                <i class="icon icon-lg icon-chevron-left"></i>
+            </a>
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="输入感兴趣的关键字">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
+                <i class="icon icon-lg icon-search"></i>
+            </a>
+        </div>
+        
+        
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menuShare">
+            <i class="icon icon-lg icon-share-alt"></i>
+        </a>
+        
+    </div>
+</header>
+<header class="content-header post-header">
+
+    <div class="container fade-scale">
+        <h1 class="title">意想不到的CSS - 细说css的各种单位</h1>
+        <h5 class="subtitle">
+            
+                <time datetime="2017-12-13T02:02:48.862Z" itemprop="datePublished" class="page-time">
+  2017-12-13
+</time>
+
+
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/前端开发/">前端开发</a><ul class="article-category-list-child"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/前端开发/意想不到的CSS/">意想不到的CSS</a></li></ul></li></ul>
+
+            
+        </h5>
+    </div>
+
+    
+
+
+</header>
+
+
+<div class="container body-wrap">
+    <!-- <div id="canvas-container"></div> -->
+    
+    <aside class="post-widget">
+        <nav class="post-toc-wrap" id="post-toc">
+            <h4>TOC</h4>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#CSS长度单位"><span class="post-toc-number">1.</span> <span class="post-toc-text">CSS长度单位</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#vw、vh、vm"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">vw、vh、vm</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#何为视窗"><span class="post-toc-number">1.1.1.</span> <span class="post-toc-text">何为视窗?</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#兼容性"><span class="post-toc-number">1.1.2.</span> <span class="post-toc-text">兼容性</span></a></li></ol></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#CSS时间频率单位"><span class="post-toc-number">2.</span> <span class="post-toc-text">CSS时间频率单位</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#CSS角度单位"><span class="post-toc-number">3.</span> <span class="post-toc-text">CSS角度单位</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#参考资料"><span class="post-toc-number">4.</span> <span class="post-toc-text">参考资料</span></a></li></ol>
+        </nav>
+    </aside>
+    
+<article id="post-意想不到的CSS - 细说css的各种单位"
+  class="post-article article-type-post fade" itemprop="blogPost">
+
+    <div class="post-card">
+        <h1 class="post-card-title">意想不到的CSS - 细说css的各种单位</h1>
+        <div class="post-meta">
+            <time class="post-time" title="2017-12-13 10:02:48" datetime="2017-12-13T02:02:48.862Z"  itemprop="datePublished">2017-12-13</time>
+
+            
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/前端开发/">前端开发</a><ul class="article-category-list-child"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/前端开发/意想不到的CSS/">意想不到的CSS</a></li></ul></li></ul>
+
+
+
+            
+<span id="busuanzi_container_page_pv" title="文章总阅读量" style='display:none'>
+    <i class="icon icon-eye icon-pr"></i><span id="busuanzi_value_page_pv"></span>
+</span>
+
+
+        </div>
+        <div class="post-content" id="post-content" itemprop="postContent">
+            <p>最近在各种网页上陆续看到出现各种以前都没怎么了解过的单位，譬如vw、vh、pc、turn等等，在网上查阅了很多资料，打算深入一番了解这些单位的作用。</p>
+<h1 id="CSS长度单位"><a href="#CSS长度单位" class="headerlink" title="CSS长度单位"></a>CSS长度单位</h1><table>
+<thead>
+<tr>
+<th>单位</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>em</td>
+<td>相对于父元素的字体大小</td>
+</tr>
+<tr>
+<td>ex</td>
+<td>相对于小写字母”x”的高度</td>
+</tr>
+<tr>
+<td>gd</td>
+<td>一般用在东亚字体排版上，这个与英文并无关系</td>
+</tr>
+<tr>
+<td>rem</td>
+<td>相对于根元素字体大小</td>
+</tr>
+<tr>
+<td>vw</td>
+<td>相对于视窗的宽度：视窗宽度是100vw</td>
+</tr>
+<tr>
+<td>vh</td>
+<td>相对于视窗的高度：视窗高度是100vh</td>
+</tr>
+<tr>
+<td>vm</td>
+<td>相对于视窗的宽度或高度，取决于哪个更小</td>
+</tr>
+<tr>
+<td>ch</td>
+<td>相对于0尺寸</td>
+</tr>
+<tr>
+<td>px</td>
+<td>相对于屏幕分辨率而不是视窗大小：通常为1个点或1/72英寸</td>
+</tr>
+<tr>
+<td>in</td>
+<td>inch, 表英寸</td>
+</tr>
+<tr>
+<td>cm</td>
+<td>centimeter, 表厘米</td>
+</tr>
+<tr>
+<td>mm</td>
+<td>millimeter, 表毫米</td>
+</tr>
+<tr>
+<td>pt</td>
+<td>1/72英寸</td>
+</tr>
+<tr>
+<td>pc</td>
+<td>12点活字，或1/12点</td>
+</tr>
+<tr>
+<td>%</td>
+<td>相对于父元素。正常情况下是通过属性定义自身或其他元素</td>
+</tr>
+</tbody>
+</table>
+<p>其中常用的有px、%、em、rem，至于其他的，不常用，之前也没怎么深入理解。这里详细理解一下以下几个单位:</p>
+<h2 id="vw、vh、vm"><a href="#vw、vh、vm" class="headerlink" title="vw、vh、vm"></a>vw、vh、vm</h2><p>这几个单位都是跟视窗有关，vw为视窗宽度，总宽度为100vw，vh为视窗高度，总高度为100vh，vm为视窗宽高的较小值。</p>
+<p>所以，1vw相当于视窗宽度的1%，1vh相当于视窗高度的1%。</p>
+<h3 id="何为视窗"><a href="#何为视窗" class="headerlink" title="何为视窗?"></a>何为视窗?</h3><p>“视窗”所指为浏览器内部的可视区域大小，即<code>window.innerWidth</code> * <code>window.innerHeight</code>的大小。参见鑫空间的<a href="http://www.zhangxinxu.com/study/201209/vw-vh-to-pixel.html" target="_blank" rel="external">demo</a> </p>
+<h3 id="兼容性"><a href="#兼容性" class="headerlink" title="兼容性"></a>兼容性</h3><p>查了下兼容性，总体支持还不错:</p>
+<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/caniuse01.png" alt="" title="">
+                </div>
+                <div class="image-caption"></div>
+            </figure>
+<h1 id="CSS时间频率单位"><a href="#CSS时间频率单位" class="headerlink" title="CSS时间频率单位"></a>CSS时间频率单位</h1><table>
+<thead>
+<tr>
+<th>单位</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ms</td>
+<td>milliseconds, 毫秒数</td>
+</tr>
+<tr>
+<td>s</td>
+<td>seconds, 秒数</td>
+</tr>
+<tr>
+<td>Hz</td>
+<td>Hertz, 赫兹</td>
+</tr>
+<tr>
+<td>kHz</td>
+<td>kilohertz, 千赫</td>
+</tr>
+</tbody>
+</table>
+<p>都比较常见。</p>
+<h1 id="CSS角度单位"><a href="#CSS角度单位" class="headerlink" title="CSS角度单位"></a>CSS角度单位</h1><table>
+<thead>
+<tr>
+<th>单位</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>deg</td>
+<td>degrees, 角度</td>
+</tr>
+<tr>
+<td>grad</td>
+<td>grads, 百分度</td>
+</tr>
+<tr>
+<td>rad</td>
+<td>radians, 弧度</td>
+</tr>
+<tr>
+<td>turn</td>
+<td>turns, 圈数</td>
+</tr>
+</tbody>
+</table>
+<p>说下turn吧，其实1turn就是360deg，.5turn就是180deg，有的时候写起来比较方便，不过像45deg这种角度还是不要写成turn了。</p>
+<h1 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h1><p><a href="http://www.zhangxinxu.com/wordpress/2011/03/css-css3-unit-units/" target="_blank" rel="external">鑫空间: CSS/CSS3长度、时间、频率、角度单位大全</a> </p>
+<p><a href="http://www.zhangxinxu.com/wordpress/2011/03/css-css3-unit-units/" target="_blank" rel="external">鑫空间: 视区相关单位vw, vh..简介以及可实际应用场景</a> </p>
+
+        </div>
+
+        <blockquote class="post-copyright">
+    <div class="content">
+        
+<span class="post-time">
+    最后更新时间：<time datetime="2017-12-13T02:41:41.670Z" itemprop="dateUpdated">2017-12-13 10:41:41</time>
+</span><br>
+
+
+        
+        这里可以写作者留言，标签和 hexo 中所有变量及辅助函数等均可调用，示例：<a href="/2017/12/13/意想不到的CSS - 细说css的各种单位/" target="_blank" rel="external">http://blog.xiaoyulive.top/2017/12/13/意想不到的CSS - 细说css的各种单位/</a>
+        
+    </div>
+    <footer>
+        <a href="http://blog.xiaoyulive.top">
+            <img src="/img/avatar.jpg" alt="Quanzaiyu">
+            Quanzaiyu
+        </a>
+    </footer>
+</blockquote>
+
+        
+<div class="page-reward">
+    <a id="rewardBtn" href="javascript:;" class="page-reward-btn waves-effect waves-circle waves-light">赏</a>
+</div>
+
+
+
+        <div class="post-footer">
+            
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/CSS3/">CSS3</a></li></ul>
+
+
+            
+<div class="page-share-wrap">
+    
+
+<div class="page-share" id="pageShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://blog.xiaoyulive.top/2017/12/13/意想不到的CSS - 细说css的各种单位/&title=《意想不到的CSS - 细说css的各种单位》 — 小昱博客&pic=http://blog.xiaoyulive.top/img/avatar.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://blog.xiaoyulive.top/2017/12/13/意想不到的CSS - 细说css的各种单位/&title=《意想不到的CSS - 细说css的各种单位》 — 小昱博客&source=" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://blog.xiaoyulive.top/2017/12/13/意想不到的CSS - 细说css的各种单位/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《意想不到的CSS - 细说css的各种单位》 — 小昱博客&url=http://blog.xiaoyulive.top/2017/12/13/意想不到的CSS - 细说css的各种单位/&via=http://blog.xiaoyulive.top" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://blog.xiaoyulive.top/2017/12/13/意想不到的CSS - 细说css的各种单位/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+
+    <a href="javascript:;" id="shareFab" class="page-share-fab waves-effect waves-circle">
+        <i class="icon icon-share-alt icon-lg"></i>
+    </a>
+</div>
+
+
+
+        </div>
+    </div>
+
+    
+<nav class="post-nav flex-row flex-justify-between">
+  
+    <div class="waves-block waves-effect prev">
+      <a href="/2017/12/15/在VMWare中安装CentOS并配置SSH远程登录/" id="post-prev" class="post-nav-link">
+        <div class="tips"><i class="icon icon-angle-left icon-lg icon-pr"></i> Prev</div>
+        <h4 class="title">在VMWare中安装CentOS并配置SSH远程登录</h4>
+      </a>
+    </div>
+  
+
+  
+    <div class="waves-block waves-effect next">
+      <a href="/2017/12/13/意想不到的CSS - 巧用overflow/" id="post-next" class="post-nav-link">
+        <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
+        <h4 class="title">意想不到的CSS - 巧用overflow</h4>
+      </a>
+    </div>
+  
+</nav>
+
+
+
+    
+
+
+<section class="comments" id="comments">
+    <div id="disqus_thread"></div>
+    <script>
+    var disqus_shortname = 'true';
+    lazyScripts.push('//' + disqus_shortname + '.disqus.com/embed.js')
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</section>
+
+
+
+
+<section class="comments" id="comments">
+    <!-- UY BEGIN -->
+    <div id="uyan_frame"></div>
+    <script src="http://v2.uyan.cc/code/uyan.js?uid=true"></script>
+    <!-- UY END -->
+</section>
+
+
+
+
+<section class="comments" id="comments">
+    <div id="gitment_thread"></div>
+    <link rel="stylesheet" href="//unpkg.com/gitment/style/default.css">
+    <script src="//unpkg.com/gitment/dist/gitment.browser.js"></script>
+    <script>
+        var gitment = new Gitment({
+            owner: 'quanzaiyu',
+            repo: 'quanzaiyu.github.io',
+            oauth: {
+                client_id: '3f4b90df85c3c29d643f',
+                client_secret: 'c951dd3dbd71e2edd597aa527a1a5d7e473d7375',
+            },
+        })
+        gitment.render('comments')
+    </script>
+</section>
+
+
+
+
+</article>
+
+<div id="reward" class="page-modal reward-lay">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <h3 class="reward-title">
+        <i class="icon icon-quote-left"></i>
+        谢谢大爷~
+        <i class="icon icon-quote-right"></i>
+    </h3>
+    <div class="reward-content">
+        
+        <div class="reward-code">
+            <img id="rewardCode" src="/img/wechat.jpg" alt="打赏二维码">
+        </div>
+        
+        <label class="reward-toggle">
+            <input id="rewardToggle" type="checkbox" class="reward-toggle-check"
+                data-wechat="/img/wechat.jpg" data-alipay="/img/alipay.jpg">
+            <div class="reward-toggle-ctrol">
+                <span class="reward-toggle-item wechat">微信</span>
+                <span class="reward-toggle-label"></span>
+                <span class="reward-toggle-item alipay">支付宝</span>
+            </div>
+        </label>
+        
+    </div>
+</div>
+
+
+
+</div>
+
+<!-- <script>
+    particlesJS.load('canvas-container', '/json/particles2.json', function () {
+        console.log('callback - particles.js config loaded');
+    })
+</script> -->
+        <footer class="footer">
+    <div class="top">
+        
+<p>
+    <span id="busuanzi_container_site_uv" style='display:none'>
+        站点总访客数：<span id="busuanzi_value_site_uv"></span>
+    </span>
+    <span id="busuanzi_container_site_pv" style='display:none'>
+        站点总访问量：<span id="busuanzi_value_site_pv"></span>
+    </span>
+</p>
+
+
+        <p>
+            
+            <!-- <span>博客内容遵循 <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">知识共享 署名 - 非商业性 - 相同方式共享 4.0 国际协议</a></span> -->
+        </p>
+    </div>
+    <div class="bottom">
+        <p><span>Quanzaiyu &copy; 2015 - 2018</span>
+            <span>
+                
+                <a href="http://www.miitbeian.gov.cn/" target="_blank">滇ICP备16006294号</a><br>
+                
+                Power by <a href="http://hexo.io/" target="_blank">Hexo</a>
+            </span>
+        </p>
+    </div>
+</footer>
+
+    </main>
+    <div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+
+
+<div class="global-share" id="globalShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://blog.xiaoyulive.top/2017/12/13/意想不到的CSS - 细说css的各种单位/&title=《意想不到的CSS - 细说css的各种单位》 — 小昱博客&pic=http://blog.xiaoyulive.top/img/avatar.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://blog.xiaoyulive.top/2017/12/13/意想不到的CSS - 细说css的各种单位/&title=《意想不到的CSS - 细说css的各种单位》 — 小昱博客&source=" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://blog.xiaoyulive.top/2017/12/13/意想不到的CSS - 细说css的各种单位/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《意想不到的CSS - 细说css的各种单位》 — 小昱博客&url=http://blog.xiaoyulive.top/2017/12/13/意想不到的CSS - 细说css的各种单位/&via=http://blog.xiaoyulive.top" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://blog.xiaoyulive.top/2017/12/13/意想不到的CSS - 细说css的各种单位/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+<div class="page-modal wx-share" id="wxShare">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <img src="//api.qrserver.com/v1/create-qr-code/?data=http://blog.xiaoyulive.top/2017/12/13/意想不到的CSS - 细说css的各种单位/" alt="微信分享二维码">
+</div>
+
+
+
+
+    <script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+<script>
+var BLOG = { ROOT: '/', SHARE: true, REWARD: true };
+
+
+</script>
+
+<script src="/js/main.min.js?v=1.6.17"></script>
+
+
+<div class="search-panel" id="search-panel">
+    <ul class="search-result" id="search-result"></ul>
+</div>
+<template id="search-tpl">
+<li class="item">
+    <a href="{path}" class="waves-block waves-effect">
+        <div class="title ellipsis" title="{title}">{title}</div>
+        <div class="flex-row flex-middle">
+            <div class="tags ellipsis">
+                {tags}
+            </div>
+            <time class="flex-col time">{date}</time>
+        </div>
+    </a>
+</li>
+</template>
+
+<script src="/js/search.min.js?v=1.6.17" async></script>
+
+
+
+
+
+
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+<script>
+(function() {
+    var OriginTitile = document.title, titleTime;
+    document.addEventListener('visibilitychange', function() {
+        if (document.hidden) {
+            document.title = 'ﾍ(;´Д｀ﾍ)快回来啊！';
+            clearTimeout(titleTime);
+        } else {
+            document.title = '(つェ⊂)欢迎回来!';
+            titleTime = setTimeout(function() {
+                document.title = OriginTitile;
+            },2000);
+        }
+    });
+})();
+</script>
+
+
+
+</body>
+</html>

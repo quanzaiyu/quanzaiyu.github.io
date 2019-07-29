@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+
+    
+
+    
+<!-- Baidu Tongji -->
+<script>var _hmt = _hmt || []</script>
+<script async src="//hm.baidu.com/hm.js?3c8be249330224d7c919b4f22750d872"></script>
+<!-- End Baidu Tongji -->
+
+
+
+
+    <meta charset="utf-8">
+    
+    
+    
+    <title>深入理解HTML5 - 可拖动的元素 | 小昱博客 | 勤学如春起之苗，不见其增，日有所长；辍学如磨刀之石，不见其损，日有所亏</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="theme-color" content="#3F51B5">
+    
+    
+    <meta name="keywords" content="拖动">
+    <meta name="description" content="拖动拖拽和释放拖拽(Drag)指的是鼠标点击源对象后一直移动对象不松手，一但松手即释放(Drop)了 源对象与目标对象                                                                                                           源对象：指的是我们鼠标点击的一个事物，这里可以是一张图片，一个DIV">
+<meta name="keywords" content="拖动">
+<meta property="og:type" content="article">
+<meta property="og:title" content="深入理解HTML5 - 可拖动的元素">
+<meta property="og:url" content="http://blog.xiaoyulive.top/2017/12/19/深入理解HTML5 - 可拖动的元素/index.html">
+<meta property="og:site_name" content="小昱博客">
+<meta property="og:description" content="拖动拖拽和释放拖拽(Drag)指的是鼠标点击源对象后一直移动对象不松手，一但松手即释放(Drop)了 源对象与目标对象                                                                                                           源对象：指的是我们鼠标点击的一个事物，这里可以是一张图片，一个DIV">
+<meta property="og:image" content="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/0077.png">
+<meta property="og:updated_time" content="2017-12-20T10:13:48.368Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="深入理解HTML5 - 可拖动的元素">
+<meta name="twitter:description" content="拖动拖拽和释放拖拽(Drag)指的是鼠标点击源对象后一直移动对象不松手，一但松手即释放(Drop)了 源对象与目标对象                                                                                                           源对象：指的是我们鼠标点击的一个事物，这里可以是一张图片，一个DIV">
+<meta name="twitter:image" content="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/0077.png">
+    
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="stylesheet" href="/css/style.css?v=1.6.17">
+    <script>window.lazyScripts=[]</script>
+
+    <!-- custom head -->
+    
+
+    <script src="/js/particles.min.js?v=1.6.17"></script>
+</head>
+
+<body>
+    <div id="loading" class="active"></div>
+
+    <aside id="menu" class="hide" >
+  <div class="inner flex-row-vertical">
+    <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+        <i class="icon icon-lg icon-close"></i>
+    </a>
+    <div class="brand-wrap" style="background-image:url(/img/brand.webp)">
+      <div class="brand">
+        <!-- 头像 -->
+        <a href="/" class="avatar waves-effect waves-circle waves-light">
+          <img src="/img/avatar.jpg">
+        </a>
+        <!-- 简介 -->
+        <hgroup class="introduce">
+          <h5 class="nickname">Quanzaiyu</h5>
+          <a href="mailto:quanzaiyu@outlook.com" title="quanzaiyu@outlook.com" class="mail">quanzaiyu@outlook.com</a>
+          <!-- 链接 -->
+          <div class="iconGroup">
+            
+              <div class="icon">
+                <a  href="https://github.com/quanzaiyu"
+                    target="_blank" 
+                    title="GitHub">
+                  <i class="icon icon-lg icon-github"></i>
+                </a>
+              </div>
+            
+              <div class="icon">
+                <a  href="http://www.weibo.com/quanzaiyu"
+                    target="_blank" 
+                    title="微博">
+                  <i class="icon icon-lg icon-weibo"></i>
+                </a>
+              </div>
+            
+              <div class="icon">
+                <a  href="http://www.jianshu.com/u/2e74d0659da1"
+                    target="_blank" 
+                    title="简书">
+                  <i class="icon icon-lg icon-book"></i>
+                </a>
+              </div>
+            
+          </div>
+        </hgroup>
+      </div>
+    </div>
+    <div class="scroll-wrap flex-col">
+      <ul class="nav">
+        
+            <li class="waves-block waves-effect">
+              <a href="/"  >
+                <i class="icon icon-lg icon-home"></i>
+                主页
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/archives"  >
+                <i class="icon icon-lg icon-archives"></i>
+                归档
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/tags"  >
+                <i class="icon icon-lg icon-tags"></i>
+                标签云
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/categories"  >
+                <i class="icon icon-lg icon-th-list"></i>
+                分类
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/custom"  >
+                <i class="icon icon-lg icon-link"></i>
+                关于我
+              </a>
+            </li>
+        
+      </ul>
+    </div>
+  </div>
+</aside>
+
+    <main id="main">
+        <header class="top-header" id="header">
+    <div class="flex-row">
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">深入理解HTML5 - 可拖动的元素</div>
+        
+        <div class="search-wrap" id="search-wrap">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+                <i class="icon icon-lg icon-chevron-left"></i>
+            </a>
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="输入感兴趣的关键字">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
+                <i class="icon icon-lg icon-search"></i>
+            </a>
+        </div>
+        
+        
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menuShare">
+            <i class="icon icon-lg icon-share-alt"></i>
+        </a>
+        
+    </div>
+</header>
+<header class="content-header post-header">
+
+    <div class="container fade-scale">
+        <h1 class="title">深入理解HTML5 - 可拖动的元素</h1>
+        <h5 class="subtitle">
+            
+                <time datetime="2017-12-19T02:32:26.972Z" itemprop="datePublished" class="page-time">
+  2017-12-19
+</time>
+
+
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/前端开发/">前端开发</a><ul class="article-category-list-child"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/前端开发/深入理解HTML5/">深入理解HTML5</a></li></ul></li></ul>
+
+            
+        </h5>
+    </div>
+
+    
+
+
+</header>
+
+
+<div class="container body-wrap">
+    <!-- <div id="canvas-container"></div> -->
+    
+    <aside class="post-widget">
+        <nav class="post-toc-wrap" id="post-toc">
+            <h4>TOC</h4>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#拖动"><span class="post-toc-number">1.</span> <span class="post-toc-text">拖动</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#拖拽和释放"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">拖拽和释放</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#源对象与目标对象"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">源对象与目标对象</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#拖拽API"><span class="post-toc-number">2.</span> <span class="post-toc-text">拖拽API</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#被拖动的源对象可以触发的事件"><span class="post-toc-number">2.1.</span> <span class="post-toc-text">被拖动的源对象可以触发的事件</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#拖动源对象可以进入到上方的目标对象可以触发的事件"><span class="post-toc-number">2.2.</span> <span class="post-toc-text">拖动源对象可以进入到上方的目标对象可以触发的事件</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#传递数据"><span class="post-toc-number">2.3.</span> <span class="post-toc-text">传递数据</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#源对象上的事件处理中保存数据"><span class="post-toc-number">2.3.1.</span> <span class="post-toc-text">源对象上的事件处理中保存数据</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#目标对象上的事件处理中读取数据"><span class="post-toc-number">2.3.2.</span> <span class="post-toc-text">目标对象上的事件处理中读取数据</span></a></li></ol></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#案例"><span class="post-toc-number">3.</span> <span class="post-toc-text">案例</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#在几个盒子之间拖动元素"><span class="post-toc-number">3.1.</span> <span class="post-toc-text">在几个盒子之间拖动元素</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#在页面中拖动元素"><span class="post-toc-number">3.2.</span> <span class="post-toc-text">在页面中拖动元素</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#参考资料"><span class="post-toc-number">4.</span> <span class="post-toc-text">参考资料</span></a></li></ol>
+        </nav>
+    </aside>
+    
+<article id="post-深入理解HTML5 - 可拖动的元素"
+  class="post-article article-type-post fade" itemprop="blogPost">
+
+    <div class="post-card">
+        <h1 class="post-card-title">深入理解HTML5 - 可拖动的元素</h1>
+        <div class="post-meta">
+            <time class="post-time" title="2017-12-19 10:32:26" datetime="2017-12-19T02:32:26.972Z"  itemprop="datePublished">2017-12-19</time>
+
+            
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/前端开发/">前端开发</a><ul class="article-category-list-child"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/前端开发/深入理解HTML5/">深入理解HTML5</a></li></ul></li></ul>
+
+
+
+            
+<span id="busuanzi_container_page_pv" title="文章总阅读量" style='display:none'>
+    <i class="icon icon-eye icon-pr"></i><span id="busuanzi_value_page_pv"></span>
+</span>
+
+
+        </div>
+        <div class="post-content" id="post-content" itemprop="postContent">
+            <h1 id="拖动"><a href="#拖动" class="headerlink" title="拖动"></a>拖动</h1><h2 id="拖拽和释放"><a href="#拖拽和释放" class="headerlink" title="拖拽和释放"></a>拖拽和释放</h2><p>拖拽(<code>Drag</code>)指的是鼠标点击源对象后一直移动对象不松手，一但松手即释放(<code>Drop</code>)了</p>
+<h2 id="源对象与目标对象"><a href="#源对象与目标对象" class="headerlink" title="源对象与目标对象"></a>源对象与目标对象</h2><figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/0077.png" alt="" title="">
+                </div>
+                <div class="image-caption"></div>
+            </figure>
+<p>源对象：指的是我们鼠标点击的一个事物，这里可以是一张图片，一个DIV，一段文本等等。</p>
+<p>目标对象：指的是我们拖动源对象后移动到一块区域，源对象可以进入这个区域，可以在这个区域上方悬停(未松手)，可以释松手释放将源对象放置此处(已松手)，也可以悬停后离开该区域。</p>
+<h1 id="拖拽API"><a href="#拖拽API" class="headerlink" title="拖拽API"></a>拖拽API</h1><h2 id="被拖动的源对象可以触发的事件"><a href="#被拖动的源对象可以触发的事件" class="headerlink" title="被拖动的源对象可以触发的事件"></a>被拖动的源对象可以触发的事件</h2><ol>
+<li><code>ondragstart</code>：源对象开始被拖动</li>
+<li><code>ondrag</code>：源对象被拖动过程中(鼠标可能在移动也可能未移动)</li>
+<li><code>ondragend</code>：源对象被拖动结束</li>
+</ol>
+<h2 id="拖动源对象可以进入到上方的目标对象可以触发的事件"><a href="#拖动源对象可以进入到上方的目标对象可以触发的事件" class="headerlink" title="拖动源对象可以进入到上方的目标对象可以触发的事件"></a>拖动源对象可以进入到上方的目标对象可以触发的事件</h2><ol>
+<li><code>ondragenter</code>：目标对象被源对象拖动着进入</li>
+<li><code>ondragover</code>：目标对象被源对象拖动着悬停在上方</li>
+<li><code>ondragleave</code>：源对象拖动着离开了目标对象</li>
+<li><code>ondrop</code>：源对象拖动着在目标对象上方释放/松手</li>
+</ol>
+<h2 id="传递数据"><a href="#传递数据" class="headerlink" title="传递数据"></a>传递数据</h2><p>HTML5为所有的拖动相关事件提供了一个新的属性：</p>
+<p><code>e.dataTransfer</code> </p>
+<p>  功能：数据传递对象，用于在源对象和目标对象的事件间传递数据</p>
+<h3 id="源对象上的事件处理中保存数据"><a href="#源对象上的事件处理中保存数据" class="headerlink" title="源对象上的事件处理中保存数据"></a>源对象上的事件处理中保存数据</h3><p><code>e.dataTransfer.setData(k,  v);</code>     // k-v必须都是string类型</p>
+<h3 id="目标对象上的事件处理中读取数据"><a href="#目标对象上的事件处理中读取数据" class="headerlink" title="目标对象上的事件处理中读取数据"></a>目标对象上的事件处理中读取数据</h3><p><code>var v = e.dataTransfer.getData(k);</code></p>
+<h1 id="案例"><a href="#案例" class="headerlink" title="案例"></a>案例</h1><h2 id="在几个盒子之间拖动元素"><a href="#在几个盒子之间拖动元素" class="headerlink" title="在几个盒子之间拖动元素"></a>在几个盒子之间拖动元素</h2><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">"en"</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"UTF-8"</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">"viewport"</span> <span class="attr">content</span>=<span class="string">"width=device-width, initial-scale=1.0"</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">"X-UA-Compatible"</span> <span class="attr">content</span>=<span class="string">"ie=edge"</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">title</span>&gt;</span>Document<span class="tag">&lt;/<span class="name">title</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="undefined"></span></div><div class="line"><span class="css">    <span class="selector-class">.container</span> &#123;</span></div><div class="line"><span class="undefined">      display: flex;</span></div><div class="line"><span class="undefined">      justify-content: space-around;</span></div><div class="line"><span class="undefined">    &#125;</span></div><div class="line"><span class="css">    <span class="selector-class">.box</span> &#123;</span></div><div class="line"><span class="undefined">      width: 200px;</span></div><div class="line"><span class="undefined">      height: 200px;</span></div><div class="line"><span class="css">      <span class="selector-tag">border</span>: 1<span class="selector-tag">px</span> <span class="selector-tag">dashed</span> <span class="selector-id">#f00</span>;</span></div><div class="line"><span class="undefined">      position: relative;</span></div><div class="line"><span class="undefined">    &#125;</span></div><div class="line"><span class="css">    <span class="selector-class">.target</span> &#123;</span></div><div class="line"><span class="undefined">      width: 100px;</span></div><div class="line"><span class="undefined">      height: 100px;</span></div><div class="line"><span class="css">      <span class="selector-tag">background</span>: <span class="selector-id">#000</span>;</span></div><div class="line"><span class="undefined">      position: absolute;</span></div><div class="line"><span class="undefined">      left: 1em;</span></div><div class="line"><span class="undefined">      top: 1em;</span></div><div class="line"><span class="undefined">    &#125;</span></div><div class="line"><span class="undefined">  </span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"container"</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"box"</span>&gt;</span></div><div class="line">      <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"target"</span> <span class="attr">id</span>=<span class="string">"target"</span> <span class="attr">draggable</span>=<span class="string">"true"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"box"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"box"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"box"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="undefined"></span></div><div class="line"><span class="javascript">    <span class="keyword">let</span> boxEles = <span class="built_in">document</span>.querySelectorAll(<span class="string">'.box'</span>);</span></div><div class="line"><span class="javascript">    <span class="keyword">for</span> (<span class="keyword">let</span> box <span class="keyword">of</span> boxEles) &#123;</span></div><div class="line"><span class="javascript">      box.ondrop = <span class="function"><span class="keyword">function</span> (<span class="params">ev</span>) </span>&#123;</span></div><div class="line"><span class="javascript">        <span class="built_in">console</span>.log(<span class="string">'源对象拖动着在目标对象上方释放/松手'</span>)</span></div><div class="line"><span class="undefined">        ev.preventDefault();</span></div><div class="line"><span class="javascript">        <span class="keyword">var</span> data = ev.dataTransfer.getData(<span class="string">"DIV"</span>);</span></div><div class="line"><span class="javascript">        ev.target.appendChild(<span class="built_in">document</span>.getElementById(data));</span></div><div class="line"><span class="undefined">      &#125;</span></div><div class="line"><span class="javascript">      box.ondragenter = <span class="function"><span class="keyword">function</span> (<span class="params">ev</span>) </span>&#123;</span></div><div class="line"><span class="javascript">        <span class="built_in">console</span>.log(<span class="string">'目标对象被源对象拖动着进入'</span>)</span></div><div class="line"><span class="undefined">      &#125;</span></div><div class="line"><span class="javascript">      box.ondragleave = <span class="function"><span class="keyword">function</span> (<span class="params">ev</span>) </span>&#123;</span></div><div class="line"><span class="javascript">        <span class="built_in">console</span>.log(<span class="string">'源对象拖动着离开了目标对象'</span>)</span></div><div class="line"><span class="undefined">      &#125;</span></div><div class="line"><span class="javascript">      box.ondragover = <span class="function"><span class="keyword">function</span> (<span class="params">ev</span>) </span>&#123;</span></div><div class="line"><span class="javascript">        <span class="built_in">console</span>.log(<span class="string">'目标对象被源对象拖动着悬停在上方'</span>)</span></div><div class="line"><span class="undefined">        ev.preventDefault();</span></div><div class="line"><span class="undefined">      &#125;</span></div><div class="line"><span class="undefined">    &#125;</span></div><div class="line"><span class="undefined"></span></div><div class="line"><span class="javascript">    target.ondragstart = <span class="function"><span class="keyword">function</span>(<span class="params">e</span>) </span>&#123;</span></div><div class="line"><span class="javascript">      <span class="built_in">console</span>.log(<span class="string">'事件源p3开始拖动'</span>);</span></div><div class="line"><span class="javascript">      e.dataTransfer.setData(<span class="string">"DIV"</span>, e.target.id);</span></div><div class="line"><span class="undefined">    &#125;</span></div><div class="line"><span class="javascript">    target.ondrag = <span class="function"><span class="keyword">function</span>(<span class="params">e</span>) </span>&#123;</span></div><div class="line"><span class="javascript">      <span class="built_in">console</span>.log(<span class="string">'事件源p3拖动中'</span>);</span></div><div class="line"><span class="undefined">    &#125;</span></div><div class="line"><span class="javascript">    target.ondragend = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span></div><div class="line"><span class="javascript">      <span class="built_in">console</span>.log(<span class="string">'源对象p3拖动结束'</span>);</span></div><div class="line"><span class="undefined">    &#125;</span></div><div class="line"><span class="undefined">  </span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></div></pre></td></tr></table></figure>
+<h2 id="在页面中拖动元素"><a href="#在页面中拖动元素" class="headerlink" title="在页面中拖动元素"></a>在页面中拖动元素</h2><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">"en"</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"UTF-8"</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">"viewport"</span> <span class="attr">content</span>=<span class="string">"width=device-width, initial-scale=1.0"</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">"X-UA-Compatible"</span> <span class="attr">content</span>=<span class="string">"ie=edge"</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">title</span>&gt;</span>Document<span class="tag">&lt;/<span class="name">title</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="undefined"></span></div><div class="line"><span class="css">    <span class="selector-class">.container</span> &#123;</span></div><div class="line"><span class="undefined">      position: relative;</span></div><div class="line"><span class="undefined">    &#125;</span></div><div class="line"><span class="css">    <span class="selector-class">.target</span> &#123;</span></div><div class="line"><span class="undefined">      position: absolute;</span></div><div class="line"><span class="undefined">      top: 0;</span></div><div class="line"><span class="undefined">      left: 0;</span></div><div class="line"><span class="undefined">      width: 100px;</span></div><div class="line"><span class="undefined">      height: 100px;</span></div><div class="line"><span class="css">      <span class="selector-tag">background</span>: <span class="selector-id">#000</span>;</span></div><div class="line"><span class="undefined">    &#125;</span></div><div class="line"><span class="undefined">  </span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">body</span> <span class="attr">class</span>=<span class="string">"container"</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"target"</span> <span class="attr">id</span>=<span class="string">"target"</span> <span class="attr">draggable</span>=<span class="string">"true"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="undefined"></span></div><div class="line"><span class="javascript">    target.ondragstart = <span class="function"><span class="keyword">function</span> (<span class="params">e</span>) </span>&#123;</span></div><div class="line"><span class="javascript">      <span class="comment">// 记录拖动前的坐标</span></span></div><div class="line"><span class="undefined">      offsetX = e.offsetX;</span></div><div class="line"><span class="undefined">      offsetY = e.offsetY;</span></div><div class="line"><span class="undefined">    &#125;</span></div><div class="line"><span class="javascript">    target.ondrag = <span class="function"><span class="keyword">function</span> (<span class="params">e</span>) </span>&#123;</span></div><div class="line"><span class="javascript">      <span class="comment">// 获取拖动源在页面中的位置</span></span></div><div class="line"><span class="javascript">      <span class="keyword">var</span> x = e.pageX;</span></div><div class="line"><span class="javascript">      <span class="keyword">var</span> y = e.pageY;</span></div><div class="line"><span class="javascript">      <span class="built_in">console</span>.log(x + <span class="string">'-'</span> + y);</span></div><div class="line"><span class="javascript">      <span class="keyword">if</span> (x == <span class="number">0</span> &amp;&amp; y == <span class="number">0</span>) &#123;</span></div><div class="line"><span class="javascript">        <span class="keyword">return</span>; <span class="comment">// 不处理拖动最后一刻X和Y都为0的情形</span></span></div><div class="line"><span class="undefined">      &#125;</span></div><div class="line"><span class="undefined">      x -= offsetX;</span></div><div class="line"><span class="undefined">      y -= offsetY;</span></div><div class="line"><span class="javascript">      <span class="comment">// 更新拖动源的位置</span></span></div><div class="line"><span class="javascript">      target.style.left = x + <span class="string">'px'</span>;</span></div><div class="line"><span class="javascript">      target.style.top = y + <span class="string">'px'</span>;</span></div><div class="line"><span class="undefined">    &#125;</span></div><div class="line"><span class="javascript">    target.ondragend = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span></div><div class="line"><span class="javascript">      <span class="built_in">console</span>.log(<span class="string">'源对象p3拖动结束'</span>);</span></div><div class="line"><span class="undefined">    &#125;</span></div><div class="line"><span class="undefined">  </span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></div></pre></td></tr></table></figure>
+<h1 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h1><p><a href="http://www.cnblogs.com/blog-leo/p/4457697.html" target="_blank" rel="external">HTML5-draggable(拖放)</a> </p>
+<p><a href="http://www.zhangxinxu.com/wordpress/2011/02/html5-drag-drop-%E6%8B%96%E6%8B%BD%E4%B8%8E%E6%8B%96%E6%94%BE%E7%AE%80%E4%BB%8B/" target="_blank" rel="external">HTML5 drag &amp; drop 拖拽与拖放简介</a> </p>
+<p><a href="http://blog.csdn.net/baidu_25343343/article/details/53215193" target="_blank" rel="external">HTML5–拖拽API(含超经典例子)</a> </p>
+
+        </div>
+
+        <blockquote class="post-copyright">
+    <div class="content">
+        
+<span class="post-time">
+    最后更新时间：<time datetime="2017-12-20T10:13:48.368Z" itemprop="dateUpdated">2017-12-20 18:13:48</time>
+</span><br>
+
+
+        
+        这里可以写作者留言，标签和 hexo 中所有变量及辅助函数等均可调用，示例：<a href="/2017/12/19/深入理解HTML5 - 可拖动的元素/" target="_blank" rel="external">http://blog.xiaoyulive.top/2017/12/19/深入理解HTML5 - 可拖动的元素/</a>
+        
+    </div>
+    <footer>
+        <a href="http://blog.xiaoyulive.top">
+            <img src="/img/avatar.jpg" alt="Quanzaiyu">
+            Quanzaiyu
+        </a>
+    </footer>
+</blockquote>
+
+        
+<div class="page-reward">
+    <a id="rewardBtn" href="javascript:;" class="page-reward-btn waves-effect waves-circle waves-light">赏</a>
+</div>
+
+
+
+        <div class="post-footer">
+            
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/拖动/">拖动</a></li></ul>
+
+
+            
+<div class="page-share-wrap">
+    
+
+<div class="page-share" id="pageShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://blog.xiaoyulive.top/2017/12/19/深入理解HTML5 - 可拖动的元素/&title=《深入理解HTML5 - 可拖动的元素》 — 小昱博客&pic=http://blog.xiaoyulive.top/img/avatar.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://blog.xiaoyulive.top/2017/12/19/深入理解HTML5 - 可拖动的元素/&title=《深入理解HTML5 - 可拖动的元素》 — 小昱博客&source=" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://blog.xiaoyulive.top/2017/12/19/深入理解HTML5 - 可拖动的元素/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《深入理解HTML5 - 可拖动的元素》 — 小昱博客&url=http://blog.xiaoyulive.top/2017/12/19/深入理解HTML5 - 可拖动的元素/&via=http://blog.xiaoyulive.top" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://blog.xiaoyulive.top/2017/12/19/深入理解HTML5 - 可拖动的元素/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+
+    <a href="javascript:;" id="shareFab" class="page-share-fab waves-effect waves-circle">
+        <i class="icon icon-share-alt icon-lg"></i>
+    </a>
+</div>
+
+
+
+        </div>
+    </div>
+
+    
+<nav class="post-nav flex-row flex-justify-between">
+  
+    <div class="waves-block waves-effect prev">
+      <a href="/2017/12/21/Weex开发实践01 - 环境搭建/" id="post-prev" class="post-nav-link">
+        <div class="tips"><i class="icon icon-angle-left icon-lg icon-pr"></i> Prev</div>
+        <h4 class="title">Weex开发实践01 - 环境搭建</h4>
+      </a>
+    </div>
+  
+
+  
+    <div class="waves-block waves-effect next">
+      <a href="/2017/12/18/深入理解JavaScript - 深入探索XMLHttpRequest2/" id="post-next" class="post-nav-link">
+        <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
+        <h4 class="title">深入理解JavaScript - 深入探索XMLHttpRequest2</h4>
+      </a>
+    </div>
+  
+</nav>
+
+
+
+    
+
+
+<section class="comments" id="comments">
+    <div id="disqus_thread"></div>
+    <script>
+    var disqus_shortname = 'true';
+    lazyScripts.push('//' + disqus_shortname + '.disqus.com/embed.js')
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</section>
+
+
+
+
+<section class="comments" id="comments">
+    <!-- UY BEGIN -->
+    <div id="uyan_frame"></div>
+    <script src="http://v2.uyan.cc/code/uyan.js?uid=true"></script>
+    <!-- UY END -->
+</section>
+
+
+
+
+<section class="comments" id="comments">
+    <div id="gitment_thread"></div>
+    <link rel="stylesheet" href="//unpkg.com/gitment/style/default.css">
+    <script src="//unpkg.com/gitment/dist/gitment.browser.js"></script>
+    <script>
+        var gitment = new Gitment({
+            owner: 'quanzaiyu',
+            repo: 'quanzaiyu.github.io',
+            oauth: {
+                client_id: '3f4b90df85c3c29d643f',
+                client_secret: 'c951dd3dbd71e2edd597aa527a1a5d7e473d7375',
+            },
+        })
+        gitment.render('comments')
+    </script>
+</section>
+
+
+
+
+</article>
+
+<div id="reward" class="page-modal reward-lay">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <h3 class="reward-title">
+        <i class="icon icon-quote-left"></i>
+        谢谢大爷~
+        <i class="icon icon-quote-right"></i>
+    </h3>
+    <div class="reward-content">
+        
+        <div class="reward-code">
+            <img id="rewardCode" src="/img/wechat.jpg" alt="打赏二维码">
+        </div>
+        
+        <label class="reward-toggle">
+            <input id="rewardToggle" type="checkbox" class="reward-toggle-check"
+                data-wechat="/img/wechat.jpg" data-alipay="/img/alipay.jpg">
+            <div class="reward-toggle-ctrol">
+                <span class="reward-toggle-item wechat">微信</span>
+                <span class="reward-toggle-label"></span>
+                <span class="reward-toggle-item alipay">支付宝</span>
+            </div>
+        </label>
+        
+    </div>
+</div>
+
+
+
+</div>
+
+<!-- <script>
+    particlesJS.load('canvas-container', '/json/particles2.json', function () {
+        console.log('callback - particles.js config loaded');
+    })
+</script> -->
+        <footer class="footer">
+    <div class="top">
+        
+<p>
+    <span id="busuanzi_container_site_uv" style='display:none'>
+        站点总访客数：<span id="busuanzi_value_site_uv"></span>
+    </span>
+    <span id="busuanzi_container_site_pv" style='display:none'>
+        站点总访问量：<span id="busuanzi_value_site_pv"></span>
+    </span>
+</p>
+
+
+        <p>
+            
+            <!-- <span>博客内容遵循 <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">知识共享 署名 - 非商业性 - 相同方式共享 4.0 国际协议</a></span> -->
+        </p>
+    </div>
+    <div class="bottom">
+        <p><span>Quanzaiyu &copy; 2015 - 2018</span>
+            <span>
+                
+                <a href="http://www.miitbeian.gov.cn/" target="_blank">滇ICP备16006294号</a><br>
+                
+                Power by <a href="http://hexo.io/" target="_blank">Hexo</a>
+            </span>
+        </p>
+    </div>
+</footer>
+
+    </main>
+    <div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+
+
+<div class="global-share" id="globalShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://blog.xiaoyulive.top/2017/12/19/深入理解HTML5 - 可拖动的元素/&title=《深入理解HTML5 - 可拖动的元素》 — 小昱博客&pic=http://blog.xiaoyulive.top/img/avatar.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://blog.xiaoyulive.top/2017/12/19/深入理解HTML5 - 可拖动的元素/&title=《深入理解HTML5 - 可拖动的元素》 — 小昱博客&source=" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://blog.xiaoyulive.top/2017/12/19/深入理解HTML5 - 可拖动的元素/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《深入理解HTML5 - 可拖动的元素》 — 小昱博客&url=http://blog.xiaoyulive.top/2017/12/19/深入理解HTML5 - 可拖动的元素/&via=http://blog.xiaoyulive.top" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://blog.xiaoyulive.top/2017/12/19/深入理解HTML5 - 可拖动的元素/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+<div class="page-modal wx-share" id="wxShare">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <img src="//api.qrserver.com/v1/create-qr-code/?data=http://blog.xiaoyulive.top/2017/12/19/深入理解HTML5 - 可拖动的元素/" alt="微信分享二维码">
+</div>
+
+
+
+
+    <script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+<script>
+var BLOG = { ROOT: '/', SHARE: true, REWARD: true };
+
+
+</script>
+
+<script src="/js/main.min.js?v=1.6.17"></script>
+
+
+<div class="search-panel" id="search-panel">
+    <ul class="search-result" id="search-result"></ul>
+</div>
+<template id="search-tpl">
+<li class="item">
+    <a href="{path}" class="waves-block waves-effect">
+        <div class="title ellipsis" title="{title}">{title}</div>
+        <div class="flex-row flex-middle">
+            <div class="tags ellipsis">
+                {tags}
+            </div>
+            <time class="flex-col time">{date}</time>
+        </div>
+    </a>
+</li>
+</template>
+
+<script src="/js/search.min.js?v=1.6.17" async></script>
+
+
+
+
+
+
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+<script>
+(function() {
+    var OriginTitile = document.title, titleTime;
+    document.addEventListener('visibilitychange', function() {
+        if (document.hidden) {
+            document.title = 'ﾍ(;´Д｀ﾍ)快回来啊！';
+            clearTimeout(titleTime);
+        } else {
+            document.title = '(つェ⊂)欢迎回来!';
+            titleTime = setTimeout(function() {
+                document.title = OriginTitile;
+            },2000);
+        }
+    });
+})();
+</script>
+
+
+
+</body>
+</html>

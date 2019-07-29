@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+
+    
+
+    
+<!-- Baidu Tongji -->
+<script>var _hmt = _hmt || []</script>
+<script async src="//hm.baidu.com/hm.js?3c8be249330224d7c919b4f22750d872"></script>
+<!-- End Baidu Tongji -->
+
+
+
+
+    <meta charset="utf-8">
+    
+    
+    
+    <title>玩转交互式命令行 | 小昱博客 | 勤学如春起之苗，不见其增，日有所长；辍学如磨刀之石，不见其损，日有所亏</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="theme-color" content="#3F51B5">
+    
+    
+    <meta name="keywords" content="命令行">
+    <meta name="description" content="前言震惊过命令行中那些五颜六色的文本显示，使用包管理安装程序时进度条的变化，vim、Emacs等编辑器在终端中的实现。其实，这些都是Ansi Escape Codes的应用。 绝大部分Ansi Escape Codes都以\u001b开头。本文以python命令行交互环境演示。 Ansi Escape Codes的使用字体颜色8色基本上所有的控制台都支持以下8种颜色： 格式: \u001b[${I">
+<meta name="keywords" content="命令行">
+<meta property="og:type" content="article">
+<meta property="og:title" content="玩转交互式命令行">
+<meta property="og:url" content="http://blog.xiaoyulive.top/2017/12/05/玩转交互式命令行/index.html">
+<meta property="og:site_name" content="小昱博客">
+<meta property="og:description" content="前言震惊过命令行中那些五颜六色的文本显示，使用包管理安装程序时进度条的变化，vim、Emacs等编辑器在终端中的实现。其实，这些都是Ansi Escape Codes的应用。 绝大部分Ansi Escape Codes都以\u001b开头。本文以python命令行交互环境演示。 Ansi Escape Codes的使用字体颜色8色基本上所有的控制台都支持以下8种颜色： 格式: \u001b[${I">
+<meta property="og:image" content="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/0007.jpg">
+<meta property="og:updated_time" content="2017-12-13T03:03:46.102Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="玩转交互式命令行">
+<meta name="twitter:description" content="前言震惊过命令行中那些五颜六色的文本显示，使用包管理安装程序时进度条的变化，vim、Emacs等编辑器在终端中的实现。其实，这些都是Ansi Escape Codes的应用。 绝大部分Ansi Escape Codes都以\u001b开头。本文以python命令行交互环境演示。 Ansi Escape Codes的使用字体颜色8色基本上所有的控制台都支持以下8种颜色： 格式: \u001b[${I">
+<meta name="twitter:image" content="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/0007.jpg">
+    
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="stylesheet" href="/css/style.css?v=1.6.17">
+    <script>window.lazyScripts=[]</script>
+
+    <!-- custom head -->
+    
+
+    <script src="/js/particles.min.js?v=1.6.17"></script>
+</head>
+
+<body>
+    <div id="loading" class="active"></div>
+
+    <aside id="menu" class="hide" >
+  <div class="inner flex-row-vertical">
+    <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+        <i class="icon icon-lg icon-close"></i>
+    </a>
+    <div class="brand-wrap" style="background-image:url(/img/brand.webp)">
+      <div class="brand">
+        <!-- 头像 -->
+        <a href="/" class="avatar waves-effect waves-circle waves-light">
+          <img src="/img/avatar.jpg">
+        </a>
+        <!-- 简介 -->
+        <hgroup class="introduce">
+          <h5 class="nickname">Quanzaiyu</h5>
+          <a href="mailto:quanzaiyu@outlook.com" title="quanzaiyu@outlook.com" class="mail">quanzaiyu@outlook.com</a>
+          <!-- 链接 -->
+          <div class="iconGroup">
+            
+              <div class="icon">
+                <a  href="https://github.com/quanzaiyu"
+                    target="_blank" 
+                    title="GitHub">
+                  <i class="icon icon-lg icon-github"></i>
+                </a>
+              </div>
+            
+              <div class="icon">
+                <a  href="http://www.weibo.com/quanzaiyu"
+                    target="_blank" 
+                    title="微博">
+                  <i class="icon icon-lg icon-weibo"></i>
+                </a>
+              </div>
+            
+              <div class="icon">
+                <a  href="http://www.jianshu.com/u/2e74d0659da1"
+                    target="_blank" 
+                    title="简书">
+                  <i class="icon icon-lg icon-book"></i>
+                </a>
+              </div>
+            
+          </div>
+        </hgroup>
+      </div>
+    </div>
+    <div class="scroll-wrap flex-col">
+      <ul class="nav">
+        
+            <li class="waves-block waves-effect">
+              <a href="/"  >
+                <i class="icon icon-lg icon-home"></i>
+                主页
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/archives"  >
+                <i class="icon icon-lg icon-archives"></i>
+                归档
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/tags"  >
+                <i class="icon icon-lg icon-tags"></i>
+                标签云
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/categories"  >
+                <i class="icon icon-lg icon-th-list"></i>
+                分类
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/custom"  >
+                <i class="icon icon-lg icon-link"></i>
+                关于我
+              </a>
+            </li>
+        
+      </ul>
+    </div>
+  </div>
+</aside>
+
+    <main id="main">
+        <header class="top-header" id="header">
+    <div class="flex-row">
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">玩转交互式命令行</div>
+        
+        <div class="search-wrap" id="search-wrap">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+                <i class="icon icon-lg icon-chevron-left"></i>
+            </a>
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="输入感兴趣的关键字">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
+                <i class="icon icon-lg icon-search"></i>
+            </a>
+        </div>
+        
+        
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menuShare">
+            <i class="icon icon-lg icon-share-alt"></i>
+        </a>
+        
+    </div>
+</header>
+<header class="content-header post-header">
+
+    <div class="container fade-scale">
+        <h1 class="title">玩转交互式命令行</h1>
+        <h5 class="subtitle">
+            
+                <time datetime="2017-12-05T01:35:46.271Z" itemprop="datePublished" class="page-time">
+  2017-12-05
+</time>
+
+
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/计算机/">计算机</a></li></ul>
+
+            
+        </h5>
+    </div>
+
+    
+
+
+</header>
+
+
+<div class="container body-wrap">
+    <!-- <div id="canvas-container"></div> -->
+    
+    <aside class="post-widget">
+        <nav class="post-toc-wrap" id="post-toc">
+            <h4>TOC</h4>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#前言"><span class="post-toc-number">1.</span> <span class="post-toc-text">前言</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#Ansi-Escape-Codes的使用"><span class="post-toc-number">2.</span> <span class="post-toc-text">Ansi Escape Codes的使用</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#字体颜色"><span class="post-toc-number">2.1.</span> <span class="post-toc-text">字体颜色</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#8色"><span class="post-toc-number">2.1.1.</span> <span class="post-toc-text">8色</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#16色"><span class="post-toc-number">2.1.2.</span> <span class="post-toc-text">16色</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#256色"><span class="post-toc-number">2.1.3.</span> <span class="post-toc-text">256色</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#背景颜色"><span class="post-toc-number">2.2.</span> <span class="post-toc-text">背景颜色</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#样式设置"><span class="post-toc-number">2.3.</span> <span class="post-toc-text">样式设置</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#光标控制"><span class="post-toc-number">2.4.</span> <span class="post-toc-text">光标控制</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#参考资料"><span class="post-toc-number">3.</span> <span class="post-toc-text">参考资料</span></a></li></ol>
+        </nav>
+    </aside>
+    
+<article id="post-玩转交互式命令行"
+  class="post-article article-type-post fade" itemprop="blogPost">
+
+    <div class="post-card">
+        <h1 class="post-card-title">玩转交互式命令行</h1>
+        <div class="post-meta">
+            <time class="post-time" title="2017-12-05 09:35:46" datetime="2017-12-05T01:35:46.271Z"  itemprop="datePublished">2017-12-05</time>
+
+            
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/计算机/">计算机</a></li></ul>
+
+
+
+            
+<span id="busuanzi_container_page_pv" title="文章总阅读量" style='display:none'>
+    <i class="icon icon-eye icon-pr"></i><span id="busuanzi_value_page_pv"></span>
+</span>
+
+
+        </div>
+        <div class="post-content" id="post-content" itemprop="postContent">
+            <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>震惊过命令行中那些五颜六色的文本显示，使用包管理安装程序时进度条的变化，vim、Emacs等编辑器在终端中的实现。其实，这些都是<code>Ansi Escape Codes</code>的应用。</p>
+<p>绝大部分Ansi Escape Codes都以<code>\u001b</code>开头。本文以<code>python</code>命令行交互环境演示。</p>
+<h1 id="Ansi-Escape-Codes的使用"><a href="#Ansi-Escape-Codes的使用" class="headerlink" title="Ansi Escape Codes的使用"></a>Ansi Escape Codes的使用</h1><h2 id="字体颜色"><a href="#字体颜色" class="headerlink" title="字体颜色"></a>字体颜色</h2><h3 id="8色"><a href="#8色" class="headerlink" title="8色"></a>8色</h3><p>基本上所有的控制台都支持以下8种颜色：</p>
+<p>格式: <code>\u001b[${ID}m</code> ID从30-37</p>
+<ul>
+<li>黑色：<code>\u001b[30m</code></li>
+<li>红色：<code>\u001b[31m</code></li>
+<li>绿色：<code>\u001b[32m</code></li>
+<li>黄色：<code>\u001b[33m</code></li>
+<li>蓝色：<code>\u001b[34m</code></li>
+<li>洋红色：<code>\u001b[35m</code></li>
+<li>青色：<code>\u001b[36m</code></li>
+<li>白色：<code>\u001b[37m</code></li>
+<li>重置：<code>\u001b[0m</code></li>
+</ul>
+<p>test.py</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">print(<span class="string">'''</span></div><div class="line"><span class="string">\u001b[30m黑色\u001b[0m</span></div><div class="line"><span class="string">\u001b[31m红色\u001b[0m</span></div><div class="line"><span class="string">\u001b[32m绿色\u001b[0m</span></div><div class="line"><span class="string">\u001b[33m黄色\u001b[0m</span></div><div class="line"><span class="string">\u001b[34m蓝色\u001b[0m</span></div><div class="line"><span class="string">\u001b[35m洋红色\u001b[0m</span></div><div class="line"><span class="string">\u001b[36m青色\u001b[0m</span></div><div class="line"><span class="string">\u001b[37m白色\u001b[0m</span></div><div class="line"><span class="string">'''</span>)</div></pre></td></tr></table></figure>
+<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/0007.jpg" alt="" title="">
+                </div>
+                <div class="image-caption"></div>
+            </figure>
+<h3 id="16色"><a href="#16色" class="headerlink" title="16色"></a>16色</h3><p>大多数的控制台，除了支持刚才提到的8色外，还可以输出在此之上更加明亮的8种颜色：</p>
+<p>格式: <code>\u001b[${ID};1m</code> ID从30-37</p>
+<ul>
+<li>亮黑色：<code>\u001b[30;1m</code></li>
+<li>亮红色：<code>\u001b[31;1m</code></li>
+<li>亮绿色：<code>\u001b[32;1m</code></li>
+<li>亮黄色：<code>\u001b[33;1m</code></li>
+<li>亮蓝色：<code>\u001b[34;1m</code></li>
+<li>亮洋红色：<code>\u001b[35;1m</code></li>
+<li>亮青色：<code>\u001b[36;1m</code></li>
+<li>亮白色：<code>\u001b[37;1m</code></li>
+</ul>
+<p>亮色指令分别在原来对应颜色的指令中间加上<code>;1</code>。</p>
+<h3 id="256色"><a href="#256色" class="headerlink" title="256色"></a>256色</h3><p>除了16色外，某些控制台支持输出256色。指令的形式如下：</p>
+<ul>
+<li><code>\u001b[38;5;${ID}m</code> ID从1-255</li>
+</ul>
+<p>以下示例打印出256色矩阵</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">16</span>):</div><div class="line">    <span class="keyword">for</span> j <span class="keyword">in</span> range(<span class="number">16</span>):</div><div class="line">        code = i * <span class="number">16</span> + j</div><div class="line">        print(<span class="string">"\u001b[38;5;%dm%d"</span> % (code, code))</div><div class="line">    print(<span class="string">"\u001b[0m"</span>)</div></pre></td></tr></table></figure>
+<h2 id="背景颜色"><a href="#背景颜色" class="headerlink" title="背景颜色"></a>背景颜色</h2><p>原理同字体颜色</p>
+<p>8色:</p>
+<ul>
+<li>黑色背景：<code>\u001b[40m</code></li>
+<li>红色背景：<code>\u001b[41m</code></li>
+<li>绿色背景：<code>\u001b[42m</code></li>
+<li>黄色背景：<code>\u001b[43m</code></li>
+<li>蓝色背景：<code>\u001b[44m</code></li>
+<li>洋红色背景：<code>\u001b[45m</code></li>
+<li>青色背景：<code>\u001b[46m</code></li>
+<li>白色背景：<code>\u001b[47m</code></li>
+</ul>
+<p>16色:</p>
+<ul>
+<li>亮黑色背景：<code>\u001b[40;1m</code></li>
+<li>亮红色背景：<code>\u001b[41;1m</code></li>
+<li>亮绿色背景：<code>\u001b[42;1m</code></li>
+<li>亮黄色背景：<code>\u001b[43;1m</code></li>
+<li>亮蓝色背景：<code>\u001b[44;1m</code></li>
+<li>亮洋红色背景：<code>\u001b[45;1m</code></li>
+<li>亮青色背景：<code>\u001b[46;1m</code></li>
+<li>亮白色背景：<code>\u001b[47;1m</code></li>
+</ul>
+<p>256色:</p>
+<ul>
+<li><code>\u001b[48;5;${ID}m</code></li>
+</ul>
+<p>重置:</p>
+<ul>
+<li>仍然是 <code>\u001b[0m</code></li>
+</ul>
+<h2 id="样式设置"><a href="#样式设置" class="headerlink" title="样式设置"></a>样式设置</h2><ul>
+<li>粗体：<code>\u001b[1m</code></li>
+<li>下划线：<code>\u001b[4m</code></li>
+<li>反色：<code>\u001b[7m</code></li>
+</ul>
+<h2 id="光标控制"><a href="#光标控制" class="headerlink" title="光标控制"></a>光标控制</h2><ul>
+<li>光标向上移动：<code>\u001b[{n}A</code>将光标向上移动<code>n</code>格。</li>
+<li>光标向下移动：<code>\u001b[{n}B</code>将光标向下移动<code>n</code>格。</li>
+<li>光标向右移动：<code>\u001b[{n}C</code>将光标向右移动<code>n</code>格。</li>
+<li>光标向左移动：<code>\u001b[{n}D</code>将光标向左移动<code>n</code>格。</li>
+<li>光标按行向下移动：<code>\u001b[{n}E</code>将光标向下移动<code>n</code>行并且将光标移至行首。</li>
+<li>光标按行向上移动：<code>\u001b[{n}F</code>将光标向上移动<code>n</code>行并且将光标移至行首。</li>
+<li>设置光标所在列：<code>\u001b[{n}G</code>将光标移至第<code>n</code>列（行数与当前所在行保持一致）。</li>
+<li>设置光标所在位置：<code>\u001b[{n};{m}H</code>将光标移至第<code>n</code>行<code>m</code>列，坐标原点从屏幕左上角开始。</li>
+<li>保存光标当前所在位置：<code>\u001b[{s}</code>。</li>
+<li>读取光标上一次保存的位置：<code>\u001b[{u}</code>。</li>
+</ul>
+<h1 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h1><p><a href="http://mp.weixin.qq.com/s/PrYBXRoUApbcalaIgY7LPQ" target="_blank" rel="external">WeChat: 震惊！原来命令行还可以这么玩？！</a> </p>
+<p><a href="http://blog.csdn.net/justheretobe/article/details/7259718" target="_blank" rel="external">stty的用法及解析–escape sequence code的用法</a> </p>
+
+        </div>
+
+        <blockquote class="post-copyright">
+    <div class="content">
+        
+<span class="post-time">
+    最后更新时间：<time datetime="2017-12-13T03:03:46.102Z" itemprop="dateUpdated">2017-12-13 11:03:46</time>
+</span><br>
+
+
+        
+        这里可以写作者留言，标签和 hexo 中所有变量及辅助函数等均可调用，示例：<a href="/2017/12/05/玩转交互式命令行/" target="_blank" rel="external">http://blog.xiaoyulive.top/2017/12/05/玩转交互式命令行/</a>
+        
+    </div>
+    <footer>
+        <a href="http://blog.xiaoyulive.top">
+            <img src="/img/avatar.jpg" alt="Quanzaiyu">
+            Quanzaiyu
+        </a>
+    </footer>
+</blockquote>
+
+        
+<div class="page-reward">
+    <a id="rewardBtn" href="javascript:;" class="page-reward-btn waves-effect waves-circle waves-light">赏</a>
+</div>
+
+
+
+        <div class="post-footer">
+            
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/命令行/">命令行</a></li></ul>
+
+
+            
+<div class="page-share-wrap">
+    
+
+<div class="page-share" id="pageShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://blog.xiaoyulive.top/2017/12/05/玩转交互式命令行/&title=《玩转交互式命令行》 — 小昱博客&pic=http://blog.xiaoyulive.top/img/avatar.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://blog.xiaoyulive.top/2017/12/05/玩转交互式命令行/&title=《玩转交互式命令行》 — 小昱博客&source=" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://blog.xiaoyulive.top/2017/12/05/玩转交互式命令行/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《玩转交互式命令行》 — 小昱博客&url=http://blog.xiaoyulive.top/2017/12/05/玩转交互式命令行/&via=http://blog.xiaoyulive.top" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://blog.xiaoyulive.top/2017/12/05/玩转交互式命令行/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+
+    <a href="javascript:;" id="shareFab" class="page-share-fab waves-effect waves-circle">
+        <i class="icon icon-share-alt icon-lg"></i>
+    </a>
+</div>
+
+
+
+        </div>
+    </div>
+
+    
+<nav class="post-nav flex-row flex-justify-between">
+  
+    <div class="waves-block waves-effect prev">
+      <a href="/2017/12/05/高效使用VSCode进行开发/" id="post-prev" class="post-nav-link">
+        <div class="tips"><i class="icon icon-angle-left icon-lg icon-pr"></i> Prev</div>
+        <h4 class="title">高效使用VSCode进行开发</h4>
+      </a>
+    </div>
+  
+
+  
+    <div class="waves-block waves-effect next">
+      <a href="/2017/12/05/使用Hexo搭建静态博客/" id="post-next" class="post-nav-link">
+        <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
+        <h4 class="title">使用Hexo搭建静态博客</h4>
+      </a>
+    </div>
+  
+</nav>
+
+
+
+    
+
+
+<section class="comments" id="comments">
+    <div id="disqus_thread"></div>
+    <script>
+    var disqus_shortname = 'true';
+    lazyScripts.push('//' + disqus_shortname + '.disqus.com/embed.js')
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</section>
+
+
+
+
+<section class="comments" id="comments">
+    <!-- UY BEGIN -->
+    <div id="uyan_frame"></div>
+    <script src="http://v2.uyan.cc/code/uyan.js?uid=true"></script>
+    <!-- UY END -->
+</section>
+
+
+
+
+<section class="comments" id="comments">
+    <div id="gitment_thread"></div>
+    <link rel="stylesheet" href="//unpkg.com/gitment/style/default.css">
+    <script src="//unpkg.com/gitment/dist/gitment.browser.js"></script>
+    <script>
+        var gitment = new Gitment({
+            owner: 'quanzaiyu',
+            repo: 'quanzaiyu.github.io',
+            oauth: {
+                client_id: '3f4b90df85c3c29d643f',
+                client_secret: 'c951dd3dbd71e2edd597aa527a1a5d7e473d7375',
+            },
+        })
+        gitment.render('comments')
+    </script>
+</section>
+
+
+
+
+</article>
+
+<div id="reward" class="page-modal reward-lay">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <h3 class="reward-title">
+        <i class="icon icon-quote-left"></i>
+        谢谢大爷~
+        <i class="icon icon-quote-right"></i>
+    </h3>
+    <div class="reward-content">
+        
+        <div class="reward-code">
+            <img id="rewardCode" src="/img/wechat.jpg" alt="打赏二维码">
+        </div>
+        
+        <label class="reward-toggle">
+            <input id="rewardToggle" type="checkbox" class="reward-toggle-check"
+                data-wechat="/img/wechat.jpg" data-alipay="/img/alipay.jpg">
+            <div class="reward-toggle-ctrol">
+                <span class="reward-toggle-item wechat">微信</span>
+                <span class="reward-toggle-label"></span>
+                <span class="reward-toggle-item alipay">支付宝</span>
+            </div>
+        </label>
+        
+    </div>
+</div>
+
+
+
+</div>
+
+<!-- <script>
+    particlesJS.load('canvas-container', '/json/particles2.json', function () {
+        console.log('callback - particles.js config loaded');
+    })
+</script> -->
+        <footer class="footer">
+    <div class="top">
+        
+<p>
+    <span id="busuanzi_container_site_uv" style='display:none'>
+        站点总访客数：<span id="busuanzi_value_site_uv"></span>
+    </span>
+    <span id="busuanzi_container_site_pv" style='display:none'>
+        站点总访问量：<span id="busuanzi_value_site_pv"></span>
+    </span>
+</p>
+
+
+        <p>
+            
+            <!-- <span>博客内容遵循 <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">知识共享 署名 - 非商业性 - 相同方式共享 4.0 国际协议</a></span> -->
+        </p>
+    </div>
+    <div class="bottom">
+        <p><span>Quanzaiyu &copy; 2015 - 2018</span>
+            <span>
+                
+                <a href="http://www.miitbeian.gov.cn/" target="_blank">滇ICP备16006294号</a><br>
+                
+                Power by <a href="http://hexo.io/" target="_blank">Hexo</a>
+            </span>
+        </p>
+    </div>
+</footer>
+
+    </main>
+    <div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+
+
+<div class="global-share" id="globalShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://blog.xiaoyulive.top/2017/12/05/玩转交互式命令行/&title=《玩转交互式命令行》 — 小昱博客&pic=http://blog.xiaoyulive.top/img/avatar.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://blog.xiaoyulive.top/2017/12/05/玩转交互式命令行/&title=《玩转交互式命令行》 — 小昱博客&source=" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://blog.xiaoyulive.top/2017/12/05/玩转交互式命令行/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《玩转交互式命令行》 — 小昱博客&url=http://blog.xiaoyulive.top/2017/12/05/玩转交互式命令行/&via=http://blog.xiaoyulive.top" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://blog.xiaoyulive.top/2017/12/05/玩转交互式命令行/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+<div class="page-modal wx-share" id="wxShare">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <img src="//api.qrserver.com/v1/create-qr-code/?data=http://blog.xiaoyulive.top/2017/12/05/玩转交互式命令行/" alt="微信分享二维码">
+</div>
+
+
+
+
+    <script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+<script>
+var BLOG = { ROOT: '/', SHARE: true, REWARD: true };
+
+
+</script>
+
+<script src="/js/main.min.js?v=1.6.17"></script>
+
+
+<div class="search-panel" id="search-panel">
+    <ul class="search-result" id="search-result"></ul>
+</div>
+<template id="search-tpl">
+<li class="item">
+    <a href="{path}" class="waves-block waves-effect">
+        <div class="title ellipsis" title="{title}">{title}</div>
+        <div class="flex-row flex-middle">
+            <div class="tags ellipsis">
+                {tags}
+            </div>
+            <time class="flex-col time">{date}</time>
+        </div>
+    </a>
+</li>
+</template>
+
+<script src="/js/search.min.js?v=1.6.17" async></script>
+
+
+
+
+
+
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+<script>
+(function() {
+    var OriginTitile = document.title, titleTime;
+    document.addEventListener('visibilitychange', function() {
+        if (document.hidden) {
+            document.title = 'ﾍ(;´Д｀ﾍ)快回来啊！';
+            clearTimeout(titleTime);
+        } else {
+            document.title = '(つェ⊂)欢迎回来!';
+            titleTime = setTimeout(function() {
+                document.title = OriginTitile;
+            },2000);
+        }
+    });
+})();
+</script>
+
+
+
+</body>
+</html>

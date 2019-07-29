@@ -1,0 +1,986 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+
+    
+
+    
+<!-- Baidu Tongji -->
+<script>var _hmt = _hmt || []</script>
+<script async src="//hm.baidu.com/hm.js?3c8be249330224d7c919b4f22750d872"></script>
+<!-- End Baidu Tongji -->
+
+
+
+
+    <meta charset="utf-8">
+    
+    
+    
+    <title>意想不到的CSS - CSS3图像处理 - 渐变、裁剪 | 小昱博客 | 勤学如春起之苗，不见其增，日有所长；辍学如磨刀之石，不见其损，日有所亏</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="theme-color" content="#3F51B5">
+    
+    
+    <meta name="keywords" content="CSS3">
+    <meta name="description" content="渐变 gradient线性渐变 linear-gradient渐变线在渐变容器中，穿过容器中心点和颜色停止点连接在一起的线称为渐变线。在一个笛卡尔坐标系中，y轴正方向为0deg(to top)，x轴正方向为90deg(to right)，y轴负方向为180deg(to bottom)，x轴负方向为270deg(to left) 1background-image: linear-gradient(">
+<meta name="keywords" content="CSS3">
+<meta property="og:type" content="article">
+<meta property="og:title" content="意想不到的CSS - CSS3图像处理 - 渐变、裁剪">
+<meta property="og:url" content="http://blog.xiaoyulive.top/2017/12/15/意想不到的CSS - CSS3图像处理 - 渐变、裁剪/index.html">
+<meta property="og:site_name" content="小昱博客">
+<meta property="og:description" content="渐变 gradient线性渐变 linear-gradient渐变线在渐变容器中，穿过容器中心点和颜色停止点连接在一起的线称为渐变线。在一个笛卡尔坐标系中，y轴正方向为0deg(to top)，x轴正方向为90deg(to right)，y轴负方向为180deg(to bottom)，x轴负方向为270deg(to left) 1background-image: linear-gradient(">
+<meta property="og:image" content="https://www.w3cplus.com/sites/default/files/blogs/2017/1703/gradient-1.png">
+<meta property="og:image" content="https://www.w3cplus.com/sites/default/files/blogs/2017/1703/gradient-8.png">
+<meta property="og:image" content="https://www.w3cplus.com/sites/default/files/blogs/2017/1703/gradient-9.png">
+<meta property="og:image" content="https://www.w3cplus.com/sites/default/files/blogs/2017/1703/gradient-10.png">
+<meta property="og:image" content="https://www.w3cplus.com/sites/default/files/blogs/2017/1703/gradient-11.png">
+<meta property="og:image" content="https://www.w3cplus.com/sites/default/files/blogs/2017/1703/gradient-13.png">
+<meta property="og:image" content="https://www.w3cplus.com/sites/default/files/blogs/2017/1703/gradient-17.png">
+<meta property="og:image" content="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/filter13.png">
+<meta property="og:image" content="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/gradient11.png">
+<meta property="og:image" content="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/gradient16.png">
+<meta property="og:image" content="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/radial-gradient-ray.png">
+<meta property="og:image" content="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/circle-gradient-end.png">
+<meta property="og:image" content="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/gradient01.png">
+<meta property="og:image" content="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/gradient07.png">
+<meta property="og:image" content="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/gradient04.png">
+<meta property="og:image" content="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/gradient05.png">
+<meta property="og:image" content="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/gradient03.png">
+<meta property="og:image" content="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/gradient08.png">
+<meta property="og:image" content="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/gradient06.png">
+<meta property="og:image" content="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/gradient09.png">
+<meta property="og:image" content="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/gradient10.png">
+<meta property="og:image" content="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/gradient12.png">
+<meta property="og:image" content="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/gradient18.png">
+<meta property="og:image" content="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/gradient13.png">
+<meta property="og:image" content="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/gradient14.png">
+<meta property="og:image" content="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/gradient15.png">
+<meta property="og:image" content="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/gradient17.png">
+<meta property="og:image" content="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/clip02.png">
+<meta property="og:image" content="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/clip01.png">
+<meta property="og:updated_time" content="2017-12-15T06:09:05.896Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="意想不到的CSS - CSS3图像处理 - 渐变、裁剪">
+<meta name="twitter:description" content="渐变 gradient线性渐变 linear-gradient渐变线在渐变容器中，穿过容器中心点和颜色停止点连接在一起的线称为渐变线。在一个笛卡尔坐标系中，y轴正方向为0deg(to top)，x轴正方向为90deg(to right)，y轴负方向为180deg(to bottom)，x轴负方向为270deg(to left) 1background-image: linear-gradient(">
+<meta name="twitter:image" content="https://www.w3cplus.com/sites/default/files/blogs/2017/1703/gradient-1.png">
+    
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="stylesheet" href="/css/style.css?v=1.6.17">
+    <script>window.lazyScripts=[]</script>
+
+    <!-- custom head -->
+    
+
+    <script src="/js/particles.min.js?v=1.6.17"></script>
+</head>
+
+<body>
+    <div id="loading" class="active"></div>
+
+    <aside id="menu" class="hide" >
+  <div class="inner flex-row-vertical">
+    <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+        <i class="icon icon-lg icon-close"></i>
+    </a>
+    <div class="brand-wrap" style="background-image:url(/img/brand.webp)">
+      <div class="brand">
+        <!-- 头像 -->
+        <a href="/" class="avatar waves-effect waves-circle waves-light">
+          <img src="/img/avatar.jpg">
+        </a>
+        <!-- 简介 -->
+        <hgroup class="introduce">
+          <h5 class="nickname">Quanzaiyu</h5>
+          <a href="mailto:quanzaiyu@outlook.com" title="quanzaiyu@outlook.com" class="mail">quanzaiyu@outlook.com</a>
+          <!-- 链接 -->
+          <div class="iconGroup">
+            
+              <div class="icon">
+                <a  href="https://github.com/quanzaiyu"
+                    target="_blank" 
+                    title="GitHub">
+                  <i class="icon icon-lg icon-github"></i>
+                </a>
+              </div>
+            
+              <div class="icon">
+                <a  href="http://www.weibo.com/quanzaiyu"
+                    target="_blank" 
+                    title="微博">
+                  <i class="icon icon-lg icon-weibo"></i>
+                </a>
+              </div>
+            
+              <div class="icon">
+                <a  href="http://www.jianshu.com/u/2e74d0659da1"
+                    target="_blank" 
+                    title="简书">
+                  <i class="icon icon-lg icon-book"></i>
+                </a>
+              </div>
+            
+          </div>
+        </hgroup>
+      </div>
+    </div>
+    <div class="scroll-wrap flex-col">
+      <ul class="nav">
+        
+            <li class="waves-block waves-effect">
+              <a href="/"  >
+                <i class="icon icon-lg icon-home"></i>
+                主页
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/archives"  >
+                <i class="icon icon-lg icon-archives"></i>
+                归档
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/tags"  >
+                <i class="icon icon-lg icon-tags"></i>
+                标签云
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/categories"  >
+                <i class="icon icon-lg icon-th-list"></i>
+                分类
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/custom"  >
+                <i class="icon icon-lg icon-link"></i>
+                关于我
+              </a>
+            </li>
+        
+      </ul>
+    </div>
+  </div>
+</aside>
+
+    <main id="main">
+        <header class="top-header" id="header">
+    <div class="flex-row">
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">意想不到的CSS - CSS3图像处理 - 渐变、裁剪</div>
+        
+        <div class="search-wrap" id="search-wrap">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+                <i class="icon icon-lg icon-chevron-left"></i>
+            </a>
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="输入感兴趣的关键字">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
+                <i class="icon icon-lg icon-search"></i>
+            </a>
+        </div>
+        
+        
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menuShare">
+            <i class="icon icon-lg icon-share-alt"></i>
+        </a>
+        
+    </div>
+</header>
+<header class="content-header post-header">
+
+    <div class="container fade-scale">
+        <h1 class="title">意想不到的CSS - CSS3图像处理 - 渐变、裁剪</h1>
+        <h5 class="subtitle">
+            
+                <time datetime="2017-12-15T06:09:05.896Z" itemprop="datePublished" class="page-time">
+  2017-12-15
+</time>
+
+
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/前端开发/">前端开发</a><ul class="article-category-list-child"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/前端开发/意想不到的CSS/">意想不到的CSS</a></li></ul></li></ul>
+
+            
+        </h5>
+    </div>
+
+    
+
+
+</header>
+
+
+<div class="container body-wrap">
+    <!-- <div id="canvas-container"></div> -->
+    
+    <aside class="post-widget">
+        <nav class="post-toc-wrap" id="post-toc">
+            <h4>TOC</h4>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#渐变-gradient"><span class="post-toc-number">1.</span> <span class="post-toc-text">渐变 gradient</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#线性渐变-linear-gradient"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">线性渐变 linear-gradient</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#渐变线"><span class="post-toc-number">1.1.1.</span> <span class="post-toc-text">渐变线</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#渐变角度"><span class="post-toc-number">1.1.2.</span> <span class="post-toc-text">渐变角度</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#渐变线长度"><span class="post-toc-number">1.1.3.</span> <span class="post-toc-text">渐变线长度</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#渐变色节点（Color-stops）"><span class="post-toc-number">1.1.4.</span> <span class="post-toc-text">渐变色节点（Color stops）</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#渐变透明度-Transparency"><span class="post-toc-number">1.1.5.</span> <span class="post-toc-text">渐变透明度(Transparency)</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#可累加的线性渐变背景图"><span class="post-toc-number">1.1.6.</span> <span class="post-toc-text">可累加的线性渐变背景图</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#可重复的线性渐变"><span class="post-toc-number">1.1.7.</span> <span class="post-toc-text">可重复的线性渐变</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#径向渐变-radial-gradient"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">径向渐变 radial-gradient</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#指定渐变形状"><span class="post-toc-number">1.2.1.</span> <span class="post-toc-text">指定渐变形状</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#圆形-circle"><span class="post-toc-number">1.2.1.1.</span> <span class="post-toc-text">圆形 circle</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#椭圆形-ellipse"><span class="post-toc-number">1.2.1.2.</span> <span class="post-toc-text">椭圆形 ellipse</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#指定渐变起始点位置"><span class="post-toc-number">1.2.2.</span> <span class="post-toc-text">指定渐变起始点位置</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#指定渐变终止点位置"><span class="post-toc-number">1.2.3.</span> <span class="post-toc-text">指定渐变终止点位置</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#指定渐变颜色节点"><span class="post-toc-number">1.2.4.</span> <span class="post-toc-text">指定渐变颜色节点</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#可累加的径向渐变背景图"><span class="post-toc-number">1.2.5.</span> <span class="post-toc-text">可累加的径向渐变背景图</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#渐变背景尺寸控制"><span class="post-toc-number">1.2.6.</span> <span class="post-toc-text">渐变背景尺寸控制</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#可重复的径向渐变"><span class="post-toc-number">1.2.7.</span> <span class="post-toc-text">可重复的径向渐变</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#一些简单的应用"><span class="post-toc-number">1.3.</span> <span class="post-toc-text">一些简单的应用</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#制作水纹特效"><span class="post-toc-number">1.3.1.</span> <span class="post-toc-text">制作水纹特效</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#制作唱片特效"><span class="post-toc-number">1.3.2.</span> <span class="post-toc-text">制作唱片特效</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#制作镂空特效"><span class="post-toc-number">1.3.3.</span> <span class="post-toc-text">制作镂空特效</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#制作调色板"><span class="post-toc-number">1.3.4.</span> <span class="post-toc-text">制作调色板</span></a></li></ol></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#剪裁-clip"><span class="post-toc-number">2.</span> <span class="post-toc-text">剪裁 clip</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#clip-不推荐使用"><span class="post-toc-number">2.0.1.</span> <span class="post-toc-text">clip (不推荐使用)</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#clip-path"><span class="post-toc-number">2.0.2.</span> <span class="post-toc-text">clip-path</span></a></li></ol></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#参考资料"><span class="post-toc-number">3.</span> <span class="post-toc-text">参考资料</span></a></li></ol>
+        </nav>
+    </aside>
+    
+<article id="post-意想不到的CSS - CSS3图像处理 - 渐变、裁剪"
+  class="post-article article-type-post fade" itemprop="blogPost">
+
+    <div class="post-card">
+        <h1 class="post-card-title">意想不到的CSS - CSS3图像处理 - 渐变、裁剪</h1>
+        <div class="post-meta">
+            <time class="post-time" title="2017-12-15 14:09:05" datetime="2017-12-15T06:09:05.896Z"  itemprop="datePublished">2017-12-15</time>
+
+            
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/前端开发/">前端开发</a><ul class="article-category-list-child"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/前端开发/意想不到的CSS/">意想不到的CSS</a></li></ul></li></ul>
+
+
+
+            
+<span id="busuanzi_container_page_pv" title="文章总阅读量" style='display:none'>
+    <i class="icon icon-eye icon-pr"></i><span id="busuanzi_value_page_pv"></span>
+</span>
+
+
+        </div>
+        <div class="post-content" id="post-content" itemprop="postContent">
+            <h1 id="渐变-gradient"><a href="#渐变-gradient" class="headerlink" title="渐变 gradient"></a>渐变 gradient</h1><h2 id="线性渐变-linear-gradient"><a href="#线性渐变-linear-gradient" class="headerlink" title="线性渐变 linear-gradient"></a>线性渐变 linear-gradient</h2><h3 id="渐变线"><a href="#渐变线" class="headerlink" title="渐变线"></a>渐变线</h3><p>在渐变容器中，穿过容器中心点和颜色停止点连接在一起的线称为渐变线。在一个笛卡尔坐标系中，y轴正方向为0deg(to top)，x轴正方向为90deg(to right)，y轴负方向为180deg(to bottom)，x轴负方向为270deg(to left)</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">background-image</span>: <span class="selector-tag">linear-gradient</span>(0<span class="selector-tag">deg</span>, <span class="selector-tag">red</span>, <span class="selector-tag">white</span>);</div></pre></td></tr></table></figure>
+<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="https://www.w3cplus.com/sites/default/files/blogs/2017/1703/gradient-1.png" alt="" title="">
+                </div>
+                <div class="image-caption"></div>
+            </figure>
+<h3 id="渐变角度"><a href="#渐变角度" class="headerlink" title="渐变角度"></a>渐变角度</h3><p>角度简写对应的角度值</p>
+<table>
+<thead>
+<tr>
+<th>to</th>
+<th>deg</th>
+<th>turn</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>to top</td>
+<td>0deg</td>
+<td>1turn</td>
+</tr>
+<tr>
+<td>to right</td>
+<td>90deg</td>
+<td>.25turn</td>
+</tr>
+<tr>
+<td>to bottom</td>
+<td>180deg</td>
+<td>.5turn</td>
+</tr>
+<tr>
+<td>to left</td>
+<td>270deg</td>
+<td>.75turn</td>
+</tr>
+<tr>
+<td>to top right</td>
+<td>45deg</td>
+<td>.125turn</td>
+</tr>
+<tr>
+<td>to bottom right</td>
+<td>135deg</td>
+<td>.375turn</td>
+</tr>
+<tr>
+<td>to bottom left</td>
+<td>225deg</td>
+<td>.625turn</td>
+</tr>
+<tr>
+<td>to top left</td>
+<td>315deg</td>
+<td>.875turn</td>
+</tr>
+</tbody>
+</table>
+<h3 id="渐变线长度"><a href="#渐变线长度" class="headerlink" title="渐变线长度"></a>渐变线长度</h3><figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="https://www.w3cplus.com/sites/default/files/blogs/2017/1703/gradient-8.png" alt="" title="">
+                </div>
+                <div class="image-caption"></div>
+            </figure>
+<p>通常，浏览器会计算渐变线的长度，以覆盖整个填充容器，计算公式为: </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">abs(W * sin(A)) + abs(H * cos(A))</div></pre></td></tr></table></figure>
+<p>其中: <code>W</code>是渐变容器的宽度，<code>H</code>是渐变容器的高度，<code>A</code>是渐变角度</p>
+<h3 id="渐变色节点（Color-stops）"><a href="#渐变色节点（Color-stops）" class="headerlink" title="渐变色节点（Color stops）"></a>渐变色节点（Color stops）</h3><p>渐变色的每一个颜色可以这样定义：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;color&gt; [&lt;percentage&gt; | &lt;length&gt;]</div></pre></td></tr></table></figure>
+<p>默认情况下是均分</p>
+<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="https://www.w3cplus.com/sites/default/files/blogs/2017/1703/gradient-9.png" alt="" title="">
+                </div>
+                <div class="image-caption"></div>
+            </figure>
+<p>在样式中可以指定各项颜色的线长:</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">background-image</span>: <span class="selector-tag">linear-gradient</span>(<span class="selector-class">.125turn</span>, <span class="selector-tag">red</span> 30%, <span class="selector-tag">pink</span> 70%, <span class="selector-tag">white</span>);</div></pre></td></tr></table></figure>
+<p>其中，red从起始位置到整个渐变线的30%位置，pink从起始位置到整个渐变线的70%位置，white未指定则从0%到100%位置。</p>
+<p>使用此特性，可以做出各种精美的纹理:</p>
+<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="https://www.w3cplus.com/sites/default/files/blogs/2017/1703/gradient-10.png" alt="" title="">
+                </div>
+                <div class="image-caption"></div>
+            </figure>
+<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="https://www.w3cplus.com/sites/default/files/blogs/2017/1703/gradient-11.png" alt="" title="">
+                </div>
+                <div class="image-caption"></div>
+            </figure>
+<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="https://www.w3cplus.com/sites/default/files/blogs/2017/1703/gradient-13.png" alt="" title="">
+                </div>
+                <div class="image-caption"></div>
+            </figure>
+<p>注意，如果后面的颜色占比小于前面颜色占比，则会出现明显的分界线:</p>
+<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="https://www.w3cplus.com/sites/default/files/blogs/2017/1703/gradient-17.png" alt="" title="">
+                </div>
+                <div class="image-caption"></div>
+            </figure>
+<h3 id="渐变透明度-Transparency"><a href="#渐变透明度-Transparency" class="headerlink" title="渐变透明度(Transparency)"></a>渐变透明度(Transparency)</h3><p>透明度还支持透明渐变，这对于制作一些特殊的效果是相当有用的。</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">background-image: linear-gradient(.125turn, rgba(255,0,0,.5) 30%, rgba(255,255,0,.5) 70%, white), url(./bg.jpg);</div></pre></td></tr></table></figure>
+<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/filter13.png" alt="" title="">
+                </div>
+                <div class="image-caption"></div>
+            </figure>
+<h3 id="可累加的线性渐变背景图"><a href="#可累加的线性渐变背景图" class="headerlink" title="可累加的线性渐变背景图"></a>可累加的线性渐变背景图</h3><p>线性渐变支持累加效果，不过注意为前面的颜色设置透明度，否则是看不到效果的。</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">background</span>: <span class="selector-tag">linear-gradient</span>(<span class="selector-class">.125turn</span>, <span class="selector-tag">rgba</span>(255,0,0,<span class="selector-class">.6</span>) 30%, <span class="selector-tag">rgba</span>(255,255,0,<span class="selector-class">.4</span>) 60%),</div><div class="line">      <span class="selector-tag">linear-gradient</span>(<span class="selector-tag">green</span> 40%, <span class="selector-tag">blue</span> 80%, <span class="selector-tag">white</span>);</div></pre></td></tr></table></figure>
+<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/gradient11.png" alt="" title="">
+                </div>
+                <div class="image-caption"></div>
+            </figure>
+<h3 id="可重复的线性渐变"><a href="#可重复的线性渐变" class="headerlink" title="可重复的线性渐变"></a>可重复的线性渐变</h3><p>使用可重复的线性渐变可轻松做出各种好看的纹理、进度条等。</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">background</span>: <span class="selector-tag">repeating-linear-gradient</span>(135<span class="selector-tag">deg</span>, <span class="selector-id">#000</span> 0, <span class="selector-id">#000</span> <span class="selector-class">.25em</span>, <span class="selector-id">#0092b7</span> 0, <span class="selector-id">#0092b7</span> <span class="selector-class">.5em</span>);</div></pre></td></tr></table></figure>
+<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/gradient16.png" alt="" title="">
+                </div>
+                <div class="image-caption"></div>
+            </figure>
+<h2 id="径向渐变-radial-gradient"><a href="#径向渐变-radial-gradient" class="headerlink" title="径向渐变 radial-gradient"></a>径向渐变 radial-gradient</h2><p>径向渐变中，默认渐变线为容器对角线，如果是外接一个椭圆，则为长轴与短轴所接矩形的对角线，如果是一个完美的正方形，则为外接圆的半径。</p>
+<p>径向渐变方式主要由<code>&lt;size&gt;</code>、<code>&lt;position&gt;</code>、<code>&lt;shape&gt;</code>这三个参数影响，分别控制椭圆的圆心、形状和大小。</p>
+<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/radial-gradient-ray.png" alt="" title="">
+                </div>
+                <div class="image-caption"></div>
+            </figure>
+<p>其渐变范围（渐变结束线）示意如下图，默认既不是按照宽度来的，也不是按照高度来的，是按照最远边角距离作为渐变结束线的:</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">background</span>: <span class="selector-tag">radial-gradient</span>(<span class="selector-tag">yellow</span>,<span class="selector-tag">red</span>);</div></pre></td></tr></table></figure>
+<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/circle-gradient-end.png" alt="" title="">
+                </div>
+                <div class="image-caption"></div>
+            </figure>
+<h3 id="指定渐变形状"><a href="#指定渐变形状" class="headerlink" title="指定渐变形状"></a>指定渐变形状</h3><table>
+<thead>
+<tr>
+<th>形状</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>circle</td>
+<td>圆形</td>
+</tr>
+<tr>
+<td>ellipse</td>
+<td>椭圆形</td>
+</tr>
+</tbody>
+</table>
+<h4 id="圆形-circle"><a href="#圆形-circle" class="headerlink" title="圆形 circle"></a>圆形 circle</h4><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">background</span>: <span class="selector-tag">radial-gradient</span>(<span class="selector-tag">circle</span>, <span class="selector-tag">yellow</span>, <span class="selector-tag">red</span>);</div></pre></td></tr></table></figure>
+<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/gradient01.png" alt="" title="">
+                </div>
+                <div class="image-caption"></div>
+            </figure>
+<h4 id="椭圆形-ellipse"><a href="#椭圆形-ellipse" class="headerlink" title="椭圆形 ellipse"></a>椭圆形 ellipse</h4><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">background</span>: <span class="selector-tag">radial-gradient</span>(<span class="selector-tag">ellipse</span>, <span class="selector-tag">yellow</span>, <span class="selector-tag">red</span>);</div></pre></td></tr></table></figure>
+<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/gradient07.png" alt="" title="">
+                </div>
+                <div class="image-caption"></div>
+            </figure>
+<h3 id="指定渐变起始点位置"><a href="#指定渐变起始点位置" class="headerlink" title="指定渐变起始点位置"></a>指定渐变起始点位置</h3><p>起始点位置可以有如下设置</p>
+<table>
+<thead>
+<tr>
+<th>起始点位置</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>at top</td>
+<td>位于上方</td>
+</tr>
+<tr>
+<td>at right</td>
+<td>位于右方</td>
+</tr>
+<tr>
+<td>at bottom</td>
+<td>位于下方</td>
+</tr>
+<tr>
+<td>at left</td>
+<td>位于左方</td>
+</tr>
+<tr>
+<td>at top right</td>
+<td>位于右上方</td>
+</tr>
+<tr>
+<td>at bottom right</td>
+<td>位于右下方</td>
+</tr>
+<tr>
+<td>at bottom left</td>
+<td>位于左下方</td>
+</tr>
+<tr>
+<td>at top left</td>
+<td>位于左上方</td>
+</tr>
+</tbody>
+</table>
+<p>如:</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">background</span>: <span class="selector-tag">radial-gradient</span>(300<span class="selector-tag">px</span> <span class="selector-tag">circle</span> <span class="selector-tag">at</span> <span class="selector-tag">top</span> <span class="selector-tag">left</span>,<span class="selector-tag">yellow</span>,<span class="selector-tag">red</span>);</div></pre></td></tr></table></figure>
+<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/gradient04.png" alt="" title="">
+                </div>
+                <div class="image-caption"></div>
+            </figure>
+<h3 id="指定渐变终止点位置"><a href="#指定渐变终止点位置" class="headerlink" title="指定渐变终止点位置"></a>指定渐变终止点位置</h3><p><code>radial-gradient</code>径向渐变支持4个关键字可以指定渐变终止点位置:</p>
+<table>
+<thead>
+<tr>
+<th>关键字</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>closest-side</code></td>
+<td>渐变中心距离容器最近的边作为终止位置。</td>
+</tr>
+<tr>
+<td><code>closest-corner</code></td>
+<td>渐变中心距离容器最近的角作为终止位置。</td>
+</tr>
+<tr>
+<td><code>farthest-side</code></td>
+<td>渐变中心距离容器最远的边作为终止位置。</td>
+</tr>
+<tr>
+<td><code>farthest-corner</code></td>
+<td>渐变中心距离容器最远的角作为终止位置。</td>
+</tr>
+</tbody>
+</table>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">background</span>: <span class="selector-tag">radial-gradient</span>(<span class="selector-tag">farthest-side</span> <span class="selector-tag">circle</span>,<span class="selector-tag">yellow</span>,<span class="selector-tag">red</span>);</div></pre></td></tr></table></figure>
+<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/gradient05.png" alt="" title="">
+                </div>
+                <div class="image-caption"></div>
+            </figure>
+<p>也可以使用长度单位指定渐变线的长度:</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">background</span>: <span class="selector-tag">radial-gradient</span>(100<span class="selector-tag">px</span> <span class="selector-tag">circle</span>,<span class="selector-tag">yellow</span>,<span class="selector-tag">red</span>);</div></pre></td></tr></table></figure>
+<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/gradient03.png" alt="" title="">
+                </div>
+                <div class="image-caption"></div>
+            </figure>
+<p>如果是椭圆，可以指定长轴和短轴的长度:</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">background</span>: <span class="selector-tag">radial-gradient</span>(300<span class="selector-tag">px</span> 100<span class="selector-tag">px</span> <span class="selector-tag">ellipse</span>,<span class="selector-tag">yellow</span>,<span class="selector-tag">red</span>);</div></pre></td></tr></table></figure>
+<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/gradient08.png" alt="" title="">
+                </div>
+                <div class="image-caption"></div>
+            </figure>
+<h3 id="指定渐变颜色节点"><a href="#指定渐变颜色节点" class="headerlink" title="指定渐变颜色节点"></a>指定渐变颜色节点</h3><p>后面的参数可以指定渐变颜色节点</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">background</span>: <span class="selector-tag">radial-gradient</span>(<span class="selector-tag">closest-side</span> <span class="selector-tag">circle</span>, <span class="selector-tag">yellow</span>, <span class="selector-tag">orange</span>, <span class="selector-tag">red</span>, <span class="selector-tag">white</span>);</div></pre></td></tr></table></figure>
+<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/gradient06.png" alt="" title="">
+                </div>
+                <div class="image-caption"></div>
+            </figure>
+<p>指定颜色节点位置</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">background</span>: <span class="selector-tag">radial-gradient</span>(300<span class="selector-tag">px</span> 100<span class="selector-tag">px</span> <span class="selector-tag">ellipse</span>,<span class="selector-tag">yellow</span> 10%,<span class="selector-tag">red</span>);</div></pre></td></tr></table></figure>
+<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/gradient09.png" alt="" title="">
+                </div>
+                <div class="image-caption"></div>
+            </figure>
+<h3 id="可累加的径向渐变背景图"><a href="#可累加的径向渐变背景图" class="headerlink" title="可累加的径向渐变背景图"></a>可累加的径向渐变背景图</h3><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">background</span>: <span class="selector-tag">radial-gradient</span>(50<span class="selector-tag">px</span> 100<span class="selector-tag">px</span> <span class="selector-tag">ellipse</span>,</div><div class="line">    <span class="selector-tag">transparent</span> 40<span class="selector-tag">px</span>, <span class="selector-tag">yellow</span> 41<span class="selector-tag">px</span>, <span class="selector-tag">red</span> 49<span class="selector-tag">px</span>, <span class="selector-tag">transparent</span> 50<span class="selector-tag">px</span>),</div><div class="line">  <span class="selector-tag">radial-gradient</span>(30<span class="selector-tag">px</span> <span class="selector-tag">circle</span>, <span class="selector-tag">red</span>, <span class="selector-tag">red</span> 29<span class="selector-tag">px</span>, <span class="selector-tag">transparent</span> 30<span class="selector-tag">px</span>);</div></pre></td></tr></table></figure>
+<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/gradient10.png" alt="" title="">
+                </div>
+                <div class="image-caption"></div>
+            </figure>
+<h3 id="渐变背景尺寸控制"><a href="#渐变背景尺寸控制" class="headerlink" title="渐变背景尺寸控制"></a>渐变背景尺寸控制</h3><p>可以通过<code>background-size</code>属性控制背景的尺寸大小。注意不要设置<code>background-repeat: no-repeat;</code></p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">width</span>: 100%;</div><div class="line"><span class="selector-tag">height</span>: 200<span class="selector-tag">px</span>;</div><div class="line"><span class="selector-tag">background</span>: <span class="selector-tag">radial-gradient</span>(5<span class="selector-tag">px</span> <span class="selector-tag">circle</span>, <span class="selector-tag">transparent</span> 4<span class="selector-tag">px</span>, <span class="selector-tag">yellow</span> 5<span class="selector-tag">px</span>, <span class="selector-tag">red</span> 6<span class="selector-tag">px</span>, <span class="selector-tag">transparent</span> 7<span class="selector-tag">px</span>),</div><div class="line">	<span class="selector-tag">radial-gradient</span>(3<span class="selector-tag">px</span> <span class="selector-tag">circle</span>, <span class="selector-tag">red</span>, <span class="selector-tag">red</span> 3<span class="selector-tag">px</span>, <span class="selector-tag">transparent</span> 4<span class="selector-tag">px</span>);</div><div class="line"><span class="selector-tag">background-color</span>: <span class="selector-tag">rgba</span>(255,255,0,<span class="selector-class">.3</span>);</div><div class="line"><span class="selector-tag">background-size</span>: 25<span class="selector-tag">px</span> 50<span class="selector-tag">px</span>;</div></pre></td></tr></table></figure>
+<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/gradient12.png" alt="" title="">
+                </div>
+                <div class="image-caption"></div>
+            </figure>
+<h3 id="可重复的径向渐变"><a href="#可重复的径向渐变" class="headerlink" title="可重复的径向渐变"></a>可重复的径向渐变</h3><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">background</span>: <span class="selector-tag">repeating-radial-gradient</span>(<span class="selector-id">#ace</span>, <span class="selector-id">#ace</span> 5<span class="selector-tag">px</span>, <span class="selector-id">#f96</span> 5<span class="selector-tag">px</span>, <span class="selector-id">#f96</span> 10<span class="selector-tag">px</span>);</div><div class="line"><span class="selector-tag">border-radius</span>: 50%;</div></pre></td></tr></table></figure>
+<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/gradient18.png" alt="" title="">
+                </div>
+                <div class="image-caption"></div>
+            </figure>
+<h2 id="一些简单的应用"><a href="#一些简单的应用" class="headerlink" title="一些简单的应用"></a>一些简单的应用</h2><h3 id="制作水纹特效"><a href="#制作水纹特效" class="headerlink" title="制作水纹特效"></a>制作水纹特效</h3><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.radial-gradient</span> &#123;</div><div class="line">  <span class="attribute">width</span>: <span class="number">200px</span>; <span class="attribute">height</span>: <span class="number">100px</span>;</div><div class="line">  <span class="attribute">background</span>: red;</div><div class="line">  <span class="attribute">position</span>: relative;</div><div class="line">&#125;</div><div class="line"><span class="selector-class">.radial-gradient</span><span class="selector-pseudo">:after</span> &#123;</div><div class="line">  <span class="attribute">content</span>: <span class="string">''</span>;</div><div class="line">  <span class="attribute">position</span>: absolute;</div><div class="line">  <span class="attribute">height</span>: <span class="number">10px</span>;</div><div class="line">  <span class="attribute">left</span>:<span class="number">0</span> ; <span class="attribute">right</span>: <span class="number">0</span>;</div><div class="line">  <span class="attribute">bottom</span>: -<span class="number">10px</span>;</div><div class="line">  <span class="attribute">background</span>: <span class="built_in">radial-gradient</span>(20px 15px ellipse at top, red 10px, transparent 11px);</div><div class="line">  <span class="attribute">background-size</span>: <span class="number">20px</span> <span class="number">10px</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/gradient13.png" alt="" title="">
+                </div>
+                <div class="image-caption"></div>
+            </figure>
+<h3 id="制作唱片特效"><a href="#制作唱片特效" class="headerlink" title="制作唱片特效"></a>制作唱片特效</h3><p>来自 <a href="https://codepen.io/thebabydino/embed/HjJlL" target="_blank" rel="external">https://codepen.io/thebabydino/embed/HjJlL</a> </p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.radial-gradient</span> &#123;</div><div class="line">  <span class="attribute">position</span>: relative;</div><div class="line">  <span class="attribute">width</span>: <span class="number">262px</span>; <span class="attribute">height</span>: <span class="number">262px</span>;</div><div class="line">  <span class="attribute">border-radius</span>: <span class="number">50%</span>;</div><div class="line">  <span class="attribute">background</span>: <span class="built_in">linear-gradient</span>(30deg, transparent 40%, rgba(42, 41, 40, .85) <span class="number">40%</span>) no-repeat <span class="number">100%</span> <span class="number">0</span>, <span class="built_in">linear-gradient</span>(60deg, rgba(42, 41, 40, .85) <span class="number">60%</span>, transparent <span class="number">60%</span>) no-repeat <span class="number">0</span> <span class="number">100%</span>, <span class="built_in">repeating-radial-gradient</span>(#2a2928, #2a2928 4px, #ada9a0 5px, #2a2928 6px);</div><div class="line">  <span class="attribute">background-size</span>: <span class="number">50%</span> <span class="number">100%</span>, <span class="number">100%</span> <span class="number">50%</span>, <span class="number">100%</span> <span class="number">100%</span>;</div><div class="line">&#125;</div><div class="line"><span class="selector-class">.radial-gradient</span><span class="selector-pseudo">:after</span> &#123;</div><div class="line">  <span class="attribute">position</span>: absolute;</div><div class="line">  <span class="attribute">top</span>: <span class="number">50%</span>; <span class="attribute">left</span>: <span class="number">50%</span>;</div><div class="line">  <span class="attribute">margin</span>: -<span class="number">35px</span>;</div><div class="line">  <span class="attribute">border</span>: solid <span class="number">1px</span> <span class="number">#d9a388</span>;</div><div class="line">  <span class="attribute">width</span>: <span class="number">68px</span>; <span class="attribute">height</span>: <span class="number">68px</span>;</div><div class="line">  <span class="attribute">border-radius</span>: <span class="number">50%</span>;</div><div class="line">  <span class="attribute">box-shadow</span>: <span class="number">0</span> <span class="number">0</span> <span class="number">0</span> <span class="number">4px</span> <span class="number">#da5b33</span>, inset <span class="number">0</span> <span class="number">0</span> <span class="number">0</span> <span class="number">27px</span> <span class="number">#da5b33</span>;</div><div class="line">  <span class="attribute">background</span>: <span class="number">#b5ac9a</span>;</div><div class="line">  <span class="attribute">content</span>: <span class="string">''</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/gradient14.png" alt="" title="">
+                </div>
+                <div class="image-caption"></div>
+            </figure>
+<h3 id="制作镂空特效"><a href="#制作镂空特效" class="headerlink" title="制作镂空特效"></a>制作镂空特效</h3><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.radial-gradient</span> &#123;</div><div class="line">  <span class="attribute">width</span>: <span class="number">100px</span>; <span class="attribute">height</span>: <span class="number">100px</span>;</div><div class="line">  <span class="attribute">border</span>: <span class="number">50px</span> solid;</div><div class="line">  <span class="attribute">border-image</span>: <span class="built_in">radial-gradient</span>(circle, transparent 50px, yellow 51px, red) <span class="number">50</span> stretch;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/gradient15.png" alt="" title="">
+                </div>
+                <div class="image-caption"></div>
+            </figure>
+<h3 id="制作调色板"><a href="#制作调色板" class="headerlink" title="制作调色板"></a>制作调色板</h3><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.board</span> &#123;</div><div class="line">  <span class="attribute">width</span>: <span class="number">200px</span>;</div><div class="line">  <span class="attribute">height</span>: <span class="number">200px</span>;</div><div class="line">  <span class="attribute">background</span>: </div><div class="line">    <span class="built_in">linear-gradient</span>(36deg, #272b66 42.34%, transparent 42.34%),</div><div class="line">    <span class="built_in">linear-gradient</span>(72deg, #2d559f 75.48%, transparent 75.48%),</div><div class="line">    <span class="built_in">linear-gradient</span>(-36deg, #9ac147 42.34%, transparent 42.34%) <span class="number">100%</span> <span class="number">0</span>,</div><div class="line">    <span class="built_in">linear-gradient</span>(-72deg, #639b47 75.48%, transparent 75.48%) <span class="number">100%</span> <span class="number">0</span>, </div><div class="line">    <span class="built_in">linear-gradient</span>(36deg, transparent 57.66%, #e1e23b 57.66%) <span class="number">100%</span> <span class="number">100%</span>,</div><div class="line">    <span class="built_in">linear-gradient</span>(72deg, transparent 24.52%, #f7941e 24.52%) <span class="number">100%</span> <span class="number">100%</span>,</div><div class="line">    <span class="built_in">linear-gradient</span>(-36deg, transparent 57.66%, #662a6c 57.66%) <span class="number">0</span> <span class="number">100%</span>,</div><div class="line">    <span class="built_in">linear-gradient</span>(-72deg, transparent 24.52%, #9a1d34 24.52%) <span class="number">0</span> <span class="number">100%</span>, </div><div class="line">    <span class="number">#43a1cd</span> <span class="built_in">linear-gradient</span>(#ba3e2e, #ba3e2e) <span class="number">50%</span> <span class="number">100%</span>;</div><div class="line">  <span class="attribute">background-repeat</span>: no-repeat;</div><div class="line">  <span class="attribute">background-size</span>: <span class="number">50%</span> <span class="number">50%</span>;</div><div class="line">  <span class="attribute">border-radius</span>: <span class="number">50%</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/gradient17.png" alt="" title="">
+                </div>
+                <div class="image-caption"></div>
+            </figure>
+<h1 id="剪裁-clip"><a href="#剪裁-clip" class="headerlink" title="剪裁 clip"></a>剪裁 clip</h1><h3 id="clip-不推荐使用"><a href="#clip-不推荐使用" class="headerlink" title="clip (不推荐使用)"></a>clip (不推荐使用)</h3><p><code>clip</code>的优势：<code>clip</code> 属性是CSS中出现的第一种剪裁。<code>clip</code>是运行在浏览器中的，它可能会一直有效。而浏览器对它的支持是非常强大的：几乎是有史以来的每一个浏览器。</p>
+<p><code>clip</code>的劣势:<code>clip</code> 只对绝对定位的元素有效，<code>clip</code> 只能用于矩形，即<code>rect()</code>函数。</p>
+<p>格式:</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">clip</span>: <span class="selector-tag">rect</span>(<span class="selector-tag">top</span>, <span class="selector-tag">right</span>, <span class="selector-tag">bottom</span>, <span class="selector-tag">left</span>);</div></pre></td></tr></table></figure>
+<p>如:</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"mode"</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"bg"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.mode</span> &#123;</div><div class="line">  <span class="attribute">width</span>: <span class="number">100%</span>;</div><div class="line">  <span class="attribute">height</span>: <span class="number">100%</span>;</div><div class="line">  <span class="attribute">position</span>: relative;</div><div class="line">  <span class="attribute">display</span>: flex;</div><div class="line">  <span class="attribute">justify-content</span>: center;</div><div class="line">  <span class="attribute">align-items</span>: center;</div><div class="line">&#125;</div><div class="line"><span class="selector-class">.bg</span> &#123;</div><div class="line">  <span class="attribute">width</span>: <span class="number">300px</span>;</div><div class="line">  <span class="attribute">height</span>: <span class="number">300px</span>;</div><div class="line">  <span class="attribute">background</span>: <span class="built_in">repeating-radial-gradient</span>(#ace, #ace 5px, #f96 5px, #f96 10px);</div><div class="line">  <span class="attribute">border-radius</span>: <span class="number">50%</span>;</div><div class="line">  <span class="attribute">position</span>: absolute;</div><div class="line">  <span class="attribute">clip</span>: <span class="built_in">rect</span>(0,200px,200px,0);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/clip02.png" alt="" title="">
+                </div>
+                <div class="image-caption"></div>
+            </figure>
+<p>参考demo: <a href="http://www.zhangxinxu.com/study/201103/css-rect-demo.html" target="_blank" rel="external">http://www.zhangxinxu.com/study/201103/css-rect-demo.html</a></p>
+<p><img src="http://xiaoyulive.oss-cn-beijing.aliyuncs.com/imgs/clip01.png" alt=""></p>
+<h3 id="clip-path"><a href="#clip-path" class="headerlink" title="clip-path"></a>clip-path</h3><p>参考 demo: <a href="http://bennettfeely.com/clippy/" target="_blank" rel="external">http://bennettfeely.com/clippy/</a></p>
+<h1 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h1><p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/linear-gradient" target="_blank" rel="external">MDN: linear-gradient</a> </p>
+<p><a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/repeating-linear-gradient" target="_blank" rel="external">MDN: repeating-linear-gradient</a> </p>
+<p><a href="http://www.cnblogs.com/lhb25/archive/2013/02/17/css3-linear-gradient.html" target="_blank" rel="external">CSS3 经典教程系列：CSS3 线性渐变（linear-gradient）</a> </p>
+<p><a href="https://www.w3cplus.com/css3/do-you-really-understand-css-linear-gradients.html" target="_blank" rel="external">你真的理解CSS的linear-gradient？</a> </p>
+<p><a href="http://blog.csdn.net/crper/article/details/51145696" target="_blank" rel="external">CSS3:background新增特性详解</a> </p>
+<p><a href="https://www.w3cplus.com/css3/new-css3-radial-gradient.html" target="_blank" rel="external">再说CSS3渐变——径向渐变</a> </p>
+<p><a href="https://www.w3cplus.com/content/css3-gradient" target="_blank" rel="external">CSS3 Gradient</a> </p>
+<p><a href="http://www.cnblogs.com/xiaohuochai/p/5383285.html" target="_blank" rel="external">深入理解CSS径向渐变radial-gradient</a> </p>
+<p><a href="http://www.zhangxinxu.com/wordpress/2017/11/css3-radial-gradient-syntax-example/" target="_blank" rel="external">CSS3 radial-gradient径向渐变语法及辅助理解案例10则</a> </p>
+<p><a href="https://www.w3cplus.com/css3/why-do-we-have-repeating-linear-gradient-anyway.html" target="_blank" rel="external">为什么要使用repeating-linear-gradient</a> </p>
+<p><a href="https://hugogiraudel.com/2013/02/04/css-gradients/#a-few-things-about-linear-gradients" target="_blank" rel="external">Dig deep into CSS linear gradients</a> </p>
+<p><a href="http://www.zhangxinxu.com/wordpress/2011/04/css-clip-rect/" target="_blank" rel="external">CSS clip:rect矩形剪裁功能及一些应用介绍</a> </p>
+<p><a href="https://www.w3cplus.com/css3/clipping-masking-css.html" target="_blank" rel="external">CSS中的剪裁和遮罩</a> </p>
+<p><a href="http://www.cnblogs.com/xiaohuochai/p/5285752.html" target="_blank" rel="external">CSS裁剪clip</a> </p>
+
+        </div>
+
+        <blockquote class="post-copyright">
+    <div class="content">
+        
+<span class="post-time">
+    最后更新时间：<time datetime="2017-12-15T06:09:05.896Z" itemprop="dateUpdated">2017-12-15 14:09:05</time>
+</span><br>
+
+
+        
+        这里可以写作者留言，标签和 hexo 中所有变量及辅助函数等均可调用，示例：<a href="/2017/12/15/意想不到的CSS - CSS3图像处理 - 渐变、裁剪/" target="_blank" rel="external">http://blog.xiaoyulive.top/2017/12/15/意想不到的CSS - CSS3图像处理 - 渐变、裁剪/</a>
+        
+    </div>
+    <footer>
+        <a href="http://blog.xiaoyulive.top">
+            <img src="/img/avatar.jpg" alt="Quanzaiyu">
+            Quanzaiyu
+        </a>
+    </footer>
+</blockquote>
+
+        
+<div class="page-reward">
+    <a id="rewardBtn" href="javascript:;" class="page-reward-btn waves-effect waves-circle waves-light">赏</a>
+</div>
+
+
+
+        <div class="post-footer">
+            
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/CSS3/">CSS3</a></li></ul>
+
+
+            
+<div class="page-share-wrap">
+    
+
+<div class="page-share" id="pageShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://blog.xiaoyulive.top/2017/12/15/意想不到的CSS - CSS3图像处理 - 渐变、裁剪/&title=《意想不到的CSS - CSS3图像处理 - 渐变、裁剪》 — 小昱博客&pic=http://blog.xiaoyulive.top/img/avatar.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://blog.xiaoyulive.top/2017/12/15/意想不到的CSS - CSS3图像处理 - 渐变、裁剪/&title=《意想不到的CSS - CSS3图像处理 - 渐变、裁剪》 — 小昱博客&source=" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://blog.xiaoyulive.top/2017/12/15/意想不到的CSS - CSS3图像处理 - 渐变、裁剪/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《意想不到的CSS - CSS3图像处理 - 渐变、裁剪》 — 小昱博客&url=http://blog.xiaoyulive.top/2017/12/15/意想不到的CSS - CSS3图像处理 - 渐变、裁剪/&via=http://blog.xiaoyulive.top" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://blog.xiaoyulive.top/2017/12/15/意想不到的CSS - CSS3图像处理 - 渐变、裁剪/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+
+    <a href="javascript:;" id="shareFab" class="page-share-fab waves-effect waves-circle">
+        <i class="icon icon-share-alt icon-lg"></i>
+    </a>
+</div>
+
+
+
+        </div>
+    </div>
+
+    
+<nav class="post-nav flex-row flex-justify-between">
+  
+    <div class="waves-block waves-effect prev">
+      <a href="/2017/12/15/深入理解JavaScript - requestAnimationFrame的应用/" id="post-prev" class="post-nav-link">
+        <div class="tips"><i class="icon icon-angle-left icon-lg icon-pr"></i> Prev</div>
+        <h4 class="title">深入理解JavaScript - requestAnimationFrame的应用</h4>
+      </a>
+    </div>
+  
+
+  
+    <div class="waves-block waves-effect next">
+      <a href="/2017/12/15/意想不到的CSS - CSS3图像处理 - 滤镜、混合模式/" id="post-next" class="post-nav-link">
+        <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
+        <h4 class="title">意想不到的CSS - CSS3图像处理 - 滤镜、混合模式</h4>
+      </a>
+    </div>
+  
+</nav>
+
+
+
+    
+
+
+<section class="comments" id="comments">
+    <div id="disqus_thread"></div>
+    <script>
+    var disqus_shortname = 'true';
+    lazyScripts.push('//' + disqus_shortname + '.disqus.com/embed.js')
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</section>
+
+
+
+
+<section class="comments" id="comments">
+    <!-- UY BEGIN -->
+    <div id="uyan_frame"></div>
+    <script src="http://v2.uyan.cc/code/uyan.js?uid=true"></script>
+    <!-- UY END -->
+</section>
+
+
+
+
+<section class="comments" id="comments">
+    <div id="gitment_thread"></div>
+    <link rel="stylesheet" href="//unpkg.com/gitment/style/default.css">
+    <script src="//unpkg.com/gitment/dist/gitment.browser.js"></script>
+    <script>
+        var gitment = new Gitment({
+            owner: 'quanzaiyu',
+            repo: 'quanzaiyu.github.io',
+            oauth: {
+                client_id: '3f4b90df85c3c29d643f',
+                client_secret: 'c951dd3dbd71e2edd597aa527a1a5d7e473d7375',
+            },
+        })
+        gitment.render('comments')
+    </script>
+</section>
+
+
+
+
+</article>
+
+<div id="reward" class="page-modal reward-lay">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <h3 class="reward-title">
+        <i class="icon icon-quote-left"></i>
+        谢谢大爷~
+        <i class="icon icon-quote-right"></i>
+    </h3>
+    <div class="reward-content">
+        
+        <div class="reward-code">
+            <img id="rewardCode" src="/img/wechat.jpg" alt="打赏二维码">
+        </div>
+        
+        <label class="reward-toggle">
+            <input id="rewardToggle" type="checkbox" class="reward-toggle-check"
+                data-wechat="/img/wechat.jpg" data-alipay="/img/alipay.jpg">
+            <div class="reward-toggle-ctrol">
+                <span class="reward-toggle-item wechat">微信</span>
+                <span class="reward-toggle-label"></span>
+                <span class="reward-toggle-item alipay">支付宝</span>
+            </div>
+        </label>
+        
+    </div>
+</div>
+
+
+
+</div>
+
+<!-- <script>
+    particlesJS.load('canvas-container', '/json/particles2.json', function () {
+        console.log('callback - particles.js config loaded');
+    })
+</script> -->
+        <footer class="footer">
+    <div class="top">
+        
+<p>
+    <span id="busuanzi_container_site_uv" style='display:none'>
+        站点总访客数：<span id="busuanzi_value_site_uv"></span>
+    </span>
+    <span id="busuanzi_container_site_pv" style='display:none'>
+        站点总访问量：<span id="busuanzi_value_site_pv"></span>
+    </span>
+</p>
+
+
+        <p>
+            
+            <!-- <span>博客内容遵循 <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">知识共享 署名 - 非商业性 - 相同方式共享 4.0 国际协议</a></span> -->
+        </p>
+    </div>
+    <div class="bottom">
+        <p><span>Quanzaiyu &copy; 2015 - 2018</span>
+            <span>
+                
+                <a href="http://www.miitbeian.gov.cn/" target="_blank">滇ICP备16006294号</a><br>
+                
+                Power by <a href="http://hexo.io/" target="_blank">Hexo</a>
+            </span>
+        </p>
+    </div>
+</footer>
+
+    </main>
+    <div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+
+
+<div class="global-share" id="globalShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://blog.xiaoyulive.top/2017/12/15/意想不到的CSS - CSS3图像处理 - 渐变、裁剪/&title=《意想不到的CSS - CSS3图像处理 - 渐变、裁剪》 — 小昱博客&pic=http://blog.xiaoyulive.top/img/avatar.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://blog.xiaoyulive.top/2017/12/15/意想不到的CSS - CSS3图像处理 - 渐变、裁剪/&title=《意想不到的CSS - CSS3图像处理 - 渐变、裁剪》 — 小昱博客&source=" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://blog.xiaoyulive.top/2017/12/15/意想不到的CSS - CSS3图像处理 - 渐变、裁剪/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《意想不到的CSS - CSS3图像处理 - 渐变、裁剪》 — 小昱博客&url=http://blog.xiaoyulive.top/2017/12/15/意想不到的CSS - CSS3图像处理 - 渐变、裁剪/&via=http://blog.xiaoyulive.top" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://blog.xiaoyulive.top/2017/12/15/意想不到的CSS - CSS3图像处理 - 渐变、裁剪/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+<div class="page-modal wx-share" id="wxShare">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <img src="//api.qrserver.com/v1/create-qr-code/?data=http://blog.xiaoyulive.top/2017/12/15/意想不到的CSS - CSS3图像处理 - 渐变、裁剪/" alt="微信分享二维码">
+</div>
+
+
+
+
+    <script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+<script>
+var BLOG = { ROOT: '/', SHARE: true, REWARD: true };
+
+
+</script>
+
+<script src="/js/main.min.js?v=1.6.17"></script>
+
+
+<div class="search-panel" id="search-panel">
+    <ul class="search-result" id="search-result"></ul>
+</div>
+<template id="search-tpl">
+<li class="item">
+    <a href="{path}" class="waves-block waves-effect">
+        <div class="title ellipsis" title="{title}">{title}</div>
+        <div class="flex-row flex-middle">
+            <div class="tags ellipsis">
+                {tags}
+            </div>
+            <time class="flex-col time">{date}</time>
+        </div>
+    </a>
+</li>
+</template>
+
+<script src="/js/search.min.js?v=1.6.17" async></script>
+
+
+
+
+
+
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+<script>
+(function() {
+    var OriginTitile = document.title, titleTime;
+    document.addEventListener('visibilitychange', function() {
+        if (document.hidden) {
+            document.title = 'ﾍ(;´Д｀ﾍ)快回来啊！';
+            clearTimeout(titleTime);
+        } else {
+            document.title = '(つェ⊂)欢迎回来!';
+            titleTime = setTimeout(function() {
+                document.title = OriginTitile;
+            },2000);
+        }
+    });
+})();
+</script>
+
+
+
+</body>
+</html>
